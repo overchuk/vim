@@ -1,0 +1,1234 @@
+<!-- 
+
+     HTML dropped by Zend Guard Compressor 4.2
+
+     php.ru team: mz, az, yuri, vb, cyxapuk, 440hz, administrator
+     2004-2007 (c) expi-web.com 
+     2007-2008 (c) odware.com 
+     0101-1010 (с) 440hz
+
+     2b|~2b=?
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EHOT тут всё пожрал ! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="alternate" type="application/rss+xml" title="php.ru/forum - последние сообщения" href="http://www.php.ru/forum/rss.php">
+<link rel="SHORTCUT ICON" href="http://www.php.ru/favicon.ico" />
+<META name="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<meta http-equiv="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<META name="keywords" content="php, php5, apache, mysql, session">
+<meta http-equiv="keywords" content="php, php5, apache, mysql, session">
+<title>php.ru - Standard PHP Library (SPL) Functions</title>
+<LINK REL="stylesheet" TYPE="text/css" HREF="http://www.php.ru/index.css">
+<script language="JavaScript" src="http://www.php.ru/ajax/ajax.js"></script>
+</head>
+<body>
+
+<table height='100%' width='100%' cellspacing='0' cellpadding='0'>
+  <tr height='99%' valign='top'>
+    <td align='center'>
+		
+		<table style='margin-top: 4px' width=100% cellspacing=0 cellpadding=3>
+   		<tr>
+     		<td>PHP - <a href="http://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BA%D1%80%D0%BE%D0%BD%D0%B8%D0%BC" target=_blank class=lnk>рекурсивный акроним</a> словосочетания &laquo;<a href="/manual/introduction.html" class=lnk>PHP: Hypertext Preprocessor</a>&raquo;</td>
+     	</tr>
+   		</table>
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/subsys_ajax.js"></script>
+		<!--
+
+		commet by 440hz
+		20.10.2007
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/pu_search.js"></script>
+
+		-->
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/cz.js?a=b"></script>
+
+		<table style='margin-top: 5px' width=100% bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0>
+   	 	<form name=SEARCH method=GET action="http://www.php.ru/search/?SID=tfd1os8r8yngdige" onsubmit="return puSubmit();">
+	  	<input type=hidden name=PAGE value=1>
+  		<tr>
+    		<td width='1' valign='middle'> 
+    		   <a href='/'><img src="http://www.php.ru/;-)/logo.gif" width=133 height=93 alt="php" border=0 hspace=10 vspace=0></a>
+			 </td>
+		    <td width='100%' valign='middle'>
+		       <!--
+			   
+				commet by 440hz
+				20.10.2007
+
+			   <div id='pu_search' class='pu_search'></div>
+		       <div id='pu_search_description' class='pu_search_decription'></div>
+			   
+			   -->
+        	 <input type=text style='width:99%; margin: 10px' maxlength='200' name='QS' class='in' id='query' autocomplete='off' value="" />
+    		</td>
+		  </tr>
+   		<tr bgcolor='#666699' valign='middle'>
+			<td style='border-top: 1px solid #333366;'><br /></td>
+    		<td style='border-top: 1px solid #333366;'><div style="padding: 4px 4px 4px 10px; height: 24px; color: #CCCCFF;" id="stat">Хто там?<script>doLoadCZ('stat','stat');</script></div></td>
+  		</tr>
+		</form>
+		</table>
+		<table id="menu" cellspaciong=0 cellpadding=3>
+<tr>
+<td><a href="/" class=current>Главная</a></td>
+<td><a href="/download/" class=current>Скачать</a></td>
+<td><a href="/doc/" class=current>Документация</a></td>
+<td><a href="/forum/" class=current>Форум</a></td>
+<td width=100% align=right><a href="/phpinfo.html" class=current>phpinfo()</a></td>
+</tr>
+</table>
+
+		
+<!--  AdRiver code START. Type:728x90 Site: php.ru PZ: 0 BN: 1 -->
+<script language="javascript" type="text/javascript"><!--
+var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+var ar_Tail='unknown'; if (document.referrer) ar_Tail = escape(document.referrer);
+document.write(
+'<iframe src="http://ad.adriver.ru/cgi-bin/erle.cgi?'
++ 'sid=148680&bn=1&target=blank&bt=36&pz=0&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail
++ '" frameborder=0 vspace=0 hspace=0 width=728 height=90 marginwidth=0'
++ ' marginheight=0 scrolling=no></iframe>');
+//--></script>
+<noscript>
+<a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" target=_blank>
+<img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" alt="-AdRiver-" border=0 width=728 height=90></a>
+</noscript>
+<!--  AdRiver code END  -->
+
+
+  		<table width='100%' cellspacing='0' cellpadding='0'>
+    		<tr valign='top'>
+      		<td width=100%><div style="margin: 10px 10px 10px 50px;"><center><div style="width: 800px; text-align: left"><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Руководство по PHP</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="function.socket-write.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="function.arrayiterator-current.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="reference"
+><A
+NAME="ref.spl"
+></A
+><DIV
+CLASS="TITLEPAGE"
+><H1
+CLASS="title"
+>CXLVIII. Standard PHP Library (SPL) Functions</H1
+><DIV
+CLASS="PARTINTRO"
+><A
+NAME="AEN171313"
+></A
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="spl.intro"
+>Введение</A
+></H1
+><P
+>&#13;     SPL is a collection of interfaces and classes that are meant to solve
+     standard problems. 
+    </P
+><DIV
+CLASS="tip"
+><BLOCKQUOTE
+CLASS="tip"
+><P
+><B
+>Подсказка: </B
+>
+      A more detailed documentation of SPL can be found
+      <A
+HREF="http://www.php.net/~helly/php/ext/spl/"
+TARGET="_top"
+>here</A
+>.
+     </P
+></BLOCKQUOTE
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="spl.installation"
+>Установка</A
+></H1
+><P
+>&#13;     This extension is available and compiled by default in PHP 5.
+    </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="spl.constants"
+>Предопределенные константы</A
+></H1
+><P
+>&#13;Перечисленные ниже константы определены данным расширением и могут быть
+доступны только в том случае, если PHP был собран с
+поддержкой этого расширения или же в том случае, если
+данное расширение подгружается во время выполнения.
+</P
+><DIV
+CLASS="warning"
+><P
+></P
+><TABLE
+CLASS="warning"
+BORDER="1"
+WIDTH="100%"
+><TR
+><TD
+ALIGN="CENTER"
+><B
+>Внимание</B
+></TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+><P
+>&#13;   SPL uses class constants since PHP 5.1. Prior releases use global constants
+   in the form <TT
+CLASS="constant"
+><B
+>RIT_LEAVES_ONLY</B
+></TT
+>.
+  </P
+></TD
+></TR
+></TABLE
+></DIV
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+><TT
+CLASS="constant"
+><B
+>RecursiveIteratorIterator::LEAVES_ONLY</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>RecursiveIteratorIterator::SELF_FIRST</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>RecursiveIteratorIterator::CHILD_FIRST</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>CachingIterator::CALL_TOSTRING</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>CachingIterator::CATCH_GET_CHILD</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+></DL
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Содержание</B
+></DT
+><DT
+><A
+HREF="function.arrayiterator-current.html"
+>ArrayIterator::current</A
+>&nbsp;--&nbsp;
+     Return current array entry
+    </DT
+><DT
+><A
+HREF="function.arrayiterator-key.html"
+>ArrayIterator::key</A
+>&nbsp;--&nbsp;
+     Return current array key
+    </DT
+><DT
+><A
+HREF="function.arrayiterator-next.html"
+>ArrayIterator::next</A
+>&nbsp;--&nbsp;
+     Move to next entry
+    </DT
+><DT
+><A
+HREF="function.arrayiterator-rewind.html"
+>ArrayIterator::rewind</A
+>&nbsp;--&nbsp;
+     Rewind array back to the start
+    </DT
+><DT
+><A
+HREF="function.arrayiterator-seek.html"
+>ArrayIterator::seek</A
+>&nbsp;--&nbsp;
+     Seek to position
+    </DT
+><DT
+><A
+HREF="function.arrayiterator-valid.html"
+>ArrayIterator::valid</A
+>&nbsp;--&nbsp;
+     Check whether array contains more entries
+    </DT
+><DT
+><A
+HREF="function.arrayobject-append.html"
+>ArrayObject::append</A
+>&nbsp;--&nbsp;
+     Appends the value
+    </DT
+><DT
+><A
+HREF="function.arrayobject-construct.html"
+>ArrayObject::__construct</A
+>&nbsp;--&nbsp;
+     Construct a new array object
+    </DT
+><DT
+><A
+HREF="function.arrayobject-count.html"
+>ArrayObject::count</A
+>&nbsp;--&nbsp;
+     Return the number of elements in the Iterator
+    </DT
+><DT
+><A
+HREF="function.arrayobject-getiterator.html"
+>ArrayObject::getIterator</A
+>&nbsp;--&nbsp;
+     Create a new iterator from an ArrayObject instance
+    </DT
+><DT
+><A
+HREF="function.arrayobject-offsetexists.html"
+>ArrayObject::offsetExists</A
+>&nbsp;--&nbsp;
+     Returns whether the requested $index exists
+    </DT
+><DT
+><A
+HREF="function.arrayobject-offsetget.html"
+>ArrayObject::offsetGet</A
+>&nbsp;--&nbsp;
+     Returns the value at the specified $index
+    </DT
+><DT
+><A
+HREF="function.arrayobject-offsetset.html"
+>ArrayObject::offsetSet</A
+>&nbsp;--&nbsp;
+     Sets the value at the specified $index to $newval
+    </DT
+><DT
+><A
+HREF="function.arrayobject-offsetunset.html"
+>ArrayObject::offsetUnset</A
+>&nbsp;--&nbsp;
+     Unsets the value at the specified $index
+    </DT
+><DT
+><A
+HREF="function.cachingiterator-hasnext.html"
+>CachingIterator::hasNext</A
+>&nbsp;--&nbsp;
+     Check whether the inner iterator has a valid next element
+    </DT
+><DT
+><A
+HREF="function.cachingiterator-next.html"
+>CachingIterator::next</A
+>&nbsp;--&nbsp;
+     Move the iterator forward
+    </DT
+><DT
+><A
+HREF="function.cachingiterator-rewind.html"
+>CachingIterator::rewind</A
+>&nbsp;--&nbsp;
+     Rewind the iterator
+    </DT
+><DT
+><A
+HREF="function.cachingiterator-tostring.html"
+>CachingIterator::__toString</A
+>&nbsp;--&nbsp;
+     Return the string representation of the current element
+    </DT
+><DT
+><A
+HREF="function.cachingiterator-valid.html"
+>CachingIterator::valid</A
+>&nbsp;--&nbsp;
+     Check whether the current element is valid
+    </DT
+><DT
+><A
+HREF="function.cachingrecursiveiterator-getchildren.html"
+>CachingRecursiveIterator::getChildren</A
+>&nbsp;--&nbsp;
+     Return the inner iterator's children as a CachingRecursiveIterator
+    </DT
+><DT
+><A
+HREF="function.cachingrecursiveiterator-haschildren.html"
+>CachingRecursiveIterator::hasChildren</A
+>&nbsp;--&nbsp;
+     Check whether the current element of the inner iterator has children
+    </DT
+><DT
+><A
+HREF="function.directoryiterator-construct.html"
+>DirectoryIterator::__construct</A
+>&nbsp;--&nbsp;
+     Constructs a new dir iterator from a path
+    </DT
+><DT
+><A
+HREF="function.directoryiterator-current.html"
+>DirectoryIterator::current</A
+>&nbsp;--&nbsp;
+     Return this (needed for Iterator interface)
+    </DT
+><DT
+><A
+HREF="function.directoryiterator-getatime.html"
+>DirectoryIterator::getATime</A
+>&nbsp;--&nbsp;
+     Get last access time of file
+    </DT
+><DT
+><A
+HREF="function.directoryiterator-getctime.html"
+>DirectoryIterator::getCTime</A
+>&nbsp;--&nbsp;
+     Get inode modification time of file
+    </DT
+><DT
+><A
+HREF="function.directoryiterator-getchildren.html"
+>DirectoryIterator::getChildren</A
+>&nbsp;--&nbsp;
+     Returns an iterator for the current entry if it is a directory
+    </DT
+><DT
+><A
+HREF="function.directoryiterator-getfilename.html"
+>DirectoryIterator::getFilename</A
+>&nbsp;--&nbsp;
+     Return filename of current dir entry
+    </DT
+><DT
+><A
+HREF="function.directoryiterator-getgroup.html"
+>DirectoryIterator::getGroup</A
+>&nbsp;--&nbsp;
+     Get file group
+    </DT
+><DT
+><A
+HREF="function.directoryiterator-getinode.html"
+>DirectoryIterator::getInode</A
+>&nbsp;--&nbsp;
+     Get file inode
+    </DT
+><DT
+><A
+HREF="function.directoryiterator-getmtime.html"
+>DirectoryIterator::getMTime</A
+>&nbsp;--&nbsp;
+     Get last modification time of file
+    </DT
+><DT
+><A
+HREF="function.directoryiterator-getowner.html"
+>DirectoryIterator::getOwner</A
+>&nbsp;--&nbsp;
+     Get file owner
+    </DT
+><DT
+><A
+HREF="function.directoryiterator-getpath.html"
+>DirectoryIterator::getPath</A
+>&nbsp;--&nbsp;
+     Return directory path
+    </DT
+><DT
+><A
+HREF="function.directoryiterator-getpathname.html"
+>DirectoryIterator::getPathname</A
+>&nbsp;--&nbsp;
+     Return path and filename of current dir entry
+    </DT
+><DT
+><A
+HREF="function.directoryiterator-getperms.html"
+>DirectoryIterator::getPerms</A
+>&nbsp;--&nbsp;
+     Get file permissions
+    </DT
+><DT
+><A
+HREF="function.directoryiterator-getsize.html"
+>DirectoryIterator::getSize</A
+>&nbsp;--&nbsp;
+     Get file size
+    </DT
+><DT
+><A
+HREF="function.directoryiterator-gettype.html"
+>DirectoryIterator::getType</A
+>&nbsp;--&nbsp;
+     Get file type
+    </DT
+><DT
+><A
+HREF="function.directoryiterator-isdir.html"
+>DirectoryIterator::isDir</A
+>&nbsp;--&nbsp;
+     Returns true if file is directory
+    </DT
+><DT
+><A
+HREF="function.directoryiterator-isdot.html"
+>DirectoryIterator::isDot</A
+>&nbsp;--&nbsp;
+     Returns true if current entry is '.' or '..'
+    </DT
+><DT
+><A
+HREF="function.directoryiterator-isexecutable.html"
+>DirectoryIterator::isExecutable</A
+>&nbsp;--&nbsp;
+     Returns true if file is executable
+    </DT
+><DT
+><A
+HREF="function.directoryiterator-isfile.html"
+>DirectoryIterator::isFile</A
+>&nbsp;--&nbsp;
+     Returns true if file is a regular file
+    </DT
+><DT
+><A
+HREF="function.directoryiterator-islink.html"
+>DirectoryIterator::isLink</A
+>&nbsp;--&nbsp;
+     Returns true if file is symbolic link
+    </DT
+><DT
+><A
+HREF="function.directoryiterator-isreadable.html"
+>DirectoryIterator::isReadable</A
+>&nbsp;--&nbsp;
+     Returns true if file can be read
+    </DT
+><DT
+><A
+HREF="function.directoryiterator-iswritable.html"
+>DirectoryIterator::isWritable</A
+>&nbsp;--&nbsp;
+     Returns true if file can be written
+    </DT
+><DT
+><A
+HREF="function.directoryiterator-key.html"
+>DirectoryIterator::key</A
+>&nbsp;--&nbsp;
+     Return current dir entry
+    </DT
+><DT
+><A
+HREF="function.directoryiterator-next.html"
+>DirectoryIterator::next</A
+>&nbsp;--&nbsp;
+     Move to next entry
+    </DT
+><DT
+><A
+HREF="function.directoryiterator-rewind.html"
+>DirectoryIterator::rewind</A
+>&nbsp;--&nbsp;
+     Rewind dir back to the start
+    </DT
+><DT
+><A
+HREF="function.directoryiterator-valid.html"
+>DirectoryIterator::valid</A
+>&nbsp;--&nbsp;
+     Check whether dir contains more entries
+    </DT
+><DT
+><A
+HREF="function.filteriterator-current.html"
+>FilterIterator::current</A
+>&nbsp;--&nbsp;
+     Get the current element value
+    </DT
+><DT
+><A
+HREF="function.filteriterator-getinneriterator.html"
+>FilterIterator::getInnerIterator</A
+>&nbsp;--&nbsp;
+     Get the inner iterator
+    </DT
+><DT
+><A
+HREF="function.filteriterator-key.html"
+>FilterIterator::key</A
+>&nbsp;--&nbsp;
+     Get the current key
+    </DT
+><DT
+><A
+HREF="function.filteriterator-next.html"
+>FilterIterator::next</A
+>&nbsp;--&nbsp;
+     Move the iterator forward
+    </DT
+><DT
+><A
+HREF="function.filteriterator-rewind.html"
+>FilterIterator::rewind</A
+>&nbsp;--&nbsp;
+     Rewind the iterator
+    </DT
+><DT
+><A
+HREF="function.filteriterator-valid.html"
+>FilterIterator::valid</A
+>&nbsp;--&nbsp;
+     Check whether the current element is valid
+    </DT
+><DT
+><A
+HREF="function.limititerator-getposition.html"
+>LimitIterator::getPosition</A
+>&nbsp;--&nbsp;
+     Return the current position
+    </DT
+><DT
+><A
+HREF="function.limititerator-next.html"
+>LimitIterator::next</A
+>&nbsp;--&nbsp;
+     Move the iterator forward
+    </DT
+><DT
+><A
+HREF="function.limititerator-rewind.html"
+>LimitIterator::rewind</A
+>&nbsp;--&nbsp;
+     Rewind the iterator to the specified starting offset
+    </DT
+><DT
+><A
+HREF="function.limititerator-seek.html"
+>LimitIterator::seek</A
+>&nbsp;--&nbsp;
+     Seek to the given position
+    </DT
+><DT
+><A
+HREF="function.limititerator-valid.html"
+>LimitIterator::valid</A
+>&nbsp;--&nbsp;
+     Check whether the current element is valid
+    </DT
+><DT
+><A
+HREF="function.parentiterator-getchildren.html"
+>ParentIterator::getChildren</A
+>&nbsp;--&nbsp;
+     Return the inner iterator's children contained in a ParentIterator
+    </DT
+><DT
+><A
+HREF="function.parentiterator-haschildren.html"
+>ParentIterator::hasChildren</A
+>&nbsp;--&nbsp;
+     Check whether the inner iterator's current element has children
+    </DT
+><DT
+><A
+HREF="function.parentiterator-next.html"
+>ParentIterator::next</A
+>&nbsp;--&nbsp;
+     Move the iterator forward
+    </DT
+><DT
+><A
+HREF="function.parentiterator-rewind.html"
+>ParentIterator::rewind</A
+>&nbsp;--&nbsp;
+     Rewind the iterator
+    </DT
+><DT
+><A
+HREF="function.recursivedirectoryiterator-getchildren.html"
+>RecursiveDirectoryIterator::getChildren</A
+>&nbsp;--&nbsp;
+     Returns an iterator for the current entry if it is a directory
+    </DT
+><DT
+><A
+HREF="function.recursivedirectoryiterator-haschildren.html"
+>RecursiveDirectoryIterator::hasChildren</A
+>&nbsp;--&nbsp;
+     Returns whether current entry is a directory and not '.' or '..'
+    </DT
+><DT
+><A
+HREF="function.recursivedirectoryiterator-key.html"
+>RecursiveDirectoryIterator::key</A
+>&nbsp;--&nbsp;
+     Return path and filename of current dir entry
+    </DT
+><DT
+><A
+HREF="function.recursivedirectoryiterator-next.html"
+>RecursiveDirectoryIterator::next</A
+>&nbsp;--&nbsp;
+     Move to next entry
+    </DT
+><DT
+><A
+HREF="function.recursivedirectoryiterator-rewind.html"
+>RecursiveDirectoryIterator::rewind</A
+>&nbsp;--&nbsp;
+     Rewind dir back to the start
+    </DT
+><DT
+><A
+HREF="function.recursiveiteratoriterator-current.html"
+>RecursiveIteratorIterator::current</A
+>&nbsp;--&nbsp;
+     Access the current element value
+    </DT
+><DT
+><A
+HREF="function.recursiveiteratoriterator-getdepth.html"
+>RecursiveIteratorIterator::getDepth</A
+>&nbsp;--&nbsp;
+     Get the current depth of the recursive iteration
+    </DT
+><DT
+><A
+HREF="function.recursiveiteratoriterator-getsubiterator.html"
+>RecursiveIteratorIterator::getSubIterator</A
+>&nbsp;--&nbsp;
+     The current active sub iterator
+    </DT
+><DT
+><A
+HREF="function.recursiveiteratoriterator-key.html"
+>RecursiveIteratorIterator::key</A
+>&nbsp;--&nbsp;
+     Access the current key
+    </DT
+><DT
+><A
+HREF="function.recursiveiteratoriterator-next.html"
+>RecursiveIteratorIterator::next</A
+>&nbsp;--&nbsp;
+     Move forward to the next element
+    </DT
+><DT
+><A
+HREF="function.recursiveiteratoriterator-rewind.html"
+>RecursiveIteratorIterator::rewind</A
+>&nbsp;--&nbsp;
+     Rewind the iterator to the first element of the top level inner iterator
+    </DT
+><DT
+><A
+HREF="function.recursiveiteratoriterator-valid.html"
+>RecursiveIteratorIterator::valid</A
+>&nbsp;--&nbsp;
+     Check whether the current position is valid
+    </DT
+><DT
+><A
+HREF="function.simplexmliterator-current.html"
+>SimpleXMLIterator::current</A
+>&nbsp;--&nbsp;
+     Return current SimpleXML entry
+    </DT
+><DT
+><A
+HREF="function.simplexmliterator-getchildren.html"
+>SimpleXMLIterator::getChildren</A
+>&nbsp;--&nbsp;
+     Returns an iterator for the current entry if it is a SimpleXML object
+    </DT
+><DT
+><A
+HREF="function.simplexmliterator-haschildren.html"
+>SimpleXMLIterator::hasChildren</A
+>&nbsp;--&nbsp;
+     Returns whether current entry is a SimpleXML object
+    </DT
+><DT
+><A
+HREF="function.simplexmliterator-key.html"
+>SimpleXMLIterator::key</A
+>&nbsp;--&nbsp;
+     Return current SimpleXML key
+    </DT
+><DT
+><A
+HREF="function.simplexmliterator-next.html"
+>SimpleXMLIterator::next</A
+>&nbsp;--&nbsp;
+     Move to next entry
+    </DT
+><DT
+><A
+HREF="function.simplexmliterator-rewind.html"
+>SimpleXMLIterator::rewind</A
+>&nbsp;--&nbsp;
+     Rewind SimpleXML back to the start
+    </DT
+><DT
+><A
+HREF="function.simplexmliterator-valid.html"
+>SimpleXMLIterator::valid</A
+>&nbsp;--&nbsp;
+     Check whether SimpleXML contains more entries
+    </DT
+><DT
+><A
+HREF="function.class-implements.html"
+>class_implements</A
+>&nbsp;--&nbsp;
+   Return the interfaces which are implemented by the given class
+  </DT
+><DT
+><A
+HREF="function.class-parents.html"
+>class_parents</A
+>&nbsp;--&nbsp;
+   Return the parent classes of the given class
+  </DT
+><DT
+><A
+HREF="function.iterator-count.html"
+>iterator_count</A
+>&nbsp;--&nbsp;
+     Count the elements in an iterator
+    </DT
+><DT
+><A
+HREF="function.iterator-to-array.html"
+>iterator_to_array</A
+>&nbsp;--&nbsp;
+     Copy the iterator into an array
+    </DT
+><DT
+><A
+HREF="function.spl-autoload-call.html"
+>spl_autoload_call</A
+>&nbsp;--&nbsp;
+     Try all registered __autoload() function to load the requested class
+    </DT
+><DT
+><A
+HREF="function.spl-autoload-extensions.html"
+>spl_autoload_extensions</A
+>&nbsp;--&nbsp;
+     Register and return default file extensions for spl_autoload
+    </DT
+><DT
+><A
+HREF="function.spl-autoload-functions.html"
+>spl_autoload_functions</A
+>&nbsp;--&nbsp;
+     Return all registered __autoload() functions
+    </DT
+><DT
+><A
+HREF="function.spl-autoload-register.html"
+>spl_autoload_register</A
+>&nbsp;--&nbsp;
+     Register given function as __autoload() implementation
+    </DT
+><DT
+><A
+HREF="function.spl-autoload-unregister.html"
+>spl_autoload_unregister</A
+>&nbsp;--&nbsp;
+     Unregister given function as __autoload() implementation
+    </DT
+><DT
+><A
+HREF="function.spl-autoload.html"
+>spl_autoload</A
+>&nbsp;--&nbsp;
+     Default implementation for __autoload()
+    </DT
+><DT
+><A
+HREF="function.spl-classes.html"
+>spl_classes</A
+>&nbsp;--&nbsp;
+     Return available SPL classes
+    </DT
+></DL
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="function.socket-write.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Начало</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="function.arrayiterator-current.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>socket_write</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="funcref.html"
+ACCESSKEY="U"
+>Уровень выше</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>ArrayIterator::current</TD
+></TR
+></TABLE
+></DIV
+></div></center></div></td>
+			<td><div style="display:none; width:200px;" id="o3" name="o3"><script charset="windows-1251" type="text/javascript" src="http://www.ozon.ru/PartnerTwinerNew.aspx?revident=bea9126b-c8e1-4bf5-b6d8-9a057f8feac6" ></script></div><script>o = document.getElementById('o3'); if(o) { var s = o.innerHTML; s = s.replace(/F6F6F6/gi,"FFFFFF"); o.innerHTML = s.replace(/padding-top: 10px; padding-bottom: 10px;/,"display:none;"); o.style.display = 'block'; } </script><br><div style="margin: 10px;"><script type="text/javascript"><!--
+google_ad_client = "pub-4093271809023514";
+/* 120x600, создано 01.11.2008 */
+google_ad_slot = "0438855731";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div></td>
+    		</tr>
+  		</table>
+    </td>
+  </tr>
+  <tr valign='bottom' height='1%'>
+  <td>      <table width=100% cellspacing=0 cellpadding=5 border=0 bgcolor=#9999CC>
+        <tr valign=center>
+          <td class='phpcopyright' width='45%' align='left'>&nbsp;&nbsp;Engine <a  href="http://www.mnogosearch.org/">MnoGoSearch</a></td>
+          <td class='phpcopyright' width='10%' align='center'>2007-2010 &copy <a  href="mailto:webmaster@php.ru">PHP.RU</a></td>
+          <td class='phpcopyright' width='45%' align='right' >Powered by <a target="_blank" href="http://odware.ru">ODware</a> <a HREF="http://440hz.ru">440Hz</a> &nbsp;&nbsp;</td>
+        </tr>
+      </table>
+
+    <div style="text-align: right; padding: 5px">
+		<!--LiveInternet counter-->
+		<script type="text/javascript">document.write('<a href="http://www.liveinternet.ru/click" target=_blank><img src="http://counter.yadro.ru/hit?t53.6;r' + escape(document.referrer) + ((typeof(screen)=='undefined')?'':';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ';u' + escape(document.URL) +';i' + escape('Жж'+document.title.substring(0,80)) + ';' + Math.random() + '" border=0 width=88 height=31 alt="" title="LiveInternet: показано число просмотров и посетителей за 24 часа"><\/a>');
+		</script>
+		<!--/LiveInternet-->
+		<!-- SpyLOG -->
+		<script src="http://tools.spylog.ru/counter2.2.js" type="text/javascript" id="spylog_code" counter="830950" ></script>
+		<noscript><a href="http://u8309.50.spylog.com/cnt?cid=830950&f=3&p=0" target="_blank"><img src="http://u8309.50.spylog.com/cnt?cid=830950&p=0&f=4" alt='SpyLOG' border='0' width=88 height=31 ></a>
+		</noscript>
+		<!--/ SpyLOG -->
+	</div>
+</td>
+  </tr>
+</table>
+
+<script>
+<!--
+document.SEARCH.QS.focus();
+// --></script>
+
+<!-- 
+	как же вы все это читаете?
+	440hz 
+-->
+
+</body>
+</html>

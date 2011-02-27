@@ -1,0 +1,810 @@
+<!-- 
+
+     HTML dropped by Zend Guard Compressor 4.2
+
+     php.ru team: mz, az, yuri, vb, cyxapuk, 440hz, administrator
+     2004-2007 (c) expi-web.com 
+     2007-2008 (c) odware.com 
+     0101-1010 (с) 440hz
+
+     2b|~2b=?
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EHOT тут всё пожрал ! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="alternate" type="application/rss+xml" title="php.ru/forum - последние сообщения" href="http://www.php.ru/forum/rss.php">
+<link rel="SHORTCUT ICON" href="http://www.php.ru/favicon.ico" />
+<META name="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<meta http-equiv="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<META name="keywords" content="php, php5, apache, mysql, session">
+<meta http-equiv="keywords" content="php, php5, apache, mysql, session">
+<title>php.ru - pdo_dbh_t definition</title>
+<LINK REL="stylesheet" TYPE="text/css" HREF="http://www.php.ru/index.css">
+<script language="JavaScript" src="http://www.php.ru/ajax/ajax.js"></script>
+</head>
+<body>
+
+<table height='100%' width='100%' cellspacing='0' cellpadding='0'>
+  <tr height='99%' valign='top'>
+    <td align='center'>
+		
+		<table style='margin-top: 4px' width=100% cellspacing=0 cellpadding=3>
+   		<tr>
+     		<td>PHP - <a href="http://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BA%D1%80%D0%BE%D0%BD%D0%B8%D0%BC" target=_blank class=lnk>рекурсивный акроним</a> словосочетания &laquo;<a href="/manual/introduction.html" class=lnk>PHP: Hypertext Preprocessor</a>&raquo;</td>
+     	</tr>
+   		</table>
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/subsys_ajax.js"></script>
+		<!--
+
+		commet by 440hz
+		20.10.2007
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/pu_search.js"></script>
+
+		-->
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/cz.js?a=b"></script>
+
+		<table style='margin-top: 5px' width=100% bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0>
+   	 	<form name=SEARCH method=GET action="http://www.php.ru/search/?SID=p0gr256ry5biu0w6" onsubmit="return puSubmit();">
+	  	<input type=hidden name=PAGE value=1>
+  		<tr>
+    		<td width='1' valign='middle'> 
+    		   <a href='/'><img src="http://www.php.ru/;-)/logo.gif" width=133 height=93 alt="php" border=0 hspace=10 vspace=0></a>
+			 </td>
+		    <td width='100%' valign='middle'>
+		       <!--
+			   
+				commet by 440hz
+				20.10.2007
+
+			   <div id='pu_search' class='pu_search'></div>
+		       <div id='pu_search_description' class='pu_search_decription'></div>
+			   
+			   -->
+        	 <input type=text style='width:99%; margin: 10px' maxlength='200' name='QS' class='in' id='query' autocomplete='off' value="" />
+    		</td>
+		  </tr>
+   		<tr bgcolor='#666699' valign='middle'>
+			<td style='border-top: 1px solid #333366;'><br /></td>
+    		<td style='border-top: 1px solid #333366;'><div style="padding: 4px 4px 4px 10px; height: 24px; color: #CCCCFF;" id="stat">Хто там?<script>doLoadCZ('stat','stat');</script></div></td>
+  		</tr>
+		</form>
+		</table>
+		<table id="menu" cellspaciong=0 cellpadding=3>
+<tr>
+<td><a href="/" class=current>Главная</a></td>
+<td><a href="/download/" class=current>Скачать</a></td>
+<td><a href="/doc/" class=current>Документация</a></td>
+<td><a href="/forum/" class=current>Форум</a></td>
+<td width=100% align=right><a href="/phpinfo.html" class=current>phpinfo()</a></td>
+</tr>
+</table>
+
+		
+<!--  AdRiver code START. Type:728x90 Site: php.ru PZ: 0 BN: 1 -->
+<script language="javascript" type="text/javascript"><!--
+var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+var ar_Tail='unknown'; if (document.referrer) ar_Tail = escape(document.referrer);
+document.write(
+'<iframe src="http://ad.adriver.ru/cgi-bin/erle.cgi?'
++ 'sid=148680&bn=1&target=blank&bt=36&pz=0&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail
++ '" frameborder=0 vspace=0 hspace=0 width=728 height=90 marginwidth=0'
++ ' marginheight=0 scrolling=no></iframe>');
+//--></script>
+<noscript>
+<a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" target=_blank>
+<img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" alt="-AdRiver-" border=0 width=728 height=90></a>
+</noscript>
+<!--  AdRiver code END  -->
+
+
+  		<table width='100%' cellspacing='0' cellpadding='0'>
+    		<tr valign='top'>
+      		<td width=100%><div style="margin: 10px 10px 10px 50px;"><center><div style="width: 800px; text-align: left"><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Руководство по PHP</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="internals.pdo.packaging.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Глава 45. PDO Driver How-To</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="internals.pdo.pdo_stmt_t.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="sect1"
+><H1
+CLASS="sect1"
+><A
+NAME="internals.pdo.pdo-dbh-t"
+>pdo_dbh_t definition</A
+></H1
+><P
+>&#13;  All fields should be treated as read-only by the driver, unless explicitly
+  stated otherwise.
+ </P
+><DIV
+CLASS="figure"
+><A
+NAME="AEN206226"
+></A
+><P
+><B
+>Рисунок 45-1. pdo_dbh_t</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="c"
+>/* represents a connection to a database */
+struct _pdo_dbh_t {
+    /* driver specific methods */
+    struct pdo_dbh_methods *methods;    <A
+NAME="internals.pdo.dbh.co.methods"
+><IMG
+SRC="../images/callouts/1.gif"
+HSPACE="0"
+VSPACE="0"
+BORDER="0"
+ALT="(1)"></A
+>
+    /* driver specific data */
+    void *driver_data;                  <A
+NAME="internals.pdo.dbh.co.driver-data"
+><IMG
+SRC="../images/callouts/2.gif"
+HSPACE="0"
+VSPACE="0"
+BORDER="0"
+ALT="(2)"></A
+>
+
+    /* credentials */
+    char *username, *password;          <A
+NAME="internals.pdo.dbh.co.credentials"
+><IMG
+SRC="../images/callouts/3.gif"
+HSPACE="0"
+VSPACE="0"
+BORDER="0"
+ALT="(3)"></A
+>
+
+    /* if true, then data stored and pointed at by this handle must all be
+     * persistently allocated */
+    unsigned is_persistent:1;           <A
+NAME="internals.pdo.dbh.co.is-persist"
+><IMG
+SRC="../images/callouts/4.gif"
+HSPACE="0"
+VSPACE="0"
+BORDER="0"
+ALT="(4)"></A
+>
+
+    /* if true, driver should act as though a COMMIT were executed between
+     * each executed statement; otherwise, COMMIT must be carried out manually
+     * */
+    unsigned auto_commit:1;             <A
+NAME="internals.pdo.dbh.co.auto-commit"
+><IMG
+SRC="../images/callouts/5.gif"
+HSPACE="0"
+VSPACE="0"
+BORDER="0"
+ALT="(5)"></A
+>
+
+    /* if true, the driver requires that memory be allocated explicitly for
+     * the columns that are returned */
+    unsigned alloc_own_columns:1;       <A
+NAME="internals.pdo.dbh.co.alloc-own"
+><IMG
+SRC="../images/callouts/6.gif"
+HSPACE="0"
+VSPACE="0"
+BORDER="0"
+ALT="(6)"></A
+>
+
+    /* if true, commit or rollBack is allowed to be called */
+    unsigned in_txn:1;                  
+
+    /* max length a single character can become after correct quoting */
+    unsigned max_escaped_char_length:3;   <A
+NAME="internals.pdo.dbh.co.max-esc"
+><IMG
+SRC="../images/callouts/7.gif"
+HSPACE="0"
+VSPACE="0"
+BORDER="0"
+ALT="(7)"></A
+>
+
+    /* data source string used to open this handle */
+    const char *data_source;            <A
+NAME="internals.pdo.dbh.co.dsn"
+><IMG
+SRC="../images/callouts/8.gif"
+HSPACE="0"
+VSPACE="0"
+BORDER="0"
+ALT="(8)"></A
+>
+    unsigned long data_source_len;
+
+    /* the global error code. */
+    pdo_error_type error_code;          <A
+NAME="internals.pdo.dbh.co.error-code"
+><IMG
+SRC="../images/callouts/9.gif"
+HSPACE="0"
+VSPACE="0"
+BORDER="0"
+ALT="(9)"></A
+>
+
+    enum pdo_case_conversion native_case<A
+NAME="internals.pdo.dbh.co-ncase"
+><IMG
+SRC="../images/callouts/10.gif"
+HSPACE="0"
+VSPACE="0"
+BORDER="0"
+ALT="(10)"></A
+>, desired_case;
+};</PRE
+></TD
+></TR
+></TABLE
+></DIV
+><DIV
+CLASS="calloutlist"
+><DL
+COMPACT="COMPACT"
+><DT
+><A
+HREF="internals.pdo.pdo-dbh-t.html#internals.pdo.dbh.co.methods"
+><IMG
+SRC="../images/callouts/1.gif"
+HSPACE="0"
+VSPACE="0"
+BORDER="0"
+ALT="(1)"></A
+></DT
+><DD
+>&#13;    The driver <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>must</I
+></SPAN
+> set this during
+    <B
+CLASS="function"
+>SKEL_handle_factory()</B
+>.
+   </DD
+><DT
+><A
+HREF="internals.pdo.pdo-dbh-t.html#internals.pdo.dbh.co.driver-data"
+><IMG
+SRC="../images/callouts/2.gif"
+HSPACE="0"
+VSPACE="0"
+BORDER="0"
+ALT="(2)"></A
+></DT
+><DD
+>&#13;    This item is for use by the driver; the intended usage is to store a
+    pointer (during <B
+CLASS="function"
+>SKEL_handle_factory()</B
+>) 
+    to whatever instance data is required to maintain a connection to
+    the database.
+   </DD
+><DT
+><A
+HREF="internals.pdo.pdo-dbh-t.html#internals.pdo.dbh.co.credentials"
+><IMG
+SRC="../images/callouts/3.gif"
+HSPACE="0"
+VSPACE="0"
+BORDER="0"
+ALT="(3)"></A
+></DT
+><DD
+>&#13;    The username and password that were passed into the PDO constructor.
+    The driver should use these values when it initiates a connection to the
+    database.
+   </DD
+><DT
+><A
+HREF="internals.pdo.pdo-dbh-t.html#internals.pdo.dbh.co.is-persist"
+><IMG
+SRC="../images/callouts/4.gif"
+HSPACE="0"
+VSPACE="0"
+BORDER="0"
+ALT="(4)"></A
+></DT
+><DD
+>&#13;    If this is set to 1, then any data that is referenced by the
+    dbh, including whatever structure your driver allocates,
+    <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>MUST</I
+></SPAN
+> be allocated persistently.  This is easy to
+    achieve; rather than using the usual <B
+CLASS="function"
+>emalloc()</B
+> simply
+    use <B
+CLASS="function"
+>pemalloc()</B
+> and pass the value of this flag as the
+    last parameter.  Failure to use the appropriate kind of memory can lead
+    to serious memory faults, resulting (in the best case) a hard crash, and
+    in the worst case, an exploitable memory problem.
+   </DD
+><DD
+><P
+>&#13;    If, for whatever reason, your driver is not suitable to run persistently,
+    you <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>MUST</I
+></SPAN
+> check this flag in your
+    <B
+CLASS="function"
+>SKEL_handle_factory()</B
+> and raise an appropriate error.
+   </P
+></DD
+><DT
+><A
+HREF="internals.pdo.pdo-dbh-t.html#internals.pdo.dbh.co.auto-commit"
+><IMG
+SRC="../images/callouts/5.gif"
+HSPACE="0"
+VSPACE="0"
+BORDER="0"
+ALT="(5)"></A
+></DT
+><DD
+>&#13;    You should check this value in your <B
+CLASS="function"
+>SKEL_handle_doer()</B
+>
+    and <B
+CLASS="function"
+>SKEL_stmt_execute()</B
+> functions; if it evaluates to
+    true, you must attempt to commit the query now.  Most database
+    implementations offer an auto-commit mode that handles this automatically.
+   </DD
+><DT
+><A
+HREF="internals.pdo.pdo-dbh-t.html#internals.pdo.dbh.co.alloc-own"
+><IMG
+SRC="../images/callouts/6.gif"
+HSPACE="0"
+VSPACE="0"
+BORDER="0"
+ALT="(6)"></A
+></DT
+><DD
+>&#13;    If your database client library API operates by fetching data into a
+    caller-supplied buffer, you should set this flag to 1 during your
+    <B
+CLASS="function"
+>SKEL_handle_factory()</B
+>.  When set, PDO will call your
+    <B
+CLASS="function"
+>SKEL_stmt_describer()</B
+> earlier that it would
+    otherwise.  This early call allows you to determine those buffer sizes
+    and issue appropriate calls to the database client library.
+   </DD
+><DD
+><P
+>&#13;    If your database client library API simply returns pointers to its own
+    internal buffers for you to copy after each fetch call, you should leave
+    this value set to 0.
+   </P
+></DD
+><DT
+><A
+HREF="internals.pdo.pdo-dbh-t.html#internals.pdo.dbh.co.max-esc"
+><IMG
+SRC="../images/callouts/7.gif"
+HSPACE="0"
+VSPACE="0"
+BORDER="0"
+ALT="(7)"></A
+></DT
+><DD
+>&#13;    If your driver doesn't support native prepared statements
+    (<VAR
+CLASS="parameter"
+>supports_placeholders</VAR
+> is set to
+    <TT
+CLASS="constant"
+><B
+>PDO_PLACEHOLDER_NONE</B
+></TT
+>), you must set
+    this value to the maximum length that can be taken up by a single
+    character when it is quoted by your
+    <B
+CLASS="function"
+>SKEL_handle_quoter()</B
+> function.  This value is used to
+    calculate the amount of buffer space required when PDO it executes the
+    statement.
+   </DD
+><DT
+><A
+HREF="internals.pdo.pdo-dbh-t.html#internals.pdo.dbh.co.dsn"
+><IMG
+SRC="../images/callouts/8.gif"
+HSPACE="0"
+VSPACE="0"
+BORDER="0"
+ALT="(8)"></A
+></DT
+><DD
+>&#13;    This holds the value of the DSN that was passed into the PDO
+    constructor.  If your driver implementation needed to modify the DSN for
+    whatever reason, it should update this member during
+    <B
+CLASS="function"
+>SKEL_handle_factory()</B
+>.  Modifying this member should
+    be avoided.  If you do change it, you must ensure that
+    <VAR
+CLASS="parameter"
+>data_source_len</VAR
+> is also correct.
+   </DD
+><DT
+><A
+HREF="internals.pdo.pdo-dbh-t.html#internals.pdo.dbh.co.error-code"
+><IMG
+SRC="../images/callouts/9.gif"
+HSPACE="0"
+VSPACE="0"
+BORDER="0"
+ALT="(9)"></A
+></DT
+><DD
+>&#13;    Whenever an error occurs during a call to one of your driver methods,
+    you should set this member to the SQLSTATE code that best describes the
+    error and return an error.  In this HOW-TO, the suggested practice is to
+    call <B
+CLASS="function"
+>SKEL_handle_error()</B
+> when an error is detected,
+    and have it set the error code.
+   </DD
+><DT
+><A
+HREF="internals.pdo.pdo-dbh-t.html#internals.pdo.dbh.co-ncase"
+><IMG
+SRC="../images/callouts/10.gif"
+HSPACE="0"
+VSPACE="0"
+BORDER="0"
+ALT="(10)"></A
+></DT
+><DD
+>&#13;    Your driver should set this during
+    <B
+CLASS="function"
+>SKEL_handle_factory()</B
+>; the value should reflect how
+    the database returns the names of the columns in result sets.  If the
+    name matches the case that was used in the query, set it to
+    <TT
+CLASS="constant"
+><B
+>PDO_CASE_NATURAL</B
+></TT
+> (this is actually the default).
+    If the column names are always returned in upper case, set it to
+    <TT
+CLASS="constant"
+><B
+>PDO_CASE_UPPER</B
+></TT
+>.  If the column names are always
+    return in lower case, set it to <TT
+CLASS="constant"
+><B
+>PDO_CASE_LOWER</B
+></TT
+>.
+    The value you set it used to determine if PDO should perform case
+    folding when the user sets the <TT
+CLASS="constant"
+><B
+>PDO_ATTR_CASE</B
+></TT
+>
+    attribute.
+   </DD
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="internals.pdo.packaging.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Начало</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="internals.pdo.pdo_stmt_t.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Packaging and distribution</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="internals.pdo.html"
+ACCESSKEY="U"
+>Уровень выше</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>pdo_stmt_t definition</TD
+></TR
+></TABLE
+></DIV
+></div></center></div></td>
+			<td><div style="display:none; width:200px;" id="o3" name="o3"><script charset="windows-1251" type="text/javascript" src="http://www.ozon.ru/PartnerTwinerNew.aspx?revident=bea9126b-c8e1-4bf5-b6d8-9a057f8feac6" ></script></div><script>o = document.getElementById('o3'); if(o) { var s = o.innerHTML; s = s.replace(/F6F6F6/gi,"FFFFFF"); o.innerHTML = s.replace(/padding-top: 10px; padding-bottom: 10px;/,"display:none;"); o.style.display = 'block'; } </script><br><div style="margin: 10px;"><script type="text/javascript"><!--
+google_ad_client = "pub-4093271809023514";
+/* 120x600, создано 01.11.2008 */
+google_ad_slot = "0438855731";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div></td>
+    		</tr>
+  		</table>
+    </td>
+  </tr>
+  <tr valign='bottom' height='1%'>
+  <td>      <table width=100% cellspacing=0 cellpadding=5 border=0 bgcolor=#9999CC>
+        <tr valign=center>
+          <td class='phpcopyright' width='45%' align='left'>&nbsp;&nbsp;Engine <a  href="http://www.mnogosearch.org/">MnoGoSearch</a></td>
+          <td class='phpcopyright' width='10%' align='center'>2007-2010 &copy <a  href="mailto:webmaster@php.ru">PHP.RU</a></td>
+          <td class='phpcopyright' width='45%' align='right' >Powered by <a target="_blank" href="http://odware.ru">ODware</a> <a HREF="http://440hz.ru">440Hz</a> &nbsp;&nbsp;</td>
+        </tr>
+      </table>
+
+    <div style="text-align: right; padding: 5px">
+		<!--LiveInternet counter-->
+		<script type="text/javascript">document.write('<a href="http://www.liveinternet.ru/click" target=_blank><img src="http://counter.yadro.ru/hit?t53.6;r' + escape(document.referrer) + ((typeof(screen)=='undefined')?'':';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ';u' + escape(document.URL) +';i' + escape('Жж'+document.title.substring(0,80)) + ';' + Math.random() + '" border=0 width=88 height=31 alt="" title="LiveInternet: показано число просмотров и посетителей за 24 часа"><\/a>');
+		</script>
+		<!--/LiveInternet-->
+		<!-- SpyLOG -->
+		<script src="http://tools.spylog.ru/counter2.2.js" type="text/javascript" id="spylog_code" counter="830950" ></script>
+		<noscript><a href="http://u8309.50.spylog.com/cnt?cid=830950&f=3&p=0" target="_blank"><img src="http://u8309.50.spylog.com/cnt?cid=830950&p=0&f=4" alt='SpyLOG' border='0' width=88 height=31 ></a>
+		</noscript>
+		<!--/ SpyLOG -->
+	</div>
+</td>
+  </tr>
+</table>
+
+<script>
+<!--
+document.SEARCH.QS.focus();
+// --></script>
+
+<!-- 
+	как же вы все это читаете?
+	440hz 
+-->
+
+</body>
+</html>

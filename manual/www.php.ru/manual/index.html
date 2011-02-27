@@ -1,0 +1,1839 @@
+<!-- 
+
+     HTML dropped by Zend Guard Compressor 4.2
+
+     php.ru team: mz, az, yuri, vb, cyxapuk, 440hz, administrator
+     2004-2007 (c) expi-web.com 
+     2007-2008 (c) odware.com 
+     0101-1010 (с) 440hz
+
+     2b|~2b=?
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EHOT тут всё пожрал ! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="alternate" type="application/rss+xml" title="php.ru/forum - последние сообщения" href="http://www.php.ru/forum/rss.php">
+<link rel="SHORTCUT ICON" href="http://www.php.ru/favicon.ico" />
+<META name="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<meta http-equiv="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<META name="keywords" content="php, php5, apache, mysql, session">
+<meta http-equiv="keywords" content="php, php5, apache, mysql, session">
+<title>php.ru - Руководство по PHP</title>
+<LINK REL="stylesheet" TYPE="text/css" HREF="http://www.php.ru/index.css">
+<script language="JavaScript" src="http://www.php.ru/ajax/ajax.js"></script>
+</head>
+<body>
+
+<table height='100%' width='100%' cellspacing='0' cellpadding='0'>
+  <tr height='99%' valign='top'>
+    <td align='center'>
+		
+		<table style='margin-top: 4px' width=100% cellspacing=0 cellpadding=3>
+   		<tr>
+     		<td>PHP - <a href="http://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BA%D1%80%D0%BE%D0%BD%D0%B8%D0%BC" target=_blank class=lnk>рекурсивный акроним</a> словосочетания &laquo;<a href="/manual/introduction.html" class=lnk>PHP: Hypertext Preprocessor</a>&raquo;</td>
+     	</tr>
+   		</table>
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/subsys_ajax.js"></script>
+		<!--
+
+		commet by 440hz
+		20.10.2007
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/pu_search.js"></script>
+
+		-->
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/cz.js?a=b"></script>
+
+		<table style='margin-top: 5px' width=100% bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0>
+   	 	<form name=SEARCH method=GET action="http://www.php.ru/search/?SID=yb82d838xgdeqvxt" onsubmit="return puSubmit();">
+	  	<input type=hidden name=PAGE value=1>
+  		<tr>
+    		<td width='1' valign='middle'> 
+    		   <a href='/'><img src="http://www.php.ru/;-)/logo.gif" width=133 height=93 alt="php" border=0 hspace=10 vspace=0></a>
+			 </td>
+		    <td width='100%' valign='middle'>
+		       <!--
+			   
+				commet by 440hz
+				20.10.2007
+
+			   <div id='pu_search' class='pu_search'></div>
+		       <div id='pu_search_description' class='pu_search_decription'></div>
+			   
+			   -->
+        	 <input type=text style='width:99%; margin: 10px' maxlength='200' name='QS' class='in' id='query' autocomplete='off' value="" />
+    		</td>
+		  </tr>
+   		<tr bgcolor='#666699' valign='middle'>
+			<td style='border-top: 1px solid #333366;'><br /></td>
+    		<td style='border-top: 1px solid #333366;'><div style="padding: 4px 4px 4px 10px; height: 24px; color: #CCCCFF;" id="stat">Хто там?<script>doLoadCZ('stat','stat');</script></div></td>
+  		</tr>
+		</form>
+		</table>
+		<table id="menu" cellspaciong=0 cellpadding=3>
+<tr>
+<td><a href="/" class=current>Главная</a></td>
+<td><a href="/download/" class=current>Скачать</a></td>
+<td><a href="/doc/" class=current>Документация</a></td>
+<td><a href="/forum/" class=current>Форум</a></td>
+<td width=100% align=right><a href="/phpinfo.html" class=current>phpinfo()</a></td>
+</tr>
+</table>
+
+		
+<!--  AdRiver code START. Type:728x90 Site: php.ru PZ: 0 BN: 1 -->
+<script language="javascript" type="text/javascript"><!--
+var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+var ar_Tail='unknown'; if (document.referrer) ar_Tail = escape(document.referrer);
+document.write(
+'<iframe src="http://ad.adriver.ru/cgi-bin/erle.cgi?'
++ 'sid=148680&bn=1&target=blank&bt=36&pz=0&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail
++ '" frameborder=0 vspace=0 hspace=0 width=728 height=90 marginwidth=0'
++ ' marginheight=0 scrolling=no></iframe>');
+//--></script>
+<noscript>
+<a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" target=_blank>
+<img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" alt="-AdRiver-" border=0 width=728 height=90></a>
+</noscript>
+<!--  AdRiver code END  -->
+
+
+  		<table width='100%' cellspacing='0' cellpadding='0'>
+    		<tr valign='top'>
+      		<td width=100%><div style="margin: 10px 10px 10px 50px;"><center><div style="width: 800px; text-align: left"><DIV
+CLASS="BOOK"
+><A
+NAME="manual"
+></A
+><DIV
+CLASS="TITLEPAGE"
+><H1
+CLASS="title"
+><A
+NAME="bookinfo"
+>Руководство по PHP</A
+></H1
+><DIV
+CLASS="author"
+>Mehdi Achour</DIV
+><DIV
+CLASS="author"
+>Friedhelm Betz</DIV
+><DIV
+CLASS="author"
+>Antony Dovgal</DIV
+><DIV
+CLASS="author"
+>Nuno Lopes</DIV
+><DIV
+CLASS="author"
+>Philip Olson</DIV
+><DIV
+CLASS="author"
+>Georg Richter</DIV
+><DIV
+CLASS="author"
+>Damien Seguy</DIV
+><DIV
+CLASS="author"
+>Jakub Vrana</DIV
+><SPAN
+CLASS="collab"
+><SPAN
+CLASS="collabname"
+>&#13;     <A
+HREF="preface.html#contributors"
+>И некоторые другие</A
+>
+    </SPAN
+><BR></SPAN
+><SPAN
+CLASS="collab"
+><SPAN
+CLASS="collabname"
+>Ivan Kovalenko</SPAN
+><BR></SPAN
+><SPAN
+CLASS="collab"
+><SPAN
+CLASS="collabname"
+>Jigkayev Kazbek</SPAN
+><BR></SPAN
+><SPAN
+CLASS="collab"
+><SPAN
+CLASS="collabname"
+>Kirill Barashkin</SPAN
+><BR></SPAN
+><SPAN
+CLASS="collab"
+><SPAN
+CLASS="collabname"
+>Alexey Asemov</SPAN
+><BR></SPAN
+><SPAN
+CLASS="collab"
+><SPAN
+CLASS="collabname"
+>Boris Bezrukov</SPAN
+><BR></SPAN
+><SPAN
+CLASS="collab"
+><SPAN
+CLASS="collabname"
+>Alexander Voytsekhovskyy</SPAN
+><BR></SPAN
+><P
+CLASS="pubdate"
+>2006-09-15<BR></P
+><P
+CLASS="copyright"
+><A
+HREF="copyright.html"
+>Copyright</A
+> &copy; 1997-2005 Группа документирования PHP</P
+><HR></DIV
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Содержание</B
+></DT
+><DT
+><A
+HREF="preface.html"
+>Предисловие</A
+></DT
+><DD
+><DL
+><DT
+><A
+HREF="preface.html#contributors"
+>Авторы и Участники</A
+></DT
+></DL
+></DD
+><DT
+>I. <A
+HREF="getting-started.html"
+>Приступая к работе</A
+></DT
+><DD
+><DL
+><DT
+>1. <A
+HREF="introduction.html"
+>Введение</A
+></DT
+><DT
+>2. <A
+HREF="tutorial.html"
+>Краткое руководство</A
+></DT
+></DL
+></DD
+><DT
+>II. <A
+HREF="install.html"
+>Установка и настройка</A
+></DT
+><DD
+><DL
+><DT
+>3. <A
+HREF="install.general.html"
+>General Installation Considerations</A
+></DT
+><DT
+>4. <A
+HREF="install.unix.html"
+>Installation on Unix systems</A
+></DT
+><DT
+>5. <A
+HREF="install.macosx.html"
+>Installation on Mac OS X</A
+></DT
+><DT
+>6. <A
+HREF="install.windows.html"
+>Installation on Windows systems</A
+></DT
+><DT
+>7. <A
+HREF="install.pecl.html"
+>Installation of PECL extensions</A
+></DT
+><DT
+>8. <A
+HREF="install.problems.html"
+>Problems?</A
+></DT
+><DT
+>9. <A
+HREF="configuration.html"
+>Runtime Configuration</A
+></DT
+></DL
+></DD
+><DT
+>III. <A
+HREF="langref.html"
+>Справочник языка</A
+></DT
+><DD
+><DL
+><DT
+>10. <A
+HREF="language.basic-syntax.html"
+>Основы синтаксиса</A
+></DT
+><DT
+>11. <A
+HREF="language.types.html"
+>Типы</A
+></DT
+><DT
+>12. <A
+HREF="language.variables.html"
+>Переменные</A
+></DT
+><DT
+>13. <A
+HREF="language.constants.html"
+>Константы</A
+></DT
+><DT
+>14. <A
+HREF="language.expressions.html"
+>Выражения</A
+></DT
+><DT
+>15. <A
+HREF="language.operators.html"
+>Операторы</A
+></DT
+><DT
+>16. <A
+HREF="language.control-structures.html"
+>Control Structures</A
+></DT
+><DT
+>17. <A
+HREF="language.functions.html"
+>Функции</A
+></DT
+><DT
+>18. <A
+HREF="language.oop.html"
+>Classes and Objects (PHP 4)</A
+></DT
+><DT
+>19. <A
+HREF="language.oop5.html"
+>Классы и объекты (PHP 5)</A
+></DT
+><DT
+>20. <A
+HREF="language.exceptions.html"
+>Exceptions</A
+></DT
+><DT
+>21. <A
+HREF="language.references.html"
+>Ссылки. Разъяснения</A
+></DT
+></DL
+></DD
+><DT
+>IV. <A
+HREF="security.html"
+>Безопасность</A
+></DT
+><DD
+><DL
+><DT
+>22. <A
+HREF="security.intro.html"
+>Вступление</A
+></DT
+><DT
+>23. <A
+HREF="security.general.html"
+>Общие рассуждения</A
+></DT
+><DT
+>24. <A
+HREF="security.cgi-bin.html"
+>Если PHP установлен как CGI</A
+></DT
+><DT
+>25. <A
+HREF="security.apache.html"
+>Если PHP установлен как модуль Apache</A
+></DT
+><DT
+>26. <A
+HREF="security.filesystem.html"
+>Безопасность файловой системы</A
+></DT
+><DT
+>27. <A
+HREF="security.database.html"
+>Безопасность баз данных</A
+></DT
+><DT
+>28. <A
+HREF="security.errors.html"
+>Сообщения об ошибках</A
+></DT
+><DT
+>29. <A
+HREF="security.globals.html"
+>Использование глобальных переменных (Register_Globals)</A
+></DT
+><DT
+>30. <A
+HREF="security.variables.html"
+>Данные, введенные пользователем</A
+></DT
+><DT
+>31. <A
+HREF="security.magicquotes.html"
+>Magic Quotes</A
+></DT
+><DT
+>32. <A
+HREF="security.hiding.html"
+>Сокрытие PHP</A
+></DT
+><DT
+>33. <A
+HREF="security.current.html"
+>Необходимость обновлений</A
+></DT
+></DL
+></DD
+><DT
+>V. <A
+HREF="features.html"
+>Отличительные особенности</A
+></DT
+><DD
+><DL
+><DT
+>34. <A
+HREF="features.http-auth.html"
+>HTTP-Аутентификация в PHP</A
+></DT
+><DT
+>35. <A
+HREF="features.cookies.html"
+>Cookies</A
+></DT
+><DT
+>36. <A
+HREF="features.sessions.html"
+>Sessions</A
+></DT
+><DT
+>37. <A
+HREF="features.xforms.html"
+>Работа с XForms</A
+></DT
+><DT
+>38. <A
+HREF="features.file-upload.html"
+>Загрузка файлов на сервер</A
+></DT
+><DT
+>39. <A
+HREF="features.remote-files.html"
+>Работа с удаленными файлами</A
+></DT
+><DT
+>40. <A
+HREF="features.connection-handling.html"
+>Работа с соединениями</A
+></DT
+><DT
+>41. <A
+HREF="features.persistent-connections.html"
+>Постоянные соединения с базами данных</A
+></DT
+><DT
+>42. <A
+HREF="features.safe-mode.html"
+>Защищенный режим</A
+></DT
+><DT
+>43. <A
+HREF="features.commandline.html"
+>Использование PHP в командной строке</A
+></DT
+></DL
+></DD
+><DT
+>VI. <A
+HREF="funcref.html"
+>Справочник функций</A
+></DT
+><DD
+><DL
+><DT
+>I. <A
+HREF="ref.dotnet.html"
+>.NET Functions</A
+></DT
+><DT
+>II. <A
+HREF="ref.apache.html"
+>Функции для работы с сервером Apache</A
+></DT
+><DT
+>III. <A
+HREF="ref.apc.html"
+>Alternative PHP Cache</A
+></DT
+><DT
+>IV. <A
+HREF="ref.apd.html"
+>Advanced PHP debugger</A
+></DT
+><DT
+>V. <A
+HREF="ref.array.html"
+>Функции для работы с массивами</A
+></DT
+><DT
+>VI. <A
+HREF="ref.aspell.html"
+>Aspell functions [deprecated]</A
+></DT
+><DT
+>VII. <A
+HREF="ref.bc.html"
+>BCMath Arbitrary Precision Mathematics Functions</A
+></DT
+><DT
+>VIII. <A
+HREF="ref.bcompiler.html"
+>PHP bytecode Compiler</A
+></DT
+><DT
+>IX. <A
+HREF="ref.bzip2.html"
+>Функции сжатия Bzip2</A
+></DT
+><DT
+>X. <A
+HREF="ref.calendar.html"
+>Calendar Functions</A
+></DT
+><DT
+>XI. <A
+HREF="ref.ccvs.html"
+>CCVS API Functions [deprecated]</A
+></DT
+><DT
+>XII. <A
+HREF="ref.classobj.html"
+>Функции работы с Классами/Объектами</A
+></DT
+><DT
+>XIII. <A
+HREF="ref.classkit.html"
+>Classkit Functions</A
+></DT
+><DT
+>XIV. <A
+HREF="ref.cpdf.html"
+>ClibPDF Functions</A
+></DT
+><DT
+>XV. <A
+HREF="ref.com.html"
+>COM and .Net (Windows)</A
+></DT
+><DT
+>XVI. <A
+HREF="ref.crack.html"
+>Crack Functions</A
+></DT
+><DT
+>XVII. <A
+HREF="ref.ctype.html"
+>Функции определения типа символов</A
+></DT
+><DT
+>XVIII. <A
+HREF="ref.curl.html"
+>Функции CURL, Client URL Library</A
+></DT
+><DT
+>XIX. <A
+HREF="ref.cybercash.html"
+>Cybercash Payment Functions</A
+></DT
+><DT
+>XX. <A
+HREF="ref.cybermut.html"
+>Credit Mutuel CyberMUT functions</A
+></DT
+><DT
+>XXI. <A
+HREF="ref.cyrus.html"
+>Cyrus IMAP administration Functions</A
+></DT
+><DT
+>XXII. <A
+HREF="ref.datetime.html"
+>Функции для работы с датой и временем</A
+></DT
+><DT
+>XXIII. <A
+HREF="ref.dbplus.html"
+>DB++ Functions</A
+></DT
+><DT
+>XXIV. <A
+HREF="ref.dba.html"
+>Database (dbm-style) Abstraction Layer Functions</A
+></DT
+><DT
+>XXV. <A
+HREF="ref.dbase.html"
+>dBase Functions</A
+></DT
+><DT
+>XXVI. <A
+HREF="ref.dbm.html"
+>DBM Functions [deprecated]</A
+></DT
+><DT
+>XXVII. <A
+HREF="ref.dbx.html"
+>dbx Functions</A
+></DT
+><DT
+>XXVIII. <A
+HREF="ref.dio.html"
+>Direct IO Functions</A
+></DT
+><DT
+>XXIX. <A
+HREF="ref.dir.html"
+>Функции для работы с каталогами</A
+></DT
+><DT
+>XXX. <A
+HREF="ref.dom.html"
+>DOM Functions</A
+></DT
+><DT
+>XXXI. <A
+HREF="ref.domxml.html"
+>DOM XML Functions</A
+></DT
+><DT
+>XXXII. <A
+HREF="ref.enchant.html"
+>enchant Functions</A
+></DT
+><DT
+>XXXIII. <A
+HREF="ref.errorfunc.html"
+>Error Handling and Logging Functions</A
+></DT
+><DT
+>XXXIV. <A
+HREF="ref.exif.html"
+>Exif Functions</A
+></DT
+><DT
+>XXXV. <A
+HREF="ref.expect.html"
+>Expect Functions</A
+></DT
+><DT
+>XXXVI. <A
+HREF="ref.fam.html"
+>File Alteration Monitor Functions</A
+></DT
+><DT
+>XXXVII. <A
+HREF="ref.fdf.html"
+>Forms Data Format Functions</A
+></DT
+><DT
+>XXXVIII. <A
+HREF="ref.fileinfo.html"
+>Fileinfo Functions</A
+></DT
+><DT
+>XXXIX. <A
+HREF="ref.filepro.html"
+>filePro Functions</A
+></DT
+><DT
+>XL. <A
+HREF="ref.filesystem.html"
+>Функции для работы с файловой системой</A
+></DT
+><DT
+>XLI. <A
+HREF="ref.filter.html"
+>Filter Functions</A
+></DT
+><DT
+>XLII. <A
+HREF="ref.ibase.html"
+>Firebird/InterBase Functions</A
+></DT
+><DT
+>XLIII. <A
+HREF="ref.pdo-firebird.html"
+>Firebird/Interbase Functions (PDO_FIREBIRD)</A
+></DT
+><DT
+>XLIV. <A
+HREF="ref.fribidi.html"
+>FriBiDi Functions</A
+></DT
+><DT
+>XLV. <A
+HREF="ref.fbsql.html"
+>FrontBase Functions</A
+></DT
+><DT
+>XLVI. <A
+HREF="ref.ftp.html"
+>Функции для работы с FTP</A
+></DT
+><DT
+>XLVII. <A
+HREF="ref.funchand.html"
+>Управление функциями</A
+></DT
+><DT
+>XLVIII. <A
+HREF="ref.geoip.html"
+>GeoIP Functions</A
+></DT
+><DT
+>XLIX. <A
+HREF="ref.gettext.html"
+>Gettext</A
+></DT
+><DT
+>L. <A
+HREF="ref.gmp.html"
+>GMP Functions</A
+></DT
+><DT
+>LI. <A
+HREF="ref.gnupg.html"
+>gnupg Функции</A
+></DT
+><DT
+>LII. <A
+HREF="ref.net-gopher.html"
+>Net_Gopher</A
+></DT
+><DT
+>LIII. <A
+HREF="ref.hash.html"
+>hash Functions</A
+></DT
+><DT
+>LIV. <A
+HREF="ref.http.html"
+>Функции протокола HTTP</A
+></DT
+><DT
+>LV. <A
+HREF="ref.hw.html"
+>Hyperwave Functions</A
+></DT
+><DT
+>LVI. <A
+HREF="ref.hwapi.html"
+>Hyperwave API Functions</A
+></DT
+><DT
+>LVII. <A
+HREF="ref.ibm-db2.html"
+>IBM DB2, Cloudscape and Apache Derby Functions</A
+></DT
+><DT
+>LVIII. <A
+HREF="ref.icap.html"
+>ICAP Functions [deprecated]</A
+></DT
+><DT
+>LIX. <A
+HREF="ref.iconv.html"
+>Функции iconv</A
+></DT
+><DT
+>LX. <A
+HREF="ref.id3.html"
+>ID3 Functions</A
+></DT
+><DT
+>LXI. <A
+HREF="ref.iisfunc.html"
+>IIS Administration Functions</A
+></DT
+><DT
+>LXII. <A
+HREF="ref.image.html"
+>Image Functions</A
+></DT
+><DT
+>LXIII. <A
+HREF="ref.imap.html"
+>IMAP, POP3 and NNTP Functions</A
+></DT
+><DT
+>LXIV. <A
+HREF="ref.ifx.html"
+>Informix Functions</A
+></DT
+><DT
+>LXV. <A
+HREF="ref.pdo-informix.html"
+>Informix Functions (PDO_INFORMIX)</A
+></DT
+><DT
+>LXVI. <A
+HREF="ref.ingres.html"
+>Ingres II Functions</A
+></DT
+><DT
+>LXVII. <A
+HREF="ref.ircg.html"
+>IRC Gateway Functions</A
+></DT
+><DT
+>LXVIII. <A
+HREF="ref.java.html"
+>PHP / Java Integration</A
+></DT
+><DT
+>LXIX. <A
+HREF="ref.json.html"
+>JSON Functions</A
+></DT
+><DT
+>LXX. <A
+HREF="ref.kadm5.html"
+>KADM5</A
+></DT
+><DT
+>LXXI. <A
+HREF="ref.ldap.html"
+>LDAP Functions</A
+></DT
+><DT
+>LXXII. <A
+HREF="ref.libxml.html"
+>libxml Functions</A
+></DT
+><DT
+>LXXIII. <A
+HREF="ref.notes.html"
+>Lotus Notes Functions</A
+></DT
+><DT
+>LXXIV. <A
+HREF="ref.lzf.html"
+>LZF Functions</A
+></DT
+><DT
+>LXXV. <A
+HREF="ref.mail.html"
+>Mail Functions</A
+></DT
+><DT
+>LXXVI. <A
+HREF="ref.mailparse.html"
+>mailparse Functions</A
+></DT
+><DT
+>LXXVII. <A
+HREF="ref.math.html"
+>Математические функции</A
+></DT
+><DT
+>LXXVIII. <A
+HREF="ref.maxdb.html"
+>MaxDB PHP Extension</A
+></DT
+><DT
+>LXXIX. <A
+HREF="ref.mcal.html"
+>MCAL Functions</A
+></DT
+><DT
+>LXXX. <A
+HREF="ref.mcrypt.html"
+>Mcrypt Encryption Functions</A
+></DT
+><DT
+>LXXXI. <A
+HREF="ref.mcve.html"
+>MCVE (Monetra) Payment Functions</A
+></DT
+><DT
+>LXXXII. <A
+HREF="ref.memcache.html"
+>Memcache Functions</A
+></DT
+><DT
+>LXXXIII. <A
+HREF="ref.mhash.html"
+>Mhash Functions</A
+></DT
+><DT
+>LXXXIV. <A
+HREF="ref.mime-magic.html"
+>Mimetype Functions</A
+></DT
+><DT
+>LXXXV. <A
+HREF="ref.ming.html"
+>Ming functions for Flash</A
+></DT
+><DT
+>LXXXVI. <A
+HREF="ref.misc.html"
+>Miscellaneous Functions</A
+></DT
+><DT
+>LXXXVII. <A
+HREF="ref.mnogosearch.html"
+>mnoGoSearch Functions</A
+></DT
+><DT
+>LXXXVIII. <A
+HREF="ref.mssql.html"
+>Microsoft SQL Server Functions</A
+></DT
+><DT
+>LXXXIX. <A
+HREF="ref.pdo-dblib.html"
+>Microsoft SQL Server and Sybase Functions (PDO_DBLIB)</A
+></DT
+><DT
+>XC. <A
+HREF="ref.msession.html"
+>Mohawk Software Session Handler Functions</A
+></DT
+><DT
+>XCI. <A
+HREF="ref.msql.html"
+>mSQL Functions</A
+></DT
+><DT
+>XCII. <A
+HREF="ref.mbstring.html"
+>Multibyte String Functions</A
+></DT
+><DT
+>XCIII. <A
+HREF="ref.muscat.html"
+>muscat Functions</A
+></DT
+><DT
+>XCIV. <A
+HREF="ref.mysql.html"
+>Функции СУБД MySQL</A
+></DT
+><DT
+>XCV. <A
+HREF="ref.pdo-mysql.html"
+>MySQL Functions (PDO_MYSQL)</A
+></DT
+><DT
+>XCVI. <A
+HREF="ref.mysqli.html"
+>MySQL Improved Extension</A
+></DT
+><DT
+>XCVII. <A
+HREF="ref.ncurses.html"
+>Ncurses Terminal Screen Control Functions</A
+></DT
+><DT
+>XCVIII. <A
+HREF="ref.network.html"
+>Network Functions</A
+></DT
+><DT
+>XCIX. <A
+HREF="ref.newt.html"
+>Newt Functions</A
+></DT
+><DT
+>C. <A
+HREF="ref.nsapi.html"
+>NSAPI-specific Functions</A
+></DT
+><DT
+>CI. <A
+HREF="ref.objaggregation.html"
+>Object Aggregation/Composition Functions</A
+></DT
+><DT
+>CII. <A
+HREF="ref.overload.html"
+>Object property and method call overloading</A
+></DT
+><DT
+>CIII. <A
+HREF="ref.oci8.html"
+>Функции для работы с Oracle</A
+></DT
+><DT
+>CIV. <A
+HREF="ref.uodbc.html"
+>ODBC Functions (Unified)</A
+></DT
+><DT
+>CV. <A
+HREF="ref.pdo-odbc.html"
+>ODBC and DB2 Functions (PDO_ODBC)</A
+></DT
+><DT
+>CVI. <A
+HREF="ref.oggvorbis.html"
+>oggvorbis</A
+></DT
+><DT
+>CVII. <A
+HREF="ref.openal.html"
+>OpenAL Audio Bindings</A
+></DT
+><DT
+>CVIII. <A
+HREF="ref.openssl.html"
+>OpenSSL Functions</A
+></DT
+><DT
+>CIX. <A
+HREF="ref.oracle.html"
+>Oracle Functions [deprecated]</A
+></DT
+><DT
+>CX. <A
+HREF="ref.pdo-oci.html"
+>Oracle Functions (PDO_OCI)</A
+></DT
+><DT
+>CXI. <A
+HREF="ref.outcontrol.html"
+>Output Control Functions</A
+></DT
+><DT
+>CXII. <A
+HREF="ref.ovrimos.html"
+>Ovrimos SQL Functions</A
+></DT
+><DT
+>CXIII. <A
+HREF="ref.paradox.html"
+>Paradox File Access</A
+></DT
+><DT
+>CXIV. <A
+HREF="ref.parsekit.html"
+>Parsekit Functions</A
+></DT
+><DT
+>CXV. <A
+HREF="ref.pcntl.html"
+>Process Control Functions</A
+></DT
+><DT
+>CXVI. <A
+HREF="ref.pcre.html"
+>Функции для работы с регулярными выражениями (Perl-совместимые)</A
+></DT
+><DT
+>CXVII. <A
+HREF="ref.pdf.html"
+>PDF Функции</A
+></DT
+><DT
+>CXVIII. <A
+HREF="ref.pdo.html"
+>PDO Functions</A
+></DT
+><DT
+>CXIX. <A
+HREF="ref.info.html"
+>PHP Options&#38;Information</A
+></DT
+><DT
+>CXX. <A
+HREF="ref.posix.html"
+>POSIX Functions</A
+></DT
+><DT
+>CXXI. <A
+HREF="ref.regex.html"
+>Regular Expression Functions (POSIX Extended)</A
+></DT
+><DT
+>CXXII. <A
+HREF="ref.pgsql.html"
+>PostgreSQL Functions</A
+></DT
+><DT
+>CXXIII. <A
+HREF="ref.pdo-pgsql.html"
+>PostgreSQL Functions (PDO_PGSQL)</A
+></DT
+><DT
+>CXXIV. <A
+HREF="ref.printer.html"
+>Printer Functions</A
+></DT
+><DT
+>CXXV. <A
+HREF="ref.exec.html"
+>Program Execution Functions</A
+></DT
+><DT
+>CXXVI. <A
+HREF="ref.ps.html"
+>PostScript document creation</A
+></DT
+><DT
+>CXXVII. <A
+HREF="ref.pspell.html"
+>Pspell Functions</A
+></DT
+><DT
+>CXXVIII. <A
+HREF="ref.qtdom.html"
+>qtdom Functions</A
+></DT
+><DT
+>CXXIX. <A
+HREF="ref.radius.html"
+>Radius</A
+></DT
+><DT
+>CXXX. <A
+HREF="ref.rar.html"
+>Rar функции</A
+></DT
+><DT
+>CXXXI. <A
+HREF="ref.readline.html"
+>GNU Readline</A
+></DT
+><DT
+>CXXXII. <A
+HREF="ref.recode.html"
+>GNU Recode Functions</A
+></DT
+><DT
+>CXXXIII. <A
+HREF="ref.rpmreader.html"
+>RPM Header Reading Функции</A
+></DT
+><DT
+>CXXXIV. <A
+HREF="ref.runkit.html"
+>runkit Functions</A
+></DT
+><DT
+>CXXXV. <A
+HREF="ref.satellite.html"
+>Satellite CORBA client extension [deprecated]</A
+></DT
+><DT
+>CXXXVI. <A
+HREF="ref.sdo.html"
+>SDO Functions</A
+></DT
+><DT
+>CXXXVII. <A
+HREF="ref.sdo-das-xml.html"
+>SDO XML Data Access Service Functions</A
+></DT
+><DT
+>CXXXVIII. <A
+HREF="ref.sdo.das.rel.html"
+>SDO Relational Data Access Service Functions</A
+></DT
+><DT
+>CXXXIX. <A
+HREF="ref.sem.html"
+>Semaphore, Shared Memory and IPC Functions</A
+></DT
+><DT
+>CXL. <A
+HREF="ref.sesam.html"
+>SESAM Database Functions</A
+></DT
+><DT
+>CXLI. <A
+HREF="ref.session-pgsql.html"
+>PostgreSQL Session Save Handler</A
+></DT
+><DT
+>CXLII. <A
+HREF="ref.session.html"
+>Session Handling Functions</A
+></DT
+><DT
+>CXLIII. <A
+HREF="ref.shmop.html"
+>Shared Memory Functions</A
+></DT
+><DT
+>CXLIV. <A
+HREF="ref.simplexml.html"
+>SimpleXML functions</A
+></DT
+><DT
+>CXLV. <A
+HREF="ref.snmp.html"
+>SNMP Functions</A
+></DT
+><DT
+>CXLVI. <A
+HREF="ref.soap.html"
+>SOAP Functions</A
+></DT
+><DT
+>CXLVII. <A
+HREF="ref.sockets.html"
+>Socket Functions</A
+></DT
+><DT
+>CXLVIII. <A
+HREF="ref.spl.html"
+>Standard PHP Library (SPL) Functions</A
+></DT
+><DT
+>CXLIX. <A
+HREF="ref.sqlite.html"
+>SQLite</A
+></DT
+><DT
+>CL. <A
+HREF="ref.pdo-sqlite.html"
+>SQLite Functions (PDO_SQLITE)</A
+></DT
+><DT
+>CLI. <A
+HREF="ref.ssh2.html"
+>Secure Shell2 Functions</A
+></DT
+><DT
+>CLII. <A
+HREF="ref.stats.html"
+>Statistics Functions</A
+></DT
+><DT
+>CLIII. <A
+HREF="ref.stream.html"
+>Stream Functions</A
+></DT
+><DT
+>CLIV. <A
+HREF="ref.strings.html"
+>Функции обработки строк</A
+></DT
+><DT
+>CLV. <A
+HREF="ref.swf.html"
+>Shockwave Flash Functions</A
+></DT
+><DT
+>CLVI. <A
+HREF="ref.sybase.html"
+>Sybase Functions</A
+></DT
+><DT
+>CLVII. <A
+HREF="ref.tcpwrap.html"
+>TCP Wrappers Functions</A
+></DT
+><DT
+>CLVIII. <A
+HREF="ref.tidy.html"
+>Tidy Functions</A
+></DT
+><DT
+>CLIX. <A
+HREF="ref.tokenizer.html"
+>Tokenizer Functions</A
+></DT
+><DT
+>CLX. <A
+HREF="ref.unicode.html"
+>Unicode Functions</A
+></DT
+><DT
+>CLXI. <A
+HREF="ref.url.html"
+>URL Functions</A
+></DT
+><DT
+>CLXII. <A
+HREF="ref.var.html"
+>Variable Handling Functions</A
+></DT
+><DT
+>CLXIII. <A
+HREF="ref.pfpro.html"
+>Verisign Payflow Pro Functions</A
+></DT
+><DT
+>CLXIV. <A
+HREF="ref.vpopmail.html"
+>vpopmail Functions</A
+></DT
+><DT
+>CLXV. <A
+HREF="ref.w32api.html"
+>W32api Functions</A
+></DT
+><DT
+>CLXVI. <A
+HREF="ref.wddx.html"
+>WDDX Functions</A
+></DT
+><DT
+>CLXVII. <A
+HREF="ref.win32ps.html"
+>win32ps Functions</A
+></DT
+><DT
+>CLXVIII. <A
+HREF="ref.win32service.html"
+>win32service Functions</A
+></DT
+><DT
+>CLXIX. <A
+HREF="ref.xattr.html"
+>xattr Functions</A
+></DT
+><DT
+>CLXX. <A
+HREF="ref.xdiff.html"
+>xdiff Functions</A
+></DT
+><DT
+>CLXXI. <A
+HREF="ref.xml.html"
+>XML Parser Functions</A
+></DT
+><DT
+>CLXXII. <A
+HREF="ref.xmlrpc.html"
+>XML-RPC Functions</A
+></DT
+><DT
+>CLXXIII. <A
+HREF="ref.xmlreader.html"
+>XMLReader functions</A
+></DT
+><DT
+>CLXXIV. <A
+HREF="ref.xmlwriter.html"
+>xmlwriter Functions</A
+></DT
+><DT
+>CLXXV. <A
+HREF="ref.xsl.html"
+>XSL functions</A
+></DT
+><DT
+>CLXXVI. <A
+HREF="ref.xslt.html"
+>XSLT Functions</A
+></DT
+><DT
+>CLXXVII. <A
+HREF="ref.yaz.html"
+>YAZ Functions</A
+></DT
+><DT
+>CLXXVIII. <A
+HREF="ref.nis.html"
+>YP/NIS Functions</A
+></DT
+><DT
+>CLXXIX. <A
+HREF="ref.zip.html"
+>Zip File Functions</A
+></DT
+><DT
+>CLXXX. <A
+HREF="ref.zlib.html"
+>Функции сжатия Zlib</A
+></DT
+></DL
+></DD
+><DT
+>VII. <A
+HREF="internals.html"
+>PHP and Zend Engine Internals</A
+></DT
+><DD
+><DL
+><DT
+>44. <A
+HREF="streams.html"
+>Streams API for PHP Extension Authors</A
+></DT
+><DT
+>45. <A
+HREF="internals.pdo.html"
+>PDO Driver How-To</A
+></DT
+><DT
+>46. <A
+HREF="zend.html"
+>Zend API: Hacking the Core of PHP</A
+></DT
+><DT
+>47. <A
+HREF="tsrm.html"
+>TSRM API</A
+></DT
+><DT
+>48. <A
+HREF="phpdevel.html"
+>Extending PHP 3</A
+></DT
+></DL
+></DD
+><DT
+>VIII. <A
+HREF="faq.html"
+>ЧАВО: ЧАсто задаваемые Вопросы и Ответы на них</A
+></DT
+><DD
+><DL
+><DT
+>49. <A
+HREF="faq.general.html"
+>Общая Информация</A
+></DT
+><DT
+>50. <A
+HREF="faq.mailinglist.html"
+>Списки рассылки</A
+></DT
+><DT
+>51. <A
+HREF="faq.obtaining.html"
+>Получение PHP</A
+></DT
+><DT
+>52. <A
+HREF="faq.databases.html"
+>Вопросы по Базам Данных</A
+></DT
+><DT
+>53. <A
+HREF="faq.installation.html"
+>Установка</A
+></DT
+><DT
+>54. <A
+HREF="faq.build.html"
+>Проблемы Сборки</A
+></DT
+><DT
+>55. <A
+HREF="faq.using.html"
+>Использование PHP</A
+></DT
+><DT
+>56. <A
+HREF="faq.html.html"
+>PHP и HTML</A
+></DT
+><DT
+>57. <A
+HREF="faq.com.html"
+>PHP и COM</A
+></DT
+><DT
+>58. <A
+HREF="faq.languages.html"
+>PHP и другие языки</A
+></DT
+><DT
+>59. <A
+HREF="faq.migration.html"
+>Переход из PHP 2 в PHP 3</A
+></DT
+><DT
+>60. <A
+HREF="faq.migration4.html"
+>Переход из PHP 3 в PHP 4</A
+></DT
+><DT
+>61. <A
+HREF="faq.migration5.html"
+>Переход из PHP 4 в PHP 5</A
+></DT
+><DT
+>62. <A
+HREF="faq.misc.html"
+>Разные вопросы</A
+></DT
+></DL
+></DD
+><DT
+>IX. <A
+HREF="appendixes.html"
+>Приложения</A
+></DT
+><DD
+><DL
+><DT
+>A. <A
+HREF="history.html"
+>История PHP и смежных проектов</A
+></DT
+><DT
+>B. <A
+HREF="migration5.html"
+>Миграция с PHP 4 на PHP 5</A
+></DT
+><DT
+>C. <A
+HREF="migration4.html"
+>Migrating from PHP 3 to PHP 4</A
+></DT
+><DT
+>D. <A
+HREF="migration.html"
+>Migrating from PHP/FI 2 to PHP 3</A
+></DT
+><DT
+>E. <A
+HREF="debugger.html"
+>Отладка PHP</A
+></DT
+><DT
+>F. <A
+HREF="configure.html"
+>Configure options</A
+></DT
+><DT
+>G. <A
+HREF="ini.html"
+>Директивы <TT
+CLASS="filename"
+>php.ini</TT
+></A
+></DT
+><DT
+>H. <A
+HREF="timezones.html"
+>List of Supported Timezones</A
+></DT
+><DT
+>I. <A
+HREF="extensions.html"
+>Extension Categorization</A
+></DT
+><DT
+>J. <A
+HREF="aliases.html"
+>Список псевдонимов функций</A
+></DT
+><DT
+>K. <A
+HREF="reserved.html"
+>List of Reserved Words</A
+></DT
+><DT
+>L. <A
+HREF="resource.html"
+>List of Resource Types</A
+></DT
+><DT
+>M. <A
+HREF="wrappers.html"
+>List of Supported Protocols/Wrappers</A
+></DT
+><DT
+>N. <A
+HREF="filters.html"
+>Список доступных фильтров</A
+></DT
+><DT
+>O. <A
+HREF="transports.html"
+>Список поддерживаемых транспортных протоколов</A
+></DT
+><DT
+>P. <A
+HREF="types.comparisons.html"
+>Таблица сравнения типов в PHP</A
+></DT
+><DT
+>Q. <A
+HREF="tokens.html"
+>List of Parser Tokens</A
+></DT
+><DT
+>R. <A
+HREF="userlandnaming.html"
+>Userland Naming Guide</A
+></DT
+><DT
+>S. <A
+HREF="about.html"
+>Об этом руководстве</A
+></DT
+><DT
+>T. <A
+HREF="opl.license.html"
+>Open Publication License</A
+></DT
+><DT
+>U. <A
+HREF="indexes.html"
+>Список функций</A
+></DT
+><DT
+>V. <A
+HREF="missing-stuff.html"
+>Что отсутствует в этом руководстве</A
+></DT
+></DL
+></DD
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="preface.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Предисловие</TD
+></TR
+></TABLE
+></DIV
+></div></center></div></td>
+			<td><div style="display:none; width:200px;" id="o3" name="o3"><script charset="windows-1251" type="text/javascript" src="http://www.ozon.ru/PartnerTwinerNew.aspx?revident=bea9126b-c8e1-4bf5-b6d8-9a057f8feac6" ></script></div><script>o = document.getElementById('o3'); if(o) { var s = o.innerHTML; s = s.replace(/F6F6F6/gi,"FFFFFF"); o.innerHTML = s.replace(/padding-top: 10px; padding-bottom: 10px;/,"display:none;"); o.style.display = 'block'; } </script><br><div style="margin: 10px;"><script type="text/javascript"><!--
+google_ad_client = "pub-4093271809023514";
+/* 120x600, создано 01.11.2008 */
+google_ad_slot = "0438855731";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div></td>
+    		</tr>
+  		</table>
+    </td>
+  </tr>
+  <tr valign='bottom' height='1%'>
+  <td>      <table width=100% cellspacing=0 cellpadding=5 border=0 bgcolor=#9999CC>
+        <tr valign=center>
+          <td class='phpcopyright' width='45%' align='left'>&nbsp;&nbsp;Engine <a  href="http://www.mnogosearch.org/">MnoGoSearch</a></td>
+          <td class='phpcopyright' width='10%' align='center'>2007-2010 &copy <a  href="mailto:webmaster@php.ru">PHP.RU</a></td>
+          <td class='phpcopyright' width='45%' align='right' >Powered by <a target="_blank" href="http://odware.ru">ODware</a> <a HREF="http://440hz.ru">440Hz</a> &nbsp;&nbsp;</td>
+        </tr>
+      </table>
+
+    <div style="text-align: right; padding: 5px">
+		<!--LiveInternet counter-->
+		<script type="text/javascript">document.write('<a href="http://www.liveinternet.ru/click" target=_blank><img src="http://counter.yadro.ru/hit?t53.6;r' + escape(document.referrer) + ((typeof(screen)=='undefined')?'':';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ';u' + escape(document.URL) +';i' + escape('Жж'+document.title.substring(0,80)) + ';' + Math.random() + '" border=0 width=88 height=31 alt="" title="LiveInternet: показано число просмотров и посетителей за 24 часа"><\/a>');
+		</script>
+		<!--/LiveInternet-->
+		<!-- SpyLOG -->
+		<script src="http://tools.spylog.ru/counter2.2.js" type="text/javascript" id="spylog_code" counter="830950" ></script>
+		<noscript><a href="http://u8309.50.spylog.com/cnt?cid=830950&f=3&p=0" target="_blank"><img src="http://u8309.50.spylog.com/cnt?cid=830950&p=0&f=4" alt='SpyLOG' border='0' width=88 height=31 ></a>
+		</noscript>
+		<!--/ SpyLOG -->
+	</div>
+</td>
+  </tr>
+</table>
+
+<script>
+<!--
+document.SEARCH.QS.focus();
+// --></script>
+
+<!-- 
+	как же вы все это читаете?
+	440hz 
+-->
+
+</body>
+</html>

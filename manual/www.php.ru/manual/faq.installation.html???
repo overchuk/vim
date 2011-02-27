@@ -1,0 +1,1832 @@
+<!-- 
+
+     HTML dropped by Zend Guard Compressor 4.2
+
+     php.ru team: mz, az, yuri, vb, cyxapuk, 440hz, administrator
+     2004-2007 (c) expi-web.com 
+     2007-2008 (c) odware.com 
+     0101-1010 (с) 440hz
+
+     2b|~2b=?
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EHOT тут всё пожрал ! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="alternate" type="application/rss+xml" title="php.ru/forum - последние сообщения" href="http://www.php.ru/forum/rss.php">
+<link rel="SHORTCUT ICON" href="http://www.php.ru/favicon.ico" />
+<META name="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<meta http-equiv="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<META name="keywords" content="php, php5, apache, mysql, session">
+<meta http-equiv="keywords" content="php, php5, apache, mysql, session">
+<title>php.ru - Установка</title>
+<LINK REL="stylesheet" TYPE="text/css" HREF="http://www.php.ru/index.css">
+<script language="JavaScript" src="http://www.php.ru/ajax/ajax.js"></script>
+</head>
+<body>
+
+<table height='100%' width='100%' cellspacing='0' cellpadding='0'>
+  <tr height='99%' valign='top'>
+    <td align='center'>
+		
+		<table style='margin-top: 4px' width=100% cellspacing=0 cellpadding=3>
+   		<tr>
+     		<td>PHP - <a href="http://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BA%D1%80%D0%BE%D0%BD%D0%B8%D0%BC" target=_blank class=lnk>рекурсивный акроним</a> словосочетания &laquo;<a href="/manual/introduction.html" class=lnk>PHP: Hypertext Preprocessor</a>&raquo;</td>
+     	</tr>
+   		</table>
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/subsys_ajax.js"></script>
+		<!--
+
+		commet by 440hz
+		20.10.2007
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/pu_search.js"></script>
+
+		-->
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/cz.js?a=b"></script>
+
+		<table style='margin-top: 5px' width=100% bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0>
+   	 	<form name=SEARCH method=GET action="http://www.php.ru/search/?SID=abrd2dactfl0oiss" onsubmit="return puSubmit();">
+	  	<input type=hidden name=PAGE value=1>
+  		<tr>
+    		<td width='1' valign='middle'> 
+    		   <a href='/'><img src="http://www.php.ru/;-)/logo.gif" width=133 height=93 alt="php" border=0 hspace=10 vspace=0></a>
+			 </td>
+		    <td width='100%' valign='middle'>
+		       <!--
+			   
+				commet by 440hz
+				20.10.2007
+
+			   <div id='pu_search' class='pu_search'></div>
+		       <div id='pu_search_description' class='pu_search_decription'></div>
+			   
+			   -->
+        	 <input type=text style='width:99%; margin: 10px' maxlength='200' name='QS' class='in' id='query' autocomplete='off' value="" />
+    		</td>
+		  </tr>
+   		<tr bgcolor='#666699' valign='middle'>
+			<td style='border-top: 1px solid #333366;'><br /></td>
+    		<td style='border-top: 1px solid #333366;'><div style="padding: 4px 4px 4px 10px; height: 24px; color: #CCCCFF;" id="stat">Хто там?<script>doLoadCZ('stat','stat');</script></div></td>
+  		</tr>
+		</form>
+		</table>
+		<table id="menu" cellspaciong=0 cellpadding=3>
+<tr>
+<td><a href="/" class=current>Главная</a></td>
+<td><a href="/download/" class=current>Скачать</a></td>
+<td><a href="/doc/" class=current>Документация</a></td>
+<td><a href="/forum/" class=current>Форум</a></td>
+<td width=100% align=right><a href="/phpinfo.html" class=current>phpinfo()</a></td>
+</tr>
+</table>
+
+		
+<!--  AdRiver code START. Type:728x90 Site: php.ru PZ: 0 BN: 1 -->
+<script language="javascript" type="text/javascript"><!--
+var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+var ar_Tail='unknown'; if (document.referrer) ar_Tail = escape(document.referrer);
+document.write(
+'<iframe src="http://ad.adriver.ru/cgi-bin/erle.cgi?'
++ 'sid=148680&bn=1&target=blank&bt=36&pz=0&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail
++ '" frameborder=0 vspace=0 hspace=0 width=728 height=90 marginwidth=0'
++ ' marginheight=0 scrolling=no></iframe>');
+//--></script>
+<noscript>
+<a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" target=_blank>
+<img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" alt="-AdRiver-" border=0 width=728 height=90></a>
+</noscript>
+<!--  AdRiver code END  -->
+
+
+  		<table width='100%' cellspacing='0' cellpadding='0'>
+    		<tr valign='top'>
+      		<td width=100%><div style="margin: 10px 10px 10px 50px;"><center><div style="width: 800px; text-align: left"><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Руководство по PHP</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="faq.databases.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="faq.build.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="chapter"
+><H1
+><A
+NAME="faq.installation"
+>Глава 53. Установка</A
+></H1
+><P
+>&#13;   Этот раздел содержит общие вопросы по установке PHP.
+   PHP доступен практически для любой ОС (за исключением, может быть,
+   MacOS предшествующей OSX) и любого web сервера.
+  </P
+><P
+>&#13;   Для установки PHP следуйте инструкциям в файле
+   <A
+HREF="???"
+TARGET="_top"
+>INSTALL</A
+>
+   из дистрибутива. Пользователи Windows также должны прочитать 
+   <A
+HREF="???"
+TARGET="_top"
+>install.txt</A
+>.
+   И <A
+HREF="install.windows.html"
+>здесь</A
+> есть некоторые
+   полезные советы для пользователей Windows.
+  </P
+><DIV
+CLASS="qandaset"
+><DL
+><DT
+>1. <A
+HREF="faq.installation.html#faq.installation.apache2"
+>&#13;      Почему я не должен использовать Apache2 с потоковым MPM в эксплуатации?
+     </A
+></DT
+><DT
+>2. <A
+HREF="faq.installation.html#faq.installation.phpini"
+>&#13;      Unix/Windows: Где должен находиться файл <TT
+CLASS="filename"
+>php.ini</TT
+>?
+     </A
+></DT
+><DT
+>3. <A
+HREF="faq.installation.html#faq.installation.nodata"
+>&#13;      Unix: Я установил PHP, но каждый раз при загрузке документа я получаю 
+      сообщение 'Document Contains No Data' (Документ Не Содержит Данных)!
+      Что происходит?
+     </A
+></DT
+><DT
+>4. <A
+HREF="faq.installation.html#faq.installation.processing"
+>&#13;      Unix: Я установил PHP, используя RPMS, но Apache не обрабатывает PHP страницы! 
+      Что происходит?
+     </A
+></DT
+><DT
+>5. <A
+HREF="faq.installation.html#faq.installation.compile"
+>&#13;      Unix: Я установил PHP 3 используя RPMS, но он не компилируется с поддержкой
+      нужной мне базы данных! Что происходит?
+     </A
+></DT
+><DT
+>6. <A
+HREF="faq.installation.html#faq.installation.frontpage"
+>&#13;      Unix: Я установил заплатку в Apache для расширений FrontPage и
+      неожиданно PHP перестал работать.
+      Неужели PHP не совместим с FrontPage расширениями для Apache?
+     </A
+></DT
+><DT
+>7. <A
+HREF="faq.installation.html#faq.installation.blankscreen"
+>&#13;      Unix/Windows: Я установил PHP, но когда я пытаюсь вызвать PHP скрипт из моего
+      браузера, я получаю пустой экран.
+     </A
+></DT
+><DT
+>8. <A
+HREF="faq.installation.html#faq.installation.500error"
+>&#13;      Unix/Windows: Я установил PHP, но когда я пытаюсь вызвать PHP скрипт из моего
+      браузера, я получаю ошибку сервера 500.
+     </A
+></DT
+><DT
+>9. <A
+HREF="faq.installation.html#faq.installation.undefinedsyms"
+> 
+      Некоторые операционные системы: Я установил PHP без ошибок,
+      но когда я пытаюсь запустить Apache, я получаю ошибки "undefined symbol"
+      (неопределённый символ):
+      <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="shell"
+>[mybox:user /src/php4] root# apachectl configtest
+ apachectl: /usr/local/apache/bin/httpd Undefined symbols:
+  _compress
+  _uncompress</PRE
+></TD
+></TR
+></TABLE
+>
+     </A
+></DT
+><DT
+>10. <A
+HREF="faq.installation.html#faq.installation.cgierror"
+>&#13;      Windows: Я установил PHP, но когда я пытаюсь вызвать PHP скрипт из моего
+      браузера, я получаю ошибку:
+      <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="screen"
+>cgi error:
+ The specified CGI application misbehaved by not
+ returning a complete set of HTTP headers.
+ The headers it did return are:</PRE
+></TD
+></TR
+></TABLE
+>
+     </A
+></DT
+><DT
+>11. <A
+HREF="faq.installation.html#faq.installation.phpandiis"
+>&#13;      Windows: Я следовал всем инструкциям, но так и не смог заставить PHP и IIS
+      работать вместе!
+     </A
+></DT
+><DT
+>12. <A
+HREF="faq.installation.html#faq.installation.forceredirect"
+>&#13;       Когда PHP запускается как CGI в IIS, PWS, OmniHTTPD или Xitami,
+       я получаю следующую ошибку: <VAR
+CLASS="literal"
+>Security Alert! PHP CGI 
+       cannot be accessed directly.</VAR
+>.
+     </A
+></DT
+><DT
+>13. <A
+HREF="faq.installation.html#faq.installation.findphpini"
+>&#13;      Как узнать, что мой <TT
+CLASS="filename"
+>php.ini</TT
+> был найден и прочтён?
+      Похоже, что мои изменения не были восприняты?
+     </A
+></DT
+><DT
+>14. <A
+HREF="faq.installation.html#faq.installation.addtopath"
+>&#13;      Как на Windows добавить мою PHP директорию в <VAR
+CLASS="varname"
+>PATH</VAR
+>?
+     </A
+></DT
+><DT
+>15. <A
+HREF="faq.installation.html#faq.installation.phprc"
+>&#13;      Как в Windows сделать файл <TT
+CLASS="filename"
+>php.ini</TT
+> доступным для PHP?
+     </A
+></DT
+><DT
+>16. <A
+HREF="faq.installation.html#faq.installation.apache.multiviews"
+>&#13;      Возможно ли использовать согласование содержания в Apache
+      (опция MultiViews) c PHP?
+     </A
+></DT
+></DL
+><DIV
+CLASS="qandaentry"
+><B
+><DIV
+CLASS="question"
+><P
+><A
+NAME="faq.installation.apache2"
+></A
+><B
+>1. </B
+>
+      Почему я не должен использовать Apache2 с потоковым MPM в эксплуатации?
+     </P
+></DIV
+></B
+><DIV
+CLASS="answer"
+><P
+><B
+> </B
+>
+      PHP - это клей. Клей, используемый для построения классных web приложений,
+      склеивая дюжины сторонних библиотек и создавая впечатление одного согласованного
+      целого, с помощью интуитивного и легко изучаемого языка.
+      Гибкость и мощь PHP полагается на стабильность и устойчивость используемой
+      платформы. Для склейки вместе ему необходимы работающая ОС, работающий web
+      сервер и работающие сторонние библиотеки. Когда что-либо из этого перестаёт
+      работать PHP нужны способы определения проблем и их быстрого исправления.
+      Если вы усложняете низлежащую систему, не разделяя полностью потоки выполнения,
+      не выделяя раздельные сегменты памяти и не предоставляя "песочницу" для
+      игры для каждого запроса, то ваша PHP система увязнет в глине.
+     </P
+><P
+>&#13;      Если вы всё-таки чувствуете, что должны использовать потоковый MPM,
+      взгляните на конфигурацию с FastCGI, где вы можете запускать PHP
+      в своём собственном пространстве памяти.
+     </P
+><P
+>&#13;      И наконец, это предупреждение против потокового MPM не настолько остро для
+      пользователей Windows, так как большинство библиотек на этой платформе
+      потокобезопасны.
+     </P
+></DIV
+></DIV
+><DIV
+CLASS="qandaentry"
+><B
+><DIV
+CLASS="question"
+><P
+><A
+NAME="faq.installation.phpini"
+></A
+><B
+>2. </B
+>
+      Unix/Windows: Где должен находиться файл <TT
+CLASS="filename"
+>php.ini</TT
+>?
+     </P
+></DIV
+></B
+><DIV
+CLASS="answer"
+><P
+><B
+> </B
+>
+      На Unix по умолчанию он должен находиться в директории 
+      <TT
+CLASS="filename"
+>/usr/local/lib</TT
+>, определяемой как
+      <TT
+CLASS="filename"
+>&#60;install-path&#62;/lib</TT
+>.
+      Большинство людей изменяют это во время компиляции с помощью опции
+      <A
+HREF="configure.html#configure.with-config-file-path"
+>--with-config-file-path</A
+>
+      Для примера, вы можете задать что-то типа:
+      <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="shell"
+>--with-config-file-path=/etc</PRE
+></TD
+></TR
+></TABLE
+>
+      Затем скопировать файл <TT
+CLASS="filename"
+>php.ini-dist</TT
+> из
+      дистрибутива в <TT
+CLASS="filename"
+>/etc/php.ini</TT
+> и отредактировать
+      его для ваших локальных потребностей.
+     </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="shell"
+>--with-config-file-scan-dir=PATH</PRE
+></TD
+></TR
+></TABLE
+><P
+>&#13;      На Windows по умолчанию <TT
+CLASS="filename"
+>php.ini</TT
+> находится в Windows директории.
+      Если вы используете Apache web сервер, <TT
+CLASS="filename"
+>php.ini</TT
+> сначала ищется в
+      директории, где был установлен Apache, например <TT
+CLASS="filename"
+>c:\program
+      files\apache group\apache</TT
+>. В этом случае на одной машине
+      у вас могут быть разные файлы <TT
+CLASS="filename"
+>php.ini</TT
+> для разных версий Apache.
+     </P
+><P
+>&#13;     Смотрите также главу о <A
+HREF="configuration.html#configuration.file"
+>конфигурационном файле</A
+>.
+     </P
+></DIV
+></DIV
+><DIV
+CLASS="qandaentry"
+><B
+><DIV
+CLASS="question"
+><P
+><A
+NAME="faq.installation.nodata"
+></A
+><B
+>3. </B
+>
+      Unix: Я установил PHP, но каждый раз при загрузке документа я получаю 
+      сообщение 'Document Contains No Data' (Документ Не Содержит Данных)!
+      Что происходит?
+     </P
+></DIV
+></B
+><DIV
+CLASS="answer"
+><P
+><B
+> </B
+>
+      Вероятно, PHP падает по какой-то причине. Для того, чтобы убедиться в этом,
+      просмотрите лог ошибок вашего сервера и затем попытайтесь воспроизвести
+      проблему с помощью небольшого тестового примера. Если вы умеете пользоваться
+      'gdb', то добавьте трассировку к вашему сообщению об ошибке, это поможет
+      разработчикам точно определить проблему. 
+      Если вы используете PHP как модуль Apache попробуйте что-то типа: 
+      <P
+></P
+><UL
+><LI
+><P
+>&#13;         Остановите ваши httpd процессы
+        </P
+></LI
+><LI
+><P
+>&#13;         gdb httpd
+        </P
+></LI
+><LI
+><P
+>&#13;         Остановите ваши httpd процессы
+        </P
+></LI
+><LI
+><P
+>&#13;         &#62; run -X -f /path/to/httpd.conf
+        </P
+></LI
+><LI
+><P
+>&#13;         Затем вызовите URL, на котором возникает проблема, из вашего браузера
+        </P
+></LI
+><LI
+><P
+>&#13;         &#62; run -X -f /path/to/httpd.conf
+        </P
+></LI
+><LI
+><P
+>&#13;         Если вы получаете дамп, gdb должен сейчас сообщить вам об этом
+        </P
+></LI
+><LI
+><P
+>&#13;         введите: bt
+        </P
+></LI
+><LI
+><P
+>&#13;         Вам необходимо включить трассировку в ваше сообщение об ошибке, которое 
+         должно быть отправлено с 
+         <A
+HREF="http://bugs.php.net/"
+TARGET="_top"
+>http://bugs.php.net/</A
+> 
+        </P
+></LI
+></UL
+>
+     </P
+><P
+>&#13;      Если ваш скрипт использует функции регулярных выражений
+      (<A
+HREF="function.ereg.html"
+><B
+CLASS="function"
+>ereg()</B
+></A
+> и компания), то вам необходимо убедиться, 
+      что вы скомпилировали PHP и Apache с одним и тем же пакетом регулярных
+      выражений. Это должно происходить автоматически для PHP и Apache 1.3.x
+     </P
+></DIV
+></DIV
+><DIV
+CLASS="qandaentry"
+><B
+><DIV
+CLASS="question"
+><P
+><A
+NAME="faq.installation.processing"
+></A
+><B
+>4. </B
+>
+      Unix: Я установил PHP, используя RPMS, но Apache не обрабатывает PHP страницы! 
+      Что происходит?
+     </P
+></DIV
+></B
+><DIV
+CLASS="answer"
+><P
+><B
+> </B
+>
+      Полагая, что Apache и PHP оба были установлены из пакетов RPM,
+      вам требуется в вашем файле <TT
+CLASS="filename"
+>httpd.conf</TT
+> раскомментировать или добавить
+      все или некоторые из следующих строк: 
+      <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="apache-conf"
+># Extra Modules
+AddModule mod_php.c
+AddModule mod_php3.c
+AddModule mod_perl.c
+
+# Extra Modules
+LoadModule php_module         modules/mod_php.so
+LoadModule php3_module        modules/libphp3.so     # for PHP 3
+LoadModule php4_module        modules/libphp4.so     # for PHP 4
+LoadModule perl_module        modules/libperl.so</PRE
+></TD
+></TR
+></TABLE
+>
+      И добавить:
+      <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="apache-conf"
+>AddType application/x-httpd-php3 .php3    # for PHP 3
+AddType application/x-httpd-php .php      # for PHP 4</PRE
+></TD
+></TR
+></TABLE
+>
+      ... в глобальные свойства или в свойства VirtualDomain, для которого
+      вы хотите иметь поддержку PHP.
+     </P
+></DIV
+></DIV
+><DIV
+CLASS="qandaentry"
+><B
+><DIV
+CLASS="question"
+><P
+><A
+NAME="faq.installation.compile"
+></A
+><B
+>5. </B
+>
+      Unix: Я установил PHP 3 используя RPMS, но он не компилируется с поддержкой
+      нужной мне базы данных! Что происходит?
+     </P
+></DIV
+></B
+><DIV
+CLASS="answer"
+><P
+><B
+> </B
+>
+      Из-за того, как построен PHP 3, собрать полный и гибкий RPM для PHP не легко.  
+      Эта проблема решена в PHP 4. Для PHP 3 мы рекомендуем способ, описанный в
+      файле INSTALL.REDHAT из дистрибутива PHP. Если вы всё-таки настаиваете
+      на использовании варианта с RPM для PHP 3, читайте далее...
+     </P
+><P
+>&#13;      Те, кто собирает RPM пакеты, настраивают RPMS для установки без поддержки
+      баз данных для упрощения установок <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>и</I
+></SPAN
+>
+      потому что RPMS использует /usr/ вместо стандартной /usr/local/ директории
+      для файлов. Вам необходимо указать в спек файле RPM какие базы данных 
+      поддерживать и где находится ваш сервер баз данных.
+     </P
+><P
+>&#13;      Следующий пример объясняет процесс добавления поддержки для популярного
+      сервера баз данных MySQL, используя mod установку для Apache.
+     </P
+><P
+>&#13;      Конечно, всё это может быть применено для любого сервера баз данных, который
+      PHP поддерживает. Для этого примера, мы будем полагать, что вы установили
+      MySQL и Apache полностью с RPMS. 
+      <P
+></P
+><UL
+><LI
+><P
+>&#13;         Во-первых, удалите mod_php3 : 
+         <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="shell"
+>rpm -e mod_php3</PRE
+></TD
+></TR
+></TABLE
+>
+        </P
+></LI
+><LI
+><P
+>&#13;         Затем получите rpm с исходниками и УСТАНОВИТЕ его, НЕ --rebuild
+         <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="shell"
+>rpm -Uvh mod_php3-3.0.5-2.src.rpm</PRE
+></TD
+></TR
+></TABLE
+>
+        </P
+></LI
+><LI
+><P
+>&#13;         Затем отредактируйте файл 
+         <TT
+CLASS="filename"
+>/usr/src/redhat/SPECS/mod_php3.spec</TT
+>
+        </P
+><P
+>&#13;         В секции %build добавьте поддержку нужной вам базы данныз и укажите путь
+        </P
+><P
+>&#13;         Для MySQL вы добавите
+         <VAR
+CLASS="option"
+>--with-mysql=/usr</VAR
+>
+         Секция %build будет выглядеть как что-то типа следующего:
+         <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="shell"
+>./configure --prefix=/usr \
+--with-apxs=/usr/sbin/apxs \
+--with-config-file-path=/usr/lib \
+--enable-debug=no \
+--enable-safe-mode \
+--with-exec-dir=/usr/bin \
+--with-mysql=/usr \
+--with-system-regex</PRE
+></TD
+></TR
+></TABLE
+>
+        </P
+></LI
+><LI
+><P
+>&#13;         После того, как вы сделали эти изменения, постройте бинарный rpm как:
+         <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="shell"
+>rpm -bb /usr/src/redhat/SPECS/mod_php3.spec</PRE
+></TD
+></TR
+></TABLE
+>
+        </P
+></LI
+><LI
+><P
+>&#13;         Затем установите этот rpm
+         <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="shell"
+>rpm -ivh /usr/src/redhat/RPMS/i386/mod_php3-3.0.5-2.i386.rpm</PRE
+></TD
+></TR
+></TABLE
+>
+        </P
+></LI
+></UL
+>
+      Перезапустите Apache и теперь у вас есть PHP 3 с поддержкой MySQL,
+      установленный из RPM. Заметьте, что на много проще просто собрать
+      PHP 3 из дистрибутива и следовать инструкциям в файле 
+      <TT
+CLASS="filename"
+>INSTALL.REDHAT</TT
+> дистрибутива.
+     </P
+></DIV
+></DIV
+><DIV
+CLASS="qandaentry"
+><B
+><DIV
+CLASS="question"
+><P
+><A
+NAME="faq.installation.frontpage"
+></A
+><B
+>6. </B
+>
+      Unix: Я установил заплатку в Apache для расширений FrontPage и
+      неожиданно PHP перестал работать.
+      Неужели PHP не совместим с FrontPage расширениями для Apache?
+     </P
+></DIV
+></B
+><DIV
+CLASS="answer"
+><P
+><B
+> </B
+>
+      Нет, PHP прекрасно работает с FrontPage расширениями.
+      Проблема в том, что FrontPage заплатка изменяет некоторые важные для
+      PHP структуры. Перекомпиляция PHP (выполняя 'make clean ; make')
+      после установки FP заплатки должна решить эту проблему.
+     </P
+></DIV
+></DIV
+><DIV
+CLASS="qandaentry"
+><B
+><DIV
+CLASS="question"
+><P
+><A
+NAME="faq.installation.blankscreen"
+></A
+><B
+>7. </B
+>
+      Unix/Windows: Я установил PHP, но когда я пытаюсь вызвать PHP скрипт из моего
+      браузера, я получаю пустой экран.
+     </P
+></DIV
+></B
+><DIV
+CLASS="answer"
+><P
+><B
+> </B
+>
+      Сделайте просмотр исходника ('view source') в web браузере
+      и, вероятно, вы увидите исходный код вашего PHP скрипта.
+      Это означает, что web сервер не послал скрипт PHP для интерпретации.
+      Что-то не так с конфигурацией сервера, проверьте конфигурацию сервера 
+      согласно установочным инструкциям PHP.
+     </P
+></DIV
+></DIV
+><DIV
+CLASS="qandaentry"
+><B
+><DIV
+CLASS="question"
+><P
+><A
+NAME="faq.installation.500error"
+></A
+><B
+>8. </B
+>
+      Unix/Windows: Я установил PHP, но когда я пытаюсь вызвать PHP скрипт из моего
+      браузера, я получаю ошибку сервера 500.
+     </P
+></DIV
+></B
+><DIV
+CLASS="answer"
+><P
+><B
+> </B
+>
+      Что-то произошло когда сервер пытался выполнить PHP. 
+      Чтобы увидеть более вразумительное сообщение об ошибке, 
+      используя командную строку, перейдите в директорию где находится
+      исполняемый файл PHP (<TT
+CLASS="filename"
+>php.exe</TT
+> на Windows)
+      и запустите <B
+CLASS="command"
+>php -i</B
+>. Если при запуске PHP
+      возникли какие-либо проблемы, то появится соответствующее сообщение
+      об ошибке, которое может дать вам понять что делать дальше.
+      Если вы получаете экран, заполненый HTML кодом (вывод функции
+      <A
+HREF="function.phpinfo.html"
+><B
+CLASS="function"
+>phpinfo()</B
+></A
+>), то PHP работает и ваша
+      проблема возможно связана с конфигурацией вашего сервера, которую
+      вам необходимо проверить.
+     </P
+></DIV
+></DIV
+><DIV
+CLASS="qandaentry"
+><B
+><DIV
+CLASS="question"
+><P
+><A
+NAME="faq.installation.undefinedsyms"
+></A
+><B
+>9. </B
+> 
+      Некоторые операционные системы: Я установил PHP без ошибок,
+      но когда я пытаюсь запустить Apache, я получаю ошибки "undefined symbol"
+      (неопределённый символ):
+      <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="shell"
+>[mybox:user /src/php4] root# apachectl configtest
+ apachectl: /usr/local/apache/bin/httpd Undefined symbols:
+  _compress
+  _uncompress</PRE
+></TD
+></TR
+></TABLE
+>
+     </P
+></DIV
+></B
+><DIV
+CLASS="answer"
+><P
+><B
+> </B
+>
+      На самом деле это связано с клиентскими библиотеками MySQL и не имеет
+      никакого отношения к PHP. Одним нужна опция <VAR
+CLASS="option"
+>--with-zlib</VAR
+>, другим - нет. Это также 
+      описано в MySQL FAQ.
+     </P
+></DIV
+></DIV
+><DIV
+CLASS="qandaentry"
+><B
+><DIV
+CLASS="question"
+><P
+><A
+NAME="faq.installation.cgierror"
+></A
+><B
+>10. </B
+>
+      Windows: Я установил PHP, но когда я пытаюсь вызвать PHP скрипт из моего
+      браузера, я получаю ошибку:
+      <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="screen"
+>cgi error:
+ The specified CGI application misbehaved by not
+ returning a complete set of HTTP headers.
+ The headers it did return are:</PRE
+></TD
+></TR
+></TABLE
+>
+     </P
+></DIV
+></B
+><DIV
+CLASS="answer"
+><P
+><B
+> </B
+>
+      Это сообщение об ошибке означает, что PHP не смог вывести 
+      абсолютно ничего. Чтобы увидеть более вразумительное сообщение об ошибке,
+      используя командную строку, перейдите в директорию, где находиться
+      испольняемый файл PHP (<TT
+CLASS="filename"
+>php.exe</TT
+> на Windows) и
+      запустите <B
+CLASS="command"
+>php -i</B
+>. Если при запуске PHP 
+      возникли какие-либо проблемы, то появится соответствующее сообщение
+      об ошибке, которое может дать вам понять что делать дальше. 
+      Если вы получаете экран, заполненый HTML кодом (вывод фиункци
+      <A
+HREF="function.phpinfo.html"
+><B
+CLASS="function"
+>phpinfo()</B
+></A
+> функции), то PHP работает.
+     </P
+><P
+>&#13;      Как только PHP работает из командной строки, попытайтесь опять вызвать
+      скрипт из браузера. Если он все также не работает, то причина может быть 
+      одна из следующих:
+     </P
+><P
+></P
+><UL
+><LI
+><P
+>&#13;        Анонимный пользователь Internet не имеет доступ к вашему PHP скрипту,
+        <TT
+CLASS="filename"
+>php.exe</TT
+>, <TT
+CLASS="filename"
+>php4ts.dll</TT
+>,
+        <TT
+CLASS="filename"
+>php.ini</TT
+> или любому загружаемому PHP расширению из за прав доступа,
+        установленных на эти файлы.
+       </P
+></LI
+><LI
+><P
+>&#13;        Файл скрипта не существует (или, вероятно, не там где вы думаете он
+        должен быть, относительно вашей корневой web директории).
+        Заметьте, что для IIS вы можете поймать эту ошибку пометив 'check file
+        exists' при настройке ассоциирования скриптов (script mappings) в
+        Администраторе Internet Сервисов (Internet Services Manager).
+        Если файл скрипта не существует, то сервер выдаст ошибку 404.
+        Также допольнительная польза в том, что IIS будет выполнять
+        необходимую вам аутентификацию, основываясь на NTLanMan правах
+        доступа на ваш скрипт.
+       </P
+></LI
+></UL
+></DIV
+></DIV
+><DIV
+CLASS="qandaentry"
+><B
+><DIV
+CLASS="question"
+><P
+><A
+NAME="faq.installation.phpandiis"
+></A
+><B
+>11. </B
+>
+      Windows: Я следовал всем инструкциям, но так и не смог заставить PHP и IIS
+      работать вместе!
+     </P
+></DIV
+></B
+><DIV
+CLASS="answer"
+><P
+><B
+> </B
+>
+      Убедитесь что все пользователи, кому необходимо запускать PHP скрипты,
+      имеют право выполнять <TT
+CLASS="filename"
+>php.exe</TT
+>! 
+      IIS использует анонимного пользователя, который добавлен во время 
+      установки IIS. Этот пользователь должен иметь права на 
+      <TT
+CLASS="filename"
+>php.exe</TT
+>. Также любому аутентифицированному пользователю
+      будут нужны права на выполнение <TT
+CLASS="filename"
+>php.exe</TT
+>.
+      И для IIS4 вам необходимо сказать ему, что PHP является скриптовой системой.
+      Также вам захочется прочитать 
+      <A
+HREF="faq.installation.html#faq.installation.forceredirect"
+>это</A
+>.
+     </P
+></DIV
+></DIV
+><DIV
+CLASS="qandaentry"
+><B
+><DIV
+CLASS="question"
+><P
+><A
+NAME="faq.installation.forceredirect"
+></A
+><B
+>12. </B
+>
+       Когда PHP запускается как CGI в IIS, PWS, OmniHTTPD или Xitami,
+       я получаю следующую ошибку: <VAR
+CLASS="literal"
+>Security Alert! PHP CGI 
+       cannot be accessed directly.</VAR
+>.
+     </P
+></DIV
+></B
+><DIV
+CLASS="answer"
+><P
+><B
+> </B
+>
+      Вы должны установить директиву <A
+HREF="ini.core.html#ini.cgi.force-redirect"
+>&#13;      cgi.force_redirect</A
+> в <VAR
+CLASS="literal"
+>0</VAR
+>.
+      По умолчанию она установлена в <VAR
+CLASS="literal"
+>1</VAR
+>, поэтому убедитесь, что
+      директива не закоментирована (с <VAR
+CLASS="literal"
+>;</VAR
+>). Как все директивы,
+      она задается в <TT
+CLASS="filename"
+>php.ini</TT
+>
+     </P
+><P
+>&#13;      Так как значение по умолчанию <VAR
+CLASS="literal"
+>1</VAR
+>, то очень важно
+      быть уверенным на 100%, что был прочитан верный <TT
+CLASS="filename"
+>php.ini</TT
+> файл.
+      Для подробностей читайте <A
+HREF="faq.installation.html#faq.installation.findphpini"
+>&#13;      здесь</A
+>.
+     </P
+></DIV
+></DIV
+><DIV
+CLASS="qandaentry"
+><B
+><DIV
+CLASS="question"
+><P
+><A
+NAME="faq.installation.findphpini"
+></A
+><B
+>13. </B
+>
+      Как узнать, что мой <TT
+CLASS="filename"
+>php.ini</TT
+> был найден и прочтён?
+      Похоже, что мои изменения не были восприняты?
+     </P
+></DIV
+></B
+><DIV
+CLASS="answer"
+><P
+><B
+> </B
+>
+      Чтобы убедиться, что PHP прочитал ваш <TT
+CLASS="filename"
+>php.ini</TT
+>, вызовите
+      <A
+HREF="function.phpinfo.html"
+><B
+CLASS="function"
+>phpinfo()</B
+></A
+> и недалеко от начала будет находиться
+      строка, озаглавленная <VAR
+CLASS="literal"
+>Configuration File (php.ini)</VAR
+>.
+      Она скажет вам где PHP ищет <TT
+CLASS="filename"
+>php.ini</TT
+> и был ли файл прочитан.
+      Если указана только директория, то файл не был прочитан и вы должны поместить
+      ваш <TT
+CLASS="filename"
+>php.ini</TT
+> в эту директорию. Если <TT
+CLASS="filename"
+>php.ini</TT
+> включён в PATH, то он
+      был прочитан.
+     </P
+><P
+>&#13;      Если <TT
+CLASS="filename"
+>php.ini</TT
+> был прочитан и вы запускаете PHP как модуль, то 
+      не забудьте перезапустить ваш web сервер после внесения изменений в
+      <TT
+CLASS="filename"
+>php.ini</TT
+>. 
+     </P
+></DIV
+></DIV
+><DIV
+CLASS="qandaentry"
+><B
+><DIV
+CLASS="question"
+><P
+><A
+NAME="faq.installation.addtopath"
+></A
+><B
+>14. </B
+>
+      Как на Windows добавить мою PHP директорию в <VAR
+CLASS="varname"
+>PATH</VAR
+>?
+     </P
+></DIV
+></B
+><DIV
+CLASS="answer"
+><P
+><B
+> </B
+>
+      На Windows NT, 2000, XP и 2003:
+      <P
+></P
+><UL
+><LI
+><P
+>&#13;        Идите в Control Panel и откройте системную иконку (Start -&#62; Settings
+        -&#62; Control Panel -&#62; System, или просто Start -&#62; Control Panel
+        -&#62; System for Windows XP/2003)
+       </P
+></LI
+><LI
+><P
+>&#13;        Перейдите в закладку Advanced
+       </P
+></LI
+><LI
+><P
+>&#13;        Нажмите кнопку 'Environment Variables'
+       </P
+></LI
+><LI
+><P
+>&#13;        Смотрите в окошко 'System Variables'
+       </P
+></LI
+><LI
+><P
+>&#13;        Найдите Path (возможно, вам придется сделать прокрутку, чтобы найти его)
+       </P
+></LI
+><LI
+><P
+>&#13;        Двойной щелчок на Path
+       </P
+></LI
+><LI
+><P
+>&#13;        Добавьте в конец вашу PHP директорию через ';' (например
+        <VAR
+CLASS="literal"
+>;C:\php</VAR
+>)
+       </P
+></LI
+><LI
+><P
+>&#13;        Нажмите OK и перезапустите ваш компьютер
+       </P
+></LI
+></UL
+>
+     </P
+><P
+>&#13;      На Windows 98/Me вам необходимо отредактировать файл
+      <TT
+CLASS="filename"
+>autoexec.bat</TT
+>:
+      <P
+></P
+><UL
+><LI
+><P
+>&#13;        Откройте Notepad (Start -&#62; Run и введите notepad)
+       </P
+></LI
+><LI
+><P
+>&#13;        Откройте файл <TT
+CLASS="filename"
+>C:\autoexec.bat</TT
+>
+       </P
+></LI
+><LI
+><P
+>&#13;        Найдите строку с PATH=C:\WINDOWS;C:\WINDOWS\COMMAND;..... и добавьте
+        в конец строки:
+        <VAR
+CLASS="literal"
+>;C:\php</VAR
+>
+       </P
+></LI
+><LI
+><P
+>&#13;        Сохраните файл и перезапустите ваш компьютер
+       </P
+></LI
+></UL
+>
+     </P
+><P
+>&#13;      Прежде в руководстве по PHP рекомендовалось копировать файлы в системную
+      директорию Windows, так как эта директория  
+      (<TT
+CLASS="filename"
+>C:\Windows</TT
+>, <TT
+CLASS="filename"
+>C:\WINNT</TT
+>, и т.п.)
+      входит в системный PATH по умолчанию. Копирование файлов в системную директорию
+      Windows давно уже противопоказывается и может вызвать проблемы.
+     </P
+></DIV
+></DIV
+><DIV
+CLASS="qandaentry"
+><B
+><DIV
+CLASS="question"
+><P
+><A
+NAME="faq.installation.phprc"
+></A
+><B
+>15. </B
+>
+      Как в Windows сделать файл <TT
+CLASS="filename"
+>php.ini</TT
+> доступным для PHP?
+     </P
+></DIV
+></B
+><DIV
+CLASS="answer"
+><P
+><B
+> </B
+>
+      Для этого есть несколько путей. Если вы используете Apache, то читайте
+      инструкции по его установке (<A
+HREF="install.windows.apache1.html"
+>Apache 1</A
+>, <A
+HREF="install.windows.apache2.html"
+>Apache 2</A
+>), 
+      в ином случае, вы должны установить переменную окружения
+      <VAR
+CLASS="varname"
+>PHPRC</VAR
+>:
+     </P
+><P
+>&#13;      На Windows NT, 2000, XP и 2003:
+      <P
+></P
+><UL
+><LI
+><P
+>&#13;        Идите в Control Panel и откройте системную иконку (Start -&#62; Settings
+        -&#62; Control Panel -&#62; System, или просто Start -&#62; Control Panel
+        -&#62; System for Windows XP/2003)
+       </P
+></LI
+><LI
+><P
+>&#13;        Перейдите в закладку Advanced
+       </P
+></LI
+><LI
+><P
+>&#13;        Нажмите кнопку 'Environment Variables'
+       </P
+></LI
+><LI
+><P
+>&#13;        Посмотрите в окошко 'System variables'
+       </P
+></LI
+><LI
+><P
+>&#13;         Щёлкните на 'New' и введите 'PHPRC' как имя переменной и директорию, 
+         где находится <TT
+CLASS="filename"
+>php.ini</TT
+>, как значение переменной (например
+         <VAR
+CLASS="literal"
+>C:\php</VAR
+>)
+       </P
+></LI
+><LI
+><P
+>&#13;        Нажмите OK и перезапустите ваш компьютер
+       </P
+></LI
+></UL
+>
+     </P
+><P
+>&#13;      На Windows 98/Me вам необходимо отредактировать файл
+      <TT
+CLASS="filename"
+>autoexec.bat</TT
+>:
+      <P
+></P
+><UL
+><LI
+><P
+>&#13;        Откройте Notepad (Start -&#62; Run и введите notepad)
+       </P
+></LI
+><LI
+><P
+>&#13;        Откройте файл <TT
+CLASS="filename"
+>C:\autoexec.bat</TT
+>
+       </P
+></LI
+><LI
+><P
+>&#13;        Добавьте новую строку в конец файла: <VAR
+CLASS="literal"
+>set PHPRC
+         C:\php</VAR
+> (замените <VAR
+CLASS="literal"
+>C:\php</VAR
+> на директорию,
+        где находится <TT
+CLASS="filename"
+>php.ini</TT
+>)
+       </P
+></LI
+><LI
+><P
+>&#13;        Сохраните файл и перезапустите ваш компьютер
+       </P
+></LI
+></UL
+>
+     </P
+></DIV
+></DIV
+><DIV
+CLASS="qandaentry"
+><B
+><DIV
+CLASS="question"
+><P
+><A
+NAME="faq.installation.apache.multiviews"
+></A
+><B
+>16. </B
+>
+      Возможно ли использовать согласование содержания в Apache
+      (опция MultiViews) c PHP?
+     </P
+></DIV
+></B
+><DIV
+CLASS="answer"
+><P
+><B
+> </B
+>
+      Всё работает замечательно, если линки к PHP файлам имеют расширение.
+      Этот FAQ рассматривает только случай, когда линки к PHP файлам не имеют расширения
+      и вы хотите использовать согласование содержания для отбора PHP файлов из
+      URL без расширений.
+      В этом случае, замените строку <VAR
+CLASS="literal"
+>AddType application/x-httpd-php
+      .php</VAR
+> на:
+      <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="apache-conf"
+># PHP 4
+AddHandler php-script php
+AddType text/html php
+
+# PHP 5
+AddHandler php5-script php
+AddType text/html php</PRE
+></TD
+></TR
+></TABLE
+>
+     Это решение не работает в Apache 1, так как в нём PHP модуль не ловит
+     <VAR
+CLASS="literal"
+>php-script</VAR
+>.
+     </P
+></DIV
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="faq.databases.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Начало</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="faq.build.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Вопросы по Базам Данных</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="faq.html"
+ACCESSKEY="U"
+>Уровень выше</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Проблемы Сборки</TD
+></TR
+></TABLE
+></DIV
+></div></center></div></td>
+			<td><div style="display:none; width:200px;" id="o3" name="o3"><script charset="windows-1251" type="text/javascript" src="http://www.ozon.ru/PartnerTwinerNew.aspx?revident=bea9126b-c8e1-4bf5-b6d8-9a057f8feac6" ></script></div><script>o = document.getElementById('o3'); if(o) { var s = o.innerHTML; s = s.replace(/F6F6F6/gi,"FFFFFF"); o.innerHTML = s.replace(/padding-top: 10px; padding-bottom: 10px;/,"display:none;"); o.style.display = 'block'; } </script><br><div style="margin: 10px;"><script type="text/javascript"><!--
+google_ad_client = "pub-4093271809023514";
+/* 120x600, создано 01.11.2008 */
+google_ad_slot = "0438855731";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div></td>
+    		</tr>
+  		</table>
+    </td>
+  </tr>
+  <tr valign='bottom' height='1%'>
+  <td>      <table width=100% cellspacing=0 cellpadding=5 border=0 bgcolor=#9999CC>
+        <tr valign=center>
+          <td class='phpcopyright' width='45%' align='left'>&nbsp;&nbsp;Engine <a  href="http://www.mnogosearch.org/">MnoGoSearch</a></td>
+          <td class='phpcopyright' width='10%' align='center'>2007-2010 &copy <a  href="mailto:webmaster@php.ru">PHP.RU</a></td>
+          <td class='phpcopyright' width='45%' align='right' >Powered by <a target="_blank" href="http://odware.ru">ODware</a> <a HREF="http://440hz.ru">440Hz</a> &nbsp;&nbsp;</td>
+        </tr>
+      </table>
+
+    <div style="text-align: right; padding: 5px">
+		<!--LiveInternet counter-->
+		<script type="text/javascript">document.write('<a href="http://www.liveinternet.ru/click" target=_blank><img src="http://counter.yadro.ru/hit?t53.6;r' + escape(document.referrer) + ((typeof(screen)=='undefined')?'':';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ';u' + escape(document.URL) +';i' + escape('Жж'+document.title.substring(0,80)) + ';' + Math.random() + '" border=0 width=88 height=31 alt="" title="LiveInternet: показано число просмотров и посетителей за 24 часа"><\/a>');
+		</script>
+		<!--/LiveInternet-->
+		<!-- SpyLOG -->
+		<script src="http://tools.spylog.ru/counter2.2.js" type="text/javascript" id="spylog_code" counter="830950" ></script>
+		<noscript><a href="http://u8309.50.spylog.com/cnt?cid=830950&f=3&p=0" target="_blank"><img src="http://u8309.50.spylog.com/cnt?cid=830950&p=0&f=4" alt='SpyLOG' border='0' width=88 height=31 ></a>
+		</noscript>
+		<!--/ SpyLOG -->
+	</div>
+</td>
+  </tr>
+</table>
+
+<script>
+<!--
+document.SEARCH.QS.focus();
+// --></script>
+
+<!-- 
+	как же вы все это читаете?
+	440hz 
+-->
+
+</body>
+</html>

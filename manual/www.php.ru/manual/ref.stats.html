@@ -1,0 +1,814 @@
+<!-- 
+
+     HTML dropped by Zend Guard Compressor 4.2
+
+     php.ru team: mz, az, yuri, vb, cyxapuk, 440hz, administrator
+     2004-2007 (c) expi-web.com 
+     2007-2008 (c) odware.com 
+     0101-1010 (с) 440hz
+
+     2b|~2b=?
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EHOT тут всё пожрал ! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="alternate" type="application/rss+xml" title="php.ru/forum - последние сообщения" href="http://www.php.ru/forum/rss.php">
+<link rel="SHORTCUT ICON" href="http://www.php.ru/favicon.ico" />
+<META name="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<meta http-equiv="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<META name="keywords" content="php, php5, apache, mysql, session">
+<meta http-equiv="keywords" content="php, php5, apache, mysql, session">
+<title>php.ru - Statistics Functions</title>
+<LINK REL="stylesheet" TYPE="text/css" HREF="http://www.php.ru/index.css">
+<script language="JavaScript" src="http://www.php.ru/ajax/ajax.js"></script>
+</head>
+<body>
+
+<table height='100%' width='100%' cellspacing='0' cellpadding='0'>
+  <tr height='99%' valign='top'>
+    <td align='center'>
+		
+		<table style='margin-top: 4px' width=100% cellspacing=0 cellpadding=3>
+   		<tr>
+     		<td>PHP - <a href="http://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BA%D1%80%D0%BE%D0%BD%D0%B8%D0%BC" target=_blank class=lnk>рекурсивный акроним</a> словосочетания &laquo;<a href="/manual/introduction.html" class=lnk>PHP: Hypertext Preprocessor</a>&raquo;</td>
+     	</tr>
+   		</table>
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/subsys_ajax.js"></script>
+		<!--
+
+		commet by 440hz
+		20.10.2007
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/pu_search.js"></script>
+
+		-->
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/cz.js?a=b"></script>
+
+		<table style='margin-top: 5px' width=100% bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0>
+   	 	<form name=SEARCH method=GET action="http://www.php.ru/search/?SID=ip96pjvtwnv7u242" onsubmit="return puSubmit();">
+	  	<input type=hidden name=PAGE value=1>
+  		<tr>
+    		<td width='1' valign='middle'> 
+    		   <a href='/'><img src="http://www.php.ru/;-)/logo.gif" width=133 height=93 alt="php" border=0 hspace=10 vspace=0></a>
+			 </td>
+		    <td width='100%' valign='middle'>
+		       <!--
+			   
+				commet by 440hz
+				20.10.2007
+
+			   <div id='pu_search' class='pu_search'></div>
+		       <div id='pu_search_description' class='pu_search_decription'></div>
+			   
+			   -->
+        	 <input type=text style='width:99%; margin: 10px' maxlength='200' name='QS' class='in' id='query' autocomplete='off' value="" />
+    		</td>
+		  </tr>
+   		<tr bgcolor='#666699' valign='middle'>
+			<td style='border-top: 1px solid #333366;'><br /></td>
+    		<td style='border-top: 1px solid #333366;'><div style="padding: 4px 4px 4px 10px; height: 24px; color: #CCCCFF;" id="stat">Хто там?<script>doLoadCZ('stat','stat');</script></div></td>
+  		</tr>
+		</form>
+		</table>
+		<table id="menu" cellspaciong=0 cellpadding=3>
+<tr>
+<td><a href="/" class=current>Главная</a></td>
+<td><a href="/download/" class=current>Скачать</a></td>
+<td><a href="/doc/" class=current>Документация</a></td>
+<td><a href="/forum/" class=current>Форум</a></td>
+<td width=100% align=right><a href="/phpinfo.html" class=current>phpinfo()</a></td>
+</tr>
+</table>
+
+		
+<!--  AdRiver code START. Type:728x90 Site: php.ru PZ: 0 BN: 1 -->
+<script language="javascript" type="text/javascript"><!--
+var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+var ar_Tail='unknown'; if (document.referrer) ar_Tail = escape(document.referrer);
+document.write(
+'<iframe src="http://ad.adriver.ru/cgi-bin/erle.cgi?'
++ 'sid=148680&bn=1&target=blank&bt=36&pz=0&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail
++ '" frameborder=0 vspace=0 hspace=0 width=728 height=90 marginwidth=0'
++ ' marginheight=0 scrolling=no></iframe>');
+//--></script>
+<noscript>
+<a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" target=_blank>
+<img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" alt="-AdRiver-" border=0 width=728 height=90></a>
+</noscript>
+<!--  AdRiver code END  -->
+
+
+  		<table width='100%' cellspacing='0' cellpadding='0'>
+    		<tr valign='top'>
+      		<td width=100%><div style="margin: 10px 10px 10px 50px;"><center><div style="width: 800px; text-align: left"><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Руководство по PHP</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="function.ssh2-tunnel.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="function.stats-absolute-deviation.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="reference"
+><A
+NAME="ref.stats"
+></A
+><DIV
+CLASS="TITLEPAGE"
+><H1
+CLASS="title"
+>CLII. Statistics Functions</H1
+><DIV
+CLASS="PARTINTRO"
+><A
+NAME="AEN175296"
+></A
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="stats.intro"
+>Введение</A
+></H1
+><P
+>&#13;    This is the statistics extension. It contains few dozens of functions
+    useful for statistical computations. It is a wrapper around 2 scientific
+    libraries, namely DCDFLIB (Library of C routines for Cumulative
+    Distributions Functions, Inverses, and Other parameters) by B. Brown &#38;
+    J. Lavato and RANDLIB by Barry Brown, James Lavato &#38; Kathy Russell.
+    Includes CD and PD functions.
+   </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="stats.installation"
+>Установка</A
+></H1
+><P
+>&#13;    Это расширение <A
+HREF="http://pecl.php.net"
+TARGET="_top"
+>PECL</A
+>
+не поставляется вместе с PHP.
+   </P
+><P
+>&#13;    Дополнительная информация, такая как новый версии,
+скачивание, исходные файлы, информация о разработчике и CHANGELOG, могут
+быть найдены здесь: 
+    <A
+HREF="http://pecl.php.net/package/stats"
+TARGET="_top"
+>http://pecl.php.net/package/stats</A
+>.
+   </P
+><P
+>&#13;    Вы можете скачать <ACRONYM
+CLASS="acronym"
+>DLL</ACRONYM
+> этого
+расширения <ACRONYM
+CLASS="acronym"
+>PECL</ACRONYM
+> со страницы <A
+HREF="http://www.php.net/downloads.php"
+TARGET="_top"
+>&#13;PHP Downloads</A
+> или <A
+HREF="http://snaps.php.net/"
+TARGET="_top"
+>&#13;http://snaps.php.net/</A
+>.
+   </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="stats.requirements"
+>Требования</A
+></H1
+><P
+>&#13;    No external libraries are needed. The extension comes bundled with the libraries used.
+   </P
+></DIV
+></DIV
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Содержание</B
+></DT
+><DT
+><A
+HREF="function.stats-absolute-deviation.html"
+>stats_absolute_deviation</A
+>&nbsp;--&nbsp;Returns the absolute deviation of an array of values</DT
+><DT
+><A
+HREF="function.stats-cdf-beta.html"
+>stats_cdf_beta</A
+>&nbsp;--&nbsp;CDF function for BETA Distribution. Calculates any one parameter of the beta distribution given values for the others.</DT
+><DT
+><A
+HREF="function.stats-cdf-binomial.html"
+>stats_cdf_binomial</A
+>&nbsp;--&nbsp;Calculates any one parameter of the binomial distribution given values for the others.</DT
+><DT
+><A
+HREF="function.stats-cdf-cauchy.html"
+>stats_cdf_cauchy</A
+>&nbsp;--&nbsp;Not documented</DT
+><DT
+><A
+HREF="function.stats-cdf-chisquare.html"
+>stats_cdf_chisquare</A
+>&nbsp;--&nbsp;Calculates any one parameter of the chi-square distribution given values for the others.</DT
+><DT
+><A
+HREF="function.stats-cdf-exponential.html"
+>stats_cdf_exponential</A
+>&nbsp;--&nbsp;Not documented</DT
+><DT
+><A
+HREF="function.stats-cdf-f.html"
+>stats_cdf_f</A
+>&nbsp;--&nbsp;Calculates any one parameter of the F distribution given values for the others.</DT
+><DT
+><A
+HREF="function.stats-cdf-gamma.html"
+>stats_cdf_gamma</A
+>&nbsp;--&nbsp;Calculates any one parameter of the gamma distribution given values for the others.</DT
+><DT
+><A
+HREF="function.stats-cdf-laplace.html"
+>stats_cdf_laplace</A
+>&nbsp;--&nbsp;Not documented</DT
+><DT
+><A
+HREF="function.stats-cdf-logistic.html"
+>stats_cdf_logistic</A
+>&nbsp;--&nbsp;Not documented</DT
+><DT
+><A
+HREF="function.stats-cdf-negative-binomial.html"
+>stats_cdf_negative_binomial</A
+>&nbsp;--&nbsp;Calculates any one parameter of the negative binomial distribution given values for the others.</DT
+><DT
+><A
+HREF="function.stats-cdf-noncentral-chisquare.html"
+>stats_cdf_noncentral_chisquare</A
+>&nbsp;--&nbsp;Calculates any one parameter of the non-central chi-square distribution given values for the others.</DT
+><DT
+><A
+HREF="function.stats-cdf-noncentral-f.html"
+>stats_cdf_noncentral_f</A
+>&nbsp;--&nbsp;Calculates any one parameter of the Non-central F distribution given values for the others.</DT
+><DT
+><A
+HREF="function.stats-cdf-poisson.html"
+>stats_cdf_poisson</A
+>&nbsp;--&nbsp;Calculates any one parameter of the Poisson distribution given values for the others.</DT
+><DT
+><A
+HREF="function.stats-cdf-t.html"
+>stats_cdf_t</A
+>&nbsp;--&nbsp;Calculates any one parameter of the T distribution given values for the others.</DT
+><DT
+><A
+HREF="function.stats-cdf-uniform.html"
+>stats_cdf_uniform</A
+>&nbsp;--&nbsp;Not documented</DT
+><DT
+><A
+HREF="function.stats-cdf-weibull.html"
+>stats_cdf_weibull</A
+>&nbsp;--&nbsp;Not documented</DT
+><DT
+><A
+HREF="function.stats-covariance.html"
+>stats_covariance</A
+>&nbsp;--&nbsp;Computes the covariance of two data sets</DT
+><DT
+><A
+HREF="function.stats-den-uniform.html"
+>stats_den_uniform</A
+>&nbsp;--&nbsp;Not documented</DT
+><DT
+><A
+HREF="function.stats-dens-beta.html"
+>stats_dens_beta</A
+>&nbsp;--&nbsp;Not documented</DT
+><DT
+><A
+HREF="function.stats-dens-cauchy.html"
+>stats_dens_cauchy</A
+>&nbsp;--&nbsp;Not documented</DT
+><DT
+><A
+HREF="function.stats-dens-chisquare.html"
+>stats_dens_chisquare</A
+>&nbsp;--&nbsp;Not documented</DT
+><DT
+><A
+HREF="function.stats-dens-exponential.html"
+>stats_dens_exponential</A
+>&nbsp;--&nbsp;Not documented</DT
+><DT
+><A
+HREF="function.stats-dens-f.html"
+>stats_dens_f</A
+>&nbsp;--&nbsp;</DT
+><DT
+><A
+HREF="function.stats-dens-gamma.html"
+>stats_dens_gamma</A
+>&nbsp;--&nbsp;Not documented</DT
+><DT
+><A
+HREF="function.stats-dens-laplace.html"
+>stats_dens_laplace</A
+>&nbsp;--&nbsp;Not documented</DT
+><DT
+><A
+HREF="function.stats-dens-logistic.html"
+>stats_dens_logistic</A
+>&nbsp;--&nbsp;Not documented</DT
+><DT
+><A
+HREF="function.stats-dens-negative-binomial.html"
+>stats_dens_negative_binomial</A
+>&nbsp;--&nbsp;Not documented</DT
+><DT
+><A
+HREF="function.stats-dens-normal.html"
+>stats_dens_normal</A
+>&nbsp;--&nbsp;Not documented</DT
+><DT
+><A
+HREF="function.stats-dens-pmf-binomial.html"
+>stats_dens_pmf_binomial</A
+>&nbsp;--&nbsp;Not documented</DT
+><DT
+><A
+HREF="function.stats-dens-pmf-hypergeometric.html"
+>stats_dens_pmf_hypergeometric</A
+>&nbsp;--&nbsp;</DT
+><DT
+><A
+HREF="function.stats-dens-pmf-poisson.html"
+>stats_dens_pmf_poisson</A
+>&nbsp;--&nbsp;Not documented</DT
+><DT
+><A
+HREF="function.stats-dens-t.html"
+>stats_dens_t</A
+>&nbsp;--&nbsp;Not documented</DT
+><DT
+><A
+HREF="function.stats-dens-weibull.html"
+>stats_dens_weibull</A
+>&nbsp;--&nbsp;Not documented</DT
+><DT
+><A
+HREF="function.stats-harmonic-mean.html"
+>stats_harmonic_mean</A
+>&nbsp;--&nbsp;Returns the harmonic mean of an array of values</DT
+><DT
+><A
+HREF="function.stats-kurtosis.html"
+>stats_kurtosis</A
+>&nbsp;--&nbsp;Computes the kurtosis of the data in the array</DT
+><DT
+><A
+HREF="function.stats-rand-gen-beta.html"
+>stats_rand_gen_beta</A
+>&nbsp;--&nbsp;Generates beta random deviate</DT
+><DT
+><A
+HREF="function.stats-rand-gen-chisquare.html"
+>stats_rand_gen_chisquare</A
+>&nbsp;--&nbsp;Generates random deviate from the distribution of a chisquare with "df" degrees of freedom random variable.</DT
+><DT
+><A
+HREF="function.stats-rand-gen-exponential.html"
+>stats_rand_gen_exponential</A
+>&nbsp;--&nbsp;Generates a single random deviate from an exponential distribution with mean "av"</DT
+><DT
+><A
+HREF="function.stats-rand-gen-f.html"
+>stats_rand_gen_f</A
+>&nbsp;--&nbsp;Generates a random deviate from the F (variance ratio) distribution with "dfn" degrees of freedom in the numerator and "dfd" degrees of freedom in the denominator. Method : directly generates ratio of chisquare variates</DT
+><DT
+><A
+HREF="function.stats-rand-gen-funiform.html"
+>stats_rand_gen_funiform</A
+>&nbsp;--&nbsp;Generates uniform float between low (exclusive) and high (exclusive)</DT
+><DT
+><A
+HREF="function.stats-rand-gen-gamma.html"
+>stats_rand_gen_gamma</A
+>&nbsp;--&nbsp;Generates random deviates from a gamma distribution</DT
+><DT
+><A
+HREF="function.stats-rand-gen-ibinomial-negative.html"
+>stats_rand_gen_ibinomial_negative</A
+>&nbsp;--&nbsp;Generates a single random deviate from a negative binomial distribution. Arguments : n - the number of trials in the negative binomial distribution from which a random deviate is to be generated (n &#62; 0), p - the probability of an event (0 &#60; p &#60; 1)).</DT
+><DT
+><A
+HREF="function.stats-rand-gen-ibinomial.html"
+>stats_rand_gen_ibinomial</A
+>&nbsp;--&nbsp;Generates a single random deviate from a binomial distribution whose number of trials is "n" (n &#62;= 0) and whose probability of an event in each trial is "pp" ([0;1]). Method : algorithm BTPE</DT
+><DT
+><A
+HREF="function.stats-rand-gen-int.html"
+>stats_rand_gen_int</A
+>&nbsp;--&nbsp;Generates random integer between 1 and 2147483562</DT
+><DT
+><A
+HREF="function.stats-rand-gen-ipoisson.html"
+>stats_rand_gen_ipoisson</A
+>&nbsp;--&nbsp;Generates a single random deviate from a Poisson distribution with mean "mu" (mu &#62;= 0.0).</DT
+><DT
+><A
+HREF="function.stats-rand-gen-iuniform.html"
+>stats_rand_gen_iuniform</A
+>&nbsp;--&nbsp;Generates integer uniformly distributed between LOW (inclusive) and HIGH (inclusive)</DT
+><DT
+><A
+HREF="function.stats-rand-gen-noncenral-chisquare.html"
+>stats_rand_gen_noncenral_chisquare</A
+>&nbsp;--&nbsp;Generates random deviate from the distribution of a noncentral chisquare with "df" degrees of freedom and noncentrality parameter "xnonc". d must be &#62;= 1.0, xnonc must &#62;= 0.0</DT
+><DT
+><A
+HREF="function.stats-rand-gen-noncentral-f.html"
+>stats_rand_gen_noncentral_f</A
+>&nbsp;--&nbsp;Generates a random deviate from the noncentral F (variance ratio) distribution with "dfn" degrees of freedom in the numerator, and "dfd" degrees of freedom in the denominator, and noncentrality parameter "xnonc". Method : directly generates ratio of noncentral numerator chisquare variate to central denominator chisquare variate.</DT
+><DT
+><A
+HREF="function.stats-rand-gen-noncentral-t.html"
+>stats_rand_gen_noncentral_t</A
+>&nbsp;--&nbsp;Generates a single random deviate from a noncentral T distribution</DT
+><DT
+><A
+HREF="function.stats-rand-gen-normal.html"
+>stats_rand_gen_normal</A
+>&nbsp;--&nbsp;Generates a single random deviate from a normal distribution with mean, av, and standard deviation, sd (sd &#62;= 0). Method : Renames SNORM from TOMS as slightly modified by BWB to use RANF instead of SUNIF.</DT
+><DT
+><A
+HREF="function.stats-rand-gen-t.html"
+>stats_rand_gen_t</A
+>&nbsp;--&nbsp;Generates a single random deviate from a T distribution</DT
+><DT
+><A
+HREF="function.stats-rand-get-seeds.html"
+>stats_rand_get_seeds</A
+>&nbsp;--&nbsp;Not documented</DT
+><DT
+><A
+HREF="function.stats-rand-phrase-to-seeds.html"
+>stats_rand_phrase_to_seeds</A
+>&nbsp;--&nbsp;generate two seeds for the RGN random number generator</DT
+><DT
+><A
+HREF="function.stats-rand-ranf.html"
+>stats_rand_ranf</A
+>&nbsp;--&nbsp;Returns a random floating point number from a uniform distribution over 0 - 1 (endpoints of this interval are not returned) using the current generator</DT
+><DT
+><A
+HREF="function.stats-rand-setall.html"
+>stats_rand_setall</A
+>&nbsp;--&nbsp;Not documented</DT
+><DT
+><A
+HREF="function.stats-skew.html"
+>stats_skew</A
+>&nbsp;--&nbsp;Computes the skewness of the data in the array</DT
+><DT
+><A
+HREF="function.stats-standard-deviation.html"
+>stats_standard_deviation</A
+>&nbsp;--&nbsp;Returns the standard deviation</DT
+><DT
+><A
+HREF="function.stats-stat-binomial-coef.html"
+>stats_stat_binomial_coef</A
+>&nbsp;--&nbsp;Not documented</DT
+><DT
+><A
+HREF="function.stats-stat-correlation.html"
+>stats_stat_correlation</A
+>&nbsp;--&nbsp;Not documented</DT
+><DT
+><A
+HREF="function.stats-stat-gennch.html"
+>stats_stat_gennch</A
+>&nbsp;--&nbsp;Not documented</DT
+><DT
+><A
+HREF="function.stats-stat-independent-t.html"
+>stats_stat_independent_t</A
+>&nbsp;--&nbsp;Not documented</DT
+><DT
+><A
+HREF="function.stats-stat-innerproduct.html"
+>stats_stat_innerproduct</A
+>&nbsp;--&nbsp;</DT
+><DT
+><A
+HREF="function.stats-stat-noncentral-t.html"
+>stats_stat_noncentral_t</A
+>&nbsp;--&nbsp;Calculates any one parameter of the noncentral t distribution give values for the others.</DT
+><DT
+><A
+HREF="function.stats-stat-paired-t.html"
+>stats_stat_paired_t</A
+>&nbsp;--&nbsp;Not documented</DT
+><DT
+><A
+HREF="function.stats-stat-percentile.html"
+>stats_stat_percentile</A
+>&nbsp;--&nbsp;Not documented</DT
+><DT
+><A
+HREF="function.stats-stat-powersum.html"
+>stats_stat_powersum</A
+>&nbsp;--&nbsp;Not documented</DT
+><DT
+><A
+HREF="function.stats-variance.html"
+>stats_variance</A
+>&nbsp;--&nbsp;Returns the population variance</DT
+></DL
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="function.ssh2-tunnel.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Начало</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="function.stats-absolute-deviation.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>ssh2_tunnel</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="funcref.html"
+ACCESSKEY="U"
+>Уровень выше</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>stats_absolute_deviation</TD
+></TR
+></TABLE
+></DIV
+></div></center></div></td>
+			<td><div style="display:none; width:200px;" id="o3" name="o3"><script charset="windows-1251" type="text/javascript" src="http://www.ozon.ru/PartnerTwinerNew.aspx?revident=bea9126b-c8e1-4bf5-b6d8-9a057f8feac6" ></script></div><script>o = document.getElementById('o3'); if(o) { var s = o.innerHTML; s = s.replace(/F6F6F6/gi,"FFFFFF"); o.innerHTML = s.replace(/padding-top: 10px; padding-bottom: 10px;/,"display:none;"); o.style.display = 'block'; } </script><br><div style="margin: 10px;"><script type="text/javascript"><!--
+google_ad_client = "pub-4093271809023514";
+/* 120x600, создано 01.11.2008 */
+google_ad_slot = "0438855731";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div></td>
+    		</tr>
+  		</table>
+    </td>
+  </tr>
+  <tr valign='bottom' height='1%'>
+  <td>      <table width=100% cellspacing=0 cellpadding=5 border=0 bgcolor=#9999CC>
+        <tr valign=center>
+          <td class='phpcopyright' width='45%' align='left'>&nbsp;&nbsp;Engine <a  href="http://www.mnogosearch.org/">MnoGoSearch</a></td>
+          <td class='phpcopyright' width='10%' align='center'>2007-2010 &copy <a  href="mailto:webmaster@php.ru">PHP.RU</a></td>
+          <td class='phpcopyright' width='45%' align='right' >Powered by <a target="_blank" href="http://odware.ru">ODware</a> <a HREF="http://440hz.ru">440Hz</a> &nbsp;&nbsp;</td>
+        </tr>
+      </table>
+
+    <div style="text-align: right; padding: 5px">
+		<!--LiveInternet counter-->
+		<script type="text/javascript">document.write('<a href="http://www.liveinternet.ru/click" target=_blank><img src="http://counter.yadro.ru/hit?t53.6;r' + escape(document.referrer) + ((typeof(screen)=='undefined')?'':';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ';u' + escape(document.URL) +';i' + escape('Жж'+document.title.substring(0,80)) + ';' + Math.random() + '" border=0 width=88 height=31 alt="" title="LiveInternet: показано число просмотров и посетителей за 24 часа"><\/a>');
+		</script>
+		<!--/LiveInternet-->
+		<!-- SpyLOG -->
+		<script src="http://tools.spylog.ru/counter2.2.js" type="text/javascript" id="spylog_code" counter="830950" ></script>
+		<noscript><a href="http://u8309.50.spylog.com/cnt?cid=830950&f=3&p=0" target="_blank"><img src="http://u8309.50.spylog.com/cnt?cid=830950&p=0&f=4" alt='SpyLOG' border='0' width=88 height=31 ></a>
+		</noscript>
+		<!--/ SpyLOG -->
+	</div>
+</td>
+  </tr>
+</table>
+
+<script>
+<!--
+document.SEARCH.QS.focus();
+// --></script>
+
+<!-- 
+	как же вы все это читаете?
+	440hz 
+-->
+
+</body>
+</html>

@@ -1,0 +1,1524 @@
+<!-- 
+
+     HTML dropped by Zend Guard Compressor 4.2
+
+     php.ru team: mz, az, yuri, vb, cyxapuk, 440hz, administrator
+     2004-2007 (c) expi-web.com 
+     2007-2008 (c) odware.com 
+     0101-1010 (с) 440hz
+
+     2b|~2b=?
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EHOT тут всё пожрал ! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="alternate" type="application/rss+xml" title="php.ru/forum - последние сообщения" href="http://www.php.ru/forum/rss.php">
+<link rel="SHORTCUT ICON" href="http://www.php.ru/favicon.ico" />
+<META name="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<meta http-equiv="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<META name="keywords" content="php, php5, apache, mysql, session">
+<meta http-equiv="keywords" content="php, php5, apache, mysql, session">
+<title>php.ru - Функции обработки строк</title>
+<LINK REL="stylesheet" TYPE="text/css" HREF="http://www.php.ru/index.css">
+<script language="JavaScript" src="http://www.php.ru/ajax/ajax.js"></script>
+</head>
+<body>
+
+<table height='100%' width='100%' cellspacing='0' cellpadding='0'>
+  <tr height='99%' valign='top'>
+    <td align='center'>
+		
+		<table style='margin-top: 4px' width=100% cellspacing=0 cellpadding=3>
+   		<tr>
+     		<td>PHP - <a href="http://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BA%D1%80%D0%BE%D0%BD%D0%B8%D0%BC" target=_blank class=lnk>рекурсивный акроним</a> словосочетания &laquo;<a href="/manual/introduction.html" class=lnk>PHP: Hypertext Preprocessor</a>&raquo;</td>
+     	</tr>
+   		</table>
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/subsys_ajax.js"></script>
+		<!--
+
+		commet by 440hz
+		20.10.2007
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/pu_search.js"></script>
+
+		-->
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/cz.js?a=b"></script>
+
+		<table style='margin-top: 5px' width=100% bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0>
+   	 	<form name=SEARCH method=GET action="http://www.php.ru/search/?SID=8pp8rfa4l7ogql43" onsubmit="return puSubmit();">
+	  	<input type=hidden name=PAGE value=1>
+  		<tr>
+    		<td width='1' valign='middle'> 
+    		   <a href='/'><img src="http://www.php.ru/;-)/logo.gif" width=133 height=93 alt="php" border=0 hspace=10 vspace=0></a>
+			 </td>
+		    <td width='100%' valign='middle'>
+		       <!--
+			   
+				commet by 440hz
+				20.10.2007
+
+			   <div id='pu_search' class='pu_search'></div>
+		       <div id='pu_search_description' class='pu_search_decription'></div>
+			   
+			   -->
+        	 <input type=text style='width:99%; margin: 10px' maxlength='200' name='QS' class='in' id='query' autocomplete='off' value="" />
+    		</td>
+		  </tr>
+   		<tr bgcolor='#666699' valign='middle'>
+			<td style='border-top: 1px solid #333366;'><br /></td>
+    		<td style='border-top: 1px solid #333366;'><div style="padding: 4px 4px 4px 10px; height: 24px; color: #CCCCFF;" id="stat">Хто там?<script>doLoadCZ('stat','stat');</script></div></td>
+  		</tr>
+		</form>
+		</table>
+		<table id="menu" cellspaciong=0 cellpadding=3>
+<tr>
+<td><a href="/" class=current>Главная</a></td>
+<td><a href="/download/" class=current>Скачать</a></td>
+<td><a href="/doc/" class=current>Документация</a></td>
+<td><a href="/forum/" class=current>Форум</a></td>
+<td width=100% align=right><a href="/phpinfo.html" class=current>phpinfo()</a></td>
+</tr>
+</table>
+
+		
+<!--  AdRiver code START. Type:728x90 Site: php.ru PZ: 0 BN: 1 -->
+<script language="javascript" type="text/javascript"><!--
+var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+var ar_Tail='unknown'; if (document.referrer) ar_Tail = escape(document.referrer);
+document.write(
+'<iframe src="http://ad.adriver.ru/cgi-bin/erle.cgi?'
++ 'sid=148680&bn=1&target=blank&bt=36&pz=0&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail
++ '" frameborder=0 vspace=0 hspace=0 width=728 height=90 marginwidth=0'
++ ' marginheight=0 scrolling=no></iframe>');
+//--></script>
+<noscript>
+<a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" target=_blank>
+<img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" alt="-AdRiver-" border=0 width=728 height=90></a>
+</noscript>
+<!--  AdRiver code END  -->
+
+
+  		<table width='100%' cellspacing='0' cellpadding='0'>
+    		<tr valign='top'>
+      		<td width=100%><div style="margin: 10px 10px 10px 50px;"><center><div style="width: 800px; text-align: left"><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Руководство по PHP</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="function.stream-wrapper-unregister.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="function.addcslashes.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="reference"
+><A
+NAME="ref.strings"
+></A
+><DIV
+CLASS="TITLEPAGE"
+><H1
+CLASS="title"
+>CLIV. Функции обработки строк</H1
+><DIV
+CLASS="PARTINTRO"
+><A
+NAME="AEN180010"
+></A
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="strings.intro"
+>Введение</A
+></H1
+><P
+>&#13;     Эти функции предназначены для выполнения различных манипуляций со 
+     строками. Более специализированные функции см. в разделах, посвященных
+     регулярным выражениям и <A
+HREF="ref.url.html"
+>обработке URL</A
+>.
+    </P
+><P
+>&#13;     Для получения общей информации о работе со строками, особенно об 
+     использовании одиночных и двойных кавычек и экранировании символов, 
+     смотрите главу <A
+HREF="language.types.string.html"
+>"Строки"</A
+> 
+     в разделе <A
+HREF="language.types.html"
+>"Типы"</A
+> .
+    </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="strings.requirements"
+>Требования</A
+></H1
+><P
+>Эти функции всегда доступны.</P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="strings.installation"
+>Установка</A
+></H1
+><P
+>Для использования этих функций не требуется проведение установки,
+поскольку они являются частью ядра PHP.</P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="string.constants"
+>Предопределенные константы</A
+></H1
+><P
+>&#13;Перечисленные ниже константы определены данным расширением и могут быть
+доступны только в том случае, если PHP был собран с
+поддержкой этого расширения или же в том случае, если
+данное расширение подгружается во время выполнения.
+</P
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+><TT
+CLASS="constant"
+><B
+>CRYPT_SALT_LENGTH</B
+></TT
+>
+     <A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+></DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>CRYPT_STD_DES</B
+></TT
+>
+     <A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+></DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>CRYPT_EXT_DES</B
+></TT
+>
+     <A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+></DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>CRYPT_MD5</B
+></TT
+>
+     <A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+></DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>CRYPT_BLOWFISH</B
+></TT
+>
+     <A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+></DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>HTML_SPECIALCHARS</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>HTML_ENTITIES</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>ENT_COMPAT</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>ENT_QUOTES</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>ENT_NOQUOTES</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>CHAR_MAX</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>LC_CTYPE</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>LC_NUMERIC</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>LC_TIME</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>LC_COLLATE</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>LC_MONETARY</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>LC_ALL</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>LC_MESSAGES</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>STR_PAD_LEFT</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>STR_PAD_RIGHT</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>STR_PAD_BOTH</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="strings.seealso"
+>Смотрите также</A
+></H1
+><P
+>&#13;     Для получения информации о более сложной обработке строк обратитесь к
+     разделам о регулярных выражениях:  <A
+HREF="ref.regex.html"
+>POSIX-совместимых</A
+> и <A
+HREF="ref.pcre.html"
+>Perl-совместимых</A
+>.
+    </P
+></DIV
+></DIV
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Содержание</B
+></DT
+><DT
+><A
+HREF="function.addcslashes.html"
+>addcslashes</A
+>&nbsp;--&nbsp;Экранирует спецсимволы в стиле языка C</DT
+><DT
+><A
+HREF="function.addslashes.html"
+>addslashes</A
+>&nbsp;--&nbsp;Экранирует спецсимволы в строке</DT
+><DT
+><A
+HREF="function.bin2hex.html"
+>bin2hex</A
+>&nbsp;--&nbsp;
+     Преобразует бинарные данные в шестнадцатиричное представление
+    </DT
+><DT
+><A
+HREF="function.chop.html"
+>chop</A
+>&nbsp;--&nbsp;Псевдоним функции <A
+HREF="function.rtrim.html"
+><B
+CLASS="function"
+>rtrim()</B
+></A
+></DT
+><DT
+><A
+HREF="function.chr.html"
+>chr</A
+>&nbsp;--&nbsp;Возвращает символ по его коду</DT
+><DT
+><A
+HREF="function.chunk-split.html"
+>chunk_split</A
+>&nbsp;--&nbsp;Разбивает строку на фрагменты</DT
+><DT
+><A
+HREF="function.convert-cyr-string.html"
+>convert_cyr_string</A
+>&nbsp;--&nbsp;
+     Преобразует строку из одной кириллической кодировки в другую
+    </DT
+><DT
+><A
+HREF="function.convert-uudecode.html"
+>convert_uudecode</A
+>&nbsp;--&nbsp;
+   Преобразует строку из формата uuencode в обычный вид
+  </DT
+><DT
+><A
+HREF="function.convert-uuencode.html"
+>convert_uuencode</A
+>&nbsp;--&nbsp;
+   Преобразует строку в формат uuencode
+  </DT
+><DT
+><A
+HREF="function.count-chars.html"
+>count_chars</A
+>&nbsp;--&nbsp;
+     Возвращает информацию о символах, входящих в строку
+    </DT
+><DT
+><A
+HREF="function.crc32.html"
+>crc32</A
+>&nbsp;--&nbsp;Вычисляет CRC32 для строки</DT
+><DT
+><A
+HREF="function.crypt.html"
+>crypt</A
+>&nbsp;--&nbsp;Необратимое шифрование (хэширование)</DT
+><DT
+><A
+HREF="function.echo.html"
+>echo</A
+>&nbsp;--&nbsp;Выводит одну или более строк</DT
+><DT
+><A
+HREF="function.explode.html"
+>explode</A
+>&nbsp;--&nbsp;Разбивает строку на подстроки</DT
+><DT
+><A
+HREF="function.fprintf.html"
+>fprintf</A
+>&nbsp;--&nbsp;Записывает отформатированную строку в поток</DT
+><DT
+><A
+HREF="function.get-html-translation-table.html"
+>get_html_translation_table</A
+>&nbsp;--&nbsp;
+     Возвращает таблицу преобразований, используемую функциями
+     <A
+HREF="function.htmlspecialchars.html"
+><B
+CLASS="function"
+>htmlspecialchars()</B
+></A
+> и
+     <A
+HREF="function.htmlentities.html"
+><B
+CLASS="function"
+>htmlentities()</B
+></A
+>
+    </DT
+><DT
+><A
+HREF="function.hebrev.html"
+>hebrev</A
+>&nbsp;--&nbsp;
+     Преобразует текст на иврите из логической кодировки в визуальную.
+    </DT
+><DT
+><A
+HREF="function.hebrevc.html"
+>hebrevc</A
+>&nbsp;--&nbsp;
+      Преобразует текст на иврите из логической кодировки в визуальную с 
+      преобразованием перевода строки.
+    </DT
+><DT
+><A
+HREF="function.html-entity-decode.html"
+>html_entity_decode</A
+>&nbsp;--&nbsp;
+     Преобразует HTML сущности в соответствующие символы
+    </DT
+><DT
+><A
+HREF="function.htmlentities.html"
+>htmlentities</A
+>&nbsp;--&nbsp;
+     Преобразует символы в соответствующие HTML сущности.
+    </DT
+><DT
+><A
+HREF="function.htmlspecialchars-decode.html"
+>htmlspecialchars_decode</A
+>&nbsp;--&nbsp;
+   Преобразует специальные HTML-сущности обратно в соответствующие символы
+  </DT
+><DT
+><A
+HREF="function.htmlspecialchars.html"
+>htmlspecialchars</A
+>&nbsp;--&nbsp;
+     Преобразует специальные символы в HTML сущности
+    </DT
+><DT
+><A
+HREF="function.implode.html"
+>implode</A
+>&nbsp;--&nbsp;Объединяет элементы массива в строку</DT
+><DT
+><A
+HREF="function.join.html"
+>join</A
+>&nbsp;--&nbsp;Псевдоним функции <A
+HREF="function.implode.html"
+><B
+CLASS="function"
+>implode()</B
+></A
+></DT
+><DT
+><A
+HREF="function.levenshtein.html"
+>levenshtein</A
+>&nbsp;--&nbsp;
+     Вычисляет расстояние Левенштейна между двумя строками
+    </DT
+><DT
+><A
+HREF="function.localeconv.html"
+>localeconv</A
+>&nbsp;--&nbsp;Возвращает информацию о числовых форматах</DT
+><DT
+><A
+HREF="function.ltrim.html"
+>ltrim</A
+>&nbsp;--&nbsp;
+     Удаляет пробелы из начала строки
+    </DT
+><DT
+><A
+HREF="function.md5-file.html"
+>md5_file</A
+>&nbsp;--&nbsp;Возвращает MD5 хэш файла</DT
+><DT
+><A
+HREF="function.md5.html"
+>md5</A
+>&nbsp;--&nbsp;Возвращает MD5 хэш строки</DT
+><DT
+><A
+HREF="function.metaphone.html"
+>metaphone</A
+>&nbsp;--&nbsp;Возвращает ключ metaphone для строки</DT
+><DT
+><A
+HREF="function.money-format.html"
+>money_format</A
+>&nbsp;--&nbsp;Форматирует число как денежную величину</DT
+><DT
+><A
+HREF="function.nl-langinfo.html"
+>nl_langinfo</A
+>&nbsp;--&nbsp;
+     Возвращает информацию о языке и локали
+    </DT
+><DT
+><A
+HREF="function.nl2br.html"
+>nl2br</A
+>&nbsp;--&nbsp;
+     Вставляет HTML код разрыва строки перед каждым переводом строки
+    </DT
+><DT
+><A
+HREF="function.number-format.html"
+>number_format</A
+>&nbsp;--&nbsp;Форматирует число с разделением групп</DT
+><DT
+><A
+HREF="function.ord.html"
+>ord</A
+>&nbsp;--&nbsp;Возвращает ASCII код символа</DT
+><DT
+><A
+HREF="function.parse-str.html"
+>parse_str</A
+>&nbsp;--&nbsp;Разбирает строку в переменные</DT
+><DT
+><A
+HREF="function.print.html"
+>print</A
+>&nbsp;--&nbsp;Выводит строку</DT
+><DT
+><A
+HREF="function.printf.html"
+>printf</A
+>&nbsp;--&nbsp;Выводит отформатированную строку</DT
+><DT
+><A
+HREF="function.quoted-printable-decode.html"
+>quoted_printable_decode</A
+>&nbsp;--&nbsp;
+     Раскодирует строку, закодированную методом quoted printable
+    </DT
+><DT
+><A
+HREF="function.quotemeta.html"
+>quotemeta</A
+>&nbsp;--&nbsp;Экранирует специальные символы</DT
+><DT
+><A
+HREF="function.rtrim.html"
+>rtrim</A
+>&nbsp;--&nbsp;
+     Удаляет пробелы из конца строки
+    </DT
+><DT
+><A
+HREF="function.setlocale.html"
+>setlocale</A
+>&nbsp;--&nbsp;Устанавливает локаль</DT
+><DT
+><A
+HREF="function.sha1-file.html"
+>sha1_file</A
+>&nbsp;--&nbsp;Возвращает SHA1 хэш файла</DT
+><DT
+><A
+HREF="function.sha1.html"
+>sha1</A
+>&nbsp;--&nbsp;Возвращает SHA1 хэш строки</DT
+><DT
+><A
+HREF="function.similar-text.html"
+>similar_text</A
+>&nbsp;--&nbsp;
+     Вычисляет степень похожести двух строк
+    </DT
+><DT
+><A
+HREF="function.soundex.html"
+>soundex</A
+>&nbsp;--&nbsp;Возвращает ключ soundex для строки</DT
+><DT
+><A
+HREF="function.sprintf.html"
+>sprintf</A
+>&nbsp;--&nbsp;Возвращает отформатированную строку</DT
+><DT
+><A
+HREF="function.sscanf.html"
+>sscanf</A
+>&nbsp;--&nbsp;
+     Разбирает строку в соответствии с заданным форматом
+    </DT
+><DT
+><A
+HREF="function.str-ireplace.html"
+>str_ireplace</A
+>&nbsp;--&nbsp;
+     Регистро-независимый вариант функции
+     <A
+HREF="function.str-replace.html"
+><B
+CLASS="function"
+>str_replace()</B
+></A
+>.
+    </DT
+><DT
+><A
+HREF="function.str-pad.html"
+>str_pad</A
+>&nbsp;--&nbsp;
+     Дополняет строку другой строкой до заданной длины
+    </DT
+><DT
+><A
+HREF="function.str-repeat.html"
+>str_repeat</A
+>&nbsp;--&nbsp;Возвращает повторяющуюся строку</DT
+><DT
+><A
+HREF="function.str-replace.html"
+>str_replace</A
+>&nbsp;--&nbsp;
+     Заменяет строку поиска на строку замены
+    </DT
+><DT
+><A
+HREF="function.str-rot13.html"
+>str_rot13</A
+>&nbsp;--&nbsp;Выполняет над строкой преобразование ROT13</DT
+><DT
+><A
+HREF="function.str-shuffle.html"
+>str_shuffle</A
+>&nbsp;--&nbsp;Переставляет символы в строке</DT
+><DT
+><A
+HREF="function.str-split.html"
+>str_split</A
+>&nbsp;--&nbsp;
+     Преобразует строку в массив
+    </DT
+><DT
+><A
+HREF="function.str-word-count.html"
+>str_word_count</A
+>&nbsp;--&nbsp;
+     Возвращает информацию о словах, входящих в строку
+    </DT
+><DT
+><A
+HREF="function.strcasecmp.html"
+>strcasecmp</A
+>&nbsp;--&nbsp;
+     Сравнение строк без учета регистра, безопасное для данных в двоичной 
+     форме
+    </DT
+><DT
+><A
+HREF="function.strchr.html"
+>strchr</A
+>&nbsp;--&nbsp;Псевдоним функции <A
+HREF="function.strstr.html"
+><B
+CLASS="function"
+>strstr()</B
+></A
+></DT
+><DT
+><A
+HREF="function.strcmp.html"
+>strcmp</A
+>&nbsp;--&nbsp;
+     Сравнение строк, безопасное для данных в двоичной форме
+    </DT
+><DT
+><A
+HREF="function.strcoll.html"
+>strcoll</A
+>&nbsp;--&nbsp;Сравнение строк с учетом текущей локали</DT
+><DT
+><A
+HREF="function.strcspn.html"
+>strcspn</A
+>&nbsp;--&nbsp;
+     Возвращает длину участка в начале строки, не соответствующего маске
+    </DT
+><DT
+><A
+HREF="function.strip-tags.html"
+>strip_tags</A
+>&nbsp;--&nbsp;Удаляет HTML и PHP тэги из строки</DT
+><DT
+><A
+HREF="function.stripcslashes.html"
+>stripcslashes</A
+>&nbsp;--&nbsp;
+     Удаляет экранирование символов, произведенное функцией 
+     <A
+HREF="function.addcslashes.html"
+><B
+CLASS="function"
+>addcslashes()</B
+></A
+>
+    </DT
+><DT
+><A
+HREF="function.stripos.html"
+>stripos</A
+>&nbsp;--&nbsp;
+     Возвращает позицию первого вхождения подстроки без учета регистра
+    </DT
+><DT
+><A
+HREF="function.stripslashes.html"
+>stripslashes</A
+>&nbsp;--&nbsp;
+     Удаляет экранирование символов, произведенное функцией 
+     <A
+HREF="function.addslashes.html"
+><B
+CLASS="function"
+>addslashes()</B
+></A
+>
+    </DT
+><DT
+><A
+HREF="function.stristr.html"
+>stristr</A
+>&nbsp;--&nbsp;
+     Регистро-независимый вариант функции <A
+HREF="function.strstr.html"
+><B
+CLASS="function"
+>strstr()</B
+></A
+>.
+    </DT
+><DT
+><A
+HREF="function.strlen.html"
+>strlen</A
+>&nbsp;--&nbsp;Возвращает длину строки</DT
+><DT
+><A
+HREF="function.strnatcasecmp.html"
+>strnatcasecmp</A
+>&nbsp;--&nbsp;
+     Сравнение строк без учета регистра с использованием алгоритма 
+     "естественного упорядочения"
+    </DT
+><DT
+><A
+HREF="function.strnatcmp.html"
+>strnatcmp</A
+>&nbsp;--&nbsp;
+     Сравнение строк с использованием алгоритма "естественного 
+     упорядочения"
+    </DT
+><DT
+><A
+HREF="function.strncasecmp.html"
+>strncasecmp</A
+>&nbsp;--&nbsp;
+     Сравнение первых n символов строк без учета регистра, безопасное для 
+     данных в двоичной форме
+    </DT
+><DT
+><A
+HREF="function.strncmp.html"
+>strncmp</A
+>&nbsp;--&nbsp;
+     Сравнение первых n символов строк без учета регистра, безопасное для данных в двоичной форме
+    </DT
+><DT
+><A
+HREF="function.strpbrk.html"
+>strpbrk</A
+>&nbsp;--&nbsp;
+     Ищет в строке любой символ из заданного набора
+    </DT
+><DT
+><A
+HREF="function.strpos.html"
+>strpos</A
+>&nbsp;--&nbsp;
+     Возвращает позицию первого вхождения подстроки
+    </DT
+><DT
+><A
+HREF="function.strrchr.html"
+>strrchr</A
+>&nbsp;--&nbsp;
+     Находит последнее вхождение подстроки
+    </DT
+><DT
+><A
+HREF="function.strrev.html"
+>strrev</A
+>&nbsp;--&nbsp;Переворачивает строку</DT
+><DT
+><A
+HREF="function.strripos.html"
+>strripos</A
+>&nbsp;--&nbsp;
+     Возвращает позицию последнего вхождения подстроки без учета регистра
+    </DT
+><DT
+><A
+HREF="function.strrpos.html"
+>strrpos</A
+>&nbsp;--&nbsp;
+     Возвращает позицию последнего вхождения символа
+    </DT
+><DT
+><A
+HREF="function.strspn.html"
+>strspn</A
+>&nbsp;--&nbsp;
+     Возвращает длину участка в начале строки, соответствующего маске
+    </DT
+><DT
+><A
+HREF="function.strstr.html"
+>strstr</A
+>&nbsp;--&nbsp;
+     Находит первое вхождение подстроки
+    </DT
+><DT
+><A
+HREF="function.strtok.html"
+>strtok</A
+>&nbsp;--&nbsp;Разбивает строку</DT
+><DT
+><A
+HREF="function.strtolower.html"
+>strtolower</A
+>&nbsp;--&nbsp;Преобразует строку в нижний регистр</DT
+><DT
+><A
+HREF="function.strtoupper.html"
+>strtoupper</A
+>&nbsp;--&nbsp;Преобразует строку в верхний регистр</DT
+><DT
+><A
+HREF="function.strtr.html"
+>strtr</A
+>&nbsp;--&nbsp;Преобразует заданные символы</DT
+><DT
+><A
+HREF="function.substr-compare.html"
+>substr_compare</A
+>&nbsp;--&nbsp;
+     Безопасное для обработки данных в двоичной форме сравнение 2 строк со
+     смещением, с учетом или без учета регистра
+    </DT
+><DT
+><A
+HREF="function.substr-count.html"
+>substr_count</A
+>&nbsp;--&nbsp;Возвращает число вхождений подстроки</DT
+><DT
+><A
+HREF="function.substr-replace.html"
+>substr_replace</A
+>&nbsp;--&nbsp;Заменяет часть строки</DT
+><DT
+><A
+HREF="function.substr.html"
+>substr</A
+>&nbsp;--&nbsp;Возвращает подстроку</DT
+><DT
+><A
+HREF="function.trim.html"
+>trim</A
+>&nbsp;--&nbsp;
+     Удаляет пробелы из начала и конца строки
+    </DT
+><DT
+><A
+HREF="function.ucfirst.html"
+>ucfirst</A
+>&nbsp;--&nbsp;
+     Преобразует первый символ строки в верхний регистр
+    </DT
+><DT
+><A
+HREF="function.ucwords.html"
+>ucwords</A
+>&nbsp;--&nbsp;
+     Преобразует в верхний регистр первый символ каждого слова в строке
+    </DT
+><DT
+><A
+HREF="function.vfprintf.html"
+>vfprintf</A
+>&nbsp;--&nbsp;Write a formatted string to a stream</DT
+><DT
+><A
+HREF="function.vprintf.html"
+>vprintf</A
+>&nbsp;--&nbsp;Выводит отформатированную строку</DT
+><DT
+><A
+HREF="function.vsprintf.html"
+>vsprintf</A
+>&nbsp;--&nbsp;Возвращает отформатированную строку</DT
+><DT
+><A
+HREF="function.wordwrap.html"
+>wordwrap</A
+>&nbsp;--&nbsp;
+     Выполняет перенос строки на данное количество символов с 
+     использованием символа разрыва строки.
+    </DT
+></DL
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="function.stream-wrapper-unregister.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Начало</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="function.addcslashes.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>stream_wrapper_unregister</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="funcref.html"
+ACCESSKEY="U"
+>Уровень выше</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>addcslashes</TD
+></TR
+></TABLE
+></DIV
+></div></center></div></td>
+			<td><div style="display:none; width:200px;" id="o3" name="o3"><script charset="windows-1251" type="text/javascript" src="http://www.ozon.ru/PartnerTwinerNew.aspx?revident=bea9126b-c8e1-4bf5-b6d8-9a057f8feac6" ></script></div><script>o = document.getElementById('o3'); if(o) { var s = o.innerHTML; s = s.replace(/F6F6F6/gi,"FFFFFF"); o.innerHTML = s.replace(/padding-top: 10px; padding-bottom: 10px;/,"display:none;"); o.style.display = 'block'; } </script><br><div style="margin: 10px;"><script type="text/javascript"><!--
+google_ad_client = "pub-4093271809023514";
+/* 120x600, создано 01.11.2008 */
+google_ad_slot = "0438855731";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div></td>
+    		</tr>
+  		</table>
+    </td>
+  </tr>
+  <tr valign='bottom' height='1%'>
+  <td>      <table width=100% cellspacing=0 cellpadding=5 border=0 bgcolor=#9999CC>
+        <tr valign=center>
+          <td class='phpcopyright' width='45%' align='left'>&nbsp;&nbsp;Engine <a  href="http://www.mnogosearch.org/">MnoGoSearch</a></td>
+          <td class='phpcopyright' width='10%' align='center'>2007-2010 &copy <a  href="mailto:webmaster@php.ru">PHP.RU</a></td>
+          <td class='phpcopyright' width='45%' align='right' >Powered by <a target="_blank" href="http://odware.ru">ODware</a> <a HREF="http://440hz.ru">440Hz</a> &nbsp;&nbsp;</td>
+        </tr>
+      </table>
+
+    <div style="text-align: right; padding: 5px">
+		<!--LiveInternet counter-->
+		<script type="text/javascript">document.write('<a href="http://www.liveinternet.ru/click" target=_blank><img src="http://counter.yadro.ru/hit?t53.6;r' + escape(document.referrer) + ((typeof(screen)=='undefined')?'':';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ';u' + escape(document.URL) +';i' + escape('Жж'+document.title.substring(0,80)) + ';' + Math.random() + '" border=0 width=88 height=31 alt="" title="LiveInternet: показано число просмотров и посетителей за 24 часа"><\/a>');
+		</script>
+		<!--/LiveInternet-->
+		<!-- SpyLOG -->
+		<script src="http://tools.spylog.ru/counter2.2.js" type="text/javascript" id="spylog_code" counter="830950" ></script>
+		<noscript><a href="http://u8309.50.spylog.com/cnt?cid=830950&f=3&p=0" target="_blank"><img src="http://u8309.50.spylog.com/cnt?cid=830950&p=0&f=4" alt='SpyLOG' border='0' width=88 height=31 ></a>
+		</noscript>
+		<!--/ SpyLOG -->
+	</div>
+</td>
+  </tr>
+</table>
+
+<script>
+<!--
+document.SEARCH.QS.focus();
+// --></script>
+
+<!-- 
+	как же вы все это читаете?
+	440hz 
+-->
+
+</body>
+</html>

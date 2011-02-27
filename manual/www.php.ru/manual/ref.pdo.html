@@ -1,0 +1,4117 @@
+<!-- 
+
+     HTML dropped by Zend Guard Compressor 4.2
+
+     php.ru team: mz, az, yuri, vb, cyxapuk, 440hz, administrator
+     2004-2007 (c) expi-web.com 
+     2007-2008 (c) odware.com 
+     0101-1010 (с) 440hz
+
+     2b|~2b=?
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EHOT тут всё пожрал ! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="alternate" type="application/rss+xml" title="php.ru/forum - последние сообщения" href="http://www.php.ru/forum/rss.php">
+<link rel="SHORTCUT ICON" href="http://www.php.ru/favicon.ico" />
+<META name="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<meta http-equiv="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<META name="keywords" content="php, php5, apache, mysql, session">
+<meta http-equiv="keywords" content="php, php5, apache, mysql, session">
+<title>php.ru - PDO Functions</title>
+<LINK REL="stylesheet" TYPE="text/css" HREF="http://www.php.ru/index.css">
+<script language="JavaScript" src="http://www.php.ru/ajax/ajax.js"></script>
+</head>
+<body>
+
+<table height='100%' width='100%' cellspacing='0' cellpadding='0'>
+  <tr height='99%' valign='top'>
+    <td align='center'>
+		
+		<table style='margin-top: 4px' width=100% cellspacing=0 cellpadding=3>
+   		<tr>
+     		<td>PHP - <a href="http://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BA%D1%80%D0%BE%D0%BD%D0%B8%D0%BC" target=_blank class=lnk>рекурсивный акроним</a> словосочетания &laquo;<a href="/manual/introduction.html" class=lnk>PHP: Hypertext Preprocessor</a>&raquo;</td>
+     	</tr>
+   		</table>
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/subsys_ajax.js"></script>
+		<!--
+
+		commet by 440hz
+		20.10.2007
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/pu_search.js"></script>
+
+		-->
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/cz.js?a=b"></script>
+
+		<table style='margin-top: 5px' width=100% bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0>
+   	 	<form name=SEARCH method=GET action="http://www.php.ru/search/?SID=orrzlmox0va9vz56" onsubmit="return puSubmit();">
+	  	<input type=hidden name=PAGE value=1>
+  		<tr>
+    		<td width='1' valign='middle'> 
+    		   <a href='/'><img src="http://www.php.ru/;-)/logo.gif" width=133 height=93 alt="php" border=0 hspace=10 vspace=0></a>
+			 </td>
+		    <td width='100%' valign='middle'>
+		       <!--
+			   
+				commet by 440hz
+				20.10.2007
+
+			   <div id='pu_search' class='pu_search'></div>
+		       <div id='pu_search_description' class='pu_search_decription'></div>
+			   
+			   -->
+        	 <input type=text style='width:99%; margin: 10px' maxlength='200' name='QS' class='in' id='query' autocomplete='off' value="" />
+    		</td>
+		  </tr>
+   		<tr bgcolor='#666699' valign='middle'>
+			<td style='border-top: 1px solid #333366;'><br /></td>
+    		<td style='border-top: 1px solid #333366;'><div style="padding: 4px 4px 4px 10px; height: 24px; color: #CCCCFF;" id="stat">Хто там?<script>doLoadCZ('stat','stat');</script></div></td>
+  		</tr>
+		</form>
+		</table>
+		<table id="menu" cellspaciong=0 cellpadding=3>
+<tr>
+<td><a href="/" class=current>Главная</a></td>
+<td><a href="/download/" class=current>Скачать</a></td>
+<td><a href="/doc/" class=current>Документация</a></td>
+<td><a href="/forum/" class=current>Форум</a></td>
+<td width=100% align=right><a href="/phpinfo.html" class=current>phpinfo()</a></td>
+</tr>
+</table>
+
+		
+<!--  AdRiver code START. Type:728x90 Site: php.ru PZ: 0 BN: 1 -->
+<script language="javascript" type="text/javascript"><!--
+var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+var ar_Tail='unknown'; if (document.referrer) ar_Tail = escape(document.referrer);
+document.write(
+'<iframe src="http://ad.adriver.ru/cgi-bin/erle.cgi?'
++ 'sid=148680&bn=1&target=blank&bt=36&pz=0&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail
++ '" frameborder=0 vspace=0 hspace=0 width=728 height=90 marginwidth=0'
++ ' marginheight=0 scrolling=no></iframe>');
+//--></script>
+<noscript>
+<a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" target=_blank>
+<img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" alt="-AdRiver-" border=0 width=728 height=90></a>
+</noscript>
+<!--  AdRiver code END  -->
+
+
+  		<table width='100%' cellspacing='0' cellpadding='0'>
+    		<tr valign='top'>
+      		<td width=100%><div style="margin: 10px 10px 10px 50px;"><center><div style="width: 800px; text-align: left"><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Руководство по PHP</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="function.pdf-utf8-to-utf16.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="function.pdo-begintransaction.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="reference"
+><A
+NAME="ref.pdo"
+></A
+><DIV
+CLASS="TITLEPAGE"
+><H1
+CLASS="title"
+>CXVIII. PDO Functions</H1
+><DIV
+CLASS="PARTINTRO"
+><A
+NAME="AEN136843"
+></A
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="pdo.intro"
+>Введение</A
+></H1
+><P
+>&#13;     The PHP Data Objects (PDO) extension defines a lightweight, consistent interface
+     for accessing databases in PHP. Each database driver that
+     implements the PDO interface can expose database-specific
+     features as regular extension functions. Note that you cannot
+     perform any database functions using the PDO extension by
+     itself; you must use a <A
+HREF="ref.pdo.html#pdo.drivers"
+>database-specific
+     PDO driver</A
+> to access a database server.
+    </P
+><P
+>&#13;     PDO provides a <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>data-access</I
+></SPAN
+> abstraction layer, which
+     means that, regardless of which database you're using, you use the same
+     functions to issue queries and fetch data.  PDO does
+     <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>not</I
+></SPAN
+> provide a <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>database</I
+></SPAN
+>
+     abstraction; it doesn't rewrite SQL or emulate missing features.  You
+     should use a full-blown abstraction layer if you need that facility.
+    </P
+><P
+>&#13;     PDO ships with PHP 5.1, and is available as a PECL extension for PHP 5.0;
+     PDO requires the new OO features in the core of PHP 5, and so will not
+     run with earlier versions of PHP.
+    </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="pdo.installation"
+>Установка</A
+></H1
+><DIV
+CLASS="procedure"
+><P
+><B
+><A
+NAME="pdo.install.unix51up"
+></A
+>PHP 5.1 and up on Unix systems</B
+></P
+><OL
+TYPE="1"
+><LI
+><P
+>&#13;    If you're running a PHP 5.1 release, PDO and <A
+HREF="ref.pdo-sqlite.html"
+>PDO_SQLITE</A
+> is included in the distribution;
+    it will be automatically enabled when you run configure.  It is
+    recommended that you build PDO as a shared extension, as this will allow
+    you to take advantage of updates that are made available via PECL.  The
+    recommended configure line for building PHP with PDO support should
+    enable zlib support (for the pecl installer) as well.  You may also need
+    to enable the PDO driver for your database of choice; consult the
+    documentation for  <A
+HREF="ref.pdo.html#pdo.drivers"
+>database-specific
+    PDO drivers</A
+> to find out more about that, but note that if you
+    build PDO as a shared extension, you must build the PDO drivers as
+    shared extensions.
+    SQLite extension depends on PDO so if PDO is built as a shared extension,
+    SQLite needs to be built the same way.
+    <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="screen"
+>./configure --with-zlib --enable-pdo=shared --with-pdo-sqlite=shared --with-sqlite=shared</PRE
+></TD
+></TR
+></TABLE
+>
+   </P
+></LI
+><LI
+><P
+>&#13;    After installing PDO as a shared module, you must edit your php.ini file
+    so that the PDO extension will be loaded automatically when PHP runs.
+    You will also need to enable any database specific drivers there too;
+    make sure that they are listed after the pdo.so line, as PDO must be
+    initialized before the database-specific extensions can be loaded.
+    If you built PDO and the database-specific extensions statically, you
+    can skip this step.
+    <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="screen"
+>extension=pdo.so</PRE
+></TD
+></TR
+></TABLE
+>
+   </P
+></LI
+><LI
+><P
+>&#13;    Having PDO as a shared module will allow you to run <B
+CLASS="command"
+>pecl
+    upgrade pdo</B
+> as new versions of PDO are published, without
+    forcing you to rebuild the whole of PHP.  Note that if you do this, you
+    also need to upgrade your database specific PDO drivers at the same
+    time.
+   </P
+></LI
+></OL
+></DIV
+><DIV
+CLASS="procedure"
+><P
+><B
+><A
+NAME="pdo.install.pecl"
+></A
+>PHP 5.0 and up on Unix systems</B
+></P
+><OL
+TYPE="1"
+><LI
+><P
+>&#13;    PDO is available as a PECL extension from
+    <A
+HREF="http://pecl.php.net/package/pdo"
+TARGET="_top"
+>http://pecl.php.net/package/pdo</A
+>.
+    Installation can be performed via the <B
+CLASS="command"
+>pecl</B
+> tool; this
+    is enabled by default when you configure PHP.  You should ensure that
+    PHP was configured --with-zlib in order for
+    <B
+CLASS="command"
+>pecl</B
+> to be able to handle the compressed package
+    files.
+   </P
+></LI
+><LI
+><P
+>&#13;    Run the following command to download, build, and install the
+    latest stable version of PDO:
+    <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="screen"
+>pecl install pdo</PRE
+></TD
+></TR
+></TABLE
+>
+   </P
+></LI
+><LI
+><P
+>&#13;    The <B
+CLASS="command"
+>pecl</B
+> command automatically installs the
+    PDO module into your PHP extensions directory. To enable the
+    PDO extension on Linux or Unix operating systems, you must add
+    the following line to <TT
+CLASS="filename"
+>php.ini</TT
+>:
+    <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="screen"
+>extension=pdo.so</PRE
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    For more information about building PECL packages, consult the
+    <A
+HREF="install.pecl.html"
+>PECL installation</A
+> section of the manual.
+   </P
+></LI
+></OL
+></DIV
+><DIV
+CLASS="procedure"
+><P
+><B
+><A
+NAME="pdo.install.win32php51"
+></A
+>Windows users running PHP 5.1 and up</B
+></P
+><OL
+TYPE="1"
+><LI
+><P
+>&#13;    PDO and all the major drivers ship with PHP as shared extensions, and
+    simply need to be activated by editing the <TT
+CLASS="filename"
+>php.ini</TT
+> file:
+    <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="screen"
+>extension=php_pdo.dll</PRE
+></TD
+></TR
+></TABLE
+>
+   </P
+></LI
+><LI
+><P
+>&#13;    Next, choose the other database-specific DLL files and either use 
+    <A
+HREF="function.dl.html"
+><B
+CLASS="function"
+>dl()</B
+></A
+> to load them at runtime, or enable them in
+    <TT
+CLASS="filename"
+>php.ini</TT
+> below <TT
+CLASS="filename"
+>php_pdo.dll</TT
+>. For example:
+    <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="screen"
+>extension=php_pdo.dll
+extension=php_pdo_firebird.dll
+extension=php_pdo_informix.dll
+extension=php_pdo_mssql.dll
+extension=php_pdo_mysql.dll
+extension=php_pdo_oci.dll
+extension=php_pdo_oci8.dll
+extension=php_pdo_odbc.dll
+extension=php_pdo_pgsql.dll
+extension=php_pdo_sqlite.dll</PRE
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    These DLLs should exist in the system's 
+    <A
+HREF="ini.core.html#ini.extension-dir"
+>extension_dir</A
+>.
+    Note that <A
+HREF="ref.pdo-informix.html"
+>PDO_INFORMIX</A
+>
+    is only available as a PECL extension.
+   </P
+></LI
+></OL
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="pdo.configuration"
+>Настройка во время выполнения</A
+></H1
+><P
+>&#13;Поведение этих функций зависит от установок в <TT
+CLASS="filename"
+>php.ini</TT
+>.
+</P
+><P
+>&#13;  <DIV
+CLASS="table"
+><A
+NAME="AEN136905"
+></A
+><P
+><B
+>Таблица 1. PDO Configuration Options</B
+></P
+><TABLE
+BORDER="1"
+CLASS="CALSTABLE"
+><COL><COL><COL><COL><THEAD
+><TR
+><TH
+>Name</TH
+><TH
+>Default</TH
+><TH
+>Changeable</TH
+><TH
+>Changelog</TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+>pdo.dsn.*</TD
+><TD
+>&nbsp;</TD
+><TD
+><TT
+CLASS="filename"
+>php.ini</TT
+> only</TD
+><TD
+>&nbsp;</TD
+></TR
+></TBODY
+></TABLE
+></DIV
+>
+  Для подробного описания констант
+PHP_INI_*, обратитесь к документации функции <A
+HREF="function.ini-set.html"
+><B
+CLASS="function"
+>ini_set()</B
+></A
+>.
+</P
+><P
+>Краткое разъяснение конфигурационных
+директив.</P
+><P
+>&#13; <P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+><A
+NAME="ini.pdo.dsn"
+></A
+><VAR
+CLASS="parameter"
+>pdo.dsn.*</VAR
+>
+    <A
+HREF="language.types.string.html"
+><B
+CLASS="type"
+>string</B
+></A
+></DT
+><DD
+><P
+>&#13;     Defines DSN alias. See <A
+HREF="function.pdo-construct.html"
+>PDO::__construct</A
+> for
+     thorough explanation.
+    </P
+></DD
+></DL
+></DIV
+>
+ </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="pdo.drivers"
+>PDO Drivers</A
+></H1
+><P
+>&#13;     The following drivers currently implement the PDO interface:
+     <DIV
+CLASS="informaltable"
+><P
+></P
+><A
+NAME="AEN136935"
+></A
+><TABLE
+BORDER="1"
+CLASS="CALSTABLE"
+><COL><COL><THEAD
+><TR
+><TH
+>Driver name</TH
+><TH
+>Supported databases</TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+><A
+HREF="ref.pdo-dblib.html"
+>PDO_DBLIB</A
+></TD
+><TD
+>FreeTDS / Microsoft SQL Server / Sybase</TD
+></TR
+><TR
+><TD
+><A
+HREF="ref.pdo-firebird.html"
+>PDO_FIREBIRD</A
+></TD
+><TD
+>Firebird/Interbase 6</TD
+></TR
+><TR
+><TD
+><A
+HREF="ref.pdo-informix.html"
+>PDO_INFORMIX</A
+></TD
+><TD
+>IBM Informix Dynamic Server</TD
+></TR
+><TR
+><TD
+><A
+HREF="ref.pdo-mysql.html"
+>PDO_MYSQL</A
+></TD
+><TD
+>MySQL 3.x/4.x</TD
+></TR
+><TR
+><TD
+><A
+HREF="ref.pdo-oci.html"
+>PDO_OCI</A
+></TD
+><TD
+>Oracle Call Interface</TD
+></TR
+><TR
+><TD
+><A
+HREF="ref.pdo-odbc.html"
+>PDO_ODBC</A
+></TD
+><TD
+>ODBC v3 (IBM DB2, unixODBC and win32 ODBC)</TD
+></TR
+><TR
+><TD
+><A
+HREF="ref.pdo-pgsql.html"
+>PDO_PGSQL</A
+></TD
+><TD
+>PostgreSQL</TD
+></TR
+><TR
+><TD
+><A
+HREF="ref.pdo-sqlite.html"
+>PDO_SQLITE</A
+></TD
+><TD
+>SQLite 3 and SQLite 2</TD
+></TR
+></TBODY
+></TABLE
+><P
+></P
+></DIV
+>
+    </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="pdo.connections"
+>Connections and Connection management</A
+></H1
+><P
+>&#13;     Connections are established by creating instances of the PDO base class.
+     It doesn't matter which driver you want to use; you always use the PDO
+     class name. The constructor accepts parameters for specifying the
+     database source (known as the DSN) and optionally for the username and
+     password (if any).
+    </P
+><P
+>&#13;     <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN136978"
+></A
+><P
+><B
+>Пример 1. Connecting to MySQL</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />$dbh </font><font color="#007700">= new </font><font color="#0000BB">PDO</font><font color="#007700">(</font><font color="#DD0000">'mysql:host=localhost;dbname=test'</font><font color="#007700">, </font><font color="#0000BB">$user</font><font color="#007700">, </font><font color="#0000BB">$pass</font><font color="#007700">);<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+    </P
+><P
+>&#13;     If there are any connection errors, a <VAR
+CLASS="literal"
+>PDOException</VAR
+>
+     object will be thrown.  You may catch the exception if you want to handle
+     the error condition, or you may opt to leave it for an application
+     global exception handler that you set up via
+     <A
+HREF="function.set-exception-handler.html"
+><B
+CLASS="function"
+>set_exception_handler()</B
+></A
+>.
+    </P
+><P
+>&#13;     <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN136985"
+></A
+><P
+><B
+>Пример 2. Handling connection errors</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />try </font><font color="#007700">{<br />&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$dbh </font><font color="#007700">= new </font><font color="#0000BB">PDO</font><font color="#007700">(</font><font color="#DD0000">'mysql:host=localhost;dbname=test'</font><font color="#007700">, </font><font color="#0000BB">$user</font><font color="#007700">, </font><font color="#0000BB">$pass</font><font color="#007700">);<br />&nbsp;&nbsp;&nbsp;foreach (</font><font color="#0000BB">$dbh</font><font color="#007700">-&gt;</font><font color="#0000BB">query</font><font color="#007700">(</font><font color="#DD0000">'SELECT * from FOO'</font><font color="#007700">) as </font><font color="#0000BB">$row</font><font color="#007700">) {<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">print_r</font><font color="#007700">(</font><font color="#0000BB">$row</font><font color="#007700">);<br />&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$dbh </font><font color="#007700">= </font><font color="#0000BB">null</font><font color="#007700">;<br />} </font><font color="#0000BB">catch </font><font color="#007700">(</font><font color="#0000BB">PDOException $e</font><font color="#007700">) {<br />&nbsp;&nbsp;&nbsp;print </font><font color="#DD0000">"Error!: " </font><font color="#007700">. </font><font color="#0000BB">$e</font><font color="#007700">-&gt;</font><font color="#0000BB">getMessage</font><font color="#007700">() . </font><font color="#DD0000">"&lt;br/&gt;"</font><font color="#007700">;<br />&nbsp;&nbsp;&nbsp;die();<br />}<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+    </P
+><DIV
+CLASS="warning"
+><P
+></P
+><TABLE
+CLASS="warning"
+BORDER="1"
+WIDTH="100%"
+><TR
+><TD
+ALIGN="CENTER"
+><B
+>Внимание</B
+></TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+><P
+>&#13;      If your application does not catch the exception thrown from the PDO
+      constructor, the default action taken by the zend engine is to terminate
+      the script and display a back trace.  This back trace will likely reveal
+      the full database connection details, including the username and
+      password.  It is your responsibility to catch this exception, either
+      explicitly (via a <VAR
+CLASS="literal"
+>catch</VAR
+> statement) or implicitly via
+      <A
+HREF="function.set-exception-handler.html"
+><B
+CLASS="function"
+>set_exception_handler()</B
+></A
+>.
+     </P
+></TD
+></TR
+></TABLE
+></DIV
+><P
+>&#13;     Upon successful connection to the database, an instance of the PDO class
+     is returned to your script.  The connection remains active for the
+     lifetime of that PDO object.  To close the connection, you need to
+     destroy the object by ensuring that all remaining references to it are
+     deleted--you do this by assigning <TT
+CLASS="constant"
+><B
+>NULL</B
+></TT
+> to the variable that holds the
+     object.  If you don't do this explicitly, PHP will automatically close
+     the connection when your script ends.
+    </P
+><P
+>&#13;     <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN136995"
+></A
+><P
+><B
+>Пример 3. Closing a connection</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />$dbh </font><font color="#007700">= new </font><font color="#0000BB">PDO</font><font color="#007700">(</font><font color="#DD0000">'mysql:host=localhost;dbname=test'</font><font color="#007700">, </font><font color="#0000BB">$user</font><font color="#007700">, </font><font color="#0000BB">$pass</font><font color="#007700">);<br /></font><font color="#FF8000">// use the connection here<br /><br /><br />// and now we're done; close it<br /></font><font color="#0000BB">$dbh </font><font color="#007700">= </font><font color="#0000BB">null</font><font color="#007700">;<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    Many web applications will benefit from making persistent connections to
+    database servers.  Persistent connections are not closed at the end of the
+    script, but are cached and re-used when another script requests a
+    connection using the same credentials.  The persistent connection cache
+    allows you to avoid the overhead of establishing a new connection every
+    time a script needs to talk to a database, resulting in a faster web
+    application.
+   </P
+><P
+>&#13;    <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN137000"
+></A
+><P
+><B
+>Пример 4. Persistent connections</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />$dbh </font><font color="#007700">= new </font><font color="#0000BB">PDO</font><font color="#007700">(</font><font color="#DD0000">'mysql:host=localhost;dbname=test'</font><font color="#007700">, </font><font color="#0000BB">$user</font><font color="#007700">, </font><font color="#0000BB">$pass</font><font color="#007700">, array(<br />&nbsp;&nbsp;</font><font color="#0000BB">PDO</font><font color="#007700">::</font><font color="#0000BB">ATTR_PERSISTENT </font><font color="#007700">=&gt; </font><font color="#0000BB">true<br /></font><font color="#007700">));<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+    </P
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+>Замечание: </B
+>
+      If you're using the PDO ODBC driver and your ODBC libraries support ODBC
+      Connection Pooling (unixODBC and Windows are two that do; there may be
+      more), then it's recommended that you don't use persistent PDO
+      connections, and instead leave the connection caching to the ODBC
+      Connection Pooling layer.  The ODBC Connection Pool is shared with other
+      modules in the process; if PDO is told to cache the connection, then
+      that connection would never be returned to the ODBC connection pool,
+      resulting in additional connections being created to service those other
+      modules.
+     </P
+></BLOCKQUOTE
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="pdo.transactions"
+>Transactions and auto-commit</A
+></H1
+><P
+>&#13;     Now that you're connected via PDO, you must understand how PDO
+     manages transactions before you start issuing queries. If you've never
+     encountered transactions before, they offer 4 major features: Atomicity,
+     Consistency, Isolation and Durability (ACID). In layman's terms, any work
+     carried out in a transaction, even if it is carried out in stages, is
+     guaranteed to be applied to the database safely, and without interference
+     from other connections, when it is committed. Transactional work can also
+     be automatically undone at your request (provided you haven't already
+     committed it), which makes error handling in your scripts easier.
+    </P
+><P
+>&#13;     Transactions are typically implemented by "saving-up" your batch of
+     changes to be applied all at once; this has the nice side effect of
+     drastically improving the efficiency of those updates. In other words,
+     transactions can make your scripts faster and potentially more robust
+     (you still need to use them correctly to reap that benefit).
+    </P
+><P
+>&#13;     Unfortunately, not every database supports transactions, so PDO needs to
+     run in what is known as "auto-commit" mode when you first open the
+     connection.  Auto-commit mode means that every query that you run has its
+     own implicit transaction, if the database supports it, or no transaction
+     if the database doesn't support transactions. If you need a transaction,
+     you must use the <B
+CLASS="function"
+>PDO::beginTransaction()</B
+> method to
+     initiate one. If the underlying driver does not support transactions, a
+     PDOException will be thrown (regardless of your error handling settings:
+     this is always a serious error condition). Once you are in a transaction,
+     you may use <B
+CLASS="function"
+>PDO::commit()</B
+> or
+     <B
+CLASS="function"
+>PDO::rollBack()</B
+> to finish it, depending on the success
+     of the code you run during the transaction.
+
+    </P
+><P
+>&#13;     When the script ends or when a connection is about to be closed, if you
+     have an outstanding transaction, PDO will automatically roll it back.
+     This is a safety measure to help avoid inconsistency in the cases where
+     the script terminates unexpectedly--if you didn't explicitly commit the
+     transaction, then it is assumed that something went awry, so the rollback
+     is performed for the safety of your data.
+    </P
+><DIV
+CLASS="warning"
+><P
+></P
+><TABLE
+CLASS="warning"
+BORDER="1"
+WIDTH="100%"
+><TR
+><TD
+ALIGN="CENTER"
+><B
+>Внимание</B
+></TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+><P
+>&#13;      The automatic rollback only happens if you initiate the transaction via
+      <B
+CLASS="function"
+>PDO::beginTransaction()</B
+>. If you manually issue a
+      query that begins a transaction PDO has no way of knowing about it and
+      thus cannot roll it back if something bad happens.
+     </P
+></TD
+></TR
+></TABLE
+></DIV
+><P
+>&#13;     <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN137018"
+></A
+><P
+><B
+>Пример 5. Executing a batch in a transaction</B
+></P
+><P
+>&#13;       In the following sample, let's assume that we are creating a set of
+       entries for a new employee, who has been assigned an ID number of 23.
+       In addition to entering the basic data for that person, we also need to
+       record their salary. It's pretty simple to make two separate updates,
+       but by enclosing them within the
+       <B
+CLASS="function"
+>PDO::beginTransaction()</B
+> and
+       <B
+CLASS="function"
+>PDO::commit()</B
+> calls, we are guaranteeing that no one
+       else will be able to see those changes until they are complete. If
+       something goes wrong, the catch block rolls back all changes made
+       since the transaction was started, and then prints out an error
+       message.
+      </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />try </font><font color="#007700">{<br />&nbsp;&nbsp;</font><font color="#0000BB">$dbh </font><font color="#007700">= new </font><font color="#0000BB">PDO</font><font color="#007700">(</font><font color="#DD0000">'odbc:SAMPLE'</font><font color="#007700">, </font><font color="#DD0000">'db2inst1'</font><font color="#007700">, </font><font color="#DD0000">'ibmdb2'</font><font color="#007700">, <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;array(</font><font color="#0000BB">PDO</font><font color="#007700">::</font><font color="#0000BB">ATTR_PERSISTENT </font><font color="#007700">=&gt; </font><font color="#0000BB">true</font><font color="#007700">));<br />&nbsp;&nbsp;echo </font><font color="#DD0000">"Connected\n"</font><font color="#007700">;<br />&nbsp;&nbsp;</font><font color="#0000BB">$dbh</font><font color="#007700">-&gt;</font><font color="#0000BB">setAttribute</font><font color="#007700">(</font><font color="#0000BB">PDO</font><font color="#007700">::</font><font color="#0000BB">ATTR_ERRMODE</font><font color="#007700">, </font><font color="#0000BB">PDO</font><font color="#007700">::</font><font color="#0000BB">ERRMODE_EXCEPTION</font><font color="#007700">);<br /><br />&nbsp;&nbsp;</font><font color="#0000BB">$dbh</font><font color="#007700">-&gt;</font><font color="#0000BB">beginTransaction</font><font color="#007700">();<br />&nbsp;&nbsp;</font><font color="#0000BB">$dbh</font><font color="#007700">-&gt;</font><font color="#0000BB">exec</font><font color="#007700">(</font><font color="#DD0000">"insert into staff (id, first, last) values (23, 'Joe', 'Bloggs')"</font><font color="#007700">);<br />&nbsp;&nbsp;</font><font color="#0000BB">$dbh</font><font color="#007700">-&gt;</font><font color="#0000BB">exec</font><font color="#007700">(</font><font color="#DD0000">"insert into salarychange (id, amount, changedate) <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;values (23, 50000, NOW())"</font><font color="#007700">);<br />&nbsp;&nbsp;</font><font color="#0000BB">$dbh</font><font color="#007700">-&gt;</font><font color="#0000BB">commit</font><font color="#007700">();<br />&nbsp;&nbsp;<br />} </font><font color="#0000BB">catch </font><font color="#007700">(</font><font color="#0000BB">Exception $e</font><font color="#007700">) {<br />&nbsp;&nbsp;</font><font color="#0000BB">$dbh</font><font color="#007700">-&gt;</font><font color="#0000BB">rollBack</font><font color="#007700">();<br />&nbsp;&nbsp;echo </font><font color="#DD0000">"Failed: " </font><font color="#007700">. </font><font color="#0000BB">$e</font><font color="#007700">-&gt;</font><font color="#0000BB">getMessage</font><font color="#007700">();<br />}<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+    </P
+><P
+>&#13;     You're not limited to making updates in a transaction; you can also issue
+     complex queries to extract data, and possibly use that information to
+     build up more updates and queries; while the transaction is active, you
+     are guaranteed that no one else can make changes while you are in the
+     middle of your work. In truth, this isn't 100% correct, but it is a
+     good-enough introduction, if you've never heard of transactions before.
+    </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="pdo.prepared-statements"
+>Prepared statements and stored procedures</A
+></H1
+><P
+>&#13;     Many of the more mature databases support the concept of prepared
+     statements.  What are they? You can think of them as a kind of compiled
+     template for the SQL that you want to run, that can be customized using
+     variable parameters.  Prepared statements offer two major benefits:
+    </P
+><P
+></P
+><UL
+><LI
+><P
+>&#13;       The query only needs to be parsed (or prepared) once, but can be
+       executed multiple times with the same or different parameters. When the
+       query is prepared, the database will analyze, compile and optimize it's
+       plan for executing the query. For complex queries this process can take
+       up enough time that it will noticeably slow down your application if you
+       need to repeat the same query many times with different parameters. By
+       using a prepared statement you avoid repeating the
+       analyze/compile/optimize cycle. In short, prepared statements use fewer
+       resources and thus run faster.
+      </P
+></LI
+><LI
+><P
+>&#13;       The parameters to prepared statements don't need to be quoted; the
+       driver handles it for you. If your application exclusively uses
+       prepared statements, you can be sure that no SQL injection will occur.
+       (However, if you're still building up other parts of the query based on
+       untrusted input, you're still at risk).
+      </P
+></LI
+></UL
+><P
+>&#13;     Prepared statements are so useful that they are the only feature that PDO
+     will emulate for drivers that don't support them.  This ensures that you
+     will be able to use the same data access paradigm regardless of the
+     capabilities of the database.
+    </P
+><P
+>&#13;     <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN137035"
+></A
+><P
+><B
+>Пример 6. Repeated inserts using prepared statements</B
+></P
+><P
+>&#13;      This example performs an INSERT query by substituting a <VAR
+CLASS="literal"
+>name</VAR
+>
+      and a <VAR
+CLASS="literal"
+>value</VAR
+> for the named placeholders.
+     </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />$stmt </font><font color="#007700">= </font><font color="#0000BB">$dbh</font><font color="#007700">-&gt;</font><font color="#0000BB">prepare</font><font color="#007700">(</font><font color="#DD0000">"INSERT INTO REGISTRY (name, value) VALUES (:name, :value)"</font><font color="#007700">);<br /></font><font color="#0000BB">$stmt</font><font color="#007700">-&gt;</font><font color="#0000BB">bindParam</font><font color="#007700">(</font><font color="#DD0000">':name'</font><font color="#007700">, </font><font color="#0000BB">$name</font><font color="#007700">);<br /></font><font color="#0000BB">$stmt</font><font color="#007700">-&gt;</font><font color="#0000BB">bindParam</font><font color="#007700">(</font><font color="#DD0000">':value'</font><font color="#007700">, </font><font color="#0000BB">$value</font><font color="#007700">);<br /><br /></font><font color="#FF8000">// insert one row<br /></font><font color="#0000BB">$name </font><font color="#007700">= </font><font color="#DD0000">'one'</font><font color="#007700">;<br /></font><font color="#0000BB">$value </font><font color="#007700">= </font><font color="#0000BB">1</font><font color="#007700">;<br /></font><font color="#0000BB">$stmt</font><font color="#007700">-&gt;</font><font color="#0000BB">execute</font><font color="#007700">();<br /><br /></font><font color="#FF8000">// insert another row with different values<br /></font><font color="#0000BB">$name </font><font color="#007700">= </font><font color="#DD0000">'two'</font><font color="#007700">;<br /></font><font color="#0000BB">$value </font><font color="#007700">= </font><font color="#0000BB">2</font><font color="#007700">;<br /></font><font color="#0000BB">$stmt</font><font color="#007700">-&gt;</font><font color="#0000BB">execute</font><font color="#007700">();<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;     <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN137042"
+></A
+><P
+><B
+>Пример 7. Repeated inserts using prepared statements</B
+></P
+><P
+>&#13;      This example performs an INSERT query by substituting a <VAR
+CLASS="literal"
+>name</VAR
+>
+      and a <VAR
+CLASS="literal"
+>value</VAR
+> for the positional <VAR
+CLASS="literal"
+>?</VAR
+> placeholders.
+     </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />$stmt </font><font color="#007700">= </font><font color="#0000BB">$dbh</font><font color="#007700">-&gt;</font><font color="#0000BB">prepare</font><font color="#007700">(</font><font color="#DD0000">"INSERT INTO REGISTRY (name, value) VALUES (?, ?)"</font><font color="#007700">);<br /></font><font color="#0000BB">$stmt</font><font color="#007700">-&gt;</font><font color="#0000BB">bindParam</font><font color="#007700">(</font><font color="#0000BB">1</font><font color="#007700">, </font><font color="#0000BB">$name</font><font color="#007700">);<br /></font><font color="#0000BB">$stmt</font><font color="#007700">-&gt;</font><font color="#0000BB">bindParam</font><font color="#007700">(</font><font color="#0000BB">2</font><font color="#007700">, </font><font color="#0000BB">$value</font><font color="#007700">);<br /><br /></font><font color="#FF8000">// insert one row<br /></font><font color="#0000BB">$name </font><font color="#007700">= </font><font color="#DD0000">'one'</font><font color="#007700">;<br /></font><font color="#0000BB">$value </font><font color="#007700">= </font><font color="#0000BB">1</font><font color="#007700">;<br /></font><font color="#0000BB">$stmt</font><font color="#007700">-&gt;</font><font color="#0000BB">execute</font><font color="#007700">();<br /><br /></font><font color="#FF8000">// insert another row with different values<br /></font><font color="#0000BB">$name </font><font color="#007700">= </font><font color="#DD0000">'two'</font><font color="#007700">;<br /></font><font color="#0000BB">$value </font><font color="#007700">= </font><font color="#0000BB">2</font><font color="#007700">;<br /></font><font color="#0000BB">$stmt</font><font color="#007700">-&gt;</font><font color="#0000BB">execute</font><font color="#007700">();<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;     <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN137050"
+></A
+><P
+><B
+>Пример 8. Fetching data using prepared statements</B
+></P
+><P
+>&#13;      This example fetches data based on a key value supplied by a form.
+      The user input is automatically quoted, so there is no risk of a
+      SQL injection attack.
+     </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />$stmt </font><font color="#007700">= </font><font color="#0000BB">$dbh</font><font color="#007700">-&gt;</font><font color="#0000BB">prepare</font><font color="#007700">(</font><font color="#DD0000">"SELECT * FROM REGISTRY where name = ?"</font><font color="#007700">);<br />if (</font><font color="#0000BB">$stmt</font><font color="#007700">-&gt;</font><font color="#0000BB">execute</font><font color="#007700">(array(</font><font color="#0000BB">$_GET</font><font color="#007700">[</font><font color="#DD0000">'name'</font><font color="#007700">]))) {<br />&nbsp;&nbsp;while (</font><font color="#0000BB">$row </font><font color="#007700">= </font><font color="#0000BB">$stmt</font><font color="#007700">-&gt;</font><font color="#0000BB">fetch</font><font color="#007700">()) {<br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">print_r</font><font color="#007700">(</font><font color="#0000BB">$row</font><font color="#007700">);<br />&nbsp;&nbsp;}<br />}<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    If the database driver supports it, you may also bind parameters for
+    output as well as input. Output parameters are typically used to retrieve
+    values from stored procedures. Output parameters are slightly more complex
+    to use than input parameters, in that you must know how large a given
+    parameter might be when you bind it. If the value turns out to be larger
+    than the size you suggested, an error is raised.
+   </P
+><P
+>&#13;    <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN137056"
+></A
+><P
+><B
+>Пример 9. Calling a stored procedure with an output parameter</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />$stmt </font><font color="#007700">= </font><font color="#0000BB">$dbh</font><font color="#007700">-&gt;</font><font color="#0000BB">prepare</font><font color="#007700">(</font><font color="#DD0000">"CALL sp_returns_string(?)"</font><font color="#007700">);<br /></font><font color="#0000BB">$stmt</font><font color="#007700">-&gt;</font><font color="#0000BB">bindParam</font><font color="#007700">(</font><font color="#0000BB">1</font><font color="#007700">, </font><font color="#0000BB">$return_value</font><font color="#007700">, </font><font color="#0000BB">PDO</font><font color="#007700">::</font><font color="#0000BB">PARAM_STR</font><font color="#007700">, </font><font color="#0000BB">4000</font><font color="#007700">); <br /><br /></font><font color="#FF8000">// call the stored procedure<br /></font><font color="#0000BB">$stmt</font><font color="#007700">-&gt;</font><font color="#0000BB">execute</font><font color="#007700">();<br /><br />print </font><font color="#DD0000">"procedure returned $return_value</font><font color="#007700">\n</font><font color="#DD0000">"</font><font color="#007700">;<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    You may also specify parameters that hold values both input and output;
+    the syntax is similar to output parameters. In this next example, the
+    string 'hello' is passed into the stored procedure, and when it returns,
+    hello is replaced with the return value of the procedure.
+   </P
+><P
+>&#13;    <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN137061"
+></A
+><P
+><B
+>Пример 10. Calling a stored procedure with an input/output parameter</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />$stmt </font><font color="#007700">= </font><font color="#0000BB">$dbh</font><font color="#007700">-&gt;</font><font color="#0000BB">prepare</font><font color="#007700">(</font><font color="#DD0000">"CALL sp_takes_string_returns_string(?)"</font><font color="#007700">);<br /></font><font color="#0000BB">$value </font><font color="#007700">= </font><font color="#DD0000">'hello'</font><font color="#007700">;<br /></font><font color="#0000BB">$stmt</font><font color="#007700">-&gt;</font><font color="#0000BB">bindParam</font><font color="#007700">(</font><font color="#0000BB">1</font><font color="#007700">, </font><font color="#0000BB">$value</font><font color="#007700">, </font><font color="#0000BB">PDO</font><font color="#007700">::</font><font color="#0000BB">PARAM_STR</font><font color="#007700">|</font><font color="#0000BB">PDO</font><font color="#007700">::</font><font color="#0000BB">PARAM_INPUT_OUTPUT</font><font color="#007700">, </font><font color="#0000BB">4000</font><font color="#007700">); <br /><br /></font><font color="#FF8000">// call the stored procedure<br /></font><font color="#0000BB">$stmt</font><font color="#007700">-&gt;</font><font color="#0000BB">execute</font><font color="#007700">();<br /><br />print </font><font color="#DD0000">"procedure returned $value</font><font color="#007700">\n</font><font color="#DD0000">"</font><font color="#007700">;<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN137065"
+></A
+><P
+><B
+>Пример 11. Invalid use of placeholder</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />$stmt </font><font color="#007700">= </font><font color="#0000BB">$dbh</font><font color="#007700">-&gt;</font><font color="#0000BB">prepare</font><font color="#007700">(</font><font color="#DD0000">"SELECT * FROM REGISTRY where name LIKE '%?%'"</font><font color="#007700">);<br /></font><font color="#0000BB">$stmt</font><font color="#007700">-&gt;</font><font color="#0000BB">execute</font><font color="#007700">(array(</font><font color="#0000BB">$_GET</font><font color="#007700">[</font><font color="#DD0000">'name'</font><font color="#007700">]));<br /><br /></font><font color="#FF8000">// placeholder must be used in the place of the whole value<br /></font><font color="#0000BB">$stmt </font><font color="#007700">= </font><font color="#0000BB">$dbh</font><font color="#007700">-&gt;</font><font color="#0000BB">prepare</font><font color="#007700">(</font><font color="#DD0000">"SELECT * FROM REGISTRY where name LIKE ?"</font><font color="#007700">);<br /></font><font color="#0000BB">$stmt</font><font color="#007700">-&gt;</font><font color="#0000BB">execute</font><font color="#007700">(array(</font><font color="#DD0000">"%$_GET</font><font color="#007700">[</font><font color="#DD0000">name</font><font color="#007700">]</font><font color="#DD0000">%"</font><font color="#007700">));<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="pdo.error-handling"
+>Errors and error handling</A
+></H1
+><P
+>&#13;     PDO offers you a choice of 3 different error handling strategies, to fit
+     your style of application development.
+    </P
+><P
+></P
+><UL
+><LI
+><P
+>&#13;       <TT
+CLASS="constant"
+><B
+>PDO::ERRMODE_SILENT</B
+></TT
+>
+      </P
+><P
+>&#13;        This is the default mode. PDO will simply set the error code for you
+        to inspect using the <B
+CLASS="function"
+>PDO::errorCode()</B
+> and
+        <B
+CLASS="function"
+>PDO::errorInfo()</B
+> methods on both the
+        statement and database objects; if the error resulted from a call on a
+        statement object, you would invoke the
+        <B
+CLASS="function"
+>PDOStatement::errorCode()</B
+> or
+        <B
+CLASS="function"
+>PDOStatement::errorInfo()</B
+>
+        method on that object. If the error resulted from a call on the
+        database object, you would invoke those methods on the database object
+        instead.
+       </P
+></LI
+><LI
+><P
+>&#13;       <TT
+CLASS="constant"
+><B
+>PDO::ERRMODE_WARNING</B
+></TT
+>
+      </P
+><P
+>&#13;        In addition to setting the error code, PDO will emit a traditional
+        E_WARNING message. This setting is useful during debugging/testing, if
+        you just want to see what problems occurred without interrupting the
+        flow of the application.
+       </P
+></LI
+><LI
+><P
+>&#13;        <TT
+CLASS="constant"
+><B
+>PDO::ERRMODE_EXCEPTION</B
+></TT
+>
+       </P
+><P
+>&#13;        In addition to setting the error code, PDO will throw a
+        <B
+CLASS="classname"
+>PDOException</B
+>
+        and set its properties to reflect the error code and error
+        information. This setting is also useful during debugging, as it will
+        effectively "blow up" the script at the point of the error, very
+        quickly pointing a finger at potential problem areas in your code
+        (remember: transactions are automatically rolled back if the exception
+        causes the script to terminate).
+       </P
+><P
+>&#13;        Exception mode is also useful because you can structure your error
+        handling more clearly than with traditional PHP-style warnings, and
+        with less code/nesting than by running in silent mode and explicitly
+        checking the return value of each database call.
+       </P
+><P
+>&#13;        See <A
+HREF="language.exceptions.html"
+>Exceptions</A
+> for more
+        information about Exceptions in PHP.
+       </P
+></LI
+></UL
+><P
+>&#13;     PDO standardizes on using SQL-92 SQLSTATE error code strings; individual
+     PDO drivers are responsible for mapping their native codes to the
+     appropriate SQLSTATE codes.   The <B
+CLASS="function"
+>PDO::errorCode()</B
+>
+     method returns a single SQLSTATE code. If you need more specific
+     information about an error, PDO also offers an
+     <B
+CLASS="function"
+>PDO::errorInfo()</B
+> method which returns an array
+     containing the SQLSTATE code, the driver specific error code and driver
+     specific error string.
+    </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="pdo.lobs"
+>Large Objects (LOBs)</A
+></H1
+><P
+>&#13;      At some point in your application, you might find that you need to store
+      "large" data in your database. Large typically means "around 4kb or
+      more", although some databases can happily handle up to 32kb before data becomes
+      "large". Large objects can be either textual or binary in nature. PDO
+      allows you to work with this large data type by using the
+      <TT
+CLASS="constant"
+><B
+>PDO::PARAM_LOB</B
+></TT
+>
+      type code in your <B
+CLASS="function"
+>PDOStatement::bindParam()</B
+> or
+      <B
+CLASS="function"
+>PDOStatement::bindColumn()</B
+> calls.
+      <TT
+CLASS="constant"
+><B
+>PDO::PARAM_LOB</B
+></TT
+> tells
+      PDO to map the data as a stream, so that you can manipulate it using the
+      <A
+HREF="ref.stream.html"
+>PHP Streams API</A
+>.
+    </P
+><P
+>&#13;     
+    </P
+><P
+>&#13;     <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN137105"
+></A
+><P
+><B
+>Пример 12. Displaying an image from a database</B
+></P
+><P
+>&#13;      This example binds the LOB into the variable named $lob and then sends
+      it to the browser using <A
+HREF="function.fpassthru.html"
+><B
+CLASS="function"
+>fpassthru()</B
+></A
+>.  Since the LOB
+      is represented as a stream, functions such as
+      <A
+HREF="function.fgets.html"
+><B
+CLASS="function"
+>fgets()</B
+></A
+>, <A
+HREF="function.fread.html"
+><B
+CLASS="function"
+>fread()</B
+></A
+> and
+      <A
+HREF="function.stream-get-contents.html"
+><B
+CLASS="function"
+>stream_get_contents()</B
+></A
+> can be used on it.
+     </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />$db </font><font color="#007700">= new </font><font color="#0000BB">PDO</font><font color="#007700">(</font><font color="#DD0000">'odbc:SAMPLE'</font><font color="#007700">, </font><font color="#DD0000">'db2inst1'</font><font color="#007700">, </font><font color="#DD0000">'ibmdb2'</font><font color="#007700">);<br /></font><font color="#0000BB">$stmt </font><font color="#007700">= </font><font color="#0000BB">$db</font><font color="#007700">-&gt;</font><font color="#0000BB">prepare</font><font color="#007700">(</font><font color="#DD0000">"select contenttype, imagedata from images where id=?"</font><font color="#007700">);<br /></font><font color="#0000BB">$stmt</font><font color="#007700">-&gt;</font><font color="#0000BB">execute</font><font color="#007700">(array(</font><font color="#0000BB">$_GET</font><font color="#007700">[</font><font color="#DD0000">'id'</font><font color="#007700">]));<br /></font><font color="#0000BB">$stmt</font><font color="#007700">-&gt;</font><font color="#0000BB">bindColumn</font><font color="#007700">(</font><font color="#0000BB">1</font><font color="#007700">, </font><font color="#0000BB">$type</font><font color="#007700">, </font><font color="#0000BB">PDO</font><font color="#007700">::</font><font color="#0000BB">PARAM_STR</font><font color="#007700">, </font><font color="#0000BB">256</font><font color="#007700">);<br /></font><font color="#0000BB">$stmt</font><font color="#007700">-&gt;</font><font color="#0000BB">bindColumn</font><font color="#007700">(</font><font color="#0000BB">2</font><font color="#007700">, </font><font color="#0000BB">$lob</font><font color="#007700">, </font><font color="#0000BB">PDO</font><font color="#007700">::</font><font color="#0000BB">PARAM_LOB</font><font color="#007700">);<br /></font><font color="#0000BB">$stmt</font><font color="#007700">-&gt;</font><font color="#0000BB">fetch</font><font color="#007700">(</font><font color="#0000BB">PDO</font><font color="#007700">::</font><font color="#0000BB">FETCH_BOUND</font><font color="#007700">);<br /><br /></font><font color="#0000BB">header</font><font color="#007700">(</font><font color="#DD0000">"Content-Type: $type"</font><font color="#007700">);<br /></font><font color="#0000BB">fpassthru</font><font color="#007700">(</font><font color="#0000BB">$lob</font><font color="#007700">);<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN137114"
+></A
+><P
+><B
+>Пример 13. Inserting an image into a database</B
+></P
+><P
+>&#13;      This example opens up a file and passes the file handle to PDO to insert
+      it as a LOB.  PDO will do its best to get the contents of the file up
+      to the database in the most efficient manner possible.
+     </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />$db </font><font color="#007700">= new </font><font color="#0000BB">PDO</font><font color="#007700">(</font><font color="#DD0000">'odbc:SAMPLE'</font><font color="#007700">, </font><font color="#DD0000">'db2inst1'</font><font color="#007700">, </font><font color="#DD0000">'ibmdb2'</font><font color="#007700">);<br /></font><font color="#0000BB">$stmt </font><font color="#007700">= </font><font color="#0000BB">$db</font><font color="#007700">-&gt;</font><font color="#0000BB">prepare</font><font color="#007700">(</font><font color="#DD0000">"insert into images (id, contenttype, imagedata) values (?, ?, ?)"</font><font color="#007700">);<br /></font><font color="#0000BB">$id </font><font color="#007700">= </font><font color="#0000BB">get_new_id</font><font color="#007700">(); </font><font color="#FF8000">// some function to allocate a new ID<br /><br />// assume that we are running as part of a file upload form<br />// You can find more information in the PHP documentation<br /><br /></font><font color="#0000BB">$fp </font><font color="#007700">= </font><font color="#0000BB">fopen</font><font color="#007700">(</font><font color="#0000BB">$_FILES</font><font color="#007700">[</font><font color="#DD0000">'file'</font><font color="#007700">][</font><font color="#DD0000">'tmp_name'</font><font color="#007700">], </font><font color="#DD0000">'rb'</font><font color="#007700">);<br /><br /></font><font color="#0000BB">$stmt</font><font color="#007700">-&gt;</font><font color="#0000BB">bindParam</font><font color="#007700">(</font><font color="#0000BB">1</font><font color="#007700">, </font><font color="#0000BB">$id</font><font color="#007700">);<br /></font><font color="#0000BB">$stmt</font><font color="#007700">-&gt;</font><font color="#0000BB">bindParam</font><font color="#007700">(</font><font color="#0000BB">2</font><font color="#007700">, </font><font color="#0000BB">$_FILES</font><font color="#007700">[</font><font color="#DD0000">'file'</font><font color="#007700">][</font><font color="#DD0000">'type'</font><font color="#007700">]);<br /></font><font color="#0000BB">$stmt</font><font color="#007700">-&gt;</font><font color="#0000BB">bindParam</font><font color="#007700">(</font><font color="#0000BB">3</font><font color="#007700">, </font><font color="#0000BB">$fp</font><font color="#007700">, </font><font color="#0000BB">PDO</font><font color="#007700">::</font><font color="#0000BB">PARAM_LOB</font><font color="#007700">);<br /><br /></font><font color="#0000BB">$stmt</font><font color="#007700">-&gt;</font><font color="#0000BB">beginTransaction</font><font color="#007700">();<br /></font><font color="#0000BB">$stmt</font><font color="#007700">-&gt;</font><font color="#0000BB">execute</font><font color="#007700">();<br /></font><font color="#0000BB">$stmt</font><font color="#007700">-&gt;</font><font color="#0000BB">commit</font><font color="#007700">();<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN137119"
+></A
+><P
+><B
+>Пример 14. Inserting an image into a database: Oracle</B
+></P
+><P
+>&#13;      Oracle requires a slightly different syntax for inserting a lob from a
+      file.  It's also essential that you perform the insert under a
+      transaction, otherwise your newly inserted LOB will be committed with a
+      zero-length as part of the implicit commit that happens when the query
+      is executed:
+     </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />$db </font><font color="#007700">= new </font><font color="#0000BB">PDO</font><font color="#007700">(</font><font color="#DD0000">'oci:'</font><font color="#007700">, </font><font color="#DD0000">'scott'</font><font color="#007700">, </font><font color="#DD0000">'tiger'</font><font color="#007700">);<br /></font><font color="#0000BB">$stmt </font><font color="#007700">= </font><font color="#0000BB">$db</font><font color="#007700">-&gt;</font><font color="#0000BB">prepare</font><font color="#007700">(</font><font color="#DD0000">"insert into images (id, contenttype, imagedata) " </font><font color="#007700">.<br />&nbsp;&nbsp;</font><font color="#DD0000">"VALUES (?, ?, EMPTY_BLOB()) RETURNING imagedata INTO ?"</font><font color="#007700">);<br /></font><font color="#0000BB">$id </font><font color="#007700">= </font><font color="#0000BB">get_new_id</font><font color="#007700">(); </font><font color="#FF8000">// some function to allocate a new ID<br /><br />// assume that we are running as part of a file upload form<br />// You can find more information in the PHP documentation<br /><br /></font><font color="#0000BB">$fp </font><font color="#007700">= </font><font color="#0000BB">fopen</font><font color="#007700">(</font><font color="#0000BB">$_FILES</font><font color="#007700">[</font><font color="#DD0000">'file'</font><font color="#007700">][</font><font color="#DD0000">'tmp_name'</font><font color="#007700">], </font><font color="#DD0000">'rb'</font><font color="#007700">);<br /><br /></font><font color="#0000BB">$stmt</font><font color="#007700">-&gt;</font><font color="#0000BB">bindParam</font><font color="#007700">(</font><font color="#0000BB">1</font><font color="#007700">, </font><font color="#0000BB">$id</font><font color="#007700">);<br /></font><font color="#0000BB">$stmt</font><font color="#007700">-&gt;</font><font color="#0000BB">bindParam</font><font color="#007700">(</font><font color="#0000BB">2</font><font color="#007700">, </font><font color="#0000BB">$_FILES</font><font color="#007700">[</font><font color="#DD0000">'file'</font><font color="#007700">][</font><font color="#DD0000">'type'</font><font color="#007700">]);<br /></font><font color="#0000BB">$stmt</font><font color="#007700">-&gt;</font><font color="#0000BB">bindParam</font><font color="#007700">(</font><font color="#0000BB">3</font><font color="#007700">, </font><font color="#0000BB">$fp</font><font color="#007700">, </font><font color="#0000BB">PDO</font><font color="#007700">::</font><font color="#0000BB">PARAM_LOB</font><font color="#007700">);<br /><br /></font><font color="#0000BB">$stmt</font><font color="#007700">-&gt;</font><font color="#0000BB">beginTransaction</font><font color="#007700">();<br /></font><font color="#0000BB">$stmt</font><font color="#007700">-&gt;</font><font color="#0000BB">execute</font><font color="#007700">();<br /></font><font color="#0000BB">$stmt</font><font color="#007700">-&gt;</font><font color="#0000BB">commit</font><font color="#007700">();<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+    </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="pdo.classes"
+>Предопределенные классы</A
+></H1
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="pdo.class.PDO"
+><B
+CLASS="classname"
+>PDO</B
+></A
+></H2
+><P
+>&#13;      Represents a connection between PHP and a database server.
+     </P
+><DIV
+CLASS="section"
+><H3
+CLASS="section"
+><A
+NAME="pdo.class.PDO.constructor"
+>Конструктор</A
+></H3
+><P
+></P
+><UL
+><LI
+><P
+>&#13;         <A
+HREF="function.pdo-construct.html"
+>PDO</A
+> - constructs a new 
+         PDO object
+        </P
+></LI
+></UL
+></DIV
+><DIV
+CLASS="section"
+><H3
+CLASS="section"
+><A
+NAME="pdo.class.PDO.methods"
+>Методы</A
+></H3
+><P
+></P
+><UL
+><LI
+><P
+>&#13;         <A
+HREF="function.pdo-begintransaction.html"
+>beginTransaction</A
+> 
+         - begins a transaction
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.pdo-commit.html"
+>commit</A
+> 
+         - commits a transaction
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.pdo-errorcode.html"
+>errorCode</A
+> 
+         - retrieves an error code, if any, from the database
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.pdo-errorinfo.html"
+>errorInfo</A
+> 
+         - retrieves an array of error information, if any, from the
+         database
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.pdo-exec.html"
+>exec</A
+> 
+         - issues an SQL statement and returns the number of affected rows
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.pdo-getattribute.html"
+>getAttribute</A
+> 
+         - retrieves a database connection attribute
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.pdo-lastinsertid.html"
+>lastInsertId</A
+> 
+         - retrieves the value of the last row that was inserted into a table
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.pdo-prepare.html"
+>prepare</A
+> 
+         - prepares an SQL statement for execution
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.pdo-query.html"
+>query</A
+> 
+         - issues an SQL statement and returns a result set
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.pdo-quote.html"
+>quote</A
+> 
+         - returns a quoted version of a string for use in SQL statements
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.pdo-rollback.html"
+>rollBack</A
+> 
+         - roll back a transaction
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.pdo-setattribute.html"
+>setAttribute</A
+> 
+         - sets a database connection attribute
+        </P
+></LI
+></UL
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="pdo.class.PDOStatement"
+><B
+CLASS="classname"
+>PDOStatement</B
+></A
+></H2
+><P
+>&#13;      Represents a prepared statement and, after the statement is executed, an 
+      associated result set.
+     </P
+><DIV
+CLASS="section"
+><H3
+CLASS="section"
+><A
+NAME="pdo.class.Statement.methods"
+>Методы</A
+></H3
+><P
+></P
+><UL
+><LI
+><P
+>&#13;         <A
+HREF="function.pdostatement-bindcolumn.html"
+>bindColumn</A
+> 
+         - binds a PHP variable to an output column in a result set
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.pdostatement-bindparam.html"
+>bindParam</A
+> 
+         - binds a PHP variable to a parameter in the prepared statement
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.pdostatement-bindvalue.html"
+>bindValue</A
+> 
+         - binds a value to a parameter in the prepared statement
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.pdostatement-closecursor.html"
+>closeCursor</A
+> 
+         - closes the cursor, allowing the statement to be executed again
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.pdostatement-columncount.html"
+>columnCount</A
+> 
+         - returns the number of columns in the result set
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.pdostatement-errorcode.html"
+>errorCode</A
+> 
+         - retrieves an error code, if any, from the statement
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.pdostatement-errorinfo.html"
+>errorInfo</A
+> 
+         - retrieves an array of error information, if any, from the statement
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.pdostatement-execute.html"
+>execute</A
+> 
+         - executes a prepared statement
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.pdostatement-fetch.html"
+>fetch</A
+> 
+         - fetches a row from a result set
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.pdostatement-fetchall.html"
+>fetchAll</A
+> 
+         - fetches an array containing all of the rows from a result set
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.pdostatement-fetchcolumn.html"
+>fetchColumn</A
+> 
+         - returns the data from a single column in a result set
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.pdostatement-getattribute.html"
+>getAttribute</A
+> 
+         - retrieves a PDOStatement attribute
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.pdostatement-getcolumnmeta.html"
+>getColumnMeta</A
+> 
+         - retrieves metadata for a column in the result set
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.pdostatement-nextrowset.html"
+>nextRowset</A
+> 
+         - retrieves the next rowset (result set)
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.pdostatement-rowcount.html"
+>rowCount</A
+> 
+         - returns the number of rows that were affected by the execution of 
+         an SQL statement
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.pdostatement-setattribute.html"
+>setAttribute</A
+> 
+         - sets a PDOStatement attribute
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.pdostatement-setfetchmode.html"
+>setFetchMode</A
+> 
+         - sets the fetch mode for a PDOStatement
+        </P
+></LI
+></UL
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="pdo.class.PDOException"
+><B
+CLASS="classname"
+>PDOException</B
+></A
+></H2
+><P
+>&#13;      Represents an error raised by PDO.  You should not throw a
+      <B
+CLASS="classname"
+>PDOException</B
+> from your own code.
+      See <A
+HREF="language.exceptions.html"
+>Exceptions</A
+> for more
+      information about Exceptions in PHP.
+     </P
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN137238"
+></A
+><P
+><B
+>Пример 15. The PDOException class</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br /></font><font color="#007700">class </font><font color="#0000BB">PDOException </font><font color="#007700">extends </font><font color="#0000BB">Exception<br /></font><font color="#007700">{<br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">public $errorInfo </font><font color="#007700">= </font><font color="#0000BB">null</font><font color="#007700">;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#FF8000">// corresponds to PDO::errorInfo()<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// or PDOStatement::errorInfo()<br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">protected $message</font><font color="#007700">;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#FF8000">// textual error message<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// use Exception::getMessage() to access it<br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">protected $code</font><font color="#007700">;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#FF8000">// SQLSTATE error code<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// use Exception::getCode() to access it<br /></font><font color="#007700">}<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="pdo.constants"
+>Предопределенные константы</A
+></H1
+><P
+>&#13;Перечисленные ниже константы определены данным расширением и могут быть
+доступны только в том случае, если PHP был собран с
+поддержкой этого расширения или же в том случае, если
+данное расширение подгружается во время выполнения.
+</P
+><DIV
+CLASS="warning"
+><P
+></P
+><TABLE
+CLASS="warning"
+BORDER="1"
+WIDTH="100%"
+><TR
+><TD
+ALIGN="CENTER"
+><B
+>Внимание</B
+></TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+><P
+>&#13;   PDO uses class constants since PHP 5.1. Prior releases use global constants
+   in the form <TT
+CLASS="constant"
+><B
+>PDO_PARAM_BOOL</B
+></TT
+>.
+  </P
+></TD
+></TR
+></TABLE
+></DIV
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::PARAM_BOOL</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Represents a boolean data type.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::PARAM_NULL</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Represents the SQL NULL data type.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::PARAM_INT</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Represents the SQL INTEGER data type.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::PARAM_STR</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Represents the SQL CHAR, VARCHAR, or other string data type.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::PARAM_LOB</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Represents the SQL large object data type.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::PARAM_STMT</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Represents a recordset type.  Not currently supported by any drivers.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::PARAM_INPUT_OUTPUT</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Specifies that the parameter is an INOUT parameter for a stored
+     procedure. You must bitwise-OR this value with an explicit
+     PDO::PARAM_* data type.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::FETCH_LAZY</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Specifies that the fetch method shall return each row as an object with
+     variable names that correspond to the column names returned in the result
+     set. PDO::FETCH_LAZY creates the object variable names as they are accessed.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::FETCH_ASSOC</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Specifies that the fetch method shall return each row as an array indexed
+     by column name as returned in the corresponding result set. If the result
+     set contains multiple columns with the same name, PDO::FETCH_ASSOC returns
+     only a single value per column name.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::FETCH_NAMED</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Specifies that the fetch method shall return each row as an array indexed
+     by column name as returned in the corresponding result set. If the result
+     set contains multiple columns with the same name, PDO::FETCH_NAMED returns
+     an array of values per column name.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::FETCH_NUM</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Specifies that the fetch method shall return each row as an array indexed
+     by column number as returned in the corresponding result set, starting at
+     column 0.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::FETCH_BOTH</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Specifies that the fetch method shall return each row as an array indexed
+     by both column name and number as returned in the corresponding result set,
+     starting at column 0.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::FETCH_OBJ</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Specifies that the fetch method shall return each row as an object with
+     property names that correspond to the column names returned in the result
+     set.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::FETCH_BOUND</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Specifies that the fetch method shall return TRUE and assign the values of
+     the columns in the result set to the PHP variables to which they were
+     bound with the <B
+CLASS="function"
+>PDOStatement::bindParam()</B
+> or
+     <B
+CLASS="function"
+>PDOStatement::bindColumn()</B
+> methods.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::FETCH_COLUMN</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Specifies that the fetch method shall return only a single requested
+     column from the next row in the result set.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::FETCH_CLASS</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Specifies that the fetch method shall return a new instance of the
+     requested class, mapping the columns to named properties in the class.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::FETCH_INTO</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Specifies that the fetch method shall update an existing instance of the
+     requested class, mapping the columns to named properties in the class.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::FETCH_FUNC</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::FETCH_GROUP</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::FETCH_UNIQUE</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::FETCH_CLASSTYPE</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::FETCH_SERIALIZE</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Available since PHP 5.1.0.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::FETCH_PROPS_LATE</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::ATTR_AUTOCOMMIT</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     If this value is <TT
+CLASS="constant"
+><B
+>FALSE</B
+></TT
+>, PDO attempts to disable autocommit so that the
+     connection begins a transaction.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::ATTR_PREFETCH</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Setting the prefetch size allows you to balance speed against memory
+     usage for your application.  Not all database/driver combinations support
+     setting of the prefetch size.  A larger prefetch size results in
+     increased performance at the cost of higher memory usage.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::ATTR_TIMEOUT</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Sets the timeout value in seconds for communications with the database.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::ATTR_ERRMODE</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     See the <A
+HREF="ref.pdo.html#pdo.error-handling"
+>Errors and error
+     handling</A
+> section for more information about this attribute.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::ATTR_SERVER_VERSION</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     This is a read only attribute; it will return information about the
+     version of the database server to which PDO is connected.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::ATTR_CLIENT_VERSION</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     This is a read only attribute; it will return information about the
+     version of the client libraries that the PDO driver is using.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::ATTR_SERVER_INFO</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     This is a read only attribute; it will return some meta information about the
+     database server to which PDO is connected.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::ATTR_CONNECTION_STATUS</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::ATTR_CASE</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Force column names to a specific case specified by the PDO::CASE_*
+     constants.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::ATTR_CURSOR_NAME</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Get or set the name to use for a cursor.  Most useful when using
+     scrollable cursors and positioned updates.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::ATTR_CURSOR</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Selects the cursor type.  PDO currently supports either
+     <TT
+CLASS="constant"
+><B
+>PDO::CURSOR_FWDONLY</B
+></TT
+> and 
+     <TT
+CLASS="constant"
+><B
+>PDO::CURSOR_SCROLL</B
+></TT
+>.  Stick with
+     <TT
+CLASS="constant"
+><B
+>PDO::CURSOR_FWDONLY</B
+></TT
+> unless you know that you need a
+     scrollable cursor.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::ATTR_DRIVER_NAME</B
+></TT
+>
+     (<A
+HREF="language.types.string.html"
+><B
+CLASS="type"
+>string</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Returns the name of the driver.
+    </P
+><P
+>&#13;     <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN137466"
+></A
+><P
+><B
+>Пример 16. using PDO::ATTR_DRIVER_NAME</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br /></font><font color="#007700">if (</font><font color="#0000BB">$db</font><font color="#007700">-&gt;</font><font color="#0000BB">getAttribute</font><font color="#007700">(</font><font color="#0000BB">PDO</font><font color="#007700">::</font><font color="#0000BB">ATTR_DRIVER_NAME</font><font color="#007700">) == </font><font color="#DD0000">'mysql'</font><font color="#007700">) {<br />&nbsp;&nbsp;echo </font><font color="#DD0000">"Running on mysql; doing something mysql specific here\n"</font><font color="#007700">;<br />}<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+     </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::ATTR_ORACLE_NULLS</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Convert empty strings to SQL NULL values on data fetches.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::ATTR_PERSISTENT</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+> 
+     Request a persistent connection, rather than creating a new connection.
+     See <A
+HREF="ref.pdo.html#pdo.connections"
+>Connections and Connection
+     management</A
+> for more information on this attribute.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::ATTR_STATEMENT_CLASS</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+> 
+
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::ATTR_FETCH_CATALOG_NAMES</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+> 
+     Prepend the containing catalog name to each column name returned in the
+     result set. The catalog name and column name are separated by a decimal
+     (.) character.  Support of this attribute is at the driver level; it may
+     not be supported by your driver.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::ATTR_FETCH_TABLE_NAMES</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+> 
+     Prepend the containing table name to each column name returned in the
+     result set. The table name and column name are separated by a decimal (.)
+     character.  Support of this attribute is at the driver level; it may not
+     be supported by your driver.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::ATTR_STRINGIFY_FETCHES</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+> 
+
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::ATTR_MAX_COLUMN_LEN</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+> 
+
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::ATTR_DEFAULT_FETCH_MODE</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+> 
+
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::ATTR_EMULATE_PREPARES</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Available since PHP 5.1.3.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::ERRMODE_SILENT</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Do not raise an error or exception if an error occurs. The developer is
+     expected to explicitly check for errors.  This is the default mode.
+     See <A
+HREF="ref.pdo.html#pdo.error-handling"
+>Errors and error handling</A
+>
+     for more information about this attribute.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::ERRMODE_WARNING</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Issue a PHP E_WARNING message if an error occurs.
+     See <A
+HREF="ref.pdo.html#pdo.error-handling"
+>Errors and error handling</A
+>
+     for more information about this attribute.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::ERRMODE_EXCEPTION</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Throw a <B
+CLASS="classname"
+>PDOException</B
+> if an error occurs.
+     See <A
+HREF="ref.pdo.html#pdo.error-handling"
+>Errors and error handling</A
+>
+     for more information about this attribute.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::CASE_NATURAL</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Leave column names as returned by the database driver.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::CASE_LOWER</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+> 
+     Force column names to lower case.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::CASE_UPPER</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Force column names to upper case.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::PDO_NULL_NATURAL</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::PDO_NULL_EMPTY_STRING</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::PDO_NULL_TO_STRING</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::FETCH_ORI_NEXT</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Fetch the next row in the result set. Valid only for scrollable cursors.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::FETCH_ORI_PRIOR</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Fetch the previous row in the result set. Valid only for scrollable
+     cursors.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::FETCH_ORI_FIRST</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Fetch the first row in the result set. Valid only for scrollable cursors.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::FETCH_ORI_LAST</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Fetch the last row in the result set. Valid only for scrollable cursors.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::FETCH_ORI_ABS</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Fetch the requested row by row number from the result set. Valid only
+     for scrollable cursors.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::FETCH_ORI_REL</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Fetch the requested row by relative position from the current position
+     of the cursor in the result set. Valid only for scrollable cursors.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::CURSOR_FWDONLY</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Create a PDOStatement object with a forward-only cursor.  This is the
+     default cursor choice, as it is the fastest and most common data access
+     pattern in PHP.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::CURSOR_SCROLL</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Create a PDOStatement object with a scrollable cursor. Pass the
+     PDO::FETCH_ORI_* constants to control the rows fetched from the result set.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::ERR_NONE</B
+></TT
+>
+     (<A
+HREF="language.types.string.html"
+><B
+CLASS="type"
+>string</B
+></A
+>)</DT
+><DD
+><P
+> 
+     Corresponds to SQLSTATE '00000', meaning that the SQL statement was
+     successfully issued with no errors or warnings.  This constant is for
+     your convenience when checking <B
+CLASS="function"
+>PDO::errorCode()</B
+> or
+     <B
+CLASS="function"
+>PDOStatement::errorCode()</B
+> to determine if an error
+     occurred.  You will usually know if this is the case by examining the
+     return code from the method that raised the error condition anyway.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::PARAM_EVT_ALLOC</B
+></TT
+>
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Allocation event
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::PARAM_EVT_FREE</B
+></TT
+>
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Deallocation event
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::PARAM_EVT_EXEC_PRE</B
+></TT
+>
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Event triggered prior to execution of a prepared statement.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::PARAM_EVT_EXEC_POST</B
+></TT
+>
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Event triggered subsequent to execution of a prepared statement.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::PARAM_EVT_FETCH_PRE</B
+></TT
+>
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Event triggered prior to fetching a result from a resultset.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::PARAM_EVT_FETCH_POST</B
+></TT
+>
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Event triggered subsequent to fetching a result from a resultset.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PDO::PARAM_EVT_NORMALIZE</B
+></TT
+>
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Event triggered during bound parameter registration
+     allowing the driver to normalize the parameter name.
+    </P
+></DD
+></DL
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Содержание</B
+></DT
+><DT
+><A
+HREF="function.pdo-begintransaction.html"
+>PDO::beginTransaction</A
+>&nbsp;--&nbsp;
+     Initiates a transaction
+    </DT
+><DT
+><A
+HREF="function.pdo-commit.html"
+>PDO::commit</A
+>&nbsp;--&nbsp;
+     Commits a transaction
+    </DT
+><DT
+><A
+HREF="function.pdo-construct.html"
+>PDO::__construct</A
+>&nbsp;--&nbsp;
+     Creates a PDO instance representing a connection to a database
+    </DT
+><DT
+><A
+HREF="function.pdo-errorcode.html"
+>PDO::errorCode</A
+>&nbsp;--&nbsp;
+     Fetch the SQLSTATE associated with the last operation on the database handle
+    </DT
+><DT
+><A
+HREF="function.pdo-errorinfo.html"
+>PDO::errorInfo</A
+>&nbsp;--&nbsp;
+     Fetch extended error information associated with the last operation on the database handle
+    </DT
+><DT
+><A
+HREF="function.pdo-exec.html"
+>PDO::exec</A
+>&nbsp;--&nbsp;
+   Execute an SQL statement and return the number of affected rows
+  </DT
+><DT
+><A
+HREF="function.pdo-getattribute.html"
+>PDO::getAttribute</A
+>&nbsp;--&nbsp;
+   Retrieve a database connection attribute
+  </DT
+><DT
+><A
+HREF="function.pdo-getavailabledrivers.html"
+>PDO::getAvailableDrivers</A
+>&nbsp;--&nbsp;
+   Return an array of available PDO drivers
+  </DT
+><DT
+><A
+HREF="function.pdo-lastinsertid.html"
+>PDO::lastInsertId</A
+>&nbsp;--&nbsp;
+     Returns the ID of the last inserted row or sequence value
+    </DT
+><DT
+><A
+HREF="function.pdo-prepare.html"
+>PDO::prepare</A
+>&nbsp;--&nbsp;
+     Prepares a statement for execution and returns a statement object
+    </DT
+><DT
+><A
+HREF="function.pdo-query.html"
+>PDO::query</A
+>&nbsp;--&nbsp;
+   Executes an SQL statement, returning a result set as a PDOStatement object
+  </DT
+><DT
+><A
+HREF="function.pdo-quote.html"
+>PDO::quote</A
+>&nbsp;--&nbsp;
+   Quotes a string for use in a query.
+  </DT
+><DT
+><A
+HREF="function.pdo-rollback.html"
+>PDO::rollBack</A
+>&nbsp;--&nbsp;
+     Rolls back a transaction
+    </DT
+><DT
+><A
+HREF="function.pdo-setattribute.html"
+>PDO::setAttribute</A
+>&nbsp;--&nbsp;
+     Set an attribute
+    </DT
+><DT
+><A
+HREF="function.pdostatement-bindcolumn.html"
+>PDOStatement::bindColumn</A
+>&nbsp;--&nbsp;
+     Bind a column to a PHP variable
+    </DT
+><DT
+><A
+HREF="function.pdostatement-bindparam.html"
+>PDOStatement::bindParam</A
+>&nbsp;--&nbsp;
+     Binds a parameter to the specified variable name
+    </DT
+><DT
+><A
+HREF="function.pdostatement-bindvalue.html"
+>PDOStatement::bindValue</A
+>&nbsp;--&nbsp;
+     Binds a value to a parameter
+    </DT
+><DT
+><A
+HREF="function.pdostatement-closecursor.html"
+>PDOStatement::closeCursor</A
+>&nbsp;--&nbsp;
+   Closes the cursor, enabling the statement to be executed again.
+  </DT
+><DT
+><A
+HREF="function.pdostatement-columncount.html"
+>PDOStatement::columnCount</A
+>&nbsp;--&nbsp;
+   Returns the number of columns in the result set
+  </DT
+><DT
+><A
+HREF="function.pdostatement-errorcode.html"
+>PDOStatement::errorCode</A
+>&nbsp;--&nbsp;
+     Fetch the SQLSTATE associated with the last operation on the statement handle
+    </DT
+><DT
+><A
+HREF="function.pdostatement-errorinfo.html"
+>PDOStatement::errorInfo</A
+>&nbsp;--&nbsp;
+     Fetch extended error information associated with the last operation on the statement handle
+    </DT
+><DT
+><A
+HREF="function.pdostatement-execute.html"
+>PDOStatement::execute</A
+>&nbsp;--&nbsp;
+     Executes a prepared statement
+    </DT
+><DT
+><A
+HREF="function.pdostatement-fetch.html"
+>PDOStatement::fetch</A
+>&nbsp;--&nbsp;
+     Fetches the next row from a result set
+    </DT
+><DT
+><A
+HREF="function.pdostatement-fetchall.html"
+>PDOStatement::fetchAll</A
+>&nbsp;--&nbsp;
+     Returns an array containing all of the result set rows
+    </DT
+><DT
+><A
+HREF="function.pdostatement-fetchcolumn.html"
+>PDOStatement::fetchColumn</A
+>&nbsp;--&nbsp;
+   Returns a single column from the next row of a result set
+  </DT
+><DT
+><A
+HREF="function.pdostatement-fetchobject.html"
+>PDOStatement::fetchObject</A
+>&nbsp;--&nbsp;Fetches the next row and returns it as an object.</DT
+><DT
+><A
+HREF="function.pdostatement-getattribute.html"
+>PDOStatement::getAttribute</A
+>&nbsp;--&nbsp;
+   Retrieve a statement attribute
+  </DT
+><DT
+><A
+HREF="function.pdostatement-getcolumnmeta.html"
+>PDOStatement::getColumnMeta</A
+>&nbsp;--&nbsp;
+   Returns metadata for a column in a result set
+  </DT
+><DT
+><A
+HREF="function.pdostatement-nextrowset.html"
+>PDOStatement::nextRowset</A
+>&nbsp;--&nbsp;
+   Advances to the next rowset in a multi-rowset statement handle
+  </DT
+><DT
+><A
+HREF="function.pdostatement-rowcount.html"
+>PDOStatement::rowCount</A
+>&nbsp;--&nbsp;
+     Returns the number of rows affected by the last SQL statement
+    </DT
+><DT
+><A
+HREF="function.pdostatement-setattribute.html"
+>PDOStatement::setAttribute</A
+>&nbsp;--&nbsp;
+   Set a statement attribute
+  </DT
+><DT
+><A
+HREF="function.pdostatement-setfetchmode.html"
+>PDOStatement::setFetchMode</A
+>&nbsp;--&nbsp;
+   Set the default fetch mode for this statement
+  </DT
+></DL
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="function.pdf-utf8-to-utf16.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Начало</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="function.pdo-begintransaction.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>PDF_utf8_to_utf16</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="funcref.html"
+ACCESSKEY="U"
+>Уровень выше</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>PDO::beginTransaction</TD
+></TR
+></TABLE
+></DIV
+></div></center></div></td>
+			<td><div style="display:none; width:200px;" id="o3" name="o3"><script charset="windows-1251" type="text/javascript" src="http://www.ozon.ru/PartnerTwinerNew.aspx?revident=bea9126b-c8e1-4bf5-b6d8-9a057f8feac6" ></script></div><script>o = document.getElementById('o3'); if(o) { var s = o.innerHTML; s = s.replace(/F6F6F6/gi,"FFFFFF"); o.innerHTML = s.replace(/padding-top: 10px; padding-bottom: 10px;/,"display:none;"); o.style.display = 'block'; } </script><br><div style="margin: 10px;"><script type="text/javascript"><!--
+google_ad_client = "pub-4093271809023514";
+/* 120x600, создано 01.11.2008 */
+google_ad_slot = "0438855731";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div></td>
+    		</tr>
+  		</table>
+    </td>
+  </tr>
+  <tr valign='bottom' height='1%'>
+  <td>      <table width=100% cellspacing=0 cellpadding=5 border=0 bgcolor=#9999CC>
+        <tr valign=center>
+          <td class='phpcopyright' width='45%' align='left'>&nbsp;&nbsp;Engine <a  href="http://www.mnogosearch.org/">MnoGoSearch</a></td>
+          <td class='phpcopyright' width='10%' align='center'>2007-2010 &copy <a  href="mailto:webmaster@php.ru">PHP.RU</a></td>
+          <td class='phpcopyright' width='45%' align='right' >Powered by <a target="_blank" href="http://odware.ru">ODware</a> <a HREF="http://440hz.ru">440Hz</a> &nbsp;&nbsp;</td>
+        </tr>
+      </table>
+
+    <div style="text-align: right; padding: 5px">
+		<!--LiveInternet counter-->
+		<script type="text/javascript">document.write('<a href="http://www.liveinternet.ru/click" target=_blank><img src="http://counter.yadro.ru/hit?t53.6;r' + escape(document.referrer) + ((typeof(screen)=='undefined')?'':';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ';u' + escape(document.URL) +';i' + escape('Жж'+document.title.substring(0,80)) + ';' + Math.random() + '" border=0 width=88 height=31 alt="" title="LiveInternet: показано число просмотров и посетителей за 24 часа"><\/a>');
+		</script>
+		<!--/LiveInternet-->
+		<!-- SpyLOG -->
+		<script src="http://tools.spylog.ru/counter2.2.js" type="text/javascript" id="spylog_code" counter="830950" ></script>
+		<noscript><a href="http://u8309.50.spylog.com/cnt?cid=830950&f=3&p=0" target="_blank"><img src="http://u8309.50.spylog.com/cnt?cid=830950&p=0&f=4" alt='SpyLOG' border='0' width=88 height=31 ></a>
+		</noscript>
+		<!--/ SpyLOG -->
+	</div>
+</td>
+  </tr>
+</table>
+
+<script>
+<!--
+document.SEARCH.QS.focus();
+// --></script>
+
+<!-- 
+	как же вы все это читаете?
+	440hz 
+-->
+
+</body>
+</html>

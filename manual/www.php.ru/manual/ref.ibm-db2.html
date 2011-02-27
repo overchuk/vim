@@ -1,0 +1,1417 @@
+<!-- 
+
+     HTML dropped by Zend Guard Compressor 4.2
+
+     php.ru team: mz, az, yuri, vb, cyxapuk, 440hz, administrator
+     2004-2007 (c) expi-web.com 
+     2007-2008 (c) odware.com 
+     0101-1010 (с) 440hz
+
+     2b|~2b=?
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EHOT тут всё пожрал ! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="alternate" type="application/rss+xml" title="php.ru/forum - последние сообщения" href="http://www.php.ru/forum/rss.php">
+<link rel="SHORTCUT ICON" href="http://www.php.ru/favicon.ico" />
+<META name="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<meta http-equiv="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<META name="keywords" content="php, php5, apache, mysql, session">
+<meta http-equiv="keywords" content="php, php5, apache, mysql, session">
+<title>php.ru - IBM DB2, Cloudscape and Apache Derby Functions</title>
+<LINK REL="stylesheet" TYPE="text/css" HREF="http://www.php.ru/index.css">
+<script language="JavaScript" src="http://www.php.ru/ajax/ajax.js"></script>
+</head>
+<body>
+
+<table height='100%' width='100%' cellspacing='0' cellpadding='0'>
+  <tr height='99%' valign='top'>
+    <td align='center'>
+		
+		<table style='margin-top: 4px' width=100% cellspacing=0 cellpadding=3>
+   		<tr>
+     		<td>PHP - <a href="http://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BA%D1%80%D0%BE%D0%BD%D0%B8%D0%BC" target=_blank class=lnk>рекурсивный акроним</a> словосочетания &laquo;<a href="/manual/introduction.html" class=lnk>PHP: Hypertext Preprocessor</a>&raquo;</td>
+     	</tr>
+   		</table>
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/subsys_ajax.js"></script>
+		<!--
+
+		commet by 440hz
+		20.10.2007
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/pu_search.js"></script>
+
+		-->
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/cz.js?a=b"></script>
+
+		<table style='margin-top: 5px' width=100% bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0>
+   	 	<form name=SEARCH method=GET action="http://www.php.ru/search/?SID=eykbugzsqyig08mj" onsubmit="return puSubmit();">
+	  	<input type=hidden name=PAGE value=1>
+  		<tr>
+    		<td width='1' valign='middle'> 
+    		   <a href='/'><img src="http://www.php.ru/;-)/logo.gif" width=133 height=93 alt="php" border=0 hspace=10 vspace=0></a>
+			 </td>
+		    <td width='100%' valign='middle'>
+		       <!--
+			   
+				commet by 440hz
+				20.10.2007
+
+			   <div id='pu_search' class='pu_search'></div>
+		       <div id='pu_search_description' class='pu_search_decription'></div>
+			   
+			   -->
+        	 <input type=text style='width:99%; margin: 10px' maxlength='200' name='QS' class='in' id='query' autocomplete='off' value="" />
+    		</td>
+		  </tr>
+   		<tr bgcolor='#666699' valign='middle'>
+			<td style='border-top: 1px solid #333366;'><br /></td>
+    		<td style='border-top: 1px solid #333366;'><div style="padding: 4px 4px 4px 10px; height: 24px; color: #CCCCFF;" id="stat">Хто там?<script>doLoadCZ('stat','stat');</script></div></td>
+  		</tr>
+		</form>
+		</table>
+		<table id="menu" cellspaciong=0 cellpadding=3>
+<tr>
+<td><a href="/" class=current>Главная</a></td>
+<td><a href="/download/" class=current>Скачать</a></td>
+<td><a href="/doc/" class=current>Документация</a></td>
+<td><a href="/forum/" class=current>Форум</a></td>
+<td width=100% align=right><a href="/phpinfo.html" class=current>phpinfo()</a></td>
+</tr>
+</table>
+
+		
+<!--  AdRiver code START. Type:728x90 Site: php.ru PZ: 0 BN: 1 -->
+<script language="javascript" type="text/javascript"><!--
+var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+var ar_Tail='unknown'; if (document.referrer) ar_Tail = escape(document.referrer);
+document.write(
+'<iframe src="http://ad.adriver.ru/cgi-bin/erle.cgi?'
++ 'sid=148680&bn=1&target=blank&bt=36&pz=0&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail
++ '" frameborder=0 vspace=0 hspace=0 width=728 height=90 marginwidth=0'
++ ' marginheight=0 scrolling=no></iframe>');
+//--></script>
+<noscript>
+<a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" target=_blank>
+<img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" alt="-AdRiver-" border=0 width=728 height=90></a>
+</noscript>
+<!--  AdRiver code END  -->
+
+
+  		<table width='100%' cellspacing='0' cellpadding='0'>
+    		<tr valign='top'>
+      		<td width=100%><div style="margin: 10px 10px 10px 50px;"><center><div style="width: 800px; text-align: left"><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Руководство по PHP</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="function.hwapi-userlist.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="function.db2-autocommit.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="reference"
+><A
+NAME="ref.ibm-db2"
+></A
+><DIV
+CLASS="TITLEPAGE"
+><H1
+CLASS="title"
+>LVII. IBM DB2, Cloudscape and Apache Derby Functions</H1
+><DIV
+CLASS="PARTINTRO"
+><A
+NAME="AEN60184"
+></A
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="ibm-db2.intro"
+>Введение</A
+></H1
+><P
+>&#13;    These functions enable you to access IBM DB2 Universal Database, IBM
+    Cloudscape, and Apache Derby databases using the DB2 Call Level Interface
+    (DB2 CLI).
+   </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="ibm-db2.requirements"
+>Требования</A
+></H1
+><P
+>&#13;    To connect to IBM DB2 Universal Database for Linux, UNIX, and Windows, or
+    IBM Cloudscape, or Apache Derby, you must install an IBM DB2 Universal
+    Database client on the same computer on which you are running PHP. The
+    extension has been developed and tested with DB2 Version 8.2.
+   </P
+><P
+>&#13;    To connect to IBM DB2 Universal Database for z/OS or iSeries, you also
+    require IBM DB2 Connect or the equivalent DRDA gateway software.
+   </P
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="ibm-db2.requirements.unix"
+>Requirements on Linux or Unix</A
+></H2
+><P
+>&#13;     The user invoking the PHP executable or SAPI must specify the DB2 instance
+     before accessing these functions. You can set the name of the DB2 instance
+     in <TT
+CLASS="filename"
+>php.ini</TT
+> using the <VAR
+CLASS="literal"
+>ibm_db2.instance_name</VAR
+>
+     configuration option, or you can source the DB2 instance profile before
+     invoking the PHP executable.
+    </P
+><P
+>&#13;     If you created a DB2 instance named <VAR
+CLASS="literal"
+>db2inst1</VAR
+> in
+     <TT
+CLASS="filename"
+>/home/db2inst1/</TT
+>, for example, you can add the
+     following line to <TT
+CLASS="filename"
+>php.ini</TT
+>:
+     <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="screen"
+>ibm_db2.instance_name=db2inst1</PRE
+></TD
+></TR
+></TABLE
+>
+     If you do not set this option in <TT
+CLASS="filename"
+>php.ini</TT
+>, you must issue the
+     following command to modify your environment variables to enable access to
+     DB2:
+     <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="screen"
+>bash$ source /home/db2inst1/sqllib/db2profile</PRE
+></TD
+></TR
+></TABLE
+>
+     To enable your PHP-enabled Web server to access these functions, you must
+     either set the <VAR
+CLASS="literal"
+>ibm_db2.instance_name</VAR
+> configuration
+     option in <TT
+CLASS="filename"
+>php.ini</TT
+>, or source the DB2 instance environment in your Web
+     server start script (typically <TT
+CLASS="filename"
+>/etc/init.d/httpd</TT
+> or
+     <TT
+CLASS="filename"
+>/etc/init.d/apache</TT
+>).
+    </P
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="ibm-db2.installation"
+>Установка</A
+></H1
+><P
+>&#13;  To build the ibm_db2 extension, the DB2 application development header
+  files and libraries must be installed on your system. DB2 does not install
+  these by default, so you may have to return to your DB2 installer and add
+  this option. The header files are included with the DB2 Application
+  Development Client freely available for download from the IBM DB2 Universal
+  Database <A
+HREF="http://www-306.ibm.com/software/data/db2/udb/support/downloadv8.html"
+TARGET="_top"
+>support site</A
+>.
+ </P
+><P
+>&#13;  If you add the DB2 application development header files and libraries to
+  a Linux or Unix operating system on which DB2 was already installed, you
+  must issue the command <B
+CLASS="command"
+>db2iupdt -e</B
+> to update the symbolic
+  links to the header files and libraries in your DB2 instances.
+ </P
+><P
+>&#13;  ibm_db2 is a  <A
+HREF="http://pecl.php.net"
+TARGET="_top"
+>PECL</A
+> extension, so follow the
+  instructions in <A
+HREF="install.pecl.html"
+>Гл. 7</A
+> to install the ibm_db2
+  extension for PHP. Issue the <B
+CLASS="command"
+>configure</B
+> command to point
+  to the location of your DB2 header files and libraries as follows:
+  <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="screen"
+>bash$ ./configure --with-IBM_DB2=/path/to/DB2</PRE
+></TD
+></TR
+></TABLE
+>
+  The <B
+CLASS="command"
+>configure</B
+> command defaults to
+  <TT
+CLASS="filename"
+>/opt/IBM/db2/V8.1</TT
+>.
+ </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="extname.configuration"
+>Настройка во время выполнения</A
+></H1
+><P
+>&#13;Поведение этих функций зависит от установок в <TT
+CLASS="filename"
+>php.ini</TT
+>.
+</P
+><P
+>&#13;  <DIV
+CLASS="table"
+><A
+NAME="AEN60226"
+></A
+><P
+><B
+>Таблица 1. ibm_db2 Опции настройки</B
+></P
+><TABLE
+BORDER="1"
+CLASS="CALSTABLE"
+><COL><COL><COL><COL><THEAD
+><TR
+><TH
+>Имя</TH
+><TH
+>По умолчанию</TH
+><TH
+>Меняемо</TH
+><TH
+>Changelog</TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+>ibm_db2.binmode</TD
+><TD
+>"1"</TD
+><TD
+>PHP_INI_ALL</TD
+><TD
+>&nbsp;</TD
+></TR
+><TR
+><TD
+>ibm_db2.instance_name</TD
+><TD
+>NULL</TD
+><TD
+>PHP_INI_SYSTEM</TD
+><TD
+>&nbsp;</TD
+></TR
+></TBODY
+></TABLE
+></DIV
+>
+
+ </P
+><P
+>Краткое разъяснение конфигурационных
+директив.</P
+><P
+>&#13;  <P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+><A
+NAME="ini.ibm-db2.binmode"
+></A
+><VAR
+CLASS="parameter"
+>ibm_db2.binmode</VAR
+>
+     <A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+></DT
+><DD
+><P
+>&#13;      This option controls the mode used for converting to and from binary
+      data in the PHP application.
+      <P
+></P
+><UL
+><LI
+><P
+>&#13;         1 (DB2_BINARY)
+        </P
+></LI
+><LI
+><P
+>&#13;         2 (DB2_CONVERT)
+        </P
+></LI
+><LI
+><P
+>&#13;         3 (DB2_PASSTHRU)
+        </P
+></LI
+></UL
+>
+     </P
+></DD
+><DT
+><A
+NAME="ini.ibm-db2.instance-name"
+></A
+><VAR
+CLASS="parameter"
+>ibm_db2.instance_name</VAR
+>
+     <A
+HREF="language.types.string.html"
+><B
+CLASS="type"
+>string</B
+></A
+></DT
+><DD
+><P
+>&#13;      On Linux and UNIX operating systems, this option defines the name of the
+      instance to use for cataloged database connections. If this option is set,
+      its value overrides the DB2INSTANCE environment variable setting.
+     </P
+><P
+>&#13;      This option is ignored on Windows operating systems.
+     </P
+></DD
+></DL
+></DIV
+>
+ </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="ibm-db2.constants"
+>Предопределенные константы</A
+></H1
+><P
+>&#13;Перечисленные ниже константы определены данным расширением и могут быть
+доступны только в том случае, если PHP был собран с
+поддержкой этого расширения или же в том случае, если
+данное расширение подгружается во время выполнения.
+</P
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+><TT
+CLASS="constant"
+><B
+>DB2_BINARY</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+> 
+     Specifies that binary data shall be returned as is. This is the default
+     mode.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>DB2_CONVERT</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Specifies that binary data shall be converted to a hexadecimal encoding
+     and returned as an ASCII string.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>DB2_PASSTHRU</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Specifies that binary data shall be converted to a <TT
+CLASS="constant"
+><B
+>NULL</B
+></TT
+> value.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>DB2_SCROLLABLE</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+> 
+     Specifies a scrollable cursor for a statement resource. This mode enables
+     random access to rows in a result set, but currently is supported only by
+     IBM DB2 Universal Database.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>DB2_FORWARD_ONLY</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Specifies a forward-only cursor for a statement resource. This is the
+     default cursor type and is supported on all database servers.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>DB2_PARAM_IN</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Specifies the PHP variable should be bound as an IN parameter for a
+     stored procedure.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>DB2_PARAM_OUT</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Specifies the PHP variable should be bound as an OUT parameter for a
+     stored procedure.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>DB2_PARAM_INOUT</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Specifies the PHP variable should be bound as an INOUT parameter for a
+     stored procedure.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>DB2_PARAM_FILE</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Specifies that the column should be bound directly to a file for input.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>DB2_AUTOCOMMIT_ON</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Specifies that autocommit should be turned on.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>DB2_AUTOCOMMIT_OFF</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Specifies that autocommit should be turned off.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>DB2_DOUBLE</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Specifies that the variable should be bound as a DOUBLE, FLOAT, or REAL
+     data type.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>DB2_LONG</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Specifies that the variable should be bound as a SMALLINT, INTEGER, or
+     BIGINT data type.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>DB2_CHAR</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Specifies that the variable should be bound as a CHAR or VARCHAR data type.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>DB2_CASE_NATURAL</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Specifies that column names will be returned in their natural case.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>DB2_CASE_LOWER</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Specifies that column names will be returned in lower case.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>DB2_CASE_UPPER</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Specifies that column names will be returned in upper case.
+    </P
+></DD
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="ibm-db2.resources"
+>Типы ресурсов</A
+></H1
+><P
+>&#13;    The ibm_db2 extension returns connection resources, statement resources,
+    and result set resources.
+   </P
+></DIV
+></DIV
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Содержание</B
+></DT
+><DT
+><A
+HREF="function.db2-autocommit.html"
+>db2_autocommit</A
+>&nbsp;--&nbsp;
+   Returns or sets the AUTOCOMMIT state for a database connection
+  </DT
+><DT
+><A
+HREF="function.db2-bind-param.html"
+>db2_bind_param</A
+>&nbsp;--&nbsp;
+   Binds a PHP variable to an SQL statement parameter
+  </DT
+><DT
+><A
+HREF="function.db2-client-info.html"
+>db2_client_info</A
+>&nbsp;--&nbsp;Returns an object with properties that describe the DB2 database client</DT
+><DT
+><A
+HREF="function.db2-close.html"
+>db2_close</A
+>&nbsp;--&nbsp;
+   Closes a database connection
+  </DT
+><DT
+><A
+HREF="function.db2-column-privileges.html"
+>db2_column_privileges</A
+>&nbsp;--&nbsp;
+   Returns a result set listing the columns and associated privileges for a table
+  </DT
+><DT
+><A
+HREF="function.db2-columns.html"
+>db2_columns</A
+>&nbsp;--&nbsp;
+   Returns a result set listing the columns and associated metadata for a table
+  </DT
+><DT
+><A
+HREF="function.db2-commit.html"
+>db2_commit</A
+>&nbsp;--&nbsp;
+   Commits a transaction
+  </DT
+><DT
+><A
+HREF="function.db2-conn-error.html"
+>db2_conn_error</A
+>&nbsp;--&nbsp;
+   Returns a string containing the SQLSTATE returned by the last connection attempt
+  </DT
+><DT
+><A
+HREF="function.db2-conn-errormsg.html"
+>db2_conn_errormsg</A
+>&nbsp;--&nbsp;
+   Returns the last connection error message and SQLCODE value
+  </DT
+><DT
+><A
+HREF="function.db2-connect.html"
+>db2_connect</A
+>&nbsp;--&nbsp;
+   Returns a connection to a database
+  </DT
+><DT
+><A
+HREF="function.db2-cursor-type.html"
+>db2_cursor_type</A
+>&nbsp;--&nbsp;
+   Returns the cursor type used by a statement resource
+  </DT
+><DT
+><A
+HREF="function.db2-exec.html"
+>db2_exec</A
+>&nbsp;--&nbsp;
+   Executes an SQL statement directly
+  </DT
+><DT
+><A
+HREF="function.db2-execute.html"
+>db2_execute</A
+>&nbsp;--&nbsp;
+   Executes a prepared SQL statement
+  </DT
+><DT
+><A
+HREF="function.db2-fetch-array.html"
+>db2_fetch_array</A
+>&nbsp;--&nbsp;
+   Returns an array, indexed by column position, representing a row in a result set
+  </DT
+><DT
+><A
+HREF="function.db2-fetch-assoc.html"
+>db2_fetch_assoc</A
+>&nbsp;--&nbsp;
+   Returns an array, indexed by column name, representing a row in a result set
+  </DT
+><DT
+><A
+HREF="function.db2-fetch-both.html"
+>db2_fetch_both</A
+>&nbsp;--&nbsp;
+   Returns an array, indexed by both column name and position, representing a row in a result set
+  </DT
+><DT
+><A
+HREF="function.db2-fetch-object.html"
+>db2_fetch_object</A
+>&nbsp;--&nbsp;
+   Returns an object with properties representing columns in the fetched row
+  </DT
+><DT
+><A
+HREF="function.db2-fetch-row.html"
+>db2_fetch_row</A
+>&nbsp;--&nbsp;
+   Sets the result set pointer to the next row or requested row
+  </DT
+><DT
+><A
+HREF="function.db2-field-display-size.html"
+>db2_field_display_size</A
+>&nbsp;--&nbsp;
+   Returns the maximum number of bytes required to display a column
+  </DT
+><DT
+><A
+HREF="function.db2-field-name.html"
+>db2_field_name</A
+>&nbsp;--&nbsp;
+   Returns the name of the column in the result set
+  </DT
+><DT
+><A
+HREF="function.db2-field-num.html"
+>db2_field_num</A
+>&nbsp;--&nbsp;
+   Returns the position of the named column in a result set
+  </DT
+><DT
+><A
+HREF="function.db2-field-precision.html"
+>db2_field_precision</A
+>&nbsp;--&nbsp;
+   Returns the precision of the indicated column in a result set
+  </DT
+><DT
+><A
+HREF="function.db2-field-scale.html"
+>db2_field_scale</A
+>&nbsp;--&nbsp;
+   Returns the scale of the indicated column in a result set
+  </DT
+><DT
+><A
+HREF="function.db2-field-type.html"
+>db2_field_type</A
+>&nbsp;--&nbsp;
+   Returns the data type of the indicated column in a result set
+  </DT
+><DT
+><A
+HREF="function.db2-field-width.html"
+>db2_field_width</A
+>&nbsp;--&nbsp;
+   Returns the width of the current value of the indicated column in a result set
+  </DT
+><DT
+><A
+HREF="function.db2-foreign-keys.html"
+>db2_foreign_keys</A
+>&nbsp;--&nbsp;
+   Returns a result set listing the foreign keys for a table
+  </DT
+><DT
+><A
+HREF="function.db2-free-result.html"
+>db2_free_result</A
+>&nbsp;--&nbsp;
+   Frees resources associated with a result set
+  </DT
+><DT
+><A
+HREF="function.db2-free-stmt.html"
+>db2_free_stmt</A
+>&nbsp;--&nbsp;
+   Frees resources associated with the indicated statement resource
+  </DT
+><DT
+><A
+HREF="function.db2-next-result.html"
+>db2_next_result</A
+>&nbsp;--&nbsp;
+   Requests the next result set from a stored procedure
+  </DT
+><DT
+><A
+HREF="function.db2-num-fields.html"
+>db2_num_fields</A
+>&nbsp;--&nbsp;
+   Returns the number of fields contained in a result set
+  </DT
+><DT
+><A
+HREF="function.db2-num-rows.html"
+>db2_num_rows</A
+>&nbsp;--&nbsp;
+   Returns the number of rows affected by an SQL statement
+  </DT
+><DT
+><A
+HREF="function.db2-pconnect.html"
+>db2_pconnect</A
+>&nbsp;--&nbsp;
+   Returns a persistent connection to a database
+  </DT
+><DT
+><A
+HREF="function.db2-prepare.html"
+>db2_prepare</A
+>&nbsp;--&nbsp;
+   Prepares an SQL statement to be executed
+  </DT
+><DT
+><A
+HREF="function.db2-primary-keys.html"
+>db2_primary_keys</A
+>&nbsp;--&nbsp;
+   Returns a result set listing primary keys for a table
+  </DT
+><DT
+><A
+HREF="function.db2-procedure-columns.html"
+>db2_procedure_columns</A
+>&nbsp;--&nbsp;
+   Returns a result set listing stored procedure parameters
+  </DT
+><DT
+><A
+HREF="function.db2-procedures.html"
+>db2_procedures</A
+>&nbsp;--&nbsp;
+   Returns a result set listing the stored procedures registered in a database
+  </DT
+><DT
+><A
+HREF="function.db2-result.html"
+>db2_result</A
+>&nbsp;--&nbsp;
+   Returns a single column from a row in the result set
+  </DT
+><DT
+><A
+HREF="function.db2-rollback.html"
+>db2_rollback</A
+>&nbsp;--&nbsp;
+   Rolls back a transaction
+  </DT
+><DT
+><A
+HREF="function.db2-server-info.html"
+>db2_server_info</A
+>&nbsp;--&nbsp;Returns an object with properties that describe the DB2 database server</DT
+><DT
+><A
+HREF="function.db2-special-columns.html"
+>db2_special_columns</A
+>&nbsp;--&nbsp;
+   Returns a result set listing the unique row identifier columns for a table
+  </DT
+><DT
+><A
+HREF="function.db2-statistics.html"
+>db2_statistics</A
+>&nbsp;--&nbsp;
+   Returns a result set listing the index and statistics for a table
+  </DT
+><DT
+><A
+HREF="function.db2-stmt-error.html"
+>db2_stmt_error</A
+>&nbsp;--&nbsp;
+   Returns a string containing the SQLSTATE returned by an SQL statement
+  </DT
+><DT
+><A
+HREF="function.db2-stmt-errormsg.html"
+>db2_stmt_errormsg</A
+>&nbsp;--&nbsp;
+   Returns a string containing the last SQL statement error message
+  </DT
+><DT
+><A
+HREF="function.db2-table-privileges.html"
+>db2_table_privileges</A
+>&nbsp;--&nbsp;
+   Returns a result set listing the tables and associated privileges in a database
+  </DT
+><DT
+><A
+HREF="function.db2-tables.html"
+>db2_tables</A
+>&nbsp;--&nbsp;
+   Returns a result set listing the tables and associated metadata in a database
+  </DT
+></DL
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="function.hwapi-userlist.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Начало</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="function.db2-autocommit.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>hw_api-&#62;userlist</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="funcref.html"
+ACCESSKEY="U"
+>Уровень выше</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>db2_autocommit</TD
+></TR
+></TABLE
+></DIV
+></div></center></div></td>
+			<td><div style="display:none; width:200px;" id="o3" name="o3"><script charset="windows-1251" type="text/javascript" src="http://www.ozon.ru/PartnerTwinerNew.aspx?revident=bea9126b-c8e1-4bf5-b6d8-9a057f8feac6" ></script></div><script>o = document.getElementById('o3'); if(o) { var s = o.innerHTML; s = s.replace(/F6F6F6/gi,"FFFFFF"); o.innerHTML = s.replace(/padding-top: 10px; padding-bottom: 10px;/,"display:none;"); o.style.display = 'block'; } </script><br><div style="margin: 10px;"><script type="text/javascript"><!--
+google_ad_client = "pub-4093271809023514";
+/* 120x600, создано 01.11.2008 */
+google_ad_slot = "0438855731";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div></td>
+    		</tr>
+  		</table>
+    </td>
+  </tr>
+  <tr valign='bottom' height='1%'>
+  <td>      <table width=100% cellspacing=0 cellpadding=5 border=0 bgcolor=#9999CC>
+        <tr valign=center>
+          <td class='phpcopyright' width='45%' align='left'>&nbsp;&nbsp;Engine <a  href="http://www.mnogosearch.org/">MnoGoSearch</a></td>
+          <td class='phpcopyright' width='10%' align='center'>2007-2010 &copy <a  href="mailto:webmaster@php.ru">PHP.RU</a></td>
+          <td class='phpcopyright' width='45%' align='right' >Powered by <a target="_blank" href="http://odware.ru">ODware</a> <a HREF="http://440hz.ru">440Hz</a> &nbsp;&nbsp;</td>
+        </tr>
+      </table>
+
+    <div style="text-align: right; padding: 5px">
+		<!--LiveInternet counter-->
+		<script type="text/javascript">document.write('<a href="http://www.liveinternet.ru/click" target=_blank><img src="http://counter.yadro.ru/hit?t53.6;r' + escape(document.referrer) + ((typeof(screen)=='undefined')?'':';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ';u' + escape(document.URL) +';i' + escape('Жж'+document.title.substring(0,80)) + ';' + Math.random() + '" border=0 width=88 height=31 alt="" title="LiveInternet: показано число просмотров и посетителей за 24 часа"><\/a>');
+		</script>
+		<!--/LiveInternet-->
+		<!-- SpyLOG -->
+		<script src="http://tools.spylog.ru/counter2.2.js" type="text/javascript" id="spylog_code" counter="830950" ></script>
+		<noscript><a href="http://u8309.50.spylog.com/cnt?cid=830950&f=3&p=0" target="_blank"><img src="http://u8309.50.spylog.com/cnt?cid=830950&p=0&f=4" alt='SpyLOG' border='0' width=88 height=31 ></a>
+		</noscript>
+		<!--/ SpyLOG -->
+	</div>
+</td>
+  </tr>
+</table>
+
+<script>
+<!--
+document.SEARCH.QS.focus();
+// --></script>
+
+<!-- 
+	как же вы все это читаете?
+	440hz 
+-->
+
+</body>
+</html>

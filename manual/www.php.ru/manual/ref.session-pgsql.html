@@ -1,0 +1,781 @@
+<!-- 
+
+     HTML dropped by Zend Guard Compressor 4.2
+
+     php.ru team: mz, az, yuri, vb, cyxapuk, 440hz, administrator
+     2004-2007 (c) expi-web.com 
+     2007-2008 (c) odware.com 
+     0101-1010 (с) 440hz
+
+     2b|~2b=?
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EHOT тут всё пожрал ! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="alternate" type="application/rss+xml" title="php.ru/forum - последние сообщения" href="http://www.php.ru/forum/rss.php">
+<link rel="SHORTCUT ICON" href="http://www.php.ru/favicon.ico" />
+<META name="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<meta http-equiv="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<META name="keywords" content="php, php5, apache, mysql, session">
+<meta http-equiv="keywords" content="php, php5, apache, mysql, session">
+<title>php.ru - PostgreSQL Session Save Handler</title>
+<LINK REL="stylesheet" TYPE="text/css" HREF="http://www.php.ru/index.css">
+<script language="JavaScript" src="http://www.php.ru/ajax/ajax.js"></script>
+</head>
+<body>
+
+<table height='100%' width='100%' cellspacing='0' cellpadding='0'>
+  <tr height='99%' valign='top'>
+    <td align='center'>
+		
+		<table style='margin-top: 4px' width=100% cellspacing=0 cellpadding=3>
+   		<tr>
+     		<td>PHP - <a href="http://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BA%D1%80%D0%BE%D0%BD%D0%B8%D0%BC" target=_blank class=lnk>рекурсивный акроним</a> словосочетания &laquo;<a href="/manual/introduction.html" class=lnk>PHP: Hypertext Preprocessor</a>&raquo;</td>
+     	</tr>
+   		</table>
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/subsys_ajax.js"></script>
+		<!--
+
+		commet by 440hz
+		20.10.2007
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/pu_search.js"></script>
+
+		-->
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/cz.js?a=b"></script>
+
+		<table style='margin-top: 5px' width=100% bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0>
+   	 	<form name=SEARCH method=GET action="http://www.php.ru/search/?SID=qi5i4xor8gzb16pl" onsubmit="return puSubmit();">
+	  	<input type=hidden name=PAGE value=1>
+  		<tr>
+    		<td width='1' valign='middle'> 
+    		   <a href='/'><img src="http://www.php.ru/;-)/logo.gif" width=133 height=93 alt="php" border=0 hspace=10 vspace=0></a>
+			 </td>
+		    <td width='100%' valign='middle'>
+		       <!--
+			   
+				commet by 440hz
+				20.10.2007
+
+			   <div id='pu_search' class='pu_search'></div>
+		       <div id='pu_search_description' class='pu_search_decription'></div>
+			   
+			   -->
+        	 <input type=text style='width:99%; margin: 10px' maxlength='200' name='QS' class='in' id='query' autocomplete='off' value="" />
+    		</td>
+		  </tr>
+   		<tr bgcolor='#666699' valign='middle'>
+			<td style='border-top: 1px solid #333366;'><br /></td>
+    		<td style='border-top: 1px solid #333366;'><div style="padding: 4px 4px 4px 10px; height: 24px; color: #CCCCFF;" id="stat">Хто там?<script>doLoadCZ('stat','stat');</script></div></td>
+  		</tr>
+		</form>
+		</table>
+		<table id="menu" cellspaciong=0 cellpadding=3>
+<tr>
+<td><a href="/" class=current>Главная</a></td>
+<td><a href="/download/" class=current>Скачать</a></td>
+<td><a href="/doc/" class=current>Документация</a></td>
+<td><a href="/forum/" class=current>Форум</a></td>
+<td width=100% align=right><a href="/phpinfo.html" class=current>phpinfo()</a></td>
+</tr>
+</table>
+
+		
+<!--  AdRiver code START. Type:728x90 Site: php.ru PZ: 0 BN: 1 -->
+<script language="javascript" type="text/javascript"><!--
+var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+var ar_Tail='unknown'; if (document.referrer) ar_Tail = escape(document.referrer);
+document.write(
+'<iframe src="http://ad.adriver.ru/cgi-bin/erle.cgi?'
++ 'sid=148680&bn=1&target=blank&bt=36&pz=0&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail
++ '" frameborder=0 vspace=0 hspace=0 width=728 height=90 marginwidth=0'
++ ' marginheight=0 scrolling=no></iframe>');
+//--></script>
+<noscript>
+<a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" target=_blank>
+<img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" alt="-AdRiver-" border=0 width=728 height=90></a>
+</noscript>
+<!--  AdRiver code END  -->
+
+
+  		<table width='100%' cellspacing='0' cellpadding='0'>
+    		<tr valign='top'>
+      		<td width=100%><div style="margin: 10px 10px 10px 50px;"><center><div style="width: 800px; text-align: left"><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Руководство по PHP</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="function.sesam-settransaction.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="function.session-pgsql-add-error.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="reference"
+><A
+NAME="ref.session-pgsql"
+></A
+><DIV
+CLASS="TITLEPAGE"
+><H1
+CLASS="title"
+>CXLI. PostgreSQL Session Save Handler</H1
+><DIV
+CLASS="PARTINTRO"
+><A
+NAME="AEN165244"
+></A
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="session-pgsql.intro"
+>Введение</A
+></H1
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+>Замечание: </B
+>Для Windows-платформ
+это расширение недоступно.</P
+></BLOCKQUOTE
+></DIV
+><P
+>&#13;     This module provides an additional session save handler for the
+     <A
+HREF="ref.session.html"
+>session</A
+>
+     module using <A
+HREF="http://www.postgresql.org/"
+TARGET="_top"
+>PostgreSQL</A
+> as a
+     storage system. A <VAR
+CLASS="literal"
+>user-level</VAR
+> session storage function may
+     also be used - <A
+HREF="function.session-set-save-handler.html"
+><B
+CLASS="function"
+>session_set_save_handler()</B
+></A
+>, but this module is
+     written in C and therefore could be twice as fast, compared to
+     a session save handler written in PHP.
+    </P
+><P
+>&#13;     Session PgSQL is designed to scale any size of web sites and offers some
+     advanced features:
+     <P
+></P
+><TABLE
+BORDER="0"
+><TBODY
+><TR
+><TD
+>session tables are created automatically</TD
+></TR
+><TR
+><TD
+>automatic session table vacuum</TD
+></TR
+><TR
+><TD
+>better garbage collection</TD
+></TR
+><TR
+><TD
+>multiple PostgreSQL servers support</TD
+></TR
+><TR
+><TD
+>automatic database server failover (switching)</TD
+></TR
+><TR
+><TD
+>&#13;       automatic database server load balancing if there are multiple
+       PostgreSQL servers.
+      </TD
+></TR
+><TR
+><TD
+>short circuit UPDATE</TD
+></TR
+></TBODY
+></TABLE
+><P
+></P
+> 
+    </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="session-pgsql.requirements"
+>Требования</A
+></H1
+><P
+>&#13;     You need at least PHP &#62;= 4.3.0, and PostgreSQL &#62;=7.2.0 as database
+     server. <VAR
+CLASS="literal"
+>libpq</VAR
+> that comes with PostgreSQL 7.2.0 or
+     later (and header files to build) and <A
+HREF="http://www.ossp.org/pkg/lib/mm/"
+TARGET="_top"
+>libmm</A
+>
+     (and header files).
+    </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="session-pgsql.installation"
+>Установка</A
+></H1
+><P
+>&#13;  Short installation note:
+  <P
+></P
+><UL
+><LI
+><P
+>&#13;     Untar the <VAR
+CLASS="literal"
+>tar.gz</VAR
+> archive into
+     <TT
+CLASS="filename"
+>php4/ext</TT
+> (Latest official releases
+     can be found at SourceForge
+     <A
+HREF="http://sourceforge.net/projects/phpform-ext/"
+TARGET="_top"
+>PHP Form Extension Project</A
+>)
+    </P
+></LI
+><LI
+><P
+>&#13;     If the new directory is now called something like
+     <VAR
+CLASS="literal"
+>session_pgsql</VAR
+>. You should name it to
+     <VAR
+CLASS="literal"
+>session_pgsql</VAR
+> (except you only want to build it as
+     self-contained php-module).
+    </P
+></LI
+><LI
+><P
+>Run <KBD
+CLASS="userinput"
+>./buildconf</KBD
+> in php4</P
+></LI
+><LI
+><P
+>&#13;     Run <KBD
+CLASS="userinput"
+>configure</KBD
+>
+     <VAR
+CLASS="option"
+>--with-session-pgsql</VAR
+> (and your other
+     options)
+    </P
+></LI
+><LI
+><P
+><KBD
+CLASS="userinput"
+>make; make install</KBD
+></P
+></LI
+></UL
+>
+ </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="session-pgsql.configuration"
+>Настройка во время выполнения</A
+></H1
+><P
+>&#13;Поведение этих функций зависит от установок в <TT
+CLASS="filename"
+>php.ini</TT
+>.
+</P
+><P
+>&#13;  PostgreSQL session save handler is still under development. Refer to the
+  <TT
+CLASS="filename"
+>README</TT
+> file in the source distribution for
+  configuration details.
+ </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="session-pgsql.tables"
+>Table definitions</A
+></H1
+><P
+>Session table definition
+     <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="sql"
+>CREATE TABLE php_session (
+  sess_id            text,
+  sess_name          text,
+  sess_data          text,
+  sess_created       integer,
+  sess_modified      integer,
+  sess_expire        integer,
+  sess_addr_created  text,
+  sess_addr_modified text,
+  sess_counter       integer,
+  sess_error         integer,
+  sess_warning       integer,
+  sess_notice        integer,
+  sess_err_message   text,
+  sess_custom        text
+);
+
+CREATE INDEX php_session_idx ON php_session USING BTREE (sess_id);</PRE
+></TD
+></TR
+></TABLE
+>
+    </P
+><DIV
+CLASS="warning"
+><P
+></P
+><TABLE
+CLASS="warning"
+BORDER="1"
+WIDTH="100%"
+><TR
+><TD
+ALIGN="CENTER"
+><B
+>Внимание</B
+></TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+><P
+>&#13;      If you use <VAR
+CLASS="literal"
+>HASH</VAR
+> for <VAR
+CLASS="literal"
+>INDEX</VAR
+>, you'll
+      have a deadlock problem when the server load is
+      <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>very</I
+></SPAN
+> high. Even if it's unlikely to have a deadlock
+      under normal operation, it can occur. <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>Do not use
+      <VAR
+CLASS="literal"
+>HASH</VAR
+> for <VAR
+CLASS="literal"
+>INDEX</VAR
+></I
+></SPAN
+>.
+     </P
+></TD
+></TR
+></TABLE
+></DIV
+><P
+>&#13;     You may change the session table as long as all fields are defined.
+    </P
+><P
+>&#13;     Application variables table definition
+     <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="sql"
+>CREATE TABLE php_app_vars (
+  app_modified       integer,
+  app_name           text,
+  app_vars           text
+);</PRE
+></TD
+></TR
+></TABLE
+>
+    </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="session-pgsql.contact"
+>Contact Information</A
+></H1
+><P
+>&#13;     I have at the moment not very much time to further develop this
+     extension. I will implement more and more features in the near future.
+    </P
+><P
+>&#13;     If you have comments, bug fixes, enhancements or want to help developing
+     this, you can drop me a mail at
+     <A
+HREF="mailto:yohgaki@php.net"
+TARGET="_top"
+>yohgaki@php.net</A
+>. Any help is
+     very welcome.
+    </P
+></DIV
+></DIV
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Содержание</B
+></DT
+><DT
+><A
+HREF="function.session-pgsql-add-error.html"
+>session_pgsql_add_error</A
+>&nbsp;--&nbsp;Increments error counts and sets last error message</DT
+><DT
+><A
+HREF="function.session-pgsql-get-error.html"
+>session_pgsql_get_error</A
+>&nbsp;--&nbsp;Returns number of errors and last error message</DT
+><DT
+><A
+HREF="function.session-pgsql-get-field.html"
+>session_pgsql_get_field</A
+>&nbsp;--&nbsp;Get custom field value</DT
+><DT
+><A
+HREF="function.session-pgsql-reset.html"
+>session_pgsql_reset</A
+>&nbsp;--&nbsp;Reset connection to session database servers</DT
+><DT
+><A
+HREF="function.session-pgsql-set-field.html"
+>session_pgsql_set_field</A
+>&nbsp;--&nbsp;Set custom field value</DT
+><DT
+><A
+HREF="function.session-pgsql-status.html"
+>session_pgsql_status</A
+>&nbsp;--&nbsp;Get current save handler status</DT
+></DL
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="function.sesam-settransaction.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Начало</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="function.session-pgsql-add-error.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>sesam_settransaction</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="funcref.html"
+ACCESSKEY="U"
+>Уровень выше</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>session_pgsql_add_error</TD
+></TR
+></TABLE
+></DIV
+></div></center></div></td>
+			<td><div style="display:none; width:200px;" id="o3" name="o3"><script charset="windows-1251" type="text/javascript" src="http://www.ozon.ru/PartnerTwinerNew.aspx?revident=bea9126b-c8e1-4bf5-b6d8-9a057f8feac6" ></script></div><script>o = document.getElementById('o3'); if(o) { var s = o.innerHTML; s = s.replace(/F6F6F6/gi,"FFFFFF"); o.innerHTML = s.replace(/padding-top: 10px; padding-bottom: 10px;/,"display:none;"); o.style.display = 'block'; } </script><br><div style="margin: 10px;"><script type="text/javascript"><!--
+google_ad_client = "pub-4093271809023514";
+/* 120x600, создано 01.11.2008 */
+google_ad_slot = "0438855731";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div></td>
+    		</tr>
+  		</table>
+    </td>
+  </tr>
+  <tr valign='bottom' height='1%'>
+  <td>      <table width=100% cellspacing=0 cellpadding=5 border=0 bgcolor=#9999CC>
+        <tr valign=center>
+          <td class='phpcopyright' width='45%' align='left'>&nbsp;&nbsp;Engine <a  href="http://www.mnogosearch.org/">MnoGoSearch</a></td>
+          <td class='phpcopyright' width='10%' align='center'>2007-2010 &copy <a  href="mailto:webmaster@php.ru">PHP.RU</a></td>
+          <td class='phpcopyright' width='45%' align='right' >Powered by <a target="_blank" href="http://odware.ru">ODware</a> <a HREF="http://440hz.ru">440Hz</a> &nbsp;&nbsp;</td>
+        </tr>
+      </table>
+
+    <div style="text-align: right; padding: 5px">
+		<!--LiveInternet counter-->
+		<script type="text/javascript">document.write('<a href="http://www.liveinternet.ru/click" target=_blank><img src="http://counter.yadro.ru/hit?t53.6;r' + escape(document.referrer) + ((typeof(screen)=='undefined')?'':';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ';u' + escape(document.URL) +';i' + escape('Жж'+document.title.substring(0,80)) + ';' + Math.random() + '" border=0 width=88 height=31 alt="" title="LiveInternet: показано число просмотров и посетителей за 24 часа"><\/a>');
+		</script>
+		<!--/LiveInternet-->
+		<!-- SpyLOG -->
+		<script src="http://tools.spylog.ru/counter2.2.js" type="text/javascript" id="spylog_code" counter="830950" ></script>
+		<noscript><a href="http://u8309.50.spylog.com/cnt?cid=830950&f=3&p=0" target="_blank"><img src="http://u8309.50.spylog.com/cnt?cid=830950&p=0&f=4" alt='SpyLOG' border='0' width=88 height=31 ></a>
+		</noscript>
+		<!--/ SpyLOG -->
+	</div>
+</td>
+  </tr>
+</table>
+
+<script>
+<!--
+document.SEARCH.QS.focus();
+// --></script>
+
+<!-- 
+	как же вы все это читаете?
+	440hz 
+-->
+
+</body>
+</html>

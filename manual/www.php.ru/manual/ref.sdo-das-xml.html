@@ -1,0 +1,1906 @@
+<!-- 
+
+     HTML dropped by Zend Guard Compressor 4.2
+
+     php.ru team: mz, az, yuri, vb, cyxapuk, 440hz, administrator
+     2004-2007 (c) expi-web.com 
+     2007-2008 (c) odware.com 
+     0101-1010 (с) 440hz
+
+     2b|~2b=?
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EHOT тут всё пожрал ! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="alternate" type="application/rss+xml" title="php.ru/forum - последние сообщения" href="http://www.php.ru/forum/rss.php">
+<link rel="SHORTCUT ICON" href="http://www.php.ru/favicon.ico" />
+<META name="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<meta http-equiv="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<META name="keywords" content="php, php5, apache, mysql, session">
+<meta http-equiv="keywords" content="php, php5, apache, mysql, session">
+<title>php.ru - SDO XML Data Access Service Functions</title>
+<LINK REL="stylesheet" TYPE="text/css" HREF="http://www.php.ru/index.css">
+<script language="JavaScript" src="http://www.php.ru/ajax/ajax.js"></script>
+</head>
+<body>
+
+<table height='100%' width='100%' cellspacing='0' cellpadding='0'>
+  <tr height='99%' valign='top'>
+    <td align='center'>
+		
+		<table style='margin-top: 4px' width=100% cellspacing=0 cellpadding=3>
+   		<tr>
+     		<td>PHP - <a href="http://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BA%D1%80%D0%BE%D0%BD%D0%B8%D0%BC" target=_blank class=lnk>рекурсивный акроним</a> словосочетания &laquo;<a href="/manual/introduction.html" class=lnk>PHP: Hypertext Preprocessor</a>&raquo;</td>
+     	</tr>
+   		</table>
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/subsys_ajax.js"></script>
+		<!--
+
+		commet by 440hz
+		20.10.2007
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/pu_search.js"></script>
+
+		-->
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/cz.js?a=b"></script>
+
+		<table style='margin-top: 5px' width=100% bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0>
+   	 	<form name=SEARCH method=GET action="http://www.php.ru/search/?SID=y59pz7eyusxt2bbd" onsubmit="return puSubmit();">
+	  	<input type=hidden name=PAGE value=1>
+  		<tr>
+    		<td width='1' valign='middle'> 
+    		   <a href='/'><img src="http://www.php.ru/;-)/logo.gif" width=133 height=93 alt="php" border=0 hspace=10 vspace=0></a>
+			 </td>
+		    <td width='100%' valign='middle'>
+		       <!--
+			   
+				commet by 440hz
+				20.10.2007
+
+			   <div id='pu_search' class='pu_search'></div>
+		       <div id='pu_search_description' class='pu_search_decription'></div>
+			   
+			   -->
+        	 <input type=text style='width:99%; margin: 10px' maxlength='200' name='QS' class='in' id='query' autocomplete='off' value="" />
+    		</td>
+		  </tr>
+   		<tr bgcolor='#666699' valign='middle'>
+			<td style='border-top: 1px solid #333366;'><br /></td>
+    		<td style='border-top: 1px solid #333366;'><div style="padding: 4px 4px 4px 10px; height: 24px; color: #CCCCFF;" id="stat">Хто там?<script>doLoadCZ('stat','stat');</script></div></td>
+  		</tr>
+		</form>
+		</table>
+		<table id="menu" cellspaciong=0 cellpadding=3>
+<tr>
+<td><a href="/" class=current>Главная</a></td>
+<td><a href="/download/" class=current>Скачать</a></td>
+<td><a href="/doc/" class=current>Документация</a></td>
+<td><a href="/forum/" class=current>Форум</a></td>
+<td width=100% align=right><a href="/phpinfo.html" class=current>phpinfo()</a></td>
+</tr>
+</table>
+
+		
+<!--  AdRiver code START. Type:728x90 Site: php.ru PZ: 0 BN: 1 -->
+<script language="javascript" type="text/javascript"><!--
+var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+var ar_Tail='unknown'; if (document.referrer) ar_Tail = escape(document.referrer);
+document.write(
+'<iframe src="http://ad.adriver.ru/cgi-bin/erle.cgi?'
++ 'sid=148680&bn=1&target=blank&bt=36&pz=0&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail
++ '" frameborder=0 vspace=0 hspace=0 width=728 height=90 marginwidth=0'
++ ' marginheight=0 scrolling=no></iframe>');
+//--></script>
+<noscript>
+<a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" target=_blank>
+<img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" alt="-AdRiver-" border=0 width=728 height=90></a>
+</noscript>
+<!--  AdRiver code END  -->
+
+
+  		<table width='100%' cellspacing='0' cellpadding='0'>
+    		<tr valign='top'>
+      		<td width=100%><div style="margin: 10px 10px 10px 50px;"><center><div style="width: 800px; text-align: left"><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Руководство по PHP</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="function.sdo-sequence-move.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="function.sdo-das-xml-document-getrootdataobject.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="reference"
+><A
+NAME="ref.sdo-das-xml"
+></A
+><DIV
+CLASS="TITLEPAGE"
+><H1
+CLASS="title"
+>CXXXVII. SDO XML Data Access Service Functions</H1
+><DIV
+CLASS="PARTINTRO"
+><A
+NAME="AEN162205"
+></A
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sdo-das-xml.intro"
+>Введение</A
+></H1
+><P
+>&#13;    
+    <DIV
+CLASS="warning"
+><P
+></P
+><TABLE
+CLASS="warning"
+BORDER="1"
+WIDTH="100%"
+><TR
+><TD
+ALIGN="CENTER"
+><B
+>Внимание</B
+></TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+><P
+>Это расширение является
+<SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>ЭКСПЕРИМЕНТАЛЬНЫМ</I
+></SPAN
+>. Поведение этого расширения,
+включая имена его функций и относящуюся к нему документацию, может
+измениться в последующих версиях PHP без уведомления. Используйте
+это расширение на свой страх и риск.</P
+></TD
+></TR
+></TABLE
+></DIV
+>
+   </P
+><P
+>&#13;    In order to use the XML Data Access Service for Service Data Objects,
+    you will need to understand some of the concepts behind SDO:
+    the data graph, the data object, XPath and property expressions,
+    and so on.
+    If you are not familiar with these ideas, you might want to look first at
+    <A
+HREF="ref.sdo.html"
+>the section on SDO</A
+>.
+   </P
+><P
+>&#13;    The job of the XML DAS is to move data between the
+    application and an XML data source, which can be either a file or
+    a URL. SDOs are always created and maintained according to a model 
+    which defines type names and what property names each type may have.
+    For data which is from XML, this SDO model is built from a schema file 
+    written in XML schema language (an xsd file). This schema file is 
+    usually passed to the create method when the XMLDAS is initialised. 
+    The 
+    <A
+HREF="http://www-128.ibm.com/developerworks/java/library/j-commonj-sdowmt/"
+TARGET="_top"
+>SDO 2.0 specification</A
+>
+    defines the mapping between XML types and SDO types.
+    There are a number of small limitations in the PHP support -
+    not everything which is in the specification can be done - and
+    these limitations are summarised in a later section.
+   </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sdo-das-xml.requirements"
+>Требования</A
+></H1
+><P
+>&#13;    The SDO XML Data Access Service requires PHP 5.1 or higher.
+    It is packaged with the SDO extension and requires
+    SDO to have been installed.
+    See the
+    <A
+HREF="ref.sdo.html#sdo.installation"
+>SDO installation instructions</A
+>
+    for the details of how to do this.
+   </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sdo-das-xml.installation"
+>Установка</A
+></H1
+><P
+>&#13;    The XML Data Access Service is packaged and installed as part of the
+    <A
+HREF="ref.sdo.html"
+>SDO extension</A
+>. Please Refer 
+    <A
+HREF="ref.sdo.html#sdo.installation"
+>SDO installation instructions</A
+>.
+   </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sdo-das-xml.examples"
+>Примеры</A
+></H1
+><P
+>&#13;    Several of the following examples are based on the
+    <A
+HREF="ref.sdo.html#sdo.sample.sequence"
+>letter example</A
+>
+    described in the
+    <A
+HREF="ref.sdo.html"
+>SDO documentation</A
+>.
+    The examples assume the XML Schema for the letter is contained in a file
+    <TT
+CLASS="filename"
+>letter.xsd</TT
+>
+    and the letter instance is in the file
+    <TT
+CLASS="filename"
+>letter.xml</TT
+>.
+    These two files are reproduced here:
+   </P
+><P
+>&#13;    <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="xml"
+>&#60;xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:letter="http://letterSchema"
+  targetNamespace="http://letterSchema"&#62;
+  &#60;xsd:element name="letters" type="letter:FormLetter"/&#62;
+  &#60;xsd:complexType name="FormLetter" mixed="true"&#62;
+    &#60;xsd:sequence&#62;
+      &#60;xsd:element name="date" minOccurs="0" type="xsd:string"/&#62;
+      &#60;xsd:element name="firstName" minOccurs="0" type="xsd:string"/&#62;
+      &#60;xsd:element name="lastName" minOccurs="0" type="xsd:string"/&#62;
+    &#60;/xsd:sequence&#62;
+  &#60;/xsd:complexType&#62;
+&#60;/xsd:schema&#62;</PRE
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="xml"
+>&#60;letter:letters xmlns:letter="http://letterSchema"&#62;
+  &#60;date&#62;March 1, 2005&#60;/date&#62;
+  Mutual of Omaha
+  Wild Kingdom, USA
+  Dear
+  &#60;firstName&#62;Casy&#60;/firstName&#62;
+  &#60;lastName&#62;Crocodile&#60;/lastName&#62;
+  Please buy more shark repellent.
+  Your premium is past due.
+&#60;/letter:letters&#62;</PRE
+></TD
+></TR
+></TABLE
+>
+   </P
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN162236"
+></A
+><P
+><B
+>Пример 1. Loading, altering, and saving an XML document</B
+></P
+><P
+>&#13;     The following example shows how an XML document can be loaded from a file,
+     altered, and written back. 
+    </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br /></font><font color="#FF8000">/**<br /> * Load, update, and save an XML document<br /> */<br /></font><font color="#0000BB">try </font><font color="#007700">{<br />&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$xmldas </font><font color="#007700">= </font><font color="#0000BB">SDO_DAS_XML</font><font color="#007700">::</font><font color="#0000BB">create</font><font color="#007700">(</font><font color="#DD0000">"letter.xsd"</font><font color="#007700">);<br />&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$document </font><font color="#007700">= </font><font color="#0000BB">$xmldas</font><font color="#007700">-&gt;</font><font color="#0000BB">loadFile</font><font color="#007700">(</font><font color="#DD0000">"letter.xml"</font><font color="#007700">);<br />&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$root_data_object </font><font color="#007700">= </font><font color="#0000BB">$document</font><font color="#007700">-&gt;</font><font color="#0000BB">getRootDataObject</font><font color="#007700">();<br />&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$root_data_object</font><font color="#007700">-&gt;</font><font color="#0000BB">date </font><font color="#007700">= </font><font color="#DD0000">"September 03, 2004"</font><font color="#007700">;<br />&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$root_data_object</font><font color="#007700">-&gt;</font><font color="#0000BB">firstName </font><font color="#007700">= </font><font color="#DD0000">"Anantoju"</font><font color="#007700">;<br />&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$root_data_object</font><font color="#007700">-&gt;</font><font color="#0000BB">lastName </font><font color="#007700">= </font><font color="#DD0000">"Madhu"</font><font color="#007700">;<br />&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$xmldas</font><font color="#007700">-&gt;</font><font color="#0000BB">saveFile</font><font color="#007700">(</font><font color="#0000BB">$document</font><font color="#007700">, </font><font color="#DD0000">"letter-out.xml"</font><font color="#007700">);<br />&nbsp;&nbsp;&nbsp;echo </font><font color="#DD0000">"New file has been written:\n"</font><font color="#007700">;<br />&nbsp;&nbsp;&nbsp;print </font><font color="#0000BB">file_get_contents</font><font color="#007700">(</font><font color="#DD0000">"letter-out.xml"</font><font color="#007700">);<br />} </font><font color="#0000BB">catch </font><font color="#007700">(</font><font color="#0000BB">SDO_Exception $e</font><font color="#007700">) {<br />&nbsp;&nbsp;&nbsp;print(</font><font color="#0000BB">$e</font><font color="#007700">-&gt;</font><font color="#0000BB">getMessage</font><font color="#007700">());<br />}<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+><P
+>&#13;     An instance of the XML DAS is first obtained from the 
+     <B
+CLASS="function"
+>SDO_DAS_XML::create()</B
+>
+     method, 
+     which is a static method of the 
+     <B
+CLASS="classname"
+>SDO_DAS_XML</B
+>
+     class.
+     The location of the xsd is passed as a parameter. 
+     Once we have an instance of the XML DAS initialised
+     with a given schema,
+     we can use it to load the instance document using the 
+     <B
+CLASS="function"
+>loadFile()</B
+>
+     method.
+     There is also a 
+     <B
+CLASS="function"
+>loadString()</B
+>
+     method if you want to load an XML 
+     instance document from a string.
+     If the instance document loads successfully, 
+     you will be returned an object of type 
+     <B
+CLASS="classname"
+>SDO_DAS_XML_Document</B
+>,
+     on which you can call the 
+     <B
+CLASS="function"
+>getRootDataObject()</B
+>
+     method to get the SDO data object which is the root
+     of the SDO data graph. 
+     You can then use SDO operations to change the graph. 
+     In this example we alter the 
+     <VAR
+CLASS="varname"
+>date</VAR
+>, 
+     <VAR
+CLASS="varname"
+>firstName</VAR
+>, and
+     <VAR
+CLASS="varname"
+>lastName</VAR
+> properties.
+     Then we use the 
+     <B
+CLASS="function"
+>saveFile()</B
+>
+     method to write the changed document back to the file system.
+     The saveFile method has an optional extra integer argument which if specified
+     will cause the XML DAS to format the XML, using the integer as the amount to 
+     indent by at each change in level on the document. 
+    </P
+><P
+>&#13;     This will write the following to <TT
+CLASS="filename"
+>letter-out.xml</TT
+>.
+    </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="xml"
+>&#60;?xml version="1.0" encoding="UTF-8"?&#62;
+&#60;FormLetter xmlns="http://letterSchema" xsi:type="FormLetter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&#62;
+  &#60;date&#62;September 03, 2004&#60;/date&#62;
+  Mutual of Omaha
+  Wild Kingdom, USA
+  Dear
+  &#60;firstName&#62;Anantoju&#60;/firstName&#62;
+  &#60;lastName&#62;Madhu&#60;/lastName&#62;
+  Please buy more shark repellent.
+  Your premium is past due.
+&#60;/FormLetter&#62;</PRE
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN162254"
+></A
+><P
+><B
+>Пример 2. Creating a new XML document</B
+></P
+><P
+>&#13;     The previous example loaded the document from a file. 
+     This example shows how to create an SDO data graph in memory.
+     In this example it is then saved to an XML string.
+     Furthermore, because the letter contains both structured and 
+     unstructured content, it uses
+     <A
+HREF="ref.sdo.html#sdo.sample.sequence"
+>the Sequence API</A
+>
+     as well assignments to properties to construct the data graph.
+    </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br /></font><font color="#FF8000">/**<br /> * Create an XML document from scratch<br /> */<br /></font><font color="#0000BB">try </font><font color="#007700">{<br />&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$xmldas </font><font color="#007700">= </font><font color="#0000BB">SDO_DAS_XML</font><font color="#007700">::</font><font color="#0000BB">create</font><font color="#007700">(</font><font color="#DD0000">"letter.xsd"</font><font color="#007700">);<br />&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">try </font><font color="#007700">{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$doc </font><font color="#007700">= </font><font color="#0000BB">$xmldas</font><font color="#007700">-&gt;</font><font color="#0000BB">createDocument</font><font color="#007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$rdo </font><font color="#007700">= </font><font color="#0000BB">$doc</font><font color="#007700">-&gt;</font><font color="#0000BB">getRootDataObject</font><font color="#007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$seq </font><font color="#007700">= </font><font color="#0000BB">$rdo</font><font color="#007700">-&gt;</font><font color="#0000BB">getSequence</font><font color="#007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$seq</font><font color="#007700">-&gt;</font><font color="#0000BB">insert</font><font color="#007700">(</font><font color="#DD0000">"April 09, 2005"</font><font color="#007700">, </font><font color="#0000BB">NULL</font><font color="#007700">, </font><font color="#DD0000">'date'</font><font color="#007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$seq</font><font color="#007700">-&gt;</font><font color="#0000BB">insert</font><font color="#007700">(</font><font color="#DD0000">"Acme Inc. "</font><font color="#007700">, </font><font color="#0000BB">NULL</font><font color="#007700">, </font><font color="#0000BB">NULL</font><font color="#007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$seq</font><font color="#007700">-&gt;</font><font color="#0000BB">insert</font><font color="#007700">(</font><font color="#DD0000">"United Kingdom. "</font><font color="#007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$seq</font><font color="#007700">-&gt;</font><font color="#0000BB">insert</font><font color="#007700">(</font><font color="#DD0000">"Dear"</font><font color="#007700">, </font><font color="#0000BB">NULL</font><font color="#007700">, </font><font color="#0000BB">NULL</font><font color="#007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$seq</font><font color="#007700">-&gt;</font><font color="#0000BB">insert</font><font color="#007700">(</font><font color="#DD0000">"Tarun"</font><font color="#007700">, </font><font color="#0000BB">NULL</font><font color="#007700">, </font><font color="#DD0000">"firstName"</font><font color="#007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$seq</font><font color="#007700">-&gt;</font><font color="#0000BB">insert</font><font color="#007700">(</font><font color="#DD0000">"Nayaraaa"</font><font color="#007700">, </font><font color="#0000BB">NULL</font><font color="#007700">, </font><font color="#DD0000">"lastName"</font><font color="#007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$rdo</font><font color="#007700">-&gt;</font><font color="#0000BB">lastName </font><font color="#007700">= </font><font color="#DD0000">"Nayar"</font><font color="#007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$seq</font><font color="#007700">-&gt;</font><font color="#0000BB">insert</font><font color="#007700">(</font><font color="#DD0000">"Please note that your order number "</font><font color="#007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$seq</font><font color="#007700">-&gt;</font><font color="#0000BB">insert</font><font color="#007700">(</font><font color="#0000BB">12345</font><font color="#007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$seq</font><font color="#007700">-&gt;</font><font color="#0000BB">insert</font><font color="#007700">(</font><font color="#DD0000">" has been dispatched today. Thanks for your business with us."</font><font color="#007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(</font><font color="#0000BB">$xmldas</font><font color="#007700">-&gt;</font><font color="#0000BB">saveString</font><font color="#007700">(</font><font color="#0000BB">$doc</font><font color="#007700">));<br />&nbsp;&nbsp;&nbsp;} </font><font color="#0000BB">catch </font><font color="#007700">(</font><font color="#0000BB">SDO_Exception $e</font><font color="#007700">) {<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(</font><font color="#0000BB">$e</font><font color="#007700">);<br />&nbsp;&nbsp;&nbsp;}<br />} </font><font color="#0000BB">catch </font><font color="#007700">(</font><font color="#0000BB">SDO_Exception $e</font><font color="#007700">) {<br />&nbsp;&nbsp;&nbsp;print(</font><font color="#DD0000">"Problem creating an XML document: " </font><font color="#007700">. </font><font color="#0000BB">$e</font><font color="#007700">-&gt;</font><font color="#0000BB">getMessage</font><font color="#007700">());<br />}<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+><P
+>&#13;    The 
+    <B
+CLASS="function"
+>createDocument()</B
+>
+    method on the XML DAS returns a document object 
+    with a single root data object corresponding to an empty document element. 
+    The element name of the document element is known from the schema file. 
+    If there is any ambiguity about what the document element is, as there can be 
+    when more than one schema has been loaded into the same XML DAS, 
+    the element name and the namespace URI can be passed to the 
+    <B
+CLASS="function"
+>createDocument()</B
+> 
+    method.
+   </P
+><P
+>&#13;    This will emit the following output (line breaks have been inserted for readability):
+   </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="xml"
+>&#60;?xml version="1.0" encoding="UTF-8"?&#62;
+&#60;FormLetter xmlns="http://letterSchema" xsi:type="FormLetter" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&#62;
+&#60;date&#62;April 09, 2005&#60;/date&#62;
+Acme Inc. United Kingdom. 
+Dear
+&#60;firstName&#62;Tarun&#60;/firstName&#62;
+&#60;lastName&#62;Nayar&#60;/lastName&#62;
+Please note that your order number 12345 has been 
+dispatched today. Thanks for your business with us.
+&#60;/FormLetter&#62;</PRE
+></TD
+></TR
+></TABLE
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN162264"
+></A
+><P
+><B
+>Пример 3. Setting XML document properties</B
+></P
+><P
+>&#13;     This third example shows you how to set the XML version and
+     encoding on the document object. 
+     These will be used when the XML is written out.
+     If no XML declaration is wanted at all
+     (perhaps you want to generate the XML as a string to embed
+     in something) then you can use the 
+     <B
+CLASS="function"
+>setXMLDeclaration()</B
+>
+     method to suppress it. 
+    </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br /></font><font color="#FF8000">/**<br /> * Illustrate the calls that control the XML declaration<br /> */<br />&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$xmldas </font><font color="#007700">= </font><font color="#0000BB">SDO_DAS_XML</font><font color="#007700">::</font><font color="#0000BB">create</font><font color="#007700">(</font><font color="#DD0000">"letter.xsd"</font><font color="#007700">);<br />&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$document </font><font color="#007700">= </font><font color="#0000BB">$xmldas</font><font color="#007700">-&gt;</font><font color="#0000BB">loadFile</font><font color="#007700">(</font><font color="#DD0000">"letter.xml"</font><font color="#007700">);<br />&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$document</font><font color="#007700">-&gt;</font><font color="#0000BB">setXMLVersion</font><font color="#007700">(</font><font color="#DD0000">"1.1"</font><font color="#007700">);<br />&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$document</font><font color="#007700">-&gt;</font><font color="#0000BB">setEncoding</font><font color="#007700">(</font><font color="#DD0000">"ISO-8859-1"</font><font color="#007700">);<br />&nbsp;&nbsp;&nbsp;print(</font><font color="#0000BB">$xmldas</font><font color="#007700">-&gt;</font><font color="#0000BB">saveString</font><font color="#007700">(</font><font color="#0000BB">$document</font><font color="#007700">));<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+><P
+>&#13;     The XML version and encoding are set in the XML declaration at the top 
+     of the XML document.
+    </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="xml"
+>&#60;?xml version="1.1" encoding="ISO-8859-1"?&#62;
+.../...</PRE
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN162271"
+></A
+><P
+><B
+>Пример 4. Using an open type</B
+></P
+><P
+>&#13;     This fourth example illustrates the use of an SDO open type 
+     and the use of the 
+     <B
+CLASS="function"
+>createDataObject()</B
+>
+     method.
+     For this example we use the following two 
+     schema:
+   </P
+><P
+>&#13;    <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="xml"
+>&#60;schema  
+  xmlns="http://www.w3.org/2001/XMLSchema"&#62;
+  
+  &#60;element name="jungle"&#62;
+    &#60;complexType&#62;
+      &#60;sequence&#62;
+        &#60;any minOccurs="0" maxOccurs="unbounded"/&#62;
+      &#60;/sequence&#62;
+    &#60;/complexType&#62;
+  &#60;/element&#62;
+  
+&#60;/schema&#62;</PRE
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;     Note the presence of the 
+     <VAR
+CLASS="varname"
+>any</VAR
+> 
+     element in the definition.
+     This first schema defines the 
+     <VAR
+CLASS="varname"
+>jungle</VAR
+> 
+     complex type as containing a sequence of 
+     any other type. 
+     The other types that the example will use are defined in a 
+     second schema file:
+    </P
+><P
+>&#13;    <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="xml"
+>&#60;schema xmlns= "http://www.w3.org/2001/XMLSchema"&#62;
+
+   &#60;complexType name="snakeType"&#62;
+     &#60;sequence&#62;
+       &#60;element name= "name" type="string"/&#62;
+       &#60;element name= "length" type="positiveInteger" /&#62;
+     &#60;/sequence&#62;
+   &#60;/complexType&#62;
+
+   &#60;complexType name="bearType"&#62;
+     &#60;sequence&#62;
+       &#60;element name= "name" type="string"/&#62;
+       &#60;element name= "weight" type="positiveInteger" /&#62;
+     &#60;/sequence&#62;
+   &#60;/complexType&#62;
+
+   &#60;complexType name="pantherType"&#62;
+     &#60;sequence&#62;
+       &#60;element name= "name" type="string"/&#62;
+       &#60;element name= "colour" type="string" /&#62;
+     &#60;/sequence&#62;
+   &#60;/complexType&#62;
+
+&#60;/schema&#62;</PRE
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    Here is the example PHP code that uses these two schema files:
+   </P
+><P
+>&#13;    <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br /><br /></font><font color="#FF8000">/**<br /> * Illustrate open types and the use of the addTypes() method<br /> */<br /><br /></font><font color="#0000BB">$xmldas </font><font color="#007700">= </font><font color="#0000BB">SDO_DAS_XML</font><font color="#007700">::</font><font color="#0000BB">create</font><font color="#007700">();<br /></font><font color="#0000BB">$xmldas</font><font color="#007700">-&gt;</font><font color="#0000BB">addTypes</font><font color="#007700">(</font><font color="#DD0000">"jungle.xsd"</font><font color="#007700">); </font><font color="#FF8000">// this is an open type i.e. the xsd specifies it can contain "any" type<br /></font><font color="#0000BB">$xmldas</font><font color="#007700">-&gt;</font><font color="#0000BB">addTypes</font><font color="#007700">(</font><font color="#DD0000">'animalTypes.xsd'</font><font color="#007700">);<br /><br /></font><font color="#0000BB">$baloo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#007700">= </font><font color="#0000BB">$xmldas</font><font color="#007700">-&gt;</font><font color="#0000BB">createDataObject</font><font color="#007700">(</font><font color="#DD0000">''</font><font color="#007700">,</font><font color="#DD0000">'bearType'</font><font color="#007700">);<br /></font><font color="#0000BB">$baloo</font><font color="#007700">-&gt;</font><font color="#0000BB">name &nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#007700">= </font><font color="#DD0000">"Baloo"</font><font color="#007700">;<br /></font><font color="#0000BB">$baloo</font><font color="#007700">-&gt;</font><font color="#0000BB">weight &nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#007700">= </font><font color="#0000BB">800</font><font color="#007700">;<br /><br /></font><font color="#0000BB">$bagheera &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#007700">= </font><font color="#0000BB">$xmldas</font><font color="#007700">-&gt;</font><font color="#0000BB">createDataObject</font><font color="#007700">(</font><font color="#DD0000">''</font><font color="#007700">,</font><font color="#DD0000">'pantherType'</font><font color="#007700">);<br /></font><font color="#0000BB">$bagheera</font><font color="#007700">-&gt;</font><font color="#0000BB">name </font><font color="#007700">= </font><font color="#DD0000">"Bagheera"</font><font color="#007700">;<br /></font><font color="#0000BB">$bagheera</font><font color="#007700">-&gt;</font><font color="#0000BB">colour </font><font color="#007700">= </font><font color="#DD0000">'inky black'</font><font color="#007700">;<br /><br /></font><font color="#0000BB">$kaa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#007700">= </font><font color="#0000BB">$xmldas</font><font color="#007700">-&gt;</font><font color="#0000BB">createDataObject</font><font color="#007700">(</font><font color="#DD0000">''</font><font color="#007700">,</font><font color="#DD0000">'snakeType'</font><font color="#007700">);<br /></font><font color="#0000BB">$kaa</font><font color="#007700">-&gt;</font><font color="#0000BB">name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#007700">= </font><font color="#DD0000">"Kaa"</font><font color="#007700">;<br /></font><font color="#0000BB">$kaa</font><font color="#007700">-&gt;</font><font color="#0000BB">length &nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#007700">= </font><font color="#0000BB">25</font><font color="#007700">;<br /><br /></font><font color="#0000BB">$document &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#007700">= </font><font color="#0000BB">$xmldas</font><font color="#007700">-&gt;</font><font color="#0000BB">createDocument</font><font color="#007700">();<br /></font><font color="#0000BB">$do &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#007700">= </font><font color="#0000BB">$document</font><font color="#007700">-&gt;</font><font color="#0000BB">getRootDataObject</font><font color="#007700">();<br /></font><font color="#0000BB">$do</font><font color="#007700">-&gt;</font><font color="#0000BB">bear &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#007700">= </font><font color="#0000BB">$baloo</font><font color="#007700">;<br /></font><font color="#0000BB">$do</font><font color="#007700">-&gt;</font><font color="#0000BB">panther &nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#007700">= </font><font color="#0000BB">$bagheera</font><font color="#007700">;<br /></font><font color="#0000BB">$do</font><font color="#007700">-&gt;</font><font color="#0000BB">snake &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#007700">= </font><font color="#0000BB">$kaa</font><font color="#007700">;<br /><br />print(</font><font color="#0000BB">$xmldas</font><font color="#007700">-&gt;</font><font color="#0000BB">saveString</font><font color="#007700">(</font><font color="#0000BB">$document</font><font color="#007700">,</font><font color="#0000BB">2</font><font color="#007700">));<br /><br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    These two schema files are loaded into the XML DAS with first the 
+    <B
+CLASS="function"
+>create()</B
+> 
+    and 
+    <B
+CLASS="function"
+>addTypes()</B
+>
+     methods. 
+    The 
+    <B
+CLASS="function"
+>createDataObject()</B
+> 
+    method is used to create three separate data objects. 
+    In each case the namespaceURI and typename of the type are passed to the 
+    <B
+CLASS="function"
+>createDataObject()</B
+> 
+    method: in this example the namespace URI is blank because no
+    namespace is used in the schema. 
+    Once the three data objects - representing a bear, a panther and a snake - 
+    have been created, a document object is created with the 
+    <B
+CLASS="function"
+>createDocument()</B
+> 
+    method. 
+    In this case there is no ambiguity about what the document element of the
+    document should be - as the second schema file only defines complex types, 
+    the document element can only be the global 
+    <VAR
+CLASS="varname"
+>jungle</VAR
+> 
+    element defined 
+    in the first schema. 
+    This document will have a single root data object corresponding to an 
+    empty document element <VAR
+CLASS="varname"
+>jungle</VAR
+>. 
+    As this is an open type, properties can be added at will. 
+    When the first assignment is made to <VAR
+CLASS="varname"
+>$do-&#62;bear</VAR
+>,
+    a property 
+    <VAR
+CLASS="varname"
+>bear</VAR
+> 
+    is added to the root data object: 
+    likewise for the next two assignments.
+    When the document is written out by the 
+    <B
+CLASS="function"
+>saveString()</B
+> 
+    method, the resulting document is:
+   </P
+><P
+>&#13;    <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="xml"
+>&#60;?xml version="1.0" encoding="UTF-8"?&#62;
+&#60;jungle xsi:type="jungle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&#62;
+  &#60;bear xsi:type="bearType"&#62;
+    &#60;name&#62;Baloo&#60;/name&#62;
+    &#60;weight&#62;800&#60;/weight&#62;
+  &#60;/bear&#62;
+  &#60;panther xsi:type="pantherType"&#62;
+    &#60;name&#62;Bagheera&#60;/name&#62;
+    &#60;colour&#62;inky black&#60;/colour&#62;
+  &#60;/panther&#62;
+  &#60;snake xsi:type="snakeType"&#62;
+    &#60;name&#62;Kaa&#60;/name&#62;
+    &#60;length&#62;25&#60;/length&#62;
+  &#60;/snake&#62;
+&#60;/jungle&#62;</PRE
+></TD
+></TR
+></TABLE
+>
+   </P
+></DIV
+></TD
+></TR
+></TABLE
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN162298"
+></A
+><P
+><B
+>Пример 5. Finding out what you can from the document</B
+></P
+><P
+>&#13;     This example is intended to illustrate how you can find the 
+     element name and 
+     namespace of the document element from the XML Document object, and 
+     the SDO type and namespace from the root data object of the XML data 
+     object, and how they relate to one another.
+     This can be difficult to understand because there are four method calls:
+     two can be made against the Document object, and two that can be made 
+     against any data object including the root data object.
+     Because of the rules that define how the SDO model is derived
+     from the XML model, when the data object concerned is the 
+     root object that represents the document object for the document, 
+     only three possible values can come back from these 
+     four method calls.
+     
+    </P
+><P
+>&#13;     The two method calls that can be made against the document
+     are <B
+CLASS="function"
+>getRootElementName()</B
+> and
+     <B
+CLASS="function"
+>getRootEelementURI()</B
+>.
+     These return the element name and namespace of the document element,
+     respectively. 
+    </P
+><P
+>&#13;     The two method calls that can be made against any data object are 
+     <B
+CLASS="function"
+>getTypeName()</B
+>
+     and 
+     <B
+CLASS="function"
+>getTypeNamespaceURI()</B
+>.
+     These return the SDO type name and type namespace of the data object, 
+     respectively.
+    </P
+><P
+>&#13;     Always, calling <B
+CLASS="function"
+>getRootElementURI()</B
+>
+     on the document object will return the same value as 
+     calling <B
+CLASS="function"
+>getNamespaceURI()</B
+> on the
+     root data object. 
+     Essentially, the information is all derived from the first few lines of the 
+     schema file,
+     where there are three distinct pieces of information.
+     For illustration, here again are the first few lines of the 
+     letter.xsd that we used above.
+    </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="xml"
+>&#60;xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:letter="http://letterSchema"
+            targetNamespace="http://letterSchema"&#62;
+            
+  &#60;xsd:element name="letters" type="letter:FormLetter"/&#62;
+  
+  &#60;xsd:complexType name="FormLetter" mixed="true"&#62;
+    .../...</PRE
+></TD
+></TR
+></TABLE
+><P
+>&#13;    The three important values are:    
+    <P
+></P
+><UL
+><LI
+><P
+>&#13;       <VAR
+CLASS="varname"
+>letters</VAR
+>, the name of the document element
+      </P
+></LI
+><LI
+><P
+>&#13;       <VAR
+CLASS="varname"
+>FormLetter</VAR
+>, the name of the complex type of the document element.
+       This is also the name of the SDO type of the root data object.
+      </P
+></LI
+><LI
+><P
+>&#13;       <VAR
+CLASS="varname"
+>http://letterSchema</VAR
+>, the namespace to which the document element belongs.
+       This is also the namespaceURI of the SDO type of the root data object.
+      </P
+></LI
+></UL
+>
+    It is part of the XML-SDO mapping rules that 
+    when the SDO model is built from the schema file,
+    the typename and namespaceURI of the SDO types for the root element
+    are taken
+    from those of the complex type of the document element, where it exists.
+    Hence in this example the typename of the root data object is FormLetter.
+    In the event that there is no separate complex type definition
+    for the document element, when the the type is defined inline and is 
+    anonymous, 
+    the SDO type name will be the same as the element name. 
+   </P
+><P
+>&#13;    The following program loads the letter document and checks the 
+    return values from each of the four calls. 
+   </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br /></font><font color="#FF8000">/**<br /> * Finding out what you can about the document and document element<br /> * This can be quite hard to understand because there are four calls<br /> * Two calls are made against the document<br /> * Two calls are made against the root data object and its model<br /> * Because of the SDO-XML mapping rules and how the SDO model is derived<br /> * from the XML model, only three possible values can come back from these four calls.<br /> * Always, $document-&gt;getRootElementURI() == (type of root data object)-&gt;namespaceURI <br /> * Essentially, it all comes form the first few lines of the xsd:<br /> * &lt;xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"<br /> *&nbsp;&nbsp;&nbsp;xmlns:letter="http://letterSchema"<br /> *&nbsp;&nbsp;&nbsp;targetNamespace="http://letterSchema"&gt;<br /> *&nbsp;&nbsp;&nbsp;&lt;xsd:element name="letters" type="letter:FormLetter"/&gt;<br /> */<br /><br /></font><font color="#0000BB">$xmldas </font><font color="#007700">= </font><font color="#0000BB">SDO_DAS_XML</font><font color="#007700">::</font><font color="#0000BB">create</font><font color="#007700">(</font><font color="#DD0000">"letter.xsd"</font><font color="#007700">);<br /></font><font color="#0000BB">$document </font><font color="#007700">= </font><font color="#0000BB">$xmldas</font><font color="#007700">-&gt;</font><font color="#0000BB">loadFile</font><font color="#007700">(</font><font color="#DD0000">"letter.xml"</font><font color="#007700">);<br /></font><font color="#0000BB">$root_do </font><font color="#007700">= </font><font color="#0000BB">$document</font><font color="#007700">-&gt;</font><font color="#0000BB">getRootDataObject</font><font color="#007700">();<br /><br /></font><font color="#FF8000">/**<br /> * The "root element name" is the element name of the document element<br /> * in this case 'letters'<br /> * This matches the 'name' attribute of the document element in the xsd and matches<br /> * the element name from the xml<br /> */<br /></font><font color="#007700">echo </font><font color="#DD0000">"The document element name is " </font><font color="#007700">. </font><font color="#0000BB">$document</font><font color="#007700">-&gt;</font><font color="#0000BB">getRootElementName</font><font color="#007700">() . </font><font color="#DD0000">"\n"</font><font color="#007700">;<br /></font><font color="#0000BB">assert</font><font color="#007700">(</font><font color="#0000BB">$document</font><font color="#007700">-&gt;</font><font color="#0000BB">getRootElementName</font><font color="#007700">() == </font><font color="#DD0000">'letters'</font><font color="#007700">); </font><font color="#FF8000">// a property of the document<br /><br />/**<br /> * The "root element URI" is the namespace part of the element name of the document element<br /> * in this case 'http://letterSchema' since 'letters' is in that namespace<br /> * This is taken from the xsd and matches the namespace picked up from the xml<br /> */<br /></font><font color="#007700">echo </font><font color="#DD0000">"The document element is in the namespace " </font><font color="#007700">. </font><font color="#0000BB">$document</font><font color="#007700">-&gt;</font><font color="#0000BB">getRootElementURI</font><font color="#007700">() . </font><font color="#DD0000">"\n"</font><font color="#007700">;<br /></font><font color="#0000BB">assert</font><font color="#007700">(</font><font color="#0000BB">$document</font><font color="#007700">-&gt;</font><font color="#0000BB">getRootElementURI</font><font color="#007700">() == </font><font color="#DD0000">'http://letterSchema'</font><font color="#007700">); </font><font color="#FF8000">// a property of the document<br /><br />/**<br /> * The type name is taken from the SDO model<br /> * The XML-SDO mapping rules make this either:<br /> *&nbsp;&nbsp;&nbsp;The name of the complexType if there is one (in this case there is)<br /> *&nbsp;&nbsp;&nbsp;The document element name if there no complexType<br /> * This is taken from the xsd <br /> */<br /></font><font color="#007700">echo </font><font color="#DD0000">"The type name of the root data object is " </font><font color="#007700">. </font><font color="#0000BB">$root_do</font><font color="#007700">-&gt;</font><font color="#0000BB">getTypeName</font><font color="#007700">() . </font><font color="#DD0000">"\n"</font><font color="#007700">;<br /></font><font color="#0000BB">assert</font><font color="#007700">(</font><font color="#0000BB">$root_do</font><font color="#007700">-&gt;</font><font color="#0000BB">getTypeName</font><font color="#007700">() == </font><font color="#DD0000">'FormLetter'</font><font color="#007700">);&nbsp;&nbsp;<br /><br /></font><font color="#FF8000">/**<br /> * The type's namespaceURI is taken from the SDO model<br /> * The XML-SDO mapping rules ensure that this will always be the same as <br /> * the namepace URI of the document element<br /> */<br /></font><font color="#007700">echo </font><font color="#DD0000">"The namespaceURI of the root data object is " </font><font color="#007700">. </font><font color="#0000BB">$root_do</font><font color="#007700">-&gt;</font><font color="#0000BB">getTypeNamespaceURI</font><font color="#007700">() . </font><font color="#DD0000">"\n"</font><font color="#007700">;<br /></font><font color="#0000BB">assert</font><font color="#007700">(</font><font color="#0000BB">$root_do</font><font color="#007700">-&gt;</font><font color="#0000BB">getTypeNamespaceURI</font><font color="#007700">() == </font><font color="#DD0000">'http://letterSchema'</font><font color="#007700">); <br /><br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+><P
+>&#13;     The output from this program is as follows:
+   </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="xml"
+>The document element name is letters
+The document element is in the namespace http://letterSchema
+The type name of the root data object is FormLetter
+The namespaceURI of the root data object is http://letterSchema</PRE
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN162326"
+></A
+><P
+><B
+>Пример 6. Printing the SDO model</B
+></P
+><P
+>&#13;     The XML DAS provides a simple means to see what types and properties 
+     have been loaded. The php "print" or "echo" instruction will 
+     print out the types and properties. 
+    </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br /></font><font color="#FF8000">/**<br /> * Illustrate printing out the model<br /> */<br /><br /></font><font color="#0000BB">$xmldas </font><font color="#007700">= </font><font color="#0000BB">SDO_DAS_XML</font><font color="#007700">::</font><font color="#0000BB">create</font><font color="#007700">(</font><font color="#DD0000">"letter.xsd"</font><font color="#007700">);<br />print </font><font color="#0000BB">$xmldas</font><font color="#007700">;<br /><br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+><P
+>&#13;     The output from this program is as follows:
+   </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="xml"
+>object(SDO_XML_DAS)#1 {
+18 types have been defined. The types and their properties are::
+1. commonj.sdo:BigDecimal
+2. commonj.sdo:BigInteger
+3. commonj.sdo:Boolean
+4. commonj.sdo:Byte
+5. commonj.sdo:Bytes
+6. commonj.sdo:ChangeSummary
+7. commonj.sdo:Character
+8. commonj.sdo:DataObject
+9. commonj.sdo:Date
+10. commonj.sdo:Double
+11. commonj.sdo:Float
+12. commonj.sdo:Integer
+13. commonj.sdo:Long
+14. commonj.sdo:Short
+15. commonj.sdo:String
+16. commonj.sdo:URI
+17. http://letterSchema:FormLetter
+    - date (commonj.sdo:String)
+    - firstName (commonj.sdo:String)
+    - lastName (commonj.sdo:String)
+18. http://letterSchema:RootType
+    - letters (http://letterSchema:FormLetter)</PRE
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sdo-das-xml.classes"
+>Предопределенные классы</A
+></H1
+><P
+>&#13;    The XML DAS provides two main classes.
+    The first is SDO_DAS_XML which is the main class used to fetch the
+    data from the XML source and used to write the data back.
+    The second is the SDO_DAS_XML_Document class,
+    which represents the data in the XML document.
+   </P
+><P
+>&#13;    There are also some exception classes which can be thrown
+    if errors are found when looking for or parsing the xsd or 
+    xml files. 
+   </P
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="sdo-das-xml.class.sdo_das_xml"
+><B
+CLASS="classname"
+>SDO_DAS_XML</B
+></A
+></H2
+><P
+>&#13;     This is the main class of the XML DAS,
+     which is used fetch the data from the xml source
+     and also used to write the data back.
+     Other than the methods to load and save xml files,
+    </P
+><DIV
+CLASS="section"
+><H3
+CLASS="section"
+><A
+NAME="sdo-das-xml.class.SDO_DAS_XML.methods"
+>Методы</A
+></H3
+><P
+></P
+><UL
+><LI
+><P
+>&#13;        <A
+HREF="function.sdo-das-xml-create.html"
+>create</A
+>
+        This is a static method available in the SDO_DAS_XML class.
+        Used to construct an SDO_DAS_XML object.
+       </P
+></LI
+><LI
+><P
+>&#13;        <A
+HREF="function.sdo-das-xml-addtypes.html"
+>addTypes</A
+>
+        Works in much the same way as <B
+CLASS="function"
+>create()</B
+> but used
+        to add the contents of a second or subsequent schema file to 
+        an XML DAS that has already been created.
+       </P
+></LI
+><LI
+><P
+>&#13;        <A
+HREF="function.sdo-das-xml-createdataobject.html"
+>createDataObject</A
+>
+        Can be used to construct an SDO data object of a given type.
+       </P
+></LI
+><LI
+><P
+>&#13;        <A
+HREF="function.sdo-das-xml-createdocument.html"
+>createDocument</A
+>
+        Can be used to construct an XML Document object from scratch.
+       </P
+></LI
+><LI
+><P
+>&#13;        <A
+HREF="function.sdo-das-xml-loadfile.html"
+>loadFile</A
+>
+        Loads the xml instance document from a file.
+        This file can be at local file system or it can be on a remote host.
+       </P
+></LI
+><LI
+><P
+>&#13;        <A
+HREF="function.sdo-das-xml-loadstring.html"
+>loadString</A
+>
+        same as the above method.
+        Loads the xml instance which is available as string.
+       </P
+></LI
+><LI
+><P
+>&#13;        <A
+HREF="function.sdo-das-xml-savefile.html"
+>saveFile</A
+>
+        save SDO_DAS_XML_Document object as a xml file.
+       </P
+></LI
+><LI
+><P
+>&#13;        <A
+HREF="function.sdo-das-xml-savestring.html"
+>saveString</A
+>
+        save SDO_DAS_XML_Document object as a xml string.
+       </P
+></LI
+></UL
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="sdo-das-xml.class.sdo_das_xml_document"
+><B
+CLASS="classname"
+>SDO_DAS_XML_Document</B
+></A
+></H2
+><P
+>&#13;     This class can be used to get to the name and namespace of the document element,
+     and to get to the root data object of the document. 
+     Lastly, it can also be used to set the XML version and encoding
+     of a document on output.
+    </P
+><DIV
+CLASS="section"
+><H3
+CLASS="section"
+><A
+NAME="sdo-das-xml.class.SDO_DAS_XML_Document.methods"
+>Методы</A
+></H3
+><P
+></P
+><UL
+><LI
+><P
+>&#13;        <A
+HREF="function.sdo-das-xml-document-getrootdataobject.html"
+>getRootDataObject</A
+>
+        gets the root DataObject.
+       </P
+></LI
+><LI
+><P
+>&#13;        <A
+HREF="function.sdo-das-xml-document-getrootelementname.html"
+>getRootElementName</A
+>
+        gets the root DataObject's name.
+       </P
+></LI
+><LI
+><P
+>&#13;        <A
+HREF="function.sdo-das-xml-document-getrootelementuri.html"
+>getRootElementURI</A
+>
+        gets the root DataObject's URI.
+       </P
+></LI
+><LI
+><P
+>&#13;        <A
+HREF="function.sdo-das-xml-document-setencoding.html"
+>setEncoding</A
+>
+        sets the encoding string with the given value.
+       </P
+></LI
+><LI
+><P
+>&#13;        <A
+HREF="function.sdo-das-xml-document-setxmldeclaration.html"
+>setXMLDeclaraion</A
+>
+        to set/unset the xml declaration.
+       </P
+></LI
+><LI
+><P
+>&#13;        <A
+HREF="function.sdo-das-xml-document-setxmlversion.html"
+>setXMLVersion</A
+>
+        sets the xml version with the given value.
+       </P
+></LI
+></UL
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="sdo-das-xml.class.sdo_das_xml_parserexception"
+><B
+CLASS="classname"
+>SDO_DAS_XML_ParserException</B
+></A
+></H2
+><P
+>&#13;     Is a subclass of
+     <B
+CLASS="classname"
+>SDO_Exception</B
+>.
+     Thrown for any parser errors while loading the xsd/xml file.
+    </P
+></DIV
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="sdo-das-xml.class.sdo_das_xml_fileexception"
+><B
+CLASS="classname"
+>SDO_DAS_XML_FileException</B
+></A
+></H2
+><P
+>&#13;     Is a subclass of
+     <B
+CLASS="classname"
+>SDO_Exception</B
+>.
+     Thrown by any of the methods that load data from a file, when the file
+     cannot be found. 
+    </P
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sdo-das-xml.limitations"
+>Limitations compared with SDO 2.0 specification</A
+></H1
+><P
+>&#13;    The 
+    <A
+HREF="http://www-128.ibm.com/developerworks/java/library/j-commonj-sdowmt/"
+TARGET="_top"
+>SDO 2.0 specification</A
+>
+    defines the mapping between XML types and SDO types.
+    With Java SDO, this mapping is implemented by the XMLHelper.
+    With SDO for PHP, this mapping is implemented by the
+    XML Data Access Service.
+    The XML DAS implements the mapping described in the
+    SDO 2.0 specification with some restrictions. 
+    A detailed list is of the limitations is:
+   </P
+><DIV
+CLASS="procedure"
+><P
+><B
+><A
+NAME="sdo-das-xml.limitations.simpletypes"
+></A
+>XML Simple Types</B
+></P
+><OL
+TYPE="1"
+><LI
+><P
+>&#13;      Simple Type with sdoJava:instanceClass
+      - no PHP equivalent provided.
+     </P
+></LI
+><LI
+><P
+>&#13;      Simple Type with sdoJava:extendedInstanceClass
+      - no PHP equivalent provided.
+     </P
+></LI
+><LI
+><P
+>&#13;      Simple Type with list of itemType.
+     </P
+></LI
+><LI
+><P
+>&#13;      Simple Type with union.
+     </P
+></LI
+></OL
+></DIV
+><DIV
+CLASS="procedure"
+><P
+><B
+><A
+NAME="sdo-das-xml.limitations.complextypes"
+></A
+>XML Complex Types</B
+></P
+><OL
+TYPE="1"
+><LI
+><P
+>&#13;      Complex Type with sdo:aliasName
+      - no PHP support for SDO Type aliases.
+     </P
+></LI
+></OL
+></DIV
+><DIV
+CLASS="procedure"
+><P
+><B
+><A
+NAME="sdo-das-xml.limitations.attribute"
+></A
+>XSD Attribute</B
+></P
+><OL
+TYPE="1"
+><LI
+><P
+>&#13;      Attribute with sdo:aliasName
+      - no PHP support for SDO property aliases.
+     </P
+></LI
+><LI
+><P
+>&#13;      Attribute with default value
+      - no PHP support for SDO property defaults.
+     </P
+></LI
+><LI
+><P
+>&#13;      Attribute with fixed value
+      - no PHP support for SDO read-only properties or default values.
+     </P
+></LI
+><LI
+><P
+>&#13;      Attribute referencing a DataObject with
+      sdo:propertyType - no support for sdo:propertyType="...".
+     </P
+></LI
+><LI
+><P
+>&#13;      Attribute with bi-directional property to a DataObject with
+      sdo:oppositeProperty and sdo:propertyType
+      - no PHP support for SDO opposite.
+     </P
+></LI
+></OL
+></DIV
+><DIV
+CLASS="procedure"
+><P
+><B
+><A
+NAME="sdo-das-xml.limitations.elements"
+></A
+>XSD Elements</B
+></P
+><OL
+TYPE="1"
+><LI
+><P
+>&#13;      Element with sdo:aliasName
+      - no PHP support for SDO property aliases.
+     </P
+></LI
+><LI
+><P
+>&#13;      Element with substitution group.
+     </P
+></LI
+></OL
+></DIV
+><DIV
+CLASS="procedure"
+><P
+><B
+><A
+NAME="sdo-das-xml.limitations.elementsimpletype"
+></A
+>XSD Elements with Simple Type</B
+></P
+><OL
+TYPE="1"
+><LI
+><P
+>&#13;      Element of SimpleType with default
+      - no PHP support for SDO defaults
+     </P
+></LI
+><LI
+><P
+>&#13;      Element of SimpleType with fixed value
+      - no PHP support for SDO read-only properties or default values.
+     </P
+></LI
+><LI
+><P
+>&#13;      Element of SimpleType with sdo:string
+      - no support for sdo:string="true".
+     </P
+></LI
+><LI
+><P
+>&#13;      Element referencing a DataObject with
+      sdo:propertyType  - no support for sdo:propertyType="..."
+     </P
+></LI
+><LI
+><P
+>&#13;      Element with bi-directional reference to a DataObject with
+      sdo:oppositeProperty and sdo:propertyType
+      - no PHP support for SDO opposite.
+     </P
+></LI
+></OL
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Содержание</B
+></DT
+><DT
+><A
+HREF="function.sdo-das-xml-document-getrootdataobject.html"
+>SDO_DAS_XML_Document::getRootDataObject</A
+>&nbsp;--&nbsp;
+   Returns the root SDO_DataObject
+  </DT
+><DT
+><A
+HREF="function.sdo-das-xml-document-getrootelementname.html"
+>SDO_DAS_XML_Document::getRootElementName</A
+>&nbsp;--&nbsp;
+   Returns root element's name
+  </DT
+><DT
+><A
+HREF="function.sdo-das-xml-document-getrootelementuri.html"
+>SDO_DAS_XML_Document::getRootElementURI</A
+>&nbsp;--&nbsp;
+   Returns root element's URI string
+  </DT
+><DT
+><A
+HREF="function.sdo-das-xml-document-setencoding.html"
+>SDO_DAS_XML_Document::setEncoding</A
+>&nbsp;--&nbsp;
+   Sets the given string as encoding
+  </DT
+><DT
+><A
+HREF="function.sdo-das-xml-document-setxmldeclaration.html"
+>SDO_DAS_XML_Document::setXMLDeclaration</A
+>&nbsp;--&nbsp;
+   Sets the xml declaration
+  </DT
+><DT
+><A
+HREF="function.sdo-das-xml-document-setxmlversion.html"
+>SDO_DAS_XML_Document::setXMLVersion</A
+>&nbsp;--&nbsp;
+   Sets the given string as xml version
+  </DT
+><DT
+><A
+HREF="function.sdo-das-xml-addtypes.html"
+>SDO_DAS_XML::addTypes</A
+>&nbsp;--&nbsp;
+   To load a second or subsequent schema file to a SDO_DAS_XML object
+  </DT
+><DT
+><A
+HREF="function.sdo-das-xml-create.html"
+>SDO_DAS_XML::create</A
+>&nbsp;--&nbsp;
+   To create SDO_DAS_XML object for a given schema file
+  </DT
+><DT
+><A
+HREF="function.sdo-das-xml-createdataobject.html"
+>SDO_DAS_XML::createDataObject</A
+>&nbsp;--&nbsp;
+   Creates SDO_DataObject for a given namespace URI and type name
+  </DT
+><DT
+><A
+HREF="function.sdo-das-xml-createdocument.html"
+>SDO_DAS_XML::createDocument</A
+>&nbsp;--&nbsp;
+   Creates an XML Document object from scratch, without the need to load a document from a file or string.
+  </DT
+><DT
+><A
+HREF="function.sdo-das-xml-loadfile.html"
+>SDO_DAS_XML::loadFile</A
+>&nbsp;--&nbsp;
+   Returns SDO_DAS_XML_Document object for a given path to xml instance document
+  </DT
+><DT
+><A
+HREF="function.sdo-das-xml-loadstring.html"
+>SDO_DAS_XML::loadString</A
+>&nbsp;--&nbsp;
+   Returns SDO_DAS_XML_Document for a given xml instance string
+  </DT
+><DT
+><A
+HREF="function.sdo-das-xml-savefile.html"
+>SDO_DAS_XML::saveFile</A
+>&nbsp;--&nbsp;
+   Saves the SDO_DAS_XML_Document object to a file
+  </DT
+><DT
+><A
+HREF="function.sdo-das-xml-savestring.html"
+>SDO_DAS_XML::saveString</A
+>&nbsp;--&nbsp;
+   Saves the SDO_DAS_XML_Document object to a string
+  </DT
+></DL
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="function.sdo-sequence-move.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Начало</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="function.sdo-das-xml-document-getrootdataobject.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>SDO_Sequence::move</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="funcref.html"
+ACCESSKEY="U"
+>Уровень выше</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>SDO_DAS_XML_Document::getRootDataObject</TD
+></TR
+></TABLE
+></DIV
+></div></center></div></td>
+			<td><div style="display:none; width:200px;" id="o3" name="o3"><script charset="windows-1251" type="text/javascript" src="http://www.ozon.ru/PartnerTwinerNew.aspx?revident=bea9126b-c8e1-4bf5-b6d8-9a057f8feac6" ></script></div><script>o = document.getElementById('o3'); if(o) { var s = o.innerHTML; s = s.replace(/F6F6F6/gi,"FFFFFF"); o.innerHTML = s.replace(/padding-top: 10px; padding-bottom: 10px;/,"display:none;"); o.style.display = 'block'; } </script><br><div style="margin: 10px;"><script type="text/javascript"><!--
+google_ad_client = "pub-4093271809023514";
+/* 120x600, создано 01.11.2008 */
+google_ad_slot = "0438855731";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div></td>
+    		</tr>
+  		</table>
+    </td>
+  </tr>
+  <tr valign='bottom' height='1%'>
+  <td>      <table width=100% cellspacing=0 cellpadding=5 border=0 bgcolor=#9999CC>
+        <tr valign=center>
+          <td class='phpcopyright' width='45%' align='left'>&nbsp;&nbsp;Engine <a  href="http://www.mnogosearch.org/">MnoGoSearch</a></td>
+          <td class='phpcopyright' width='10%' align='center'>2007-2010 &copy <a  href="mailto:webmaster@php.ru">PHP.RU</a></td>
+          <td class='phpcopyright' width='45%' align='right' >Powered by <a target="_blank" href="http://odware.ru">ODware</a> <a HREF="http://440hz.ru">440Hz</a> &nbsp;&nbsp;</td>
+        </tr>
+      </table>
+
+    <div style="text-align: right; padding: 5px">
+		<!--LiveInternet counter-->
+		<script type="text/javascript">document.write('<a href="http://www.liveinternet.ru/click" target=_blank><img src="http://counter.yadro.ru/hit?t53.6;r' + escape(document.referrer) + ((typeof(screen)=='undefined')?'':';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ';u' + escape(document.URL) +';i' + escape('Жж'+document.title.substring(0,80)) + ';' + Math.random() + '" border=0 width=88 height=31 alt="" title="LiveInternet: показано число просмотров и посетителей за 24 часа"><\/a>');
+		</script>
+		<!--/LiveInternet-->
+		<!-- SpyLOG -->
+		<script src="http://tools.spylog.ru/counter2.2.js" type="text/javascript" id="spylog_code" counter="830950" ></script>
+		<noscript><a href="http://u8309.50.spylog.com/cnt?cid=830950&f=3&p=0" target="_blank"><img src="http://u8309.50.spylog.com/cnt?cid=830950&p=0&f=4" alt='SpyLOG' border='0' width=88 height=31 ></a>
+		</noscript>
+		<!--/ SpyLOG -->
+	</div>
+</td>
+  </tr>
+</table>
+
+<script>
+<!--
+document.SEARCH.QS.focus();
+// --></script>
+
+<!-- 
+	как же вы все это читаете?
+	440hz 
+-->
+
+</body>
+</html>

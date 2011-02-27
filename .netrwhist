@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/etc/apache2/sites-available'
+let g:netrw_dirhist_2='/data/www/sc/sclass/logs'
+let g:netrw_dirhist_3='/data/www/mag/test/admin'
+let g:netrw_dirhist_4='/data/www/sa'
+let g:netrw_dirhist_5='/home/dima/.vim/Templates'

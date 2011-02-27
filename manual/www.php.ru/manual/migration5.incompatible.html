@@ -1,0 +1,802 @@
+<!-- 
+
+     HTML dropped by Zend Guard Compressor 4.2
+
+     php.ru team: mz, az, yuri, vb, cyxapuk, 440hz, administrator
+     2004-2007 (c) expi-web.com 
+     2007-2008 (c) odware.com 
+     0101-1010 (с) 440hz
+
+     2b|~2b=?
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EHOT тут всё пожрал ! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="alternate" type="application/rss+xml" title="php.ru/forum - последние сообщения" href="http://www.php.ru/forum/rss.php">
+<link rel="SHORTCUT ICON" href="http://www.php.ru/favicon.ico" />
+<META name="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<meta http-equiv="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<META name="keywords" content="php, php5, apache, mysql, session">
+<meta http-equiv="keywords" content="php, php5, apache, mysql, session">
+<title>php.ru - Изменения, повлекшие за собой обратную несовместимость</title>
+<LINK REL="stylesheet" TYPE="text/css" HREF="http://www.php.ru/index.css">
+<script language="JavaScript" src="http://www.php.ru/ajax/ajax.js"></script>
+</head>
+<body>
+
+<table height='100%' width='100%' cellspacing='0' cellpadding='0'>
+  <tr height='99%' valign='top'>
+    <td align='center'>
+		
+		<table style='margin-top: 4px' width=100% cellspacing=0 cellpadding=3>
+   		<tr>
+     		<td>PHP - <a href="http://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BA%D1%80%D0%BE%D0%BD%D0%B8%D0%BC" target=_blank class=lnk>рекурсивный акроним</a> словосочетания &laquo;<a href="/manual/introduction.html" class=lnk>PHP: Hypertext Preprocessor</a>&raquo;</td>
+     	</tr>
+   		</table>
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/subsys_ajax.js"></script>
+		<!--
+
+		commet by 440hz
+		20.10.2007
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/pu_search.js"></script>
+
+		-->
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/cz.js?a=b"></script>
+
+		<table style='margin-top: 5px' width=100% bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0>
+   	 	<form name=SEARCH method=GET action="http://www.php.ru/search/?SID=52gzx55df3pk4kx7" onsubmit="return puSubmit();">
+	  	<input type=hidden name=PAGE value=1>
+  		<tr>
+    		<td width='1' valign='middle'> 
+    		   <a href='/'><img src="http://www.php.ru/;-)/logo.gif" width=133 height=93 alt="php" border=0 hspace=10 vspace=0></a>
+			 </td>
+		    <td width='100%' valign='middle'>
+		       <!--
+			   
+				commet by 440hz
+				20.10.2007
+
+			   <div id='pu_search' class='pu_search'></div>
+		       <div id='pu_search_description' class='pu_search_decription'></div>
+			   
+			   -->
+        	 <input type=text style='width:99%; margin: 10px' maxlength='200' name='QS' class='in' id='query' autocomplete='off' value="" />
+    		</td>
+		  </tr>
+   		<tr bgcolor='#666699' valign='middle'>
+			<td style='border-top: 1px solid #333366;'><br /></td>
+    		<td style='border-top: 1px solid #333366;'><div style="padding: 4px 4px 4px 10px; height: 24px; color: #CCCCFF;" id="stat">Хто там?<script>doLoadCZ('stat','stat');</script></div></td>
+  		</tr>
+		</form>
+		</table>
+		<table id="menu" cellspaciong=0 cellpadding=3>
+<tr>
+<td><a href="/" class=current>Главная</a></td>
+<td><a href="/download/" class=current>Скачать</a></td>
+<td><a href="/doc/" class=current>Документация</a></td>
+<td><a href="/forum/" class=current>Форум</a></td>
+<td width=100% align=right><a href="/phpinfo.html" class=current>phpinfo()</a></td>
+</tr>
+</table>
+
+		
+<!--  AdRiver code START. Type:728x90 Site: php.ru PZ: 0 BN: 1 -->
+<script language="javascript" type="text/javascript"><!--
+var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+var ar_Tail='unknown'; if (document.referrer) ar_Tail = escape(document.referrer);
+document.write(
+'<iframe src="http://ad.adriver.ru/cgi-bin/erle.cgi?'
++ 'sid=148680&bn=1&target=blank&bt=36&pz=0&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail
++ '" frameborder=0 vspace=0 hspace=0 width=728 height=90 marginwidth=0'
++ ' marginheight=0 scrolling=no></iframe>');
+//--></script>
+<noscript>
+<a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" target=_blank>
+<img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" alt="-AdRiver-" border=0 width=728 height=90></a>
+</noscript>
+<!--  AdRiver code END  -->
+
+
+  		<table width='100%' cellspacing='0' cellpadding='0'>
+    		<tr valign='top'>
+      		<td width=100%><div style="margin: 10px 10px 10px 50px;"><center><div style="width: 800px; text-align: left"><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Руководство по PHP</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="migration5.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Приложение B. Миграция с PHP 4 на PHP 5</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="migration5.cli-cgi.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="migration5.incompatible"
+>Изменения, повлекшие за собой обратную несовместимость</A
+></H1
+><P
+>&#13;    Несмотря на то, что большинство кода на PHP 4 должно работать безо 
+    всяких изменений, вам следует обратить вимание на следующие 
+    изменения, повлекшие за собой обратную несовместимость:
+   </P
+><P
+></P
+><UL
+><LI
+><P
+>&#13;      Несколько <A
+HREF="reserved.html#reserved.keywords"
+>новых зарезирвированных 
+      ключевых слов</A
+>.
+     </P
+></LI
+><LI
+><P
+>&#13;      <A
+HREF="function.strrpos.html"
+><B
+CLASS="function"
+>strrpos()</B
+></A
+> и <A
+HREF="function.strripos.html"
+><B
+CLASS="function"
+>strripos()</B
+></A
+> теперь используют 
+      всю строку как needle.
+     </P
+></LI
+><LI
+><P
+>&#13;      Неправильное использование смещения внутри строки вызывает 
+      <TT
+CLASS="constant"
+><B
+>E_ERROR</B
+></TT
+> вместо <TT
+CLASS="constant"
+><B
+>E_WARNING</B
+></TT
+>. 
+      Пример неправильного использования: 
+      <VAR
+CLASS="literal"
+>$str = 'abc'; unset($str[0]);</VAR
+>.
+     </P
+></LI
+><LI
+><P
+>&#13;      <A
+HREF="function.array-merge.html"
+><B
+CLASS="function"
+>array_merge()</B
+></A
+> изменена таким образом, что принимает 
+      в качестве аргумента только массивы. Если была передана переменная, 
+      не являющаяся массивом, будет сгенерированна ошибка 
+      <TT
+CLASS="constant"
+><B
+>E_WARNING</B
+></TT
+> для каждого такого параметра. Будьте
+      внимательны, потому что ваш код может вдруг начать генерировать 
+      ошибки <TT
+CLASS="constant"
+><B
+>E_WARNING</B
+></TT
+>.
+     </P
+></LI
+><LI
+><P
+>&#13;      Переменная сервера PATH_TRANSLATED больше не определяется неявно под
+      Apache2 SAPI, в отличие от ситуации в PHP 4, где ей присваивается то же
+      значение, что и переменной сервера SCRIPT_FILENAME, когда она
+      не определяется Apache. Это изменение было сделано для соответствия <A
+HREF="http://hoohoo.ncsa.uiuc.edu/cgi/"
+TARGET="_top"
+>спецификации CGI</A
+>. Пожалуйста, обратитесь к <A
+HREF="http://bugs.php.net/23610"
+TARGET="_top"
+>ошибке #23610</A
+> для получения дальнейший информации,
+      а также посмотрите описание <A
+HREF="reserved.variables.html#reserved.variables.server"
+>&#13;      $_SERVER['PATH_TRANSLATED']</A
+> в данном руководстве. Это изменение 
+      также имеет место в PHP версий &#62;= 4.3.2.
+     </P
+></LI
+><LI
+><P
+>&#13;      Константа <TT
+CLASS="constant"
+><B
+>T_ML_COMMENT</B
+></TT
+> больше
+      не объявляется расширением <A
+HREF="ref.tokenizer.html"
+>Tokenizer</A
+>. Если
+      директива error_reporting установлена в <TT
+CLASS="constant"
+><B
+>E_ALL</B
+></TT
+>, PHP 
+      сгенерирует ошибку уровня <TT
+CLASS="constant"
+><B
+>E_NOTICE</B
+></TT
+>. Несмотря на то, 
+      что <TT
+CLASS="constant"
+><B
+>T_ML_COMMENT</B
+></TT
+> не использовалась вообще, она 
+      была объявлена в PHP 4. Как в PHP 4, так и в PHP 5
+      // и /* */ определяются как <TT
+CLASS="constant"
+><B
+>T_COMMENT</B
+></TT
+>.
+      Так или иначе, комментарии /** */ в стиле PHPDoс, которые начиная с PHP
+      5 анализируются PHP, распознаются как <TT
+CLASS="constant"
+><B
+>T_DOC_COMMENT</B
+></TT
+>. 
+     </P
+></LI
+><LI
+><P
+>&#13;      Суперглобальный массив $_SERVER будет создан вместе с переменными argc и argv, 
+      если  <A
+HREF="ini.core.html#ini.variables-order"
+>variables_order</A
+> включает "S". Если
+      вы сконфигурировали интерпретатор таким образом, что $_SERVER не
+      создаётся, тогда, конечно, её не будет. Изменение заключается в том, чтобы 
+      сделать argc и argv всегда доступными в CLI-версии, вне зависимости от <A
+HREF="ini.core.html#ini.variables-order"
+>variables_order</A
+>. Как уже было сказано,
+      CLI-версия теперь всегда будет объявлять переменные $argc и $argv.
+     </P
+></LI
+><LI
+><P
+>&#13;      Объект без свойств больше не считается "пустым".
+     </P
+></LI
+><LI
+><P
+>&#13;      В некоторых случаях класс должен быть объявлен перед использованием. Это
+      происходит только в том случае, если используются некоторые новые функции PHP 5. 
+      Иначе поведение остается старым.
+     </P
+></LI
+><LI
+><P
+>&#13;      <A
+HREF="function.get-class.html"
+><B
+CLASS="function"
+>get_class()</B
+></A
+>, <A
+HREF="function.get-parent-class.html"
+><B
+CLASS="function"
+>get_parent_class()</B
+></A
+>
+      и <A
+HREF="function.get-class-methods.html"
+><B
+CLASS="function"
+>get_class_methods()</B
+></A
+> теперь возвращают имя
+      классов/методов так, как они были объявлены (с учетом регистра), что
+      может привести к проблемам со старыми скриптами, которые полагаются на 
+      прежнее поведение (имя класса/метода всегда было приведено к нижнему регистру).
+      Возможным решением является поиск этих функций в ваших скриптах и добавление перед ними
+      <A
+HREF="function.strtolower.html"
+><B
+CLASS="function"
+>strtolower()</B
+></A
+>.
+     </P
+><P
+>&#13;      Изменения относительно регистрозависимости также затрагивают 
+      <A
+HREF="language.constants.predefined.html"
+>магические 
+      константы</A
+> <TT
+CLASS="constant"
+><B
+>__CLASS__</B
+></TT
+>, 
+      <TT
+CLASS="constant"
+><B
+>__METHOD__</B
+></TT
+> и <TT
+CLASS="constant"
+><B
+>__FUNCTION__</B
+></TT
+>.
+      Значения возвращаются в именно таком виде, в каком они обявлены (с учетом регистра).
+     </P
+></LI
+><LI
+><P
+>&#13;      <A
+HREF="function.ip2long.html"
+><B
+CLASS="function"
+>ip2long()</B
+></A
+> теперь возвращает <TT
+CLASS="constant"
+><B
+>FALSE</B
+></TT
+>, а не <VAR
+CLASS="literal"
+>-1</VAR
+>, когда 
+      в качестве аргумента функции передается неправильный IP-адрес.
+     </P
+></LI
+><LI
+><P
+>&#13;      Если во включенном файле объявлены какие-либо функции, они могут использоваться и в 
+      главном файле, вне зависимости от того, располагаются они до <A
+HREF="function.return.html"
+><B
+CLASS="function"
+>return()</B
+></A
+> или после.
+      Если файл включается дважды, PHP 5 генерирует фатальную ошибку, так как функции уже были объявлены, 
+      в то время, как PHP 4 не жалуется на это.
+      Рекомендуется использовать <A
+HREF="function.include-once.html"
+><B
+CLASS="function"
+>include_once()</B
+></A
+> вместо проверки, был ли уже включен файл
+      и условного возврата внутри включенного файла.
+     </P
+></LI
+><LI
+><P
+>&#13;      <A
+HREF="function.include-once.html"
+><B
+CLASS="function"
+>include_once()</B
+></A
+> и <A
+HREF="function.require-once.html"
+><B
+CLASS="function"
+>require_once()</B
+></A
+>
+      сначала стандартизируют путь к включенному файлу в Windows, так что при включении
+      A.php и a.php файл включается только один раз.
+     </P
+></LI
+></UL
+><P
+>&#13;    <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN241227"
+></A
+><P
+><B
+>Пример B-1. <A
+HREF="function.strrpos.html"
+><B
+CLASS="function"
+>strrpos()</B
+></A
+> и <A
+HREF="function.strripos.html"
+><B
+CLASS="function"
+>strripos()</B
+></A
+> теперь 
+      используют всю строку как needle</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />var_dump</font><font color="#007700">(</font><font color="#0000BB">strrpos</font><font color="#007700">(</font><font color="#DD0000">'ABCDEF'</font><font color="#007700">,</font><font color="#DD0000">'DEF'</font><font color="#007700">)); </font><font color="#FF8000">//int(3)<br /><br /></font><font color="#0000BB">var_dump</font><font color="#007700">(</font><font color="#0000BB">strrpos</font><font color="#007700">(</font><font color="#DD0000">'ABCDEF'</font><font color="#007700">,</font><font color="#DD0000">'DAF'</font><font color="#007700">)); </font><font color="#FF8000">//bool(false)<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN241233"
+></A
+><P
+><B
+>Пример B-2. Объект без свойств больше не считается "пустым"</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br /></font><font color="#007700">class </font><font color="#0000BB">test </font><font color="#007700">{ }<br /></font><font color="#0000BB">$t </font><font color="#007700">= new </font><font color="#0000BB">test</font><font color="#007700">();<br /><br /></font><font color="#0000BB">var_dump</font><font color="#007700">(empty(</font><font color="#0000BB">$t</font><font color="#007700">)); </font><font color="#FF8000">// echo bool(false)<br /><br /></font><font color="#007700">if (</font><font color="#0000BB">$t</font><font color="#007700">) {<br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#FF8000">// Будет выполнено<br /></font><font color="#007700">}<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN241237"
+></A
+><P
+><B
+>Пример B-3. В некоторых случаях классы должны быть объявлены перед использованием</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br /><br /></font><font color="#FF8000">//работает без ошибок:<br /></font><font color="#0000BB">$a </font><font color="#007700">= new </font><font color="#0000BB">a</font><font color="#007700">();<br />class </font><font color="#0000BB">a </font><font color="#007700">{<br />}<br /><br /><br /></font><font color="#FF8000">//вызывает ошибку:<br /></font><font color="#0000BB">$a </font><font color="#007700">= new </font><font color="#0000BB">b</font><font color="#007700">();<br /><br /></font><font color="#0000BB">interface c</font><font color="#007700">{<br />}<br />class </font><font color="#0000BB">b implements c </font><font color="#007700">{<br />} <br /><br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="migration5.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Начало</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="migration5.cli-cgi.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Миграция с PHP 4 на PHP 5</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="migration5.html"
+ACCESSKEY="U"
+>Уровень выше</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>CLI и CGI</TD
+></TR
+></TABLE
+></DIV
+></div></center></div></td>
+			<td><div style="display:none; width:200px;" id="o3" name="o3"><script charset="windows-1251" type="text/javascript" src="http://www.ozon.ru/PartnerTwinerNew.aspx?revident=bea9126b-c8e1-4bf5-b6d8-9a057f8feac6" ></script></div><script>o = document.getElementById('o3'); if(o) { var s = o.innerHTML; s = s.replace(/F6F6F6/gi,"FFFFFF"); o.innerHTML = s.replace(/padding-top: 10px; padding-bottom: 10px;/,"display:none;"); o.style.display = 'block'; } </script><br><div style="margin: 10px;"><script type="text/javascript"><!--
+google_ad_client = "pub-4093271809023514";
+/* 120x600, создано 01.11.2008 */
+google_ad_slot = "0438855731";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div></td>
+    		</tr>
+  		</table>
+    </td>
+  </tr>
+  <tr valign='bottom' height='1%'>
+  <td>      <table width=100% cellspacing=0 cellpadding=5 border=0 bgcolor=#9999CC>
+        <tr valign=center>
+          <td class='phpcopyright' width='45%' align='left'>&nbsp;&nbsp;Engine <a  href="http://www.mnogosearch.org/">MnoGoSearch</a></td>
+          <td class='phpcopyright' width='10%' align='center'>2007-2010 &copy <a  href="mailto:webmaster@php.ru">PHP.RU</a></td>
+          <td class='phpcopyright' width='45%' align='right' >Powered by <a target="_blank" href="http://odware.ru">ODware</a> <a HREF="http://440hz.ru">440Hz</a> &nbsp;&nbsp;</td>
+        </tr>
+      </table>
+
+    <div style="text-align: right; padding: 5px">
+		<!--LiveInternet counter-->
+		<script type="text/javascript">document.write('<a href="http://www.liveinternet.ru/click" target=_blank><img src="http://counter.yadro.ru/hit?t53.6;r' + escape(document.referrer) + ((typeof(screen)=='undefined')?'':';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ';u' + escape(document.URL) +';i' + escape('Жж'+document.title.substring(0,80)) + ';' + Math.random() + '" border=0 width=88 height=31 alt="" title="LiveInternet: показано число просмотров и посетителей за 24 часа"><\/a>');
+		</script>
+		<!--/LiveInternet-->
+		<!-- SpyLOG -->
+		<script src="http://tools.spylog.ru/counter2.2.js" type="text/javascript" id="spylog_code" counter="830950" ></script>
+		<noscript><a href="http://u8309.50.spylog.com/cnt?cid=830950&f=3&p=0" target="_blank"><img src="http://u8309.50.spylog.com/cnt?cid=830950&p=0&f=4" alt='SpyLOG' border='0' width=88 height=31 ></a>
+		</noscript>
+		<!--/ SpyLOG -->
+	</div>
+</td>
+  </tr>
+</table>
+
+<script>
+<!--
+document.SEARCH.QS.focus();
+// --></script>
+
+<!-- 
+	как же вы все это читаете?
+	440hz 
+-->
+
+</body>
+</html>

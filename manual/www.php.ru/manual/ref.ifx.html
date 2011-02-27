@@ -1,0 +1,1440 @@
+<!-- 
+
+     HTML dropped by Zend Guard Compressor 4.2
+
+     php.ru team: mz, az, yuri, vb, cyxapuk, 440hz, administrator
+     2004-2007 (c) expi-web.com 
+     2007-2008 (c) odware.com 
+     0101-1010 (с) 440hz
+
+     2b|~2b=?
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EHOT тут всё пожрал ! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="alternate" type="application/rss+xml" title="php.ru/forum - последние сообщения" href="http://www.php.ru/forum/rss.php">
+<link rel="SHORTCUT ICON" href="http://www.php.ru/favicon.ico" />
+<META name="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<meta http-equiv="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<META name="keywords" content="php, php5, apache, mysql, session">
+<meta http-equiv="keywords" content="php, php5, apache, mysql, session">
+<title>php.ru - Informix Functions</title>
+<LINK REL="stylesheet" TYPE="text/css" HREF="http://www.php.ru/index.css">
+<script language="JavaScript" src="http://www.php.ru/ajax/ajax.js"></script>
+</head>
+<body>
+
+<table height='100%' width='100%' cellspacing='0' cellpadding='0'>
+  <tr height='99%' valign='top'>
+    <td align='center'>
+		
+		<table style='margin-top: 4px' width=100% cellspacing=0 cellpadding=3>
+   		<tr>
+     		<td>PHP - <a href="http://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BA%D1%80%D0%BE%D0%BD%D0%B8%D0%BC" target=_blank class=lnk>рекурсивный акроним</a> словосочетания &laquo;<a href="/manual/introduction.html" class=lnk>PHP: Hypertext Preprocessor</a>&raquo;</td>
+     	</tr>
+   		</table>
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/subsys_ajax.js"></script>
+		<!--
+
+		commet by 440hz
+		20.10.2007
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/pu_search.js"></script>
+
+		-->
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/cz.js?a=b"></script>
+
+		<table style='margin-top: 5px' width=100% bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0>
+   	 	<form name=SEARCH method=GET action="http://www.php.ru/search/?SID=n34dkl13kqp3jbtd" onsubmit="return puSubmit();">
+	  	<input type=hidden name=PAGE value=1>
+  		<tr>
+    		<td width='1' valign='middle'> 
+    		   <a href='/'><img src="http://www.php.ru/;-)/logo.gif" width=133 height=93 alt="php" border=0 hspace=10 vspace=0></a>
+			 </td>
+		    <td width='100%' valign='middle'>
+		       <!--
+			   
+				commet by 440hz
+				20.10.2007
+
+			   <div id='pu_search' class='pu_search'></div>
+		       <div id='pu_search_description' class='pu_search_decription'></div>
+			   
+			   -->
+        	 <input type=text style='width:99%; margin: 10px' maxlength='200' name='QS' class='in' id='query' autocomplete='off' value="" />
+    		</td>
+		  </tr>
+   		<tr bgcolor='#666699' valign='middle'>
+			<td style='border-top: 1px solid #333366;'><br /></td>
+    		<td style='border-top: 1px solid #333366;'><div style="padding: 4px 4px 4px 10px; height: 24px; color: #CCCCFF;" id="stat">Хто там?<script>doLoadCZ('stat','stat');</script></div></td>
+  		</tr>
+		</form>
+		</table>
+		<table id="menu" cellspaciong=0 cellpadding=3>
+<tr>
+<td><a href="/" class=current>Главная</a></td>
+<td><a href="/download/" class=current>Скачать</a></td>
+<td><a href="/doc/" class=current>Документация</a></td>
+<td><a href="/forum/" class=current>Форум</a></td>
+<td width=100% align=right><a href="/phpinfo.html" class=current>phpinfo()</a></td>
+</tr>
+</table>
+
+		
+<!--  AdRiver code START. Type:728x90 Site: php.ru PZ: 0 BN: 1 -->
+<script language="javascript" type="text/javascript"><!--
+var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+var ar_Tail='unknown'; if (document.referrer) ar_Tail = escape(document.referrer);
+document.write(
+'<iframe src="http://ad.adriver.ru/cgi-bin/erle.cgi?'
++ 'sid=148680&bn=1&target=blank&bt=36&pz=0&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail
++ '" frameborder=0 vspace=0 hspace=0 width=728 height=90 marginwidth=0'
++ ' marginheight=0 scrolling=no></iframe>');
+//--></script>
+<noscript>
+<a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" target=_blank>
+<img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" alt="-AdRiver-" border=0 width=728 height=90></a>
+</noscript>
+<!--  AdRiver code END  -->
+
+
+  		<table width='100%' cellspacing='0' cellpadding='0'>
+    		<tr valign='top'>
+      		<td width=100%><div style="margin: 10px 10px 10px 50px;"><center><div style="width: 800px; text-align: left"><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Руководство по PHP</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="function.imap-utf8.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="function.ifx-affected-rows.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="reference"
+><A
+NAME="ref.ifx"
+></A
+><DIV
+CLASS="TITLEPAGE"
+><H1
+CLASS="title"
+>LXIV. Informix Functions</H1
+><DIV
+CLASS="PARTINTRO"
+><A
+NAME="AEN72318"
+></A
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="ifx.intro"
+>Введение</A
+></H1
+><P
+>&#13;     The Informix driver for Informix (IDS) 7.x, SE 7.x, Universal
+     Server (IUS) 9.x and IDS 2000 is implemented in "ifx.ec" and
+     "php3_ifx.h" in the informix extension directory.  IDS 7.x support
+     is fairly complete, with full support for BYTE and TEXT
+     columns. IUS 9.x support is partly finished: the new data types
+     are there, but SLOB and CLOB support is still under construction.
+    </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="ifx.requirements"
+>Требования</A
+></H1
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+>Configuration notes: </B
+>
+       You need a version of ESQL/C to compile the PHP Informix driver.
+       ESQL/C versions from 7.2x on should be OK. ESQL/C is now part of
+       the Informix Client SDK.
+      </P
+><P
+>&#13;       Make sure that the "INFORMIXDIR" variable has been set, and that
+       $INFORMIXDIR/bin is in your PATH before you run the "configure"
+       script.
+      </P
+></BLOCKQUOTE
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="ifx.installation"
+>Установка</A
+></H1
+><P
+>&#13;  To be able to use the functions defined in this module you must compile
+  your PHP interpreter using the configure line
+  <VAR
+CLASS="option"
+>--with-informix[=DIR]</VAR
+>, where DIR is the
+  Informix base install directory, defaults to nothing.
+ </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="ifx.configuration"
+>Настройка во время выполнения</A
+></H1
+><P
+>&#13;Поведение этих функций зависит от установок в <TT
+CLASS="filename"
+>php.ini</TT
+>.
+</P
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+>Замечание: </B
+>
+   Make sure that the Informix environment variables INFORMIXDIR and
+   INFORMIXSERVER are available to the PHP ifx driver, and that the
+   INFORMIX bin directory is in the PATH. Check this by running a
+   script that contains a call to <A
+HREF="function.phpinfo.html"
+><B
+CLASS="function"
+>phpinfo()</B
+></A
+>
+   before you start testing. The <A
+HREF="function.phpinfo.html"
+><B
+CLASS="function"
+>phpinfo()</B
+></A
+>
+   output should list these environment variables. This is true for
+   both CGI php and Apache mod_php. You may have to set these
+   environment variables in your Apache startup script.
+  </P
+><P
+>&#13;   The Informix shared libraries should also be available to the
+   loader (check LD_LIBRARY_PATH or ld.so.conf/ldconfig).
+  </P
+></BLOCKQUOTE
+></DIV
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+>Some notes on the use of BLOBs (TEXT and BYTE columns): </B
+>
+   BLOBs are normally addressed by BLOB identifiers.  Select queries
+   return a "blob id" for every BYTE and TEXT column.  You can get
+   at the contents with "string_var = ifx_get_blob($blob_id);" if
+   you choose to get the BLOBs in memory (with:
+   "ifx_blobinfile(0);").  If you prefer to receive the content of
+   BLOB columns in a file, use "ifx_blobinfile(1);", and
+   "ifx_get_blob($blob_id);" will get you the filename.  Use normal
+   file I/O to get at the blob contents.
+  </P
+><P
+>&#13;   For insert/update queries you must create these "blob id's"
+   yourself with "<A
+HREF="function.ifx-create-blob.html"
+><B
+CLASS="function"
+>ifx_create_blob()</B
+></A
+>;". You then
+   plug the blob id's into an array, and replace the blob columns
+   with a question mark (?) in the query string.  For
+   updates/inserts, you are responsible for setting the blob
+   contents with <A
+HREF="function.ifx-update-blob.html"
+><B
+CLASS="function"
+>ifx_update_blob()</B
+></A
+>.
+  </P
+><P
+>&#13;   The behaviour of BLOB columns can be altered by configuration
+   variables that also can be set at runtime:
+  </P
+><P
+>&#13;   configuration variable: ifx.textasvarchar
+  </P
+><P
+>&#13;   configuration variable: ifx.byteasvarchar
+  </P
+><P
+>&#13;   runtime functions:
+  </P
+><P
+>&#13;   ifx_textasvarchar(0): use blob id's for select queries with TEXT
+   columns
+  </P
+><P
+>&#13;   ifx_byteasvarchar(0): use blob id's for select queries with BYTE
+   columns
+  </P
+><P
+>&#13;   ifx_textasvarchar(1): return TEXT columns as if they were
+   VARCHAR columns, so that you don't need to use blob id's for
+   select queries.
+  </P
+><P
+>&#13;   ifx_byteasvarchar(1): return BYTE columns as if they were
+   VARCHAR columns, so that you don't need to use blob id's for
+   select queries.
+  </P
+><P
+>&#13;   configuration variable: ifx.blobinfile
+  </P
+><P
+>&#13;   runtime function:
+  </P
+><P
+>&#13;   ifx_blobinfile_mode(0): return BYTE columns in memory, the blob
+   id lets you get at the contents.
+  </P
+><P
+>&#13;   ifx_blobinfile_mode(1): return BYTE columns in a file, the blob
+   id lets you get at the file name.
+  </P
+><P
+>&#13;   If you set ifx_text/byteasvarchar to 1, you can use TEXT and BYTE
+   columns in select queries just like normal (but rather long)
+   VARCHAR fields.  Since all strings are "counted" in PHP, this
+   remains "binary safe".  It is up to you to handle this
+   correctly. The returned data can contain anything, you are
+   responsible for the contents.
+  </P
+><P
+>&#13;   If you set ifx_blobinfile to 1, use the file name returned by
+   ifx_get_blob(..) to get at the blob contents.  Note that in this
+   case YOU ARE RESPONSIBLE FOR DELETING THE TEMPORARY FILES CREATED
+   BY INFORMIX when fetching the row.  Every new row fetched will
+   create new temporary files for every BYTE column.
+  </P
+><P
+>&#13;   The location of the temporary files can be influenced by the
+   environment variable "blobdir", default is "." (the current
+   directory).  Something like: putenv(blobdir=tmpblob"); will ease
+   the cleaning up of temp files accidentally left behind (their
+   names all start with "blb").
+  </P
+></BLOCKQUOTE
+></DIV
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+>Automatically trimming "char" (SQLCHAR and SQLNCHAR) data: </B
+>
+   This can be set with the configuration variable
+  </P
+><P
+>&#13;   ifx.charasvarchar: if set to 1 trailing spaces will be
+   automatically trimmed, to save you some "chopping".
+  </P
+></BLOCKQUOTE
+></DIV
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+><TT
+CLASS="constant"
+><B
+>NULL</B
+></TT
+> values: </B
+>
+   The configuration variable ifx.nullformat (and the runtime
+   function <A
+HREF="function.ifx-nullformat.html"
+><B
+CLASS="function"
+>ifx_nullformat()</B
+></A
+>) when set to <TT
+CLASS="constant"
+><B
+>TRUE</B
+></TT
+>
+   will return <TT
+CLASS="constant"
+><B
+>NULL</B
+></TT
+> columns as the string "<TT
+CLASS="constant"
+><B
+>NULL</B
+></TT
+>", when set to <TT
+CLASS="constant"
+><B
+>FALSE</B
+></TT
+>
+   they return the empty string. This allows you to discriminate
+   between <TT
+CLASS="constant"
+><B
+>NULL</B
+></TT
+> columns and empty columns.
+  </P
+></BLOCKQUOTE
+></DIV
+><P
+>&#13; <DIV
+CLASS="table"
+><A
+NAME="AEN72377"
+></A
+><P
+><B
+>Таблица 1. Informix configuration options</B
+></P
+><TABLE
+BORDER="1"
+CLASS="CALSTABLE"
+><COL><COL><COL><COL><THEAD
+><TR
+><TH
+>Name</TH
+><TH
+>Default</TH
+><TH
+>Changeable</TH
+><TH
+>Changelog</TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+>ifx.allow_persistent</TD
+><TD
+>"1"</TD
+><TD
+>PHP_INI_SYSTEM</TD
+><TD
+>&nbsp;</TD
+></TR
+><TR
+><TD
+>ifx.max_persistent</TD
+><TD
+>"-1"</TD
+><TD
+>PHP_INI_SYSTEM</TD
+><TD
+>&nbsp;</TD
+></TR
+><TR
+><TD
+>ifx.max_links</TD
+><TD
+>"-1"</TD
+><TD
+>PHP_INI_SYSTEM</TD
+><TD
+>&nbsp;</TD
+></TR
+><TR
+><TD
+>ifx.default_host</TD
+><TD
+>NULL</TD
+><TD
+>PHP_INI_SYSTEM</TD
+><TD
+>&nbsp;</TD
+></TR
+><TR
+><TD
+>ifx.default_user</TD
+><TD
+>NULL</TD
+><TD
+>PHP_INI_SYSTEM</TD
+><TD
+>&nbsp;</TD
+></TR
+><TR
+><TD
+>ifx.default_password</TD
+><TD
+>NULL</TD
+><TD
+>PHP_INI_SYSTEM</TD
+><TD
+>&nbsp;</TD
+></TR
+><TR
+><TD
+>ifx.blobinfile</TD
+><TD
+>"1"</TD
+><TD
+>PHP_INI_ALL</TD
+><TD
+>&nbsp;</TD
+></TR
+><TR
+><TD
+>ifx.textasvarchar</TD
+><TD
+>"0"</TD
+><TD
+>PHP_INI_ALL</TD
+><TD
+>&nbsp;</TD
+></TR
+><TR
+><TD
+>ifx.byteasvarchar</TD
+><TD
+>"0"</TD
+><TD
+>PHP_INI_ALL</TD
+><TD
+>&nbsp;</TD
+></TR
+><TR
+><TD
+>ifx.charasvarchar</TD
+><TD
+>"0"</TD
+><TD
+>PHP_INI_ALL</TD
+><TD
+>&nbsp;</TD
+></TR
+><TR
+><TD
+>ifx.nullformat</TD
+><TD
+>"0"</TD
+><TD
+>PHP_INI_ALL</TD
+><TD
+>&nbsp;</TD
+></TR
+></TBODY
+></TABLE
+></DIV
+>
+ Для подробного описания констант
+PHP_INI_*, обратитесь к документации функции <A
+HREF="function.ini-set.html"
+><B
+CLASS="function"
+>ini_set()</B
+></A
+>.
+ </P
+><P
+>Краткое разъяснение конфигурационных
+директив.</P
+><P
+>&#13; <P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+><A
+NAME="ini.ifx.allow-persistent"
+></A
+><VAR
+CLASS="parameter"
+>ifx.allow_persistent</VAR
+>
+    <A
+HREF="language.types.boolean.html"
+><B
+CLASS="type"
+>boolean</B
+></A
+></DT
+><DD
+><P
+>&#13;     Whether to allow persistent Informix connections.
+    </P
+></DD
+><DT
+><A
+NAME="ini.ifx.max-persistent"
+></A
+><VAR
+CLASS="parameter"
+>ifx.max_persistent</VAR
+>
+    <A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+></DT
+><DD
+><P
+>&#13;     The maximum number of persistent Informix connections per
+     process.
+    </P
+></DD
+><DT
+><A
+NAME="ini.ifx.max-links"
+></A
+><VAR
+CLASS="parameter"
+>ifx.max_links</VAR
+>
+    <A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+></DT
+><DD
+><P
+>&#13;     The maximum number of Informix connections per process, including
+     persistent connections.
+    </P
+></DD
+><DT
+><A
+NAME="ini.ifx.default-host"
+></A
+><VAR
+CLASS="parameter"
+>ifx.default_host</VAR
+>
+    <A
+HREF="language.types.string.html"
+><B
+CLASS="type"
+>string</B
+></A
+></DT
+><DD
+><P
+>&#13;     The default host to connect to when no host is specified
+     in <A
+HREF="function.ifx-connect.html"
+><B
+CLASS="function"
+>ifx_connect()</B
+></A
+> or 
+     <A
+HREF="function.ifx-pconnect.html"
+><B
+CLASS="function"
+>ifx_pconnect()</B
+></A
+>. Doesn't apply in
+     <A
+HREF="features.safe-mode.html#ini.safe-mode"
+>безопасный режим</A
+>.
+    </P
+></DD
+><DT
+><A
+NAME="ini.ifx.default-user"
+></A
+><VAR
+CLASS="parameter"
+>ifx.default_user</VAR
+>
+    <A
+HREF="language.types.string.html"
+><B
+CLASS="type"
+>string</B
+></A
+></DT
+><DD
+><P
+>&#13;     The default user id to use when none is specified 
+     in <A
+HREF="function.ifx-connect.html"
+><B
+CLASS="function"
+>ifx_connect()</B
+></A
+> or 
+     <A
+HREF="function.ifx-pconnect.html"
+><B
+CLASS="function"
+>ifx_pconnect()</B
+></A
+>. Doesn't apply in
+     <A
+HREF="features.safe-mode.html#ini.safe-mode"
+>безопасный режим</A
+>.
+    </P
+></DD
+><DT
+><A
+NAME="ini.ifx.default-password"
+></A
+><VAR
+CLASS="parameter"
+>ifx.default_password</VAR
+>
+    <A
+HREF="language.types.string.html"
+><B
+CLASS="type"
+>string</B
+></A
+></DT
+><DD
+><P
+>&#13;     The default password to use when none is specified 
+     in <A
+HREF="function.ifx-connect.html"
+><B
+CLASS="function"
+>ifx_connect()</B
+></A
+> or 
+     <A
+HREF="function.ifx-pconnect.html"
+><B
+CLASS="function"
+>ifx_pconnect()</B
+></A
+>. Doesn't apply in
+     <A
+HREF="features.safe-mode.html#ini.safe-mode"
+>безопасный режим</A
+>.
+    </P
+></DD
+><DT
+><A
+NAME="ini.ifx.blobinfile"
+></A
+><VAR
+CLASS="parameter"
+>ifx.blobinfile</VAR
+>
+    <A
+HREF="language.types.boolean.html"
+><B
+CLASS="type"
+>boolean</B
+></A
+></DT
+><DD
+><P
+>&#13;     Set to <TT
+CLASS="constant"
+><B
+>TRUE</B
+></TT
+> if you want to return blob columns
+     in a file, <TT
+CLASS="constant"
+><B
+>FALSE</B
+></TT
+> if you want them in memory. You can
+     override the setting at runtime 
+     with <A
+HREF="function.ifx-blobinfile-mode.html"
+><B
+CLASS="function"
+>ifx_blobinfile_mode()</B
+></A
+>.
+    </P
+></DD
+><DT
+><A
+NAME="ini.ifx.textasvarchar"
+></A
+><VAR
+CLASS="parameter"
+>ifx.textasvarchar</VAR
+>
+    <A
+HREF="language.types.boolean.html"
+><B
+CLASS="type"
+>boolean</B
+></A
+></DT
+><DD
+><P
+>&#13;     Set to <TT
+CLASS="constant"
+><B
+>TRUE</B
+></TT
+> if you want to return TEXT columns
+     as normal strings in select statements,
+     <TT
+CLASS="constant"
+><B
+>FALSE</B
+></TT
+> if you want to use blob id parameters. You can
+     override the setting at runtime with 
+    <A
+HREF="function.ifx-textasvarchar.html"
+><B
+CLASS="function"
+>ifx_textasvarchar()</B
+></A
+>.
+    </P
+></DD
+><DT
+><A
+NAME="ini.ifx.byteasvarchar"
+></A
+><VAR
+CLASS="parameter"
+>ifx.byteasvarchar</VAR
+>
+    <A
+HREF="language.types.boolean.html"
+><B
+CLASS="type"
+>boolean</B
+></A
+></DT
+><DD
+><P
+>&#13;     Set to <TT
+CLASS="constant"
+><B
+>TRUE</B
+></TT
+> if you want to return BYTE columns
+     as normal strings in select queries, 
+     <TT
+CLASS="constant"
+><B
+>FALSE</B
+></TT
+> if you want to use blob id parameters. You can
+     override the setting at runtime with 
+     <A
+HREF="function.ifx-textasvarchar.html"
+><B
+CLASS="function"
+>ifx_textasvarchar()</B
+></A
+>.
+    </P
+></DD
+><DT
+><A
+NAME="ini.ifx.charasvarchar"
+></A
+><VAR
+CLASS="parameter"
+>ifx.charasvarchar</VAR
+>
+    <A
+HREF="language.types.boolean.html"
+><B
+CLASS="type"
+>boolean</B
+></A
+></DT
+><DD
+><P
+>&#13;     Set to <TT
+CLASS="constant"
+><B
+>TRUE</B
+></TT
+> if you want to trim trailing spaces
+     from CHAR columns when fetching them.
+    </P
+></DD
+><DT
+><A
+NAME="ini.ifx.nullformat"
+></A
+><VAR
+CLASS="parameter"
+>ifx.nullformat</VAR
+>
+    <A
+HREF="language.types.boolean.html"
+><B
+CLASS="type"
+>boolean</B
+></A
+></DT
+><DD
+><P
+>&#13;     Set to <TT
+CLASS="constant"
+><B
+>TRUE</B
+></TT
+> if you want to return <TT
+CLASS="constant"
+><B
+>NULL</B
+></TT
+> columns
+     as the literal string "<TT
+CLASS="constant"
+><B
+>NULL</B
+></TT
+>", <TT
+CLASS="constant"
+><B
+>FALSE</B
+></TT
+> if you want
+     them returned as the empty string "". You can
+     override this setting at runtime with 
+     <A
+HREF="function.ifx-nullformat.html"
+><B
+CLASS="function"
+>ifx_nullformat()</B
+></A
+>.
+    </P
+></DD
+></DL
+></DIV
+>
+ </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="ifx.resources"
+>Типы ресурсов</A
+></H1
+><P
+>&#13;    </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="ifx.constants"
+>Предопределенные константы</A
+></H1
+><P
+>Данное расширение не определяет никакие константы.</P
+></DIV
+></DIV
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Содержание</B
+></DT
+><DT
+><A
+HREF="function.ifx-affected-rows.html"
+>ifx_affected_rows</A
+>&nbsp;--&nbsp;Get number of rows affected by a query</DT
+><DT
+><A
+HREF="function.ifx-blobinfile-mode.html"
+>ifx_blobinfile_mode</A
+>&nbsp;--&nbsp;Set the default blob mode for all select queries</DT
+><DT
+><A
+HREF="function.ifx-byteasvarchar.html"
+>ifx_byteasvarchar</A
+>&nbsp;--&nbsp;Set the default byte mode</DT
+><DT
+><A
+HREF="function.ifx-close.html"
+>ifx_close</A
+>&nbsp;--&nbsp;Close Informix connection</DT
+><DT
+><A
+HREF="function.ifx-connect.html"
+>ifx_connect</A
+>&nbsp;--&nbsp;Open Informix server connection</DT
+><DT
+><A
+HREF="function.ifx-copy-blob.html"
+>ifx_copy_blob</A
+>&nbsp;--&nbsp;Duplicates the given blob object</DT
+><DT
+><A
+HREF="function.ifx-create-blob.html"
+>ifx_create_blob</A
+>&nbsp;--&nbsp;Creates an blob object</DT
+><DT
+><A
+HREF="function.ifx-create-char.html"
+>ifx_create_char</A
+>&nbsp;--&nbsp;Creates an char object</DT
+><DT
+><A
+HREF="function.ifx-do.html"
+>ifx_do</A
+>&nbsp;--&nbsp;
+     Execute a previously prepared SQL-statement
+    </DT
+><DT
+><A
+HREF="function.ifx-error.html"
+>ifx_error</A
+>&nbsp;--&nbsp;Returns error code of last Informix call</DT
+><DT
+><A
+HREF="function.ifx-errormsg.html"
+>ifx_errormsg</A
+>&nbsp;--&nbsp;Returns error message of last Informix call</DT
+><DT
+><A
+HREF="function.ifx-fetch-row.html"
+>ifx_fetch_row</A
+>&nbsp;--&nbsp;Get row as enumerated array</DT
+><DT
+><A
+HREF="function.ifx-fieldproperties.html"
+>ifx_fieldproperties</A
+>&nbsp;--&nbsp;List of SQL fieldproperties</DT
+><DT
+><A
+HREF="function.ifx-fieldtypes.html"
+>ifx_fieldtypes</A
+>&nbsp;--&nbsp;List of Informix SQL fields</DT
+><DT
+><A
+HREF="function.ifx-free-blob.html"
+>ifx_free_blob</A
+>&nbsp;--&nbsp;Deletes the blob object</DT
+><DT
+><A
+HREF="function.ifx-free-char.html"
+>ifx_free_char</A
+>&nbsp;--&nbsp;Deletes the char object</DT
+><DT
+><A
+HREF="function.ifx-free-result.html"
+>ifx_free_result</A
+>&nbsp;--&nbsp;Releases resources for the query</DT
+><DT
+><A
+HREF="function.ifx-get-blob.html"
+>ifx_get_blob</A
+>&nbsp;--&nbsp;Return the content of a blob object</DT
+><DT
+><A
+HREF="function.ifx-get-char.html"
+>ifx_get_char</A
+>&nbsp;--&nbsp;Return the content of the char object</DT
+><DT
+><A
+HREF="function.ifx-getsqlca.html"
+>ifx_getsqlca</A
+>&nbsp;--&nbsp;
+     Get the contents of sqlca.sqlerrd[0..5] after a query
+    </DT
+><DT
+><A
+HREF="function.ifx-htmltbl-result.html"
+>ifx_htmltbl_result</A
+>&nbsp;--&nbsp;
+     Formats all rows of a query into a HTML table
+    </DT
+><DT
+><A
+HREF="function.ifx-nullformat.html"
+>ifx_nullformat</A
+>&nbsp;--&nbsp;
+     Sets the default return value on a fetch row
+    </DT
+><DT
+><A
+HREF="function.ifx-num-fields.html"
+>ifx_num_fields</A
+>&nbsp;--&nbsp;Returns the number of columns in the query</DT
+><DT
+><A
+HREF="function.ifx-num-rows.html"
+>ifx_num_rows</A
+>&nbsp;--&nbsp;Count the rows already fetched from a query</DT
+><DT
+><A
+HREF="function.ifx-pconnect.html"
+>ifx_pconnect</A
+>&nbsp;--&nbsp;Open persistent Informix connection</DT
+><DT
+><A
+HREF="function.ifx-prepare.html"
+>ifx_prepare</A
+>&nbsp;--&nbsp;Prepare an SQL-statement for execution</DT
+><DT
+><A
+HREF="function.ifx-query.html"
+>ifx_query</A
+>&nbsp;--&nbsp;Send Informix query</DT
+><DT
+><A
+HREF="function.ifx-textasvarchar.html"
+>ifx_textasvarchar</A
+>&nbsp;--&nbsp;Set the default text mode</DT
+><DT
+><A
+HREF="function.ifx-update-blob.html"
+>ifx_update_blob</A
+>&nbsp;--&nbsp;Updates the content of the blob object</DT
+><DT
+><A
+HREF="function.ifx-update-char.html"
+>ifx_update_char</A
+>&nbsp;--&nbsp;Updates the content of the char object</DT
+><DT
+><A
+HREF="function.ifxus-close-slob.html"
+>ifxus_close_slob</A
+>&nbsp;--&nbsp;Deletes the slob object</DT
+><DT
+><A
+HREF="function.ifxus-create-slob.html"
+>ifxus_create_slob</A
+>&nbsp;--&nbsp;Creates an slob object and opens it</DT
+><DT
+><A
+HREF="function.ifxus-free-slob.html"
+>ifxus_free_slob</A
+>&nbsp;--&nbsp;Deletes the slob object</DT
+><DT
+><A
+HREF="function.ifxus-open-slob.html"
+>ifxus_open_slob</A
+>&nbsp;--&nbsp;Opens an slob object</DT
+><DT
+><A
+HREF="function.ifxus-read-slob.html"
+>ifxus_read_slob</A
+>&nbsp;--&nbsp;Reads nbytes of the slob object</DT
+><DT
+><A
+HREF="function.ifxus-seek-slob.html"
+>ifxus_seek_slob</A
+>&nbsp;--&nbsp;Sets the current file or seek position</DT
+><DT
+><A
+HREF="function.ifxus-tell-slob.html"
+>ifxus_tell_slob</A
+>&nbsp;--&nbsp;Returns the current file or seek position</DT
+><DT
+><A
+HREF="function.ifxus-write-slob.html"
+>ifxus_write_slob</A
+>&nbsp;--&nbsp;Writes a string into the slob object</DT
+></DL
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="function.imap-utf8.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Начало</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="function.ifx-affected-rows.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>imap_utf8</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="funcref.html"
+ACCESSKEY="U"
+>Уровень выше</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>ifx_affected_rows</TD
+></TR
+></TABLE
+></DIV
+></div></center></div></td>
+			<td><div style="display:none; width:200px;" id="o3" name="o3"><script charset="windows-1251" type="text/javascript" src="http://www.ozon.ru/PartnerTwinerNew.aspx?revident=bea9126b-c8e1-4bf5-b6d8-9a057f8feac6" ></script></div><script>o = document.getElementById('o3'); if(o) { var s = o.innerHTML; s = s.replace(/F6F6F6/gi,"FFFFFF"); o.innerHTML = s.replace(/padding-top: 10px; padding-bottom: 10px;/,"display:none;"); o.style.display = 'block'; } </script><br><div style="margin: 10px;"><script type="text/javascript"><!--
+google_ad_client = "pub-4093271809023514";
+/* 120x600, создано 01.11.2008 */
+google_ad_slot = "0438855731";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div></td>
+    		</tr>
+  		</table>
+    </td>
+  </tr>
+  <tr valign='bottom' height='1%'>
+  <td>      <table width=100% cellspacing=0 cellpadding=5 border=0 bgcolor=#9999CC>
+        <tr valign=center>
+          <td class='phpcopyright' width='45%' align='left'>&nbsp;&nbsp;Engine <a  href="http://www.mnogosearch.org/">MnoGoSearch</a></td>
+          <td class='phpcopyright' width='10%' align='center'>2007-2010 &copy <a  href="mailto:webmaster@php.ru">PHP.RU</a></td>
+          <td class='phpcopyright' width='45%' align='right' >Powered by <a target="_blank" href="http://odware.ru">ODware</a> <a HREF="http://440hz.ru">440Hz</a> &nbsp;&nbsp;</td>
+        </tr>
+      </table>
+
+    <div style="text-align: right; padding: 5px">
+		<!--LiveInternet counter-->
+		<script type="text/javascript">document.write('<a href="http://www.liveinternet.ru/click" target=_blank><img src="http://counter.yadro.ru/hit?t53.6;r' + escape(document.referrer) + ((typeof(screen)=='undefined')?'':';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ';u' + escape(document.URL) +';i' + escape('Жж'+document.title.substring(0,80)) + ';' + Math.random() + '" border=0 width=88 height=31 alt="" title="LiveInternet: показано число просмотров и посетителей за 24 часа"><\/a>');
+		</script>
+		<!--/LiveInternet-->
+		<!-- SpyLOG -->
+		<script src="http://tools.spylog.ru/counter2.2.js" type="text/javascript" id="spylog_code" counter="830950" ></script>
+		<noscript><a href="http://u8309.50.spylog.com/cnt?cid=830950&f=3&p=0" target="_blank"><img src="http://u8309.50.spylog.com/cnt?cid=830950&p=0&f=4" alt='SpyLOG' border='0' width=88 height=31 ></a>
+		</noscript>
+		<!--/ SpyLOG -->
+	</div>
+</td>
+  </tr>
+</table>
+
+<script>
+<!--
+document.SEARCH.QS.focus();
+// --></script>
+
+<!-- 
+	как же вы все это читаете?
+	440hz 
+-->
+
+</body>
+</html>

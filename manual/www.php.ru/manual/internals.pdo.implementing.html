@@ -1,0 +1,2480 @@
+<!-- 
+
+     HTML dropped by Zend Guard Compressor 4.2
+
+     php.ru team: mz, az, yuri, vb, cyxapuk, 440hz, administrator
+     2004-2007 (c) expi-web.com 
+     2007-2008 (c) odware.com 
+     0101-1010 (с) 440hz
+
+     2b|~2b=?
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EHOT тут всё пожрал ! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="alternate" type="application/rss+xml" title="php.ru/forum - последние сообщения" href="http://www.php.ru/forum/rss.php">
+<link rel="SHORTCUT ICON" href="http://www.php.ru/favicon.ico" />
+<META name="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<meta http-equiv="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<META name="keywords" content="php, php5, apache, mysql, session">
+<meta http-equiv="keywords" content="php, php5, apache, mysql, session">
+<title>php.ru - Fleshing out your skeleton</title>
+<LINK REL="stylesheet" TYPE="text/css" HREF="http://www.php.ru/index.css">
+<script language="JavaScript" src="http://www.php.ru/ajax/ajax.js"></script>
+</head>
+<body>
+
+<table height='100%' width='100%' cellspacing='0' cellpadding='0'>
+  <tr height='99%' valign='top'>
+    <td align='center'>
+		
+		<table style='margin-top: 4px' width=100% cellspacing=0 cellpadding=3>
+   		<tr>
+     		<td>PHP - <a href="http://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BA%D1%80%D0%BE%D0%BD%D0%B8%D0%BC" target=_blank class=lnk>рекурсивный акроним</a> словосочетания &laquo;<a href="/manual/introduction.html" class=lnk>PHP: Hypertext Preprocessor</a>&raquo;</td>
+     	</tr>
+   		</table>
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/subsys_ajax.js"></script>
+		<!--
+
+		commet by 440hz
+		20.10.2007
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/pu_search.js"></script>
+
+		-->
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/cz.js?a=b"></script>
+
+		<table style='margin-top: 5px' width=100% bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0>
+   	 	<form name=SEARCH method=GET action="http://www.php.ru/search/?SID=o4h22c2xt5a35jl8" onsubmit="return puSubmit();">
+	  	<input type=hidden name=PAGE value=1>
+  		<tr>
+    		<td width='1' valign='middle'> 
+    		   <a href='/'><img src="http://www.php.ru/;-)/logo.gif" width=133 height=93 alt="php" border=0 hspace=10 vspace=0></a>
+			 </td>
+		    <td width='100%' valign='middle'>
+		       <!--
+			   
+				commet by 440hz
+				20.10.2007
+
+			   <div id='pu_search' class='pu_search'></div>
+		       <div id='pu_search_description' class='pu_search_decription'></div>
+			   
+			   -->
+        	 <input type=text style='width:99%; margin: 10px' maxlength='200' name='QS' class='in' id='query' autocomplete='off' value="" />
+    		</td>
+		  </tr>
+   		<tr bgcolor='#666699' valign='middle'>
+			<td style='border-top: 1px solid #333366;'><br /></td>
+    		<td style='border-top: 1px solid #333366;'><div style="padding: 4px 4px 4px 10px; height: 24px; color: #CCCCFF;" id="stat">Хто там?<script>doLoadCZ('stat','stat');</script></div></td>
+  		</tr>
+		</form>
+		</table>
+		<table id="menu" cellspaciong=0 cellpadding=3>
+<tr>
+<td><a href="/" class=current>Главная</a></td>
+<td><a href="/download/" class=current>Скачать</a></td>
+<td><a href="/doc/" class=current>Документация</a></td>
+<td><a href="/forum/" class=current>Форум</a></td>
+<td width=100% align=right><a href="/phpinfo.html" class=current>phpinfo()</a></td>
+</tr>
+</table>
+
+		
+<!--  AdRiver code START. Type:728x90 Site: php.ru PZ: 0 BN: 1 -->
+<script language="javascript" type="text/javascript"><!--
+var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+var ar_Tail='unknown'; if (document.referrer) ar_Tail = escape(document.referrer);
+document.write(
+'<iframe src="http://ad.adriver.ru/cgi-bin/erle.cgi?'
++ 'sid=148680&bn=1&target=blank&bt=36&pz=0&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail
++ '" frameborder=0 vspace=0 hspace=0 width=728 height=90 marginwidth=0'
++ ' marginheight=0 scrolling=no></iframe>');
+//--></script>
+<noscript>
+<a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" target=_blank>
+<img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" alt="-AdRiver-" border=0 width=728 height=90></a>
+</noscript>
+<!--  AdRiver code END  -->
+
+
+  		<table width='100%' cellspacing='0' cellpadding='0'>
+    		<tr valign='top'>
+      		<td width=100%><div style="margin: 10px 10px 10px 50px;"><center><div style="width: 800px; text-align: left"><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Руководство по PHP</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="internals.pdo.preparation.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Глава 45. PDO Driver How-To</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="internals.pdo.building.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="sect1"
+><H1
+CLASS="sect1"
+><A
+NAME="internals.pdo.implementing"
+>Fleshing out your skeleton</A
+></H1
+><DIV
+CLASS="sect2"
+><H2
+CLASS="sect2"
+><A
+NAME="AEN205622"
+>Major Structures and Attributes</A
+></H2
+><P
+>&#13;   The major structures, pdo_dbh_t and pdo_stmt_t are defined and explained in
+   Appendix A and B respectively. Database and Statement attributes are
+   defined in Appendix C. Error handling is explained in Appendix D.
+  </P
+></DIV
+><DIV
+CLASS="sect2"
+><H2
+CLASS="sect2"
+><A
+NAME="AEN205625"
+>pdo_SKEL.c: PHP extension glue</A
+></H2
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="AEN205627"
+>function entries</A
+></H3
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="synopsis"
+>static function_entry pdo_SKEL_functions[] = {
+  { NULL, NULL, NULL }
+};</PRE
+></TD
+></TR
+></TABLE
+><P
+>&#13;    This structure is used to register functions into the global php function
+    namespace.  PDO drivers should try to avoid doing this, so it is
+    recommended that you leave this structure initialized to NULL, as shown in
+    the synopsis above.
+   </P
+></DIV
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="AEN205631"
+>Module entry</A
+></H3
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="synopsis"
+>/* {{{ pdo_SKEL_module_entry */
+#if ZEND_EXTENSION_API_NO &#62;= 220050617
+static zend_module_dep pdo_SKEL_deps[] = {
+    ZEND_MOD_REQUIRED("pdo")
+    {NULL, NULL, NULL}
+};
+#endif
+/* }}} */
+
+zend_module_entry pdo_SKEL_module_entry = {
+#if ZEND_EXTENSION_API_NO &#62;= 220050617
+    STANDARD_MODULE_HEADER_EX, NULL,
+    pdo_SKEL_deps,
+#else
+    STANDARD_MODULE_HEADER,
+#endif
+    "pdo_SKEL",
+    pdo_SKEL_functions,
+    PHP_MINIT(pdo_SKEL),
+    PHP_MSHUTDOWN(pdo_SKEL),
+    NULL,
+    NULL,
+    PHP_MINFO(pdo_SKEL),
+    PHP_PDO_&#60;DB&#62;_MODULE_VERSION,
+    STANDARD_MODULE_PROPERTIES
+};
+/* }}} */
+
+#ifdef COMPILE_DL_PDO_&#60;DB&#62;
+ZEND_GET_MODULE(pdo_db)
+#endif</PRE
+></TD
+></TR
+></TABLE
+><P
+>&#13;    A structure of type zend_module_entry called
+    pdo_SKEL_module_entry must be declared and should include reference to
+    the pdo_SKEL_functions table defined previously.
+   </P
+></DIV
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="AEN205635"
+>Standard PHP Module Extension Functions</A
+></H3
+><DIV
+CLASS="sect4"
+><H4
+CLASS="sect4"
+><A
+NAME="AEN205637"
+>PHP_MINIT_FUNCTION</A
+></H4
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="synopsis"
+>/* {{{ PHP_MINIT_FUNCTION */
+PHP_MINIT_FUNCTION(pdo_SKEL)
+{
+    return php_pdo_register_driver(&#38;pdo_SKEL_driver);
+}
+/* }}} */</PRE
+></TD
+></TR
+></TABLE
+><P
+>&#13;     This standard PHP extension function should be used to register your
+     driver with the PDO layer. This is done by calling the
+     <B
+CLASS="function"
+>php_pdo_register_driver()</B
+> function passing a pointer to
+     a structure of type pdo_driver_t typically named
+     <VAR
+CLASS="literal"
+>pdo_SKEL_driver</VAR
+>.  A pdo_driver_t
+     contains a header that is generated using the
+     <VAR
+CLASS="literal"
+>PDO_DRIVER_HEADER(SKEL)</VAR
+> macro and
+     <B
+CLASS="function"
+>pdo_SKEL_handle_factory()</B
+> function pointer. The
+     actual function is described during the discussion of the
+     <TT
+CLASS="filename"
+>SKEL_dbh.c</TT
+> unit.
+    </P
+></DIV
+><DIV
+CLASS="sect4"
+><H4
+CLASS="sect4"
+><A
+NAME="AEN205648"
+>PHP_MSHUTDOWN_FUNCTION</A
+></H4
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="synopsis"
+>/* {{{ PHP_MSHUTDOWN_FUNCTION */
+PHP_MSHUTDOWN_FUNCTION(pdo_SKEL)
+{
+    php_pdo_unregister_driver(&#38;pdo_SKEL_driver);
+    return SUCCESS;
+}
+/* }}} */</PRE
+></TD
+></TR
+></TABLE
+><P
+>&#13;     This standard PHP extension function is used to unregister your driver
+     from the PDO layer. This is done by calling the
+     <B
+CLASS="function"
+>php_pdo_unregister_driver()</B
+> function, passing the same
+     <VAR
+CLASS="literal"
+>pdo_SKEL_driver</VAR
+> structure that was passed in the
+     init function above.
+    </P
+></DIV
+><DIV
+CLASS="sect4"
+><H4
+CLASS="sect4"
+><A
+NAME="AEN205654"
+>PHP_MINFO_FUNCTION</A
+></H4
+><P
+>&#13;     This is again a standard PHP extension function. Its purpose is to
+     display information regarding the module when the
+     <A
+HREF="function.phpinfo.html"
+><B
+CLASS="function"
+>phpinfo()</B
+></A
+> is called from a script.  The convention is
+     to display the version
+     of the module and also what version of the db you are dependent on, along
+     with any other configuration style information that might be relevant.
+    </P
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="sect2"
+><H2
+CLASS="sect2"
+><A
+NAME="AEN205658"
+>SKEL_driver.c: Driver implementation</A
+></H2
+><P
+>&#13;   This unit implements all of the database handling methods that support the
+   PDO database handle object. It also contains the error fetching routines.
+   All of these functions will typically need to access the global variable
+   pool. Therefore, it is necessary to use the Zend macro TSRMLS_DC macro at
+   the end of each of these statements. Consult the Zend programmer
+   documentation for more information on this macro.
+  </P
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="AEN205661"
+>pdo_SKEL_error</A
+></H3
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="synopsis"
+>static int pdo_SKEL_error(pdo_dbh_t *dbh,
+  pdo_stmt_t *stmt, const char *file, int line TSRMLS_DC)</PRE
+></TD
+></TR
+></TABLE
+><P
+>&#13;    The purpose of this function is to be used as a generic error handling
+    function within the driver. It is called by the driver when an error occurs
+    within the driver. If an error occurs that is not related to SQLSTATE, the
+    driver should set either <VAR
+CLASS="literal"
+>dbh-&#62;error_code</VAR
+> or
+    <VAR
+CLASS="literal"
+>stmt-&#62;error_code</VAR
+> to an
+    SQLSTATE that most closely matches the error or the generic SQLSTATE error
+    <SPAN
+CLASS="QUOTE"
+>"HY000"</SPAN
+>. The file pdo_sqlstate.c in the PDO source contains a table
+    of commonly used SQLSTATE codes that the PDO code explicitly recognizes.
+    This setting of the error code should be done prior to calling this
+    function.; This function should set the global
+    <VAR
+CLASS="parameter"
+>pdo_err</VAR
+> variable to the error found in either the
+    dbh or the stmt (if the variable stmt is not NULL).
+   </P
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+>dbh</DT
+><DD
+><P
+>Pointer to the database handle initialized by the handle factory</P
+></DD
+><DT
+>stmt</DT
+><DD
+><P
+>Pointer to the current statement or NULL. If NULL, the error is derived by error code found in the dbh.</P
+></DD
+><DT
+>file</DT
+><DD
+><P
+>The source file where the error occurred or NULL if not available.</P
+></DD
+><DT
+>line</DT
+><DD
+><P
+>The line number within the source file if available.</P
+></DD
+></DL
+></DIV
+><P
+>&#13;    If the dbh member methods is NULL (which implies that the error is being
+    raised from within the PDO constructor), this function should call the
+    zend_throw_exception_ex() function otherwise it should return the error
+    code.  This function is usually called using a helper macro that customizes
+    the calling sequence for either database handling errors or statement
+    handling errors.
+   </P
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN205687"
+></A
+><P
+><B
+>Пример 45-1. Example macros for invoking pdo_SKEL_error</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="c"
+>#define pdo_SKEL_drv_error(what) \
+    pdo_SKEL_error(dbh, NULL, what, __FILE__, __LINE__ TSRMLS_CC)
+#define pdo_SKEL_drv_error(what) \
+    pdo_SKEL_error(dbh, NULL, what, __FILE__, __LINE__ TSRMLS_CC)</PRE
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+><P
+>&#13;    For more info on error handling, see <A
+HREF="internals.pdo.error-handling.html"
+>Разд. <I
+>Error handling</I
+></A
+>.
+   </P
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+>Замечание: </B
+>
+     Despite being documented here, the PDO driver interface does not specify
+     that his function be present; it is merely a convenient way to handle
+     errors, and it just happens to be equally convenient for the majority of
+     database client library APIs to structure your driver implementation in
+     this way.
+    </P
+></BLOCKQUOTE
+></DIV
+></DIV
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="AEN205694"
+>pdo_SKEL_fetch_error_func</A
+></H3
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="synopsis"
+>static int pdo_SKEL_fetch_error_func(pdo_dbh_t *dbh, pdo_stmt_t *stmt,
+    zval *info TSRMLS_DC)</PRE
+></TD
+></TR
+></TABLE
+><P
+>&#13;    The purpose of this function is to obtain additional information about the
+    last error that was triggered.  This includes the driver specific error
+    code and a human readable string.  It may also include additional
+    information if appropriate.  This function is called as a result of the PHP
+    script calling the <B
+CLASS="function"
+>PDO::errorInfo()</B
+> method.
+   </P
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+>dbh</DT
+><DD
+><P
+>Pointer to the database handle initialized by the handle factory</P
+></DD
+><DT
+>stmt</DT
+><DD
+><P
+>&#13;       Pointer to the most current statement or NULL. If NULL, the error
+       translated is derived by error code found in the dbh.
+      </P
+></DD
+><DT
+>info</DT
+><DD
+><P
+>A hash table containing error codes and messages.</P
+></DD
+></DL
+></DIV
+><P
+>&#13;    The error_func should return two pieces of information as successive array
+    elements. The first item is expected to be a numeric error code, the second
+    item is a descriptive string. The best way to set this item is by using
+    add_next_index.  Note that the type of the first argument need not be
+    long; use whichever type most closely matches the error code
+    returned by the underlying database API.
+   </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="c"
+>/* now add the error information. */
+/* These need to be added in a specific order */
+add_next_index_long(info, error_code);   /* driver specific error code */
+add_next_index_string(info, message, 0); /* readable error message */</PRE
+></TD
+></TR
+></TABLE
+><P
+>&#13;    This function should return 1 if information is available, 0 if the driver
+    does not have additional info.
+   </P
+></DIV
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="AEN205716"
+>SKEL_handle_closer</A
+></H3
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="synopsis"
+>static int SKEL_handle_closer(pdo_dbh_t *dbh TSRMLS_DC)</PRE
+></TD
+></TR
+></TABLE
+><P
+>&#13;    This function will be called by PDO to close an open
+    database.
+   </P
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+>dbh</DT
+><DD
+><P
+>Pointer to the database handle initialized by the handle factory</P
+></DD
+></DL
+></DIV
+><P
+>&#13;    This should do whatever database specific activity that needs to be
+    accomplished to close the open database. PDO ignores the return
+    value from this function.
+   </P
+></DIV
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="internals.pdo.preparer"
+>SKEL_handle_preparer</A
+></H3
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="synopsis"
+>static int SKEL_handle_preparer(pdo_dbh_t *dbh, const char *sql,
+long sql_len, pdo_stmt_t *stmt, zval *driver_options TSRMLS_DC)</PRE
+></TD
+></TR
+></TABLE
+><P
+>&#13;    This function will be called by PDO in response to
+    <B
+CLASS="function"
+>PDO::query()</B
+> and <B
+CLASS="function"
+>PDO::prepare()</B
+>
+    calls from the PHP script.  The purpose of the function is to prepare
+    raw SQL for execution, storing whatever state is appropriate into the
+    <VAR
+CLASS="parameter"
+>stmt</VAR
+> that is passed in.
+   </P
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+>dbh</DT
+><DD
+><P
+>Pointer to the database handle initialized by the handle factory</P
+></DD
+><DT
+>sql</DT
+><DD
+><P
+>Pointer to a character string containing the SQL statement to be prepared.</P
+></DD
+><DT
+>sql_len</DT
+><DD
+><P
+>The length of the SQL statement.</P
+></DD
+><DT
+>Stmt</DT
+><DD
+><P
+>Pointer to the returned statement or NULL if an error occurs.</P
+></DD
+><DT
+>driver_options</DT
+><DD
+><P
+>Any driver specific/defined options.</P
+></DD
+></DL
+></DIV
+><P
+>&#13;    This function is essentially the constructor for a stmt object. This
+    function is responsible for processing statement options, and setting
+    driver-specific option fields in the pdo_stmt_t structure.
+   </P
+><P
+>&#13;    PDO does not process any statement options on the driver's
+    behalf before calling the preparer function.  It is your responsibility to
+    process them before you return, raising an error for any unknown options that
+    are passed.
+   </P
+><P
+>&#13;    One very important responsibility of this function is the processing of SQL
+    statement parameters. At the time of this call, PDO does not if your driver
+    supports binding parameters into prepared statements, nor does it know if
+    it supports named or positional parameter naming conventions.
+   </P
+><P
+>&#13;    Your driver is responsible for setting
+    <VAR
+CLASS="literal"
+>stmt-&#62;supports_placeholders</VAR
+> as appropriate for the
+    underlying database.  This may involved some run-time determination on the
+    part of your driver, if this setting depends on the version of the database
+    server to which it is connected.  If your driver doesn't directly support
+    both named and positional parameter conventions, you should use the
+    <B
+CLASS="function"
+>pdo_parse_params()</B
+> API to have PDO rewrite the query to
+    take advantage of the support provided by your database.
+   </P
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN205760"
+></A
+><P
+><B
+>Пример 45-2. Using pdo_parse_params</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="c"
+>int ret;
+    char *nsql = NULL;
+    int nsql_len = 0;
+
+    /* before we prepare, we need to peek at the query; if it uses named parameters,
+     * we want PDO to rewrite them for us */
+    stmt-&#62;supports_placeholders = PDO_PLACEHOLDER_POSITIONAL;
+    ret = pdo_parse_params(stmt, (char*)sql, sql_len, &#38;nsql, &#38;nsql_len TSRMLS_CC);
+
+    if (ret == 1) {
+        /* query was re-written */
+        sql = nsql;
+    } else if (ret == -1) {
+        /* couldn't grok it */
+        strcpy(dbh-&#62;error_code, stmt-&#62;error_code);
+        return 0;
+    }
+
+    /* now proceed to prepare the query in "sql" */</PRE
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+><P
+>&#13;    Possible values for <VAR
+CLASS="literal"
+>supports_placeholders</VAR
+> are:
+    <TT
+CLASS="constant"
+><B
+>PDO_PLACEHOLDER_NAMED</B
+></TT
+>,
+    <TT
+CLASS="constant"
+><B
+>PDO_PLACEHOLDER_POSITIONAL</B
+></TT
+> and
+    <TT
+CLASS="constant"
+><B
+>PDO_PLACEHOLDER_NONE</B
+></TT
+>.  If the driver doesn't support prepare statements at all, then this function should simply allocate any state that it might need, and then return:
+   </P
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN205768"
+></A
+><P
+><B
+>Пример 45-3. implementing preparer for drivers that don't support native prepared statements</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="c"
+>static int SKEL_handle_preparer(pdo_dbh_t *dbh, const char *sql,
+    long sql_len, pdo_stmt_t *stmt, zval *driver_options TSRMLS_DC)
+{
+    pdo_SKEL_db_handle *H = (pdo_SKEL_db_handle *)dbh-&#62;driver_data;
+    pdo_SKEL_stmt *S = ecalloc(1, sizeof(pdo_SKEL_stmt));
+
+    S-&#62;H = H;
+    stmt-&#62;driver_data = S;
+    stmt-&#62;methods = &#38;SKEL_stmt_methods;
+    stmt-&#62;supports_placeholders = PDO_PLACEHOLDER_NONE;
+
+    return 1;
+}</PRE
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+><P
+>This function returns 1 on success or 0 on failure.</P
+></DIV
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="AEN205772"
+>SKEL_handle_doer</A
+></H3
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="synopsis"
+>static long SKEL_handle_doer(pdo_dbh_t *dbh, const char *sql, long sql_len TSRMLS_DC)</PRE
+></TD
+></TR
+></TABLE
+><P
+>&#13;    This function will be called by PDO to execute a raw SQL
+    statement. No pdo_stmt_t is created.
+   </P
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+>dbh</DT
+><DD
+><P
+>Pointer to the database handle initialized by the handle factory</P
+></DD
+><DT
+>sql</DT
+><DD
+><P
+>Pointer to a character string containing the SQL statement to be prepared.</P
+></DD
+><DT
+>sql_len</DT
+><DD
+><P
+>The length of the SQL statement.</P
+></DD
+></DL
+></DIV
+><P
+>&#13;    This function returns 1 on success or 0 on failure.
+   </P
+></DIV
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="AEN205790"
+>SKEL_handle_quoter</A
+></H3
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="synopsis"
+>static int SKEL_handle_quoter(pdo_dbh_t *dbh, const char *unquoted,
+  int unquoted_len, char **quoted, int quoted_len, enum pdo_param_type param_type TSRMLS_DC)</PRE
+></TD
+></TR
+></TABLE
+><P
+>&#13;    This function will be called by PDO to turn an unquoted
+    string into a quoted string for use in a query.
+   </P
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+>dbh</DT
+><DD
+><P
+>Pointer to the database handle initialized by the handle factory</P
+></DD
+><DT
+>unquoted</DT
+><DD
+><P
+>Pointer to a character string containing the string to be quoted.</P
+></DD
+><DT
+>unquoted_len</DT
+><DD
+><P
+>The length of the string to be quoted.</P
+></DD
+><DT
+>quoted</DT
+><DD
+><P
+>Pointer to the address where a pointer to the newly quoted string will be returned.</P
+></DD
+><DT
+>quoted_len</DT
+><DD
+><P
+>The length of the new string.</P
+></DD
+><DT
+>param_type</DT
+><DD
+><P
+>A driver specific hint for driver that have alternate quoting styles</P
+></DD
+></DL
+></DIV
+><P
+>&#13;    This function is called in response to a call to
+    <B
+CLASS="function"
+>PDO::quote()</B
+> or when the driver has set
+    <VAR
+CLASS="literal"
+>supports_placeholder</VAR
+> to
+    <TT
+CLASS="constant"
+><B
+>PDO_PLACEHOLDER_NONE</B
+></TT
+>. The purpose is to quote a
+    parameter when building SQL statements.
+   </P
+><P
+>&#13;    If your driver does not support native prepared statements, implementation
+    of this function is required.
+   </P
+><P
+>&#13;    This function returns 1 if the quoting process reformatted the string, and
+    0 if it was not necessary to change the string. The original string will be
+    used unchanged with a 0 return.
+   </P
+></DIV
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="AEN205825"
+>SKEL_handle_begin</A
+></H3
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="synopsis"
+>static int SKEL_handle_begin(pdo_dbh_t *dbh TSRMLS_DC)</PRE
+></TD
+></TR
+></TABLE
+><P
+>&#13;    This function will be called by PDO to begin a database transaction.
+   </P
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+>dbh</DT
+><DD
+><P
+>Pointer to the database handle initialized by the handle factory</P
+></DD
+></DL
+></DIV
+><P
+>&#13;    This should do whatever database specific activity that needs to be
+    accomplished to begin a transaction. This function returns 1 for success or
+    0 if an error occurred.
+   </P
+></DIV
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="AEN205835"
+>SKEL_handle_commit</A
+></H3
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="synopsis"
+>static int SKEL_handle_commit(pdo_dbh_t *dbh TSRMLS_DC)</PRE
+></TD
+></TR
+></TABLE
+><P
+>&#13;    This function will be called by PDO to end a database
+    transaction.
+   </P
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+>dbh</DT
+><DD
+><P
+>Pointer to the database handle initialized by the handle factory</P
+></DD
+></DL
+></DIV
+><P
+>&#13;    This should do whatever database specific activity that needs to be
+    accomplished to commit a transaction. This function returns 1 for success or 0 if an error occurred.
+   </P
+></DIV
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="AEN205845"
+>SKEL_handle_rollback</A
+></H3
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="synopsis"
+>static int SKEL_handle_rollback( pdo_dbh_t *dbh TSRMLS_DC)</PRE
+></TD
+></TR
+></TABLE
+><P
+>This function will be called by PDO to rollback a database transaction.</P
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+>dbh</DT
+><DD
+><P
+>Pointer to the database handle initialized by the handle factory</P
+></DD
+></DL
+></DIV
+><P
+>&#13;    This should do whatever database specific activity that needs to be
+    accomplished to rollback a transaction. This function returns 1 for
+    success or 0 if an error occurred.
+   </P
+></DIV
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="AEN205855"
+>SKEL_handle_get_attribute</A
+></H3
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="synopsis"
+>static int SKEL_handle_get_attribute(pdo_dbh_t *dbh, long attr, zval *return_value TSRMLS_DC)</PRE
+></TD
+></TR
+></TABLE
+><P
+>This function will be called by PDO to retrieve a database attribute.</P
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+>dbh</DT
+><DD
+><P
+>Pointer to the database handle initialized by the handle factory</P
+></DD
+><DT
+>attr</DT
+><DD
+><P
+>&#13;       long value of one of the PDO_ATTR_xxxx types.  See <A
+HREF="internals.pdo.constants.html#internals.pdo.table.attributes"
+>Табл. 45-1</A
+> for valid attributes.
+      </P
+></DD
+><DT
+>return_value</DT
+><DD
+><P
+>The returned value for the attribute.</P
+></DD
+></DL
+></DIV
+><P
+>&#13;    It is up to the driver to decide which attributes will be supported for a
+    particular implementation. It is not necessary for a driver to supply this
+    function. PDO driver handles the PDO_ATTR_PERSISTENT, PDO_ATTR_CASE,
+    PDO_ATTR_ORACLE_NULLS, and PDO_ATTR_ERRMODE attributes directly. 
+   </P
+><P
+>&#13;    This function returns 1 on success or 0 on failure.
+   </P
+></DIV
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="AEN205876"
+>SKEL_handle_set_attribute</A
+></H3
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="synopsis"
+>static int SKEL_handle_set_attribute(pdo_dbh_t *dbh, long attr, zval *val TSRMLS_DC)</PRE
+></TD
+></TR
+></TABLE
+><P
+>&#13;    This function will be called by PDO to set a database attribute, usually in
+    response to a script calling <B
+CLASS="function"
+>PDO::setAttribute()</B
+>.
+   </P
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+>dbh</DT
+><DD
+><P
+>Pointer to the database handle initialized by the handle factory</P
+></DD
+><DT
+>attr</DT
+><DD
+><P
+>&#13;       long value of one of the PDO_ATTR_xxxx types.  See <A
+HREF="internals.pdo.constants.html#internals.pdo.table.attributes"
+>Табл. 45-1</A
+> for valid attributes.
+      </P
+></DD
+><DT
+>val</DT
+><DD
+><P
+>The new value for the attribute.</P
+></DD
+></DL
+></DIV
+><P
+>&#13;    It is up to the driver to decide which attributes will be supported for a
+    particular implementation. It is not necessary for a driver to provide this
+    function if it does not need to support additional attributes. The PDO
+    driver handles the PDO_ATTR_CASE, PDO_ATTR_ORACLE_NULLS, and
+    PDO_ATTR_ERRMODE attributes directly. 
+   </P
+><P
+>&#13;    This function returns 1 on success or 0 on failure.
+   </P
+></DIV
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="AEN205898"
+>SKEL_handle_last_id</A
+></H3
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="synopsis"
+>static char * SKEL_handle_last_id(pdo_dbh_t *dbh, const char *name, unsigned int len TSRMLS_DC)</PRE
+></TD
+></TR
+></TABLE
+><P
+>&#13;    This function will be called by PDO to retrieve the ID of the last inserted
+    row.
+   </P
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+>dbh</DT
+><DD
+><P
+>Pointer to the database handle initialized by the handle factory</P
+></DD
+><DT
+>name</DT
+><DD
+><P
+>&#13;       string representing a table or sequence name.
+      </P
+></DD
+><DT
+>len</DT
+><DD
+><P
+>the length of the <VAR
+CLASS="parameter"
+>name</VAR
+> parameter.</P
+></DD
+></DL
+></DIV
+><P
+>&#13;    This function returns a character string containing the id of the last
+    inserted row on success or NULL on failure. This is an optional function. 
+   </P
+></DIV
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="AEN205917"
+>SKEL_check_liveness</A
+></H3
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="synopsis"
+>static int SKEL_check_liveness(pdo_dbh_t *dbh TSRMLS_DC)</PRE
+></TD
+></TR
+></TABLE
+><P
+>&#13;    This function will be called by PDO to test whether or not a persistent
+    connection to a database is alive and ready for use.
+   </P
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+>dbh</DT
+><DD
+><P
+>Pointer to the database handle initialized by the handle factory</P
+></DD
+></DL
+></DIV
+><P
+>&#13;    This function returns 1 if the database connection is alive and ready
+    for use, otherwise it should return 0 to indicate failure or lack
+    of support.
+   </P
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+>Замечание: </B
+>
+     This is an optional function.
+    </P
+></BLOCKQUOTE
+></DIV
+></DIV
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="AEN205929"
+>SKEL_get_driver_methods</A
+></H3
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="synopsis"
+>static function_entry *SKEL_get_driver_methods(pdo_dbh_t *dbh, int kind TSRMLS_DC)</PRE
+></TD
+></TR
+></TABLE
+><P
+>&#13;    This function will be called by PDO in response to a call to any method
+    that is not a part of either the <B
+CLASS="classname"
+>PDO</B
+> or
+    <B
+CLASS="classname"
+>PDOStatement</B
+> classes.  It's purpose is to allow the
+    driver to provide additional driver specific methods to those classes.
+   </P
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+>dbh</DT
+><DD
+><P
+>Pointer to the database handle initialized by the handle factory</P
+></DD
+><DT
+>kind</DT
+><DD
+><P
+>One of the following:</P
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+>PDO_DBH_DRIVER_METHOD_KIND_DBH</DT
+><DD
+><P
+>&#13;          Set when the method call was attempted on an instance of the
+          <B
+CLASS="classname"
+>PDO</B
+> class.  The driver should return a pointer
+          a function_entry table for any methods it wants to add to that class,
+          or NULL if there are none.
+         </P
+></DD
+><DT
+>PDO_DBH_DRIVER_METHOD_KIND_STMT</DT
+><DD
+><P
+>&#13;          Set when the method call was attempted on an instance of the
+          <B
+CLASS="classname"
+>PDOStatement</B
+> class.  The driver should return
+          a pointer to a function_entry table for any methods it wants to add
+          to that class, or NULL if there are none.
+         </P
+></DD
+></DL
+></DIV
+></DD
+></DL
+></DIV
+><P
+>&#13;    This function returns a pointer to the function_entry table requested,
+    or NULL there are no driver specific methods.
+   </P
+></DIV
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="AEN205956"
+>SKEL_handle_factory</A
+></H3
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="synopsis"
+>static int SKEL_handle_factory(pdo_dbh_t *dbh, zval *driver_options TSRMLS_DC)</PRE
+></TD
+></TR
+></TABLE
+><P
+>&#13;    This function will be called by PDO to create a database handle. For most
+    databases this involves establishing a connection to the database. In some
+    cases, a persistent connection may be requested, in other cases connection
+    pooling may be requested. All of these are database/driver dependent.
+   </P
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+>dbh</DT
+><DD
+><P
+>Pointer to the database handle initialized by the handle factory</P
+></DD
+><DT
+>driver_options</DT
+><DD
+><P
+>&#13;       An array of driver options, keyed by integer option number. See <A
+HREF="internals.pdo.constants.html#internals.pdo.table.attributes"
+>Табл. 45-1</A
+> for a list of possible attributes.
+      </P
+></DD
+></DL
+></DIV
+><P
+>&#13;    This function should fill in the passed database handle structure with its
+    driver specific information on success and return 1, otherwise it should
+    return 0 to indicate failure.
+   </P
+><P
+>&#13;    PDO processes the AUTOCOMMIT and PERSISTENT driver options
+    before calling the handle_factory. It is the handle factory's
+    responsibility to process other options.
+   </P
+></DIV
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="AEN205972"
+>Driver method table</A
+></H3
+><P
+>&#13;    A static structure of type pdo_dbh_methods named SKEL_methods must be
+    declared and initialized to the function pointers for each defined
+    function. If a function is not supported or not implemented the value for
+    that function pointer should be set to NULL.
+   </P
+></DIV
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="AEN205975"
+>pdo_SKEL_driver</A
+></H3
+><P
+>&#13;    A structure of type pdo_driver_t named pdo_SKEL_driver should be declared.
+    The PDO_DRIVER_HEADER(SKEL) macro should be used to declare the header and
+    the function pointer to the handle factory function should set.
+   </P
+></DIV
+></DIV
+><DIV
+CLASS="sect2"
+><H2
+CLASS="sect2"
+><A
+NAME="AEN205978"
+>SKEL_statement.c: Statement implementation</A
+></H2
+><P
+>&#13;   This unit implements all of the database statement handling methods that
+   support the PDO statement object.
+  </P
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="AEN205981"
+>SKEL_stmt_dtor</A
+></H3
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="synopsis"
+>static int SKEL_stmt_dtor(pdo_stmt_t *stmt TSRMLS_DC)</PRE
+></TD
+></TR
+></TABLE
+><P
+>&#13;    This function will be called by PDO to destroy a previously constructed statement object.
+   </P
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+>stmt</DT
+><DD
+><P
+>Pointer to the statement structure initialized by SKEL_handle_preparer.</P
+></DD
+></DL
+></DIV
+><P
+>&#13;    This should do whatever is necessary to free up any driver specific storage
+    allocated for the statement. The return value from this function is
+    ignored.
+   </P
+></DIV
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="AEN205991"
+>SKEL_stmt_execute</A
+></H3
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="synopsis"
+>static int SKEL_stmt_execute(pdo_stmt_t *stmt TSRMLS_DC)</PRE
+></TD
+></TR
+></TABLE
+><P
+>&#13;    This function will be called by PDO to execute the prepared SQL statement
+    in the passed statement object.
+   </P
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+>stmt</DT
+><DD
+><P
+>Pointer to the statement structure initialized by SKEL_handle_preparer.</P
+></DD
+></DL
+></DIV
+><P
+>&#13;    This function returns 1 for success or 0 in the event of failure.
+   </P
+></DIV
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="AEN206001"
+>SKEL_stmt_fetch</A
+></H3
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="synopsis"
+>static int SKEL_stmt_fetch(pdo_stmt_t *stmt, enum pdo_fetch_orientation ori,
+   long offset TSRMLS_DC)</PRE
+></TD
+></TR
+></TABLE
+><P
+>&#13;    This function will be called by PDO to fetch a row from a previously
+    executed statement object.
+   </P
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+>stmt</DT
+><DD
+><P
+>Pointer to the statement structure initialized by SKEL_handle_preparer.</P
+></DD
+><DT
+>ori</DT
+><DD
+><P
+>One of PDO_FETCH_ORI_xxx which will determine which row will be fetched.</P
+></DD
+><DT
+>offset</DT
+><DD
+><P
+>&#13;       If ori is set to PDO_FETCH_ORI_ABS or PDO_FETCH_ORI_REL, offset
+       represents the row desired or the row relative to the current position,
+       respectively. Otherwise, this value is ignored.
+      </P
+></DD
+></DL
+></DIV
+><P
+>&#13;    The results of this fetch are driver dependent and the data is usually
+    stored in the driver_data member of pdo_stmt_t object. The ori and offset
+    parameters are only meaningful if the statement represents a scrollable
+    cursor. This function returns 1 for success or 0 in the event of failure.
+   </P
+></DIV
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="AEN206019"
+>SKEL_stmt_param_hook</A
+></H3
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="synopsis"
+>static int SKEL_stmt_param_hook(pdo_stmt_t *stmt,
+  struct pdo_bound_param_data *param, enum pdo_param_event event_type TSRMLS_DC)</PRE
+></TD
+></TR
+></TABLE
+><P
+>&#13;    This function will be called by PDO for handling of both bound parameters and bound columns.
+   </P
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+>stmt</DT
+><DD
+><P
+>Pointer to the statement structure initialized by SKEL_handle_preparer.</P
+></DD
+><DT
+>param</DT
+><DD
+><P
+>&#13;       The structure describing either a statement parameter or a bound column.
+      </P
+></DD
+><DT
+>event_type</DT
+><DD
+><P
+>The type of event to occur for this parameter, one of the following:</P
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+>PDO_PARAM_EVT_ALLOC</DT
+><DD
+><P
+>Called when PDO allocates the binding.  Occurs as part of
+         <B
+CLASS="function"
+>PDOStatement::bindParam()</B
+>,
+         <B
+CLASS="function"
+>PDOStatement::bindValue()</B
+> or as part of an implicit bind
+         when calling <B
+CLASS="function"
+>PDOStatement::execute()</B
+>.  This is your
+         opportunity to take some action at this point; drivers that implement
+         native prepared statements will typically want to query the parameter
+         information, reconcile the type with that requested by the script,
+         allocate an appropriately sized buffer and then bind the parameter to
+         that buffer.  You should not rely on the type or value of the zval at
+         <VAR
+CLASS="literal"
+>param-&#62;parameter</VAR
+> at this point in time.
+         </P
+></DD
+><DT
+>PDO_PARAM_EVT_FREE</DT
+><DD
+><P
+>Called once per parameter as part of cleanup.  You should
+         release any resources associated with that parameter now.</P
+></DD
+><DT
+>PDO_PARAM_EXEC_PRE</DT
+><DD
+><P
+>Called once for each parameter immediately before calling
+         SKEL_stmt_execute; take this opportunity to make any final adjustments
+         ready for execution.  In particular, you should note that variables
+         bound via <B
+CLASS="function"
+>PDOStatement::bindParam()</B
+> are only legal
+         to touch now, and not any sooner.
+         </P
+></DD
+><DT
+>PDO_PARAM_EXEC_POST</DT
+><DD
+><P
+>Called once for each parameter immediately after calling
+         SKEL_stmt_execute; take this opportunity to make any post-execution
+         actions that might be required by your driver.</P
+></DD
+><DT
+>PDO_PARAM_FETCH_PRE</DT
+><DD
+><P
+>Called once for each parameter immediately prior to calling
+         SKEL_stmt_fetch.</P
+></DD
+><DT
+>PDO_PARAM_FETCH_POST</DT
+><DD
+><P
+>Called once for each parameter immediately after calling
+          SKEL_stmt_fetch.</P
+></DD
+></DL
+></DIV
+></DD
+></DL
+></DIV
+><P
+>&#13;    This hook will be called for each bound parameter and bound column in the
+    statement. For ALLOC and FREE events, a single call will be made for each
+    parameter or column. The param structure contains a driver_data field that
+    the driver can use to store implementation specific information about each
+    of the parameters.
+   </P
+><P
+>&#13;    For all other events, PDO may call you multiple times as the script issues
+    <B
+CLASS="function"
+>PDOStatement::execute()</B
+> and
+    <B
+CLASS="function"
+>PDOStatement::fetch()</B
+> calls.
+   </P
+><P
+>&#13;    If this is a bound parameter, the is_param flag in the param structure,
+    otherwise, the param structure refers to a bound column.
+   </P
+><P
+>&#13;    This function returns 1 for success or 0 in the event of failure.
+   </P
+></DIV
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="AEN206072"
+>SKEL_stmt_describe_col</A
+></H3
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="synopsis"
+>static int SKEL_stmt_describe_col(pdo_stmt_t *stmt, int colno TSRMLS_DC)</PRE
+></TD
+></TR
+></TABLE
+><P
+>&#13;    This function will be called by PDO to query information about a particular
+    column.
+   </P
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+>stmt</DT
+><DD
+><P
+>Pointer to the statement structure initialized by SKEL_handle_preparer.</P
+></DD
+><DT
+>colno</DT
+><DD
+><P
+>The column number to be queried.</P
+></DD
+></DL
+></DIV
+><P
+>&#13;    The driver should populate the pdo_stmt_t member columns(colno) with the
+    appropriate information. This function returns 1 for success or 0 in the
+    event of failure.
+   </P
+></DIV
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="AEN206086"
+>SKEL_stmt_get_col_data</A
+></H3
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="synopsis"
+>static int SKEL_stmt_get_col_data(pdo_stmt_t *stmt, int colno,
+  char **ptr, unsigned long *len, int *caller_frees TSRMLS_DC)</PRE
+></TD
+></TR
+></TABLE
+><P
+>&#13;    This function will be called by PDO to retrieve data from the specified column.
+   </P
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+>stmt</DT
+><DD
+><P
+>Pointer to the statement structure initialized by SKEL_handle_preparer.</P
+></DD
+><DT
+>colno</DT
+><DD
+><P
+>The column number to be queried.</P
+></DD
+><DT
+>ptr</DT
+><DD
+><P
+>Pointer to the retrieved data.</P
+></DD
+><DT
+>len</DT
+><DD
+><P
+>The length of the data pointed to by ptr.</P
+></DD
+><DT
+>caller_frees</DT
+><DD
+><P
+>If set, ptr should point to emalloc'd memory and the main PDO driver will free it as soon as it is done with it. Otherwise, it will be the responsibility of the driver to free any allocated memory as a result of this call.</P
+></DD
+></DL
+></DIV
+><P
+>&#13;    The driver should return the resultant data and length of that data in the
+    ptr and len variables respectively. It should be noted that the main PDO
+    driver expects the driver to manage the lifetime of the data. This function
+    returns 1 for success or 0 in the event of failure.
+   </P
+></DIV
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="AEN206112"
+>SKEL_stmt_set_attr</A
+></H3
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="synopsis"
+>static int SKEL_stmt_set_attr(pdo_stmt_t *stmt, long attr, zval *val TSRMLS_DC)</PRE
+></TD
+></TR
+></TABLE
+><P
+>&#13;   This function will be called by PDO to allow the setting of driver specific
+   attributes for a statement object.
+  </P
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+>stmt</DT
+><DD
+><P
+>Pointer to the statement structure initialized by SKEL_handle_preparer.</P
+></DD
+><DT
+>attr</DT
+><DD
+><P
+>&#13;      long value of one of the PDO_ATTR_xxxx types.  See <A
+HREF="internals.pdo.constants.html#internals.pdo.table.attributes"
+>Табл. 45-1</A
+> for valid attributes.
+     </P
+></DD
+><DT
+>val</DT
+><DD
+><P
+>The new value for the attribute.</P
+></DD
+></DL
+></DIV
+><P
+>&#13;   This function is driver dependent and allows the driver the capability to
+   set database specific attributes for a statement. This function returns 1
+   for success or 0 in the event of failure. This is an optional function. If
+   the driver does not support additional settable attributes, it can be
+   NULLed in the method table. The PDO driver does not handle any settable
+   attributes on the database driver's behalf.
+  </P
+></DIV
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="AEN206132"
+>SKEL_stmt_get_attr</A
+></H3
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="synopsis"
+>static int SKEL_stmt_get_attr(pdo_stmt_t *stmt, long attr, zval
+   *return_value TSRMLS_DC)</PRE
+></TD
+></TR
+></TABLE
+><P
+>&#13;    This function will be called by PDO to allow the retrieval of driver
+    specific attributes for a statement object.
+   </P
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+>stmt</DT
+><DD
+><P
+>Pointer to the statement structure initialized by SKEL_handle_preparer.</P
+></DD
+><DT
+>attr</DT
+><DD
+><P
+>&#13;       long value of one of the PDO_ATTR_xxxx types.  See <A
+HREF="internals.pdo.constants.html#internals.pdo.table.attributes"
+>Табл. 45-1</A
+> for valid attributes.
+      </P
+></DD
+><DT
+>return_value</DT
+><DD
+><P
+>The returned value for the attribute.</P
+></DD
+></DL
+></DIV
+><P
+>&#13;    This function is driver dependent and allows the driver the capability to
+    retrieve a previously set database specific attribute for a statement. This
+    function returns 1 for success or 0 in the event of failure. This is an
+    optional function. If the driver does not support additional gettable
+    attributes, it can be NULLed in the method table. The PDO driver does not
+    handle any settable attributes on the database driver's behalf.
+   </P
+></DIV
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="AEN206152"
+>SKEL_stmt_get_col_meta</A
+></H3
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="synopsis"
+>static int SKEL_stmt_get_col_meta(pdo_stmt_t *stmt, int colno,
+   zval *return_value TSRMLS_DC)</PRE
+></TD
+></TR
+></TABLE
+><DIV
+CLASS="warning"
+><P
+></P
+><TABLE
+CLASS="warning"
+BORDER="1"
+WIDTH="100%"
+><TR
+><TD
+ALIGN="CENTER"
+><B
+>Внимание</B
+></TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+><P
+>&#13;     This function is not well defined and is subject to change.
+    </P
+></TD
+></TR
+></TABLE
+></DIV
+><P
+>&#13;    This function will be called by PDO to retrieve meta-data from the
+    specified column.
+   </P
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+>stmt</DT
+><DD
+><P
+>Pointer to the statement structure initialized by SKEL_handle_preparer.</P
+></DD
+><DT
+>colno</DT
+><DD
+><P
+>The column number for which data is to be retrieved.</P
+></DD
+><DT
+>return_value</DT
+><DD
+><P
+>Holds the returned meta data.</P
+></DD
+></DL
+></DIV
+><P
+>&#13;    The driver author should consult the documentation for this function that can be
+    found in the php_pdo_driver.h header as this will be the most current. This
+    function returns 1 for success or 0 in the event of failure. The database
+    driver does not need to provide this function.
+   </P
+></DIV
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="AEN206172"
+>Statement handling method table</A
+></H3
+><P
+>&#13;    A static structure of type pdo_stmt_methods named SKEL_stmt_methods should
+    be declared and initialized to the function pointers for each defined
+    function. If a function is not supported or not implemented the value for
+    that function pointer should be set to NULL.
+   </P
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="internals.pdo.preparation.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Начало</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="internals.pdo.building.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Preparation and Housekeeping</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="internals.pdo.html"
+ACCESSKEY="U"
+>Уровень выше</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Building</TD
+></TR
+></TABLE
+></DIV
+></div></center></div></td>
+			<td><div style="display:none; width:200px;" id="o3" name="o3"><script charset="windows-1251" type="text/javascript" src="http://www.ozon.ru/PartnerTwinerNew.aspx?revident=bea9126b-c8e1-4bf5-b6d8-9a057f8feac6" ></script></div><script>o = document.getElementById('o3'); if(o) { var s = o.innerHTML; s = s.replace(/F6F6F6/gi,"FFFFFF"); o.innerHTML = s.replace(/padding-top: 10px; padding-bottom: 10px;/,"display:none;"); o.style.display = 'block'; } </script><br><div style="margin: 10px;"><script type="text/javascript"><!--
+google_ad_client = "pub-4093271809023514";
+/* 120x600, создано 01.11.2008 */
+google_ad_slot = "0438855731";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div></td>
+    		</tr>
+  		</table>
+    </td>
+  </tr>
+  <tr valign='bottom' height='1%'>
+  <td>      <table width=100% cellspacing=0 cellpadding=5 border=0 bgcolor=#9999CC>
+        <tr valign=center>
+          <td class='phpcopyright' width='45%' align='left'>&nbsp;&nbsp;Engine <a  href="http://www.mnogosearch.org/">MnoGoSearch</a></td>
+          <td class='phpcopyright' width='10%' align='center'>2007-2010 &copy <a  href="mailto:webmaster@php.ru">PHP.RU</a></td>
+          <td class='phpcopyright' width='45%' align='right' >Powered by <a target="_blank" href="http://odware.ru">ODware</a> <a HREF="http://440hz.ru">440Hz</a> &nbsp;&nbsp;</td>
+        </tr>
+      </table>
+
+    <div style="text-align: right; padding: 5px">
+		<!--LiveInternet counter-->
+		<script type="text/javascript">document.write('<a href="http://www.liveinternet.ru/click" target=_blank><img src="http://counter.yadro.ru/hit?t53.6;r' + escape(document.referrer) + ((typeof(screen)=='undefined')?'':';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ';u' + escape(document.URL) +';i' + escape('Жж'+document.title.substring(0,80)) + ';' + Math.random() + '" border=0 width=88 height=31 alt="" title="LiveInternet: показано число просмотров и посетителей за 24 часа"><\/a>');
+		</script>
+		<!--/LiveInternet-->
+		<!-- SpyLOG -->
+		<script src="http://tools.spylog.ru/counter2.2.js" type="text/javascript" id="spylog_code" counter="830950" ></script>
+		<noscript><a href="http://u8309.50.spylog.com/cnt?cid=830950&f=3&p=0" target="_blank"><img src="http://u8309.50.spylog.com/cnt?cid=830950&p=0&f=4" alt='SpyLOG' border='0' width=88 height=31 ></a>
+		</noscript>
+		<!--/ SpyLOG -->
+	</div>
+</td>
+  </tr>
+</table>
+
+<script>
+<!--
+document.SEARCH.QS.focus();
+// --></script>
+
+<!-- 
+	как же вы все это читаете?
+	440hz 
+-->
+
+</body>
+</html>

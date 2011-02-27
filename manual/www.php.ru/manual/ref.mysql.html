@@ -1,0 +1,1340 @@
+<!-- 
+
+     HTML dropped by Zend Guard Compressor 4.2
+
+     php.ru team: mz, az, yuri, vb, cyxapuk, 440hz, administrator
+     2004-2007 (c) expi-web.com 
+     2007-2008 (c) odware.com 
+     0101-1010 (с) 440hz
+
+     2b|~2b=?
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EHOT тут всё пожрал ! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="alternate" type="application/rss+xml" title="php.ru/forum - последние сообщения" href="http://www.php.ru/forum/rss.php">
+<link rel="SHORTCUT ICON" href="http://www.php.ru/favicon.ico" />
+<META name="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<meta http-equiv="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<META name="keywords" content="php, php5, apache, mysql, session">
+<meta http-equiv="keywords" content="php, php5, apache, mysql, session">
+<title>php.ru - Функции СУБД MySQL</title>
+<LINK REL="stylesheet" TYPE="text/css" HREF="http://www.php.ru/index.css">
+<script language="JavaScript" src="http://www.php.ru/ajax/ajax.js"></script>
+</head>
+<body>
+
+<table height='100%' width='100%' cellspacing='0' cellpadding='0'>
+  <tr height='99%' valign='top'>
+    <td align='center'>
+		
+		<table style='margin-top: 4px' width=100% cellspacing=0 cellpadding=3>
+   		<tr>
+     		<td>PHP - <a href="http://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BA%D1%80%D0%BE%D0%BD%D0%B8%D0%BC" target=_blank class=lnk>рекурсивный акроним</a> словосочетания &laquo;<a href="/manual/introduction.html" class=lnk>PHP: Hypertext Preprocessor</a>&raquo;</td>
+     	</tr>
+   		</table>
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/subsys_ajax.js"></script>
+		<!--
+
+		commet by 440hz
+		20.10.2007
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/pu_search.js"></script>
+
+		-->
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/cz.js?a=b"></script>
+
+		<table style='margin-top: 5px' width=100% bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0>
+   	 	<form name=SEARCH method=GET action="http://www.php.ru/search/?SID=kh7crfk7x5knoar2" onsubmit="return puSubmit();">
+	  	<input type=hidden name=PAGE value=1>
+  		<tr>
+    		<td width='1' valign='middle'> 
+    		   <a href='/'><img src="http://www.php.ru/;-)/logo.gif" width=133 height=93 alt="php" border=0 hspace=10 vspace=0></a>
+			 </td>
+		    <td width='100%' valign='middle'>
+		       <!--
+			   
+				commet by 440hz
+				20.10.2007
+
+			   <div id='pu_search' class='pu_search'></div>
+		       <div id='pu_search_description' class='pu_search_decription'></div>
+			   
+			   -->
+        	 <input type=text style='width:99%; margin: 10px' maxlength='200' name='QS' class='in' id='query' autocomplete='off' value="" />
+    		</td>
+		  </tr>
+   		<tr bgcolor='#666699' valign='middle'>
+			<td style='border-top: 1px solid #333366;'><br /></td>
+    		<td style='border-top: 1px solid #333366;'><div style="padding: 4px 4px 4px 10px; height: 24px; color: #CCCCFF;" id="stat">Хто там?<script>doLoadCZ('stat','stat');</script></div></td>
+  		</tr>
+		</form>
+		</table>
+		<table id="menu" cellspaciong=0 cellpadding=3>
+<tr>
+<td><a href="/" class=current>Главная</a></td>
+<td><a href="/download/" class=current>Скачать</a></td>
+<td><a href="/doc/" class=current>Документация</a></td>
+<td><a href="/forum/" class=current>Форум</a></td>
+<td width=100% align=right><a href="/phpinfo.html" class=current>phpinfo()</a></td>
+</tr>
+</table>
+
+		
+<!--  AdRiver code START. Type:728x90 Site: php.ru PZ: 0 BN: 1 -->
+<script language="javascript" type="text/javascript"><!--
+var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+var ar_Tail='unknown'; if (document.referrer) ar_Tail = escape(document.referrer);
+document.write(
+'<iframe src="http://ad.adriver.ru/cgi-bin/erle.cgi?'
++ 'sid=148680&bn=1&target=blank&bt=36&pz=0&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail
++ '" frameborder=0 vspace=0 hspace=0 width=728 height=90 marginwidth=0'
++ ' marginheight=0 scrolling=no></iframe>');
+//--></script>
+<noscript>
+<a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" target=_blank>
+<img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" alt="-AdRiver-" border=0 width=728 height=90></a>
+</noscript>
+<!--  AdRiver code END  -->
+
+
+  		<table width='100%' cellspacing='0' cellpadding='0'>
+    		<tr valign='top'>
+      		<td width=100%><div style="margin: 10px 10px 10px 50px;"><center><div style="width: 800px; text-align: left"><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Руководство по PHP</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="function.muscat-setup.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="function.mysql-affected-rows.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="reference"
+><A
+NAME="ref.mysql"
+></A
+><DIV
+CLASS="TITLEPAGE"
+><H1
+CLASS="title"
+>XCIV. Функции СУБД MySQL</H1
+><DIV
+CLASS="PARTINTRO"
+><A
+NAME="AEN100987"
+></A
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="mysql.intro"
+>Введение</A
+></H1
+><P
+>&#13;     Расширение позволяет вам работать с СУБД MySQL.
+     За информацией о MySQL обращайтесь к <A
+HREF="http://www.mysql.com/"
+TARGET="_top"
+>http://www.mysql.com/</A
+>.
+    </P
+><P
+>&#13;     Документация MySQL находится по адресу <A
+HREF="http://dev.mysql.com/doc/"
+TARGET="_top"
+>http://dev.mysql.com/doc/</A
+>.
+    </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="mysql.requirements"
+>Требования</A
+></H1
+><P
+>&#13;     Чтобы работать с функциями, вы должны скомпилировать PHP с поддержкой
+     MySQL.
+    </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="mysql.installation"
+>Установка</A
+></H1
+><P
+>&#13;  Используя директиву <VAR
+CLASS="option"
+>--with-mysql[=DIR]</VAR
+>
+  вы можете включить в <VAR
+CLASS="literal"
+>PHP</VAR
+> поддержку СУБД MySQL.
+ </P
+><P
+>&#13;  В PHP 4, директива <VAR
+CLASS="option"
+>--with-mysql</VAR
+>
+  включена по умолчанию. Чтобы отключить её, используйте директиву
+  конфигурации  <VAR
+CLASS="option"
+>--without-mysql</VAR
+>.  
+  Кроме того, в PHP 4, при включении директивы без указания пути к папке установки
+  MySQL, <VAR
+CLASS="literal"
+>PHP</VAR
+> будет использовать встроенную библиотеку
+  MySQL-клиента. В Windows специальные DLL отсутствуют, клиент всегда встроен
+  в PHP4.
+  При использовании приложений использующих MySQL (к примеру, auth-mysql) не
+  стоит использовать встроенную библиотеку -- укажите путь к папке установки
+  MySQL, что будет выглядеть примерно так: <VAR
+CLASS="option"
+>--with-mysql=/path/to/mysql</VAR
+>.
+  Это заставит <VAR
+CLASS="literal"
+>PHP</VAR
+> использовать библиотеку, установленную MySQL,
+  что позволит избежать любых конфликтов.
+ </P
+><P
+>&#13;  В PHP 5 поддержка MySQL больше не включена по умолчанию, кроме того в нём
+  отсутствует встроенная библиотека-клиент. Подробнее о причине можно
+  прочитать в <A
+HREF="faq.databases.html#faq.databases.mysql.php5"
+>&#13;  FAQ</A
+>.
+ </P
+><P
+>&#13;  Расширение работает с MySQL версий &#62;= 4.1.0, но не эксплуатирует
+  всю возможную функциональность этих версий.
+  Для этого используйте <A
+HREF="ref.mysqli.html"
+>MySQLi</A
+>.
+ </P
+><DIV
+CLASS="warning"
+><P
+></P
+><TABLE
+CLASS="warning"
+BORDER="1"
+WIDTH="100%"
+><TR
+><TD
+ALIGN="CENTER"
+><B
+>Внимание</B
+></TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+><P
+>&#13;   Сбои в работе <VAR
+CLASS="literal"
+>PHP</VAR
+> могут иметь место при загрузке
+   совместно этого расширения и расширения для работы с библиотекой GNU Recode.
+   За дополнительной информацией обращайтесь к разделу о расширении для <A
+HREF="ref.recode.html"
+>recode</A
+>.
+  </P
+></TD
+></TR
+></TABLE
+></DIV
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+>Замечание: </B
+>
+   Если вам требуется поддержка кодировок (отличных от <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>latin</I
+></SPAN
+>, установленной по умолчанию), 
+   вам придётся установить внешнюю библиотеку, скомпилированную с их
+   поддержкой.
+  </P
+></BLOCKQUOTE
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="mysql.configuration"
+>Настройка во время выполнения</A
+></H1
+><P
+>&#13;Поведение этих функций зависит от установок в <TT
+CLASS="filename"
+>php.ini</TT
+>.
+</P
+><P
+>&#13;  <DIV
+CLASS="table"
+><A
+NAME="AEN101024"
+></A
+><P
+><B
+>Таблица 1. Директивы конфигурации MySQL</B
+></P
+><TABLE
+BORDER="1"
+CLASS="CALSTABLE"
+><COL><COL><COL><THEAD
+><TR
+><TH
+>Имя</TH
+><TH
+>Значение по умолчанию</TH
+><TH
+>Область изменения</TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+>mysql.allow_persistent</TD
+><TD
+>"On"</TD
+><TD
+>PHP_INI_SYSTEM</TD
+></TR
+><TR
+><TD
+>mysql.max_persistent</TD
+><TD
+>"-1"</TD
+><TD
+>PHP_INI_SYSTEM</TD
+></TR
+><TR
+><TD
+>mysql.max_links</TD
+><TD
+>"-1"</TD
+><TD
+>PHP_INI_SYSTEM</TD
+></TR
+><TR
+><TD
+>mysql.default_port</TD
+><TD
+>NULL</TD
+><TD
+>PHP_INI_ALL</TD
+></TR
+><TR
+><TD
+>mysql.default_socket</TD
+><TD
+>NULL</TD
+><TD
+>PHP_INI_ALL</TD
+></TR
+><TR
+><TD
+>mysql.default_host</TD
+><TD
+>NULL</TD
+><TD
+>PHP_INI_ALL</TD
+></TR
+><TR
+><TD
+>mysql.default_user</TD
+><TD
+>NULL</TD
+><TD
+>PHP_INI_ALL</TD
+></TR
+><TR
+><TD
+>mysql.default_password</TD
+><TD
+>NULL</TD
+><TD
+>PHP_INI_ALL</TD
+></TR
+><TR
+><TD
+>mysql.connect_timeout</TD
+><TD
+>"0"</TD
+><TD
+>PHP_INI_SYSTEM</TD
+></TR
+></TBODY
+></TABLE
+></DIV
+>
+  За дальнейшей информацией и значениями PHP_INI_* констант обращайтесь к
+  <A
+HREF="function.ini-set.html"
+><B
+CLASS="function"
+>ini_set()</B
+></A
+>.
+</P
+><P
+>Краткое разъяснение конфигурационных
+директив.</P
+><P
+>&#13; <P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+><A
+NAME="ini.mysql.allow-persistent"
+></A
+><VAR
+CLASS="parameter"
+>mysql.allow_persistent</VAR
+>
+    логическое</DT
+><DD
+><P
+>&#13;     Позволять ли 
+     <A
+HREF="features.persistent-connections.html"
+>постоянные соединения</A
+>
+     с MySQL.
+    </P
+></DD
+><DT
+><A
+NAME="ini.mysql.max-persistent"
+></A
+><VAR
+CLASS="parameter"
+>mysql.max_persistent</VAR
+>
+    целое</DT
+><DD
+><P
+> 
+     Максимальное количество постоянных соединений на один процесс.
+    </P
+></DD
+><DT
+><A
+NAME="ini.mysql.max-links"
+></A
+><VAR
+CLASS="parameter"
+>mysql.max_links</VAR
+>
+    целое</DT
+><DD
+><P
+>&#13;     Максимальное количество соединений с MySQL на один процесс, включая
+     постоянные соединения.
+    </P
+></DD
+><DT
+><A
+NAME="ini.mysql.default-port"
+></A
+><VAR
+CLASS="parameter"
+>mysql.default_port</VAR
+>
+    строка</DT
+><DD
+><P
+>&#13;     TCP-порт, используемый для соединения с базой данных по умолчанию (если
+     не был указан другой). Если эта директива опущена, порт будет взят из
+     переменной среды <VAR
+CLASS="literal"
+>MYSQL_TCP_PORT</VAR
+>, значения 
+     <VAR
+CLASS="literal"
+>mysql-tcp</VAR
+> в <TT
+CLASS="filename"
+>/etc/services</TT
+> или константы
+     <VAR
+CLASS="literal"
+>MYSQL_PORT</VAR
+>, указанной при компиляции, в указанном порядке. 
+     Win32 использует только константу <VAR
+CLASS="literal"
+>MYSQL_PORT</VAR
+>.
+    </P
+></DD
+><DT
+><A
+NAME="ini.mysql.default-socket"
+></A
+><VAR
+CLASS="parameter"
+>mysql.default_socket</VAR
+>
+    строка</DT
+><DD
+><P
+>&#13;     Тип сокета, используемого для соединения с локальной базой данных, если не
+     был указан другой.
+    </P
+></DD
+><DT
+><A
+NAME="ini.mysql.default-host"
+></A
+><VAR
+CLASS="parameter"
+>mysql.default_host</VAR
+>
+    строка</DT
+><DD
+><P
+>&#13;     Адрес сервера, используемый для соединения с базой данных, если не указан
+     другой. Не работает в 
+     <A
+HREF="features.safe-mode.html#ini.safe-mode"
+>безопасном режиме</A
+>.
+    </P
+></DD
+><DT
+><A
+NAME="ini.mysql.default-user"
+></A
+><VAR
+CLASS="parameter"
+>mysql.default_user</VAR
+>
+    строка</DT
+><DD
+><P
+>&#13;     Имя пользователя, используемое для соединения с базой данных, если не
+     указано другое. Не работает в 
+     <A
+HREF="features.safe-mode.html#ini.safe-mode"
+>безопасном режиме</A
+>.
+    </P
+></DD
+><DT
+><A
+NAME="ini.mysql.default-password"
+></A
+><VAR
+CLASS="parameter"
+>mysql.default_password</VAR
+>
+    строка</DT
+><DD
+><P
+>&#13;     Пароль, используемый для соединения с базой данных, если не указан
+     другой. Не работает в
+     <A
+HREF="features.safe-mode.html#ini.safe-mode"
+>безопасном режиме</A
+>.
+    </P
+></DD
+><DT
+><A
+NAME="ini.mysql.connect-timeout"
+></A
+><VAR
+CLASS="parameter"
+>mysql.connect_timeout</VAR
+>
+    целое</DT
+><DD
+><P
+>&#13;     Время ожидания овета до разрыва соединения в секундах. Linux также использует это значение 
+     при ожидании первого ответа от сервера.
+    </P
+></DD
+></DL
+></DIV
+>
+ </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="mysql.resources"
+>Типы ресурсов</A
+></H1
+><P
+>&#13;     Модуль MySQL исползует два дополнительных типа указателей. Первый
+     является указателем на соединение с базой данных, второй указывает на
+     ресурс, содержащий результат запроса.
+    </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="mysql.constants"
+>Предопределенные константы</A
+></H1
+><P
+>&#13;Перечисленные ниже константы определены данным расширением и могут быть
+доступны только в том случае, если PHP был собран с
+поддержкой этого расширения или же в том случае, если
+данное расширение подгружается во время выполнения.
+</P
+><P
+>&#13;  Начиная с PHP 4.3.0 можно указать дополнительные флаги для функций
+  <A
+HREF="function.mysql-connect.html"
+><B
+CLASS="function"
+>mysql_connect()</B
+></A
+> и <A
+HREF="function.mysql-pconnect.html"
+><B
+CLASS="function"
+>mysql_pconnect()</B
+></A
+>
+  functions. Предопределены следующие константы:
+  <DIV
+CLASS="table"
+><A
+NAME="AEN101145"
+></A
+><P
+><B
+>Таблица 2. MySQL константы</B
+></P
+><TABLE
+BORDER="1"
+CLASS="CALSTABLE"
+><COL><COL><THEAD
+><TR
+><TH
+>константа</TH
+><TH
+>описание</TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+>MYSQL_CLIENT_COMPRESS</TD
+><TD
+>использовать протокол сжатия</TD
+></TR
+><TR
+><TD
+>MYSQL_CLIENT_IGNORE_SPACE</TD
+><TD
+>Позволяет вставлять пробелы после имён функций</TD
+></TR
+><TR
+><TD
+>MYSQL_CLIENT_INTERACTIVE</TD
+><TD
+>Ждать interactive_timeout секунд (виесто wait_timeout)
+        бездействия, до закрытия соединения.</TD
+></TR
+></TBODY
+></TABLE
+></DIV
+>
+ </P
+><P
+>&#13;  Функция <A
+HREF="function.mysql-fetch-array.html"
+><B
+CLASS="function"
+>mysql_fetch_array()</B
+></A
+> использует константы для
+  определения типа возвращаемого массива. Предопределены следующие константы:
+  <DIV
+CLASS="table"
+><A
+NAME="AEN101164"
+></A
+><P
+><B
+>Таблица 3. Константы выборки MySQL</B
+></P
+><TABLE
+BORDER="1"
+CLASS="CALSTABLE"
+><COL><COL><THEAD
+><TR
+><TH
+>константа</TH
+><TH
+>описание</TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+>MYSQL_ASSOC</TD
+><TD
+>&#13;       Результат возвращается в ассоциативном массиве с индексами под именами
+       колонок.
+      </TD
+></TR
+><TR
+><TD
+>MYSQL_BOTH</TD
+><TD
+>&#13;       Результат возвращается в массиве, содержащем как численные индексы, так
+       и индексы под именами колонок.
+      </TD
+></TR
+><TR
+><TD
+>MYSQL_NUM</TD
+><TD
+>&#13;       Результат возвращается в массиве, содержащем численные индексы. Индексы
+       стартуют с 0 (0 содержит первую колонку).
+      </TD
+></TR
+></TBODY
+></TABLE
+></DIV
+> 
+ </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="mysql.examples"
+>Примеры</A
+></H1
+><P
+>&#13;     Этот пример показывает, как соединиться с базой данных, выполнить запрос,
+     распечатать результат и отсоединиться.
+     <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN101184"
+></A
+><P
+><B
+>Пример 1. Пример работы с MySQL</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#FF8000">/* Соединяемся, выбираем базу данных */<br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$link </font><font color="#007700">= </font><font color="#0000BB">mysql_connect</font><font color="#007700">(</font><font color="#DD0000">"mysql_host"</font><font color="#007700">, </font><font color="#DD0000">"mysql_user"</font><font color="#007700">, </font><font color="#DD0000">"mysql_password"</font><font color="#007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;or die(</font><font color="#DD0000">"Could not connect : " </font><font color="#007700">. </font><font color="#0000BB">mysql_error</font><font color="#007700">());<br />&nbsp;&nbsp;&nbsp;&nbsp;print </font><font color="#DD0000">"Connected successfully"</font><font color="#007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">mysql_select_db</font><font color="#007700">(</font><font color="#DD0000">"my_database"</font><font color="#007700">) or die(</font><font color="#DD0000">"Could not select database"</font><font color="#007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#FF8000">/* Выполняем SQL-запрос */<br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$query </font><font color="#007700">= </font><font color="#DD0000">"SELECT * FROM my_table"</font><font color="#007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$result </font><font color="#007700">= </font><font color="#0000BB">mysql_query</font><font color="#007700">(</font><font color="#0000BB">$query</font><font color="#007700">) or die(</font><font color="#DD0000">"Query failed : " </font><font color="#007700">. </font><font color="#0000BB">mysql_error</font><font color="#007700">());<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#FF8000">/* Выводим результаты в html */<br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#007700">print </font><font color="#DD0000">"&lt;table&gt;\n"</font><font color="#007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;while (</font><font color="#0000BB">$line </font><font color="#007700">= </font><font color="#0000BB">mysql_fetch_array</font><font color="#007700">(</font><font color="#0000BB">$result</font><font color="#007700">, </font><font color="#0000BB">MYSQL_ASSOC</font><font color="#007700">)) {<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print </font><font color="#DD0000">"\t&lt;tr&gt;\n"</font><font color="#007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach (</font><font color="#0000BB">$line </font><font color="#007700">as </font><font color="#0000BB">$col_value</font><font color="#007700">) {<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print </font><font color="#DD0000">"</font><font color="#007700">\t\t</font><font color="#DD0000">&lt;td&gt;$col_value&lt;/td&gt;</font><font color="#007700">\n</font><font color="#DD0000">"</font><font color="#007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print </font><font color="#DD0000">"\t&lt;/tr&gt;\n"</font><font color="#007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;print </font><font color="#DD0000">"&lt;/table&gt;\n"</font><font color="#007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#FF8000">/* Освобождаем память от результата */<br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">mysql_free_result</font><font color="#007700">(</font><font color="#0000BB">$result</font><font color="#007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#FF8000">/* Закрываем соединение */<br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">mysql_close</font><font color="#007700">(</font><font color="#0000BB">$link</font><font color="#007700">);<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+    </P
+></DIV
+></DIV
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Содержание</B
+></DT
+><DT
+><A
+HREF="function.mysql-affected-rows.html"
+>mysql_affected_rows</A
+>&nbsp;--&nbsp;Возвращает число затронуиых прошлой операцией рядов.</DT
+><DT
+><A
+HREF="function.mysql-change-user.html"
+>mysql_change_user</A
+>&nbsp;--&nbsp;
+     Изменяет пользователя для указанного соединения.
+    </DT
+><DT
+><A
+HREF="function.mysql-client-encoding.html"
+>mysql_client_encoding</A
+>&nbsp;--&nbsp;Возвращает кодировку соединения</DT
+><DT
+><A
+HREF="function.mysql-close.html"
+>mysql_close</A
+>&nbsp;--&nbsp;Закрывает соединение с сервером MySQL</DT
+><DT
+><A
+HREF="function.mysql-connect.html"
+>mysql_connect</A
+>&nbsp;--&nbsp;Открывает соединение с сервером MySQL</DT
+><DT
+><A
+HREF="function.mysql-create-db.html"
+>mysql_create_db</A
+>&nbsp;--&nbsp;Создаёт базу данных MySQL</DT
+><DT
+><A
+HREF="function.mysql-data-seek.html"
+>mysql_data_seek</A
+>&nbsp;--&nbsp;Перемещает внутренний указатель в результате запроса</DT
+><DT
+><A
+HREF="function.mysql-db-name.html"
+>mysql_db_name</A
+>&nbsp;--&nbsp;Возвращает название базы данных</DT
+><DT
+><A
+HREF="function.mysql-db-query.html"
+>mysql_db_query</A
+>&nbsp;--&nbsp;Переключается к указанной базе данных и посылает запрос</DT
+><DT
+><A
+HREF="function.mysql-drop-db.html"
+>mysql_drop_db</A
+>&nbsp;--&nbsp;Уничтожает базу данных MySQL</DT
+><DT
+><A
+HREF="function.mysql-errno.html"
+>mysql_errno</A
+>&nbsp;--&nbsp;
+     Возвращает численный код ошибки выполнения последней операции с MySQL
+    </DT
+><DT
+><A
+HREF="function.mysql-error.html"
+>mysql_error</A
+>&nbsp;--&nbsp;
+     Возвращает строку ошибки последней операции с MySQL.
+    </DT
+><DT
+><A
+HREF="function.mysql-escape-string.html"
+>mysql_escape_string</A
+>&nbsp;--&nbsp;
+     Экранирует SQL спец-символы для mysql_query. 
+    </DT
+><DT
+><A
+HREF="function.mysql-fetch-array.html"
+>mysql_fetch_array</A
+>&nbsp;--&nbsp;
+     Обрабатывает ряд результата запроса, возвращая ассоциативный массив,
+     численный массив или оба.
+    </DT
+><DT
+><A
+HREF="function.mysql-fetch-assoc.html"
+>mysql_fetch_assoc</A
+>&nbsp;--&nbsp;
+     Обрабатывает ряд результата запроса и возвращает ассоциативный массив.
+    </DT
+><DT
+><A
+HREF="function.mysql-fetch-field.html"
+>mysql_fetch_field</A
+>&nbsp;--&nbsp;
+     Возвращает информацию о колонке из результата запроса в виде объекта.
+    </DT
+><DT
+><A
+HREF="function.mysql-fetch-lengths.html"
+>mysql_fetch_lengths</A
+>&nbsp;--&nbsp;
+     Возвращает длину каждого поля в результате.
+    </DT
+><DT
+><A
+HREF="function.mysql-fetch-object.html"
+>mysql_fetch_object</A
+>&nbsp;--&nbsp;Обрабатывает ряд результата запроса и возвращает объект</DT
+><DT
+><A
+HREF="function.mysql-fetch-row.html"
+>mysql_fetch_row</A
+>&nbsp;--&nbsp;Орабатывает ряд результата запроса и возвращает неассоциативный массив.</DT
+><DT
+><A
+HREF="function.mysql-field-flags.html"
+>mysql_field_flags</A
+>&nbsp;--&nbsp;
+     Возвращает флаги указанного поля результата запроса.
+    </DT
+><DT
+><A
+HREF="function.mysql-field-len.html"
+>mysql_field_len</A
+>&nbsp;--&nbsp;
+     Возвращает длину указанного поля.
+    </DT
+><DT
+><A
+HREF="function.mysql-field-name.html"
+>mysql_field_name</A
+>&nbsp;--&nbsp;
+     Возвращает название указанной колонки результата запроса.
+    </DT
+><DT
+><A
+HREF="function.mysql-field-seek.html"
+>mysql_field_seek</A
+>&nbsp;--&nbsp;
+     Устанавливает внутренний указатель поля на переданное смещение.
+    </DT
+><DT
+><A
+HREF="function.mysql-field-table.html"
+>mysql_field_table</A
+>&nbsp;--&nbsp;
+     Возвращает название таблицы, которой принадлежит указанное поле.
+    </DT
+><DT
+><A
+HREF="function.mysql-field-type.html"
+>mysql_field_type</A
+>&nbsp;--&nbsp;
+     Возвращает тип указанного поля результата запроса.
+    </DT
+><DT
+><A
+HREF="function.mysql-free-result.html"
+>mysql_free_result</A
+>&nbsp;--&nbsp;Освобождает память от результата запроса</DT
+><DT
+><A
+HREF="function.mysql-get-client-info.html"
+>mysql_get_client_info</A
+>&nbsp;--&nbsp;Возвращает данные о MySQL-клиенте</DT
+><DT
+><A
+HREF="function.mysql-get-host-info.html"
+>mysql_get_host_info</A
+>&nbsp;--&nbsp;Возвращает информацию о соединении с MySQL</DT
+><DT
+><A
+HREF="function.mysql-get-proto-info.html"
+>mysql_get_proto_info</A
+>&nbsp;--&nbsp;Возвращает информацию о протоколе MySQL</DT
+><DT
+><A
+HREF="function.mysql-get-server-info.html"
+>mysql_get_server_info</A
+>&nbsp;--&nbsp;Возвращает информацию о сервере MySQL</DT
+><DT
+><A
+HREF="function.mysql-info.html"
+>mysql_info</A
+>&nbsp;--&nbsp;
+     Возвращает информацию о последнем запросе
+    </DT
+><DT
+><A
+HREF="function.mysql-insert-id.html"
+>mysql_insert_id</A
+>&nbsp;--&nbsp;
+     Возвращает ID, сгенерированный при последнем INSERT-запросе.
+    </DT
+><DT
+><A
+HREF="function.mysql-list-dbs.html"
+>mysql_list_dbs</A
+>&nbsp;--&nbsp;
+     Возвращает список баз данных, доступных на сервере.
+    </DT
+><DT
+><A
+HREF="function.mysql-list-fields.html"
+>mysql_list_fields</A
+>&nbsp;--&nbsp;Возвращает список колонок таблицы</DT
+><DT
+><A
+HREF="function.mysql-list-processes.html"
+>mysql_list_processes</A
+>&nbsp;--&nbsp;Возвращает список процессов MySQL</DT
+><DT
+><A
+HREF="function.mysql-list-tables.html"
+>mysql_list_tables</A
+>&nbsp;--&nbsp;Возвращает список таблиц базы данных MySQL</DT
+><DT
+><A
+HREF="function.mysql-num-fields.html"
+>mysql_num_fields</A
+>&nbsp;--&nbsp;Возвращает количество полей результата запроса</DT
+><DT
+><A
+HREF="function.mysql-num-rows.html"
+>mysql_num_rows</A
+>&nbsp;--&nbsp;Возвращает количество рядов результата запроса</DT
+><DT
+><A
+HREF="function.mysql-pconnect.html"
+>mysql_pconnect</A
+>&nbsp;--&nbsp;
+     Устанавливает постоянное соединение с сервером MySQL.
+    </DT
+><DT
+><A
+HREF="function.mysql-ping.html"
+>mysql_ping</A
+>&nbsp;--&nbsp;Проверяет соединение с сервером и пересоединяется при необходимости</DT
+><DT
+><A
+HREF="function.mysql-query.html"
+>mysql_query</A
+>&nbsp;--&nbsp;Посылает запрос MySQL</DT
+><DT
+><A
+HREF="function.mysql-real-escape-string.html"
+>mysql_real_escape_string</A
+>&nbsp;--&nbsp;
+   Экранирует специальные символы в строках для 
+   использования в выражениях SQL
+  </DT
+><DT
+><A
+HREF="function.mysql-result.html"
+>mysql_result</A
+>&nbsp;--&nbsp;Возвращает данные результата запроса</DT
+><DT
+><A
+HREF="function.mysql-select-db.html"
+>mysql_select_db</A
+>&nbsp;--&nbsp;Выбирает базу данных MySQL</DT
+><DT
+><A
+HREF="function.mysql-stat.html"
+>mysql_stat</A
+>&nbsp;--&nbsp;Возвращает текущий статус сервера</DT
+><DT
+><A
+HREF="function.mysql-tablename.html"
+>mysql_tablename</A
+>&nbsp;--&nbsp;Возвращает имя таблицы, содержащей указанное поле</DT
+><DT
+><A
+HREF="function.mysql-thread-id.html"
+>mysql_thread_id</A
+>&nbsp;--&nbsp;Возвращает ID текущего потока</DT
+><DT
+><A
+HREF="function.mysql-unbuffered-query.html"
+>mysql_unbuffered_query</A
+>&nbsp;--&nbsp;
+     Посылает MySQL SQL-запрос без авто-обработки результата и её
+     буфферизации.
+    </DT
+></DL
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="function.muscat-setup.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Начало</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="function.mysql-affected-rows.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>muscat_setup</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="funcref.html"
+ACCESSKEY="U"
+>Уровень выше</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>mysql_affected_rows</TD
+></TR
+></TABLE
+></DIV
+></div></center></div></td>
+			<td><div style="display:none; width:200px;" id="o3" name="o3"><script charset="windows-1251" type="text/javascript" src="http://www.ozon.ru/PartnerTwinerNew.aspx?revident=bea9126b-c8e1-4bf5-b6d8-9a057f8feac6" ></script></div><script>o = document.getElementById('o3'); if(o) { var s = o.innerHTML; s = s.replace(/F6F6F6/gi,"FFFFFF"); o.innerHTML = s.replace(/padding-top: 10px; padding-bottom: 10px;/,"display:none;"); o.style.display = 'block'; } </script><br><div style="margin: 10px;"><script type="text/javascript"><!--
+google_ad_client = "pub-4093271809023514";
+/* 120x600, создано 01.11.2008 */
+google_ad_slot = "0438855731";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div></td>
+    		</tr>
+  		</table>
+    </td>
+  </tr>
+  <tr valign='bottom' height='1%'>
+  <td>      <table width=100% cellspacing=0 cellpadding=5 border=0 bgcolor=#9999CC>
+        <tr valign=center>
+          <td class='phpcopyright' width='45%' align='left'>&nbsp;&nbsp;Engine <a  href="http://www.mnogosearch.org/">MnoGoSearch</a></td>
+          <td class='phpcopyright' width='10%' align='center'>2007-2010 &copy <a  href="mailto:webmaster@php.ru">PHP.RU</a></td>
+          <td class='phpcopyright' width='45%' align='right' >Powered by <a target="_blank" href="http://odware.ru">ODware</a> <a HREF="http://440hz.ru">440Hz</a> &nbsp;&nbsp;</td>
+        </tr>
+      </table>
+
+    <div style="text-align: right; padding: 5px">
+		<!--LiveInternet counter-->
+		<script type="text/javascript">document.write('<a href="http://www.liveinternet.ru/click" target=_blank><img src="http://counter.yadro.ru/hit?t53.6;r' + escape(document.referrer) + ((typeof(screen)=='undefined')?'':';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ';u' + escape(document.URL) +';i' + escape('Жж'+document.title.substring(0,80)) + ';' + Math.random() + '" border=0 width=88 height=31 alt="" title="LiveInternet: показано число просмотров и посетителей за 24 часа"><\/a>');
+		</script>
+		<!--/LiveInternet-->
+		<!-- SpyLOG -->
+		<script src="http://tools.spylog.ru/counter2.2.js" type="text/javascript" id="spylog_code" counter="830950" ></script>
+		<noscript><a href="http://u8309.50.spylog.com/cnt?cid=830950&f=3&p=0" target="_blank"><img src="http://u8309.50.spylog.com/cnt?cid=830950&p=0&f=4" alt='SpyLOG' border='0' width=88 height=31 ></a>
+		</noscript>
+		<!--/ SpyLOG -->
+	</div>
+</td>
+  </tr>
+</table>
+
+<script>
+<!--
+document.SEARCH.QS.focus();
+// --></script>
+
+<!-- 
+	как же вы все это читаете?
+	440hz 
+-->
+
+</body>
+</html>

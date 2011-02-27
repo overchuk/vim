@@ -1,0 +1,724 @@
+<!-- 
+
+     HTML dropped by Zend Guard Compressor 4.2
+
+     php.ru team: mz, az, yuri, vb, cyxapuk, 440hz, administrator
+     2004-2007 (c) expi-web.com 
+     2007-2008 (c) odware.com 
+     0101-1010 (с) 440hz
+
+     2b|~2b=?
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EHOT тут всё пожрал ! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="alternate" type="application/rss+xml" title="php.ru/forum - последние сообщения" href="http://www.php.ru/forum/rss.php">
+<link rel="SHORTCUT ICON" href="http://www.php.ru/favicon.ico" />
+<META name="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<meta http-equiv="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<META name="keywords" content="php, php5, apache, mysql, session">
+<meta http-equiv="keywords" content="php, php5, apache, mysql, session">
+<title>php.ru - imap_fetchstructure</title>
+<LINK REL="stylesheet" TYPE="text/css" HREF="http://www.php.ru/index.css">
+<script language="JavaScript" src="http://www.php.ru/ajax/ajax.js"></script>
+</head>
+<body>
+
+<table height='100%' width='100%' cellspacing='0' cellpadding='0'>
+  <tr height='99%' valign='top'>
+    <td align='center'>
+		
+		<table style='margin-top: 4px' width=100% cellspacing=0 cellpadding=3>
+   		<tr>
+     		<td>PHP - <a href="http://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BA%D1%80%D0%BE%D0%BD%D0%B8%D0%BC" target=_blank class=lnk>рекурсивный акроним</a> словосочетания &laquo;<a href="/manual/introduction.html" class=lnk>PHP: Hypertext Preprocessor</a>&raquo;</td>
+     	</tr>
+   		</table>
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/subsys_ajax.js"></script>
+		<!--
+
+		commet by 440hz
+		20.10.2007
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/pu_search.js"></script>
+
+		-->
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/cz.js?a=b"></script>
+
+		<table style='margin-top: 5px' width=100% bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0>
+   	 	<form name=SEARCH method=GET action="http://www.php.ru/search/?SID=zim564c3m0m57tim" onsubmit="return puSubmit();">
+	  	<input type=hidden name=PAGE value=1>
+  		<tr>
+    		<td width='1' valign='middle'> 
+    		   <a href='/'><img src="http://www.php.ru/;-)/logo.gif" width=133 height=93 alt="php" border=0 hspace=10 vspace=0></a>
+			 </td>
+		    <td width='100%' valign='middle'>
+		       <!--
+			   
+				commet by 440hz
+				20.10.2007
+
+			   <div id='pu_search' class='pu_search'></div>
+		       <div id='pu_search_description' class='pu_search_decription'></div>
+			   
+			   -->
+        	 <input type=text style='width:99%; margin: 10px' maxlength='200' name='QS' class='in' id='query' autocomplete='off' value="" />
+    		</td>
+		  </tr>
+   		<tr bgcolor='#666699' valign='middle'>
+			<td style='border-top: 1px solid #333366;'><br /></td>
+    		<td style='border-top: 1px solid #333366;'><div style="padding: 4px 4px 4px 10px; height: 24px; color: #CCCCFF;" id="stat">Хто там?<script>doLoadCZ('stat','stat');</script></div></td>
+  		</tr>
+		</form>
+		</table>
+		<table id="menu" cellspaciong=0 cellpadding=3>
+<tr>
+<td><a href="/" class=current>Главная</a></td>
+<td><a href="/download/" class=current>Скачать</a></td>
+<td><a href="/doc/" class=current>Документация</a></td>
+<td><a href="/forum/" class=current>Форум</a></td>
+<td width=100% align=right><a href="/phpinfo.html" class=current>phpinfo()</a></td>
+</tr>
+</table>
+
+		
+<!--  AdRiver code START. Type:728x90 Site: php.ru PZ: 0 BN: 1 -->
+<script language="javascript" type="text/javascript"><!--
+var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+var ar_Tail='unknown'; if (document.referrer) ar_Tail = escape(document.referrer);
+document.write(
+'<iframe src="http://ad.adriver.ru/cgi-bin/erle.cgi?'
++ 'sid=148680&bn=1&target=blank&bt=36&pz=0&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail
++ '" frameborder=0 vspace=0 hspace=0 width=728 height=90 marginwidth=0'
++ ' marginheight=0 scrolling=no></iframe>');
+//--></script>
+<noscript>
+<a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" target=_blank>
+<img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" alt="-AdRiver-" border=0 width=728 height=90></a>
+</noscript>
+<!--  AdRiver code END  -->
+
+
+  		<table width='100%' cellspacing='0' cellpadding='0'>
+    		<tr valign='top'>
+      		<td width=100%><div style="margin: 10px 10px 10px 50px;"><center><div style="width: 800px; text-align: left"><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Руководство по PHP</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="function.imap-fetchheader.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="function.imap-get-quota.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><H1
+><A
+NAME="function.imap-fetchstructure"
+></A
+>imap_fetchstructure</H1
+><DIV
+CLASS="refnamediv"
+><A
+NAME="AEN70725"
+></A
+><P
+>    (PHP 3, PHP 4, PHP 5)</P
+>imap_fetchstructure&nbsp;--&nbsp;
+     Read the structure of a particular message
+    </DIV
+><DIV
+CLASS="refsect1"
+><A
+NAME="AEN70728"
+></A
+><H2
+>Description</H2
+>object <B
+CLASS="methodname"
+>imap_fetchstructure</B
+> ( resource imap_stream, int msg_number [, int options] )<BR
+></BR
+><P
+>&#13;     This function fetches all the structured information for a given
+     message. The optional <VAR
+CLASS="parameter"
+>options</VAR
+> parameter only
+     has a single option, <VAR
+CLASS="parameter"
+>FT_UID</VAR
+>, which tells
+     the function to treat the <VAR
+CLASS="parameter"
+>msg_number</VAR
+>
+     argument as a <VAR
+CLASS="parameter"
+>UID</VAR
+>. The returned object
+     includes the envelope, internal date, size, flags and body
+     structure along with a similar object for each mime
+     attachment. The structure of the returned objects is as follows:
+    </P
+><P
+>&#13;     <DIV
+CLASS="table"
+><A
+NAME="AEN70748"
+></A
+><P
+><B
+>Таблица 1. 
+       Returned Objects for <B
+CLASS="function"
+>imap_fetchstructure()</B
+>
+      </B
+></P
+><TABLE
+BORDER="1"
+CLASS="CALSTABLE"
+><COL><COL><TBODY
+><TR
+><TD
+>type</TD
+><TD
+>Primary body type</TD
+></TR
+><TR
+><TD
+>encoding</TD
+><TD
+>Body transfer encoding</TD
+></TR
+><TR
+><TD
+>ifsubtype</TD
+><TD
+><TT
+CLASS="constant"
+><B
+>TRUE</B
+></TT
+> if there is a subtype string</TD
+></TR
+><TR
+><TD
+>subtype</TD
+><TD
+><ACRONYM
+CLASS="acronym"
+>MIME</ACRONYM
+> subtype</TD
+></TR
+><TR
+><TD
+>ifdescription</TD
+><TD
+><TT
+CLASS="constant"
+><B
+>TRUE</B
+></TT
+> if there is a description string</TD
+></TR
+><TR
+><TD
+>description</TD
+><TD
+>Content description string</TD
+></TR
+><TR
+><TD
+>ifid</TD
+><TD
+><TT
+CLASS="constant"
+><B
+>TRUE</B
+></TT
+> if there is an identification string</TD
+></TR
+><TR
+><TD
+>id</TD
+><TD
+>Identification string</TD
+></TR
+><TR
+><TD
+>lines</TD
+><TD
+>Number of lines</TD
+></TR
+><TR
+><TD
+>bytes</TD
+><TD
+>Number of bytes</TD
+></TR
+><TR
+><TD
+>ifdisposition</TD
+><TD
+><TT
+CLASS="constant"
+><B
+>TRUE</B
+></TT
+> if there is a disposition string</TD
+></TR
+><TR
+><TD
+>disposition</TD
+><TD
+>Disposition string</TD
+></TR
+><TR
+><TD
+>ifdparameters</TD
+><TD
+><TT
+CLASS="constant"
+><B
+>TRUE</B
+></TT
+> if the dparameters array exists</TD
+></TR
+><TR
+><TD
+>dparameters</TD
+><TD
+>An array of objects where each object has an "attribute" and a
+         "value" property corresponding to the parameters on the
+         Content-disposition <ACRONYM
+CLASS="acronym"
+>MIME</ACRONYM
+>header.</TD
+></TR
+><TR
+><TD
+>ifparameters</TD
+><TD
+><TT
+CLASS="constant"
+><B
+>TRUE</B
+></TT
+> if the parameters array exists</TD
+></TR
+><TR
+><TD
+>parameters</TD
+><TD
+>An array of objects where each object has an "attribute" and
+         a "value" property.</TD
+></TR
+><TR
+><TD
+>parts</TD
+><TD
+>An array of objects identical in structure to the top-level
+         object, each of which corresponds to a <ACRONYM
+CLASS="acronym"
+>MIME</ACRONYM
+> body
+         part.</TD
+></TR
+></TBODY
+></TABLE
+></DIV
+>
+    </P
+><P
+>&#13;     <DIV
+CLASS="table"
+><A
+NAME="AEN70814"
+></A
+><P
+><B
+>Таблица 2. Primary body type</B
+></P
+><TABLE
+BORDER="1"
+CLASS="CALSTABLE"
+><COL><COL><TBODY
+><TR
+><TD
+>0</TD
+><TD
+>text</TD
+></TR
+><TR
+><TD
+>1</TD
+><TD
+>multipart</TD
+></TR
+><TR
+><TD
+>2</TD
+><TD
+>message</TD
+></TR
+><TR
+><TD
+>3</TD
+><TD
+>application</TD
+></TR
+><TR
+><TD
+>4</TD
+><TD
+>audio</TD
+></TR
+><TR
+><TD
+>5</TD
+><TD
+>image</TD
+></TR
+><TR
+><TD
+>6</TD
+><TD
+>video</TD
+></TR
+><TR
+><TD
+>7</TD
+><TD
+>other</TD
+></TR
+></TBODY
+></TABLE
+></DIV
+>
+    </P
+><P
+>&#13;     <DIV
+CLASS="table"
+><A
+NAME="AEN70843"
+></A
+><P
+><B
+>Таблица 3. Transfer encodings</B
+></P
+><TABLE
+BORDER="1"
+CLASS="CALSTABLE"
+><COL><COL><TBODY
+><TR
+><TD
+>0</TD
+><TD
+>7BIT</TD
+></TR
+><TR
+><TD
+>1</TD
+><TD
+>8BIT</TD
+></TR
+><TR
+><TD
+>2</TD
+><TD
+>BINARY</TD
+></TR
+><TR
+><TD
+>3</TD
+><TD
+>BASE64</TD
+></TR
+><TR
+><TD
+>4</TD
+><TD
+>QUOTED-PRINTABLE</TD
+></TR
+><TR
+><TD
+>5</TD
+><TD
+>OTHER</TD
+></TR
+></TBODY
+></TABLE
+></DIV
+>
+    </P
+><P
+>&#13;     See also: <A
+HREF="function.imap-fetchbody.html"
+><B
+CLASS="function"
+>imap_fetchbody()</B
+></A
+>.
+    </P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="function.imap-fetchheader.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Начало</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="function.imap-get-quota.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>imap_fetchheader</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="ref.imap.html"
+ACCESSKEY="U"
+>Уровень выше</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>imap_get_quota</TD
+></TR
+></TABLE
+></DIV
+></div></center></div></td>
+			<td><div style="display:none; width:200px;" id="o3" name="o3"><script charset="windows-1251" type="text/javascript" src="http://www.ozon.ru/PartnerTwinerNew.aspx?revident=bea9126b-c8e1-4bf5-b6d8-9a057f8feac6" ></script></div><script>o = document.getElementById('o3'); if(o) { var s = o.innerHTML; s = s.replace(/F6F6F6/gi,"FFFFFF"); o.innerHTML = s.replace(/padding-top: 10px; padding-bottom: 10px;/,"display:none;"); o.style.display = 'block'; } </script><br><div style="margin: 10px;"><script type="text/javascript"><!--
+google_ad_client = "pub-4093271809023514";
+/* 120x600, создано 01.11.2008 */
+google_ad_slot = "0438855731";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div></td>
+    		</tr>
+  		</table>
+    </td>
+  </tr>
+  <tr valign='bottom' height='1%'>
+  <td>      <table width=100% cellspacing=0 cellpadding=5 border=0 bgcolor=#9999CC>
+        <tr valign=center>
+          <td class='phpcopyright' width='45%' align='left'>&nbsp;&nbsp;Engine <a  href="http://www.mnogosearch.org/">MnoGoSearch</a></td>
+          <td class='phpcopyright' width='10%' align='center'>2007-2010 &copy <a  href="mailto:webmaster@php.ru">PHP.RU</a></td>
+          <td class='phpcopyright' width='45%' align='right' >Powered by <a target="_blank" href="http://odware.ru">ODware</a> <a HREF="http://440hz.ru">440Hz</a> &nbsp;&nbsp;</td>
+        </tr>
+      </table>
+
+    <div style="text-align: right; padding: 5px">
+		<!--LiveInternet counter-->
+		<script type="text/javascript">document.write('<a href="http://www.liveinternet.ru/click" target=_blank><img src="http://counter.yadro.ru/hit?t53.6;r' + escape(document.referrer) + ((typeof(screen)=='undefined')?'':';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ';u' + escape(document.URL) +';i' + escape('Жж'+document.title.substring(0,80)) + ';' + Math.random() + '" border=0 width=88 height=31 alt="" title="LiveInternet: показано число просмотров и посетителей за 24 часа"><\/a>');
+		</script>
+		<!--/LiveInternet-->
+		<!-- SpyLOG -->
+		<script src="http://tools.spylog.ru/counter2.2.js" type="text/javascript" id="spylog_code" counter="830950" ></script>
+		<noscript><a href="http://u8309.50.spylog.com/cnt?cid=830950&f=3&p=0" target="_blank"><img src="http://u8309.50.spylog.com/cnt?cid=830950&p=0&f=4" alt='SpyLOG' border='0' width=88 height=31 ></a>
+		</noscript>
+		<!--/ SpyLOG -->
+	</div>
+</td>
+  </tr>
+</table>
+
+<script>
+<!--
+document.SEARCH.QS.focus();
+// --></script>
+
+<!-- 
+	как же вы все это читаете?
+	440hz 
+-->
+
+</body>
+</html>

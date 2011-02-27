@@ -1,0 +1,1491 @@
+<!-- 
+
+     HTML dropped by Zend Guard Compressor 4.2
+
+     php.ru team: mz, az, yuri, vb, cyxapuk, 440hz, administrator
+     2004-2007 (c) expi-web.com 
+     2007-2008 (c) odware.com 
+     0101-1010 (с) 440hz
+
+     2b|~2b=?
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EHOT тут всё пожрал ! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="alternate" type="application/rss+xml" title="php.ru/forum - последние сообщения" href="http://www.php.ru/forum/rss.php">
+<link rel="SHORTCUT ICON" href="http://www.php.ru/favicon.ico" />
+<META name="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<meta http-equiv="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<META name="keywords" content="php, php5, apache, mysql, session">
+<meta http-equiv="keywords" content="php, php5, apache, mysql, session">
+<title>php.ru - Socket Functions</title>
+<LINK REL="stylesheet" TYPE="text/css" HREF="http://www.php.ru/index.css">
+<script language="JavaScript" src="http://www.php.ru/ajax/ajax.js"></script>
+</head>
+<body>
+
+<table height='100%' width='100%' cellspacing='0' cellpadding='0'>
+  <tr height='99%' valign='top'>
+    <td align='center'>
+		
+		<table style='margin-top: 4px' width=100% cellspacing=0 cellpadding=3>
+   		<tr>
+     		<td>PHP - <a href="http://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BA%D1%80%D0%BE%D0%BD%D0%B8%D0%BC" target=_blank class=lnk>рекурсивный акроним</a> словосочетания &laquo;<a href="/manual/introduction.html" class=lnk>PHP: Hypertext Preprocessor</a>&raquo;</td>
+     	</tr>
+   		</table>
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/subsys_ajax.js"></script>
+		<!--
+
+		commet by 440hz
+		20.10.2007
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/pu_search.js"></script>
+
+		-->
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/cz.js?a=b"></script>
+
+		<table style='margin-top: 5px' width=100% bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0>
+   	 	<form name=SEARCH method=GET action="http://www.php.ru/search/?SID=93nnytzrgigbmg23" onsubmit="return puSubmit();">
+	  	<input type=hidden name=PAGE value=1>
+  		<tr>
+    		<td width='1' valign='middle'> 
+    		   <a href='/'><img src="http://www.php.ru/;-)/logo.gif" width=133 height=93 alt="php" border=0 hspace=10 vspace=0></a>
+			 </td>
+		    <td width='100%' valign='middle'>
+		       <!--
+			   
+				commet by 440hz
+				20.10.2007
+
+			   <div id='pu_search' class='pu_search'></div>
+		       <div id='pu_search_description' class='pu_search_decription'></div>
+			   
+			   -->
+        	 <input type=text style='width:99%; margin: 10px' maxlength='200' name='QS' class='in' id='query' autocomplete='off' value="" />
+    		</td>
+		  </tr>
+   		<tr bgcolor='#666699' valign='middle'>
+			<td style='border-top: 1px solid #333366;'><br /></td>
+    		<td style='border-top: 1px solid #333366;'><div style="padding: 4px 4px 4px 10px; height: 24px; color: #CCCCFF;" id="stat">Хто там?<script>doLoadCZ('stat','stat');</script></div></td>
+  		</tr>
+		</form>
+		</table>
+		<table id="menu" cellspaciong=0 cellpadding=3>
+<tr>
+<td><a href="/" class=current>Главная</a></td>
+<td><a href="/download/" class=current>Скачать</a></td>
+<td><a href="/doc/" class=current>Документация</a></td>
+<td><a href="/forum/" class=current>Форум</a></td>
+<td width=100% align=right><a href="/phpinfo.html" class=current>phpinfo()</a></td>
+</tr>
+</table>
+
+		
+<!--  AdRiver code START. Type:728x90 Site: php.ru PZ: 0 BN: 1 -->
+<script language="javascript" type="text/javascript"><!--
+var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+var ar_Tail='unknown'; if (document.referrer) ar_Tail = escape(document.referrer);
+document.write(
+'<iframe src="http://ad.adriver.ru/cgi-bin/erle.cgi?'
++ 'sid=148680&bn=1&target=blank&bt=36&pz=0&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail
++ '" frameborder=0 vspace=0 hspace=0 width=728 height=90 marginwidth=0'
++ ' marginheight=0 scrolling=no></iframe>');
+//--></script>
+<noscript>
+<a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" target=_blank>
+<img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" alt="-AdRiver-" border=0 width=728 height=90></a>
+</noscript>
+<!--  AdRiver code END  -->
+
+
+  		<table width='100%' cellspacing='0' cellpadding='0'>
+    		<tr valign='top'>
+      		<td width=100%><div style="margin: 10px 10px 10px 50px;"><center><div style="width: 800px; text-align: left"><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Руководство по PHP</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="function.use-soap-error-handler.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="function.socket-accept.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="reference"
+><A
+NAME="ref.sockets"
+></A
+><DIV
+CLASS="TITLEPAGE"
+><H1
+CLASS="title"
+>CXLVII. Socket Functions</H1
+><DIV
+CLASS="PARTINTRO"
+><A
+NAME="AEN169807"
+></A
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sockets.intro"
+>Введение</A
+></H1
+><P
+>&#13;     The socket extension implements a low-level interface to the socket
+     communication functions based on the popular BSD sockets, providing the
+     possibility to act as a socket server as well as a client.
+    </P
+><P
+>&#13;     For a more generic client-side socket interface, see
+     <A
+HREF="function.stream-socket-client.html"
+><B
+CLASS="function"
+>stream_socket_client()</B
+></A
+>, 
+     <A
+HREF="function.stream-socket-server.html"
+><B
+CLASS="function"
+>stream_socket_server()</B
+></A
+>,
+     <A
+HREF="function.fsockopen.html"
+><B
+CLASS="function"
+>fsockopen()</B
+></A
+>, and
+     <A
+HREF="function.pfsockopen.html"
+><B
+CLASS="function"
+>pfsockopen()</B
+></A
+>.
+    </P
+><P
+>&#13;     When using these functions, it is important to remember that while
+     many of them have identical names to their C counterparts, they
+     often have different declarations. Please be sure to read the
+     descriptions to avoid confusion.
+    </P
+><P
+>&#13;     Those unfamiliar with socket programming can find a lot
+     of useful material in the appropriate Unix man pages, and there is a great
+     deal of tutorial information on socket programming in C on the web, much
+     of which can be applied, with slight modifications, to socket programming
+     in PHP. The <A
+HREF="http://www.developerweb.net/sock-faq/"
+TARGET="_top"
+>Unix Socket
+     FAQ</A
+> might be a good start.
+    </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sockets.requirements"
+>Требования</A
+></H1
+><P
+>Эти функции всегда доступны.</P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sockets.installation"
+>Установка</A
+></H1
+><P
+>&#13;  The socket functions described here are part of an extension to
+  PHP which must be enabled at compile time by giving the <VAR
+CLASS="option"
+>--enable-sockets</VAR
+> option to
+  <B
+CLASS="command"
+>configure</B
+>.
+ </P
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+>Замечание: </B
+>Поддержка IPv6 была добавлена в PHP 5.0.0.</P
+></BLOCKQUOTE
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sockets.configuration"
+>Настройка во время выполнения</A
+></H1
+><P
+>Данное расширение не определяет никакие директивы конфигурации в <TT
+CLASS="filename"
+>php.ini</TT
+>.</P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sockets.resources"
+>Типы ресурсов</A
+></H1
+><P
+>Данное расширение не определяет никакие типы ресурсов.</P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sockets.constants"
+>Предопределенные константы</A
+></H1
+><P
+>&#13;Перечисленные ниже константы определены данным расширением и могут быть
+доступны только в том случае, если PHP был собран с
+поддержкой этого расширения или же в том случае, если
+данное расширение подгружается во время выполнения.
+</P
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+><TT
+CLASS="constant"
+><B
+>AF_UNIX</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>AF_INET</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>AF_INET6</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SOCK_STREAM</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SOCK_DGRAM</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SOCK_RAW</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SOCK_SEQPACKET</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SOCK_RDM</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>MSG_OOB</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>MSG_WAITALL</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>MSG_PEEK</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>MSG_DONTROUTE</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SO_DEBUG</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SO_REUSEADDR</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SO_KEEPALIVE</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SO_DONTROUTE</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SO_LINGER</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SO_BROADCAST</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SO_OOBINLINE</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SO_SNDBUF</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SO_RCVBUF</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SO_SNDLOWAT</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SO_RCVLOWAT</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SO_SNDTIMEO</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SO_RCVTIMEO</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SO_TYPE</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SO_ERROR</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SOL_SOCKET</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PHP_NORMAL_READ</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>PHP_BINARY_READ</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SOL_TCP</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SOL_UDP</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sockets.errors"
+>Socket Errors</A
+></H1
+><P
+>&#13;     The socket extension was written to provide a usable interface to the
+     powerful BSD sockets. Care has been taken that the functions work equally
+     well on Win32 and Unix implementations. Almost all of the sockets
+     functions may fail under certain conditions and therefore emit an
+     <TT
+CLASS="constant"
+><B
+>E_WARNING</B
+></TT
+> message describing the error. Sometimes this
+     doesn't happen to the desire of the developer. For example the function
+     <A
+HREF="function.socket-read.html"
+><B
+CLASS="function"
+>socket_read()</B
+></A
+> may suddenly emit an
+     <TT
+CLASS="constant"
+><B
+>E_WARNING</B
+></TT
+> message because the connection broke
+     unexpectedly. It's common to suppress the warning with the
+     <VAR
+CLASS="literal"
+>@</VAR
+>-operator and catch the error code within the
+     application with the <A
+HREF="function.socket-last-error.html"
+><B
+CLASS="function"
+>socket_last_error()</B
+></A
+> function. You
+     may call the <A
+HREF="function.socket-strerror.html"
+><B
+CLASS="function"
+>socket_strerror()</B
+></A
+> function with this error
+     code to retrieve a string describing the error. See their description for
+     more information.
+    </P
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+>Замечание: </B
+>
+      The <TT
+CLASS="constant"
+><B
+>E_WARNING</B
+></TT
+> messages generated by the socket
+      extension are in English though the retrieved error message will appear
+      depending on the current locale (<TT
+CLASS="constant"
+><B
+>LC_MESSAGES</B
+></TT
+>):
+      <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+Warning - socket_bind() unable to bind address [98]: Die Adresse wird bereits verwendet</font>
+</code></TD
+></TR
+></TABLE
+>
+     </P
+></BLOCKQUOTE
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sockets.examples"
+>Примеры</A
+></H1
+><P
+>&#13;     <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN170049"
+></A
+><P
+><B
+>Пример 1. Socket example: Simple TCP/IP server</B
+></P
+><P
+>&#13;       This example shows a simple talkback server. Change the
+       <VAR
+CLASS="varname"
+>address</VAR
+> and <VAR
+CLASS="varname"
+>port</VAR
+> variables
+       to suit your setup and execute. You may then connect to the
+       server with a command similar to: <B
+CLASS="command"
+>telnet 192.168.1.53
+       10000</B
+> (where the address and port match your
+       setup). Anything you type will then be output on the server
+       side, and echoed back to you. To disconnect, enter 'quit'.
+      </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+#!/usr/local/bin/php -q<br /><font color="#0000BB">&lt;?php<br />error_reporting</font><font color="#007700">(</font><font color="#0000BB">E_ALL</font><font color="#007700">);<br /><br /></font><font color="#FF8000">/* Allow the script to hang around waiting for connections. */<br /></font><font color="#0000BB">set_time_limit</font><font color="#007700">(</font><font color="#0000BB">0</font><font color="#007700">);<br /><br /></font><font color="#FF8000">/* Turn on implicit output flushing so we see what we're getting<br /> * as it comes in. */<br /></font><font color="#0000BB">ob_implicit_flush</font><font color="#007700">();<br /><br /></font><font color="#0000BB">$address </font><font color="#007700">= </font><font color="#DD0000">'192.168.1.53'</font><font color="#007700">;<br /></font><font color="#0000BB">$port </font><font color="#007700">= </font><font color="#0000BB">10000</font><font color="#007700">;<br /><br />if ((</font><font color="#0000BB">$sock </font><font color="#007700">= </font><font color="#0000BB">socket_create</font><font color="#007700">(</font><font color="#0000BB">AF_INET</font><font color="#007700">, </font><font color="#0000BB">SOCK_STREAM</font><font color="#007700">, </font><font color="#0000BB">SOL_TCP</font><font color="#007700">)) &lt; </font><font color="#0000BB">0</font><font color="#007700">) {<br />&nbsp;&nbsp;&nbsp;&nbsp;echo </font><font color="#DD0000">"socket_create() failed: reason: " </font><font color="#007700">. </font><font color="#0000BB">socket_strerror</font><font color="#007700">(</font><font color="#0000BB">$sock</font><font color="#007700">) . </font><font color="#DD0000">"\n"</font><font color="#007700">;<br />}<br /><br />if ((</font><font color="#0000BB">$ret </font><font color="#007700">= </font><font color="#0000BB">socket_bind</font><font color="#007700">(</font><font color="#0000BB">$sock</font><font color="#007700">, </font><font color="#0000BB">$address</font><font color="#007700">, </font><font color="#0000BB">$port</font><font color="#007700">)) &lt; </font><font color="#0000BB">0</font><font color="#007700">) {<br />&nbsp;&nbsp;&nbsp;&nbsp;echo </font><font color="#DD0000">"socket_bind() failed: reason: " </font><font color="#007700">. </font><font color="#0000BB">socket_strerror</font><font color="#007700">(</font><font color="#0000BB">$ret</font><font color="#007700">) . </font><font color="#DD0000">"\n"</font><font color="#007700">;<br />}<br /><br />if ((</font><font color="#0000BB">$ret </font><font color="#007700">= </font><font color="#0000BB">socket_listen</font><font color="#007700">(</font><font color="#0000BB">$sock</font><font color="#007700">, </font><font color="#0000BB">5</font><font color="#007700">)) &lt; </font><font color="#0000BB">0</font><font color="#007700">) {<br />&nbsp;&nbsp;&nbsp;&nbsp;echo </font><font color="#DD0000">"socket_listen() failed: reason: " </font><font color="#007700">. </font><font color="#0000BB">socket_strerror</font><font color="#007700">(</font><font color="#0000BB">$ret</font><font color="#007700">) . </font><font color="#DD0000">"\n"</font><font color="#007700">;<br />}<br /><br />do {<br />&nbsp;&nbsp;&nbsp;&nbsp;if ((</font><font color="#0000BB">$msgsock </font><font color="#007700">= </font><font color="#0000BB">socket_accept</font><font color="#007700">(</font><font color="#0000BB">$sock</font><font color="#007700">)) &lt; </font><font color="#0000BB">0</font><font color="#007700">) {<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo </font><font color="#DD0000">"socket_accept() failed: reason: " </font><font color="#007700">. </font><font color="#0000BB">socket_strerror</font><font color="#007700">(</font><font color="#0000BB">$msgsock</font><font color="#007700">) . </font><font color="#DD0000">"\n"</font><font color="#007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#FF8000">/* Send instructions. */<br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$msg </font><font color="#007700">= </font><font color="#DD0000">"\nWelcome to the PHP Test Server. \n" </font><font color="#007700">.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#DD0000">"To quit, type 'quit'. To shut down the server type 'shutdown'.\n"</font><font color="#007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">socket_write</font><font color="#007700">(</font><font color="#0000BB">$msgsock</font><font color="#007700">, </font><font color="#0000BB">$msg</font><font color="#007700">, </font><font color="#0000BB">strlen</font><font color="#007700">(</font><font color="#0000BB">$msg</font><font color="#007700">));<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;do {<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (</font><font color="#0000BB">false </font><font color="#007700">=== (</font><font color="#0000BB">$buf </font><font color="#007700">= </font><font color="#0000BB">socket_read</font><font color="#007700">(</font><font color="#0000BB">$msgsock</font><font color="#007700">, </font><font color="#0000BB">2048</font><font color="#007700">, </font><font color="#0000BB">PHP_NORMAL_READ</font><font color="#007700">))) {<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo </font><font color="#DD0000">"socket_read() failed: reason: " </font><font color="#007700">. </font><font color="#0000BB">socket_strerror</font><font color="#007700">(</font><font color="#0000BB">$ret</font><font color="#007700">) . </font><font color="#DD0000">"\n"</font><font color="#007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break </font><font color="#0000BB">2</font><font color="#007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (!</font><font color="#0000BB">$buf </font><font color="#007700">= </font><font color="#0000BB">trim</font><font color="#007700">(</font><font color="#0000BB">$buf</font><font color="#007700">)) {<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (</font><font color="#0000BB">$buf </font><font color="#007700">== </font><font color="#DD0000">'quit'</font><font color="#007700">) {<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (</font><font color="#0000BB">$buf </font><font color="#007700">== </font><font color="#DD0000">'shutdown'</font><font color="#007700">) {<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">socket_close</font><font color="#007700">(</font><font color="#0000BB">$msgsock</font><font color="#007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break </font><font color="#0000BB">2</font><font color="#007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$talkback </font><font color="#007700">= </font><font color="#DD0000">"PHP: You said '$buf'.</font><font color="#007700">\n</font><font color="#DD0000">"</font><font color="#007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">socket_write</font><font color="#007700">(</font><font color="#0000BB">$msgsock</font><font color="#007700">, </font><font color="#0000BB">$talkback</font><font color="#007700">, </font><font color="#0000BB">strlen</font><font color="#007700">(</font><font color="#0000BB">$talkback</font><font color="#007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo </font><font color="#DD0000">"$buf</font><font color="#007700">\n</font><font color="#DD0000">"</font><font color="#007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;} while (</font><font color="#0000BB">true</font><font color="#007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">socket_close</font><font color="#007700">(</font><font color="#0000BB">$msgsock</font><font color="#007700">);<br />} while (</font><font color="#0000BB">true</font><font color="#007700">);<br /><br /></font><font color="#0000BB">socket_close</font><font color="#007700">(</font><font color="#0000BB">$sock</font><font color="#007700">);<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+    </P
+><P
+>&#13;     <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN170057"
+></A
+><P
+><B
+>Пример 2. Socket example: Simple TCP/IP client</B
+></P
+><P
+>&#13;       This example shows a simple, one-shot HTTP client. It simply
+       connects to a page, submits a HEAD request, echoes the reply,
+       and exits.
+      </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />error_reporting</font><font color="#007700">(</font><font color="#0000BB">E_ALL</font><font color="#007700">);<br /><br />echo </font><font color="#DD0000">"&lt;h2&gt;TCP/IP Connection&lt;/h2&gt;\n"</font><font color="#007700">;<br /><br /></font><font color="#FF8000">/* Get the port for the WWW service. */<br /></font><font color="#0000BB">$service_port </font><font color="#007700">= </font><font color="#0000BB">getservbyname</font><font color="#007700">(</font><font color="#DD0000">'www'</font><font color="#007700">, </font><font color="#DD0000">'tcp'</font><font color="#007700">);<br /><br /></font><font color="#FF8000">/* Get the IP address for the target host. */<br /></font><font color="#0000BB">$address </font><font color="#007700">= </font><font color="#0000BB">gethostbyname</font><font color="#007700">(</font><font color="#DD0000">'www.example.com'</font><font color="#007700">);<br /><br /></font><font color="#FF8000">/* Create a TCP/IP socket. */<br /></font><font color="#0000BB">$socket </font><font color="#007700">= </font><font color="#0000BB">socket_create</font><font color="#007700">(</font><font color="#0000BB">AF_INET</font><font color="#007700">, </font><font color="#0000BB">SOCK_STREAM</font><font color="#007700">, </font><font color="#0000BB">SOL_TCP</font><font color="#007700">);<br />if (</font><font color="#0000BB">$socket </font><font color="#007700">&lt; </font><font color="#0000BB">0</font><font color="#007700">) {<br />&nbsp;&nbsp;&nbsp;&nbsp;echo </font><font color="#DD0000">"socket_create() failed: reason: " </font><font color="#007700">. </font><font color="#0000BB">socket_strerror</font><font color="#007700">(</font><font color="#0000BB">$socket</font><font color="#007700">) . </font><font color="#DD0000">"\n"</font><font color="#007700">;<br />} else {<br />&nbsp;&nbsp;&nbsp;&nbsp;echo </font><font color="#DD0000">"OK.\n"</font><font color="#007700">;<br />}<br /><br />echo </font><font color="#DD0000">"Attempting to connect to '$address' on port '$service_port'..."</font><font color="#007700">;<br /></font><font color="#0000BB">$result </font><font color="#007700">= </font><font color="#0000BB">socket_connect</font><font color="#007700">(</font><font color="#0000BB">$socket</font><font color="#007700">, </font><font color="#0000BB">$address</font><font color="#007700">, </font><font color="#0000BB">$service_port</font><font color="#007700">);<br />if (</font><font color="#0000BB">$result </font><font color="#007700">&lt; </font><font color="#0000BB">0</font><font color="#007700">) {<br />&nbsp;&nbsp;&nbsp;&nbsp;echo </font><font color="#DD0000">"socket_connect() failed.</font><font color="#007700">\n</font><font color="#DD0000">Reason: ($result) " </font><font color="#007700">. </font><font color="#0000BB">socket_strerror</font><font color="#007700">(</font><font color="#0000BB">$result</font><font color="#007700">) . </font><font color="#DD0000">"\n"</font><font color="#007700">;<br />} else {<br />&nbsp;&nbsp;&nbsp;&nbsp;echo </font><font color="#DD0000">"OK.\n"</font><font color="#007700">;<br />}<br /><br /></font><font color="#0000BB">$in </font><font color="#007700">= </font><font color="#DD0000">"HEAD / HTTP/1.1\r\n"</font><font color="#007700">;<br /></font><font color="#0000BB">$in </font><font color="#007700">.= </font><font color="#DD0000">"Host: www.example.com\r\n"</font><font color="#007700">;<br /></font><font color="#0000BB">$in </font><font color="#007700">.= </font><font color="#DD0000">"Connection: Close\r\n\r\n"</font><font color="#007700">;<br /></font><font color="#0000BB">$out </font><font color="#007700">= </font><font color="#DD0000">''</font><font color="#007700">;<br /><br />echo </font><font color="#DD0000">"Sending HTTP HEAD request..."</font><font color="#007700">;<br /></font><font color="#0000BB">socket_write</font><font color="#007700">(</font><font color="#0000BB">$socket</font><font color="#007700">, </font><font color="#0000BB">$in</font><font color="#007700">, </font><font color="#0000BB">strlen</font><font color="#007700">(</font><font color="#0000BB">$in</font><font color="#007700">));<br />echo </font><font color="#DD0000">"OK.\n"</font><font color="#007700">;<br /><br />echo </font><font color="#DD0000">"Reading response:\n\n"</font><font color="#007700">;<br />while (</font><font color="#0000BB">$out </font><font color="#007700">= </font><font color="#0000BB">socket_read</font><font color="#007700">(</font><font color="#0000BB">$socket</font><font color="#007700">, </font><font color="#0000BB">2048</font><font color="#007700">)) {<br />&nbsp;&nbsp;&nbsp;&nbsp;echo </font><font color="#0000BB">$out</font><font color="#007700">;<br />}<br /><br />echo </font><font color="#DD0000">"Closing socket..."</font><font color="#007700">;<br /></font><font color="#0000BB">socket_close</font><font color="#007700">(</font><font color="#0000BB">$socket</font><font color="#007700">);<br />echo </font><font color="#DD0000">"OK.\n\n"</font><font color="#007700">;<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+    </P
+></DIV
+></DIV
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Содержание</B
+></DT
+><DT
+><A
+HREF="function.socket-accept.html"
+>socket_accept</A
+>&nbsp;--&nbsp;Accepts a connection on a socket</DT
+><DT
+><A
+HREF="function.socket-bind.html"
+>socket_bind</A
+>&nbsp;--&nbsp;Binds a name to a socket</DT
+><DT
+><A
+HREF="function.socket-clear-error.html"
+>socket_clear_error</A
+>&nbsp;--&nbsp;Clears the error on the socket or the last error code</DT
+><DT
+><A
+HREF="function.socket-close.html"
+>socket_close</A
+>&nbsp;--&nbsp;Closes a socket resource</DT
+><DT
+><A
+HREF="function.socket-connect.html"
+>socket_connect</A
+>&nbsp;--&nbsp;Initiates a connection on a socket</DT
+><DT
+><A
+HREF="function.socket-create-listen.html"
+>socket_create_listen</A
+>&nbsp;--&nbsp;Opens a socket on port to accept connections </DT
+><DT
+><A
+HREF="function.socket-create-pair.html"
+>socket_create_pair</A
+>&nbsp;--&nbsp;Creates a pair of indistinguishable sockets and stores them in an array</DT
+><DT
+><A
+HREF="function.socket-create.html"
+>socket_create</A
+>&nbsp;--&nbsp;Create a socket (endpoint for communication)</DT
+><DT
+><A
+HREF="function.socket-get-option.html"
+>socket_get_option</A
+>&nbsp;--&nbsp;Gets socket options for the socket </DT
+><DT
+><A
+HREF="function.socket-getpeername.html"
+>socket_getpeername</A
+>&nbsp;--&nbsp;
+     Queries the remote side of the given socket which may either result in host/port
+     or in a Unix filesystem path, dependent on its type
+    </DT
+><DT
+><A
+HREF="function.socket-getsockname.html"
+>socket_getsockname</A
+>&nbsp;--&nbsp;
+     Queries the local side of the given socket which may either result in host/port
+     or in a Unix filesystem path, dependent on its type
+    </DT
+><DT
+><A
+HREF="function.socket-last-error.html"
+>socket_last_error</A
+>&nbsp;--&nbsp;Returns the last error on the socket </DT
+><DT
+><A
+HREF="function.socket-listen.html"
+>socket_listen</A
+>&nbsp;--&nbsp;Listens for a connection on a socket</DT
+><DT
+><A
+HREF="function.socket-read.html"
+>socket_read</A
+>&nbsp;--&nbsp;Reads a maximum of length bytes from a socket</DT
+><DT
+><A
+HREF="function.socket-recv.html"
+>socket_recv</A
+>&nbsp;--&nbsp;Receives data from a connected socket </DT
+><DT
+><A
+HREF="function.socket-recvfrom.html"
+>socket_recvfrom</A
+>&nbsp;--&nbsp;Receives data from a socket, connected or not </DT
+><DT
+><A
+HREF="function.socket-select.html"
+>socket_select</A
+>&nbsp;--&nbsp;
+     Runs the select() system call on the given arrays of sockets 
+     with a specified timeout
+    </DT
+><DT
+><A
+HREF="function.socket-send.html"
+>socket_send</A
+>&nbsp;--&nbsp;Sends data to a connected socket </DT
+><DT
+><A
+HREF="function.socket-sendto.html"
+>socket_sendto</A
+>&nbsp;--&nbsp;Sends a message to a socket, whether it is connected or not </DT
+><DT
+><A
+HREF="function.socket-set-block.html"
+>socket_set_block</A
+>&nbsp;--&nbsp;
+     Sets blocking mode on a socket resource
+    </DT
+><DT
+><A
+HREF="function.socket-set-nonblock.html"
+>socket_set_nonblock</A
+>&nbsp;--&nbsp;Sets nonblocking mode for file descriptor fd </DT
+><DT
+><A
+HREF="function.socket-set-option.html"
+>socket_set_option</A
+>&nbsp;--&nbsp;Sets socket options for the socket</DT
+><DT
+><A
+HREF="function.socket-shutdown.html"
+>socket_shutdown</A
+>&nbsp;--&nbsp;Shuts down a socket for receiving, sending, or both</DT
+><DT
+><A
+HREF="function.socket-strerror.html"
+>socket_strerror</A
+>&nbsp;--&nbsp;Return a string describing a socket error</DT
+><DT
+><A
+HREF="function.socket-write.html"
+>socket_write</A
+>&nbsp;--&nbsp;Write to a socket</DT
+></DL
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="function.use-soap-error-handler.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Начало</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="function.socket-accept.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>use_soap_error_handler</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="funcref.html"
+ACCESSKEY="U"
+>Уровень выше</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>socket_accept</TD
+></TR
+></TABLE
+></DIV
+></div></center></div></td>
+			<td><div style="display:none; width:200px;" id="o3" name="o3"><script charset="windows-1251" type="text/javascript" src="http://www.ozon.ru/PartnerTwinerNew.aspx?revident=bea9126b-c8e1-4bf5-b6d8-9a057f8feac6" ></script></div><script>o = document.getElementById('o3'); if(o) { var s = o.innerHTML; s = s.replace(/F6F6F6/gi,"FFFFFF"); o.innerHTML = s.replace(/padding-top: 10px; padding-bottom: 10px;/,"display:none;"); o.style.display = 'block'; } </script><br><div style="margin: 10px;"><script type="text/javascript"><!--
+google_ad_client = "pub-4093271809023514";
+/* 120x600, создано 01.11.2008 */
+google_ad_slot = "0438855731";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div></td>
+    		</tr>
+  		</table>
+    </td>
+  </tr>
+  <tr valign='bottom' height='1%'>
+  <td>      <table width=100% cellspacing=0 cellpadding=5 border=0 bgcolor=#9999CC>
+        <tr valign=center>
+          <td class='phpcopyright' width='45%' align='left'>&nbsp;&nbsp;Engine <a  href="http://www.mnogosearch.org/">MnoGoSearch</a></td>
+          <td class='phpcopyright' width='10%' align='center'>2007-2010 &copy <a  href="mailto:webmaster@php.ru">PHP.RU</a></td>
+          <td class='phpcopyright' width='45%' align='right' >Powered by <a target="_blank" href="http://odware.ru">ODware</a> <a HREF="http://440hz.ru">440Hz</a> &nbsp;&nbsp;</td>
+        </tr>
+      </table>
+
+    <div style="text-align: right; padding: 5px">
+		<!--LiveInternet counter-->
+		<script type="text/javascript">document.write('<a href="http://www.liveinternet.ru/click" target=_blank><img src="http://counter.yadro.ru/hit?t53.6;r' + escape(document.referrer) + ((typeof(screen)=='undefined')?'':';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ';u' + escape(document.URL) +';i' + escape('Жж'+document.title.substring(0,80)) + ';' + Math.random() + '" border=0 width=88 height=31 alt="" title="LiveInternet: показано число просмотров и посетителей за 24 часа"><\/a>');
+		</script>
+		<!--/LiveInternet-->
+		<!-- SpyLOG -->
+		<script src="http://tools.spylog.ru/counter2.2.js" type="text/javascript" id="spylog_code" counter="830950" ></script>
+		<noscript><a href="http://u8309.50.spylog.com/cnt?cid=830950&f=3&p=0" target="_blank"><img src="http://u8309.50.spylog.com/cnt?cid=830950&p=0&f=4" alt='SpyLOG' border='0' width=88 height=31 ></a>
+		</noscript>
+		<!--/ SpyLOG -->
+	</div>
+</td>
+  </tr>
+</table>
+
+<script>
+<!--
+document.SEARCH.QS.focus();
+// --></script>
+
+<!-- 
+	как же вы все это читаете?
+	440hz 
+-->
+
+</body>
+</html>

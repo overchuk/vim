@@ -1,0 +1,655 @@
+<!-- 
+
+     HTML dropped by Zend Guard Compressor 4.2
+
+     php.ru team: mz, az, yuri, vb, cyxapuk, 440hz, administrator
+     2004-2007 (c) expi-web.com 
+     2007-2008 (c) odware.com 
+     0101-1010 (с) 440hz
+
+     2b|~2b=?
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EHOT тут всё пожрал ! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="alternate" type="application/rss+xml" title="php.ru/forum - последние сообщения" href="http://www.php.ru/forum/rss.php">
+<link rel="SHORTCUT ICON" href="http://www.php.ru/favicon.ico" />
+<META name="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<meta http-equiv="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<META name="keywords" content="php, php5, apache, mysql, session">
+<meta http-equiv="keywords" content="php, php5, apache, mysql, session">
+<title>php.ru - udm_set_agent_param</title>
+<LINK REL="stylesheet" TYPE="text/css" HREF="http://www.php.ru/index.css">
+<script language="JavaScript" src="http://www.php.ru/ajax/ajax.js"></script>
+</head>
+<body>
+
+<table height='100%' width='100%' cellspacing='0' cellpadding='0'>
+  <tr height='99%' valign='top'>
+    <td align='center'>
+		
+		<table style='margin-top: 4px' width=100% cellspacing=0 cellpadding=3>
+   		<tr>
+     		<td>PHP - <a href="http://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BA%D1%80%D0%BE%D0%BD%D0%B8%D0%BC" target=_blank class=lnk>рекурсивный акроним</a> словосочетания &laquo;<a href="/manual/introduction.html" class=lnk>PHP: Hypertext Preprocessor</a>&raquo;</td>
+     	</tr>
+   		</table>
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/subsys_ajax.js"></script>
+		<!--
+
+		commet by 440hz
+		20.10.2007
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/pu_search.js"></script>
+
+		-->
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/cz.js?a=b"></script>
+
+		<table style='margin-top: 5px' width=100% bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0>
+   	 	<form name=SEARCH method=GET action="http://www.php.ru/search/?SID=fpcfi2fahqxtprcb" onsubmit="return puSubmit();">
+	  	<input type=hidden name=PAGE value=1>
+  		<tr>
+    		<td width='1' valign='middle'> 
+    		   <a href='/'><img src="http://www.php.ru/;-)/logo.gif" width=133 height=93 alt="php" border=0 hspace=10 vspace=0></a>
+			 </td>
+		    <td width='100%' valign='middle'>
+		       <!--
+			   
+				commet by 440hz
+				20.10.2007
+
+			   <div id='pu_search' class='pu_search'></div>
+		       <div id='pu_search_description' class='pu_search_decription'></div>
+			   
+			   -->
+        	 <input type=text style='width:99%; margin: 10px' maxlength='200' name='QS' class='in' id='query' autocomplete='off' value="" />
+    		</td>
+		  </tr>
+   		<tr bgcolor='#666699' valign='middle'>
+			<td style='border-top: 1px solid #333366;'><br /></td>
+    		<td style='border-top: 1px solid #333366;'><div style="padding: 4px 4px 4px 10px; height: 24px; color: #CCCCFF;" id="stat">Хто там?<script>doLoadCZ('stat','stat');</script></div></td>
+  		</tr>
+		</form>
+		</table>
+		<table id="menu" cellspaciong=0 cellpadding=3>
+<tr>
+<td><a href="/" class=current>Главная</a></td>
+<td><a href="/download/" class=current>Скачать</a></td>
+<td><a href="/doc/" class=current>Документация</a></td>
+<td><a href="/forum/" class=current>Форум</a></td>
+<td width=100% align=right><a href="/phpinfo.html" class=current>phpinfo()</a></td>
+</tr>
+</table>
+
+		
+<!--  AdRiver code START. Type:728x90 Site: php.ru PZ: 0 BN: 1 -->
+<script language="javascript" type="text/javascript"><!--
+var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+var ar_Tail='unknown'; if (document.referrer) ar_Tail = escape(document.referrer);
+document.write(
+'<iframe src="http://ad.adriver.ru/cgi-bin/erle.cgi?'
++ 'sid=148680&bn=1&target=blank&bt=36&pz=0&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail
++ '" frameborder=0 vspace=0 hspace=0 width=728 height=90 marginwidth=0'
++ ' marginheight=0 scrolling=no></iframe>');
+//--></script>
+<noscript>
+<a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" target=_blank>
+<img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" alt="-AdRiver-" border=0 width=728 height=90></a>
+</noscript>
+<!--  AdRiver code END  -->
+
+
+  		<table width='100%' cellspacing='0' cellpadding='0'>
+    		<tr valign='top'>
+      		<td width=100%><div style="margin: 10px 10px 10px 50px;"><center><div style="width: 800px; text-align: left"><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Руководство по PHP</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="function.udm-open-stored.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="ref.mssql.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><H1
+><A
+NAME="function.udm-set-agent-param"
+></A
+>udm_set_agent_param</H1
+><DIV
+CLASS="refnamediv"
+><A
+NAME="AEN95548"
+></A
+><P
+>    (PHP 4 &#62;= 4.0.5, PHP 5 &#60;= 5.0.4)</P
+>udm_set_agent_param&nbsp;--&nbsp;Set mnoGoSearch agent session parameters</DIV
+><DIV
+CLASS="refsect1"
+><A
+NAME="AEN95551"
+></A
+><H2
+>Description</H2
+>bool <B
+CLASS="methodname"
+>udm_set_agent_param</B
+> ( resource agent, int var, string val )<BR
+></BR
+><P
+>&#13;    Возвращает <TT
+CLASS="constant"
+><B
+>TRUE</B
+></TT
+> в случае успешного завершения или <TT
+CLASS="constant"
+><B
+>FALSE</B
+></TT
+> в случае возникновения ошибки. Defines mnoGoSearch session parameters.
+   </P
+><P
+>&#13;    The following parameters and their values are available:
+   </P
+><P
+></P
+><UL
+><LI
+><P
+>&#13;      UDM_PARAM_PAGE_NUM - used to choose search results page number (results 
+      are returned by pages beginning from 0, with UDM_PARAM_PAGE_SIZE results per page).
+     </P
+></LI
+><LI
+><P
+>&#13;      UDM_PARAM_PAGE_SIZE - number of search results displayed on one page.
+     </P
+></LI
+><LI
+><P
+>&#13;      UDM_PARAM_SEARCH_MODE - search mode. The following values available: UDM_MODE_ALL -
+      search for all words; UDM_MODE_ANY - search for any word; UDM_MODE_PHRASE - 
+      phrase search; UDM_MODE_BOOL - boolean search. See <A
+HREF="function.udm-find.html"
+><B
+CLASS="function"
+>udm_find()</B
+></A
+>
+      for details on boolean search.
+     </P
+></LI
+><LI
+><P
+>&#13;      UDM_PARAM_CACHE_MODE - turns on or off search result cache mode. 
+      When enabled, the search engine will store
+      search results to disk. In case a similar search is performed later, 
+      the engine will take results from the cache for faster performance.
+      Available values: UDM_CACHE_ENABLED, UDM_CACHE_DISABLED.
+     </P
+></LI
+><LI
+><P
+>&#13;      UDM_PARAM_TRACK_MODE - turns on or off trackquery mode. Since 
+      version 3.1.2 mnoGoSearch has a query tracking support.
+      Note that tracking is implemented in SQL version only and not available
+       in built-in database.
+      To use tracking, you have to create tables for tracking support. 
+      For MySQL, use create/mysql/track.txt.
+      When doing a search, front-end uses those tables to store query words,
+      a number of found documents and current Unix timestamp in seconds.
+      Available values: UDM_TRACK_ENABLED, UDM_TRACK_DISABLED.
+     </P
+></LI
+><LI
+><P
+>&#13;      UDM_PARAM_PHRASE_MODE - defines whether index database using phrases 
+      ("phrase" parameter in indexer.conf).
+      Possible values: UDM_PHRASE_ENABLED and UDM_PHRASE_DISABLED.
+      Please note, that if phrase search is enabled (UDM_PHRASE_ENABLED),
+      it is still possible to do search in any mode (ANY, ALL, BOOL or PHRASE).
+      In 3.1.10 version of mnoGoSearch phrase search is supported only in sql 
+      and built-in database modes,
+      while beginning with 3.1.11 phrases are supported in cachemode as well.
+     </P
+><P
+>&#13;      Examples of phrase search:
+     </P
+><P
+>&#13;      "Arizona desert" - This query returns all indexed documents that contain 
+      "Arizona desert" as a phrase. Notice that you need to put double quotes 
+      around the phrase
+     </P
+></LI
+><LI
+><P
+>&#13;      UDM_PARAM_CHARSET - defines local charset. Available values: set of 
+      charsets supported by mnoGoSearch, e.g. koi8-r, cp1251, ...
+     </P
+></LI
+><LI
+><P
+>&#13;      UDM_PARAM_STOPFILE - Defines name and path
+      to stopwords file.  (There is a small difference with mnoGoSearch
+      - while in mnoGoSearch if relative path or no path entered, it
+      looks for this file in relation to UDM_CONF_DIR, the module looks for
+      the file in relation to current path, i.e. to the path where the
+      PHP script is executed.)
+     </P
+></LI
+><LI
+><P
+>&#13;      UDM_PARAM_STOPTABLE - Load stop words from the given SQL table. You may use 
+      several StopwordTable commands.
+      This command has no effect when compiled without SQL database support.
+     </P
+></LI
+><LI
+><P
+>&#13;      UDM_PARAM_WEIGHT_FACTOR - represents weight factors for specific document parts. 
+      Currently body, title, keywords, description, url are supported.
+      To activate this feature please use degrees of 2 in *Weight commands of
+      the indexer.conf. Let's imagine that we have these weights:
+     </P
+><P
+CLASS="literallayout"
+><br>
+&nbsp;&nbsp;URLWeight&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1<br>
+&nbsp;&nbsp;BodyWeight&nbsp;&nbsp;&nbsp;&nbsp;2<br>
+&nbsp;&nbsp;TitleWeight&nbsp;&nbsp;&nbsp;4<br>
+&nbsp;&nbsp;KeywordWeight&nbsp;8<br>
+&nbsp;&nbsp;DescWeight&nbsp;&nbsp;&nbsp;&nbsp;16<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</P
+><P
+>&#13;      As far as indexer uses bit OR operation for word weights when some
+      word presents several time in the same document, it is possible at search
+      time to detect word appearance in different document parts. Word which
+      appears only in the body will have 00000010 aggregate weight (in binary notation).
+      Word used in all document parts will have 00011111 aggregate weight.
+     </P
+><P
+>&#13;      This parameter's value is a string of hex digits ABCDE. Each digit is a 
+      factor for corresponding bit in word weight. For the given above weights
+      configuration:
+     </P
+><P
+CLASS="literallayout"
+><br>
+&nbsp;&nbsp;&nbsp;E&nbsp;is&nbsp;a&nbsp;factor&nbsp;for&nbsp;weight&nbsp;1&nbsp;&nbsp;(URL&nbsp;Weight&nbsp;bit)<br>
+&nbsp;&nbsp;&nbsp;D&nbsp;is&nbsp;a&nbsp;factor&nbsp;for&nbsp;weight&nbsp;2&nbsp;&nbsp;(BodyWeight&nbsp;bit)<br>
+&nbsp;&nbsp;&nbsp;C&nbsp;is&nbsp;a&nbsp;factor&nbsp;for&nbsp;weight&nbsp;4&nbsp;&nbsp;(TitleWeight&nbsp;bit)<br>
+&nbsp;&nbsp;&nbsp;B&nbsp;is&nbsp;a&nbsp;factor&nbsp;for&nbsp;weight&nbsp;8&nbsp;&nbsp;(KeywordWeight&nbsp;bit)<br>
+&nbsp;&nbsp;&nbsp;A&nbsp;is&nbsp;a&nbsp;factor&nbsp;for&nbsp;weight&nbsp;16&nbsp;(DescWeight&nbsp;bit)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</P
+><P
+>&#13;      Examples:
+     </P
+><P
+>&#13;      UDM_PARAM_WEIGHT_FACTOR=00001 will search through URLs only.
+     </P
+><P
+>&#13;      UDM_PARAM_WEIGHT_FACTOR=00100 will search through Titles only.
+     </P
+><P
+>&#13;      UDM_PARAM_WEIGHT_FACTOR=11100 will search through Title,Keywords,Description
+      but not through URL and Body.
+     </P
+><P
+>&#13;      UDM_PARAM_WEIGHT_FACTOR=F9421 will search through:
+     </P
+><P
+CLASS="literallayout"
+><br>
+&nbsp;&nbsp;&nbsp;&nbsp;Description&nbsp;with&nbsp;factor&nbsp;15&nbsp;&nbsp;(F&nbsp;hex)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Keywords&nbsp;with&nbsp;factor&nbsp;9<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Title&nbsp;with&nbsp;factor&nbsp;&nbsp;4<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Body&nbsp;with&nbsp;factor&nbsp;2<br>
+&nbsp;&nbsp;&nbsp;&nbsp;URL&nbsp;with&nbsp;factor&nbsp;1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</P
+><P
+>&#13;      If UDM_PARAM_WEIGHT_FACTOR variable is omitted, original weight value is
+      taken to sort results. For a given above weight configuration it means
+      that document description has a most big weight 16.
+     </P
+></LI
+><LI
+><P
+>&#13;      UDM_PARAM_WORD_MATCH - word match. You may use this parameter to choose 
+      word match type. This feature works only in "single" and "multi" modes 
+      using SQL based and built-in database. It does not work in cachemode and other modes
+      since they use word CRC and do not support substring search. Available values:
+     </P
+><P
+>UDM_MATCH_BEGIN - word beginning match;</P
+><P
+>UDM_MATCH_END - word ending match;</P
+><P
+>UDM_MATCH_WORD - whole word match;</P
+><P
+>UDM_MATCH_SUBSTR - word substring match.</P
+></LI
+><LI
+><P
+>&#13;      UDM_PARAM_MIN_WORD_LEN - defines minimal word length.
+      Any word shorter this limit is considered to be a stopword. Please note 
+      that this parameter value is inclusive, i.e. if UDM_PARAM_MIN_WORD_LEN=3,
+      a word 3 characters long will not be considered a stopword, while
+      a word 2 characters long will be. Default value is 1.
+     </P
+></LI
+><LI
+><P
+>&#13;      UDM_PARAM_ISPELL_PREFIXES - Possible values: UDM_PREFIXES_ENABLED and 
+      UDM_PREFIXES_DISABLED, that respectively enable or disable using prefixes.
+      E.g. if a word "tested" is in search query, also words like "test", 
+      "testing", etc. Only suffixes are supported by default. Prefixes usually
+      change word meanings, for example if somebody is searching for the word "tested"
+      one hardly wants "untested"  to be found. Prefixes support may also be 
+      found useful for site's spelling checking purposes. In order to enable 
+      ispell, you have to load ispell data with <A
+HREF="function.udm-load-ispell-data.html"
+><B
+CLASS="function"
+>udm_load_ispell_data()</B
+></A
+>.
+     </P
+></LI
+><LI
+><P
+>&#13;      UDM_PARAM_CROSS_WORDS - enables or disables crosswords support.
+      Possible values: UDM_CROSS_WORDS_ENABLED and UDM_CROSS_WORDS_DISABLED.
+     </P
+><P
+>&#13;      The crosswords feature allows to assign words between &#60;a href="xxx"&#62; and &#60;/a&#62;
+      also to a document this link leads to. It works in SQL database mode and
+      is not supported in built-in database and Cachemode.
+     </P
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+>Замечание: </B
+>
+       Crosswords are supported only in mnoGoSearch 3.1.11 or later.
+      </P
+></BLOCKQUOTE
+></DIV
+></LI
+><LI
+><P
+>&#13;      UDM_PARAM_VARDIR - specifies a custom path to directory where indexer 
+      stores data when using built-in database and in cache mode.
+      By default <VAR
+CLASS="literal"
+>/var</VAR
+> directory of
+      mnoGoSearch installation is used. Can have 
+      only string values. The parameter is available in PHP 4.1.0 or later.
+     </P
+></LI
+></UL
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="function.udm-open-stored.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Начало</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="ref.mssql.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>udm_open_stored</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="ref.mnogosearch.html"
+ACCESSKEY="U"
+>Уровень выше</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Microsoft SQL Server Functions</TD
+></TR
+></TABLE
+></DIV
+></div></center></div></td>
+			<td><div style="display:none; width:200px;" id="o3" name="o3"><script charset="windows-1251" type="text/javascript" src="http://www.ozon.ru/PartnerTwinerNew.aspx?revident=bea9126b-c8e1-4bf5-b6d8-9a057f8feac6" ></script></div><script>o = document.getElementById('o3'); if(o) { var s = o.innerHTML; s = s.replace(/F6F6F6/gi,"FFFFFF"); o.innerHTML = s.replace(/padding-top: 10px; padding-bottom: 10px;/,"display:none;"); o.style.display = 'block'; } </script><br><div style="margin: 10px;"><script type="text/javascript"><!--
+google_ad_client = "pub-4093271809023514";
+/* 120x600, создано 01.11.2008 */
+google_ad_slot = "0438855731";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div></td>
+    		</tr>
+  		</table>
+    </td>
+  </tr>
+  <tr valign='bottom' height='1%'>
+  <td>      <table width=100% cellspacing=0 cellpadding=5 border=0 bgcolor=#9999CC>
+        <tr valign=center>
+          <td class='phpcopyright' width='45%' align='left'>&nbsp;&nbsp;Engine <a  href="http://www.mnogosearch.org/">MnoGoSearch</a></td>
+          <td class='phpcopyright' width='10%' align='center'>2007-2010 &copy <a  href="mailto:webmaster@php.ru">PHP.RU</a></td>
+          <td class='phpcopyright' width='45%' align='right' >Powered by <a target="_blank" href="http://odware.ru">ODware</a> <a HREF="http://440hz.ru">440Hz</a> &nbsp;&nbsp;</td>
+        </tr>
+      </table>
+
+    <div style="text-align: right; padding: 5px">
+		<!--LiveInternet counter-->
+		<script type="text/javascript">document.write('<a href="http://www.liveinternet.ru/click" target=_blank><img src="http://counter.yadro.ru/hit?t53.6;r' + escape(document.referrer) + ((typeof(screen)=='undefined')?'':';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ';u' + escape(document.URL) +';i' + escape('Жж'+document.title.substring(0,80)) + ';' + Math.random() + '" border=0 width=88 height=31 alt="" title="LiveInternet: показано число просмотров и посетителей за 24 часа"><\/a>');
+		</script>
+		<!--/LiveInternet-->
+		<!-- SpyLOG -->
+		<script src="http://tools.spylog.ru/counter2.2.js" type="text/javascript" id="spylog_code" counter="830950" ></script>
+		<noscript><a href="http://u8309.50.spylog.com/cnt?cid=830950&f=3&p=0" target="_blank"><img src="http://u8309.50.spylog.com/cnt?cid=830950&p=0&f=4" alt='SpyLOG' border='0' width=88 height=31 ></a>
+		</noscript>
+		<!--/ SpyLOG -->
+	</div>
+</td>
+  </tr>
+</table>
+
+<script>
+<!--
+document.SEARCH.QS.focus();
+// --></script>
+
+<!-- 
+	как же вы все это читаете?
+	440hz 
+-->
+
+</body>
+</html>

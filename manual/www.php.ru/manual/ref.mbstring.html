@@ -1,0 +1,3929 @@
+<!-- 
+
+     HTML dropped by Zend Guard Compressor 4.2
+
+     php.ru team: mz, az, yuri, vb, cyxapuk, 440hz, administrator
+     2004-2007 (c) expi-web.com 
+     2007-2008 (c) odware.com 
+     0101-1010 (с) 440hz
+
+     2b|~2b=?
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EHOT тут всё пожрал ! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="alternate" type="application/rss+xml" title="php.ru/forum - последние сообщения" href="http://www.php.ru/forum/rss.php">
+<link rel="SHORTCUT ICON" href="http://www.php.ru/favicon.ico" />
+<META name="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<meta http-equiv="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<META name="keywords" content="php, php5, apache, mysql, session">
+<meta http-equiv="keywords" content="php, php5, apache, mysql, session">
+<title>php.ru - Multibyte String Functions</title>
+<LINK REL="stylesheet" TYPE="text/css" HREF="http://www.php.ru/index.css">
+<script language="JavaScript" src="http://www.php.ru/ajax/ajax.js"></script>
+</head>
+<body>
+
+<table height='100%' width='100%' cellspacing='0' cellpadding='0'>
+  <tr height='99%' valign='top'>
+    <td align='center'>
+		
+		<table style='margin-top: 4px' width=100% cellspacing=0 cellpadding=3>
+   		<tr>
+     		<td>PHP - <a href="http://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BA%D1%80%D0%BE%D0%BD%D0%B8%D0%BC" target=_blank class=lnk>рекурсивный акроним</a> словосочетания &laquo;<a href="/manual/introduction.html" class=lnk>PHP: Hypertext Preprocessor</a>&raquo;</td>
+     	</tr>
+   		</table>
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/subsys_ajax.js"></script>
+		<!--
+
+		commet by 440hz
+		20.10.2007
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/pu_search.js"></script>
+
+		-->
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/cz.js?a=b"></script>
+
+		<table style='margin-top: 5px' width=100% bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0>
+   	 	<form name=SEARCH method=GET action="http://www.php.ru/search/?SID=04a4c4kytc81ds9w" onsubmit="return puSubmit();">
+	  	<input type=hidden name=PAGE value=1>
+  		<tr>
+    		<td width='1' valign='middle'> 
+    		   <a href='/'><img src="http://www.php.ru/;-)/logo.gif" width=133 height=93 alt="php" border=0 hspace=10 vspace=0></a>
+			 </td>
+		    <td width='100%' valign='middle'>
+		       <!--
+			   
+				commet by 440hz
+				20.10.2007
+
+			   <div id='pu_search' class='pu_search'></div>
+		       <div id='pu_search_description' class='pu_search_decription'></div>
+			   
+			   -->
+        	 <input type=text style='width:99%; margin: 10px' maxlength='200' name='QS' class='in' id='query' autocomplete='off' value="" />
+    		</td>
+		  </tr>
+   		<tr bgcolor='#666699' valign='middle'>
+			<td style='border-top: 1px solid #333366;'><br /></td>
+    		<td style='border-top: 1px solid #333366;'><div style="padding: 4px 4px 4px 10px; height: 24px; color: #CCCCFF;" id="stat">Хто там?<script>doLoadCZ('stat','stat');</script></div></td>
+  		</tr>
+		</form>
+		</table>
+		<table id="menu" cellspaciong=0 cellpadding=3>
+<tr>
+<td><a href="/" class=current>Главная</a></td>
+<td><a href="/download/" class=current>Скачать</a></td>
+<td><a href="/doc/" class=current>Документация</a></td>
+<td><a href="/forum/" class=current>Форум</a></td>
+<td width=100% align=right><a href="/phpinfo.html" class=current>phpinfo()</a></td>
+</tr>
+</table>
+
+		
+<!--  AdRiver code START. Type:728x90 Site: php.ru PZ: 0 BN: 1 -->
+<script language="javascript" type="text/javascript"><!--
+var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+var ar_Tail='unknown'; if (document.referrer) ar_Tail = escape(document.referrer);
+document.write(
+'<iframe src="http://ad.adriver.ru/cgi-bin/erle.cgi?'
++ 'sid=148680&bn=1&target=blank&bt=36&pz=0&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail
++ '" frameborder=0 vspace=0 hspace=0 width=728 height=90 marginwidth=0'
++ ' marginheight=0 scrolling=no></iframe>');
+//--></script>
+<noscript>
+<a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" target=_blank>
+<img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" alt="-AdRiver-" border=0 width=728 height=90></a>
+</noscript>
+<!--  AdRiver code END  -->
+
+
+  		<table width='100%' cellspacing='0' cellpadding='0'>
+    		<tr valign='top'>
+      		<td width=100%><div style="margin: 10px 10px 10px 50px;"><center><div style="width: 800px; text-align: left"><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Руководство по PHP</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="function.msql.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="function.mb-convert-case.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="reference"
+><A
+NAME="ref.mbstring"
+></A
+><DIV
+CLASS="TITLEPAGE"
+><H1
+CLASS="title"
+>XCII. Multibyte String Functions</H1
+><DIV
+CLASS="PARTINTRO"
+><A
+NAME="AEN98383"
+></A
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="mbstring.intro"
+>Введение</A
+></H1
+><P
+>&#13;     While there are many languages in which every necessary character can
+     be represented by a one-to-one mapping to an 8-bit value, there are also
+     several languages which require so many characters for written
+     communication that they cannot be contained within the range a mere byte 
+     can code (A byte is made up of eight bits. Each bit can contain only two 
+     distinct values, one or zero. Because of this, a byte can only represent 
+     256 unique values (two to the power of eight)). Multibyte character 
+     encoding schemes were developed to express more than 256 characters 
+     in the regular bytewise coding system.
+    </P
+><P
+>&#13;     When you manipulate (trim, split, splice, etc.) strings encoded in a
+     multibyte encoding, you need to use special functions since two or more
+     consecutive bytes may represent a single character in such encoding
+     schemes. Otherwise, if you apply a non-multibyte-aware string function
+     to the string, it probably fails to detect the beginning or ending of
+     the multibyte character and ends up with a corrupted garbage string that
+     most likely loses its original meaning.
+    </P
+><P
+>&#13;     <VAR
+CLASS="literal"
+>mbstring</VAR
+> provides multibyte specific string functions 
+     that help you deal with multibyte encodings in PHP. In addition to that, 
+     <VAR
+CLASS="literal"
+>mbstring</VAR
+> handles character encoding conversion between 
+     the possible encoding pairs. <VAR
+CLASS="literal"
+>mbstring</VAR
+> is designed to 
+     handle Unicode-based encodings such as UTF-8 and UCS-2 and many 
+     single-byte encodings for convenience (listed below).
+    </P
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="mbstring.php4.req"
+>PHP Character Encoding Requirements</A
+></H2
+><P
+>&#13;      Encodings of the following types are safely used with PHP.
+      <P
+></P
+><UL
+><LI
+><P
+>&#13;         A singlebyte encoding,
+         <P
+></P
+><UL
+><LI
+><P
+>&#13;            which has ASCII-compatible (ISO646 compatible) mappings for the
+            characters in range of <VAR
+CLASS="literal"
+>00h</VAR
+> to
+            <VAR
+CLASS="literal"
+>7fh</VAR
+>.
+           </P
+></LI
+></UL
+>
+        </P
+></LI
+><LI
+><P
+>&#13;         A multibyte encoding,
+         <P
+></P
+><UL
+><LI
+><P
+>&#13;            which has ASCII-compatible mappings for the characters in range of
+            <VAR
+CLASS="literal"
+>00h</VAR
+> to <VAR
+CLASS="literal"
+>7fh</VAR
+>.
+           </P
+></LI
+><LI
+><P
+>&#13;            which don't use ISO2022 escape sequences.
+           </P
+></LI
+><LI
+><P
+>&#13;            which don't use a value from <VAR
+CLASS="literal"
+>00h</VAR
+> to
+            <VAR
+CLASS="literal"
+>7fh</VAR
+> in any of the compounded bytes
+            that represents a single character.
+           </P
+></LI
+></UL
+>  
+        </P
+></LI
+></UL
+>
+     </P
+><P
+>&#13;      These are examples of character encodings that are unlikely to work
+      with PHP.
+      <DIV
+CLASS="informalexample"
+><P
+></P
+><A
+NAME="AEN98417"
+></A
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="programlisting"
+>JIS, SJIS, ISO-2022-JP, BIG-5</PRE
+></TD
+></TR
+></TABLE
+><P
+></P
+></DIV
+>
+     </P
+><P
+>&#13;      Although PHP scripts written in any of those encodings might not work,
+      especially in the case where encoded strings appear as identifiers
+      or literals in the script, you can almost avoid using these encodings
+      by setting up the <VAR
+CLASS="literal"
+>mbstring</VAR
+>'s transparent encoding
+      filter function for incoming HTTP queries.
+     </P
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+>Замечание: </B
+>
+       It's highly discouraged to use SJIS, BIG5, CP936, CP949 and GB18030 for
+       the internal encoding unless you are familiar with the parser, the
+       scanner and the character encoding.
+      </P
+></BLOCKQUOTE
+></DIV
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+>Замечание: </B
+>
+       If you are connecting to a database with PHP, it is recommended that
+       you use the same character encoding for both the database and the
+       <VAR
+CLASS="literal"
+>internal encoding</VAR
+> for ease of use and better
+       performance.
+      </P
+><P
+>&#13;       If you are using PostgreSQL, the character encoding used in the
+       database and the one used in PHP may differ as it supports
+       automatic character set conversion between the backend and the frontend.
+      </P
+></BLOCKQUOTE
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="mbstring.installation"
+>Установка</A
+></H1
+><P
+>&#13;   <VAR
+CLASS="literal"
+>mbstring</VAR
+> is a non-default extension. This means it
+   is not enabled by default. You must explicitly enable the module with
+   the <VAR
+CLASS="literal"
+>configure</VAR
+> option. See the
+   <A
+HREF="install.html"
+>Install</A
+> section for details.
+  </P
+><P
+>&#13;   The following configure options are related to the
+   <VAR
+CLASS="literal"
+>mbstring</VAR
+> module.
+  </P
+><P
+>&#13;   <P
+></P
+><UL
+><LI
+><P
+>&#13;      <VAR
+CLASS="option"
+>--enable-mbstring</VAR
+>: Enable
+      <VAR
+CLASS="literal"
+>mbstring</VAR
+> functions. This option is
+      required to use <VAR
+CLASS="literal"
+>mbstring</VAR
+> functions.
+     </P
+><P
+>&#13;      <SPAN
+CLASS="productname"
+>libmbfl</SPAN
+> is necesarry for <VAR
+CLASS="literal"
+>mbstring</VAR
+>.
+      <SPAN
+CLASS="productname"
+>libmbfl</SPAN
+> is bundled with <VAR
+CLASS="literal"
+>mbstring</VAR
+>.
+      If <SPAN
+CLASS="productname"
+>libmbfl</SPAN
+> is already installed on the system,
+      <VAR
+CLASS="option"
+>--with-libmbfl[=DIR]</VAR
+> can be specified to use 
+      the installed library.
+     </P
+><P
+>&#13;      As of PHP 4.3.0, <VAR
+CLASS="literal"
+>mbstring</VAR
+> extension provides
+      enhanced support for Simplified Chinese, Traditional Chinese,
+      Korean, and Russian in addition to Japanese.
+     </P
+><P
+>&#13;      For PHP 4.3.3 or before, 
+      To enable that feature, you will have to supply either one of the
+      following options to the <VAR
+CLASS="literal"
+>LANG</VAR
+> parameter
+      of <VAR
+CLASS="option"
+>--enable-mbstring=LANG</VAR
+>; 
+      <VAR
+CLASS="option"
+>--enable-mbstring=cn</VAR
+> for Simplified Chinese support,
+      <VAR
+CLASS="option"
+>--enable-mbstring=tw</VAR
+> for Traditional Chinese support, 
+      <VAR
+CLASS="option"
+>--enable-mbstring=kr</VAR
+> for Korean support, 
+      <VAR
+CLASS="option"
+>--enable-mbstring=ru</VAR
+> for Russian support, and
+      <VAR
+CLASS="option"
+>--enable-mbstring=ja</VAR
+> for Japanese support (default).
+       To enable all supported encoding, use <VAR
+CLASS="option"
+>--enable-mbstring=all</VAR
+>.
+     </P
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+>Замечание: </B
+>
+       As of PHP 4.3.4, 
+       all supported encoding by <SPAN
+CLASS="productname"
+>libmbfl</SPAN
+> is enabled
+       with <VAR
+CLASS="option"
+>--enable-mbstring</VAR
+>.
+      </P
+></BLOCKQUOTE
+></DIV
+></LI
+><LI
+><P
+>&#13;      <VAR
+CLASS="option"
+>--enable-mbstr-enc-trans</VAR
+> :
+      Enable HTTP input character encoding conversion using
+      <VAR
+CLASS="literal"
+>mbstring</VAR
+> conversion engine. If this
+      feature is enabled, HTTP input character encoding may be
+      converted to <VAR
+CLASS="literal"
+>mbstring.internal_encoding</VAR
+>
+      automatically.
+     </P
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+>Замечание: </B
+>
+       As of PHP 4.3.0, the option 
+       <VAR
+CLASS="option"
+>--enable-mbstr-enc-trans</VAR
+>
+       was eliminated and replaced with the runtime setting
+       <VAR
+CLASS="literal"
+>mbstring.encoding_translation</VAR
+>.
+       HTTP input character encoding conversion is enabled
+       when this is set to <VAR
+CLASS="literal"
+>On</VAR
+>
+       (the default is <VAR
+CLASS="literal"
+>Off</VAR
+>).
+      </P
+></BLOCKQUOTE
+></DIV
+></LI
+><LI
+><P
+>&#13;      <VAR
+CLASS="option"
+>--disable-mbregex</VAR
+>: Disable
+      regular expression functions with multibyte character support.
+     </P
+></LI
+></UL
+>
+  </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="mbstring.configuration"
+>Настройка во время выполнения</A
+></H1
+><P
+>&#13;Поведение этих функций зависит от установок в <TT
+CLASS="filename"
+>php.ini</TT
+>.
+</P
+><P
+>&#13;  <DIV
+CLASS="table"
+><A
+NAME="AEN98483"
+></A
+><P
+><B
+>Таблица 1. mbstring configuration options</B
+></P
+><TABLE
+BORDER="1"
+CLASS="CALSTABLE"
+><COL><COL><COL><COL><THEAD
+><TR
+><TH
+>Name</TH
+><TH
+>Default</TH
+><TH
+>Changeable</TH
+><TH
+>Changelog</TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+>mbstring.language</TD
+><TD
+>"neutral"</TD
+><TD
+>PHP_INI_PERDIR</TD
+><TD
+>Available since PHP 4.3.0.</TD
+></TR
+><TR
+><TD
+>mbstring.detect_order</TD
+><TD
+>NULL</TD
+><TD
+>PHP_INI_ALL</TD
+><TD
+>Available since PHP 4.0.6.</TD
+></TR
+><TR
+><TD
+>mbstring.http_input</TD
+><TD
+>"pass"</TD
+><TD
+>PHP_INI_ALL</TD
+><TD
+>Available since PHP 4.0.6.</TD
+></TR
+><TR
+><TD
+>mbstring.http_output</TD
+><TD
+>"pass"</TD
+><TD
+>PHP_INI_ALL</TD
+><TD
+>Available since PHP 4.0.6.</TD
+></TR
+><TR
+><TD
+>mbstring.internal_encoding</TD
+><TD
+>NULL</TD
+><TD
+>PHP_INI_ALL</TD
+><TD
+>Available since PHP 4.0.6.</TD
+></TR
+><TR
+><TD
+>mbstring.script_encoding</TD
+><TD
+>NULL</TD
+><TD
+>PHP_INI_ALL</TD
+><TD
+>Available since PHP 4.3.0.</TD
+></TR
+><TR
+><TD
+>mbstring.substitute_character</TD
+><TD
+>NULL</TD
+><TD
+>PHP_INI_ALL</TD
+><TD
+>Available since PHP 4.0.6.</TD
+></TR
+><TR
+><TD
+>mbstring.func_overload</TD
+><TD
+>"0"</TD
+><TD
+>PHP_INI_PERDIR</TD
+><TD
+>PHP_INI_SYSTEM in PHP &#60;= 4.2.3. Available since PHP 4.2.0.</TD
+></TR
+><TR
+><TD
+>mbstring.encoding_translation</TD
+><TD
+>"0"</TD
+><TD
+>PHP_INI_PERDIR</TD
+><TD
+>Available since PHP 4.3.0.</TD
+></TR
+><TR
+><TD
+>mbstring.strict_detection</TD
+><TD
+>"0"</TD
+><TD
+>PHP_INI_ALL</TD
+><TD
+>Available since PHP 5.1.2.</TD
+></TR
+></TBODY
+></TABLE
+></DIV
+>
+  For the definition of the PHP_INI_* constants, please refer to
+  <A
+HREF="function.ini-set.html"
+><B
+CLASS="function"
+>ini_set()</B
+></A
+>.
+ </P
+><P
+>Краткое разъяснение конфигурационных
+директив.</P
+><P
+>&#13;  <P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+><A
+NAME="ini.mbstring.language"
+></A
+><VAR
+CLASS="parameter"
+>mbstring.language</VAR
+>
+     <A
+HREF="language.types.string.html"
+><B
+CLASS="type"
+>string</B
+></A
+></DT
+><DD
+><P
+>&#13;      The default national language setting (NLS) used in mbstring. Note that this option
+      automagically defines <VAR
+CLASS="literal"
+>mbstring.internal_encoding</VAR
+> and
+      <VAR
+CLASS="literal"
+>mbstring.internal_encoding</VAR
+> should be placed
+      after <VAR
+CLASS="literal"
+>mbstring.language</VAR
+> in <TT
+CLASS="filename"
+>php.ini</TT
+>
+     </P
+></DD
+><DT
+><A
+NAME="ini.mbstring.encoding-translation"
+></A
+><VAR
+CLASS="parameter"
+>mbstring.encoding_translation</VAR
+>
+     <A
+HREF="language.types.boolean.html"
+><B
+CLASS="type"
+>boolean</B
+></A
+></DT
+><DD
+><P
+>&#13;      Enables the transparent character encoding filter for the incoming HTTP queries,
+      which performs detection and conversion of the input encoding to the
+      internal character encoding. 
+     </P
+></DD
+><DT
+><A
+NAME="ini.mbstring.internal-encoding"
+></A
+><VAR
+CLASS="parameter"
+>mbstring.internal_encoding</VAR
+>
+     <A
+HREF="language.types.string.html"
+><B
+CLASS="type"
+>string</B
+></A
+></DT
+><DD
+><P
+>&#13;      Defines the default internal character encoding.
+     </P
+></DD
+><DT
+><A
+NAME="ini.mbstring.http-input"
+></A
+><VAR
+CLASS="parameter"
+>mbstring.http_input</VAR
+>
+     <A
+HREF="language.types.string.html"
+><B
+CLASS="type"
+>string</B
+></A
+></DT
+><DD
+><P
+>&#13;      Defines the default HTTP input character encoding.
+     </P
+></DD
+><DT
+><A
+NAME="ini.mbstring.http-output"
+></A
+><VAR
+CLASS="parameter"
+>mbstring.http_output</VAR
+>
+     <A
+HREF="language.types.string.html"
+><B
+CLASS="type"
+>string</B
+></A
+></DT
+><DD
+><P
+>&#13;      Defines the default HTTP output character encoding.
+     </P
+></DD
+><DT
+><A
+NAME="ini.mbstring.detect-order"
+></A
+><VAR
+CLASS="parameter"
+>mbstring.detect_order</VAR
+>
+     <A
+HREF="language.types.string.html"
+><B
+CLASS="type"
+>string</B
+></A
+></DT
+><DD
+><P
+>&#13;      Defines default character code detection order. See also
+      <A
+HREF="function.mb-detect-order.html"
+><B
+CLASS="function"
+>mb_detect_order()</B
+></A
+>. 
+     </P
+></DD
+><DT
+><A
+NAME="ini.mbstring.substitute-character"
+></A
+><VAR
+CLASS="parameter"
+>mbstring.substitute_character</VAR
+>
+     <A
+HREF="language.types.string.html"
+><B
+CLASS="type"
+>string</B
+></A
+></DT
+><DD
+><P
+>&#13;      Defines character to substitute for invalid character encoding.
+     </P
+></DD
+><DT
+><A
+NAME="ini.mbstring.func-overload"
+></A
+><VAR
+CLASS="parameter"
+>mbstring.func_overload</VAR
+>
+     <A
+HREF="language.types.string.html"
+><B
+CLASS="type"
+>string</B
+></A
+></DT
+><DD
+><P
+>&#13;      Overloads a set of single byte functions by the mbstring counterparts. See
+      <A
+HREF="ref.mbstring.html#mbstring.overload"
+>Function overloading</A
+> for more
+      information.
+     </P
+></DD
+><DT
+><A
+NAME="ini.mbstring.strict-detection"
+></A
+><VAR
+CLASS="parameter"
+>mbstring.strict_detection</VAR
+>
+     <A
+HREF="language.types.boolean.html"
+><B
+CLASS="type"
+>boolean</B
+></A
+></DT
+><DD
+><P
+>&#13;      Enables the strict encoding detection.
+     </P
+></DD
+></DL
+></DIV
+>
+ </P
+><P
+>&#13;  According to the <A
+HREF="http://www.w3.org/TR/REC-html40/interact/forms.html#adef-accept-charset"
+TARGET="_top"
+>HTML 4.01 specification</A
+>,
+  Web browsers are allowed to encode a form being submitted with a character
+  encoding different from the one used for the page.
+  See <A
+HREF="function.mb-http-input.html"
+><B
+CLASS="function"
+>mb_http_input()</B
+></A
+> to detect character encoding
+  used by browsers.
+ </P
+><P
+>&#13;  Although popular browsers are capable of giving a reasonably accurate guess
+  to the character encoding of a given HTML document, it would be better to
+  set the <VAR
+CLASS="literal"
+>charset</VAR
+> parameter in the
+  <VAR
+CLASS="literal"
+>Content-Type</VAR
+> HTTP header to the appropriate value by
+  <A
+HREF="function.header.html"
+><B
+CLASS="function"
+>header()</B
+></A
+> or
+  <A
+HREF="ini.core.html#ini.sect.data-handling"
+>default_charset</A
+> ini setting.
+ </P
+><P
+>&#13;  <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN98616"
+></A
+><P
+><B
+>Пример 1. <TT
+CLASS="filename"
+>php.ini</TT
+> setting examples</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="programlisting"
+>; Set default language
+mbstring.language        = Neutral; Set default language to Neutral(UTF-8) (default)
+mbstring.language        = English; Set default language to English 
+mbstring.language        = Japanese; Set default language to Japanese
+
+;; Set default internal encoding
+;; Note: Make sure to use character encoding works with PHP
+mbstring.internal_encoding    = UTF-8  ; Set internal encoding to UTF-8
+
+;; HTTP input encoding translation is enabled.
+mbstring.encoding_translation = On
+
+;; Set default HTTP input character encoding
+;; Note: Script cannot change http_input setting.
+mbstring.http_input           = pass    ; No conversion. 
+mbstring.http_input           = auto    ; Set HTTP input to auto
+                                ; "auto" is expanded to "ASCII,JIS,UTF-8,EUC-JP,SJIS"
+mbstring.http_input           = SJIS    ; Set HTTP2 input to  SJIS
+mbstring.http_input           = UTF-8,SJIS,EUC-JP ; Specify order
+
+;; Set default HTTP output character encoding 
+mbstring.http_output          = pass    ; No conversion
+mbstring.http_output          = UTF-8   ; Set HTTP output encoding to UTF-8
+
+;; Set default character encoding detection order
+mbstring.detect_order         = auto    ; Set detect order to auto
+mbstring.detect_order         = ASCII,JIS,UTF-8,SJIS,EUC-JP ; Specify order
+
+;; Set default substitute character
+mbstring.substitute_character = 12307   ; Specify Unicode value
+mbstring.substitute_character = none    ; Do not print character
+mbstring.substitute_character = long    ; Long Example: U+3000,JIS+7E7E</PRE
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+ </P
+><P
+>&#13;  <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN98621"
+></A
+><P
+><B
+>Пример 2. <TT
+CLASS="filename"
+>php.ini</TT
+> setting for <VAR
+CLASS="literal"
+>EUC-JP</VAR
+> users</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="programlisting"
+>;; Disable Output Buffering
+output_buffering      = Off
+
+;; Set HTTP header charset
+default_charset       = EUC-JP    
+
+;; Set default language to Japanese
+mbstring.language = Japanese
+
+;; HTTP input encoding translation is enabled.
+mbstring.encoding_translation = On
+
+;; Set HTTP input encoding conversion to auto
+mbstring.http_input   = auto 
+
+;; Convert HTTP output to EUC-JP
+mbstring.http_output  = EUC-JP    
+
+;; Set internal encoding to EUC-JP
+mbstring.internal_encoding = EUC-JP    
+
+;; Do not print invalid characters
+mbstring.substitute_character = none</PRE
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+ </P
+><P
+>&#13;  <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN98627"
+></A
+><P
+><B
+>Пример 3. <TT
+CLASS="filename"
+>php.ini</TT
+> setting for <VAR
+CLASS="literal"
+>SJIS</VAR
+> users</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="programlisting"
+>;; Enable Output Buffering
+output_buffering     = On
+
+;; Set mb_output_handler to enable output conversion
+output_handler       = mb_output_handler
+
+;; Set HTTP header charset
+default_charset      = Shift_JIS
+
+;; Set default language to Japanese
+mbstring.language = Japanese
+
+;; Set http input encoding conversion to auto
+mbstring.http_input  = auto 
+
+;; Convert to SJIS
+mbstring.http_output = SJIS    
+
+;; Set internal encoding to EUC-JP
+mbstring.internal_encoding = EUC-JP    
+
+;; Do not print invalid characters
+mbstring.substitute_character = none</PRE
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+ </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="mbstring.resources"
+>Типы ресурсов</A
+></H1
+><P
+>Данное расширение не определяет никакие типы ресурсов.</P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="mbstring.constants"
+>Предопределенные константы</A
+></H1
+><P
+>&#13;Перечисленные ниже константы определены данным расширением и могут быть
+доступны только в том случае, если PHP был собран с
+поддержкой этого расширения или же в том случае, если
+данное расширение подгружается во время выполнения.
+</P
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+><TT
+CLASS="constant"
+><B
+>MB_OVERLOAD_MAIL</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>MB_OVERLOAD_STRING</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>MB_OVERLOAD_REGEX</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="mbstring.http"
+>HTTP Input and Output</A
+></H1
+><P
+>&#13;      HTTP input/output character encoding conversion may convert
+      binary data also. Users are supposed to control character
+      encoding conversion if binary data is used for HTTP
+      input/output.
+     </P
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+>Замечание: </B
+>
+       In PHP 4.3.2 or earlier versions, there was a limitation in this
+       functionality that <VAR
+CLASS="literal"
+>mbstring</VAR
+> does not perform
+       character encoding conversion in POST data if the
+       <VAR
+CLASS="literal"
+>enctype</VAR
+> attribute in the <VAR
+CLASS="literal"
+>form</VAR
+>
+       element is set to <VAR
+CLASS="literal"
+>multipart/form-data</VAR
+>.
+       So you have to convert the incoming data by yourself in this case
+       if necessary.
+      </P
+><P
+>&#13;       Beginning with PHP 4.3.3, if <VAR
+CLASS="literal"
+>enctype</VAR
+> for HTML form is
+       set to <VAR
+CLASS="literal"
+>multipart/form-data</VAR
+> and
+       <VAR
+CLASS="literal"
+>mbstring.encoding_translation</VAR
+> is set to On
+       in <TT
+CLASS="filename"
+>php.ini</TT
+> the POST'ed variables and the names of uploaded files
+       will be converted to the internal character encoding as well.
+       However, the conversion isn't applied to the query keys.
+      </P
+></BLOCKQUOTE
+></DIV
+><P
+>&#13;      <P
+></P
+><UL
+><LI
+><P
+>&#13;         HTTP Input
+        </P
+><P
+> 
+         There is no way to control HTTP input character
+         conversion from a PHP script. To disable HTTP input character
+         conversion, it has to be done in <TT
+CLASS="filename"
+>php.ini</TT
+>.
+         <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN98677"
+></A
+><P
+><B
+>Пример 4. 
+           Disable HTTP input conversion in <TT
+CLASS="filename"
+>php.ini</TT
+>
+          </B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+;; Disable HTTP Input conversion<br />mbstring.http_input = pass<br />;; Disable HTTP Input conversion (PHP 4.3.0 or higher)<br />mbstring.encoding_translation = Off</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+        </P
+><P
+>&#13;         When using PHP as an Apache module, it is possible to
+         override those settings in each Virtual Host directive in
+         <TT
+CLASS="filename"
+>httpd.conf</TT
+> or per directory with <TT
+CLASS="filename"
+>.htaccess</TT
+>. Refer to the <A
+HREF="configuration.html"
+>Configuration</A
+> section and
+         Apache Manual for details.
+        </P
+></LI
+><LI
+><P
+>&#13;         HTTP Output
+        </P
+><P
+>&#13;         There are several ways to enable output character encoding
+         conversion. One is using <TT
+CLASS="filename"
+>php.ini</TT
+>, another
+         is using <A
+HREF="function.ob-start.html"
+><B
+CLASS="function"
+>ob_start()</B
+></A
+> with
+         <A
+HREF="function.mb-output-handler.html"
+><B
+CLASS="function"
+>mb_output_handler()</B
+></A
+> as the 
+         <VAR
+CLASS="literal"
+>ob_start</VAR
+> callback function.
+        </P
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+>Замечание: </B
+>
+          PHP3-i18n users should note that <VAR
+CLASS="literal"
+>mbstring</VAR
+>'s output
+          conversion differs from PHP3-i18n. Character encoding is
+          converted using an output buffer.
+         </P
+></BLOCKQUOTE
+></DIV
+></LI
+></UL
+>
+     </P
+><P
+>&#13;      <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN98696"
+></A
+><P
+><B
+>Пример 5. <TT
+CLASS="filename"
+>php.ini</TT
+> setting example</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="programlisting"
+>;; Enable output character encoding conversion for all PHP pages
+
+;; Enable Output Buffering
+output_buffering    = On
+
+;; Set mb_output_handler to enable output conversion
+output_handler      = mb_output_handler</PRE
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+     </P
+><P
+>&#13;      <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN98701"
+></A
+><P
+><B
+>Пример 6. Script example</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br /><br /></font><font color="#FF8000">// Enable output character encoding conversion only for this page<br /><br />// Set HTTP output character encoding to SJIS<br /></font><font color="#0000BB">mb_http_output</font><font color="#007700">(</font><font color="#DD0000">'SJIS'</font><font color="#007700">);<br /><br /></font><font color="#FF8000">// Start buffering and specify "mb_output_handler" as<br />// callback function<br /></font><font color="#0000BB">ob_start</font><font color="#007700">(</font><font color="#DD0000">'mb_output_handler'</font><font color="#007700">);<br /><br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+     </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="mbstring.supported-encodings"
+>Supported Character Encodings</A
+></H1
+><P
+>&#13;     Currently the following character encodings are supported by the
+     <VAR
+CLASS="literal"
+>mbstring</VAR
+> module. Any of those Character encodings
+     can be specified in the <VAR
+CLASS="literal"
+>encoding</VAR
+> parameter of
+     <VAR
+CLASS="literal"
+>mbstring</VAR
+> functions.
+    </P
+><P
+>&#13;     The following character encodings are supported in this PHP
+     extension: 
+    </P
+><P
+></P
+><UL
+><LI
+><P
+>UCS-4</P
+></LI
+><LI
+><P
+>UCS-4BE</P
+></LI
+><LI
+><P
+>UCS-4LE</P
+></LI
+><LI
+><P
+>UCS-2</P
+></LI
+><LI
+><P
+>UCS-2BE</P
+></LI
+><LI
+><P
+>UCS-2LE</P
+></LI
+><LI
+><P
+>UTF-32</P
+></LI
+><LI
+><P
+>UTF-32BE</P
+></LI
+><LI
+><P
+>UTF-32LE</P
+></LI
+><LI
+><P
+>UTF-16</P
+></LI
+><LI
+><P
+>UTF-16BE</P
+></LI
+><LI
+><P
+>UTF-16LE</P
+></LI
+><LI
+><P
+>UTF-7</P
+></LI
+><LI
+><P
+>UTF7-IMAP</P
+></LI
+><LI
+><P
+>UTF-8</P
+></LI
+><LI
+><P
+>ASCII</P
+></LI
+><LI
+><P
+>EUC-JP</P
+></LI
+><LI
+><P
+>SJIS</P
+></LI
+><LI
+><P
+>eucJP-win</P
+></LI
+><LI
+><P
+>SJIS-win</P
+></LI
+><LI
+><P
+>ISO-2022-JP</P
+></LI
+><LI
+><P
+>JIS</P
+></LI
+><LI
+><P
+>ISO-8859-1</P
+></LI
+><LI
+><P
+>ISO-8859-2</P
+></LI
+><LI
+><P
+>ISO-8859-3</P
+></LI
+><LI
+><P
+>ISO-8859-4</P
+></LI
+><LI
+><P
+>ISO-8859-5</P
+></LI
+><LI
+><P
+>ISO-8859-6</P
+></LI
+><LI
+><P
+>ISO-8859-7</P
+></LI
+><LI
+><P
+>ISO-8859-8</P
+></LI
+><LI
+><P
+>ISO-8859-9</P
+></LI
+><LI
+><P
+>ISO-8859-10</P
+></LI
+><LI
+><P
+>ISO-8859-13</P
+></LI
+><LI
+><P
+>ISO-8859-14</P
+></LI
+><LI
+><P
+>ISO-8859-15</P
+></LI
+><LI
+><P
+>byte2be</P
+></LI
+><LI
+><P
+>byte2le</P
+></LI
+><LI
+><P
+>byte4be</P
+></LI
+><LI
+><P
+>byte4le</P
+></LI
+><LI
+><P
+>BASE64</P
+></LI
+><LI
+><P
+>HTML-ENTITIES</P
+></LI
+><LI
+><P
+>7bit</P
+></LI
+><LI
+><P
+>8bit</P
+></LI
+><LI
+><P
+>EUC-CN</P
+></LI
+><LI
+><P
+>CP936</P
+></LI
+><LI
+><P
+>HZ</P
+></LI
+><LI
+><P
+>EUC-TW</P
+></LI
+><LI
+><P
+>CP950</P
+></LI
+><LI
+><P
+>BIG-5</P
+></LI
+><LI
+><P
+>EUC-KR</P
+></LI
+><LI
+><P
+>UHC (CP949)</P
+></LI
+><LI
+><P
+>ISO-2022-KR</P
+></LI
+><LI
+><P
+>Windows-1251 (CP1251)</P
+></LI
+><LI
+><P
+>Windows-1252 (CP1252)</P
+></LI
+><LI
+><P
+>CP866 (IBM866)</P
+></LI
+><LI
+><P
+>KOI8-R</P
+></LI
+></UL
+><P
+>&#13;     Any <TT
+CLASS="filename"
+>php.ini</TT
+> entry which accepts an encoding name
+     can also use the values "<VAR
+CLASS="literal"
+>auto</VAR
+>" and
+     "<VAR
+CLASS="literal"
+>pass</VAR
+>".
+     <VAR
+CLASS="literal"
+>mbstring</VAR
+> functions which accept an encoding
+     name can also use the value "<VAR
+CLASS="literal"
+>auto</VAR
+>".
+    </P
+><P
+>&#13;     If "<VAR
+CLASS="literal"
+>pass</VAR
+>" is set, no character
+     encoding conversion is performed.
+    </P
+><P
+>&#13;     If "<VAR
+CLASS="literal"
+>auto</VAR
+>" is set, it is expanded to
+     the list of encodings defined per the <A
+HREF="ref.mbstring.html#mbstring.configuration"
+>NLS</A
+>.
+     For instance, if the NLS is set to <VAR
+CLASS="literal"
+>Japanese</VAR
+>,
+     the value is assumed to be
+     "<VAR
+CLASS="literal"
+>ASCII,JIS,UTF-8,EUC-JP,SJIS</VAR
+>".
+    </P
+><P
+>&#13;     See also <A
+HREF="function.mb-detect-order.html"
+><B
+CLASS="function"
+>mb_detect_order()</B
+></A
+>
+    </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="mbstring.overload"
+>Function Overloading Feature</A
+></H1
+><P
+>&#13;     You might often find it difficult to get an existing PHP application
+     to work in a given multibyte environment. This happens because most 
+     PHP applications out there are written with the standard string 
+     functions such as <A
+HREF="function.substr.html"
+><B
+CLASS="function"
+>substr()</B
+></A
+>, which are known to 
+     not properly handle multibyte-encoded strings.
+    </P
+><P
+>&#13;     mbstring supports a 'function overloading' feature which enables
+     you to add multibyte awareness to such an application without
+     code modification by overloading multibyte counterparts on
+     the standard string functions. For example,
+     <A
+HREF="function.mb-substr.html"
+><B
+CLASS="function"
+>mb_substr()</B
+></A
+> is called instead of
+     <A
+HREF="function.substr.html"
+><B
+CLASS="function"
+>substr()</B
+></A
+> if function overloading is enabled.
+     This feature makes it easy to port applications that only support
+     single-byte encodings to a multibyte environment in many cases.
+    </P
+><P
+>&#13;     To use function overloading, set
+     <VAR
+CLASS="literal"
+>mbstring.func_overload</VAR
+> in <TT
+CLASS="filename"
+>php.ini</TT
+> to a
+     positive value that represents a combination of bitmasks specifying
+     the categories of functions to be overloaded. It should be set
+     to 1 to overload the <A
+HREF="function.mail.html"
+><B
+CLASS="function"
+>mail()</B
+></A
+> function. 2 for string
+     functions, 4 for regular expression functions. For example,
+     if it is set to 7, mail, strings and regular expression functions will
+     be overloaded. The list of overloaded functions are shown below.
+     <DIV
+CLASS="table"
+><A
+NAME="AEN98850"
+></A
+><P
+><B
+>Таблица 2. Functions to be overloaded</B
+></P
+><TABLE
+BORDER="1"
+CLASS="CALSTABLE"
+><COL><COL><COL><THEAD
+><TR
+><TH
+>value of mbstring.func_overload</TH
+><TH
+>original function</TH
+><TH
+>overloaded function</TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+>1</TD
+><TD
+><A
+HREF="function.mail.html"
+><B
+CLASS="function"
+>mail()</B
+></A
+></TD
+><TD
+><A
+HREF="function.mb-send-mail.html"
+><B
+CLASS="function"
+>mb_send_mail()</B
+></A
+></TD
+></TR
+><TR
+><TD
+>2</TD
+><TD
+><A
+HREF="function.strlen.html"
+><B
+CLASS="function"
+>strlen()</B
+></A
+></TD
+><TD
+><A
+HREF="function.mb-strlen.html"
+><B
+CLASS="function"
+>mb_strlen()</B
+></A
+></TD
+></TR
+><TR
+><TD
+>2</TD
+><TD
+><A
+HREF="function.strpos.html"
+><B
+CLASS="function"
+>strpos()</B
+></A
+></TD
+><TD
+><A
+HREF="function.mb-strpos.html"
+><B
+CLASS="function"
+>mb_strpos()</B
+></A
+></TD
+></TR
+><TR
+><TD
+>2</TD
+><TD
+><A
+HREF="function.strrpos.html"
+><B
+CLASS="function"
+>strrpos()</B
+></A
+></TD
+><TD
+><A
+HREF="function.mb-strrpos.html"
+><B
+CLASS="function"
+>mb_strrpos()</B
+></A
+></TD
+></TR
+><TR
+><TD
+>2</TD
+><TD
+><A
+HREF="function.substr.html"
+><B
+CLASS="function"
+>substr()</B
+></A
+></TD
+><TD
+><A
+HREF="function.mb-substr.html"
+><B
+CLASS="function"
+>mb_substr()</B
+></A
+></TD
+></TR
+><TR
+><TD
+>2</TD
+><TD
+><A
+HREF="function.strtolower.html"
+><B
+CLASS="function"
+>strtolower()</B
+></A
+></TD
+><TD
+><A
+HREF="function.mb-strtolower.html"
+><B
+CLASS="function"
+>mb_strtolower()</B
+></A
+></TD
+></TR
+><TR
+><TD
+>2</TD
+><TD
+><A
+HREF="function.strtoupper.html"
+><B
+CLASS="function"
+>strtoupper()</B
+></A
+></TD
+><TD
+><A
+HREF="function.mb-strtoupper.html"
+><B
+CLASS="function"
+>mb_strtoupper()</B
+></A
+></TD
+></TR
+><TR
+><TD
+>2</TD
+><TD
+><A
+HREF="function.substr-count.html"
+><B
+CLASS="function"
+>substr_count()</B
+></A
+></TD
+><TD
+><A
+HREF="function.mb-substr-count.html"
+><B
+CLASS="function"
+>mb_substr_count()</B
+></A
+></TD
+></TR
+><TR
+><TD
+>4</TD
+><TD
+><A
+HREF="function.ereg.html"
+><B
+CLASS="function"
+>ereg()</B
+></A
+></TD
+><TD
+><A
+HREF="function.mb-ereg.html"
+><B
+CLASS="function"
+>mb_ereg()</B
+></A
+></TD
+></TR
+><TR
+><TD
+>4</TD
+><TD
+><A
+HREF="function.eregi.html"
+><B
+CLASS="function"
+>eregi()</B
+></A
+></TD
+><TD
+><A
+HREF="function.mb-eregi.html"
+><B
+CLASS="function"
+>mb_eregi()</B
+></A
+></TD
+></TR
+><TR
+><TD
+>4</TD
+><TD
+><A
+HREF="function.ereg-replace.html"
+><B
+CLASS="function"
+>ereg_replace()</B
+></A
+></TD
+><TD
+><A
+HREF="function.mb-ereg-replace.html"
+><B
+CLASS="function"
+>mb_ereg_replace()</B
+></A
+></TD
+></TR
+><TR
+><TD
+>4</TD
+><TD
+><A
+HREF="function.eregi-replace.html"
+><B
+CLASS="function"
+>eregi_replace()</B
+></A
+></TD
+><TD
+><A
+HREF="function.mb-eregi-replace.html"
+><B
+CLASS="function"
+>mb_eregi_replace()</B
+></A
+></TD
+></TR
+><TR
+><TD
+>4</TD
+><TD
+><A
+HREF="function.split.html"
+><B
+CLASS="function"
+>split()</B
+></A
+></TD
+><TD
+><A
+HREF="function.mb-split.html"
+><B
+CLASS="function"
+>mb_split()</B
+></A
+></TD
+></TR
+></TBODY
+></TABLE
+></DIV
+>
+    </P
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+>Замечание: </B
+>
+      It is not recommended to use the function overloading option in
+      the per-directory context, because it's not confirmed yet to be
+      stable enough in a production environment and may lead to undefined
+      behaviour.
+     </P
+></BLOCKQUOTE
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="mbstring.ja-basic"
+>Basics of Japanese multi-byte encodings</A
+></H1
+><P
+>&#13;     Japanese characters can only be represented by multibyte encodings, 
+     and multiple encoding standards are used depending on platform and 
+     text purpose. To make matters worse, these encoding standards 
+     differ slightly from one another. In order to create a web 
+     application which would be usable in a Japanese environment, a 
+     developer has to keep these complexities in mind to ensure that the
+     proper character encodings are used.
+    </P
+><P
+>&#13;     <P
+></P
+><UL
+><LI
+><P
+>Storage for a character can be up to six bytes</P
+></LI
+><LI
+><P
+>&#13;        Most Japanese multibyte characters appear twice as wide as
+        single-byte characters. These characters are called 
+        "zen-kaku" in Japanese, which means 
+        "full width". Other, narrower, characters are called 
+        "han-kaku", which means "half width". The 
+        graphical properties of the characters, however, depends upon 
+        the type faces used to display them.
+       </P
+></LI
+><LI
+><P
+>&#13;        Some character encodings use shift(escape) sequences defined
+        in ISO-2022 to switch the code map of the specific code area
+        (<VAR
+CLASS="literal"
+>00h</VAR
+> to <VAR
+CLASS="literal"
+>7fh</VAR
+>).
+       </P
+></LI
+><LI
+><P
+>&#13;        ISO-2022-JP should be used in SMTP/NNTP, and headers and entities
+        should be reencoded as per RFC requirements. Although those are not
+        requisites, it's still a good idea because several popular user
+        agents cannot recognize any other encoding methods.
+       </P
+></LI
+><LI
+><P
+>&#13;        Webpages created for mobile phone services such as
+        <A
+HREF="http://www.nttdocomo.com/corebiz/services/imode/"
+TARGET="_top"
+>i-mode</A
+>,
+        <A
+HREF="http://www.vodafone.jp/english/live/"
+TARGET="_top"
+>Vodafone live!</A
+>, or <A
+HREF="http://www.au.kddi.com/english/ezweb/"
+TARGET="_top"
+>EZweb</A
+>
+        are supposed to use Shift_JIS.
+       </P
+></LI
+></UL
+>
+    </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="mbstring.ref"
+>References</A
+></H1
+><P
+>&#13;     Multibyte character encoding schemes and their related issues are
+     fairly complicated, and are beyond the scope of this documentation.
+     Please refer to the following URLs and other resources for further
+     information regarding these topics.
+     <P
+></P
+><UL
+><LI
+><P
+>&#13;        Unicode materials
+       </P
+><P
+>&#13;        <A
+HREF="http://www.unicode.org/"
+TARGET="_top"
+>http://www.unicode.org/</A
+>
+       </P
+></LI
+><LI
+><P
+>&#13;        Japanese/Korean/Chinese character information
+       </P
+><P
+>&#13;        <A
+HREF="http://examples.oreilly.com/cjkvinfo/doc/cjk.inf"
+TARGET="_top"
+>http://examples.oreilly.com/cjkvinfo/doc/cjk.inf</A
+>
+       </P
+></LI
+></UL
+>
+    </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="mbstring.encodings"
+>Summaries of supported encodings</A
+></H1
+><P
+><B
+>Summaries of supported encodings</B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>ISO-10646-UCS-4</P
+><P
+><B
+>Underlying character set: </B
+>ISO 10646</P
+><P
+><B
+>Description: </B
+>
+     The Universal Character Set with 31-bit code space, standardized as UCS-4
+     by ISO/IEC 10646. It is kept synchronized with the latest version of the
+     Unicode code map.
+    </P
+><P
+><B
+>Additional note: </B
+>
+     If this name is used in the encoding conversion facility, 
+     the converter attempts to identify by the preceding BOM
+     (byte order mark)in which endian the subsequent bytes
+     are represented.
+    </P
+><P
+><B
+>Name in the IANA character set registry: </B
+>ISO-10646-UCS-4</P
+><P
+><B
+>Underlying character set: </B
+>UCS-4</P
+><P
+><B
+>Description: </B
+>
+     See above.
+    </P
+><P
+><B
+>Additional note: </B
+>
+     In contrast to <VAR
+CLASS="literal"
+>UCS-4</VAR
+>, strings are always assumed
+     to be in big endian form.
+    </P
+><P
+><B
+>Name in the IANA character set registry: </B
+>ISO-10646-UCS-4</P
+><P
+><B
+>Underlying character set: </B
+>UCS-4</P
+><P
+><B
+>Description: </B
+>
+     See above.
+    </P
+><P
+><B
+>Additional note: </B
+>
+     In contrast to <VAR
+CLASS="literal"
+>UCS-4</VAR
+>, strings are always assumed
+     to be in little endian form.
+    </P
+><P
+><B
+>Name in the IANA character set registry: </B
+>ISO-10646-UCS-2</P
+><P
+><B
+>Underlying character set: </B
+>UCS-2</P
+><P
+><B
+>Description: </B
+>
+     The Universal Character Set with 16-bit code space, standardized as UCS-2
+     by ISO/IEC 10646. It is kept synchronized with the latest version of the
+     unicode code map.
+    </P
+><P
+><B
+>Additional note: </B
+>
+     If this name is used in the encoding conversion facility, 
+     the converter attempts to identify by the preceding BOM
+     (byte order mark)in which endian the subsequent bytes
+     are represented.
+    </P
+><P
+><B
+>Name in the IANA character set registry: </B
+>ISO-10646-UCS-2</P
+><P
+><B
+>Underlying character set: </B
+>UCS-2</P
+><P
+><B
+>Description: </B
+>
+     See above.
+    </P
+><P
+><B
+>Additional note: </B
+>
+     In contrast to <VAR
+CLASS="literal"
+>UCS-2</VAR
+>, strings are always assumed
+     to be in big endian form.
+    </P
+><P
+><B
+>Name in the IANA character set registry: </B
+>ISO-10646-UCS-2</P
+><P
+><B
+>Underlying character set: </B
+>UCS-2</P
+><P
+><B
+>Description: </B
+>
+     See above.
+    </P
+><P
+><B
+>Additional note: </B
+>
+     In contrast to <VAR
+CLASS="literal"
+>UCS-2</VAR
+>, strings are always assumed
+     to be in little endian form.
+    </P
+><P
+><B
+>Name in the IANA character set registry: </B
+>UTF-32</P
+><P
+><B
+>Underlying character set: </B
+>Unicode</P
+><P
+><B
+>Description: </B
+>
+     Unicode Transformation Format of 32-bit unit width, whose encoding space
+     refers to the Unicode's codeset standard. This encoding scheme wasn't
+     identical to UCS-4 because the code space of Unicode were limited to
+     a 21-bit value.
+    </P
+><P
+><B
+>Additional note: </B
+>
+     If this name is used in the encoding conversion facility, 
+     the converter attempts to identify by the preceding BOM
+     (byte order mark)in which endian the subsequent bytes
+     are represented.
+    </P
+><P
+><B
+>Name in the IANA character set registry: </B
+>UTF-32BE</P
+><P
+><B
+>Underlying character set: </B
+>Unicode</P
+><P
+><B
+>Description: </B
+>See above</P
+><P
+><B
+>Additional note: </B
+>
+     In contrast to <VAR
+CLASS="literal"
+>UTF-32</VAR
+>, strings are always assumed
+     to be in big endian form.
+    </P
+><P
+><B
+>Name in the IANA character set registry: </B
+>UTF-32LE</P
+><P
+><B
+>Underlying character set: </B
+>Unicode</P
+><P
+><B
+>Description: </B
+>See above</P
+><P
+><B
+>Additional note: </B
+>
+     In contrast to <VAR
+CLASS="literal"
+>UTF-32</VAR
+>, strings are always assumed
+     to be in little endian form.
+    </P
+><P
+><B
+>Name in the IANA character set registry: </B
+>UTF-16</P
+><P
+><B
+>Underlying character set: </B
+>Unicode</P
+><P
+><B
+>Description: </B
+>
+     Unicode Transformation Format of 16-bit unit width. It's worth a note
+     that UTF-16 is no longer the same specification as UCS-2 because the
+     surrogate mechanism has been introduced since Unicode 2.0 and
+     UTF-16 now refers to a 21-bit code space.
+    </P
+><P
+><B
+>Additional note: </B
+>
+     If this name is used in the encoding conversion facility, 
+     the converter attempts to identify by the preceding BOM
+     (byte order mark)in which endian the subsequent bytes
+     are represented.
+    </P
+><P
+><B
+>Name in the IANA character set registry: </B
+>UTF-16BE</P
+><P
+><B
+>Underlying character set: </B
+>Unicode</P
+><P
+><B
+>Description: </B
+>
+     See above.
+    </P
+><P
+><B
+>Additional note: </B
+>
+     In contrast to <VAR
+CLASS="literal"
+>UTF-16</VAR
+>, strings are always assumed
+     to be in big endian form.
+    </P
+><P
+><B
+>Name in the IANA character set registry: </B
+>UTF-16BE</P
+><P
+><B
+>Underlying character set: </B
+>Unicode</P
+><P
+><B
+>Description: </B
+>
+     See above.
+    </P
+><P
+><B
+>Additional note: </B
+>
+     In contrast to <VAR
+CLASS="literal"
+>UTF-16</VAR
+>, strings are always assumed
+     to be in big endian form.
+    </P
+><P
+><B
+>Name in the IANA character set registry: </B
+>UTF-8</P
+><P
+><B
+>Underlying character set: </B
+>Unicode / UCS</P
+><P
+><B
+>Description: </B
+>
+     Unicode Transformation Format of 8-bit unit width.
+    </P
+><P
+><B
+>Additional note: </B
+>none</P
+><P
+><B
+>Name in the IANA character set registry: </B
+>UTF-7</P
+><P
+><B
+>Underlying character set: </B
+>Unicode</P
+><P
+><B
+>Description: </B
+>
+     A mail-safe transformation format of Unicode, specified in
+     <A
+HREF="http://www.faqs.org/rfcs/rfc2152"
+TARGET="_top"
+>RFC2152</A
+>.
+    </P
+><P
+><B
+>Additional note: </B
+>none</P
+><P
+><B
+>Name in the IANA character set registry: </B
+>(none)</P
+><P
+><B
+>Underlying character set: </B
+>Unicode</P
+><P
+><B
+>Description: </B
+>
+     A variant of UTF-7 which is specialized for use in the
+     <A
+HREF="http://www.faqs.org/rfcs/rfc3501"
+TARGET="_top"
+>IMAP protocol</A
+>.
+    </P
+><P
+><B
+>Additional note: </B
+>none</P
+><P
+><B
+>Name in the IANA character set registry: </B
+>
+     US-ASCII (preferred MIME name) / iso-ir-6 / ANSI_X3.4-1986 /
+     ISO_646.irv:1991 / ASCII / ISO646-US / us / IBM367 / CP367 / csASCII
+    </P
+><P
+><B
+>Underlying character set: </B
+>ASCII / ISO 646</P
+><P
+><B
+>Description: </B
+>
+     American Standard Code for Information Interchange is a commonly-used
+     7-bit encoding. Also standardized as an international standard, ISO 646.
+    </P
+><P
+><B
+>Additional note: </B
+>(none)</P
+><P
+><B
+>Name in the IANA character set registry: </B
+>
+     EUC-JP (preferred MIME name) /
+     Extended_UNIX_Code_Packed_Format_for_Japanese / csEUCPkdFmtJapanese
+    </P
+><P
+><B
+>Underlying character set: </B
+>
+     Compound of US-ASCII / JIS X0201:1997 (hankaku kana part) /
+     JIS X0208:1990 / JIS X0212:1990
+    </P
+><P
+><B
+>Description: </B
+>
+     As you see the name is derived from an abbreviation of Extended UNIX Code
+     Packed Format for Japanese, this encoding is mostly used on UNIX or
+     alike platforms. The original encoding scheme, Extended UNIX Code, is
+     designed on the basis of ISO 2022.
+    </P
+><P
+><B
+>Additional note: </B
+>
+     The character set referred to by EUC-JP is different to IBM932 / CP932,
+     which are used by OS/2® and Microsoft® Windows®.
+     For information interchange with those platforms, use EUCJP-WIN instead.
+    </P
+><P
+><B
+>Name in the IANA character set registry: </B
+>Shift_JIS (preferred MIME name) / MS_Kanji / csShift_JIS</P
+><P
+><B
+>Underlying character set: </B
+>Compound of JIS X0201:1997 / JIS X0208:1997</P
+><P
+><B
+>Description: </B
+>
+     Shift_JIS was developed in early 80's, at the time personal Japanese word
+     processors were brought into the market, in order to maintain
+     compatiblities with the legacy encoding scheme JIS X 0201:1976.
+     According to the IANA definition the codeset of Shift_JIS is slightly
+     different to IBM932 / CP932. However, the names "SJIS" / "Shift_JIS" are
+     often wrongly used to refer to these codesets.
+    </P
+><P
+><B
+>Additional note: </B
+>For the CP932 codemap, use SJIS-WIN instead.</P
+><P
+><B
+>Name in the IANA character set registry: </B
+>(none)</P
+><P
+><B
+>Underlying character set: </B
+>
+     Compound of JIS X0201:1997 / JIS X0208:1997 / IBM extensions / NEC extensions
+    </P
+><P
+><B
+>Description: </B
+>
+     While this "encoding" uses the same encoding scheme as EUC-JP,
+     the underlying character set is different. That is, some code points map
+     to different characters than EUC-JP.
+    </P
+><P
+><B
+>Additional note: </B
+>none</P
+><P
+><B
+>Name in the IANA character set registry: </B
+>Windows-31J / csWindows31J</P
+><P
+><B
+>Underlying character set: </B
+>
+     Compound of JIS X0201:1997 / JIS X0208:1997 / IBM extensions / NEC extensions
+    </P
+><P
+><B
+>Description: </B
+>
+     While this "encoding" uses the same encoding scheme as
+     Shift_JIS, the underlying character set is different. That means some code
+     points map to different characters than Shift_JIS.
+    </P
+><P
+><B
+>Additional note: </B
+>(none)</P
+><P
+><B
+>Name in the IANA character set registry: </B
+>ISO-2022-JP (preferred MIME name) / csISO2022JP</P
+><P
+><B
+>Underlying character set: </B
+>
+     US-ASCII / JIS X0201:1976 / JIS X0208:1978 / JIS X0208:1983
+    </P
+><P
+><B
+>Description: </B
+><A
+HREF="http://www.faqs.org/rfcs/rfc1468"
+TARGET="_top"
+>RFC1468</A
+></P
+><P
+><B
+>Additional note: </B
+>(none)</P
+><P
+><B
+>Name in the IANA character set registry: </B
+>JIS</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>ISO-8859-1</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>ISO-8859-2</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>ISO-8859-3</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>ISO-8859-4</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>ISO-8859-5</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>ISO-8859-6</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>ISO-8859-7</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>ISO-8859-8</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>ISO-8859-9</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>ISO-8859-10</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>ISO-8859-13</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>ISO-8859-14</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>ISO-8859-15</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>byte2be</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>byte2le</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>byte4be</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>byte4le</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>BASE64</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>HTML-ENTITIES</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>7bit</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>8bit</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>EUC-CN</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>CP936</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>HZ</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>EUC-TW</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>CP950</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>BIG-5</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>EUC-KR</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>UHC (CP949)</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>ISO-2022-KR</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>Windows-1251 (CP1251)</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>Windows-1252 (CP1252)</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>CP866 (IBM866)</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+><P
+><B
+>Name in the IANA character set registry: </B
+>KOI8-R</P
+><P
+><B
+>Underlying character set: </B
+></P
+><P
+><B
+>Description: </B
+></P
+><P
+><B
+>Additional note: </B
+></P
+></DIV
+></DIV
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Содержание</B
+></DT
+><DT
+><A
+HREF="function.mb-convert-case.html"
+>mb_convert_case</A
+>&nbsp;--&nbsp;Perform case folding on a string</DT
+><DT
+><A
+HREF="function.mb-convert-encoding.html"
+>mb_convert_encoding</A
+>&nbsp;--&nbsp;Convert character encoding</DT
+><DT
+><A
+HREF="function.mb-convert-kana.html"
+>mb_convert_kana</A
+>&nbsp;--&nbsp;
+     Convert "kana" one from another ("zen-kaku", "han-kaku" and more)
+    </DT
+><DT
+><A
+HREF="function.mb-convert-variables.html"
+>mb_convert_variables</A
+>&nbsp;--&nbsp;Convert character code in variable(s)</DT
+><DT
+><A
+HREF="function.mb-decode-mimeheader.html"
+>mb_decode_mimeheader</A
+>&nbsp;--&nbsp;Decode string in MIME header field</DT
+><DT
+><A
+HREF="function.mb-decode-numericentity.html"
+>mb_decode_numericentity</A
+>&nbsp;--&nbsp;
+     Decode HTML numeric string reference to character
+    </DT
+><DT
+><A
+HREF="function.mb-detect-encoding.html"
+>mb_detect_encoding</A
+>&nbsp;--&nbsp;Detect character encoding</DT
+><DT
+><A
+HREF="function.mb-detect-order.html"
+>mb_detect_order</A
+>&nbsp;--&nbsp;
+     Set/Get character encoding detection order
+    </DT
+><DT
+><A
+HREF="function.mb-encode-mimeheader.html"
+>mb_encode_mimeheader</A
+>&nbsp;--&nbsp;Encode string for MIME header</DT
+><DT
+><A
+HREF="function.mb-encode-numericentity.html"
+>mb_encode_numericentity</A
+>&nbsp;--&nbsp;
+     Encode character to HTML numeric string reference
+    </DT
+><DT
+><A
+HREF="function.mb-ereg-match.html"
+>mb_ereg_match</A
+>&nbsp;--&nbsp;
+     Regular expression match for multibyte string
+    </DT
+><DT
+><A
+HREF="function.mb-ereg-replace.html"
+>mb_ereg_replace</A
+>&nbsp;--&nbsp;Replace regular expression with multibyte support</DT
+><DT
+><A
+HREF="function.mb-ereg-search-getpos.html"
+>mb_ereg_search_getpos</A
+>&nbsp;--&nbsp;
+     Returns start point for next regular expression match
+    </DT
+><DT
+><A
+HREF="function.mb-ereg-search-getregs.html"
+>mb_ereg_search_getregs</A
+>&nbsp;--&nbsp;
+     Retrieve the result from the last multibyte regular expression
+     match
+   </DT
+><DT
+><A
+HREF="function.mb-ereg-search-init.html"
+>mb_ereg_search_init</A
+>&nbsp;--&nbsp;
+     Setup string and regular expression for multibyte regular
+     expression match
+    </DT
+><DT
+><A
+HREF="function.mb-ereg-search-pos.html"
+>mb_ereg_search_pos</A
+>&nbsp;--&nbsp;
+     Return position and length of matched part of multibyte regular
+     expression for predefined multibyte string
+    </DT
+><DT
+><A
+HREF="function.mb-ereg-search-regs.html"
+>mb_ereg_search_regs</A
+>&nbsp;--&nbsp;
+     Returns the matched part of multibyte regular expression
+    </DT
+><DT
+><A
+HREF="function.mb-ereg-search-setpos.html"
+>mb_ereg_search_setpos</A
+>&nbsp;--&nbsp;
+     Set start point of next regular expression match
+    </DT
+><DT
+><A
+HREF="function.mb-ereg-search.html"
+>mb_ereg_search</A
+>&nbsp;--&nbsp;
+     Multibyte regular expression match for predefined multibyte string
+    </DT
+><DT
+><A
+HREF="function.mb-ereg.html"
+>mb_ereg</A
+>&nbsp;--&nbsp;Regular expression match with multibyte support</DT
+><DT
+><A
+HREF="function.mb-eregi-replace.html"
+>mb_eregi_replace</A
+>&nbsp;--&nbsp;
+     Replace regular expression with multibyte support
+     ignoring case
+    </DT
+><DT
+><A
+HREF="function.mb-eregi.html"
+>mb_eregi</A
+>&nbsp;--&nbsp;
+     Regular expression match ignoring case with multibyte support
+    </DT
+><DT
+><A
+HREF="function.mb-get-info.html"
+>mb_get_info</A
+>&nbsp;--&nbsp;Get internal settings of mbstring</DT
+><DT
+><A
+HREF="function.mb-http-input.html"
+>mb_http_input</A
+>&nbsp;--&nbsp;Detect HTTP input character encoding</DT
+><DT
+><A
+HREF="function.mb-http-output.html"
+>mb_http_output</A
+>&nbsp;--&nbsp;Set/Get HTTP output character encoding</DT
+><DT
+><A
+HREF="function.mb-internal-encoding.html"
+>mb_internal_encoding</A
+>&nbsp;--&nbsp;
+     Set/Get internal character encoding
+    </DT
+><DT
+><A
+HREF="function.mb-language.html"
+>mb_language</A
+>&nbsp;--&nbsp;
+     Set/Get current language
+    </DT
+><DT
+><A
+HREF="function.mb-list-encodings.html"
+>mb_list_encodings</A
+>&nbsp;--&nbsp;
+     Returns an array of all supported encodings
+    </DT
+><DT
+><A
+HREF="function.mb-output-handler.html"
+>mb_output_handler</A
+>&nbsp;--&nbsp;
+     Callback function converts character encoding in output buffer
+    </DT
+><DT
+><A
+HREF="function.mb-parse-str.html"
+>mb_parse_str</A
+>&nbsp;--&nbsp;
+      Parse GET/POST/COOKIE data and set global variable
+    </DT
+><DT
+><A
+HREF="function.mb-preferred-mime-name.html"
+>mb_preferred_mime_name</A
+>&nbsp;--&nbsp;Get MIME charset string</DT
+><DT
+><A
+HREF="function.mb-regex-encoding.html"
+>mb_regex_encoding</A
+>&nbsp;--&nbsp;
+     Returns current encoding for multibyte regex as string
+    </DT
+><DT
+><A
+HREF="function.mb-regex-set-options.html"
+>mb_regex_set_options</A
+>&nbsp;--&nbsp;
+     Set/Get the default options for mbregex functions
+    </DT
+><DT
+><A
+HREF="function.mb-send-mail.html"
+>mb_send_mail</A
+>&nbsp;--&nbsp;
+     Send encoded mail
+    </DT
+><DT
+><A
+HREF="function.mb-split.html"
+>mb_split</A
+>&nbsp;--&nbsp;Split multibyte string using regular expression</DT
+><DT
+><A
+HREF="function.mb-strcut.html"
+>mb_strcut</A
+>&nbsp;--&nbsp;Get part of string</DT
+><DT
+><A
+HREF="function.mb-strimwidth.html"
+>mb_strimwidth</A
+>&nbsp;--&nbsp;Get truncated string with specified width</DT
+><DT
+><A
+HREF="function.mb-strlen.html"
+>mb_strlen</A
+>&nbsp;--&nbsp;Get string length</DT
+><DT
+><A
+HREF="function.mb-strpos.html"
+>mb_strpos</A
+>&nbsp;--&nbsp;
+     Find position of first occurrence of string in a string
+    </DT
+><DT
+><A
+HREF="function.mb-strrpos.html"
+>mb_strrpos</A
+>&nbsp;--&nbsp;
+     Find position of last occurrence of a string in a string
+    </DT
+><DT
+><A
+HREF="function.mb-strtolower.html"
+>mb_strtolower</A
+>&nbsp;--&nbsp;Make a string lowercase</DT
+><DT
+><A
+HREF="function.mb-strtoupper.html"
+>mb_strtoupper</A
+>&nbsp;--&nbsp;Make a string uppercase</DT
+><DT
+><A
+HREF="function.mb-strwidth.html"
+>mb_strwidth</A
+>&nbsp;--&nbsp;Return width of string</DT
+><DT
+><A
+HREF="function.mb-substitute-character.html"
+>mb_substitute_character</A
+>&nbsp;--&nbsp;Set/Get substitution character</DT
+><DT
+><A
+HREF="function.mb-substr-count.html"
+>mb_substr_count</A
+>&nbsp;--&nbsp;Count the number of substring occurrences</DT
+><DT
+><A
+HREF="function.mb-substr.html"
+>mb_substr</A
+>&nbsp;--&nbsp;Get part of string</DT
+></DL
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="function.msql.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Начало</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="function.mb-convert-case.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>msql</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="funcref.html"
+ACCESSKEY="U"
+>Уровень выше</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>mb_convert_case</TD
+></TR
+></TABLE
+></DIV
+></div></center></div></td>
+			<td><div style="display:none; width:200px;" id="o3" name="o3"><script charset="windows-1251" type="text/javascript" src="http://www.ozon.ru/PartnerTwinerNew.aspx?revident=bea9126b-c8e1-4bf5-b6d8-9a057f8feac6" ></script></div><script>o = document.getElementById('o3'); if(o) { var s = o.innerHTML; s = s.replace(/F6F6F6/gi,"FFFFFF"); o.innerHTML = s.replace(/padding-top: 10px; padding-bottom: 10px;/,"display:none;"); o.style.display = 'block'; } </script><br><div style="margin: 10px;"><script type="text/javascript"><!--
+google_ad_client = "pub-4093271809023514";
+/* 120x600, создано 01.11.2008 */
+google_ad_slot = "0438855731";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div></td>
+    		</tr>
+  		</table>
+    </td>
+  </tr>
+  <tr valign='bottom' height='1%'>
+  <td>      <table width=100% cellspacing=0 cellpadding=5 border=0 bgcolor=#9999CC>
+        <tr valign=center>
+          <td class='phpcopyright' width='45%' align='left'>&nbsp;&nbsp;Engine <a  href="http://www.mnogosearch.org/">MnoGoSearch</a></td>
+          <td class='phpcopyright' width='10%' align='center'>2007-2010 &copy <a  href="mailto:webmaster@php.ru">PHP.RU</a></td>
+          <td class='phpcopyright' width='45%' align='right' >Powered by <a target="_blank" href="http://odware.ru">ODware</a> <a HREF="http://440hz.ru">440Hz</a> &nbsp;&nbsp;</td>
+        </tr>
+      </table>
+
+    <div style="text-align: right; padding: 5px">
+		<!--LiveInternet counter-->
+		<script type="text/javascript">document.write('<a href="http://www.liveinternet.ru/click" target=_blank><img src="http://counter.yadro.ru/hit?t53.6;r' + escape(document.referrer) + ((typeof(screen)=='undefined')?'':';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ';u' + escape(document.URL) +';i' + escape('Жж'+document.title.substring(0,80)) + ';' + Math.random() + '" border=0 width=88 height=31 alt="" title="LiveInternet: показано число просмотров и посетителей за 24 часа"><\/a>');
+		</script>
+		<!--/LiveInternet-->
+		<!-- SpyLOG -->
+		<script src="http://tools.spylog.ru/counter2.2.js" type="text/javascript" id="spylog_code" counter="830950" ></script>
+		<noscript><a href="http://u8309.50.spylog.com/cnt?cid=830950&f=3&p=0" target="_blank"><img src="http://u8309.50.spylog.com/cnt?cid=830950&p=0&f=4" alt='SpyLOG' border='0' width=88 height=31 ></a>
+		</noscript>
+		<!--/ SpyLOG -->
+	</div>
+</td>
+  </tr>
+</table>
+
+<script>
+<!--
+document.SEARCH.QS.focus();
+// --></script>
+
+<!-- 
+	как же вы все это читаете?
+	440hz 
+-->
+
+</body>
+</html>

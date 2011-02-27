@@ -1,0 +1,1073 @@
+<!-- 
+
+     HTML dropped by Zend Guard Compressor 4.2
+
+     php.ru team: mz, az, yuri, vb, cyxapuk, 440hz, administrator
+     2004-2007 (c) expi-web.com 
+     2007-2008 (c) odware.com 
+     0101-1010 (с) 440hz
+
+     2b|~2b=?
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EHOT тут всё пожрал ! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="alternate" type="application/rss+xml" title="php.ru/forum - последние сообщения" href="http://www.php.ru/forum/rss.php">
+<link rel="SHORTCUT ICON" href="http://www.php.ru/favicon.ico" />
+<META name="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<meta http-equiv="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<META name="keywords" content="php, php5, apache, mysql, session">
+<meta http-equiv="keywords" content="php, php5, apache, mysql, session">
+<title>php.ru - Ограниченные или недоступные в защищенном режиме функции</title>
+<LINK REL="stylesheet" TYPE="text/css" HREF="http://www.php.ru/index.css">
+<script language="JavaScript" src="http://www.php.ru/ajax/ajax.js"></script>
+</head>
+<body>
+
+<table height='100%' width='100%' cellspacing='0' cellpadding='0'>
+  <tr height='99%' valign='top'>
+    <td align='center'>
+		
+		<table style='margin-top: 4px' width=100% cellspacing=0 cellpadding=3>
+   		<tr>
+     		<td>PHP - <a href="http://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BA%D1%80%D0%BE%D0%BD%D0%B8%D0%BC" target=_blank class=lnk>рекурсивный акроним</a> словосочетания &laquo;<a href="/manual/introduction.html" class=lnk>PHP: Hypertext Preprocessor</a>&raquo;</td>
+     	</tr>
+   		</table>
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/subsys_ajax.js"></script>
+		<!--
+
+		commet by 440hz
+		20.10.2007
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/pu_search.js"></script>
+
+		-->
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/cz.js?a=b"></script>
+
+		<table style='margin-top: 5px' width=100% bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0>
+   	 	<form name=SEARCH method=GET action="http://www.php.ru/search/?SID=mhyc8bvaj05kuxvv" onsubmit="return puSubmit();">
+	  	<input type=hidden name=PAGE value=1>
+  		<tr>
+    		<td width='1' valign='middle'> 
+    		   <a href='/'><img src="http://www.php.ru/;-)/logo.gif" width=133 height=93 alt="php" border=0 hspace=10 vspace=0></a>
+			 </td>
+		    <td width='100%' valign='middle'>
+		       <!--
+			   
+				commet by 440hz
+				20.10.2007
+
+			   <div id='pu_search' class='pu_search'></div>
+		       <div id='pu_search_description' class='pu_search_decription'></div>
+			   
+			   -->
+        	 <input type=text style='width:99%; margin: 10px' maxlength='200' name='QS' class='in' id='query' autocomplete='off' value="" />
+    		</td>
+		  </tr>
+   		<tr bgcolor='#666699' valign='middle'>
+			<td style='border-top: 1px solid #333366;'><br /></td>
+    		<td style='border-top: 1px solid #333366;'><div style="padding: 4px 4px 4px 10px; height: 24px; color: #CCCCFF;" id="stat">Хто там?<script>doLoadCZ('stat','stat');</script></div></td>
+  		</tr>
+		</form>
+		</table>
+		<table id="menu" cellspaciong=0 cellpadding=3>
+<tr>
+<td><a href="/" class=current>Главная</a></td>
+<td><a href="/download/" class=current>Скачать</a></td>
+<td><a href="/doc/" class=current>Документация</a></td>
+<td><a href="/forum/" class=current>Форум</a></td>
+<td width=100% align=right><a href="/phpinfo.html" class=current>phpinfo()</a></td>
+</tr>
+</table>
+
+		
+<!--  AdRiver code START. Type:728x90 Site: php.ru PZ: 0 BN: 1 -->
+<script language="javascript" type="text/javascript"><!--
+var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+var ar_Tail='unknown'; if (document.referrer) ar_Tail = escape(document.referrer);
+document.write(
+'<iframe src="http://ad.adriver.ru/cgi-bin/erle.cgi?'
++ 'sid=148680&bn=1&target=blank&bt=36&pz=0&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail
++ '" frameborder=0 vspace=0 hspace=0 width=728 height=90 marginwidth=0'
++ ' marginheight=0 scrolling=no></iframe>');
+//--></script>
+<noscript>
+<a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" target=_blank>
+<img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" alt="-AdRiver-" border=0 width=728 height=90></a>
+</noscript>
+<!--  AdRiver code END  -->
+
+
+  		<table width='100%' cellspacing='0' cellpadding='0'>
+    		<tr valign='top'>
+      		<td width=100%><div style="margin: 10px 10px 10px 50px;"><center><div style="width: 800px; text-align: left"><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Руководство по PHP</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="features.safe-mode.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Глава 42. Защищенный режим</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="features.commandline.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="sect1"
+><H1
+CLASS="sect1"
+><A
+NAME="features.safe-mode.functions"
+>Ограниченные или недоступные в защищенном режиме функции</A
+></H1
+><P
+>&#13;    Ниже приведен, вероятно, неполный и, возможно, не вполне корректный список
+    функций, ограниченных в 
+    <A
+HREF="features.safe-mode.html"
+>защищенном режиме</A
+>.
+    
+    <DIV
+CLASS="table"
+><A
+NAME="AEN7297"
+></A
+><P
+><B
+>Таблица 42-2. Функции, ограниченные в безопасном режиме</B
+></P
+><TABLE
+BORDER="1"
+CLASS="CALSTABLE"
+><COL><COL><THEAD
+><TR
+><TH
+>Функция</TH
+><TH
+>Ограничения</TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+><A
+HREF="function.dbmopen.html"
+><B
+CLASS="function"
+>dbmopen()</B
+></A
+></TD
+><TD
+>Проверяет, имеют ли файлы/каталоги, с которыми
+вы собираетесь работать, такой же UID (владельца), как и выполняемый скрипт.</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.dbase-open.html"
+><B
+CLASS="function"
+>dbase_open()</B
+></A
+></TD
+><TD
+>Проверяет, имеют ли файлы/каталоги, с которыми
+вы собираетесь работать, такой же UID (владельца), как и выполняемый скрипт.</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.filepro.html"
+><B
+CLASS="function"
+>filepro()</B
+></A
+></TD
+><TD
+>Проверяет, имеют ли файлы/каталоги, с которыми
+вы собираетесь работать, такой же UID (владельца), как и выполняемый скрипт.</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.filepro-rowcount.html"
+><B
+CLASS="function"
+>filepro_rowcount()</B
+></A
+></TD
+><TD
+>Проверяет, имеют ли файлы/каталоги, с которыми
+вы собираетесь работать, такой же UID (владельца), как и выполняемый скрипт.</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.filepro-retrieve.html"
+><B
+CLASS="function"
+>filepro_retrieve()</B
+></A
+></TD
+><TD
+>Проверяет, имеют ли файлы/каталоги, с которыми
+вы собираетесь работать, такой же UID (владельца), как и выполняемый скрипт.</TD
+></TR
+><TR
+><TD
+>ifx_*</TD
+><TD
+>sql_safe_mode ограничения (не путать с safe_mode)</TD
+></TR
+><TR
+><TD
+>ingres_*</TD
+><TD
+>sql_safe_mode ограничения (не путать с safe_mode)</TD
+></TR
+><TR
+><TD
+>mysql_*</TD
+><TD
+>sql_safe_mode ограничения (не путать с safe_mode)</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.pg-lo-import.html"
+><B
+CLASS="function"
+>pg_lo_import()</B
+></A
+></TD
+><TD
+>Проверяет, имеют ли файлы/каталоги, с которыми
+вы собираетесь работать, такой же UID (владельца), как и выполняемый скрипт.</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.posix-mkfifo.html"
+><B
+CLASS="function"
+>posix_mkfifo()</B
+></A
+></TD
+><TD
+>Проверяет, имеет ли каталог, с которым
+вы собираетесь работать, такой же UID (владельца), как и выполняемый скрипт.</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.putenv.html"
+><B
+CLASS="function"
+>putenv()</B
+></A
+></TD
+><TD
+>Подчиняется настройкам the safe_mode_protected_env_vars и
+        safe_mode_allowed_env_vars. Ознакомьтесь с более подробным описанием
+        функции <A
+HREF="function.putenv.html"
+><B
+CLASS="function"
+>putenv()</B
+></A
+>.</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.move-uploaded-file.html"
+><B
+CLASS="function"
+>move_uploaded_file()</B
+></A
+></TD
+><TD
+>Проверяет, имеют ли файлы/каталоги, с которыми
+вы собираетесь работать, такой же UID (владельца), как и выполняемый скрипт. </TD
+></TR
+><TR
+><TD
+><A
+HREF="function.chdir.html"
+><B
+CLASS="function"
+>chdir()</B
+></A
+></TD
+><TD
+>Проверяет, имеет ли каталог, с которым
+вы собираетесь работать, такой же UID (владельца), как и выполняемый скрипт.</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.dl.html"
+><B
+CLASS="function"
+>dl()</B
+></A
+></TD
+><TD
+>Эта функция недоступна в
+<A
+HREF="features.safe-mode.html"
+>безопасном режиме</A
+>.</TD
+></TR
+><TR
+><TD
+><A
+HREF="language.operators.execution.html"
+>backtick operator</A
+></TD
+><TD
+>Эта функция недоступна в
+<A
+HREF="features.safe-mode.html"
+>безопасном режиме</A
+>.</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.shell-exec.html"
+><B
+CLASS="function"
+>shell_exec()</B
+></A
+> (функция эквивалентна backticks)</TD
+><TD
+>Эта функция недоступна в
+<A
+HREF="features.safe-mode.html"
+>безопасном режиме</A
+>.</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.exec.html"
+><B
+CLASS="function"
+>exec()</B
+></A
+></TD
+><TD
+>Вы можете запускать исполняемые файлы, ограниченные деревом
+        каталогов, указанным в <A
+HREF="features.safe-mode.html#ini.safe-mode-exec-dir"
+>safe_mode_exec_dir</A
+>.
+        Исходя из практических соображений, использовать <VAR
+CLASS="literal"
+>..</VAR
+> 
+        при указании пути запрещено. Следует заметить, что к аргументу этой функции
+		применяется <A
+HREF="function.escapeshellcmd.html"
+><B
+CLASS="function"
+>escapeshellcmd()</B
+></A
+>.
+        </TD
+></TR
+><TR
+><TD
+><A
+HREF="function.system.html"
+><B
+CLASS="function"
+>system()</B
+></A
+></TD
+><TD
+>Вы можете запускать исполняемые файлы, ограниченные деревом
+        каталогов, указанным в <A
+HREF="features.safe-mode.html#ini.safe-mode-exec-dir"
+>safe_mode_exec_dir</A
+>.
+        Исходя из практических соображений, использовать <VAR
+CLASS="literal"
+>..</VAR
+> 
+        при указании пути запрещено. Следует заметить, что к аргументу этой функции
+		применяется <A
+HREF="function.escapeshellcmd.html"
+><B
+CLASS="function"
+>escapeshellcmd()</B
+></A
+>
+        </TD
+></TR
+><TR
+><TD
+><A
+HREF="function.passthru.html"
+><B
+CLASS="function"
+>passthru()</B
+></A
+></TD
+><TD
+>Вы можете запускать исполняемые файлы, ограниченные деревом
+        каталогов, указанным в <A
+HREF="features.safe-mode.html#ini.safe-mode-exec-dir"
+>safe_mode_exec_dir</A
+>.
+        Исходя из практических соображений, использовать <VAR
+CLASS="literal"
+>..</VAR
+> 
+        при указании пути запрещено. Следует заметить, что к аргументу этой функции
+		применяется <A
+HREF="function.escapeshellcmd.html"
+><B
+CLASS="function"
+>escapeshellcmd()</B
+></A
+>.
+        </TD
+></TR
+><TR
+><TD
+><A
+HREF="function.popen.html"
+><B
+CLASS="function"
+>popen()</B
+></A
+></TD
+><TD
+>Вы можете запускать исполняемые файлы, ограниченные деревом
+        каталогов, указанным в <A
+HREF="features.safe-mode.html#ini.safe-mode-exec-dir"
+>safe_mode_exec_dir</A
+>.
+        Исходя из практических соображений, использовать <VAR
+CLASS="literal"
+>..</VAR
+> 
+        при указании пути запрещено. Следует заметить, что к аргументу этой функции
+		применяется <A
+HREF="function.escapeshellcmd.html"
+><B
+CLASS="function"
+>escapeshellcmd()</B
+></A
+>.
+        </TD
+></TR
+><TR
+><TD
+><A
+HREF="function.fopen.html"
+><B
+CLASS="function"
+>fopen()</B
+></A
+></TD
+><TD
+>Проверяет, имеет ли каталог, с которым
+вы собираетесь работать, такой же UID (владельца), как и выполняемый скрипт.</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.mkdir.html"
+><B
+CLASS="function"
+>mkdir()</B
+></A
+></TD
+><TD
+>Проверяет, имеет ли каталог, с которым
+вы собираетесь работать, такой же UID (владельца), как и выполняемый скрипт.</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.rmdir.html"
+><B
+CLASS="function"
+>rmdir()</B
+></A
+></TD
+><TD
+>Проверяет, имеет ли каталог, с которым
+вы собираетесь работать, такой же UID (владельца), как и выполняемый скрипт.</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.rename.html"
+><B
+CLASS="function"
+>rename()</B
+></A
+></TD
+><TD
+>Проверяет, имеют ли файлы/каталоги, с которыми
+вы собираетесь работать, такой же UID (владельца), как и выполняемый скрипт. Проверяет, имеет ли каталог, с которым
+вы собираетесь работать, такой же UID (владельца), как и выполняемый скрипт.</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.unlink.html"
+><B
+CLASS="function"
+>unlink()</B
+></A
+></TD
+><TD
+>Проверяет, имеют ли файлы/каталоги, с которыми
+вы собираетесь работать, такой же UID (владельца), как и выполняемый скрипт. Проверяет, имеет ли каталог, с которым
+вы собираетесь работать, такой же UID (владельца), как и выполняемый скрипт.</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.copy.html"
+><B
+CLASS="function"
+>copy()</B
+></A
+></TD
+><TD
+>Проверяет, имеют ли файлы/каталоги, с которыми
+вы собираетесь работать, такой же UID (владельца), как и выполняемый скрипт. Проверяет, имеет ли каталог, с которым
+вы собираетесь работать, такой же UID (владельца), как и выполняемый скрипт. (Для
+        параметров <VAR
+CLASS="parameter"
+>source</VAR
+> и 
+        <VAR
+CLASS="parameter"
+>target</VAR
+>). </TD
+></TR
+><TR
+><TD
+><A
+HREF="function.chgrp.html"
+><B
+CLASS="function"
+>chgrp()</B
+></A
+></TD
+><TD
+>Проверяет, имеют ли файлы/каталоги, с которыми
+вы собираетесь работать, такой же UID (владельца), как и выполняемый скрипт.</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.chown.html"
+><B
+CLASS="function"
+>chown()</B
+></A
+></TD
+><TD
+>Проверяет, имеют ли файлы/каталоги, с которыми
+вы собираетесь работать, такой же UID (владельца), как и выполняемый скрипт.</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.chmod.html"
+><B
+CLASS="function"
+>chmod()</B
+></A
+></TD
+><TD
+>Проверяет, имеют ли файлы/каталоги, с которыми
+вы собираетесь работать, такой же UID (владельца), как и выполняемый скрипт. Кроме того, вы не можете
+        устанавливать UID, SGID и sticky-биты.</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.touch.html"
+><B
+CLASS="function"
+>touch()</B
+></A
+></TD
+><TD
+>Проверяет, имеют ли файлы/каталоги, с которыми
+вы собираетесь работать, такой же UID (владельца), как и выполняемый скрипт. Проверяет, имеет ли каталог, с которым
+вы собираетесь работать, такой же UID (владельца), как и выполняемый скрипт.</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.symlink.html"
+><B
+CLASS="function"
+>symlink()</B
+></A
+></TD
+><TD
+>Проверяет, имеют ли файлы/каталоги, с которыми
+вы собираетесь работать, такой же UID (владельца), как и выполняемый скрипт. Проверяет, имеет ли каталог, с которым
+вы собираетесь работать, такой же UID (владельца), как и выполняемый скрипт. 
+        (Замечание: проверка выполняется только для параметра <VAR
+CLASS="parameter"
+>target</VAR
+>)
+        </TD
+></TR
+><TR
+><TD
+><A
+HREF="function.link.html"
+><B
+CLASS="function"
+>link()</B
+></A
+></TD
+><TD
+>Проверяет, имеют ли файлы/каталоги, с которыми
+вы собираетесь работать, такой же UID (владельца), как и выполняемый скрипт. Проверяет, имеет ли каталог, с которым
+вы собираетесь работать, такой же UID (владельца), как и выполняемый скрипт. 
+        (Замечание: проверка выполняется только для параметра <VAR
+CLASS="parameter"
+>target</VAR
+>)
+	</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.apache-request-headers.html"
+><B
+CLASS="function"
+>apache_request_headers()</B
+></A
+></TD
+><TD
+>В защищенном режиме, заголовки, начинающиеся с 'authorization' 
+        (независимо от регистра), не возвращаются.</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.header.html"
+><B
+CLASS="function"
+>header()</B
+></A
+></TD
+><TD
+>В защищенном режиме, текущий UID  скрипта будет добавлен к
+        <VAR
+CLASS="literal"
+>realm</VAR
+>-части заголовка
+        <VAR
+CLASS="literal"
+>WWW-Authenticate</VAR
+>, если вы его устанавливаете
+        (используется для HTTP-аутентификации)</TD
+></TR
+><TR
+><TD
+><A
+HREF="features.http-auth.html"
+>переменные PHP_AUTH</A
+></TD
+><TD
+>&#13;         В защищенном режиме, переменные <VAR
+CLASS="varname"
+>PHP_AUTH_USER</VAR
+>,
+         <VAR
+CLASS="varname"
+>PHP_AUTH_PW</VAR
+>, и <VAR
+CLASS="varname"
+>AUTH_TYPE</VAR
+>
+         недоступны как элементы массива <VAR
+CLASS="varname"
+>$_SERVER</VAR
+>. 
+         Несмотря на это, вы все еще можете использовать переменную 
+         <VAR
+CLASS="varname"
+>REMOTE_USER</VAR
+> для идентификации пользователя.
+         (Замечание: актуально только для PHP 4.3.0 и выше)
+        </TD
+></TR
+><TR
+><TD
+>&#13;         <A
+HREF="function.highlight-file.html"
+><B
+CLASS="function"
+>highlight_file()</B
+></A
+>,
+         <A
+HREF="function.show-source.html"
+><B
+CLASS="function"
+>show_source()</B
+></A
+>
+        </TD
+><TD
+>&#13;         Проверяет, имеют ли файлы/каталоги, с которыми
+вы собираетесь работать, такой же UID (владельца), как и выполняемый скрипт. Проверяет, имеет ли каталог, с которым
+вы собираетесь работать, такой же UID (владельца), как и выполняемый скрипт. (Замечание: актуально только для PHP 4.2.1 и выше)
+        </TD
+></TR
+><TR
+><TD
+>&#13;         <A
+HREF="function.parse-ini-file.html"
+><B
+CLASS="function"
+>parse_ini_file()</B
+></A
+>
+        </TD
+><TD
+>&#13;         Проверяет, имеют ли файлы/каталоги, с которыми
+вы собираетесь работать, такой же UID (владельца), как и выполняемый скрипт. Проверяет, имеет ли каталог, с которым
+вы собираетесь работать, такой же UID (владельца), как и выполняемый скрипт. (Замечание: актуально только для PHP 4.2.1 и выше)
+        </TD
+></TR
+><TR
+><TD
+>&#13;         <A
+HREF="function.set-time-limit.html"
+><B
+CLASS="function"
+>set_time_limit()</B
+></A
+>
+        </TD
+><TD
+>&#13;         Не имеет никакого эффекта, если <A
+HREF="features.safe-mode.html#ini.safe-mode"
+>безопасный режим</A
+> используется
+        </TD
+></TR
+><TR
+><TD
+>&#13;         <A
+HREF="ref.info.html#ini.max-execution-time"
+>max_execution_time</A
+>
+        </TD
+><TD
+>&#13;         Не имеет никакого эффекта, если <A
+HREF="features.safe-mode.html#ini.safe-mode"
+>безопасный режим</A
+> используется
+        </TD
+></TR
+><TR
+><TD
+>&#13;	 <A
+HREF="function.mail.html"
+><B
+CLASS="function"
+>mail()</B
+></A
+>
+	</TD
+><TD
+>&#13;	В защищенном режиме пятый параметр недоступен. 
+	(Замечание: актуально только для PHP 4.2.3 и выше)
+	</TD
+></TR
+><TR
+><TD
+>Любая функция, которая использует
+	 <TT
+CLASS="filename"
+>php4/main/fopen_wrappers.c</TT
+>
+	</TD
+><TD
+>Временно не документировано</TD
+></TR
+></TBODY
+></TABLE
+></DIV
+>
+   </P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="features.safe-mode.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Начало</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="features.commandline.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Защищенный режим</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="features.safe-mode.html"
+ACCESSKEY="U"
+>Уровень выше</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Использование PHP в командной строке</TD
+></TR
+></TABLE
+></DIV
+></div></center></div></td>
+			<td><div style="display:none; width:200px;" id="o3" name="o3"><script charset="windows-1251" type="text/javascript" src="http://www.ozon.ru/PartnerTwinerNew.aspx?revident=bea9126b-c8e1-4bf5-b6d8-9a057f8feac6" ></script></div><script>o = document.getElementById('o3'); if(o) { var s = o.innerHTML; s = s.replace(/F6F6F6/gi,"FFFFFF"); o.innerHTML = s.replace(/padding-top: 10px; padding-bottom: 10px;/,"display:none;"); o.style.display = 'block'; } </script><br><div style="margin: 10px;"><script type="text/javascript"><!--
+google_ad_client = "pub-4093271809023514";
+/* 120x600, создано 01.11.2008 */
+google_ad_slot = "0438855731";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div></td>
+    		</tr>
+  		</table>
+    </td>
+  </tr>
+  <tr valign='bottom' height='1%'>
+  <td>      <table width=100% cellspacing=0 cellpadding=5 border=0 bgcolor=#9999CC>
+        <tr valign=center>
+          <td class='phpcopyright' width='45%' align='left'>&nbsp;&nbsp;Engine <a  href="http://www.mnogosearch.org/">MnoGoSearch</a></td>
+          <td class='phpcopyright' width='10%' align='center'>2007-2010 &copy <a  href="mailto:webmaster@php.ru">PHP.RU</a></td>
+          <td class='phpcopyright' width='45%' align='right' >Powered by <a target="_blank" href="http://odware.ru">ODware</a> <a HREF="http://440hz.ru">440Hz</a> &nbsp;&nbsp;</td>
+        </tr>
+      </table>
+
+    <div style="text-align: right; padding: 5px">
+		<!--LiveInternet counter-->
+		<script type="text/javascript">document.write('<a href="http://www.liveinternet.ru/click" target=_blank><img src="http://counter.yadro.ru/hit?t53.6;r' + escape(document.referrer) + ((typeof(screen)=='undefined')?'':';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ';u' + escape(document.URL) +';i' + escape('Жж'+document.title.substring(0,80)) + ';' + Math.random() + '" border=0 width=88 height=31 alt="" title="LiveInternet: показано число просмотров и посетителей за 24 часа"><\/a>');
+		</script>
+		<!--/LiveInternet-->
+		<!-- SpyLOG -->
+		<script src="http://tools.spylog.ru/counter2.2.js" type="text/javascript" id="spylog_code" counter="830950" ></script>
+		<noscript><a href="http://u8309.50.spylog.com/cnt?cid=830950&f=3&p=0" target="_blank"><img src="http://u8309.50.spylog.com/cnt?cid=830950&p=0&f=4" alt='SpyLOG' border='0' width=88 height=31 ></a>
+		</noscript>
+		<!--/ SpyLOG -->
+	</div>
+</td>
+  </tr>
+</table>
+
+<script>
+<!--
+document.SEARCH.QS.focus();
+// --></script>
+
+<!-- 
+	как же вы все это читаете?
+	440hz 
+-->
+
+</body>
+</html>

@@ -1,0 +1,1149 @@
+<!-- 
+
+     HTML dropped by Zend Guard Compressor 4.2
+
+     php.ru team: mz, az, yuri, vb, cyxapuk, 440hz, administrator
+     2004-2007 (c) expi-web.com 
+     2007-2008 (c) odware.com 
+     0101-1010 (с) 440hz
+
+     2b|~2b=?
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EHOT тут всё пожрал ! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="alternate" type="application/rss+xml" title="php.ru/forum - последние сообщения" href="http://www.php.ru/forum/rss.php">
+<link rel="SHORTCUT ICON" href="http://www.php.ru/favicon.ico" />
+<META name="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<meta http-equiv="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<META name="keywords" content="php, php5, apache, mysql, session">
+<meta http-equiv="keywords" content="php, php5, apache, mysql, session">
+<title>php.ru - Network Functions</title>
+<LINK REL="stylesheet" TYPE="text/css" HREF="http://www.php.ru/index.css">
+<script language="JavaScript" src="http://www.php.ru/ajax/ajax.js"></script>
+</head>
+<body>
+
+<table height='100%' width='100%' cellspacing='0' cellpadding='0'>
+  <tr height='99%' valign='top'>
+    <td align='center'>
+		
+		<table style='margin-top: 4px' width=100% cellspacing=0 cellpadding=3>
+   		<tr>
+     		<td>PHP - <a href="http://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BA%D1%80%D0%BE%D0%BD%D0%B8%D0%BC" target=_blank class=lnk>рекурсивный акроним</a> словосочетания &laquo;<a href="/manual/introduction.html" class=lnk>PHP: Hypertext Preprocessor</a>&raquo;</td>
+     	</tr>
+   		</table>
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/subsys_ajax.js"></script>
+		<!--
+
+		commet by 440hz
+		20.10.2007
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/pu_search.js"></script>
+
+		-->
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/cz.js?a=b"></script>
+
+		<table style='margin-top: 5px' width=100% bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0>
+   	 	<form name=SEARCH method=GET action="http://www.php.ru/search/?SID=18qh1u7r7v0upj12" onsubmit="return puSubmit();">
+	  	<input type=hidden name=PAGE value=1>
+  		<tr>
+    		<td width='1' valign='middle'> 
+    		   <a href='/'><img src="http://www.php.ru/;-)/logo.gif" width=133 height=93 alt="php" border=0 hspace=10 vspace=0></a>
+			 </td>
+		    <td width='100%' valign='middle'>
+		       <!--
+			   
+				commet by 440hz
+				20.10.2007
+
+			   <div id='pu_search' class='pu_search'></div>
+		       <div id='pu_search_description' class='pu_search_decription'></div>
+			   
+			   -->
+        	 <input type=text style='width:99%; margin: 10px' maxlength='200' name='QS' class='in' id='query' autocomplete='off' value="" />
+    		</td>
+		  </tr>
+   		<tr bgcolor='#666699' valign='middle'>
+			<td style='border-top: 1px solid #333366;'><br /></td>
+    		<td style='border-top: 1px solid #333366;'><div style="padding: 4px 4px 4px 10px; height: 24px; color: #CCCCFF;" id="stat">Хто там?<script>doLoadCZ('stat','stat');</script></div></td>
+  		</tr>
+		</form>
+		</table>
+		<table id="menu" cellspaciong=0 cellpadding=3>
+<tr>
+<td><a href="/" class=current>Главная</a></td>
+<td><a href="/download/" class=current>Скачать</a></td>
+<td><a href="/doc/" class=current>Документация</a></td>
+<td><a href="/forum/" class=current>Форум</a></td>
+<td width=100% align=right><a href="/phpinfo.html" class=current>phpinfo()</a></td>
+</tr>
+</table>
+
+		
+<!--  AdRiver code START. Type:728x90 Site: php.ru PZ: 0 BN: 1 -->
+<script language="javascript" type="text/javascript"><!--
+var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+var ar_Tail='unknown'; if (document.referrer) ar_Tail = escape(document.referrer);
+document.write(
+'<iframe src="http://ad.adriver.ru/cgi-bin/erle.cgi?'
++ 'sid=148680&bn=1&target=blank&bt=36&pz=0&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail
++ '" frameborder=0 vspace=0 hspace=0 width=728 height=90 marginwidth=0'
++ ' marginheight=0 scrolling=no></iframe>');
+//--></script>
+<noscript>
+<a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" target=_blank>
+<img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" alt="-AdRiver-" border=0 width=728 height=90></a>
+</noscript>
+<!--  AdRiver code END  -->
+
+
+  		<table width='100%' cellspacing='0' cellpadding='0'>
+    		<tr valign='top'>
+      		<td width=100%><div style="margin: 10px 10px 10px 50px;"><center><div style="width: 800px; text-align: left"><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Руководство по PHP</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="function.ncurses-wvline.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="function.checkdnsrr.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="reference"
+><A
+NAME="ref.network"
+></A
+><DIV
+CLASS="TITLEPAGE"
+><H1
+CLASS="title"
+>XCVIII. Network Functions</H1
+><DIV
+CLASS="PARTINTRO"
+><A
+NAME="AEN111746"
+></A
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="network.intro"
+>Введение</A
+></H1
+><P
+>&#13;    
+    </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="network.requirements"
+>Требования</A
+></H1
+><P
+>Эти функции всегда доступны.</P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="network.installation"
+>Установка</A
+></H1
+><P
+>Для использования этих функций не требуется проведение установки,
+поскольку они являются частью ядра PHP.</P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="network.configuration"
+>Настройка во время выполнения</A
+></H1
+><P
+>&#13;Поведение этих функций зависит от установок в <TT
+CLASS="filename"
+>php.ini</TT
+>.
+</P
+><P
+>&#13;  <DIV
+CLASS="table"
+><A
+NAME="AEN111761"
+></A
+><P
+><B
+>Таблица 1. Network Configuration Options</B
+></P
+><TABLE
+BORDER="1"
+CLASS="CALSTABLE"
+><COL><COL><COL><COL><THEAD
+><TR
+><TH
+>Name</TH
+><TH
+>Default</TH
+><TH
+>Changeable</TH
+><TH
+>Changelog</TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+>define_syslog_variables</TD
+><TD
+>"0"</TD
+><TD
+>PHP_INI_ALL</TD
+><TD
+>&nbsp;</TD
+></TR
+></TBODY
+></TABLE
+></DIV
+>
+ Для подробного описания констант
+PHP_INI_*, обратитесь к документации функции <A
+HREF="function.ini-set.html"
+><B
+CLASS="function"
+>ini_set()</B
+></A
+>.
+ </P
+><P
+>Краткое разъяснение конфигурационных
+директив.</P
+><P
+>&#13; <P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+><A
+NAME="ini.define-syslog-variables"
+></A
+><VAR
+CLASS="parameter"
+>define_syslog_variables</VAR
+>
+   <A
+HREF="language.types.boolean.html"
+><B
+CLASS="type"
+>boolean</B
+></A
+></DT
+><DD
+><P
+>&#13;     Whether or not to define the various syslog variables (e.g. $LOG_PID,
+     $LOG_CRON, etc.). Turning it off is a good idea performance-wise. At
+     runtime, you can define these variables by calling
+     <A
+HREF="function.define-syslog-variables.html"
+><B
+CLASS="function"
+>define_syslog_variables()</B
+></A
+>.
+    </P
+></DD
+></DL
+></DIV
+>
+ </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="network.resources"
+>Типы ресурсов</A
+></H1
+><P
+>Данное расширение не определяет никакие типы ресурсов.</P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="network.constants"
+>Предопределенные константы</A
+></H1
+><P
+>&#13;Перечисленные ниже константы всегда доступны как часть ядра PHP.
+</P
+><DIV
+CLASS="table"
+><A
+NAME="AEN111793"
+></A
+><P
+><B
+>Таблица 2. <A
+HREF="function.openlog.html"
+><B
+CLASS="function"
+>openlog()</B
+></A
+> Options</B
+></P
+><TABLE
+BORDER="1"
+CLASS="CALSTABLE"
+><COL><COL><THEAD
+><TR
+><TH
+>Constant</TH
+><TH
+>Description</TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+>LOG_CONS</TD
+><TD
+>&#13;       if there is an error while sending data to the system logger,
+       write directly to the system console
+      </TD
+></TR
+><TR
+><TD
+>LOG_NDELAY</TD
+><TD
+>&#13;       open the connection to the logger immediately 
+      </TD
+></TR
+><TR
+><TD
+>LOG_ODELAY</TD
+><TD
+>&#13;       (default) delay opening the connection until the first
+       message is logged
+      </TD
+></TR
+><TR
+><TD
+>LOG_NOWAIT</TD
+><TD
+>&nbsp;</TD
+></TR
+><TR
+><TD
+>LOG_PERROR</TD
+><TD
+>print log message also to standard error</TD
+></TR
+><TR
+><TD
+>LOG_PID</TD
+><TD
+>include PID with each message</TD
+></TR
+></TBODY
+></TABLE
+></DIV
+><DIV
+CLASS="table"
+><A
+NAME="AEN111820"
+></A
+><P
+><B
+>Таблица 3. <A
+HREF="function.openlog.html"
+><B
+CLASS="function"
+>openlog()</B
+></A
+> Facilities</B
+></P
+><TABLE
+BORDER="1"
+CLASS="CALSTABLE"
+><COL><COL><THEAD
+><TR
+><TH
+>Constant</TH
+><TH
+>Description</TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+>LOG_AUTH</TD
+><TD
+>&#13;       security/authorization messages (use LOG_AUTHPRIV instead
+       in systems where that constant is defined)
+      </TD
+></TR
+><TR
+><TD
+>LOG_AUTHPRIV</TD
+><TD
+>security/authorization messages (private)</TD
+></TR
+><TR
+><TD
+>LOG_CRON</TD
+><TD
+>clock daemon (cron and at)</TD
+></TR
+><TR
+><TD
+>LOG_DAEMON</TD
+><TD
+>other system daemons</TD
+></TR
+><TR
+><TD
+>LOG_KERN</TD
+><TD
+>kernel messages</TD
+></TR
+><TR
+><TD
+>LOG_LOCAL0 ... LOG_LOCAL7</TD
+><TD
+>reserved for local use, these are not available in Windows</TD
+></TR
+><TR
+><TD
+>LOG_LPR</TD
+><TD
+>line printer subsystem</TD
+></TR
+><TR
+><TD
+>LOG_MAIL</TD
+><TD
+>mail subsystem</TD
+></TR
+><TR
+><TD
+>LOG_NEWS</TD
+><TD
+>USENET news subsystem</TD
+></TR
+><TR
+><TD
+>LOG_SYSLOG</TD
+><TD
+>messages generated internally by syslogd</TD
+></TR
+><TR
+><TD
+>LOG_USER</TD
+><TD
+>generic user-level messages</TD
+></TR
+><TR
+><TD
+>LOG_UUCP</TD
+><TD
+>UUCP subsystem</TD
+></TR
+></TBODY
+></TABLE
+></DIV
+><DIV
+CLASS="table"
+><A
+NAME="AEN111865"
+></A
+><P
+><B
+>Таблица 4. <A
+HREF="function.syslog.html"
+><B
+CLASS="function"
+>syslog()</B
+></A
+> Priorities (in descending order)</B
+></P
+><TABLE
+BORDER="1"
+CLASS="CALSTABLE"
+><COL><COL><THEAD
+><TR
+><TH
+>Constant</TH
+><TH
+>Description</TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+>LOG_EMERG</TD
+><TD
+>system is unusable</TD
+></TR
+><TR
+><TD
+>LOG_ALERT</TD
+><TD
+>action must be taken immediately</TD
+></TR
+><TR
+><TD
+>LOG_CRIT</TD
+><TD
+>critical conditions</TD
+></TR
+><TR
+><TD
+>LOG_ERR</TD
+><TD
+>error conditions</TD
+></TR
+><TR
+><TD
+>LOG_WARNING</TD
+><TD
+>warning conditions</TD
+></TR
+><TR
+><TD
+>LOG_NOTICE</TD
+><TD
+>normal, but significant, condition</TD
+></TR
+><TR
+><TD
+>LOG_INFO</TD
+><TD
+>informational message</TD
+></TR
+><TR
+><TD
+>LOG_DEBUG</TD
+><TD
+>debug-level message</TD
+></TR
+></TBODY
+></TABLE
+></DIV
+><DIV
+CLASS="table"
+><A
+NAME="AEN111898"
+></A
+><P
+><B
+>Таблица 5. <A
+HREF="function.dns-get-record.html"
+><B
+CLASS="function"
+>dns_get_record()</B
+></A
+> Options</B
+></P
+><TABLE
+BORDER="1"
+CLASS="CALSTABLE"
+><COL><COL><THEAD
+><TR
+><TH
+>Constant</TH
+><TH
+>Description</TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+>DNS_A</TD
+><TD
+>IPv4 Address Resource</TD
+></TR
+><TR
+><TD
+>DNS_MX</TD
+><TD
+>Mail Exchanger Resource</TD
+></TR
+><TR
+><TD
+>DNS_CNAME</TD
+><TD
+>Alias (Canonical Name) Resource</TD
+></TR
+><TR
+><TD
+>DNS_NS</TD
+><TD
+>Authoritative Name Server Resource</TD
+></TR
+><TR
+><TD
+>DNS_PTR</TD
+><TD
+>Pointer Resource</TD
+></TR
+><TR
+><TD
+>DNS_HINFO</TD
+><TD
+>Host Info Resource (See IANA's
+        <A
+HREF="http://www.iana.org/assignments/operating-system-names"
+TARGET="_top"
+>Operating System Names</A
+>
+        for the meaning of these values)</TD
+></TR
+><TR
+><TD
+>DNS_SOA</TD
+><TD
+>Start of Authority Resource</TD
+></TR
+><TR
+><TD
+>DNS_TXT</TD
+><TD
+>Text Resource</TD
+></TR
+><TR
+><TD
+>DNS_ANY</TD
+><TD
+>Any Resource Record.  On most systems
+        this returns all resource records, however
+        it should not be counted upon for critical
+        uses.  Try DNS_ALL instead.</TD
+></TR
+><TR
+><TD
+>DNS_AAAA</TD
+><TD
+>IPv6 Address Resource</TD
+></TR
+><TR
+><TD
+>DNS_ALL</TD
+><TD
+>Iteratively query the name server for
+        each available record type.</TD
+></TR
+></TBODY
+></TABLE
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Содержание</B
+></DT
+><DT
+><A
+HREF="function.checkdnsrr.html"
+>checkdnsrr</A
+>&nbsp;--&nbsp;
+     Check DNS records corresponding to a given Internet host name or
+     IP address
+    </DT
+><DT
+><A
+HREF="function.closelog.html"
+>closelog</A
+>&nbsp;--&nbsp;Close connection to system logger</DT
+><DT
+><A
+HREF="function.debugger-off.html"
+>debugger_off</A
+>&nbsp;--&nbsp;Disable internal PHP debugger (PHP 3)</DT
+><DT
+><A
+HREF="function.debugger-on.html"
+>debugger_on</A
+>&nbsp;--&nbsp;Enable internal PHP debugger (PHP 3)</DT
+><DT
+><A
+HREF="function.define-syslog-variables.html"
+>define_syslog_variables</A
+>&nbsp;--&nbsp;Initializes all syslog related constants</DT
+><DT
+><A
+HREF="function.dns-check-record.html"
+>dns_check_record</A
+>&nbsp;--&nbsp;Synonym for <A
+HREF="function.checkdnsrr.html"
+><B
+CLASS="function"
+>checkdnsrr()</B
+></A
+></DT
+><DT
+><A
+HREF="function.dns-get-mx.html"
+>dns_get_mx</A
+>&nbsp;--&nbsp;Synonym for <A
+HREF="function.getmxrr.html"
+><B
+CLASS="function"
+>getmxrr()</B
+></A
+></DT
+><DT
+><A
+HREF="function.dns-get-record.html"
+>dns_get_record</A
+>&nbsp;--&nbsp;
+      Fetch DNS Resource Records associated with a hostname
+     </DT
+><DT
+><A
+HREF="function.fsockopen.html"
+>fsockopen</A
+>&nbsp;--&nbsp;
+     Open Internet or Unix domain socket connection
+    </DT
+><DT
+><A
+HREF="function.gethostbyaddr.html"
+>gethostbyaddr</A
+>&nbsp;--&nbsp;
+     Get the Internet host name corresponding to a given IP address
+    </DT
+><DT
+><A
+HREF="function.gethostbyname.html"
+>gethostbyname</A
+>&nbsp;--&nbsp;
+     Get the IP address corresponding to a given Internet host name
+    </DT
+><DT
+><A
+HREF="function.gethostbynamel.html"
+>gethostbynamel</A
+>&nbsp;--&nbsp;
+     Get a list of IP addresses corresponding to a given Internet host
+     name
+    </DT
+><DT
+><A
+HREF="function.getmxrr.html"
+>getmxrr</A
+>&nbsp;--&nbsp;
+     Get MX records corresponding to a given Internet host name
+    </DT
+><DT
+><A
+HREF="function.getprotobyname.html"
+>getprotobyname</A
+>&nbsp;--&nbsp;
+     Get protocol number associated with protocol name
+    </DT
+><DT
+><A
+HREF="function.getprotobynumber.html"
+>getprotobynumber</A
+>&nbsp;--&nbsp;
+     Get protocol name associated with protocol number
+    </DT
+><DT
+><A
+HREF="function.getservbyname.html"
+>getservbyname</A
+>&nbsp;--&nbsp;
+     Get port number associated with an Internet service and protocol
+    </DT
+><DT
+><A
+HREF="function.getservbyport.html"
+>getservbyport</A
+>&nbsp;--&nbsp;
+     Get Internet service which corresponds to port and protocol
+    </DT
+><DT
+><A
+HREF="function.header.html"
+>header</A
+>&nbsp;--&nbsp;Send a raw HTTP header</DT
+><DT
+><A
+HREF="function.headers-list.html"
+>headers_list</A
+>&nbsp;--&nbsp;Returns a list of response headers sent (or ready to send)</DT
+><DT
+><A
+HREF="function.headers-sent.html"
+>headers_sent</A
+>&nbsp;--&nbsp;Checks if or where headers have been sent</DT
+><DT
+><A
+HREF="function.inet-ntop.html"
+>inet_ntop</A
+>&nbsp;--&nbsp;
+      Converts a packed internet address to a human readable representation
+    </DT
+><DT
+><A
+HREF="function.inet-pton.html"
+>inet_pton</A
+>&nbsp;--&nbsp;
+      Converts a human readable IP address to its packed in_addr representation
+    </DT
+><DT
+><A
+HREF="function.ip2long.html"
+>ip2long</A
+>&nbsp;--&nbsp;
+      Converts a string containing an (IPv4) Internet Protocol dotted address
+      into a proper address
+    </DT
+><DT
+><A
+HREF="function.long2ip.html"
+>long2ip</A
+>&nbsp;--&nbsp;
+      Converts an (IPv4) Internet network address into a string in Internet
+      standard dotted format 
+    </DT
+><DT
+><A
+HREF="function.openlog.html"
+>openlog</A
+>&nbsp;--&nbsp;Open connection to system logger</DT
+><DT
+><A
+HREF="function.pfsockopen.html"
+>pfsockopen</A
+>&nbsp;--&nbsp;
+     Open persistent Internet or Unix domain socket connection
+    </DT
+><DT
+><A
+HREF="function.setcookie.html"
+>setcookie</A
+>&nbsp;--&nbsp;Send a cookie</DT
+><DT
+><A
+HREF="function.setrawcookie.html"
+>setrawcookie</A
+>&nbsp;--&nbsp;Send a cookie without urlencoding the cookie value</DT
+><DT
+><A
+HREF="function.socket-get-status.html"
+>socket_get_status</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.stream-get-meta-data.html"
+><B
+CLASS="function"
+>stream_get_meta_data()</B
+></A
+></DT
+><DT
+><A
+HREF="function.socket-set-blocking.html"
+>socket_set_blocking</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.stream-set-blocking.html"
+><B
+CLASS="function"
+>stream_set_blocking()</B
+></A
+></DT
+><DT
+><A
+HREF="function.socket-set-timeout.html"
+>socket_set_timeout</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.stream-set-timeout.html"
+><B
+CLASS="function"
+>stream_set_timeout()</B
+></A
+></DT
+><DT
+><A
+HREF="function.syslog.html"
+>syslog</A
+>&nbsp;--&nbsp;Generate a system log message</DT
+></DL
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="function.ncurses-wvline.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Начало</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="function.checkdnsrr.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>ncurses_wvline</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="funcref.html"
+ACCESSKEY="U"
+>Уровень выше</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>checkdnsrr</TD
+></TR
+></TABLE
+></DIV
+></div></center></div></td>
+			<td><div style="display:none; width:200px;" id="o3" name="o3"><script charset="windows-1251" type="text/javascript" src="http://www.ozon.ru/PartnerTwinerNew.aspx?revident=bea9126b-c8e1-4bf5-b6d8-9a057f8feac6" ></script></div><script>o = document.getElementById('o3'); if(o) { var s = o.innerHTML; s = s.replace(/F6F6F6/gi,"FFFFFF"); o.innerHTML = s.replace(/padding-top: 10px; padding-bottom: 10px;/,"display:none;"); o.style.display = 'block'; } </script><br><div style="margin: 10px;"><script type="text/javascript"><!--
+google_ad_client = "pub-4093271809023514";
+/* 120x600, создано 01.11.2008 */
+google_ad_slot = "0438855731";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div></td>
+    		</tr>
+  		</table>
+    </td>
+  </tr>
+  <tr valign='bottom' height='1%'>
+  <td>      <table width=100% cellspacing=0 cellpadding=5 border=0 bgcolor=#9999CC>
+        <tr valign=center>
+          <td class='phpcopyright' width='45%' align='left'>&nbsp;&nbsp;Engine <a  href="http://www.mnogosearch.org/">MnoGoSearch</a></td>
+          <td class='phpcopyright' width='10%' align='center'>2007-2010 &copy <a  href="mailto:webmaster@php.ru">PHP.RU</a></td>
+          <td class='phpcopyright' width='45%' align='right' >Powered by <a target="_blank" href="http://odware.ru">ODware</a> <a HREF="http://440hz.ru">440Hz</a> &nbsp;&nbsp;</td>
+        </tr>
+      </table>
+
+    <div style="text-align: right; padding: 5px">
+		<!--LiveInternet counter-->
+		<script type="text/javascript">document.write('<a href="http://www.liveinternet.ru/click" target=_blank><img src="http://counter.yadro.ru/hit?t53.6;r' + escape(document.referrer) + ((typeof(screen)=='undefined')?'':';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ';u' + escape(document.URL) +';i' + escape('Жж'+document.title.substring(0,80)) + ';' + Math.random() + '" border=0 width=88 height=31 alt="" title="LiveInternet: показано число просмотров и посетителей за 24 часа"><\/a>');
+		</script>
+		<!--/LiveInternet-->
+		<!-- SpyLOG -->
+		<script src="http://tools.spylog.ru/counter2.2.js" type="text/javascript" id="spylog_code" counter="830950" ></script>
+		<noscript><a href="http://u8309.50.spylog.com/cnt?cid=830950&f=3&p=0" target="_blank"><img src="http://u8309.50.spylog.com/cnt?cid=830950&p=0&f=4" alt='SpyLOG' border='0' width=88 height=31 ></a>
+		</noscript>
+		<!--/ SpyLOG -->
+	</div>
+</td>
+  </tr>
+</table>
+
+<script>
+<!--
+document.SEARCH.QS.focus();
+// --></script>
+
+<!-- 
+	как же вы все это читаете?
+	440hz 
+-->
+
+</body>
+</html>

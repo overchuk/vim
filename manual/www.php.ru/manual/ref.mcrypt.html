@@ -1,0 +1,1267 @@
+<!-- 
+
+     HTML dropped by Zend Guard Compressor 4.2
+
+     php.ru team: mz, az, yuri, vb, cyxapuk, 440hz, administrator
+     2004-2007 (c) expi-web.com 
+     2007-2008 (c) odware.com 
+     0101-1010 (с) 440hz
+
+     2b|~2b=?
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EHOT тут всё пожрал ! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="alternate" type="application/rss+xml" title="php.ru/forum - последние сообщения" href="http://www.php.ru/forum/rss.php">
+<link rel="SHORTCUT ICON" href="http://www.php.ru/favicon.ico" />
+<META name="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<meta http-equiv="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<META name="keywords" content="php, php5, apache, mysql, session">
+<meta http-equiv="keywords" content="php, php5, apache, mysql, session">
+<title>php.ru - Mcrypt Encryption Functions</title>
+<LINK REL="stylesheet" TYPE="text/css" HREF="http://www.php.ru/index.css">
+<script language="JavaScript" src="http://www.php.ru/ajax/ajax.js"></script>
+</head>
+<body>
+
+<table height='100%' width='100%' cellspacing='0' cellpadding='0'>
+  <tr height='99%' valign='top'>
+    <td align='center'>
+		
+		<table style='margin-top: 4px' width=100% cellspacing=0 cellpadding=3>
+   		<tr>
+     		<td>PHP - <a href="http://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BA%D1%80%D0%BE%D0%BD%D0%B8%D0%BC" target=_blank class=lnk>рекурсивный акроним</a> словосочетания &laquo;<a href="/manual/introduction.html" class=lnk>PHP: Hypertext Preprocessor</a>&raquo;</td>
+     	</tr>
+   		</table>
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/subsys_ajax.js"></script>
+		<!--
+
+		commet by 440hz
+		20.10.2007
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/pu_search.js"></script>
+
+		-->
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/cz.js?a=b"></script>
+
+		<table style='margin-top: 5px' width=100% bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0>
+   	 	<form name=SEARCH method=GET action="http://www.php.ru/search/?SID=4vngs0j35el4acb1" onsubmit="return puSubmit();">
+	  	<input type=hidden name=PAGE value=1>
+  		<tr>
+    		<td width='1' valign='middle'> 
+    		   <a href='/'><img src="http://www.php.ru/;-)/logo.gif" width=133 height=93 alt="php" border=0 hspace=10 vspace=0></a>
+			 </td>
+		    <td width='100%' valign='middle'>
+		       <!--
+			   
+				commet by 440hz
+				20.10.2007
+
+			   <div id='pu_search' class='pu_search'></div>
+		       <div id='pu_search_description' class='pu_search_decription'></div>
+			   
+			   -->
+        	 <input type=text style='width:99%; margin: 10px' maxlength='200' name='QS' class='in' id='query' autocomplete='off' value="" />
+    		</td>
+		  </tr>
+   		<tr bgcolor='#666699' valign='middle'>
+			<td style='border-top: 1px solid #333366;'><br /></td>
+    		<td style='border-top: 1px solid #333366;'><div style="padding: 4px 4px 4px 10px; height: 24px; color: #CCCCFF;" id="stat">Хто там?<script>doLoadCZ('stat','stat');</script></div></td>
+  		</tr>
+		</form>
+		</table>
+		<table id="menu" cellspaciong=0 cellpadding=3>
+<tr>
+<td><a href="/" class=current>Главная</a></td>
+<td><a href="/download/" class=current>Скачать</a></td>
+<td><a href="/doc/" class=current>Документация</a></td>
+<td><a href="/forum/" class=current>Форум</a></td>
+<td width=100% align=right><a href="/phpinfo.html" class=current>phpinfo()</a></td>
+</tr>
+</table>
+
+		
+<!--  AdRiver code START. Type:728x90 Site: php.ru PZ: 0 BN: 1 -->
+<script language="javascript" type="text/javascript"><!--
+var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+var ar_Tail='unknown'; if (document.referrer) ar_Tail = escape(document.referrer);
+document.write(
+'<iframe src="http://ad.adriver.ru/cgi-bin/erle.cgi?'
++ 'sid=148680&bn=1&target=blank&bt=36&pz=0&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail
++ '" frameborder=0 vspace=0 hspace=0 width=728 height=90 marginwidth=0'
++ ' marginheight=0 scrolling=no></iframe>');
+//--></script>
+<noscript>
+<a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" target=_blank>
+<img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" alt="-AdRiver-" border=0 width=728 height=90></a>
+</noscript>
+<!--  AdRiver code END  -->
+
+
+  		<table width='100%' cellspacing='0' cellpadding='0'>
+    		<tr valign='top'>
+      		<td width=100%><div style="margin: 10px 10px 10px 50px;"><center><div style="width: 800px; text-align: left"><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Руководство по PHP</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="function.mcal-week-of-year.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="function.mcrypt-cbc.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="reference"
+><A
+NAME="ref.mcrypt"
+></A
+><DIV
+CLASS="TITLEPAGE"
+><H1
+CLASS="title"
+>LXXX. Mcrypt Encryption Functions</H1
+><DIV
+CLASS="PARTINTRO"
+><A
+NAME="AEN85677"
+></A
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="mcrypt.intro"
+>Введение</A
+></H1
+><P
+>&#13;     This is an interface to the mcrypt library, which supports a wide
+     variety of block algorithms such as DES, TripleDES, Blowfish
+     (default), 3-WAY, SAFER-SK64, SAFER-SK128, TWOFISH, TEA, RC2 and
+     GOST in CBC, OFB, CFB and ECB cipher modes. Additionally, it
+     supports RC6 and IDEA which are considered "non-free".
+    </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="mcrypt.requirements"
+>Требования</A
+></H1
+><P
+>&#13;     These functions work using <A
+HREF="http://mcrypt.sourceforge.net/"
+TARGET="_top"
+>mcrypt</A
+>.
+     To use it, download <TT
+CLASS="filename"
+>libmcrypt-x.x.tar.gz</TT
+> from <A
+HREF="http://mcrypt.sourceforge.net/"
+TARGET="_top"
+>http://mcrypt.sourceforge.net/</A
+> and follow the included
+     installation instructions.  Windows users will find all the
+     needed compiled mcrypt binaries at
+     <A
+HREF="http://ftp.emini.dk/pub/php/win32/mcrypt/"
+TARGET="_top"
+>http://ftp.emini.dk/pub/php/win32/mcrypt/</A
+>.
+    </P
+><P
+>&#13;     As of PHP 5.0.0 you will need libmcrypt Version 2.5.6 or greater.
+    </P
+><P
+>&#13;     If you linked against libmcrypt 2.4.x or higher, the following additional
+     block algorithms are supported: CAST, LOKI97, RIJNDAEL, SAFERPLUS,
+     SERPENT and the following stream ciphers: ENIGMA (crypt), PANAMA, RC4 and
+     WAKE. With libmcrypt 2.4.x or higher another cipher mode is also
+     available; nOFB.
+    </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="mcrypt.installation"
+>Установка</A
+></H1
+><P
+>&#13;  You need to compile PHP with the <VAR
+CLASS="option"
+>--with-mcrypt[=DIR]</VAR
+> parameter to enable this
+  extension. DIR is the mcrypt install directory. Make sure you compile
+  libmcrypt with the option 
+  <VAR
+CLASS="option"
+>--disable-posix-threads</VAR
+>.
+ </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="mcrypt.configuration"
+>Настройка во время выполнения</A
+></H1
+><P
+>&#13;Поведение этих функций зависит от установок в <TT
+CLASS="filename"
+>php.ini</TT
+>.
+</P
+><P
+>&#13; <DIV
+CLASS="table"
+><A
+NAME="AEN85700"
+></A
+><P
+><B
+>Таблица 1. Mcrypt configuration options</B
+></P
+><TABLE
+BORDER="1"
+CLASS="CALSTABLE"
+><COL><COL><COL><COL><THEAD
+><TR
+><TH
+>Name</TH
+><TH
+>Default</TH
+><TH
+>Changeable</TH
+><TH
+>Changelog</TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+>mcrypt.algorithms_dir</TD
+><TD
+>NULL</TD
+><TD
+>PHP_INI_ALL</TD
+><TD
+>Available since PHP 4.0.2.</TD
+></TR
+><TR
+><TD
+>mcrypt.modes_dir</TD
+><TD
+>NULL</TD
+><TD
+>PHP_INI_ALL</TD
+><TD
+>Available since PHP 4.0.2.</TD
+></TR
+></TBODY
+></TABLE
+></DIV
+>
+ Для подробного описания констант
+PHP_INI_*, обратитесь к документации функции <A
+HREF="function.ini-set.html"
+><B
+CLASS="function"
+>ini_set()</B
+></A
+>.
+ </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="mcrypt.resources"
+>Типы ресурсов</A
+></H1
+><P
+>Данное расширение не определяет никакие типы ресурсов.</P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="mcrypt.constants"
+>Предопределенные константы</A
+></H1
+><P
+>&#13;Перечисленные ниже константы определены данным расширением и могут быть
+доступны только в том случае, если PHP был собран с
+поддержкой этого расширения или же в том случае, если
+данное расширение подгружается во время выполнения.
+</P
+><P
+>&#13;  Mcrypt can operate in four block cipher modes (CBC, OFB, CFB, and
+  ECB). If linked against libmcrypt-2.4.x or higher the functions can also operate
+  in the block cipher mode nOFB and in STREAM mode. Below you find a list
+  with all supported encryption modes together with the constants that are
+  defines for the encryption mode.  For a more complete reference and
+  discussion see Applied Cryptography by Schneier (ISBN 0-471-11709-9).
+  <P
+></P
+><UL
+><LI
+><P
+>&#13;     MCRYPT_MODE_ECB (electronic codebook) is suitable for random data,
+     such as encrypting other keys. Since data there is short and random,
+     the disadvantages of ECB have a favorable negative effect.
+    </P
+></LI
+><LI
+><P
+>&#13;     MCRYPT_MODE_CBC (cipher block chaining) is especially suitable for
+     encrypting files where the security is increased over ECB
+     significantly.
+    </P
+></LI
+><LI
+><P
+>&#13;     MCRYPT_MODE_CFB (cipher feedback) is the best mode for encrypting byte
+     streams where single bytes must be encrypted.
+    </P
+></LI
+><LI
+><P
+>&#13;     MCRYPT_MODE_OFB (output feedback, in 8bit) is comparable to CFB, but
+     can be used in applications where error propagation cannot
+     be tolerated. It's insecure (because it operates in 8bit
+     mode) so it is not recommended to use it.
+    </P
+></LI
+><LI
+><P
+>&#13;     MCRYPT_MODE_NOFB (output feedback, in nbit) is comparable to OFB, but
+     more secure because it operates on the block size of the algorithm.
+    </P
+></LI
+><LI
+><P
+>&#13;     MCRYPT_MODE_STREAM is an extra mode to include some stream algorithms
+     like WAKE or RC4.
+    </P
+></LI
+></UL
+>
+ </P
+><P
+>&#13;  Some other mode and random device constants:
+  <P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+><TT
+CLASS="constant"
+><B
+>MCRYPT_ENCRYPT</B
+></TT
+> 
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;      
+     </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>MCRYPT_DECRYPT</B
+></TT
+> 
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;      
+     </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>MCRYPT_DEV_RANDOM</B
+></TT
+> 
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;      
+     </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>MCRYPT_DEV_URANDOM</B
+></TT
+> 
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;      
+     </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>MCRYPT_RAND</B
+></TT
+> 
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;      
+     </P
+></DD
+></DL
+></DIV
+>
+ </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="mcrypt.ciphers"
+>Mcrypt ciphers</A
+></H1
+><P
+>&#13;     Here is a list of ciphers which are currently supported by the mcrypt
+     extension.  For a complete list of supported ciphers, see the defines at
+     the end of <TT
+CLASS="filename"
+>mcrypt.h</TT
+>. The general rule with the
+     mcrypt-2.2.x API is that you can access the cipher from PHP with
+     MCRYPT_ciphername. With the libmcrypt-2.4.x and libmcrypt-2.5.x API these constants also work,
+     but it is possible to specify the name of the cipher as a string with a
+     call to <A
+HREF="function.mcrypt-module-open.html"
+><B
+CLASS="function"
+>mcrypt_module_open()</B
+></A
+>.
+     <P
+></P
+><UL
+><LI
+><P
+>MCRYPT_3DES</P
+></LI
+><LI
+><P
+>MCRYPT_ARCFOUR_IV (libmcrypt &#62; 2.4.x only)</P
+></LI
+><LI
+><P
+>MCRYPT_ARCFOUR (libmcrypt &#62; 2.4.x only)</P
+></LI
+><LI
+><P
+>MCRYPT_BLOWFISH</P
+></LI
+><LI
+><P
+>MCRYPT_CAST_128</P
+></LI
+><LI
+><P
+>MCRYPT_CAST_256</P
+></LI
+><LI
+><P
+>MCRYPT_CRYPT</P
+></LI
+><LI
+><P
+>MCRYPT_DES</P
+></LI
+><LI
+><P
+>MCRYPT_DES_COMPAT (libmcrypt 2.2.x only)</P
+></LI
+><LI
+><P
+>MCRYPT_ENIGMA (libmcrypt &#62; 2.4.x only, alias for MCRYPT_CRYPT)</P
+></LI
+><LI
+><P
+>MCRYPT_GOST</P
+></LI
+><LI
+><P
+>MCRYPT_IDEA (non-free)</P
+></LI
+><LI
+><P
+>MCRYPT_LOKI97 (libmcrypt &#62; 2.4.x only)</P
+></LI
+><LI
+><P
+>MCRYPT_MARS (libmcrypt &#62; 2.4.x only, non-free)</P
+></LI
+><LI
+><P
+>MCRYPT_PANAMA (libmcrypt &#62; 2.4.x only)</P
+></LI
+><LI
+><P
+>MCRYPT_RIJNDAEL_128 (libmcrypt &#62; 2.4.x only)</P
+></LI
+><LI
+><P
+>MCRYPT_RIJNDAEL_192 (libmcrypt &#62; 2.4.x only)</P
+></LI
+><LI
+><P
+>MCRYPT_RIJNDAEL_256 (libmcrypt &#62; 2.4.x only)</P
+></LI
+><LI
+><P
+>MCRYPT_RC2</P
+></LI
+><LI
+><P
+>MCRYPT_RC4 (libmcrypt 2.2.x only)</P
+></LI
+><LI
+><P
+>MCRYPT_RC6 (libmcrypt &#62; 2.4.x only)</P
+></LI
+><LI
+><P
+>MCRYPT_RC6_128 (libmcrypt 2.2.x only)</P
+></LI
+><LI
+><P
+>MCRYPT_RC6_192 (libmcrypt 2.2.x only)</P
+></LI
+><LI
+><P
+>MCRYPT_RC6_256 (libmcrypt 2.2.x only)</P
+></LI
+><LI
+><P
+>MCRYPT_SAFER64</P
+></LI
+><LI
+><P
+>MCRYPT_SAFER128</P
+></LI
+><LI
+><P
+>MCRYPT_SAFERPLUS (libmcrypt &#62; 2.4.x only)</P
+></LI
+><LI
+><P
+>MCRYPT_SERPENT(libmcrypt &#62; 2.4.x only)</P
+></LI
+><LI
+><P
+>MCRYPT_SERPENT_128 (libmcrypt 2.2.x only)</P
+></LI
+><LI
+><P
+>MCRYPT_SERPENT_192 (libmcrypt 2.2.x only)</P
+></LI
+><LI
+><P
+>MCRYPT_SERPENT_256 (libmcrypt 2.2.x only)</P
+></LI
+><LI
+><P
+>MCRYPT_SKIPJACK (libmcrypt &#62; 2.4.x only)</P
+></LI
+><LI
+><P
+>MCRYPT_TEAN (libmcrypt 2.2.x only)</P
+></LI
+><LI
+><P
+>MCRYPT_THREEWAY</P
+></LI
+><LI
+><P
+>MCRYPT_TRIPLEDES (libmcrypt &#62; 2.4.x only)</P
+></LI
+><LI
+><P
+>MCRYPT_TWOFISH (for older mcrypt 2.x versions, or mcrypt &#62; 2.4.x )</P
+></LI
+><LI
+><P
+>MCRYPT_TWOFISH128 (TWOFISHxxx are available in newer 2.x versions, but not in the 2.4.x versions)</P
+></LI
+><LI
+><P
+>MCRYPT_TWOFISH192</P
+></LI
+><LI
+><P
+>MCRYPT_TWOFISH256</P
+></LI
+><LI
+><P
+>MCRYPT_WAKE (libmcrypt &#62; 2.4.x only)</P
+></LI
+><LI
+><P
+>MCRYPT_XTEA (libmcrypt &#62; 2.4.x only)</P
+></LI
+></UL
+>
+    </P
+><P
+>&#13;     You must (in CFB and OFB mode) or can (in CBC mode) supply an
+     initialization vector (IV) to the respective cipher function. The
+     IV must be unique and must be the same when
+     decrypting/encrypting. With data which is stored encrypted, you
+     can take the output of a function of the index under which the
+     data is stored (e.g.  the MD5 key of the filename).
+     Alternatively, you can transmit the IV together with the encrypted
+     data (see chapter 9.3 of Applied Cryptography by Schneier (ISBN 0-471-11709-9) for a
+     discussion of this topic).
+    </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="mcrypt.examples"
+>Примеры</A
+></H1
+><P
+>&#13;     Mcrypt can be used to encrypt and decrypt using the above
+     mentioned ciphers. If you linked against libmcrypt-2.2.x, the
+     four important mcrypt commands (<A
+HREF="function.mcrypt-cfb.html"
+><B
+CLASS="function"
+>mcrypt_cfb()</B
+></A
+>,
+     <A
+HREF="function.mcrypt-cbc.html"
+><B
+CLASS="function"
+>mcrypt_cbc()</B
+></A
+>, <A
+HREF="function.mcrypt-ecb.html"
+><B
+CLASS="function"
+>mcrypt_ecb()</B
+></A
+>,
+     and <A
+HREF="function.mcrypt-ofb.html"
+><B
+CLASS="function"
+>mcrypt_ofb()</B
+></A
+>) can operate in both modes
+     which are named MCRYPT_ENCRYPT and MCRYPT_DECRYPT, respectively.
+     <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN85869"
+></A
+><P
+><B
+>Пример 1. Encrypt an input value with TripleDES under 2.2.x in ECB mode</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />$key </font><font color="#007700">= </font><font color="#DD0000">"this is a secret key"</font><font color="#007700">;<br /></font><font color="#0000BB">$input </font><font color="#007700">= </font><font color="#DD0000">"Let us meet at 9 o'clock at the secret place."</font><font color="#007700">;<br /><br /></font><font color="#0000BB">$encrypted_data </font><font color="#007700">= </font><font color="#0000BB">mcrypt_ecb </font><font color="#007700">(</font><font color="#0000BB">MCRYPT_3DES</font><font color="#007700">, </font><font color="#0000BB">$key</font><font color="#007700">, </font><font color="#0000BB">$input</font><font color="#007700">, </font><font color="#0000BB">MCRYPT_ENCRYPT</font><font color="#007700">);<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+     This example will give you the encrypted data as a string in
+     <VAR
+CLASS="literal"
+>$encrypted_data</VAR
+>.
+    </P
+><P
+>&#13;     If you linked against libmcrypt 2.4.x or 2.5.x, these functions are still
+     available, but it is recommended that you use the advanced functions.
+     <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN85874"
+></A
+><P
+><B
+>Пример 2. Encrypt an input value with TripleDES under 2.4.x and higher in ECB mode</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />&nbsp;&nbsp;&nbsp;&nbsp;$key </font><font color="#007700">= </font><font color="#DD0000">"this is a secret key"</font><font color="#007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$input </font><font color="#007700">= </font><font color="#DD0000">"Let us meet at 9 o'clock at the secret place."</font><font color="#007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$td </font><font color="#007700">= </font><font color="#0000BB">mcrypt_module_open</font><font color="#007700">(</font><font color="#DD0000">'tripledes'</font><font color="#007700">, </font><font color="#DD0000">''</font><font color="#007700">, </font><font color="#DD0000">'ecb'</font><font color="#007700">, </font><font color="#DD0000">''</font><font color="#007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$iv </font><font color="#007700">= </font><font color="#0000BB">mcrypt_create_iv </font><font color="#007700">(</font><font color="#0000BB">mcrypt_enc_get_iv_size</font><font color="#007700">(</font><font color="#0000BB">$td</font><font color="#007700">), </font><font color="#0000BB">MCRYPT_RAND</font><font color="#007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">mcrypt_generic_init</font><font color="#007700">(</font><font color="#0000BB">$td</font><font color="#007700">, </font><font color="#0000BB">$key</font><font color="#007700">, </font><font color="#0000BB">$iv</font><font color="#007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$encrypted_data </font><font color="#007700">= </font><font color="#0000BB">mcrypt_generic</font><font color="#007700">(</font><font color="#0000BB">$td</font><font color="#007700">, </font><font color="#0000BB">$input</font><font color="#007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">mcrypt_generic_deinit</font><font color="#007700">(</font><font color="#0000BB">$td</font><font color="#007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">mcrypt_module_close</font><font color="#007700">(</font><font color="#0000BB">$td</font><font color="#007700">);<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+     This example will give you the encrypted data as a string in
+     <VAR
+CLASS="literal"
+>$encrypted_data</VAR
+>.  For a full example see
+     <A
+HREF="function.mcrypt-module-open.html"
+><B
+CLASS="function"
+>mcrypt_module_open()</B
+></A
+>.
+    </P
+></DIV
+></DIV
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Содержание</B
+></DT
+><DT
+><A
+HREF="function.mcrypt-cbc.html"
+>mcrypt_cbc</A
+>&nbsp;--&nbsp;Encrypt/decrypt data in CBC mode</DT
+><DT
+><A
+HREF="function.mcrypt-cfb.html"
+>mcrypt_cfb</A
+>&nbsp;--&nbsp;Encrypt/decrypt data in CFB mode</DT
+><DT
+><A
+HREF="function.mcrypt-create-iv.html"
+>mcrypt_create_iv</A
+>&nbsp;--&nbsp;
+     Create an initialization vector (IV) from a random source
+    </DT
+><DT
+><A
+HREF="function.mcrypt-decrypt.html"
+>mcrypt_decrypt</A
+>&nbsp;--&nbsp;Decrypts crypttext with given parameters</DT
+><DT
+><A
+HREF="function.mcrypt-ecb.html"
+>mcrypt_ecb</A
+>&nbsp;--&nbsp;Deprecated: Encrypt/decrypt data in ECB mode</DT
+><DT
+><A
+HREF="function.mcrypt-enc-get-algorithms-name.html"
+>mcrypt_enc_get_algorithms_name</A
+>&nbsp;--&nbsp;Returns the name of the opened algorithm</DT
+><DT
+><A
+HREF="function.mcrypt-enc-get-block-size.html"
+>mcrypt_enc_get_block_size</A
+>&nbsp;--&nbsp;Returns the blocksize of the opened algorithm</DT
+><DT
+><A
+HREF="function.mcrypt-enc-get-iv-size.html"
+>mcrypt_enc_get_iv_size</A
+>&nbsp;--&nbsp;Returns the size of the IV of the opened algorithm</DT
+><DT
+><A
+HREF="function.mcrypt-enc-get-key-size.html"
+>mcrypt_enc_get_key_size</A
+>&nbsp;--&nbsp;Returns the maximum supported keysize of the opened mode</DT
+><DT
+><A
+HREF="function.mcrypt-enc-get-modes-name.html"
+>mcrypt_enc_get_modes_name</A
+>&nbsp;--&nbsp;Returns the name of the opened mode</DT
+><DT
+><A
+HREF="function.mcrypt-enc-get-supported-key-sizes.html"
+>mcrypt_enc_get_supported_key_sizes</A
+>&nbsp;--&nbsp;Returns an array with the supported keysizes of the opened algorithm</DT
+><DT
+><A
+HREF="function.mcrypt-enc-is-block-algorithm-mode.html"
+>mcrypt_enc_is_block_algorithm_mode</A
+>&nbsp;--&nbsp;Checks whether the encryption of the opened mode works on blocks</DT
+><DT
+><A
+HREF="function.mcrypt-enc-is-block-algorithm.html"
+>mcrypt_enc_is_block_algorithm</A
+>&nbsp;--&nbsp;Checks whether the algorithm of the opened mode is a block algorithm</DT
+><DT
+><A
+HREF="function.mcrypt-enc-is-block-mode.html"
+>mcrypt_enc_is_block_mode</A
+>&nbsp;--&nbsp;Checks whether the opened mode outputs blocks</DT
+><DT
+><A
+HREF="function.mcrypt-enc-self-test.html"
+>mcrypt_enc_self_test</A
+>&nbsp;--&nbsp;This function runs a self test on the opened module</DT
+><DT
+><A
+HREF="function.mcrypt-encrypt.html"
+>mcrypt_encrypt</A
+>&nbsp;--&nbsp;Encrypts plaintext with given parameters</DT
+><DT
+><A
+HREF="function.mcrypt-generic-deinit.html"
+>mcrypt_generic_deinit</A
+>&nbsp;--&nbsp;
+     This function deinitializes an encryption module
+    </DT
+><DT
+><A
+HREF="function.mcrypt-generic-end.html"
+>mcrypt_generic_end</A
+>&nbsp;--&nbsp;This function terminates encryption</DT
+><DT
+><A
+HREF="function.mcrypt-generic-init.html"
+>mcrypt_generic_init</A
+>&nbsp;--&nbsp;This function initializes all buffers needed for encryption</DT
+><DT
+><A
+HREF="function.mcrypt-generic.html"
+>mcrypt_generic</A
+>&nbsp;--&nbsp;This function encrypts data</DT
+><DT
+><A
+HREF="function.mcrypt-get-block-size.html"
+>mcrypt_get_block_size</A
+>&nbsp;--&nbsp;Get the block size of the specified cipher</DT
+><DT
+><A
+HREF="function.mcrypt-get-cipher-name.html"
+>mcrypt_get_cipher_name</A
+>&nbsp;--&nbsp;Get the name of the specified cipher</DT
+><DT
+><A
+HREF="function.mcrypt-get-iv-size.html"
+>mcrypt_get_iv_size</A
+>&nbsp;--&nbsp;
+     Returns the size of the IV belonging to a specific cipher/mode combination
+    </DT
+><DT
+><A
+HREF="function.mcrypt-get-key-size.html"
+>mcrypt_get_key_size</A
+>&nbsp;--&nbsp;Get the key size of the specified cipher</DT
+><DT
+><A
+HREF="function.mcrypt-list-algorithms.html"
+>mcrypt_list_algorithms</A
+>&nbsp;--&nbsp;Get an array of all supported ciphers</DT
+><DT
+><A
+HREF="function.mcrypt-list-modes.html"
+>mcrypt_list_modes</A
+>&nbsp;--&nbsp;Get an array of all supported modes</DT
+><DT
+><A
+HREF="function.mcrypt-module-close.html"
+>mcrypt_module_close</A
+>&nbsp;--&nbsp;
+     Close the mcrypt module
+    </DT
+><DT
+><A
+HREF="function.mcrypt-module-get-algo-block-size.html"
+>mcrypt_module_get_algo_block_size</A
+>&nbsp;--&nbsp;Returns the blocksize of the specified algorithm</DT
+><DT
+><A
+HREF="function.mcrypt-module-get-algo-key-size.html"
+>mcrypt_module_get_algo_key_size</A
+>&nbsp;--&nbsp;Returns the maximum supported keysize of the opened mode</DT
+><DT
+><A
+HREF="function.mcrypt-module-get-supported-key-sizes.html"
+>mcrypt_module_get_supported_key_sizes</A
+>&nbsp;--&nbsp;Returns an array with the supported keysizes of the opened algorithm</DT
+><DT
+><A
+HREF="function.mcrypt-module-is-block-algorithm-mode.html"
+>mcrypt_module_is_block_algorithm_mode</A
+>&nbsp;--&nbsp;Returns if the specified module is a block algorithm or not</DT
+><DT
+><A
+HREF="function.mcrypt-module-is-block-algorithm.html"
+>mcrypt_module_is_block_algorithm</A
+>&nbsp;--&nbsp;This function checks whether the specified algorithm is a block algorithm</DT
+><DT
+><A
+HREF="function.mcrypt-module-is-block-mode.html"
+>mcrypt_module_is_block_mode</A
+>&nbsp;--&nbsp;Returns if the specified mode outputs blocks or not</DT
+><DT
+><A
+HREF="function.mcrypt-module-open.html"
+>mcrypt_module_open</A
+>&nbsp;--&nbsp;Opens the module of the algorithm and the mode to be used</DT
+><DT
+><A
+HREF="function.mcrypt-module-self-test.html"
+>mcrypt_module_self_test</A
+>&nbsp;--&nbsp;This function runs a self test on the specified module</DT
+><DT
+><A
+HREF="function.mcrypt-ofb.html"
+>mcrypt_ofb</A
+>&nbsp;--&nbsp;Encrypt/decrypt data in OFB mode</DT
+><DT
+><A
+HREF="function.mdecrypt-generic.html"
+>mdecrypt_generic</A
+>&nbsp;--&nbsp;Decrypt data</DT
+></DL
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="function.mcal-week-of-year.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Начало</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="function.mcrypt-cbc.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>mcal_week_of_year</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="funcref.html"
+ACCESSKEY="U"
+>Уровень выше</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>mcrypt_cbc</TD
+></TR
+></TABLE
+></DIV
+></div></center></div></td>
+			<td><div style="display:none; width:200px;" id="o3" name="o3"><script charset="windows-1251" type="text/javascript" src="http://www.ozon.ru/PartnerTwinerNew.aspx?revident=bea9126b-c8e1-4bf5-b6d8-9a057f8feac6" ></script></div><script>o = document.getElementById('o3'); if(o) { var s = o.innerHTML; s = s.replace(/F6F6F6/gi,"FFFFFF"); o.innerHTML = s.replace(/padding-top: 10px; padding-bottom: 10px;/,"display:none;"); o.style.display = 'block'; } </script><br><div style="margin: 10px;"><script type="text/javascript"><!--
+google_ad_client = "pub-4093271809023514";
+/* 120x600, создано 01.11.2008 */
+google_ad_slot = "0438855731";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div></td>
+    		</tr>
+  		</table>
+    </td>
+  </tr>
+  <tr valign='bottom' height='1%'>
+  <td>      <table width=100% cellspacing=0 cellpadding=5 border=0 bgcolor=#9999CC>
+        <tr valign=center>
+          <td class='phpcopyright' width='45%' align='left'>&nbsp;&nbsp;Engine <a  href="http://www.mnogosearch.org/">MnoGoSearch</a></td>
+          <td class='phpcopyright' width='10%' align='center'>2007-2010 &copy <a  href="mailto:webmaster@php.ru">PHP.RU</a></td>
+          <td class='phpcopyright' width='45%' align='right' >Powered by <a target="_blank" href="http://odware.ru">ODware</a> <a HREF="http://440hz.ru">440Hz</a> &nbsp;&nbsp;</td>
+        </tr>
+      </table>
+
+    <div style="text-align: right; padding: 5px">
+		<!--LiveInternet counter-->
+		<script type="text/javascript">document.write('<a href="http://www.liveinternet.ru/click" target=_blank><img src="http://counter.yadro.ru/hit?t53.6;r' + escape(document.referrer) + ((typeof(screen)=='undefined')?'':';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ';u' + escape(document.URL) +';i' + escape('Жж'+document.title.substring(0,80)) + ';' + Math.random() + '" border=0 width=88 height=31 alt="" title="LiveInternet: показано число просмотров и посетителей за 24 часа"><\/a>');
+		</script>
+		<!--/LiveInternet-->
+		<!-- SpyLOG -->
+		<script src="http://tools.spylog.ru/counter2.2.js" type="text/javascript" id="spylog_code" counter="830950" ></script>
+		<noscript><a href="http://u8309.50.spylog.com/cnt?cid=830950&f=3&p=0" target="_blank"><img src="http://u8309.50.spylog.com/cnt?cid=830950&p=0&f=4" alt='SpyLOG' border='0' width=88 height=31 ></a>
+		</noscript>
+		<!--/ SpyLOG -->
+	</div>
+</td>
+  </tr>
+</table>
+
+<script>
+<!--
+document.SEARCH.QS.focus();
+// --></script>
+
+<!-- 
+	как же вы все это читаете?
+	440hz 
+-->
+
+</body>
+</html>

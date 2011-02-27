@@ -1,0 +1,2458 @@
+<!-- 
+
+     HTML dropped by Zend Guard Compressor 4.2
+
+     php.ru team: mz, az, yuri, vb, cyxapuk, 440hz, administrator
+     2004-2007 (c) expi-web.com 
+     2007-2008 (c) odware.com 
+     0101-1010 (с) 440hz
+
+     2b|~2b=?
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EHOT тут всё пожрал ! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="alternate" type="application/rss+xml" title="php.ru/forum - последние сообщения" href="http://www.php.ru/forum/rss.php">
+<link rel="SHORTCUT ICON" href="http://www.php.ru/favicon.ico" />
+<META name="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<meta http-equiv="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<META name="keywords" content="php, php5, apache, mysql, session">
+<meta http-equiv="keywords" content="php, php5, apache, mysql, session">
+<title>php.ru - Функции для работы с Oracle</title>
+<LINK REL="stylesheet" TYPE="text/css" HREF="http://www.php.ru/index.css">
+<script language="JavaScript" src="http://www.php.ru/ajax/ajax.js"></script>
+</head>
+<body>
+
+<table height='100%' width='100%' cellspacing='0' cellpadding='0'>
+  <tr height='99%' valign='top'>
+    <td align='center'>
+		
+		<table style='margin-top: 4px' width=100% cellspacing=0 cellpadding=3>
+   		<tr>
+     		<td>PHP - <a href="http://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BA%D1%80%D0%BE%D0%BD%D0%B8%D0%BC" target=_blank class=lnk>рекурсивный акроним</a> словосочетания &laquo;<a href="/manual/introduction.html" class=lnk>PHP: Hypertext Preprocessor</a>&raquo;</td>
+     	</tr>
+   		</table>
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/subsys_ajax.js"></script>
+		<!--
+
+		commet by 440hz
+		20.10.2007
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/pu_search.js"></script>
+
+		-->
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/cz.js?a=b"></script>
+
+		<table style='margin-top: 5px' width=100% bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0>
+   	 	<form name=SEARCH method=GET action="http://www.php.ru/search/?SID=5f3cxvdsxq4xe4oa" onsubmit="return puSubmit();">
+	  	<input type=hidden name=PAGE value=1>
+  		<tr>
+    		<td width='1' valign='middle'> 
+    		   <a href='/'><img src="http://www.php.ru/;-)/logo.gif" width=133 height=93 alt="php" border=0 hspace=10 vspace=0></a>
+			 </td>
+		    <td width='100%' valign='middle'>
+		       <!--
+			   
+				commet by 440hz
+				20.10.2007
+
+			   <div id='pu_search' class='pu_search'></div>
+		       <div id='pu_search_description' class='pu_search_decription'></div>
+			   
+			   -->
+        	 <input type=text style='width:99%; margin: 10px' maxlength='200' name='QS' class='in' id='query' autocomplete='off' value="" />
+    		</td>
+		  </tr>
+   		<tr bgcolor='#666699' valign='middle'>
+			<td style='border-top: 1px solid #333366;'><br /></td>
+    		<td style='border-top: 1px solid #333366;'><div style="padding: 4px 4px 4px 10px; height: 24px; color: #CCCCFF;" id="stat">Хто там?<script>doLoadCZ('stat','stat');</script></div></td>
+  		</tr>
+		</form>
+		</table>
+		<table id="menu" cellspaciong=0 cellpadding=3>
+<tr>
+<td><a href="/" class=current>Главная</a></td>
+<td><a href="/download/" class=current>Скачать</a></td>
+<td><a href="/doc/" class=current>Документация</a></td>
+<td><a href="/forum/" class=current>Форум</a></td>
+<td width=100% align=right><a href="/phpinfo.html" class=current>phpinfo()</a></td>
+</tr>
+</table>
+
+		
+<!--  AdRiver code START. Type:728x90 Site: php.ru PZ: 0 BN: 1 -->
+<script language="javascript" type="text/javascript"><!--
+var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+var ar_Tail='unknown'; if (document.referrer) ar_Tail = escape(document.referrer);
+document.write(
+'<iframe src="http://ad.adriver.ru/cgi-bin/erle.cgi?'
++ 'sid=148680&bn=1&target=blank&bt=36&pz=0&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail
++ '" frameborder=0 vspace=0 hspace=0 width=728 height=90 marginwidth=0'
++ ' marginheight=0 scrolling=no></iframe>');
+//--></script>
+<noscript>
+<a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" target=_blank>
+<img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" alt="-AdRiver-" border=0 width=728 height=90></a>
+</noscript>
+<!--  AdRiver code END  -->
+
+
+  		<table width='100%' cellspacing='0' cellpadding='0'>
+    		<tr valign='top'>
+      		<td width=100%><div style="margin: 10px 10px 10px 50px;"><center><div style="width: 800px; text-align: left"><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Руководство по PHP</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="function.overload.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="function.oci-collection-append.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="reference"
+><A
+NAME="ref.oci8"
+></A
+><DIV
+CLASS="TITLEPAGE"
+><H1
+CLASS="title"
+>CIII. Функции для работы с Oracle</H1
+><DIV
+CLASS="PARTINTRO"
+><A
+NAME="AEN119084"
+></A
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="oci8.intro"
+>Введение</A
+></H1
+><P
+>&#13;     Эти функции позволяют вам работать с Oracle версий 10/9/8/7.
+     Для этого используется библиотека Oracle Call Interface (OCI).
+    </P
+><P
+>&#13;     Данный модуль много гибче <A
+HREF="ref.oracle.html"
+>прежнего</A
+>. 
+     Он содержит функции привязки переменных PHP к соответствующим
+     меткам Oracle, расширенную поддержка LOB, FILE и ROWID.
+     Использование этого модуля рекомендуется вместо 
+     <A
+HREF="ref.oracle.html"
+>старого модуля</A
+>.
+    </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="oci8.requirements"
+>Требования</A
+></H1
+><P
+>&#13;     Вам понадобятся клиентские библиотеки Oracle для того, чтобы использовать
+     этот модуль. Пользователям Windows будут необходимы библиотеки минимум
+     версии 10 для того, чтобы использовать <TT
+CLASS="filename"
+>php_oci8.dll</TT
+>.
+    </P
+><P
+>&#13;     Мы рекомендуем вам использовать Oracle Instant Client, доступный по
+     адресу <A
+HREF="http://www.oracle.com/technology/tech/oci/instantclient/instantclient.html"
+TARGET="_top"
+>http://www.oracle.com/technology/tech/oci/instantclient/instantclient.html</A
+>.
+     Для использования модуля OCI8 достаточно установить "basic" версию пакета 
+     Oracle Instant Client. Instant Client не требует установки переменных 
+     ORACLE_SID или ORACLE_HOME. Однако, вам возможно понадобится установить 
+     переменные окружения LD_LIBRARY_PATH и NLS_LANG.
+    </P
+><P
+>&#13;     Перед использованием этого модуля, проверьте, что вы установили все
+     необходимые переменные окружения. Эти переменные, перечисленные ниже,
+     должны быть доступны пользователю Oracle и пользователю, с правами
+     которого работает веб-сервер. Переменные окружения, необходимые для
+     корректной работы с Oracle:
+     <P
+></P
+><UL
+><LI
+><P
+>&#13;        ORACLE_HOME
+       </P
+></LI
+><LI
+><P
+>&#13;        ORACLE_SID
+       </P
+></LI
+><LI
+><P
+>&#13;        LD_PRELOAD
+       </P
+></LI
+><LI
+><P
+>&#13;        LD_LIBRARY_PATH
+       </P
+></LI
+><LI
+><P
+>&#13;        NLS_LANG
+       </P
+></LI
+><LI
+><P
+>&#13;        ORA_NLS33
+       </P
+></LI
+></UL
+>
+    </P
+><P
+>&#13;     После установки среды окружения для веб-сервера, добавьте
+     пользователя, с правами которого работает веб-сервер, в группу oracle.
+    </P
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+>Если ваш веб-сервер не стартует или возвращает ошибку при старте: </B
+>
+      Проверьте, что Apache был слинкован с библиотекой
+      <VAR
+CLASS="literal"
+>pthread</VAR
+>: 
+     </P
+><P
+>&#13;     <DIV
+CLASS="informalexample"
+><P
+></P
+><A
+NAME="AEN119117"
+></A
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="screen"
+># ldd /www/apache/bin/httpd 
+    libpthread.so.0 =&#62; /lib/libpthread.so.0 (0x4001c000)
+    libm.so.6 =&#62; /lib/libm.so.6 (0x4002f000)
+    libcrypt.so.1 =&#62; /lib/libcrypt.so.1 (0x4004c000)
+    libdl.so.2 =&#62; /lib/libdl.so.2 (0x4007a000)
+    libc.so.6 =&#62; /lib/libc.so.6 (0x4007e000)
+    /lib/ld-linux.so.2 =&#62; /lib/ld-linux.so.2 (0x40000000)</PRE
+></TD
+></TR
+></TABLE
+><P
+></P
+></DIV
+>
+    </P
+><P
+>&#13;     Если libpthread не присутствует в списке, то вам придется переустановить Apache:
+    </P
+><P
+>&#13;     <DIV
+CLASS="informalexample"
+><P
+></P
+><A
+NAME="AEN119121"
+></A
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="screen"
+># cd /usr/src/apache_1.3.xx
+# make clean
+# LIBS=-lpthread ./config.status
+# make
+# make install</PRE
+></TD
+></TR
+></TABLE
+><P
+></P
+></DIV
+>
+    </P
+><P
+>&#13;     Обратите внимание на то, что на некоторых системах, например, UnixWare,
+     вместо <VAR
+CLASS="literal"
+>libthread</VAR
+> присутствует
+     <VAR
+CLASS="literal"
+>libpthread</VAR
+>. PHP и Apache также должны быть собраны с 
+      EXTRA_LIBS=-lthread.
+    </P
+></BLOCKQUOTE
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="oci8.installation"
+>Установка</A
+></H1
+><P
+>&#13;  PHP должен быть сконфигурирован с опцией 
+  <VAR
+CLASS="option"
+>--with-oci8[=DIR]</VAR
+>, где
+  <VAR
+CLASS="literal"
+>DIR</VAR
+> соответствует директории, в которой 
+  находится установленный ранее сервер и/или клиент Oracle. По 
+  умолчанию значение <VAR
+CLASS="literal"
+>DIR</VAR
+> соответствует
+  переменной окружения <TT
+CLASS="constant"
+><B
+>ORACLE_HOME</B
+></TT
+>.
+ </P
+><P
+>&#13;  Если вы используете Oracle Instant Client, то для поддержки модуля OCI8
+  нужно, чтобы PHP был сконфигурирован с опцией
+  <VAR
+CLASS="option"
+>--with-oci8-instant-client[=DIR]</VAR
+>. Обратите
+  внимание: поддержка Oracle Instant Client появилась только начиная с 
+  версий 4.3.11 и 5.0.4.
+ </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="oci8.configuration"
+>Настройка во время выполнения</A
+></H1
+><P
+>Данное расширение не определяет никакие директивы конфигурации в <TT
+CLASS="filename"
+>php.ini</TT
+>.</P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="oci8.resources"
+>Типы ресурсов</A
+></H1
+><P
+>&#13;    </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="oci8.constants"
+>Предопределенные константы</A
+></H1
+><P
+>&#13;Перечисленные ниже константы определены данным расширением и могут быть
+доступны только в том случае, если PHP был собран с
+поддержкой этого расширения или же в том случае, если
+данное расширение подгружается во время выполнения.
+</P
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+><TT
+CLASS="constant"
+><B
+>OCI_DEFAULT</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Режим выполнения выражения SQL. В этом режиме транзакция не завершается
+     автоматически оператором COMMIT.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>OCI_DESCRIBE_ONLY</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Режим выполнения выражения SQL. Используйте этот режим, если вы
+     хотите получить данные о выполнении запроса, а не выполнить сам
+     запрос.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>OCI_COMMIT_ON_SUCCESS</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Режим выполнения выражения SQL. Транзакция автоматически завершается
+     вызовом оператора COMMIT после выполнения <A
+HREF="function.oci-execute.html"
+><B
+CLASS="function"
+>oci_execute()</B
+></A
+>.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>OCI_EXACT_FETCH</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Режим получения результатов запроса. Используется в том случае,
+     если приложению известно заранее сколько строк будет получено
+     в результате. Oracle 8 и более поздние версии не используют выборку
+     результатов с упреждением в этом режиме, а курсоры уничтожаются 
+     автоматически после выборки ожидаемого количества строк, что
+     может уменьшить требования сервера к ресурсам.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>OCI_SYSDATE</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>OCI_B_BFILE</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Используется функцией <A
+HREF="function.oci-bind-by-name.html"
+><B
+CLASS="function"
+>oci_bind_by_name()</B
+></A
+> для
+     привязки переменных типа BFILE.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>OCI_B_CFILEE</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Используется функцией <A
+HREF="function.oci-bind-by-name.html"
+><B
+CLASS="function"
+>oci_bind_by_name()</B
+></A
+> для
+     привязки переменных типа CFILE.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>OCI_B_CLOB</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Используется функцией <A
+HREF="function.oci-bind-by-name.html"
+><B
+CLASS="function"
+>oci_bind_by_name()</B
+></A
+> для
+     привязки переменных типа CLOB.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>OCI_B_BLOB</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Используется функцией <A
+HREF="function.oci-bind-by-name.html"
+><B
+CLASS="function"
+>oci_bind_by_name()</B
+></A
+> для
+     привязки переменных типа BLOB.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>OCI_B_ROWID</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Используется функцией <A
+HREF="function.oci-bind-by-name.html"
+><B
+CLASS="function"
+>oci_bind_by_name()</B
+></A
+> для
+     привязки переменных типа ROWID.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>OCI_B_CURSOR</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Используется функцией <A
+HREF="function.oci-bind-by-name.html"
+><B
+CLASS="function"
+>oci_bind_by_name()</B
+></A
+> для
+     привязки курсоров, созданных ранее с помощью <A
+HREF="function.oci-new-cursor.html"
+><B
+CLASS="function"
+>oci_new_cursor()</B
+></A
+>.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>OCI_B_NTY</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Используется функцией <A
+HREF="function.oci-bind-by-name.html"
+><B
+CLASS="function"
+>oci_bind_by_name()</B
+></A
+> для
+     привязки именованных типов данных. В PHP &#60; 5.0 эта константа
+     называлась <TT
+CLASS="constant"
+><B
+>OCI_B_SQLT_NTY</B
+></TT
+>.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>OCI_B_BIN</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SQLT_BFILEE</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     То же, что и <TT
+CLASS="constant"
+><B
+>OCI_B_BFILE</B
+></TT
+>.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SQLT_CFILEE</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     То же, что и <TT
+CLASS="constant"
+><B
+>OCI_B_CFILEE</B
+></TT
+>.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SQLT_CLOB</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     То же, что и <TT
+CLASS="constant"
+><B
+>OCI_B_CLOB</B
+></TT
+>.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SQLT_BLOB</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     То же, что и <TT
+CLASS="constant"
+><B
+>OCI_B_BLOB</B
+></TT
+>.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SQLT_RDD</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     То же, что и <TT
+CLASS="constant"
+><B
+>OCI_B_ROWID</B
+></TT
+>.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SQLT_NTY</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     То же, что и <TT
+CLASS="constant"
+><B
+>OCI_B_NTY</B
+></TT
+>.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>OCI_FETCHSTATEMENT_BY_COLUMN</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Режим <A
+HREF="function.oci-fetch-all.html"
+><B
+CLASS="function"
+>oci_fetch_all()</B
+></A
+> по умолчанию. 
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>OCI_FETCHSTATEMENT_BY_ROW</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Альтернативный режим <A
+HREF="function.oci-fetch-all.html"
+><B
+CLASS="function"
+>oci_fetch_all()</B
+></A
+>.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>OCI_ASSOC</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Используется с <A
+HREF="function.oci-fetch-all.html"
+><B
+CLASS="function"
+>oci_fetch_all()</B
+></A
+> и
+     <A
+HREF="function.oci-fetch-array.html"
+><B
+CLASS="function"
+>oci_fetch_array()</B
+></A
+> для получения ассоциативного
+     массива.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>OCI_NUM</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Используется с <A
+HREF="function.oci-fetch-all.html"
+><B
+CLASS="function"
+>oci_fetch_all()</B
+></A
+> и
+     <A
+HREF="function.oci-fetch-array.html"
+><B
+CLASS="function"
+>oci_fetch_array()</B
+></A
+> для получения массива с числовыми
+     индексами.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>OCI_BOTH</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Используется с <A
+HREF="function.oci-fetch-all.html"
+><B
+CLASS="function"
+>oci_fetch_all()</B
+></A
+> и
+     <A
+HREF="function.oci-fetch-array.html"
+><B
+CLASS="function"
+>oci_fetch_array()</B
+></A
+> для получения массива с
+     ассоциативными и числовыми индексами.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>OCI_RETURN_NULLS</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Используется с <A
+HREF="function.oci-fetch-array.html"
+><B
+CLASS="function"
+>oci_fetch_array()</B
+></A
+> для получения 
+     пустых элементов массива, если соответствующее поле в результате равно 
+     <TT
+CLASS="constant"
+><B
+>NULL</B
+></TT
+>.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>OCI_RETURN_LOBS</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Используется <A
+HREF="function.oci-fetch-array.html"
+><B
+CLASS="function"
+>oci_fetch_array()</B
+></A
+> для получения
+     содержания объекта LOB вместо дескриптора.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>OCI_DTYPE_FILE</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Флаг используется <A
+HREF="function.oci-new-descriptor.html"
+><B
+CLASS="function"
+>oci_new_descriptor()</B
+></A
+> для
+     инициализации дескриптора типа FILE.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>OCI_DTYPE_LOB</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Флаг используется <A
+HREF="function.oci-new-descriptor.html"
+><B
+CLASS="function"
+>oci_new_descriptor()</B
+></A
+> для
+     инициализации дескриптора типа LOB.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>OCI_DTYPE_ROWID</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Флаг используется <A
+HREF="function.oci-new-descriptor.html"
+><B
+CLASS="function"
+>oci_new_descriptor()</B
+></A
+> для
+     инициализации дескриптора типа ROWID.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>OCI_D_FILE</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     То же, что и <TT
+CLASS="constant"
+><B
+>OCI_DTYPE_FILE</B
+></TT
+>.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>OCI_D_LOB</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     То же, что и <TT
+CLASS="constant"
+><B
+>OCI_DTYPE_LOB</B
+></TT
+>.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>OCI_D_ROWID</B
+></TT
+> 
+    (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     То же, что и <TT
+CLASS="constant"
+><B
+>OCI_DTYPE_ROWID</B
+></TT
+>.
+    </P
+></DD
+></DL
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="oci8.examples"
+>Примеры</A
+></H1
+><P
+>&#13;    <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN119374"
+></A
+><P
+><B
+>Пример 1. Примеры использования</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br /></font><font color="#FF8000">// by sergo at bacup dot ru<br /><br />// Use option: OCI_DEFAULT for execute command to delay execution<br /></font><font color="#0000BB">OCIExecute</font><font color="#007700">(</font><font color="#0000BB">$stmt</font><font color="#007700">, </font><font color="#0000BB">OCI_DEFAULT</font><font color="#007700">);<br /><br /></font><font color="#FF8000">// for retrieve data use (after fetch):<br /><br /></font><font color="#0000BB">$result </font><font color="#007700">= </font><font color="#0000BB">OCIResult</font><font color="#007700">(</font><font color="#0000BB">$stmt</font><font color="#007700">, </font><font color="#0000BB">$n</font><font color="#007700">);<br />if (</font><font color="#0000BB">is_object</font><font color="#007700">(</font><font color="#0000BB">$result</font><font color="#007700">)) </font><font color="#0000BB">$result </font><font color="#007700">= </font><font color="#0000BB">$result</font><font color="#007700">-&gt;</font><font color="#0000BB">load</font><font color="#007700">();<br /><br /></font><font color="#FF8000">// For INSERT or UPDATE statement use:<br /><br /></font><font color="#0000BB">$sql </font><font color="#007700">= </font><font color="#DD0000">"insert into table (field1, field2) values (field1 = 'value',<br /> field2 = empty_clob()) returning field2 into :field2"</font><font color="#007700">;<br /></font><font color="#0000BB">OCIParse</font><font color="#007700">(</font><font color="#0000BB">$conn</font><font color="#007700">, </font><font color="#0000BB">$sql</font><font color="#007700">);<br /></font><font color="#0000BB">$clob </font><font color="#007700">= </font><font color="#0000BB">OCINewDescriptor</font><font color="#007700">(</font><font color="#0000BB">$conn</font><font color="#007700">, </font><font color="#0000BB">OCI_D_LOB</font><font color="#007700">);<br /></font><font color="#0000BB">OCIBindByName</font><font color="#007700">(</font><font color="#0000BB">$stmt</font><font color="#007700">, </font><font color="#DD0000">":field2"</font><font color="#007700">, &amp;</font><font color="#0000BB">$clob</font><font color="#007700">, -</font><font color="#0000BB">1</font><font color="#007700">, </font><font color="#0000BB">OCI_B_CLOB</font><font color="#007700">);<br /></font><font color="#0000BB">OCIExecute</font><font color="#007700">(</font><font color="#0000BB">$stmt</font><font color="#007700">, </font><font color="#0000BB">OCI_DEFAULT</font><font color="#007700">);<br /></font><font color="#0000BB">$clob</font><font color="#007700">-&gt;</font><font color="#0000BB">save</font><font color="#007700">(</font><font color="#DD0000">"some text"</font><font color="#007700">);<br /></font><font color="#0000BB">OCICommit</font><font color="#007700">(</font><font color="#0000BB">$conn</font><font color="#007700">);<br /><br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+    </P
+><P
+>&#13;     Вы можете использовать хранимые процедуры так же, как это делается из
+     командной строки.
+    <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN119378"
+></A
+><P
+><B
+>Пример 2. Использование хранимых процедур</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br /></font><font color="#FF8000">// by webmaster at remoterealty dot com<br /></font><font color="#0000BB">$sth </font><font color="#007700">= </font><font color="#0000BB">OCIParse</font><font color="#007700">(</font><font color="#0000BB">$dbh</font><font color="#007700">, </font><font color="#DD0000">"begin sp_newaddress( :address_id, '$firstname',<br /> '$lastname', '$company', '$address1', '$address2', '$city', '$state',<br /> '$postalcode', '$country', :error_code );end;"</font><font color="#007700">);<br /><br /></font><font color="#FF8000">// This calls stored procedure sp_newaddress, with :address_id being an<br />// in/out variable and :error_code being an out variable. <br />// Then you do the binding:<br /><br />&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">OCIBindByName</font><font color="#007700">(</font><font color="#0000BB">$sth</font><font color="#007700">, </font><font color="#DD0000">":address_id"</font><font color="#007700">, </font><font color="#0000BB">$addr_id</font><font color="#007700">, </font><font color="#0000BB">10</font><font color="#007700">);<br />&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">OCIBindByName</font><font color="#007700">(</font><font color="#0000BB">$sth</font><font color="#007700">, </font><font color="#DD0000">":error_code"</font><font color="#007700">, </font><font color="#0000BB">$errorcode</font><font color="#007700">, </font><font color="#0000BB">10</font><font color="#007700">);<br />&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">OCIExecute</font><font color="#007700">(</font><font color="#0000BB">$sth</font><font color="#007700">);<br /><br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+    </P
+></DIV
+></DIV
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Содержание</B
+></DT
+><DT
+><A
+HREF="function.oci-collection-append.html"
+>OCI-Collection-&#62;append</A
+>&nbsp;--&nbsp;Appends element to the collection</DT
+><DT
+><A
+HREF="function.oci-collection-assign.html"
+>OCI-Collection-&#62;assign</A
+>&nbsp;--&nbsp;Assigns a value to the collection from another existing collection</DT
+><DT
+><A
+HREF="function.oci-collection-element-assign.html"
+>OCI-Collection-&#62;assignElem</A
+>&nbsp;--&nbsp;Assigns a value to the element of the collection</DT
+><DT
+><A
+HREF="function.oci-collection-free.html"
+>OCI-Collection-&#62;free</A
+>&nbsp;--&nbsp;Frees the resources associated with the collection object</DT
+><DT
+><A
+HREF="function.oci-collection-element-get.html"
+>OCI-Collection-&#62;getElem</A
+>&nbsp;--&nbsp;Returns value of the element</DT
+><DT
+><A
+HREF="function.oci-collection-max.html"
+>OCI-Collection-&#62;max</A
+>&nbsp;--&nbsp;Returns the maximum number of elements in the collection</DT
+><DT
+><A
+HREF="function.oci-collection-size.html"
+>OCI-Collection-&#62;size</A
+>&nbsp;--&nbsp;Returns size of the collection</DT
+><DT
+><A
+HREF="function.oci-collection-trim.html"
+>OCI-Collection-&#62;trim</A
+>&nbsp;--&nbsp;Trims elements from the end of the collection</DT
+><DT
+><A
+HREF="function.oci-lob-append.html"
+>OCI-Lob-&#62;append</A
+>&nbsp;--&nbsp;Appends data from the large object to another large object</DT
+><DT
+><A
+HREF="function.oci-lob-close.html"
+>OCI-Lob-&#62;close</A
+>&nbsp;--&nbsp;Closes LOB descriptor</DT
+><DT
+><A
+HREF="function.oci-lob-eof.html"
+>OCI-Lob-&#62;eof</A
+>&nbsp;--&nbsp;Tests for end-of-file on a large object's descriptor</DT
+><DT
+><A
+HREF="function.oci-lob-erase.html"
+>OCI-Lob-&#62;erase</A
+>&nbsp;--&nbsp;Erases a specified portion of the internal LOB data</DT
+><DT
+><A
+HREF="function.oci-lob-export.html"
+>OCI-Lob-&#62;export</A
+>&nbsp;--&nbsp;Exports LOB's contents to a file</DT
+><DT
+><A
+HREF="function.oci-lob-flush.html"
+>OCI-Lob-&#62;flush</A
+>&nbsp;--&nbsp;Flushes/writes buffer of the LOB to the server</DT
+><DT
+><A
+HREF="function.oci-lob-free.html"
+>OCI-Lob-&#62;free</A
+>&nbsp;--&nbsp;Frees resources associated with the LOB descriptor</DT
+><DT
+><A
+HREF="function.oci-lob-getbuffering.html"
+>OCI-Lob-&#62;getBuffering</A
+>&nbsp;--&nbsp;Returns current state of buffering for the large object</DT
+><DT
+><A
+HREF="function.oci-lob-import.html"
+>OCI-Lob-&#62;import</A
+>&nbsp;--&nbsp;Imports file data to the LOB</DT
+><DT
+><A
+HREF="function.oci-lob-load.html"
+>OCI-Lob-&#62;load</A
+>&nbsp;--&nbsp;Returns large object's contents</DT
+><DT
+><A
+HREF="function.oci-lob-read.html"
+>OCI-Lob-&#62;read</A
+>&nbsp;--&nbsp;Reads part of the large object</DT
+><DT
+><A
+HREF="function.oci-lob-rewind.html"
+>OCI-Lob-&#62;rewind</A
+>&nbsp;--&nbsp;Moves the internal pointer to the beginning of the large object</DT
+><DT
+><A
+HREF="function.oci-lob-save.html"
+>OCI-Lob-&#62;save</A
+>&nbsp;--&nbsp;Saves data to the large object</DT
+><DT
+><A
+HREF="function.oci-lob-savefile.html"
+>OCI-Lob-&#62;saveFile</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-lob-import.html"
+><B
+CLASS="function"
+>oci_lob_import()</B
+></A
+></DT
+><DT
+><A
+HREF="function.oci-lob-seek.html"
+>OCI-Lob-&#62;seek</A
+>&nbsp;--&nbsp;Sets the internal pointer of the large object</DT
+><DT
+><A
+HREF="function.oci-lob-setbuffering.html"
+>OCI-Lob-&#62;setBuffering</A
+>&nbsp;--&nbsp;Changes current state of buffering for the large object</DT
+><DT
+><A
+HREF="function.oci-lob-size.html"
+>OCI-Lob-&#62;size</A
+>&nbsp;--&nbsp;Returns size of large object</DT
+><DT
+><A
+HREF="function.oci-lob-tell.html"
+>OCI-Lob-&#62;tell</A
+>&nbsp;--&nbsp;Returns current position of internal pointer of large object</DT
+><DT
+><A
+HREF="function.oci-lob-truncate.html"
+>OCI-Lob-&#62;truncate</A
+>&nbsp;--&nbsp;Truncates large object</DT
+><DT
+><A
+HREF="function.oci-lob-write.html"
+>OCI-Lob-&#62;write</A
+>&nbsp;--&nbsp;Writes data to the large object</DT
+><DT
+><A
+HREF="function.oci-lob-writetemporary.html"
+>OCI-Lob-&#62;writeTemporary</A
+>&nbsp;--&nbsp;Writes temporary large object</DT
+><DT
+><A
+HREF="function.oci-lob-writetofile.html"
+>OCI-Lob-&#62;writeToFile</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-lob-export.html"
+><B
+CLASS="function"
+>oci_lob_export()</B
+></A
+></DT
+><DT
+><A
+HREF="function.oci-bind-array-by-name.html"
+>oci_bind_array_by_name</A
+>&nbsp;--&nbsp;
+     Binds PHP array to Oracle PL/SQL array by name
+    </DT
+><DT
+><A
+HREF="function.oci-bind-by-name.html"
+>oci_bind_by_name</A
+>&nbsp;--&nbsp;
+     Привязывает переменную PHP к соответствующей метке в SQL-выражении.
+    </DT
+><DT
+><A
+HREF="function.oci-cancel.html"
+>oci_cancel</A
+>&nbsp;--&nbsp;Заканчивает процесс чтения из курсора</DT
+><DT
+><A
+HREF="function.oci-close.html"
+>oci_close</A
+>&nbsp;--&nbsp;Закрывает соединение с сервером Oracle</DT
+><DT
+><A
+HREF="function.oci-commit.html"
+>oci_commit</A
+>&nbsp;--&nbsp;Завершает и подтверждает транзакцию</DT
+><DT
+><A
+HREF="function.oci-connect.html"
+>oci_connect</A
+>&nbsp;--&nbsp;Устанавливает соединение с сервером Oracle</DT
+><DT
+><A
+HREF="function.oci-define-by-name.html"
+>oci_define_by_name</A
+>&nbsp;--&nbsp;
+     Определяет переменную PHP, в которую будет возвращено соответствующее поле
+     из результата
+    </DT
+><DT
+><A
+HREF="function.oci-error.html"
+>oci_error</A
+>&nbsp;--&nbsp;Возвращает последнюю ошибку</DT
+><DT
+><A
+HREF="function.oci-execute.html"
+>oci_execute</A
+>&nbsp;--&nbsp;Выполняет выражение SQL</DT
+><DT
+><A
+HREF="function.oci-fetch-all.html"
+>oci_fetch_all</A
+>&nbsp;--&nbsp;Выбирает все строки из результата запроса в массив</DT
+><DT
+><A
+HREF="function.oci-fetch-array.html"
+>oci_fetch_array</A
+>&nbsp;--&nbsp;Возвращает следующую строку из результата запроса в виде
+     ассоциативного массива, числового массива или оба сразу
+    </DT
+><DT
+><A
+HREF="function.oci-fetch-assoc.html"
+>oci_fetch_assoc</A
+>&nbsp;--&nbsp;Возвращает следующую строку из результата запроса в виде
+     ассоциативного массива</DT
+><DT
+><A
+HREF="function.oci-fetch-object.html"
+>oci_fetch_object</A
+>&nbsp;--&nbsp;Возвращает следующую строку из результата запроса в виде
+     объекта</DT
+><DT
+><A
+HREF="function.oci-fetch-row.html"
+>oci_fetch_row</A
+>&nbsp;--&nbsp;Возвращает следующую строку из результата запроса в виде
+     массива с числовыми индексами</DT
+><DT
+><A
+HREF="function.oci-fetch.html"
+>oci_fetch</A
+>&nbsp;--&nbsp;Выбирает следующую строку из результата в буфер</DT
+><DT
+><A
+HREF="function.oci-field-is-null.html"
+>oci_field_is_null</A
+>&nbsp;--&nbsp;Проверяет, равняется ли поле <TT
+CLASS="constant"
+><B
+>NULL</B
+></TT
+></DT
+><DT
+><A
+HREF="function.oci-field-name.html"
+>oci_field_name</A
+>&nbsp;--&nbsp;Возвращает имя поля из результата запроса</DT
+><DT
+><A
+HREF="function.oci-field-precision.html"
+>oci_field_precision</A
+>&nbsp;--&nbsp;Возвращает точность поля</DT
+><DT
+><A
+HREF="function.oci-field-scale.html"
+>oci_field_scale</A
+>&nbsp;--&nbsp;Возвращает масштаб поля</DT
+><DT
+><A
+HREF="function.oci-field-size.html"
+>oci_field_size</A
+>&nbsp;--&nbsp;Возвращает размер поля</DT
+><DT
+><A
+HREF="function.oci-field-type-raw.html"
+>oci_field_type_raw</A
+>&nbsp;--&nbsp;Возвращает тип исходный тип поля</DT
+><DT
+><A
+HREF="function.oci-field-type.html"
+>oci_field_type</A
+>&nbsp;--&nbsp;Возвращает тип поля</DT
+><DT
+><A
+HREF="function.oci-free-statement.html"
+>oci_free_statement</A
+>&nbsp;--&nbsp;
+     Освобождает ресурсы, занимаемые курсором или SQL-выражением
+    </DT
+><DT
+><A
+HREF="function.oci-internal-debug.html"
+>oci_internal_debug</A
+>&nbsp;--&nbsp;
+     Включает и выключает внутреннюю отладку
+    </DT
+><DT
+><A
+HREF="function.oci-lob-copy.html"
+>oci_lob_copy</A
+>&nbsp;--&nbsp;Копирует содержание или часть содержания одного объекта LOB в другой</DT
+><DT
+><A
+HREF="function.oci-lob-is-equal.html"
+>oci_lob_is_equal</A
+>&nbsp;--&nbsp;Сравнивает два объекта LOB</DT
+><DT
+><A
+HREF="function.oci-new-collection.html"
+>oci_new_collection</A
+>&nbsp;--&nbsp;Создает новый объект коллекции</DT
+><DT
+><A
+HREF="function.oci-new-connect.html"
+>oci_new_connect</A
+>&nbsp;--&nbsp;Устанавливает новое соединение с сервером Oracle</DT
+><DT
+><A
+HREF="function.oci-new-cursor.html"
+>oci_new_cursor</A
+>&nbsp;--&nbsp;Возвращает идентификатор созданного курсора</DT
+><DT
+><A
+HREF="function.oci-new-descriptor.html"
+>oci_new_descriptor</A
+>&nbsp;--&nbsp;Инициализирует новый дескриптор объекта LOB или FILE</DT
+><DT
+><A
+HREF="function.oci-num-fields.html"
+>oci_num_fields</A
+>&nbsp;--&nbsp;
+     Возвращает количество полей в результате запроса
+    </DT
+><DT
+><A
+HREF="function.oci-num-rows.html"
+>oci_num_rows</A
+>&nbsp;--&nbsp;Возвращает количество строк, измененных в процессе выполнения
+     запроса</DT
+><DT
+><A
+HREF="function.oci-parse.html"
+>oci_parse</A
+>&nbsp;--&nbsp;Подготавливает запрос к выполнению</DT
+><DT
+><A
+HREF="function.oci-password-change.html"
+>oci_password_change</A
+>&nbsp;--&nbsp;Изменяет пароль пользователя Oracle</DT
+><DT
+><A
+HREF="function.oci-pconnect.html"
+>oci_pconnect</A
+>&nbsp;--&nbsp;
+     Устанавливает постоянное соединение с сервером Oracle
+    </DT
+><DT
+><A
+HREF="function.oci-result.html"
+>oci_result</A
+>&nbsp;--&nbsp;Возвращает значение поля из результата запроса</DT
+><DT
+><A
+HREF="function.oci-rollback.html"
+>oci_rollback</A
+>&nbsp;--&nbsp;Откатывает транзакции, ожидающие обработки</DT
+><DT
+><A
+HREF="function.oci-server-version.html"
+>oci_server_version</A
+>&nbsp;--&nbsp;Возвращает строку с информацией о версии сервера Oracle</DT
+><DT
+><A
+HREF="function.oci-set-prefetch.html"
+>oci_set_prefetch</A
+>&nbsp;--&nbsp;Устанавливает количество строк, которые будут автоматически
+     выбраны в буфер</DT
+><DT
+><A
+HREF="function.oci-statement-type.html"
+>oci_statement_type</A
+>&nbsp;--&nbsp;Возвращает тип выражения</DT
+><DT
+><A
+HREF="function.ocibindbyname.html"
+>ocibindbyname</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-bind-by-name.html"
+><B
+CLASS="function"
+>oci_bind_by_name()</B
+></A
+></DT
+><DT
+><A
+HREF="function.ocicancel.html"
+>ocicancel</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-cancel.html"
+><B
+CLASS="function"
+>oci_cancel()</B
+></A
+></DT
+><DT
+><A
+HREF="function.ocicloselob.html"
+>ocicloselob</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-lob-close.html"
+>OCI-Lob-&#62;close</A
+></DT
+><DT
+><A
+HREF="function.ocicollappend.html"
+>ocicollappend</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-collection-append.html"
+>OCI-Collection-&#62;append</A
+></DT
+><DT
+><A
+HREF="function.ocicollassign.html"
+>ocicollassign</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-collection-assign.html"
+>OCI-Collection-&#62;assign</A
+></DT
+><DT
+><A
+HREF="function.ocicollassignelem.html"
+>ocicollassignelem</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-collection-element-assign.html"
+>OCI-Collection-&#62;assignElem</A
+></DT
+><DT
+><A
+HREF="function.ocicollgetelem.html"
+>ocicollgetelem</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-collection-element-get.html"
+>OCI-Collection-&#62;getElem</A
+></DT
+><DT
+><A
+HREF="function.ocicollmax.html"
+>ocicollmax</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-collection-max.html"
+>OCI-Collection-&#62;max</A
+></DT
+><DT
+><A
+HREF="function.ocicollsize.html"
+>ocicollsize</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-collection-size.html"
+>OCI-Collection-&#62;size</A
+></DT
+><DT
+><A
+HREF="function.ocicolltrim.html"
+>ocicolltrim</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-collection-trim.html"
+>OCI-Collection-&#62;trim</A
+></DT
+><DT
+><A
+HREF="function.ocicolumnisnull.html"
+>ocicolumnisnull</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-field-is-null.html"
+><B
+CLASS="function"
+>oci_field_is_null()</B
+></A
+></DT
+><DT
+><A
+HREF="function.ocicolumnname.html"
+>ocicolumnname</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-field-name.html"
+><B
+CLASS="function"
+>oci_field_name()</B
+></A
+></DT
+><DT
+><A
+HREF="function.ocicolumnprecision.html"
+>ocicolumnprecision</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-field-precision.html"
+><B
+CLASS="function"
+>oci_field_precision()</B
+></A
+></DT
+><DT
+><A
+HREF="function.ocicolumnscale.html"
+>ocicolumnscale</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-field-scale.html"
+><B
+CLASS="function"
+>oci_field_scale()</B
+></A
+></DT
+><DT
+><A
+HREF="function.ocicolumnsize.html"
+>ocicolumnsize</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-field-size.html"
+><B
+CLASS="function"
+>oci_field_size()</B
+></A
+></DT
+><DT
+><A
+HREF="function.ocicolumntype.html"
+>ocicolumntype</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-field-type.html"
+><B
+CLASS="function"
+>oci_field_type()</B
+></A
+></DT
+><DT
+><A
+HREF="function.ocicolumntyperaw.html"
+>ocicolumntyperaw</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-field-type-raw.html"
+><B
+CLASS="function"
+>oci_field_type_raw()</B
+></A
+></DT
+><DT
+><A
+HREF="function.ocicommit.html"
+>ocicommit</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-commit.html"
+><B
+CLASS="function"
+>oci_commit()</B
+></A
+></DT
+><DT
+><A
+HREF="function.ocidefinebyname.html"
+>ocidefinebyname</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-define-by-name.html"
+><B
+CLASS="function"
+>oci_define_by_name()</B
+></A
+></DT
+><DT
+><A
+HREF="function.ocierror.html"
+>ocierror</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-error.html"
+><B
+CLASS="function"
+>oci_error()</B
+></A
+></DT
+><DT
+><A
+HREF="function.ociexecute.html"
+>ociexecute</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-execute.html"
+><B
+CLASS="function"
+>oci_execute()</B
+></A
+></DT
+><DT
+><A
+HREF="function.ocifetch.html"
+>ocifetch</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-fetch.html"
+><B
+CLASS="function"
+>oci_fetch()</B
+></A
+></DT
+><DT
+><A
+HREF="function.ocifetchinto.html"
+>ocifetchinto</A
+>&nbsp;--&nbsp;Выбирает следующую строку из результата запроса в массив</DT
+><DT
+><A
+HREF="function.ocifetchstatement.html"
+>ocifetchstatement</A
+>&nbsp;--&nbsp;Выбирает все строки из результата запроса в массив</DT
+><DT
+><A
+HREF="function.ocifreecollection.html"
+>ocifreecollection</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-collection-free.html"
+>OCI-Collection-&#62;free</A
+></DT
+><DT
+><A
+HREF="function.ocifreecursor.html"
+>ocifreecursor</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-free-statement.html"
+><B
+CLASS="function"
+>oci_free_statement()</B
+></A
+></DT
+><DT
+><A
+HREF="function.ocifreedesc.html"
+>ocifreedesc</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-lob-free.html"
+>OCI-Lob-&#62;free</A
+></DT
+><DT
+><A
+HREF="function.ocifreestatement.html"
+>ocifreestatement</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-free-statement.html"
+><B
+CLASS="function"
+>oci_free_statement()</B
+></A
+></DT
+><DT
+><A
+HREF="function.ociinternaldebug.html"
+>ociinternaldebug</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-internal-debug.html"
+><B
+CLASS="function"
+>oci_internal_debug()</B
+></A
+></DT
+><DT
+><A
+HREF="function.ociloadlob.html"
+>ociloadlob</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-lob-load.html"
+>OCI-Lob-&#62;load</A
+></DT
+><DT
+><A
+HREF="function.ocilogoff.html"
+>ocilogoff</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-close.html"
+><B
+CLASS="function"
+>oci_close()</B
+></A
+></DT
+><DT
+><A
+HREF="function.ocilogon.html"
+>ocilogon</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-connect.html"
+><B
+CLASS="function"
+>oci_connect()</B
+></A
+></DT
+><DT
+><A
+HREF="function.ocinewcollection.html"
+>ocinewcollection</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-new-collection.html"
+><B
+CLASS="function"
+>oci_new_collection()</B
+></A
+></DT
+><DT
+><A
+HREF="function.ocinewcursor.html"
+>ocinewcursor</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-new-cursor.html"
+><B
+CLASS="function"
+>oci_new_cursor()</B
+></A
+></DT
+><DT
+><A
+HREF="function.ocinewdescriptor.html"
+>ocinewdescriptor</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-new-descriptor.html"
+><B
+CLASS="function"
+>oci_new_descriptor()</B
+></A
+></DT
+><DT
+><A
+HREF="function.ocinlogon.html"
+>ocinlogon</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-new-connect.html"
+><B
+CLASS="function"
+>oci_new_connect()</B
+></A
+></DT
+><DT
+><A
+HREF="function.ocinumcols.html"
+>ocinumcols</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-num-fields.html"
+><B
+CLASS="function"
+>oci_num_fields()</B
+></A
+></DT
+><DT
+><A
+HREF="function.ociparse.html"
+>ociparse</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-parse.html"
+><B
+CLASS="function"
+>oci_parse()</B
+></A
+></DT
+><DT
+><A
+HREF="function.ociplogon.html"
+>ociplogon</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-pconnect.html"
+><B
+CLASS="function"
+>oci_pconnect()</B
+></A
+></DT
+><DT
+><A
+HREF="function.ociresult.html"
+>ociresult</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-result.html"
+><B
+CLASS="function"
+>oci_result()</B
+></A
+></DT
+><DT
+><A
+HREF="function.ocirollback.html"
+>ocirollback</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-rollback.html"
+><B
+CLASS="function"
+>oci_rollback()</B
+></A
+></DT
+><DT
+><A
+HREF="function.ocirowcount.html"
+>ocirowcount</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-num-rows.html"
+><B
+CLASS="function"
+>oci_num_rows()</B
+></A
+></DT
+><DT
+><A
+HREF="function.ocisavelob.html"
+>ocisavelob</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-lob-save.html"
+>OCI-Lob-&#62;save</A
+></DT
+><DT
+><A
+HREF="function.ocisavelobfile.html"
+>ocisavelobfile</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-lob-import.html"
+>OCI-Lob-&#62;import</A
+></DT
+><DT
+><A
+HREF="function.ociserverversion.html"
+>ociserverversion</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-server-version.html"
+><B
+CLASS="function"
+>oci_server_version()</B
+></A
+></DT
+><DT
+><A
+HREF="function.ocisetprefetch.html"
+>ocisetprefetch</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-set-prefetch.html"
+><B
+CLASS="function"
+>oci_set_prefetch()</B
+></A
+></DT
+><DT
+><A
+HREF="function.ocistatementtype.html"
+>ocistatementtype</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-statement-type.html"
+><B
+CLASS="function"
+>oci_statement_type()</B
+></A
+></DT
+><DT
+><A
+HREF="function.ociwritelobtofile.html"
+>ociwritelobtofile</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-lob-export.html"
+>OCI-Lob-&#62;export</A
+></DT
+><DT
+><A
+HREF="function.ociwritetemporarylob.html"
+>ociwritetemporarylob</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.oci-lob-writetemporary.html"
+>OCI-Lob-&#62;writeTemporary</A
+></DT
+></DL
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="function.overload.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Начало</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="function.oci-collection-append.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>overload</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="funcref.html"
+ACCESSKEY="U"
+>Уровень выше</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>OCI-Collection-&#62;append</TD
+></TR
+></TABLE
+></DIV
+></div></center></div></td>
+			<td><div style="display:none; width:200px;" id="o3" name="o3"><script charset="windows-1251" type="text/javascript" src="http://www.ozon.ru/PartnerTwinerNew.aspx?revident=bea9126b-c8e1-4bf5-b6d8-9a057f8feac6" ></script></div><script>o = document.getElementById('o3'); if(o) { var s = o.innerHTML; s = s.replace(/F6F6F6/gi,"FFFFFF"); o.innerHTML = s.replace(/padding-top: 10px; padding-bottom: 10px;/,"display:none;"); o.style.display = 'block'; } </script><br><div style="margin: 10px;"><script type="text/javascript"><!--
+google_ad_client = "pub-4093271809023514";
+/* 120x600, создано 01.11.2008 */
+google_ad_slot = "0438855731";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div></td>
+    		</tr>
+  		</table>
+    </td>
+  </tr>
+  <tr valign='bottom' height='1%'>
+  <td>      <table width=100% cellspacing=0 cellpadding=5 border=0 bgcolor=#9999CC>
+        <tr valign=center>
+          <td class='phpcopyright' width='45%' align='left'>&nbsp;&nbsp;Engine <a  href="http://www.mnogosearch.org/">MnoGoSearch</a></td>
+          <td class='phpcopyright' width='10%' align='center'>2007-2010 &copy <a  href="mailto:webmaster@php.ru">PHP.RU</a></td>
+          <td class='phpcopyright' width='45%' align='right' >Powered by <a target="_blank" href="http://odware.ru">ODware</a> <a HREF="http://440hz.ru">440Hz</a> &nbsp;&nbsp;</td>
+        </tr>
+      </table>
+
+    <div style="text-align: right; padding: 5px">
+		<!--LiveInternet counter-->
+		<script type="text/javascript">document.write('<a href="http://www.liveinternet.ru/click" target=_blank><img src="http://counter.yadro.ru/hit?t53.6;r' + escape(document.referrer) + ((typeof(screen)=='undefined')?'':';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ';u' + escape(document.URL) +';i' + escape('Жж'+document.title.substring(0,80)) + ';' + Math.random() + '" border=0 width=88 height=31 alt="" title="LiveInternet: показано число просмотров и посетителей за 24 часа"><\/a>');
+		</script>
+		<!--/LiveInternet-->
+		<!-- SpyLOG -->
+		<script src="http://tools.spylog.ru/counter2.2.js" type="text/javascript" id="spylog_code" counter="830950" ></script>
+		<noscript><a href="http://u8309.50.spylog.com/cnt?cid=830950&f=3&p=0" target="_blank"><img src="http://u8309.50.spylog.com/cnt?cid=830950&p=0&f=4" alt='SpyLOG' border='0' width=88 height=31 ></a>
+		</noscript>
+		<!--/ SpyLOG -->
+	</div>
+</td>
+  </tr>
+</table>
+
+<script>
+<!--
+document.SEARCH.QS.focus();
+// --></script>
+
+<!-- 
+	как же вы все это читаете?
+	440hz 
+-->
+
+</body>
+</html>

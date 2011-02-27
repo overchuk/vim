@@ -1,0 +1,3749 @@
+<!-- 
+
+     HTML dropped by Zend Guard Compressor 4.2
+
+     php.ru team: mz, az, yuri, vb, cyxapuk, 440hz, administrator
+     2004-2007 (c) expi-web.com 
+     2007-2008 (c) odware.com 
+     0101-1010 (с) 440hz
+
+     2b|~2b=?
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EHOT тут всё пожрал ! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="alternate" type="application/rss+xml" title="php.ru/forum - последние сообщения" href="http://www.php.ru/forum/rss.php">
+<link rel="SHORTCUT ICON" href="http://www.php.ru/favicon.ico" />
+<META name="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<meta http-equiv="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<META name="keywords" content="php, php5, apache, mysql, session">
+<meta http-equiv="keywords" content="php, php5, apache, mysql, session">
+<title>php.ru - SDO Functions</title>
+<LINK REL="stylesheet" TYPE="text/css" HREF="http://www.php.ru/index.css">
+<script language="JavaScript" src="http://www.php.ru/ajax/ajax.js"></script>
+</head>
+<body>
+
+<table height='100%' width='100%' cellspacing='0' cellpadding='0'>
+  <tr height='99%' valign='top'>
+    <td align='center'>
+		
+		<table style='margin-top: 4px' width=100% cellspacing=0 cellpadding=3>
+   		<tr>
+     		<td>PHP - <a href="http://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BA%D1%80%D0%BE%D0%BD%D0%B8%D0%BC" target=_blank class=lnk>рекурсивный акроним</a> словосочетания &laquo;<a href="/manual/introduction.html" class=lnk>PHP: Hypertext Preprocessor</a>&raquo;</td>
+     	</tr>
+   		</table>
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/subsys_ajax.js"></script>
+		<!--
+
+		commet by 440hz
+		20.10.2007
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/pu_search.js"></script>
+
+		-->
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/cz.js?a=b"></script>
+
+		<table style='margin-top: 5px' width=100% bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0>
+   	 	<form name=SEARCH method=GET action="http://www.php.ru/search/?SID=uzym5oo9gh7n8uny" onsubmit="return puSubmit();">
+	  	<input type=hidden name=PAGE value=1>
+  		<tr>
+    		<td width='1' valign='middle'> 
+    		   <a href='/'><img src="http://www.php.ru/;-)/logo.gif" width=133 height=93 alt="php" border=0 hspace=10 vspace=0></a>
+			 </td>
+		    <td width='100%' valign='middle'>
+		       <!--
+			   
+				commet by 440hz
+				20.10.2007
+
+			   <div id='pu_search' class='pu_search'></div>
+		       <div id='pu_search_description' class='pu_search_decription'></div>
+			   
+			   -->
+        	 <input type=text style='width:99%; margin: 10px' maxlength='200' name='QS' class='in' id='query' autocomplete='off' value="" />
+    		</td>
+		  </tr>
+   		<tr bgcolor='#666699' valign='middle'>
+			<td style='border-top: 1px solid #333366;'><br /></td>
+    		<td style='border-top: 1px solid #333366;'><div style="padding: 4px 4px 4px 10px; height: 24px; color: #CCCCFF;" id="stat">Хто там?<script>doLoadCZ('stat','stat');</script></div></td>
+  		</tr>
+		</form>
+		</table>
+		<table id="menu" cellspaciong=0 cellpadding=3>
+<tr>
+<td><a href="/" class=current>Главная</a></td>
+<td><a href="/download/" class=current>Скачать</a></td>
+<td><a href="/doc/" class=current>Документация</a></td>
+<td><a href="/forum/" class=current>Форум</a></td>
+<td width=100% align=right><a href="/phpinfo.html" class=current>phpinfo()</a></td>
+</tr>
+</table>
+
+		
+<!--  AdRiver code START. Type:728x90 Site: php.ru PZ: 0 BN: 1 -->
+<script language="javascript" type="text/javascript"><!--
+var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+var ar_Tail='unknown'; if (document.referrer) ar_Tail = escape(document.referrer);
+document.write(
+'<iframe src="http://ad.adriver.ru/cgi-bin/erle.cgi?'
++ 'sid=148680&bn=1&target=blank&bt=36&pz=0&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail
++ '" frameborder=0 vspace=0 hspace=0 width=728 height=90 marginwidth=0'
++ ' marginheight=0 scrolling=no></iframe>');
+//--></script>
+<noscript>
+<a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" target=_blank>
+<img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" alt="-AdRiver-" border=0 width=728 height=90></a>
+</noscript>
+<!--  AdRiver code END  -->
+
+
+  		<table width='100%' cellspacing='0' cellpadding='0'>
+    		<tr valign='top'>
+      		<td width=100%><div style="margin: 10px 10px 10px 50px;"><center><div style="width: 800px; text-align: left"><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Руководство по PHP</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="function.satellite-object-to-string.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="function.sdo-das-changesummary-beginlogging.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="reference"
+><A
+NAME="ref.sdo"
+></A
+><DIV
+CLASS="TITLEPAGE"
+><H1
+CLASS="title"
+>CXXXVI. SDO Functions</H1
+><DIV
+CLASS="PARTINTRO"
+><A
+NAME="AEN160191"
+></A
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sdo.intro"
+>Введение</A
+></H1
+><P
+>&#13;    Service Data Objects (SDOs) enable PHP applications to work with
+    data from different sources (like a database query, an XML file, 
+    and a spreadsheet) using a single interface.
+   </P
+><P
+>&#13;    Each different kind of data source requires a Data Access Service 
+    (DAS) to provide access to the data in the data source.
+    In your PHP application, you use a DAS to create an SDO 
+    instance that represents some data in the data source.  You can then 
+    set and get values in the SDO instance using the standard SDO 
+    interface.  Finally, you use a DAS to write the modified data back
+    to a data source, typically the same one.
+   </P
+><P
+>&#13;    See the
+    <A
+HREF="ref.sdo.html#sdo.das.table"
+>list of Data Access Services</A
+>
+    for details on those
+    currently available.  In addition to the provided DASs, SDO also
+    provides interfaces to enable others to be implemented 
+    (see the section on <A
+HREF="ref.sdo.html#sdo.class.sdo-das-spis"
+>SDO Data
+    Access Services Interface</A
+> for more details).
+   </P
+><P
+>&#13;     This extension is derived from concepts taken from the
+     <A
+HREF="http://www-128.ibm.com/developerworks/java/library/j-commonj-sdowmt/"
+TARGET="_top"
+>Service Data Objects specification</A
+>.
+     It includes a version of the
+     <A
+HREF="http://incubator.apache.org/tuscany/"
+TARGET="_top"
+>Apache Tuscany</A
+> SDO 2.0 for C++ project.
+   </P
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="sdo.intro.structure"
+>The Structure of a Service Data Object</A
+></H2
+><P
+>&#13;     A Service Data Object instance is made up of a tree of data objects.
+     The tree is defined by containment relationships between the data 
+     objects.  For example, a Company data object might consist of a number 
+     of Department data objects and therefore the Company would have 
+     a containment relationship to the Departments.  
+    </P
+><P
+> An SDO may also have non-containment references between data objects in the
+     tree. For example, one Employee data object might reference another Employee to
+     identify a career mentor. 
+    </P
+><P
+>&#13;     As well as data objects referencing each other, they can also have
+     primitive properties.  For example, the Company data object might
+     have a property called "name" of type string, for holding the name
+     of the company (for example, "Acme").
+    </P
+><P
+> Each of these properties of a data object - containment relationships,
+     non-containment references, or primitive properties - may be many-valued or
+     single-valued. In the above examples, Departments is many-valued and
+    the Company name is single-valued.
+    </P
+><P
+> In PHP, each SDO data object is represented as a PHP object. The properties of the
+     data object can be accessed using either object syntax or associative array syntax.
+     We'll see some examples of this later.
+    </P
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sdo.requirements"
+>Требования</A
+></H1
+><P
+> The SDO extension requires PHP 5.1 or higher. It also requires the libxml2 library.
+    Normally libxml2 will already be installed, but if not, it can be downloaded from
+    <A
+HREF="http://www.xmlsoft.org/"
+TARGET="_top"
+>http://www.xmlsoft.org/</A
+>.
+   </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sdo.installation"
+>Установка</A
+></H1
+><DIV
+CLASS="procedure"
+><P
+><B
+><A
+NAME="sdo.install.unix"
+></A
+>Unix systems</B
+></P
+><OL
+TYPE="1"
+><LI
+><P
+> You can download and install the latest stable release of all three SDO
+       components - the SDO core, the XML DAS and the Relational DAS - with the command:
+       <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="screen"
+>pecl install sdo</PRE
+></TD
+></TR
+></TABLE
+>
+      </P
+><P
+> This command will build the SDO and XML shared libraries as well as installing
+       the PHP files that make the Relational DAS.
+      </P
+><P
+>&#13;       If you want to use the latest beta version, then instead run:
+       <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="screen"
+>pecl install sdo-beta</PRE
+></TD
+></TR
+></TABLE
+>
+     </P
+></LI
+><LI
+><P
+> The
+      <B
+CLASS="command"
+>pecl</B
+> command automatically installs the SDO and SDO_DAS_XML
+      modules into your PHP extensions directory. To enable the SDO extensions you must add
+      the following lines to <TT
+CLASS="filename"
+>php.ini</TT
+>:
+      <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="screen"
+>extension=sdo.so
+extension=sdo_das_xml.so</PRE
+></TD
+></TR
+></TABLE
+>
+     </P
+><P
+> For more information about building PECL packages, consult the
+      <A
+HREF="install.pecl.html"
+>PECL installation</A
+> section of the manual.
+     </P
+></LI
+></OL
+></DIV
+><DIV
+CLASS="procedure"
+><P
+><B
+><A
+NAME="sdo.install.win32"
+></A
+>Windows</B
+></P
+><OL
+TYPE="1"
+><LI
+><P
+>&#13;      The latest DLLs for the SDO core and the XML DAS can be 
+      downloaded from 
+      <A
+HREF="http://pecl4win.php.net/ext.php/php_sdo.dll"
+TARGET="_top"
+>php_sdo.dll</A
+> and 
+      <A
+HREF="http://pecl4win.php.net/ext.php/php_sdo_das_xml.dll"
+TARGET="_top"
+>php_sdo_das_xml.dll</A
+> respectively.
+     </P
+><P
+> 
+      Note that currently the <A
+HREF="http://pecl4win.php.net/"
+TARGET="_top"
+>pecl4win</A
+> site does not provide 
+      these binaries at the current release level; you can only download the latest level.
+     </P
+></LI
+><LI
+><P
+> The
+      <B
+CLASS="command"
+>pecl</B
+> command automatically installs the SDO and SDO_DAS_XML
+      modules into your PHP extensions directory. To enable the SDO extensions you must add
+      the following lines to <TT
+CLASS="filename"
+>php.ini</TT
+>:
+      <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="screen"
+>extension=php_sdo.dll
+extension=php_sdo_das_xml.dll</PRE
+></TD
+></TR
+></TABLE
+>
+     </P
+></LI
+><LI
+><P
+> The Relational DAS can be downloaded and installed with the command:
+      <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="screen"
+>pecl install -B sdo</PRE
+></TD
+></TR
+></TABLE
+>
+     </P
+><P
+> The Relational DAS is written in PHP. You may need to update your
+      <A
+HREF="ini.core.html#ini.include-path"
+>include_path</A
+> in <TT
+CLASS="filename"
+>php.ini</TT
+> to point to
+      the directory that contains
+      <TT
+CLASS="filename"
+>sdo/DAS/Relational</TT
+>.
+     </P
+></LI
+></OL
+></DIV
+><DIV
+CLASS="procedure"
+><P
+><B
+><A
+NAME="sdo.build.linux.steps"
+></A
+>Building SDO on Linux</B
+></P
+><P
+> This section describes how to build the SDO core and XML DAS on Linux. You would
+     only need to know how to do this if you wish to build a recent version that you have checked
+     out of CVS.
+    </P
+><OL
+TYPE="1"
+><LI
+><P
+>&#13;      Change to the main extension directory:
+      <B
+CLASS="command"
+>cd &#60; wherever your sdo code is &#62;</B
+>
+     </P
+></LI
+><LI
+><P
+>&#13;      Run <B
+CLASS="command"
+>phpize</B
+>, which will set up the environment to
+      compile both SDO and the XML Data Access Service.
+     </P
+></LI
+><LI
+><P
+>&#13;      Next, run <B
+CLASS="command"
+>./configure; make; make install</B
+>. 
+      Please note, you may need to login as root to install the extension.
+     </P
+></LI
+><LI
+><P
+>&#13;      Make sure that these modules are loaded by PHP, by adding
+      <B
+CLASS="command"
+>extension=sdo.so</B
+> and
+      <B
+CLASS="command"
+>extension=sdo_das_xml.so</B
+> to your
+      <TT
+CLASS="filename"
+>php.ini</TT
+> file in the same order. 
+     </P
+></LI
+></OL
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sdo.das.table"
+>Data Access Services</A
+></H1
+><P
+>&#13;    The table below lists the currently provided SDO Data Access Services:
+    <DIV
+CLASS="informaltable"
+><P
+></P
+><A
+NAME="AEN160270"
+></A
+><TABLE
+BORDER="1"
+CLASS="CALSTABLE"
+><COL><COL><THEAD
+><TR
+><TH
+>DAS Name</TH
+><TH
+>Description</TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+>&#13;         <A
+HREF="ref.sdo-das-xml.html"
+>SDO_DAS_XML</A
+>
+        </TD
+><TD
+>&#13;         An XML Data Access Service supporting reading/writing
+         SDOs as XML documents.
+        </TD
+></TR
+><TR
+><TD
+>&#13;         <A
+HREF="ref.sdo.das.rel.html"
+>SDO_DAS_Relational</A
+>
+        </TD
+><TD
+>&#13;         A PDO-based Data Access Service supporting reading/writing SDO 
+         to relational databases.  
+         Implements an optimistic concurrency policy for updates.
+        </TD
+></TR
+></TBODY
+></TABLE
+><P
+></P
+></DIV
+>
+   </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sdo.limitations"
+>Limitations</A
+></H1
+><DIV
+CLASS="procedure"
+><P
+><B
+><A
+NAME="sdo.limitations.implementation"
+></A
+>Implementation Limitations</B
+></P
+><P
+>&#13;     The following are limitations in the current SDO implementation:
+    </P
+><OL
+TYPE="1"
+><LI
+><P
+>&#13;      There is no support for multi-byte character sets.
+      This will be considered, depending on community requirements,
+      in the Unicode-enabled version of PHP.
+      See <A
+HREF="ref.unicode.html"
+>Unicode Functions</A
+>.
+     </P
+></LI
+></OL
+></DIV
+><DIV
+CLASS="procedure"
+><P
+><B
+><A
+NAME="sdo.limitations.sdo"
+></A
+>SDO Limitations</B
+></P
+><P
+>&#13;     The following SDO 2.0 concepts are not supported in the current 
+     PHP implementation.
+     It is not necessarily the case that these will all be added over time.
+     Their inclusion will depend on community requirements.
+    </P
+><OL
+TYPE="1"
+><LI
+><P
+>&#13;      Bi-directional relationships.
+     </P
+></LI
+><LI
+><P
+>&#13;      Type and property alias names.
+     </P
+></LI
+><LI
+><P
+>&#13;      Read-only properties.
+     </P
+></LI
+><LI
+><P
+> 
+      The Helper classes defined in SDO 2.0 are not directly implemented. 
+      However equivalent function is provided in a more natural way for PHP. 
+      For example the function of <B
+CLASS="command"
+>CopyHelper::copy()</B
+> 
+      is provided by applying the PHP
+      <A
+HREF="language.oop5.cloning.html"
+>clone</A
+> keyword to a data object.
+     </P
+></LI
+></OL
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sdo.examples"
+>Примеры</A
+></H1
+><P
+>&#13;    The examples below assume an SDO created with the schema
+    and instance information shown below, using the XML Data Access Service.
+   </P
+><P
+>&#13;    The instance document below describes a single company, 
+    called 'MegaCorp', which contains a single department, 
+    called 'Advanced Technologies'.
+    The Advanced Technologies department contains three employees.
+    The company employeeOfTheMonth is referencing the second employee,
+    'Jane Doe'.
+   </P
+><P
+>&#13;    <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="xml"
+>&#60;?xml version="1.0" encoding="UTF-8" ?&#62; 
+&#60;company xmlns="companyNS" name="MegaCorp" 
+  employeeOfTheMonth="E0003"&#62;
+  &#60;departments name="Advanced Technologies" location="NY" number="123"&#62;
+    &#60;employees name="John Jones" SN="E0001"/&#62;
+    &#60;employees name="Jane Doe" SN="E0003"/&#62;
+    &#60;employees name="Al Smith" SN="E0004" manager="true"/&#62;
+  &#60;/departments&#62;
+&#60;/company&#62;</PRE
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+> The root element of the schema is a company. The company contains departments, and
+    each department contains employees. Each element has a number of attributes to store
+    things like name, serial number, and so on. Finally, the company also has an IDREF
+    attribute which identifies one of the employees as the 'employeeOfTheMonth'.
+   </P
+><P
+>&#13;    <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="xml"
+>&#60;xsd:schema  
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:sdo="commonj.sdo"
+  xmlns:sdoxml="commonj.sdo/xml"
+  xmlns:company="companyNS"
+  targetNamespace="companyNS"&#62;
+  &#60;xsd:element name="company" type="company:CompanyType"/&#62;
+  &#60;xsd:complexType name="CompanyType"&#62;
+    &#60;xsd:sequence&#62;
+      &#60;xsd:element name="departments" type="company:DepartmentType" 
+        maxOccurs="unbounded"/&#62;
+    &#60;/xsd:sequence&#62;
+    &#60;xsd:attribute name="name" type="xsd:string"/&#62;
+    &#60;xsd:attribute name="employeeOfTheMonth" type="xsd:IDREF" 
+      sdoxml:propertyType="company:EmployeeType"/&#62; 
+  &#60;/xsd:complexType&#62;
+  &#60;xsd:complexType name="DepartmentType"&#62;
+    &#60;xsd:sequence&#62;
+      &#60;xsd:element name="employees" type="company:EmployeeType"  
+        maxOccurs="unbounded"/&#62;
+    &#60;/xsd:sequence&#62;
+    &#60;xsd:attribute name="name" type="xsd:string"/&#62;
+    &#60;xsd:attribute name="location" type="xsd:string"/&#62;
+    &#60;xsd:attribute name="number" type="xsd:int"/&#62;
+  &#60;/xsd:complexType&#62;
+  &#60;xsd:complexType name="EmployeeType"&#62;
+    &#60;xsd:attribute name="name" type="xsd:string"/&#62;
+    &#60;xsd:attribute name="SN" type="xsd:ID"/&#62;
+    &#60;xsd:attribute name="manager" type="xsd:boolean"/&#62;
+  &#60;/xsd:complexType&#62;
+&#60;/xsd:schema&#62;</PRE
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>The XML Data Access Service maps the schema to an SDO. Attributes such as "name"
+    become primitive properties, the sequence of employees becomes a many-valued
+    containment relationship, and so on. Note that the containment relationships are
+    expressed as one complex type within another, whereas non-containment references are
+    expressed in terms of ID and IDREF, with a special
+    <B
+CLASS="command"
+>sdoxml:propertyType</B
+> attribute specifying the type of the
+    non-containment reference.
+   </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sdo.sample.getset"
+>Setting and Getting Property Values</A
+></H1
+><P
+> The following examples assume
+    <B
+CLASS="command"
+>$company</B
+> is the root of a tree of data objects created from the
+    schema and instance document shown above.
+   </P
+><P
+>&#13;    <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN160322"
+></A
+><P
+><B
+>Пример 1. Access via property name</B
+></P
+><P
+>&#13;      Data object properties can be accessed using the object property
+      access syntax.  The following sets the company name to 'Acme'.
+     </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />&nbsp;&nbsp;$company</font><font color="#007700">-&gt;</font><font color="#0000BB">name </font><font color="#007700">= </font><font color="#DD0000">'Acme'</font><font color="#007700">;<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN160327"
+></A
+><P
+><B
+>Пример 2. Access via property name as array index</B
+></P
+><P
+>We can also access properties using associative array syntax. The simplest
+      form of this uses the property name as the array index. For example, the following sets
+      the company name and gets the employeeOfTheMonth.
+     </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />&nbsp;&nbsp;$company</font><font color="#007700">[</font><font color="#DD0000">'name'</font><font color="#007700">] = </font><font color="#DD0000">'UltraCorp'</font><font color="#007700">;<br />&nbsp;&nbsp;</font><font color="#0000BB">$eotm </font><font color="#007700">= </font><font color="#0000BB">$company</font><font color="#007700">[</font><font color="#DD0000">'employeeOfTheMonth'</font><font color="#007700">];<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN160332"
+></A
+><P
+><B
+>Пример 3. Data Object iteration</B
+></P
+><P
+>&#13;      We can iterate over the properties of a data object using foreach.
+      The following iterates over the properties of the employee of the month.
+     </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />&nbsp;&nbsp;$eotm </font><font color="#007700">= </font><font color="#0000BB">$company</font><font color="#007700">-&gt;</font><font color="#0000BB">employeeOfTheMonth</font><font color="#007700">;<br />&nbsp;&nbsp;foreach (</font><font color="#0000BB">$eotm </font><font color="#007700">as </font><font color="#0000BB">$name </font><font color="#007700">=&gt; </font><font color="#0000BB">$value</font><font color="#007700">) {<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo </font><font color="#DD0000">"$name: $value</font><font color="#007700">\n</font><font color="#DD0000">"</font><font color="#007700">;<br />&nbsp;&nbsp;}<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+><P
+> 
+      which will output:
+     </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="programlisting"
+>name: Jane Doe
+SN: E0003</PRE
+></TD
+></TR
+></TABLE
+><P
+> 
+      The 'manager' property is not output, because it has not been set.
+     </P
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN160340"
+></A
+><P
+><B
+>Пример 4. Access many-valued property by name</B
+></P
+><P
+> Many-valued data object properties can also be accessed using the object
+      property name syntax. The following gets the list of departments.
+     </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />&nbsp;&nbsp;$departments </font><font color="#007700">= </font><font color="#0000BB">$company</font><font color="#007700">-&gt;</font><font color="#0000BB">departments</font><font color="#007700">;<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN160345"
+></A
+><P
+><B
+>Пример 5. Many-valued element access</B
+></P
+><P
+>&#13;      We can access individual elements of many-valued properties using array
+      syntax. The following accesses the first department in the company.
+     </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />&nbsp;&nbsp;$ad_tech_dept </font><font color="#007700">= </font><font color="#0000BB">$company</font><font color="#007700">-&gt;</font><font color="#0000BB">departments</font><font color="#007700">[</font><font color="#0000BB">0</font><font color="#007700">];<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN160350"
+></A
+><P
+><B
+>Пример 6. Many-valued property iteration</B
+></P
+><P
+>&#13;      Many-valued properties can also be iterated over using
+      foreach.  The following iterates over the company's departments.
+     </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />&nbsp;&nbsp;</font><font color="#007700">foreach (</font><font color="#0000BB">$company</font><font color="#007700">-&gt;</font><font color="#0000BB">departments </font><font color="#007700">as </font><font color="#0000BB">$department</font><font color="#007700">) {<br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#FF8000">// ...<br />&nbsp;&nbsp;</font><font color="#007700">}<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+><P
+>&#13;      Each iteration will assign the next department in the
+      list to the variable <B
+CLASS="command"
+>$department</B
+>.
+     </P
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN160357"
+></A
+><P
+><B
+>Пример 7. Chained property access</B
+></P
+><P
+> We can chain property references on a single line. 
+      The following sets and gets the name of the first department.
+     </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />&nbsp;&nbsp;$company</font><font color="#007700">-&gt;</font><font color="#0000BB">departments</font><font color="#007700">[</font><font color="#0000BB">0</font><font color="#007700">]-&gt;</font><font color="#0000BB">name </font><font color="#007700">= </font><font color="#DD0000">'Emerging Technologies'</font><font color="#007700">;<br />&nbsp;&nbsp;</font><font color="#0000BB">$dept_name </font><font color="#007700">= </font><font color="#0000BB">$company</font><font color="#007700">-&gt;</font><font color="#0000BB">departments</font><font color="#007700">[</font><font color="#0000BB">0</font><font color="#007700">]-&gt;</font><font color="#0000BB">name</font><font color="#007700">;<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+><P
+>Using the associative array syntax, this is equivalent to</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />&nbsp;&nbsp;$company</font><font color="#007700">[</font><font color="#DD0000">'departments'</font><font color="#007700">][</font><font color="#0000BB">0</font><font color="#007700">][</font><font color="#DD0000">'name'</font><font color="#007700">] = </font><font color="#DD0000">'Emerging Technologies'</font><font color="#007700">;<br />&nbsp;&nbsp;</font><font color="#0000BB">$dept_name </font><font color="#007700">= </font><font color="#0000BB">$company</font><font color="#007700">[</font><font color="#DD0000">'departments'</font><font color="#007700">][</font><font color="#0000BB">0</font><font color="#007700">][</font><font color="#DD0000">'name'</font><font color="#007700">];<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+><P
+> In either case, the dept_name variable is set to 'Emerging Technologies'.
+     </P
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN160365"
+></A
+><P
+><B
+>Пример 8. XPath navigation</B
+></P
+><P
+> The associative array index can be an XPath-like expression. Valid
+      expressions are defined by an augmented sub-set of XPath.
+     </P
+><P
+>&#13;      Two forms of indexing into many-valued properties are supported.  
+      The first is the standard XPath array syntax with the indexing
+      starting at one, the second is an SDO extension to XPath with an index
+      starting at zero.  The standard syntax is:
+     </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />&nbsp;&nbsp;$jane_doe </font><font color="#007700">= </font><font color="#0000BB">$company</font><font color="#007700">[</font><font color="#DD0000">"departments[1]/employees[2]"</font><font color="#007700">];<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+><P
+>and the SDO XPath extension syntax is:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />&nbsp;&nbsp;$jane_doe </font><font color="#007700">= </font><font color="#0000BB">$company</font><font color="#007700">[</font><font color="#DD0000">"departments.0/employees.1"</font><font color="#007700">];<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+><P
+>&#13;      Both these examples get the second employee from the first department.
+     </P
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN160374"
+></A
+><P
+><B
+>Пример 9. XPath querying</B
+></P
+><P
+>&#13;      We can use XPath to query and identify parts of a data object based
+      on instance data.  The following retrieves the manager from the
+      'Advanced Technologies' department.
+     </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br /> $ad_tech_mgr </font><font color="#007700">= <br />&nbsp;&nbsp;</font><font color="#0000BB">$company</font><font color="#007700">[</font><font color="#DD0000">"departments[name='Advanced Technologies']/employees[manager=true]"</font><font color="#007700">];<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN160379"
+></A
+><P
+><B
+>Пример 10. Creating child data objects</B
+></P
+><P
+>&#13;      A data object can be a factory for its child data objects.  
+      A child data object is automatically part of the data graph.  
+      The following add a new employee to the 'Advanced Technologies' 
+      department.
+     </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />&nbsp;&nbsp;$ad_tech_dept </font><font color="#007700">= </font><font color="#0000BB">$company</font><font color="#007700">[</font><font color="#DD0000">"departments[name='Advanced Technologies']"</font><font color="#007700">];<br />&nbsp;&nbsp;</font><font color="#0000BB">$new_hire </font><font color="#007700">= </font><font color="#0000BB">$ad_tech_dept</font><font color="#007700">-&gt;</font><font color="#0000BB">createDataObject</font><font color="#007700">(</font><font color="#DD0000">'employees'</font><font color="#007700">);<br />&nbsp;&nbsp;</font><font color="#0000BB">$new_hire</font><font color="#007700">-&gt;</font><font color="#0000BB">name </font><font color="#007700">= </font><font color="#DD0000">'John Johnson'</font><font color="#007700">;<br />&nbsp;&nbsp;</font><font color="#0000BB">$new_hire</font><font color="#007700">-&gt;</font><font color="#0000BB">SN </font><font color="#007700">= </font><font color="#DD0000">'E0005'</font><font color="#007700">;<br />&nbsp;&nbsp;</font><font color="#0000BB">$new_hire</font><font color="#007700">-&gt;</font><font color="#0000BB">manager </font><font color="#007700">= </font><font color="#0000BB">false</font><font color="#007700">;<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN160384"
+></A
+><P
+><B
+>Пример 11. Unset a primitive property</B
+></P
+><P
+>&#13;      We can use the <A
+HREF="function.isset.html"
+><B
+CLASS="function"
+>isset()</B
+></A
+> and
+      <A
+HREF="function.unset.html"
+><B
+CLASS="function"
+>unset()</B
+></A
+> functions to test and remove items
+      from the data object.
+     </P
+><P
+>&#13;      The following clears the name of the first department.
+     </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />&nbsp;&nbsp;</font><font color="#007700">unset(</font><font color="#0000BB">$company</font><font color="#007700">-&gt;</font><font color="#0000BB">departments</font><font color="#007700">[</font><font color="#0000BB">0</font><font color="#007700">]-&gt;</font><font color="#0000BB">name</font><font color="#007700">);<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN160392"
+></A
+><P
+><B
+>Пример 12. Unset a data object</B
+></P
+><P
+>&#13;      unset can also be used to remove a data object from the tree.
+      The following example shows John Jones leaving the company. 
+     </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />&nbsp;&nbsp;</font><font color="#007700">unset(</font><font color="#0000BB">$company</font><font color="#007700">-&gt;</font><font color="#0000BB">departments</font><font color="#007700">[</font><font color="#0000BB">0</font><font color="#007700">]-&gt;</font><font color="#0000BB">employees</font><font color="#007700">[</font><font color="#0000BB">0</font><font color="#007700">]);<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN160397"
+></A
+><P
+><B
+>Пример 13. Unset a referenced data object</B
+></P
+><P
+>&#13;      The following removes the 'employeeOfTheMonth' from the company.
+      If this were a containment relationship then the
+      employee would be removed from the company 
+      (probably not a good idea to sack your best employee each month!), 
+      but since this is a non-containment reference, 
+      the employee being referenced will remain in the 
+      department in the company,
+      but will no longer be accessible via the employeeOfTheMonth property.
+     </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />&nbsp;&nbsp;</font><font color="#007700">if (isset(</font><font color="#0000BB">$company</font><font color="#007700">-&gt;</font><font color="#0000BB">employeeOfTheMonth</font><font color="#007700">)) {<br />&nbsp;&nbsp;&nbsp;&nbsp;unset(</font><font color="#0000BB">$company</font><font color="#007700">-&gt;</font><font color="#0000BB">employeeOfTheMonth</font><font color="#007700">);<br />&nbsp;&nbsp;}<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN160402"
+></A
+><P
+><B
+>Пример 14. Access via property index</B
+></P
+><P
+> Data object properties can be accessed via their property index using array
+      syntax. The property index is the position at which the property's definition
+      appears in the model (in this case the xml schema). We can see from the schema listing
+      above that the company name attribute is the second company property (the SDO
+      interface makes no distinction between XML attributes and elements). The following
+      sets the company name to 'Acme', with the same result as
+      <A
+HREF="ref.sdo.html#sdo.examples.propname"
+>Access via property name</A
+>
+     </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />&nbsp;&nbsp;$company</font><font color="#007700">[</font><font color="#0000BB">1</font><font color="#007700">] = </font><font color="#DD0000">'Acme'</font><font color="#007700">;<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+><P
+> Using the index directly in this way is likely to be fragile. Normally the
+      property name syntax should be preferred, but the property index may be required
+     in special cases.
+     </P
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sdo.sample.sequence"
+>Working with Sequenced Data Objects</A
+></H1
+><P
+>&#13;    Sequenced data objects are SDOs which can track property
+    ordering across the properties of a data object. They can also
+    contain unstructured text elements (text element which do not
+    belong to any of the SDO's properties).  Sequenced data objects are
+    useful for working with XML documents which allow unstructured text (i.e.
+    mixed=true) or if the elements can be interleaved (
+    &#60;A/&#62;&#60;B/&#62;&#60;A/&#62;).  This can occur for example when
+    the schema defines maxOccurs&#62;1 on a
+    element which is a complexType with a choice order indicator.
+   </P
+><P
+>&#13;    The examples below assume an SDO created with the following schema
+    and instance information, using the XML Data Access Service.
+   </P
+><P
+>&#13;    The schema below describes the format of a letter.  The letter can
+    optionally contain three properties; date, firstName, and lastName.
+    The schema states <B
+CLASS="command"
+>mixed="true"</B
+> which means that
+    unstructured text can be interspersed between the three properties.
+   </P
+><P
+>&#13;    <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="xml"
+>&#60;xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:letter="http://letterSchema"
+  targetNamespace="http://letterSchema"&#62;
+  &#60;xsd:element name="letters" type="letter:FormLetter"/&#62;
+  &#60;xsd:complexType name="FormLetter" mixed="true"&#62;
+    &#60;xsd:sequence&#62;
+      &#60;xsd:element name="date" minOccurs="0" type="xsd:string"/&#62;
+      &#60;xsd:element name="firstName" minOccurs="0" type="xsd:string"/&#62;
+      &#60;xsd:element name="lastName" minOccurs="0" type="xsd:string"/&#62;
+    &#60;/xsd:sequence&#62;
+  &#60;/xsd:complexType&#62;
+&#60;/xsd:schema&#62;</PRE
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    The following is an instance letter document.  It contains the
+    three letter properties; date, firstName and lastName, and has
+    unstructured text elements for the address and letter body.
+   </P
+><P
+>&#13;    <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="xml"
+>&#60;letter:letters xmlns:letter="http://letterSchema"&#62;
+  &#60;date&#62;March 1, 2005&#60;/date&#62;
+  Mutual of Omaha
+  Wild Kingdom, USA
+  Dear
+  &#60;firstName&#62;Casy&#60;/firstName&#62;
+  &#60;lastName&#62;Crocodile&#60;/lastName&#62;
+  Please buy more shark repellent.
+  Your premium is past due.
+&#60;/letter:letters&#62;</PRE
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    When loaded, the letter data object will have the sequence and
+    property indices shown in the table below:
+    <DIV
+CLASS="informaltable"
+><P
+></P
+><A
+NAME="AEN160420"
+></A
+><TABLE
+BORDER="1"
+CLASS="CALSTABLE"
+><COL><COL><COL><THEAD
+><TR
+><TH
+>Sequence Index</TH
+><TH
+>Property Index:Name</TH
+><TH
+>Value</TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+>0</TD
+><TD
+>0:date</TD
+><TD
+>March 1, 2005</TD
+></TR
+><TR
+><TD
+>1</TD
+><TD
+>-</TD
+><TD
+>Mutual of Omaha</TD
+></TR
+><TR
+><TD
+>2</TD
+><TD
+>-</TD
+><TD
+>Wild Kingdom, USA</TD
+></TR
+><TR
+><TD
+>3</TD
+><TD
+>-</TD
+><TD
+>Dear</TD
+></TR
+><TR
+><TD
+>4</TD
+><TD
+>1:firstName</TD
+><TD
+>Casy</TD
+></TR
+><TR
+><TD
+>5</TD
+><TD
+>2:lastName</TD
+><TD
+>Crocodile</TD
+></TR
+><TR
+><TD
+>6</TD
+><TD
+>-</TD
+><TD
+>Please buy more shark repellent.</TD
+></TR
+><TR
+><TD
+>7</TD
+><TD
+>-</TD
+><TD
+>Your premium is past due.</TD
+></TR
+></TBODY
+></TABLE
+><P
+></P
+></DIV
+>
+   </P
+><P
+>&#13;    To ensure sequence indices are maintained, sequenced data objects
+    should be manipulated through the SDO_Sequence interface.  
+    This allows the data object's instance data to be manipulated 
+    in terms of the sequence index as opposed to the property index 
+    (shown in the table above).  
+    The following examples assume the letter instance has been 
+    loaded into a data object referenced by the variable
+    <B
+CLASS="command"
+>$letter</B
+>.
+    <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN160462"
+></A
+><P
+><B
+>Пример 15. Getting the SDO_Sequence interface</B
+></P
+><P
+>&#13;      We obtain a data object's sequence using the
+      <B
+CLASS="function"
+>getSequence()</B
+>
+      method. The follow gets the
+      sequence for the letter data object.
+     </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />&nbsp;&nbsp;$letter_seq </font><font color="#007700">= </font><font color="#0000BB">$letter</font><font color="#007700">-&gt;</font><font color="#0000BB">getSequence</font><font color="#007700">();<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    All subsequent examples assume that the
+    <B
+CLASS="command"
+>$letter_seq</B
+>
+    variable has been assigned the sequence for the letter data object.
+   </P
+><P
+>&#13;    <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN160470"
+></A
+><P
+><B
+>Пример 16. Get/set sequence values</B
+></P
+><P
+>&#13;      We can get and set individual values (including unstructured text)
+      using the sequence index.  
+      The following sets the firstName to 'Snappy' and gets the last 
+      sequence values (the unstructured text, 'Your premium is past due.').
+     </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />&nbsp;&nbsp;$letter_seq</font><font color="#007700">[</font><font color="#0000BB">4</font><font color="#007700">] = </font><font color="#DD0000">'Snappy'</font><font color="#007700">;<br />&nbsp;&nbsp;</font><font color="#0000BB">$text </font><font color="#007700">= </font><font color="#0000BB">$letter_seq</font><font color="#007700">[</font><font color="#0000BB">count</font><font color="#007700">(</font><font color="#0000BB">$letter_seq</font><font color="#007700">) - </font><font color="#0000BB">1</font><font color="#007700">];<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN160475"
+></A
+><P
+><B
+>Пример 17. Sequence iteration</B
+></P
+><P
+>&#13;      We can iterate through the individual sequence values using foreach.
+      The following runs through the individual values in sequence order.
+     </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />&nbsp;&nbsp;</font><font color="#007700">foreach (</font><font color="#0000BB">$letter</font><font color="#007700">-&gt;</font><font color="#0000BB">getSequence</font><font color="#007700">() as </font><font color="#0000BB">$value</font><font color="#007700">) {<br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#FF8000">// ...<br />&nbsp;&nbsp;</font><font color="#007700">}<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN160480"
+></A
+><P
+><B
+>Пример 18. Sequence versus Data Object</B
+></P
+><P
+>&#13;      Setting values through the data object interface may result in the
+      value not being part of the sequence.  A value set through the data
+      object will only be accessible through the sequence if the property was
+      already part of the sequence. The following example sets the
+      lastName through the data object and gets it through the sequence.
+      This is fine because lastName already exists in the sequence.  If
+      it had not previously been set, then lastName would be set to
+      'Smith', but would not be part of the sequence.
+     </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />&nbsp;&nbsp;$letter</font><font color="#007700">[</font><font color="#0000BB">2</font><font color="#007700">] = </font><font color="#DD0000">'Smith'</font><font color="#007700">;<br />&nbsp;&nbsp;</font><font color="#0000BB">$last_name </font><font color="#007700">= </font><font color="#0000BB">$letter_seq</font><font color="#007700">[</font><font color="#0000BB">5</font><font color="#007700">];<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN160485"
+></A
+><P
+><B
+>Пример 19. Adding to a sequence</B
+></P
+><P
+>&#13;      We can add new values to a sequence using the
+      <A
+HREF="function.sdo-sequence-insert.html"
+><B
+CLASS="function"
+>SDO_Sequence::insert()</B
+></A
+>
+      method.  The following examples assume that the 'firstName' and 
+      'lastName' properties are initially unset.
+     </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />&nbsp;&nbsp;</font><font color="#FF8000">// Append a firstName value to the sequence<br />&nbsp;&nbsp;// value: 'Smith'<br />&nbsp;&nbsp;// sequence index: NULL (append)<br />&nbsp;&nbsp;// propertyIdentifier: 1 (firtName property index)<br />&nbsp;&nbsp;</font><font color="#0000BB">$letter_seq</font><font color="#007700">-&gt;</font><font color="#0000BB">insert</font><font color="#007700">(</font><font color="#DD0000">'Smith'</font><font color="#007700">, </font><font color="#0000BB">NULL</font><font color="#007700">, </font><font color="#0000BB">1</font><font color="#007700">);<br /><br />&nbsp;&nbsp;</font><font color="#FF8000">// Append a lastName value to the sequence<br />&nbsp;&nbsp;// value: 'Jones'<br />&nbsp;&nbsp;// sequence index: NULL (append)<br />&nbsp;&nbsp;// propertyIdentifier: 'lastName' (lastName property name)<br />&nbsp;&nbsp;</font><font color="#0000BB">$letter_seq</font><font color="#007700">-&gt;</font><font color="#0000BB">insert</font><font color="#007700">(</font><font color="#DD0000">'Jones'</font><font color="#007700">, </font><font color="#0000BB">NULL</font><font color="#007700">, </font><font color="#DD0000">'lastName'</font><font color="#007700">);<br /><br />&nbsp;&nbsp;</font><font color="#FF8000">// Append unstructured text<br />&nbsp;&nbsp;// value: 'Cancel Subscription.'<br />&nbsp;&nbsp;// sequence index: absent (append)<br />&nbsp;&nbsp;// propertyIdentifier: absent (unstructured text)<br />&nbsp;&nbsp;</font><font color="#0000BB">$letter_seq</font><font color="#007700">-&gt;</font><font color="#0000BB">insert</font><font color="#007700">(</font><font color="#DD0000">'Cancel Subscription.'</font><font color="#007700">);<br /><br />&nbsp;&nbsp;</font><font color="#FF8000">// Insert new unstructured text.&nbsp;&nbsp;Subsequent sequence values<br />&nbsp;&nbsp;// are shifted up.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;// value: 'Care of:'<br />&nbsp;&nbsp;// sequence index: 1 (insert as second element)<br />&nbsp;&nbsp;// propertyIdentifier: absent (unstructured text)<br />&nbsp;&nbsp;</font><font color="#0000BB">$letter_seq</font><font color="#007700">-&gt;</font><font color="#0000BB">insert</font><font color="#007700">(</font><font color="#DD0000">'Care of:'</font><font color="#007700">, </font><font color="#0000BB">1</font><font color="#007700">);<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN160492"
+></A
+><P
+><B
+>Пример 20. Removing from a sequence</B
+></P
+><P
+>&#13;      We can use the <A
+HREF="function.isset.html"
+><B
+CLASS="function"
+>isset()</B
+></A
+>  and
+      <A
+HREF="function.unset.html"
+><B
+CLASS="function"
+>unset()</B
+></A
+> functions to test and remove items
+      from the sequence (Note: <A
+HREF="function.unset.html"
+><B
+CLASS="function"
+>unset()</B
+></A
+> currently
+      leaves the values in the data object, but this behaviour is
+      likely to change to also remove the data from the data object).
+      A sequence behaves like a contiguous list; therefore, removing
+      items from the middle will shift entries at higher indices
+      down. The following example tests to see if the first sequence
+      element is set and unsets it if is.
+     </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />&nbsp;&nbsp;</font><font color="#007700">if (isset(</font><font color="#0000BB">$letter_seq</font><font color="#007700">[</font><font color="#0000BB">0</font><font color="#007700">])) {<br />&nbsp;&nbsp;&nbsp;&nbsp;unset(</font><font color="#0000BB">$letter_seq</font><font color="#007700">[</font><font color="#0000BB">0</font><font color="#007700">]);<br />&nbsp;&nbsp;}<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sdo.sample.reflection"
+>Reflecting on Service Data Objects</A
+></H1
+><P
+>&#13;    SDOs have a knowledge of the structure they have been created to 
+    represent (the model).  For example, a Company SDO created using 
+    <A
+HREF="ref.sdo.html#sdo.examples"
+>the Company XML schema</A
+> above
+    would only be permitted to contain DepartmentType data objects 
+    which in turn could only contain EmployeeType data objects.
+   </P
+><P
+>&#13;    Sometimes it is useful to be able to access this model information at 
+    runtime.  For example, this could be used to automatically generate 
+    a user interface for populating a data object.  The model information 
+    is accessed using reflection.  
+   </P
+><P
+>&#13;    <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN160505"
+></A
+><P
+><B
+>Пример 21. Reflecting on a Data Object</B
+></P
+><P
+>&#13;      The following example shows how we can reflect on an empty Employee 
+      data object.
+     </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />&nbsp;&nbsp;</font><font color="#FF8000">// Create the employee data object (e.g. from an XML Data Access Service)<br />&nbsp;&nbsp;</font><font color="#0000BB">$employee </font><font color="#007700">= ...;<br />&nbsp;&nbsp;</font><font color="#0000BB">$reflection </font><font color="#007700">= new </font><font color="#0000BB">SDO_Model_ReflectionDataObject</font><font color="#007700">(</font><font color="#0000BB">$employee</font><font color="#007700">);<br />&nbsp;&nbsp;print(</font><font color="#0000BB">$reflection</font><font color="#007700">);<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+><P
+>Результат выполнения данного примера:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="screen"
+>object(SDO_Model_ReflectionDataObject)#4 { - ROOT OBJECT - Type { 
+companyNS:EmployeeType[3] { commonj.sdo:String $name; 
+commonj.sdo:String $SN; commonj.sdo:Boolean $manager; } }</PRE
+></TD
+></TR
+></TABLE
+><P
+>&#13;      Using print on the SDO_Model_ReflectionDataObject writes out the data 
+      object's model.  We can see from the output how the type 
+      companyNS:EmployeeType has three properties and we can see the names 
+      of the properties along with their types.  Note, the primitive types
+      are listed as SDO types (e.g. commonj.sdo namespace, String type).  
+      It is worth noting that this is the SDO model and when these are 
+      surfaced to an application they can be treated as the PHP equivalent 
+      types (e.g. string and boolean).
+     </P
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+><P
+>&#13;    <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN160513"
+></A
+><P
+><B
+>Пример 22. Accessing the type information</B
+></P
+><P
+>&#13;      We can query the type information of a data object using reflection.  
+      The following example checks the type corresponds to a data object
+      rather than a primitive and then iterates through the properties of
+      the type, writing out the name of each property ($type and $property 
+      are SDO_Model_Type and SDO_Model_Property objects, respectively).
+     </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#FF8000">// Create the employee data object (e.g. from an XML Data Access Service)<br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$employee </font><font color="#007700">= ...;<br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$reflection </font><font color="#007700">= new </font><font color="#0000BB">SDO_Model_ReflectionDataObject</font><font color="#007700">(</font><font color="#0000BB">$employee</font><font color="#007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$type </font><font color="#007700">= </font><font color="#0000BB">$reflection</font><font color="#007700">-&gt;</font><font color="#0000BB">getType</font><font color="#007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;if (! </font><font color="#0000BB">$type</font><font color="#007700">-&gt;</font><font color="#0000BB">isDataType</font><font color="#007700">()) {<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach (</font><font color="#0000BB">$type</font><font color="#007700">-&gt;</font><font color="#0000BB">getProperties</font><font color="#007700">() as </font><font color="#0000BB">$property</font><font color="#007700">) {<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print </font><font color="#0000BB">$property</font><font color="#007700">-&gt;</font><font color="#0000BB">getName</font><font color="#007700">() . </font><font color="#DD0000">"\n"</font><font color="#007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+><P
+>Результат выполнения данного примера:</P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="screen"
+>name
+SN
+manager</PRE
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+   </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sdo.classes"
+>Предопределенные классы</A
+></H1
+><P
+>&#13;    SDO consists of three sets of interfaces.  The first set covers those
+    interfaces for use by typical SDO applications.  These are identified 
+    by the package prefix 'SDO_'.  The second set is those used to reflect 
+    on, and work with, the model of a data object.  These are identified 
+    by the package prefix 'SDO_Model_'.  Finally, the third set are those 
+    use by Data Access Service implementations and are identified by the 
+    package prefix 'SDO_DAS_'.  The majority of SDO users will not need to 
+    use or understand the 'SDO_Model_' and 'SDO_DAS_' interfaces.
+   </P
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="sdo.class.sdo-apis"
+>SDO Application Programmer Interface</A
+></H2
+><DIV
+CLASS="section"
+><H3
+CLASS="section"
+><A
+NAME="sdo.class.sdo-dataobject"
+><B
+CLASS="classname"
+>SDO_DataObject</B
+></A
+></H3
+><P
+>&#13;      The main interface through which data objects are manipulated.  In
+      addition to the methods below, SDO_DataObject extends the
+      ArrayAccess, SDO_PropertyAccess (defines <B
+CLASS="function"
+>__get()</B
+> /
+      <B
+CLASS="function"
+>__set()</B
+> methods for property access overloading),
+      Iterator, and Countable interfaces.
+     </P
+><DIV
+CLASS="section"
+><H4
+CLASS="section"
+><A
+NAME="sdo.class.SDO_DataObject.methods"
+>Методы</A
+></H4
+><P
+></P
+><UL
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-dataobject-getsequence.html"
+>getSequence</A
+>
+         - get the sequence for the data object
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-dataobject-createdataobject.html"
+>createDataObject</A
+>
+         - create a child data object
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-dataobject-clear.html"
+>clear</A
+>
+         - unset the properties of a data object
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-dataobject-getcontainer.html"
+>getContainer</A
+>
+         - get the container (also known as 'parent') of this data object
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-dataobject-gettypename.html"
+>getTypeName</A
+>
+         - get the name of the type for this data object
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-dataobject-gettypenamespaceuri.html"
+>getTypeNamespaceURI</A
+>
+         - get the namespace URI of the type for this data object
+        </P
+></LI
+></UL
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H3
+CLASS="section"
+><A
+NAME="sdo.class.sdo-sequence"
+><B
+CLASS="classname"
+>SDO_Sequence</B
+></A
+></H3
+><P
+>&#13;      The interface through which sequenced data objects can be accessed
+      to preserve ordering across a data object's properties and 
+      to allow unstructured text.  
+      SDO_Sequence preserves contiguous indices and therefore inserting 
+      or removing elements may shift other elements up or
+      down. In addition to the methods below, SDO_Sequence extends the
+      ArrayAccess, Iterator and Countable interface.
+     </P
+><DIV
+CLASS="section"
+><H4
+CLASS="section"
+><A
+NAME="sdo.class.SDO_Sequence.methods"
+>Методы</A
+></H4
+><P
+></P
+><UL
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-sequence-getproperty.html"
+>getProperty</A
+> 
+         - get the property for a given sequence index
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-sequence-move.html"
+>move</A
+>
+         - move an element from one property index to another
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-sequence-insert.html"
+>insert</A
+>
+         - insert a new value into the sequence
+        </P
+></LI
+></UL
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H3
+CLASS="section"
+><A
+NAME="sdo.class.sdo-list"
+><B
+CLASS="classname"
+>SDO_List</B
+></A
+></H3
+><P
+>&#13;      The interface through which many-valued properties are manipulated.
+      In addition to the method defined below, SDO_List extends ArrayAccess,
+      Iterator and Countable.  SDO_List preserves contiguous indices and
+      therefore inserting or removing elements may shift other elements
+      up or down.
+     </P
+><DIV
+CLASS="section"
+><H4
+CLASS="section"
+><A
+NAME="sdo.class.SDO-List.methods"
+>Методы</A
+></H4
+><P
+></P
+><UL
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-list-insert.html"
+>insert</A
+> 
+         - insert a new value into the list
+        </P
+></LI
+></UL
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H3
+CLASS="section"
+><A
+NAME="sdo.class.sdo-datafactory"
+><B
+CLASS="classname"
+>SDO_DataFactory</B
+></A
+></H3
+><P
+>&#13;      The interface through which data objects can be created.  
+      A Data Access Service is responsible for populating the model 
+      (i.e. configuring the data factory with the type and structure 
+      information for the data objects it can create.) 
+      for the factory and can then optionally return an instance of, 
+      or implement, the SDO_DataFactory interface.
+     </P
+><DIV
+CLASS="section"
+><H4
+CLASS="section"
+><A
+NAME="sdo.class.SDO-DataFactory.methods"
+>Методы</A
+></H4
+><P
+></P
+><UL
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-datafactory-create.html"
+>create</A
+> 
+         - create a new data object
+        </P
+></LI
+></UL
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H3
+CLASS="section"
+><A
+NAME="sdo.class.sdo-exception"
+><B
+CLASS="classname"
+>SDO_Exception</B
+></A
+></H3
+><P
+>&#13;      An SDO_Exception is thrown when the caller's request cannot be completed.
+      The subclasses of SDO_Exception are:
+      <P
+></P
+><UL
+><LI
+><P
+>SDO_PropertyNotSetException -
+        the property specified exists but has not been set or does not have a
+        default value
+        </P
+></LI
+><LI
+><P
+>SDO_PropertyNotFoundException -
+        the property specified is not part of the data object's type
+        </P
+></LI
+><LI
+><P
+>SDO_TypeNotFoundException -
+        the specified namespace URI or type name is unknown
+        </P
+></LI
+><LI
+><P
+>SDO_InvalidConversionException -
+        conversion between the types of the assignment is not possible 
+        </P
+></LI
+><LI
+><P
+>SDO_IndexOutOfBoundsException -
+        the numeric index into a data object, sequence or list is not in the
+        valid range 
+        </P
+></LI
+><LI
+><P
+>SDO_UnsupportedOperationException -
+        the request cannot be completed because it is not allowed,
+        for example an attempt to set a read-only property.
+        </P
+></LI
+></UL
+>
+     </P
+><DIV
+CLASS="section"
+><H4
+CLASS="section"
+><A
+NAME="sdo.class.SDO_Exception.methods"
+>Методы</A
+></H4
+><P
+>One method is added to those inherited from the built in 
+     <A
+HREF="language.exceptions.html#language.exceptions.extending"
+>Exception</A
+> class:
+     </P
+><P
+></P
+><UL
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-exception-getcause.html"
+>getCause</A
+> 
+         - get the cause of this SDO_Exception
+        </P
+></LI
+></UL
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="sdo.class.sdo-model-apis"
+>SDO Reflection Application Programmer Interfaces</A
+></H2
+><DIV
+CLASS="section"
+><H3
+CLASS="section"
+><A
+NAME="sdo.class.sdo-reflectiondataobject"
+><B
+CLASS="classname"
+>SDO_Model_ReflectionDataObject</B
+></A
+></H3
+><P
+>&#13;      The main interface used to reflect on a data object instance 
+      to obtain its model type and property information.  
+      It is designed to follow the reflection pattern introduced in PHP 5.
+     </P
+><DIV
+CLASS="section"
+><H4
+CLASS="section"
+><A
+NAME="sdo.class.SDO_Model_ReflectionDataObject.constructor"
+>Конструктор</A
+></H4
+><P
+></P
+><UL
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-model-reflectiondataobject-construct.html"
+>__construct</A
+>
+         - construct a new SDO_Model_ReflectionDataObject.
+        </P
+></LI
+></UL
+></DIV
+><DIV
+CLASS="section"
+><H4
+CLASS="section"
+><A
+NAME="sdo.class.SDO_Model_ReflectionDataObject.methods"
+>Методы</A
+></H4
+><P
+></P
+><UL
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-model-reflectiondataobject-export.html"
+>export</A
+>
+         - get a string describing the data object.
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-model-reflectiondataobject-gettype.html"
+>getType</A
+>
+         - get the SDO_Model_Type for the data object.
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-model-reflectiondataobject-getinstanceproperties.html"
+>getInstanceProperties</A
+>
+         - get the instance properties of the data object.
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-model-reflectiondataobject-getcontainmentproperty.html"
+>getContainmentProperty</A
+>
+         - get the property which defines the containment relationship to the data object.
+        </P
+></LI
+></UL
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H3
+CLASS="section"
+><A
+NAME="sdo.class.sdo-type"
+><B
+CLASS="classname"
+>SDO_Model_Type</B
+></A
+></H3
+><P
+>&#13;      The interface through which a data object's type information can be 
+      retrieved.  This interface can be used to find out the type name and 
+      namespace URI of the type, whether the type allow open content, and so 
+      on.
+     </P
+><DIV
+CLASS="section"
+><H4
+CLASS="section"
+><A
+NAME="sdo.class.SDO_Model_Type.methods"
+>Методы</A
+></H4
+><P
+></P
+><UL
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-model-type-getname.html"
+>getName</A
+>
+          - get the name of the type.
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-model-type-getnamespaceuri.html"
+>getNamespaceURI</A
+>
+         - get the namespace URI of the type.
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-model-type-isinstance.html"
+>isInstance</A
+>
+         - test for a data object being an instance of the type.
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-model-type-getproperties.html"
+>getProperties</A
+>
+         - get the properties of the type.
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-model-type-getproperty.html"
+>getProperty</A
+>
+         - get a property of the type.
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-model-type-isdatatype.html"
+>isDataType</A
+>
+         - test to see if this type is a primitive scalar type.
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-model-type-issequencedtype.html"
+>isSequencedType</A
+>
+         - test to see if this is a sequenced type.
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-model-type-isopentype.html"
+>isOpenType</A
+>
+         - test to see if this is an open type.
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-model-type-isabstracttype.html"
+>isAbstractType</A
+>
+         - test to see if this is an abstract type.
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-model-type-getbasetype.html"
+>getBaseType</A
+>
+         - get the base type of this type (if one exists).
+        </P
+></LI
+></UL
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H3
+CLASS="section"
+><A
+NAME="sdo.class.sdo-property"
+><B
+CLASS="classname"
+>SDO_Model_Property</B
+></A
+></H3
+><P
+>&#13;      The interface through which a data object's property information can 
+      be retrieved.  This interface can be used to find out the type of a 
+      property, whether a property has a default value, whether the 
+      property is contained or reference by its parent, its cardinality, 
+      and so on.
+     </P
+><DIV
+CLASS="section"
+><H4
+CLASS="section"
+><A
+NAME="sdo.class.SDO_Model_Property.methods"
+>Методы</A
+></H4
+><P
+></P
+><UL
+><LI
+><P
+>&#13;          <A
+HREF="function.sdo-model-property-getname.html"
+>getName</A
+>
+          - get the name of the property.
+         </P
+></LI
+><LI
+><P
+>&#13;          <A
+HREF="function.sdo-model-property-gettype.html"
+>getType</A
+>
+          - get the type of the property.
+         </P
+></LI
+><LI
+><P
+>&#13;          <A
+HREF="function.sdo-model-property-ismany.html"
+>isMany</A
+>
+          - test to see if the property is many-valued.
+         </P
+></LI
+><LI
+><P
+>&#13;          <A
+HREF="function.sdo-model-property-iscontainment.html"
+>isContainment</A
+>
+          - test to see if the property describes a containment relationship.
+         </P
+></LI
+><LI
+><P
+>&#13;          <A
+HREF="function.sdo-model-property-getcontainingtype.html"
+>getContainingType</A
+>
+          - get the type which contains this property.
+         </P
+></LI
+><LI
+><P
+>&#13;          <A
+HREF="function.sdo-model-property-getdefault.html"
+>getDefault</A
+>
+          - get the default value for a property.
+         </P
+></LI
+></UL
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="sdo.class.sdo-das-spis"
+>SDO Data Access Service Developer Interfaces</A
+></H2
+><DIV
+CLASS="section"
+><H3
+CLASS="section"
+><A
+NAME="sdo.class.sdodas-dataobject"
+><B
+CLASS="classname"
+>SDO_DAS_DataObject</B
+></A
+></H3
+><P
+>&#13;      The interface through which a Data Access Service can access 
+      a data object's 
+      <A
+HREF="ref.sdo.html#sdo.class.sdodas-changesummary"
+>SDO_DAS_ChangeSummary</A
+>.
+      The change summary is used by the Data Access Service to check for 
+      conflicts when applying changes back to a data source.
+     </P
+><DIV
+CLASS="section"
+><H4
+CLASS="section"
+><A
+NAME="sdo.class.SDO_DAS_DataObject.methods"
+>Методы</A
+></H4
+><P
+></P
+><UL
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-das-dataobject-getchangesummary.html"
+>getChangeSummary</A
+> 
+         - get the change summary for a data object
+        </P
+></LI
+></UL
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H3
+CLASS="section"
+><A
+NAME="sdo.class.sdodas-changesummary"
+><B
+CLASS="classname"
+>SDO_DAS_ChangeSummary</B
+></A
+></H3
+><P
+>&#13;      The interface through which the change history of a data
+      object is accessed.  The change summary holds information for any
+      modifications on a data object which occurred since logging
+      was activated.  In the case of deletions and modifications, the old
+      values are also held in the change summary.
+     </P
+><P
+>&#13;      If logging is no longer active
+      then the change summary only holds changes made up to the point when
+      logging was deactivated.  
+      Reactivating logging clears the change summary.
+      This is useful when a set of changes have been written out by a
+      DAS and the data object is to be reused.
+     </P
+><DIV
+CLASS="section"
+><H4
+CLASS="section"
+><A
+NAME="sdo.class.SDO_DAS_ChangeSummary.methods"
+>Методы</A
+></H4
+><P
+></P
+><UL
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-das-changesummary-beginlogging.html"
+>beginLogging</A
+> 
+         - begin logging changes made to a data object
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-das-changesummary-endlogging.html"
+>endLogging</A
+> 
+         - end logging changes made to a data object
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-das-changesummary-islogging.html"
+>isLogging</A
+> 
+         - test to see if change logging is on
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-das-changesummary-getchangeddataobjects.html"
+>getChangedDataObjects</A
+> 
+         - get a list of the data objects which have been changed
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-das-changesummary-getchangetype.html"
+>getChangeType</A
+> 
+         - get the type of change which has been made to a data object
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-das-changesummary-getoldvalues.html"
+>getOldValues</A
+> 
+         - get a list of old values for a data object
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-das-changesummary-getoldcontainer.html"
+>getOldContainer</A
+> 
+         - get the old container data object for a deleted data object
+        </P
+></LI
+></UL
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H3
+CLASS="section"
+><A
+NAME="sdo.class.sdodas-setting"
+><B
+CLASS="classname"
+>SDO_DAS_Setting</B
+></A
+></H3
+><P
+>&#13;      The interface through which the old value for a property is
+      accessed. A list of settings is returned by the change summary method
+      <A
+HREF="function.sdo-das-changesummary-getoldvalues.html"
+>&#13;       <B
+CLASS="function"
+>getOldValues()</B
+>
+      </A
+>.
+     </P
+><DIV
+CLASS="section"
+><H4
+CLASS="section"
+><A
+NAME="sdo.class.SDO_DAS_Setting.methods"
+>Методы</A
+></H4
+><P
+></P
+><UL
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-das-setting-getpropertyindex.html"
+>getPropertyIndex</A
+> 
+         - get the property index for the changed property
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-das-setting-getpropertyname.html"
+>getPropertyName</A
+> 
+         - get the property name for the changed property
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-das-setting-getvalue.html"
+>getValue</A
+> 
+         - get the old value for the changed property
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-das-setting-getlistindex.html"
+>getListIndex</A
+> 
+         - get the list index for the old value if it was part of a 
+         many-valued property
+        </P
+></LI
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-das-setting-isset.html"
+>isSet</A
+>
+         - test to see if the property was set prior to being modified
+         </P
+></LI
+></UL
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H3
+CLASS="section"
+><A
+NAME="sdo.class.sdodas-datafactory"
+><B
+CLASS="classname"
+>SDO_DAS_DataFactory</B
+></A
+></H3
+><P
+>&#13;      The interface for constructing the model for an SDO_DataObject.
+      The SDO_DAS_DataFactory is an abstract class providing a static
+      method which returns a concrete data factory implementation.
+      The implementation is used by Data Access Services to create an 
+      SDO model from their model.
+      For example, a Relational Data Access Service might create and populate
+      an SDO_DAS_DataFactory model based on a schema for a relational
+      database.
+     </P
+><DIV
+CLASS="section"
+><H4
+CLASS="section"
+><A
+NAME="sdo.class.SDO_DAS_DataFactory.methods"
+>Методы</A
+></H4
+><P
+></P
+><UL
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-das-datafactory-getdatafactory.html"
+>getDataFactory</A
+> 
+         - static methods for getting a concrete data factory instance
+        </P
+></LI
+></UL
+><P
+></P
+><UL
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-das-datafactory-addtype.html"
+>addType</A
+> 
+         - add a new type to the SDO model
+        </P
+></LI
+></UL
+><P
+></P
+><UL
+><LI
+><P
+>&#13;         <A
+HREF="function.sdo-das-datafactory-addpropertytotype.html"
+>addPropertyToType</A
+> 
+         - add a new property to a type definition in the SDO model
+        </P
+></LI
+></UL
+></DIV
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="sdo.constants"
+>Предопределенные константы</A
+></H1
+><P
+>&#13;Перечисленные ниже константы определены данным расширением и могут быть
+доступны только в том случае, если PHP был собран с
+поддержкой этого расширения или же в том случае, если
+данное расширение подгружается во время выполнения.
+</P
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+><TT
+CLASS="constant"
+><B
+>SDO_DAS_ChangeSummary::NONE=0</B
+></TT
+>
+      (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Represents a change type of 'none'.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SDO_DAS_ChangeSummary::MODIFICATION=1</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Represents a change type of 'modification'.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SDO_DAS_ChangeSummary::ADDITION=2</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Represents a change type of 'addition'.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SDO_DAS_ChangeSummary::DELETION=3</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Represents a change type of 'deletion'.
+    </P
+></DD
+></DL
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Содержание</B
+></DT
+><DT
+><A
+HREF="function.sdo-das-changesummary-beginlogging.html"
+>SDO_DAS_ChangeSummary::beginLogging</A
+>&nbsp;--&nbsp;
+   Begin change logging
+  </DT
+><DT
+><A
+HREF="function.sdo-das-changesummary-endlogging.html"
+>SDO_DAS_ChangeSummary::endLogging</A
+>&nbsp;--&nbsp;
+   End change logging
+  </DT
+><DT
+><A
+HREF="function.sdo-das-changesummary-getchangetype.html"
+>SDO_DAS_ChangeSummary::getChangeType</A
+>&nbsp;--&nbsp;
+   Get the type of change made to an SDO_DataObject
+  </DT
+><DT
+><A
+HREF="function.sdo-das-changesummary-getchangeddataobjects.html"
+>SDO_DAS_ChangeSummary::getChangedDataObjects</A
+>&nbsp;--&nbsp;
+   Get the changed data objects from a change summary
+  </DT
+><DT
+><A
+HREF="function.sdo-das-changesummary-getoldcontainer.html"
+>SDO_DAS_ChangeSummary::getOldContainer</A
+>&nbsp;--&nbsp;
+   Get the old container for a deleted SDO_DataObject
+  </DT
+><DT
+><A
+HREF="function.sdo-das-changesummary-getoldvalues.html"
+>SDO_DAS_ChangeSummary::getOldValues</A
+>&nbsp;--&nbsp;
+   Get the old values for a given changed SDO_DataObject
+  </DT
+><DT
+><A
+HREF="function.sdo-das-changesummary-islogging.html"
+>SDO_DAS_ChangeSummary::isLogging</A
+>&nbsp;--&nbsp;
+   Test to see whether change logging is switched on
+  </DT
+><DT
+><A
+HREF="function.sdo-das-datafactory-addpropertytotype.html"
+>SDO_DAS_DataFactory::addPropertyToType</A
+>&nbsp;--&nbsp;
+   Adds a property to a type
+  </DT
+><DT
+><A
+HREF="function.sdo-das-datafactory-addtype.html"
+>SDO_DAS_DataFactory::addType</A
+>&nbsp;--&nbsp;
+   Add a new type to a model
+  </DT
+><DT
+><A
+HREF="function.sdo-das-datafactory-getdatafactory.html"
+>SDO_DAS_DataFactory::getDataFactory</A
+>&nbsp;--&nbsp;
+   Get a data factory instance
+  </DT
+><DT
+><A
+HREF="function.sdo-das-dataobject-getchangesummary.html"
+>SDO_DAS_DataObject::getChangeSummary</A
+>&nbsp;--&nbsp;
+   Get a data object's change summary
+  </DT
+><DT
+><A
+HREF="function.sdo-das-setting-getlistindex.html"
+>SDO_DAS_Setting::getListIndex</A
+>&nbsp;--&nbsp;
+   Get the list index for a changed many-valued property
+  </DT
+><DT
+><A
+HREF="function.sdo-das-setting-getpropertyindex.html"
+>SDO_DAS_Setting::getPropertyIndex</A
+>&nbsp;--&nbsp;
+   Get the property index for a changed property
+  </DT
+><DT
+><A
+HREF="function.sdo-das-setting-getpropertyname.html"
+>SDO_DAS_Setting::getPropertyName</A
+>&nbsp;--&nbsp;
+   Get the property name for a changed property
+  </DT
+><DT
+><A
+HREF="function.sdo-das-setting-getvalue.html"
+>SDO_DAS_Setting::getValue</A
+>&nbsp;--&nbsp;
+   Get the old value for the changed property
+  </DT
+><DT
+><A
+HREF="function.sdo-das-setting-isset.html"
+>SDO_DAS_Setting::isSet</A
+>&nbsp;--&nbsp;
+   Test whether a property was set prior to being modified
+  </DT
+><DT
+><A
+HREF="function.sdo-datafactory-create.html"
+>SDO_DataFactory::create</A
+>&nbsp;--&nbsp;
+   Create an SDO_DataObject
+  </DT
+><DT
+><A
+HREF="function.sdo-dataobject-clear.html"
+>SDO_DataObject::clear</A
+>&nbsp;--&nbsp;
+   Clear an SDO_DataObject's properties
+  </DT
+><DT
+><A
+HREF="function.sdo-dataobject-createdataobject.html"
+>SDO_DataObject::createDataObject</A
+>&nbsp;--&nbsp;
+   Create a child SDO_DataObject
+  </DT
+><DT
+><A
+HREF="function.sdo-dataobject-getcontainer.html"
+>SDO_DataObject::getContainer</A
+>&nbsp;--&nbsp;
+   Get a data object's container
+  </DT
+><DT
+><A
+HREF="function.sdo-dataobject-getsequence.html"
+>SDO_DataObject::getSequence</A
+>&nbsp;--&nbsp;
+   Get the sequence for a data object
+  </DT
+><DT
+><A
+HREF="function.sdo-dataobject-gettypename.html"
+>SDO_DataObject::getTypeName</A
+>&nbsp;--&nbsp;
+   Return the name of the type for a data object.
+  </DT
+><DT
+><A
+HREF="function.sdo-dataobject-gettypenamespaceuri.html"
+>SDO_DataObject::getTypeNamespaceURI</A
+>&nbsp;--&nbsp;
+   Return the namespace URI of the type for a data object.
+  </DT
+><DT
+><A
+HREF="function.sdo-exception-getcause.html"
+>SDO_Exception::getCause</A
+>&nbsp;--&nbsp;
+   Get the cause of the exception.
+  </DT
+><DT
+><A
+HREF="function.sdo-list-insert.html"
+>SDO_List::insert</A
+>&nbsp;--&nbsp;
+   Insert into a list
+  </DT
+><DT
+><A
+HREF="function.sdo-model-property-getcontainingtype.html"
+>SDO_Model_Property::getContainingType</A
+>&nbsp;--&nbsp;
+   Get the SDO_Model_Type which contains this property
+  </DT
+><DT
+><A
+HREF="function.sdo-model-property-getdefault.html"
+>SDO_Model_Property::getDefault</A
+>&nbsp;--&nbsp;
+   Get the default value for the property
+  </DT
+><DT
+><A
+HREF="function.sdo-model-property-getname.html"
+>SDO_Model_Property::getName</A
+>&nbsp;--&nbsp;
+   Get the name of the SDO_Model_Property
+  </DT
+><DT
+><A
+HREF="function.sdo-model-property-gettype.html"
+>SDO_Model_Property::getType</A
+>&nbsp;--&nbsp;
+   Get the SDO_Model_Type of the property
+  </DT
+><DT
+><A
+HREF="function.sdo-model-property-iscontainment.html"
+>SDO_Model_Property::isContainment</A
+>&nbsp;--&nbsp;
+   Test to see if the property defines a containment relationship
+  </DT
+><DT
+><A
+HREF="function.sdo-model-property-ismany.html"
+>SDO_Model_Property::isMany</A
+>&nbsp;--&nbsp;
+   Test to see if the property is many-valued
+  </DT
+><DT
+><A
+HREF="function.sdo-model-reflectiondataobject-construct.html"
+>SDO_Model_ReflectionDataObject::__construct</A
+>&nbsp;--&nbsp;
+   Construct an SDO_Model_ReflectionDataObject
+  </DT
+><DT
+><A
+HREF="function.sdo-model-reflectiondataobject-export.html"
+>SDO_Model_ReflectionDataObject::export</A
+>&nbsp;--&nbsp;
+   Get a string describing the SDO_DataObject.
+  </DT
+><DT
+><A
+HREF="function.sdo-model-reflectiondataobject-getcontainmentproperty.html"
+>SDO_Model_ReflectionDataObject::getContainmentProperty</A
+>&nbsp;--&nbsp;
+   Get the property which defines the containment relationship to the data object
+  </DT
+><DT
+><A
+HREF="function.sdo-model-reflectiondataobject-getinstanceproperties.html"
+>SDO_Model_ReflectionDataObject::getInstanceProperties</A
+>&nbsp;--&nbsp;
+   Get the instance properties of the SDO_DataObject
+  </DT
+><DT
+><A
+HREF="function.sdo-model-reflectiondataobject-gettype.html"
+>SDO_Model_ReflectionDataObject::getType</A
+>&nbsp;--&nbsp;
+   Get the SDO_Model_Type for the SDO_DataObject
+  </DT
+><DT
+><A
+HREF="function.sdo-model-type-getbasetype.html"
+>SDO_Model_Type::getBaseType</A
+>&nbsp;--&nbsp;
+   Get the base type for this type
+  </DT
+><DT
+><A
+HREF="function.sdo-model-type-getname.html"
+>SDO_Model_Type::getName</A
+>&nbsp;--&nbsp;
+   Get the name of the type
+  </DT
+><DT
+><A
+HREF="function.sdo-model-type-getnamespaceuri.html"
+>SDO_Model_Type::getNamespaceURI</A
+>&nbsp;--&nbsp;
+   Get the namespace URI of the type
+  </DT
+><DT
+><A
+HREF="function.sdo-model-type-getproperties.html"
+>SDO_Model_Type::getProperties</A
+>&nbsp;--&nbsp;
+   Get the SDO_Model_Property objects defined for the type
+  </DT
+><DT
+><A
+HREF="function.sdo-model-type-getproperty.html"
+>SDO_Model_Type::getProperty</A
+>&nbsp;--&nbsp;
+   Get an SDO_Model_Property of the type
+  </DT
+><DT
+><A
+HREF="function.sdo-model-type-isabstracttype.html"
+>SDO_Model_Type::isAbstractType</A
+>&nbsp;--&nbsp;
+   Test to see if this SDO_Model_Type is an abstract data type
+  </DT
+><DT
+><A
+HREF="function.sdo-model-type-isdatatype.html"
+>SDO_Model_Type::isDataType</A
+>&nbsp;--&nbsp;
+   Test to see if this SDO_Model_Type is a primitive data type
+  </DT
+><DT
+><A
+HREF="function.sdo-model-type-isinstance.html"
+>SDO_Model_Type::isInstance</A
+>&nbsp;--&nbsp;
+   Test for an SDO_DataObject being an instance of this SDO_Model_Type
+  </DT
+><DT
+><A
+HREF="function.sdo-model-type-isopentype.html"
+>SDO_Model_Type::isOpenType</A
+>&nbsp;--&nbsp;
+   Test to see if this type is an open type
+  </DT
+><DT
+><A
+HREF="function.sdo-model-type-issequencedtype.html"
+>SDO_Model_Type::isSequencedType</A
+>&nbsp;--&nbsp;
+   Test to see if this is a sequenced type
+  </DT
+><DT
+><A
+HREF="function.sdo-sequence-getproperty.html"
+>SDO_Sequence::getProperty</A
+>&nbsp;--&nbsp;
+  Return the property for the specified sequence index.
+  </DT
+><DT
+><A
+HREF="function.sdo-sequence-insert.html"
+>SDO_Sequence::insert</A
+>&nbsp;--&nbsp;
+   Insert into a sequence
+  </DT
+><DT
+><A
+HREF="function.sdo-sequence-move.html"
+>SDO_Sequence::move</A
+>&nbsp;--&nbsp;
+   Move an item to another sequence position
+  </DT
+></DL
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="function.satellite-object-to-string.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Начало</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="function.sdo-das-changesummary-beginlogging.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>satellite_object_to_string</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="funcref.html"
+ACCESSKEY="U"
+>Уровень выше</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>SDO_DAS_ChangeSummary::beginLogging</TD
+></TR
+></TABLE
+></DIV
+></div></center></div></td>
+			<td><div style="display:none; width:200px;" id="o3" name="o3"><script charset="windows-1251" type="text/javascript" src="http://www.ozon.ru/PartnerTwinerNew.aspx?revident=bea9126b-c8e1-4bf5-b6d8-9a057f8feac6" ></script></div><script>o = document.getElementById('o3'); if(o) { var s = o.innerHTML; s = s.replace(/F6F6F6/gi,"FFFFFF"); o.innerHTML = s.replace(/padding-top: 10px; padding-bottom: 10px;/,"display:none;"); o.style.display = 'block'; } </script><br><div style="margin: 10px;"><script type="text/javascript"><!--
+google_ad_client = "pub-4093271809023514";
+/* 120x600, создано 01.11.2008 */
+google_ad_slot = "0438855731";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div></td>
+    		</tr>
+  		</table>
+    </td>
+  </tr>
+  <tr valign='bottom' height='1%'>
+  <td>      <table width=100% cellspacing=0 cellpadding=5 border=0 bgcolor=#9999CC>
+        <tr valign=center>
+          <td class='phpcopyright' width='45%' align='left'>&nbsp;&nbsp;Engine <a  href="http://www.mnogosearch.org/">MnoGoSearch</a></td>
+          <td class='phpcopyright' width='10%' align='center'>2007-2010 &copy <a  href="mailto:webmaster@php.ru">PHP.RU</a></td>
+          <td class='phpcopyright' width='45%' align='right' >Powered by <a target="_blank" href="http://odware.ru">ODware</a> <a HREF="http://440hz.ru">440Hz</a> &nbsp;&nbsp;</td>
+        </tr>
+      </table>
+
+    <div style="text-align: right; padding: 5px">
+		<!--LiveInternet counter-->
+		<script type="text/javascript">document.write('<a href="http://www.liveinternet.ru/click" target=_blank><img src="http://counter.yadro.ru/hit?t53.6;r' + escape(document.referrer) + ((typeof(screen)=='undefined')?'':';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ';u' + escape(document.URL) +';i' + escape('Жж'+document.title.substring(0,80)) + ';' + Math.random() + '" border=0 width=88 height=31 alt="" title="LiveInternet: показано число просмотров и посетителей за 24 часа"><\/a>');
+		</script>
+		<!--/LiveInternet-->
+		<!-- SpyLOG -->
+		<script src="http://tools.spylog.ru/counter2.2.js" type="text/javascript" id="spylog_code" counter="830950" ></script>
+		<noscript><a href="http://u8309.50.spylog.com/cnt?cid=830950&f=3&p=0" target="_blank"><img src="http://u8309.50.spylog.com/cnt?cid=830950&p=0&f=4" alt='SpyLOG' border='0' width=88 height=31 ></a>
+		</noscript>
+		<!--/ SpyLOG -->
+	</div>
+</td>
+  </tr>
+</table>
+
+<script>
+<!--
+document.SEARCH.QS.focus();
+// --></script>
+
+<!-- 
+	как же вы все это читаете?
+	440hz 
+-->
+
+</body>
+</html>

@@ -1,0 +1,1125 @@
+<!-- 
+
+     HTML dropped by Zend Guard Compressor 4.2
+
+     php.ru team: mz, az, yuri, vb, cyxapuk, 440hz, administrator
+     2004-2007 (c) expi-web.com 
+     2007-2008 (c) odware.com 
+     0101-1010 (с) 440hz
+
+     2b|~2b=?
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EHOT тут всё пожрал ! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="alternate" type="application/rss+xml" title="php.ru/forum - последние сообщения" href="http://www.php.ru/forum/rss.php">
+<link rel="SHORTCUT ICON" href="http://www.php.ru/favicon.ico" />
+<META name="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<meta http-equiv="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<META name="keywords" content="php, php5, apache, mysql, session">
+<meta http-equiv="keywords" content="php, php5, apache, mysql, session">
+<title>php.ru - Installation on Unix systems</title>
+<LINK REL="stylesheet" TYPE="text/css" HREF="http://www.php.ru/index.css">
+<script language="JavaScript" src="http://www.php.ru/ajax/ajax.js"></script>
+</head>
+<body>
+
+<table height='100%' width='100%' cellspacing='0' cellpadding='0'>
+  <tr height='99%' valign='top'>
+    <td align='center'>
+		
+		<table style='margin-top: 4px' width=100% cellspacing=0 cellpadding=3>
+   		<tr>
+     		<td>PHP - <a href="http://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BA%D1%80%D0%BE%D0%BD%D0%B8%D0%BC" target=_blank class=lnk>рекурсивный акроним</a> словосочетания &laquo;<a href="/manual/introduction.html" class=lnk>PHP: Hypertext Preprocessor</a>&raquo;</td>
+     	</tr>
+   		</table>
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/subsys_ajax.js"></script>
+		<!--
+
+		commet by 440hz
+		20.10.2007
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/pu_search.js"></script>
+
+		-->
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/cz.js?a=b"></script>
+
+		<table style='margin-top: 5px' width=100% bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0>
+   	 	<form name=SEARCH method=GET action="http://www.php.ru/search/?SID=xwy2pg0p0s5zysqi" onsubmit="return puSubmit();">
+	  	<input type=hidden name=PAGE value=1>
+  		<tr>
+    		<td width='1' valign='middle'> 
+    		   <a href='/'><img src="http://www.php.ru/;-)/logo.gif" width=133 height=93 alt="php" border=0 hspace=10 vspace=0></a>
+			 </td>
+		    <td width='100%' valign='middle'>
+		       <!--
+			   
+				commet by 440hz
+				20.10.2007
+
+			   <div id='pu_search' class='pu_search'></div>
+		       <div id='pu_search_description' class='pu_search_decription'></div>
+			   
+			   -->
+        	 <input type=text style='width:99%; margin: 10px' maxlength='200' name='QS' class='in' id='query' autocomplete='off' value="" />
+    		</td>
+		  </tr>
+   		<tr bgcolor='#666699' valign='middle'>
+			<td style='border-top: 1px solid #333366;'><br /></td>
+    		<td style='border-top: 1px solid #333366;'><div style="padding: 4px 4px 4px 10px; height: 24px; color: #CCCCFF;" id="stat">Хто там?<script>doLoadCZ('stat','stat');</script></div></td>
+  		</tr>
+		</form>
+		</table>
+		<table id="menu" cellspaciong=0 cellpadding=3>
+<tr>
+<td><a href="/" class=current>Главная</a></td>
+<td><a href="/download/" class=current>Скачать</a></td>
+<td><a href="/doc/" class=current>Документация</a></td>
+<td><a href="/forum/" class=current>Форум</a></td>
+<td width=100% align=right><a href="/phpinfo.html" class=current>phpinfo()</a></td>
+</tr>
+</table>
+
+		
+<!--  AdRiver code START. Type:728x90 Site: php.ru PZ: 0 BN: 1 -->
+<script language="javascript" type="text/javascript"><!--
+var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+var ar_Tail='unknown'; if (document.referrer) ar_Tail = escape(document.referrer);
+document.write(
+'<iframe src="http://ad.adriver.ru/cgi-bin/erle.cgi?'
++ 'sid=148680&bn=1&target=blank&bt=36&pz=0&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail
++ '" frameborder=0 vspace=0 hspace=0 width=728 height=90 marginwidth=0'
++ ' marginheight=0 scrolling=no></iframe>');
+//--></script>
+<noscript>
+<a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" target=_blank>
+<img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" alt="-AdRiver-" border=0 width=728 height=90></a>
+</noscript>
+<!--  AdRiver code END  -->
+
+
+  		<table width='100%' cellspacing='0' cellpadding='0'>
+    		<tr valign='top'>
+      		<td width=100%><div style="margin: 10px 10px 10px 50px;"><center><div style="width: 800px; text-align: left"><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Руководство по PHP</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="install.general.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="install.unix.apache2.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="chapter"
+><H1
+><A
+NAME="install.unix"
+>Глава 4. Installation on Unix systems</A
+></H1
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Содержание</B
+></DT
+><DT
+><A
+HREF="install.unix.html#install.unix.apache"
+>Apache 1.3.x on Unix systems</A
+></DT
+><DT
+><A
+HREF="install.unix.apache2.html"
+>Apache 2.0 on Unix systems</A
+></DT
+><DT
+><A
+HREF="install.unix.caudium.html"
+>Caudium</A
+></DT
+><DT
+><A
+HREF="install.unix.fhttpd.html"
+>fhttpd related notes</A
+></DT
+><DT
+><A
+HREF="install.unix.sun.html"
+>Sun, iPlanet and Netscape servers on Sun Solaris</A
+></DT
+><DT
+><A
+HREF="install.unix.commandline.html"
+>CGI and commandline setups</A
+></DT
+><DT
+><A
+HREF="install.unix.hpux.html"
+>HP-UX specific installation notes</A
+></DT
+><DT
+><A
+HREF="install.unix.openbsd.html"
+>OpenBSD installation notes</A
+></DT
+><DT
+><A
+HREF="install.unix.solaris.html"
+>Solaris specific installation tips</A
+></DT
+><DT
+><A
+HREF="install.unix.debian.html"
+>Debian GNU/Linux installation notes</A
+></DT
+></DL
+></DIV
+><P
+>&#13;    This section will guide you through the general configuration and
+    installation of PHP on Unix systems. Be sure to investigate any
+    sections specific to your platform or web server before you begin
+    the process.
+   </P
+><P
+>&#13;    As our manual outlines in the <A
+HREF="install.general.html"
+>General
+    Installation Considerations</A
+> section, we are mainly dealing with
+    web centric setups of PHP in this section, although we will cover
+    setting up PHP for command line usage as well.
+   </P
+><P
+> 
+    There are several ways to install PHP for the Unix platform, either
+    with a compile and configure process, or through various
+    pre-packaged methods. This documentation is mainly focused around
+    the process of compiling and configuring PHP. Many Unix like systems
+    have some sort of package installation system. This can assist in
+    setting up a standard configuration, but if you need to have a
+    different set of features (such as a secure server, or a different
+    database driver), you may need to build PHP and/or your webserver.
+    If you are unfamiliar with building and compiling your own software,
+    it is worth checking to see whether somebody has already built a
+    packaged version of PHP with the features you need.
+   </P
+><P
+>&#13;    Prerequisite knowledge and software for compiling:
+    <P
+></P
+><UL
+><LI
+><P
+>&#13;       Basic Unix skills (being able to operate "make" and a C
+       compiler)
+      </P
+></LI
+><LI
+><P
+>&#13;       An ANSI C compiler
+      </P
+></LI
+><LI
+><P
+>&#13;       flex: Version 2.5.4
+      </P
+></LI
+><LI
+><P
+>&#13;       bison: Version 1.28 (preferred), 1.35, or 1.75
+      </P
+></LI
+><LI
+><P
+>&#13;       A web server
+      </P
+></LI
+><LI
+><P
+>&#13;       Any module specific components (such as gd, pdf libs, etc.)
+      </P
+></LI
+></UL
+>
+   </P
+><P
+>&#13;    The initial PHP setup and configuration process is controlled by the
+    use of the commandline options of the <B
+CLASS="command"
+>configure</B
+>
+    script. You could get a list of all available options along with short
+    explanations running <B
+CLASS="command"
+>./configure --help</B
+>.
+    Our manual documents the different options separately. You will
+    find the <A
+HREF="configure.html"
+>core options in the appendix</A
+>,
+    while the different extension specific options are descibed on the
+    reference pages.
+   </P
+><P
+>&#13;    When PHP is configured, you are ready to build the module and/or
+    executables. The command <B
+CLASS="command"
+>make</B
+> should
+    take care of this. If it fails and you can't figure out why, see
+    the <A
+HREF="install.problems.html"
+>Problems section</A
+>.
+   </P
+><DIV
+CLASS="sect1"
+><H1
+CLASS="sect1"
+><A
+NAME="install.unix.apache"
+>Apache 1.3.x on Unix systems</A
+></H1
+><P
+>&#13;     This section contains notes and hints specific to Apache installs
+     of PHP on Unix platforms. We also have <A
+HREF="install.unix.apache2.html"
+>instructions and notes for Apache 2
+     on a separate page</A
+>.
+    </P
+><P
+>&#13;     You can select arguments to add to the
+     <B
+CLASS="command"
+>configure</B
+> on line 10 below from the <A
+HREF="configure.html"
+>list of core configure options</A
+> and
+     from extension specific options described at the respective
+     places in the manual. The version numbers have been omitted here, to
+     ensure the instructions are not incorrect. You will need to replace
+     the 'xxx' here with the correct values from your files.
+    </P
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="install.unix.apache.example"
+></A
+><P
+><B
+>Пример 4-1. 
+      Installation Instructions (Apache Shared Module Version) for PHP
+     </B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="screen"
+>1.  gunzip apache_xxx.tar.gz
+2.  tar -xvf apache_xxx.tar
+3.  gunzip php-xxx.tar.gz
+4.  tar -xvf php-xxx.tar
+5.  cd apache_xxx
+6.  ./configure --prefix=/www --enable-module=so
+7.  make
+8.  make install
+9.  cd ../php-xxx
+
+10. Now, configure your PHP.  This is where you customize your PHP
+    with various options, like which extensions will be enabled.  Do a
+    ./configure --help for a list of available options.  In our example
+    we'll do a simple configure with Apache 1 and MySQL support.  Your
+    path to apxs may differ from our example.
+
+      ./configure --with-mysql --with-apxs=/www/bin/apxs
+
+11. make
+12. make install
+
+    If you decide to change your configure options after installation,
+    you only need to repeat the last three steps. You only need to 
+    restart apache for the new module to take effect. A recompile of
+    Apache is not needed.
+  
+    Note that unless told otherwise, 'make install' will also install PEAR,
+    various PHP tools such as phpize, install the PHP CLI, and more.
+
+13. Setup your php.ini file:
+
+      cp php.ini-dist /usr/local/lib/php.ini
+
+    You may edit your .ini file to set PHP options.  If you prefer your
+    php.ini in another location, use --with-config-file-path=/some/path in
+    step 10. 
+    
+    If you instead choose php.ini-recommended, be certain to read the list
+    of changes within, as they affect how PHP behaves.
+
+14. Edit your httpd.conf to load the PHP module.  The path on the right hand
+    side of the LoadModule statement must point to the path of the PHP
+    module on your system.  The make install from above may have already
+    added this for you, but be sure to check.
+        
+    For PHP 4:
+            
+      LoadModule php4_module libexec/libphp4.so
+
+    For PHP 5:
+                      
+      LoadModule php5_module libexec/libphp5.so
+      
+15. And in the AddModule section of httpd.conf, somewhere under the
+    ClearModuleList, add this:
+    
+    For PHP 4:
+    
+      AddModule mod_php4.c
+      
+    For PHP 5:
+    
+      AddModule mod_php5.c
+
+16. Tell Apache to parse certain extensions as PHP.  For example,
+    let's have Apache parse the .php extension as PHP.  You could
+    have any extension(s) parse as PHP by simply adding more, with
+    each separated by a space.  We'll add .phtml to demonstrate.
+
+      AddType application/x-httpd-php .php .phtml
+
+    It's also common to setup the .phps extension to show highlighted PHP
+    source, this can be done with:
+    
+      AddType application/x-httpd-php-source .phps
+
+17. Use your normal procedure for starting the Apache server. (You must
+    stop and restart the server, not just cause the server to reload by
+    using a HUP or USR1 signal.)</PRE
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+><P
+>&#13;     Alternatively, to install PHP as a static object:
+    </P
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="install.unix.apache.example-static"
+></A
+><P
+><B
+>Пример 4-2. 
+      Installation Instructions (Static Module Installation for Apache) for PHP
+     </B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="screen"
+>1.  gunzip -c apache_1.3.x.tar.gz | tar xf -
+2.  cd apache_1.3.x
+3.  ./configure
+4.  cd ..
+
+5.  gunzip -c php-5.x.y.tar.gz | tar xf -
+6.  cd php-5.x.y
+7.  ./configure --with-mysql --with-apache=../apache_1.3.x
+8.  make
+9.  make install
+
+10. cd ../apache_1.3.x
+
+11. ./configure --prefix=/www --activate-module=src/modules/php5/libphp5.a
+    (The above line is correct! Yes, we know libphp5.a does not exist at this
+    stage. It isn't supposed to. It will be created.)
+
+12. make
+    (you should now have an httpd binary which you can copy to your Apache bin dir if
+    it is your first install then you need to "make install" as well)
+
+13. cd ../php-5.x.y
+14. cp php.ini-dist /usr/local/lib/php.ini
+
+15. You can edit /usr/local/lib/php.ini file to set PHP options.
+    Edit your httpd.conf or srm.conf file and add:
+    AddType application/x-httpd-php .php</PRE
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+>Замечание: </B
+>
+       Replace <VAR
+CLASS="literal"
+>php-5</VAR
+> by <VAR
+CLASS="literal"
+>php-4</VAR
+> and
+       <VAR
+CLASS="literal"
+>php5</VAR
+> by <VAR
+CLASS="literal"
+>php4</VAR
+> in PHP 4.
+      </P
+></BLOCKQUOTE
+></DIV
+><P
+>&#13;      Depending on your Apache install and Unix variant, there are many
+      possible ways to stop and restart the server. Below are some typical
+      lines used in restarting the server, for different apache/unix
+      installations. You should replace <VAR
+CLASS="literal"
+>/path/to/</VAR
+> with
+      the path to these applications on your systems.
+     </P
+><P
+>&#13;      <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN398"
+></A
+><P
+><B
+>Пример 4-3. Example commands for restarting Apache</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="shell"
+>1. Several Linux and SysV variants:
+/etc/rc.d/init.d/httpd restart
+
+2. Using apachectl scripts:
+/path/to/apachectl stop
+/path/to/apachectl start
+
+3. httpdctl and httpsdctl (Using OpenSSL), similar to apachectl:
+/path/to/httpsdctl stop
+/path/to/httpsdctl start
+
+4. Using mod_ssl, or another SSL server, you may want to manually
+stop and start:
+/path/to/apachectl stop
+/path/to/apachectl startssl</PRE
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+     </P
+><P
+>&#13;      The locations of the apachectl and http(s)dctl binaries often
+      vary. If your system has <VAR
+CLASS="literal"
+>locate</VAR
+> or
+      <VAR
+CLASS="literal"
+>whereis</VAR
+> or <VAR
+CLASS="literal"
+>which</VAR
+> commands,
+      these can assist you in finding your server control programs.
+     </P
+><P
+>&#13;      Different examples of compiling PHP for apache are as follows:
+      <DIV
+CLASS="informalexample"
+><P
+></P
+><A
+NAME="AEN406"
+></A
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="shell"
+>./configure --with-apxs --with-pgsql</PRE
+></TD
+></TR
+></TABLE
+><P
+></P
+></DIV
+>
+     </P
+><P
+>&#13;      This will create a <TT
+CLASS="filename"
+>libphp5.so</TT
+> (or
+      <TT
+CLASS="filename"
+>libphp4.so</TT
+> in PHP 4) shared library that is loaded
+      into Apache using a LoadModule line in Apache's <TT
+CLASS="filename"
+>httpd.conf</TT
+> file. The
+      PostgreSQL support is embedded into this library.
+     </P
+><P
+>&#13;      <DIV
+CLASS="informalexample"
+><P
+></P
+><A
+NAME="AEN413"
+></A
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="shell"
+>./configure --with-apxs --with-pgsql=shared</PRE
+></TD
+></TR
+></TABLE
+><P
+></P
+></DIV
+>
+     </P
+><P
+>&#13;      This will create a <TT
+CLASS="filename"
+>libphp4.so</TT
+> shared
+      library for Apache, but it will also create a
+      <TT
+CLASS="filename"
+>pgsql.so</TT
+> shared library that is loaded into
+      PHP either by using the extension directive in
+      <TT
+CLASS="filename"
+>php.ini</TT
+> file or by loading it explicitly in
+      a script using the <A
+HREF="function.dl.html"
+><B
+CLASS="function"
+>dl()</B
+></A
+> function.
+     </P
+><P
+>&#13;      <DIV
+CLASS="informalexample"
+><P
+></P
+><A
+NAME="AEN421"
+></A
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="shell"
+>./configure --with-apache=/path/to/apache_source --with-pgsql</PRE
+></TD
+></TR
+></TABLE
+><P
+></P
+></DIV
+>
+     </P
+><P
+>&#13;      This will create a <TT
+CLASS="filename"
+>libmodphp5.a</TT
+> library, a
+      <TT
+CLASS="filename"
+>mod_php5.c</TT
+> and some accompanying files and
+      copy this into the <VAR
+CLASS="literal"
+>src/modules/php5</VAR
+> directory
+      in the Apache source tree. Then you compile Apache using
+      <VAR
+CLASS="literal"
+>--activate-module=src/modules/php5/libphp5.a</VAR
+>
+      and the Apache build system will create
+      <TT
+CLASS="filename"
+>libphp5.a</TT
+> and link it statically into the
+      <TT
+CLASS="filename"
+>httpd</TT
+> binary (replace <VAR
+CLASS="literal"
+>php5</VAR
+> by
+      <VAR
+CLASS="literal"
+>php4</VAR
+> in PHP 4). The PostgreSQL support is
+      included directly into this <TT
+CLASS="filename"
+>httpd</TT
+> binary,
+      so the final result here is a single <TT
+CLASS="filename"
+>httpd</TT
+>
+      binary that includes all of Apache and all of PHP.
+     </P
+><P
+>&#13;      <DIV
+CLASS="informalexample"
+><P
+></P
+><A
+NAME="AEN435"
+></A
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="shell"
+>./configure --with-apache=/path/to/apache_source --with-pgsql=shared</PRE
+></TD
+></TR
+></TABLE
+><P
+></P
+></DIV
+>
+     </P
+><P
+>&#13;      Same as before, except instead of including PostgreSQL support
+      directly into the final <TT
+CLASS="filename"
+>httpd</TT
+> you will get
+      a <TT
+CLASS="filename"
+>pgsql.so</TT
+> shared library that you can load
+      into PHP from either the <TT
+CLASS="filename"
+>php.ini</TT
+> file or
+      directly using <A
+HREF="function.dl.html"
+><B
+CLASS="function"
+>dl()</B
+></A
+>.
+     </P
+><P
+>&#13;      When choosing to build PHP in different ways, you should consider
+      the advantages and drawbacks of each method. Building as a shared
+      object will mean that you can compile apache separately, and don't
+      have to recompile everything as you add to, or change, PHP.
+      Building PHP into apache (static method) means that PHP will
+      load and run faster. For more information, see the Apache
+      <A
+HREF="http://httpd.apache.org/docs/1.3/dso.html"
+TARGET="_top"
+>webpage on DSO support</A
+>.
+     </P
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+>Замечание: </B
+>
+      Apache's default <TT
+CLASS="filename"
+>httpd.conf</TT
+> currently ships with a section that looks
+      like this:
+      <DIV
+CLASS="informalexample"
+><P
+></P
+><A
+NAME="AEN447"
+></A
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="apache-conf"
+>User nobody
+Group "#-1"</PRE
+></TD
+></TR
+></TABLE
+><P
+></P
+></DIV
+>
+      Unless you change that to "Group nogroup" or something like that ("Group daemon" is
+      also very common) PHP will not be able to open files.
+     </P
+></BLOCKQUOTE
+></DIV
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+>Замечание: </B
+>
+      Make sure you specify the installed version of apxs when using
+      <VAR
+CLASS="option"
+>--with-apxs=/path/to/apxs</VAR
+>.
+      You must NOT use the apxs version that is in the apache sources but the one
+      that is actually installed on your system.
+     </P
+></BLOCKQUOTE
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="install.general.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Начало</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="install.unix.apache2.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>General Installation Considerations</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="install.html"
+ACCESSKEY="U"
+>Уровень выше</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Apache 2.0 on Unix systems</TD
+></TR
+></TABLE
+></DIV
+></div></center></div></td>
+			<td><div style="display:none; width:200px;" id="o3" name="o3"><script charset="windows-1251" type="text/javascript" src="http://www.ozon.ru/PartnerTwinerNew.aspx?revident=bea9126b-c8e1-4bf5-b6d8-9a057f8feac6" ></script></div><script>o = document.getElementById('o3'); if(o) { var s = o.innerHTML; s = s.replace(/F6F6F6/gi,"FFFFFF"); o.innerHTML = s.replace(/padding-top: 10px; padding-bottom: 10px;/,"display:none;"); o.style.display = 'block'; } </script><br><div style="margin: 10px;"><script type="text/javascript"><!--
+google_ad_client = "pub-4093271809023514";
+/* 120x600, создано 01.11.2008 */
+google_ad_slot = "0438855731";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div></td>
+    		</tr>
+  		</table>
+    </td>
+  </tr>
+  <tr valign='bottom' height='1%'>
+  <td>      <table width=100% cellspacing=0 cellpadding=5 border=0 bgcolor=#9999CC>
+        <tr valign=center>
+          <td class='phpcopyright' width='45%' align='left'>&nbsp;&nbsp;Engine <a  href="http://www.mnogosearch.org/">MnoGoSearch</a></td>
+          <td class='phpcopyright' width='10%' align='center'>2007-2010 &copy <a  href="mailto:webmaster@php.ru">PHP.RU</a></td>
+          <td class='phpcopyright' width='45%' align='right' >Powered by <a target="_blank" href="http://odware.ru">ODware</a> <a HREF="http://440hz.ru">440Hz</a> &nbsp;&nbsp;</td>
+        </tr>
+      </table>
+
+    <div style="text-align: right; padding: 5px">
+		<!--LiveInternet counter-->
+		<script type="text/javascript">document.write('<a href="http://www.liveinternet.ru/click" target=_blank><img src="http://counter.yadro.ru/hit?t53.6;r' + escape(document.referrer) + ((typeof(screen)=='undefined')?'':';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ';u' + escape(document.URL) +';i' + escape('Жж'+document.title.substring(0,80)) + ';' + Math.random() + '" border=0 width=88 height=31 alt="" title="LiveInternet: показано число просмотров и посетителей за 24 часа"><\/a>');
+		</script>
+		<!--/LiveInternet-->
+		<!-- SpyLOG -->
+		<script src="http://tools.spylog.ru/counter2.2.js" type="text/javascript" id="spylog_code" counter="830950" ></script>
+		<noscript><a href="http://u8309.50.spylog.com/cnt?cid=830950&f=3&p=0" target="_blank"><img src="http://u8309.50.spylog.com/cnt?cid=830950&p=0&f=4" alt='SpyLOG' border='0' width=88 height=31 ></a>
+		</noscript>
+		<!--/ SpyLOG -->
+	</div>
+</td>
+  </tr>
+</table>
+
+<script>
+<!--
+document.SEARCH.QS.focus();
+// --></script>
+
+<!-- 
+	как же вы все это читаете?
+	440hz 
+-->
+
+</body>
+</html>

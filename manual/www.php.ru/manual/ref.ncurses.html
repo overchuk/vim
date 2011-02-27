@@ -1,0 +1,2284 @@
+<!-- 
+
+     HTML dropped by Zend Guard Compressor 4.2
+
+     php.ru team: mz, az, yuri, vb, cyxapuk, 440hz, administrator
+     2004-2007 (c) expi-web.com 
+     2007-2008 (c) odware.com 
+     0101-1010 (с) 440hz
+
+     2b|~2b=?
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EHOT тут всё пожрал ! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="alternate" type="application/rss+xml" title="php.ru/forum - последние сообщения" href="http://www.php.ru/forum/rss.php">
+<link rel="SHORTCUT ICON" href="http://www.php.ru/favicon.ico" />
+<META name="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<meta http-equiv="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<META name="keywords" content="php, php5, apache, mysql, session">
+<meta http-equiv="keywords" content="php, php5, apache, mysql, session">
+<title>php.ru - Ncurses Terminal Screen Control Functions</title>
+<LINK REL="stylesheet" TYPE="text/css" HREF="http://www.php.ru/index.css">
+<script language="JavaScript" src="http://www.php.ru/ajax/ajax.js"></script>
+</head>
+<body>
+
+<table height='100%' width='100%' cellspacing='0' cellpadding='0'>
+  <tr height='99%' valign='top'>
+    <td align='center'>
+		
+		<table style='margin-top: 4px' width=100% cellspacing=0 cellpadding=3>
+   		<tr>
+     		<td>PHP - <a href="http://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BA%D1%80%D0%BE%D0%BD%D0%B8%D0%BC" target=_blank class=lnk>рекурсивный акроним</a> словосочетания &laquo;<a href="/manual/introduction.html" class=lnk>PHP: Hypertext Preprocessor</a>&raquo;</td>
+     	</tr>
+   		</table>
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/subsys_ajax.js"></script>
+		<!--
+
+		commet by 440hz
+		20.10.2007
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/pu_search.js"></script>
+
+		-->
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/cz.js?a=b"></script>
+
+		<table style='margin-top: 5px' width=100% bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0>
+   	 	<form name=SEARCH method=GET action="http://www.php.ru/search/?SID=ywz20l98snm6zl80" onsubmit="return puSubmit();">
+	  	<input type=hidden name=PAGE value=1>
+  		<tr>
+    		<td width='1' valign='middle'> 
+    		   <a href='/'><img src="http://www.php.ru/;-)/logo.gif" width=133 height=93 alt="php" border=0 hspace=10 vspace=0></a>
+			 </td>
+		    <td width='100%' valign='middle'>
+		       <!--
+			   
+				commet by 440hz
+				20.10.2007
+
+			   <div id='pu_search' class='pu_search'></div>
+		       <div id='pu_search_description' class='pu_search_decription'></div>
+			   
+			   -->
+        	 <input type=text style='width:99%; margin: 10px' maxlength='200' name='QS' class='in' id='query' autocomplete='off' value="" />
+    		</td>
+		  </tr>
+   		<tr bgcolor='#666699' valign='middle'>
+			<td style='border-top: 1px solid #333366;'><br /></td>
+    		<td style='border-top: 1px solid #333366;'><div style="padding: 4px 4px 4px 10px; height: 24px; color: #CCCCFF;" id="stat">Хто там?<script>doLoadCZ('stat','stat');</script></div></td>
+  		</tr>
+		</form>
+		</table>
+		<table id="menu" cellspaciong=0 cellpadding=3>
+<tr>
+<td><a href="/" class=current>Главная</a></td>
+<td><a href="/download/" class=current>Скачать</a></td>
+<td><a href="/doc/" class=current>Документация</a></td>
+<td><a href="/forum/" class=current>Форум</a></td>
+<td width=100% align=right><a href="/phpinfo.html" class=current>phpinfo()</a></td>
+</tr>
+</table>
+
+		
+<!--  AdRiver code START. Type:728x90 Site: php.ru PZ: 0 BN: 1 -->
+<script language="javascript" type="text/javascript"><!--
+var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+var ar_Tail='unknown'; if (document.referrer) ar_Tail = escape(document.referrer);
+document.write(
+'<iframe src="http://ad.adriver.ru/cgi-bin/erle.cgi?'
++ 'sid=148680&bn=1&target=blank&bt=36&pz=0&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail
++ '" frameborder=0 vspace=0 hspace=0 width=728 height=90 marginwidth=0'
++ ' marginheight=0 scrolling=no></iframe>');
+//--></script>
+<noscript>
+<a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" target=_blank>
+<img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" alt="-AdRiver-" border=0 width=728 height=90></a>
+</noscript>
+<!--  AdRiver code END  -->
+
+
+  		<table width='100%' cellspacing='0' cellpadding='0'>
+    		<tr valign='top'>
+      		<td width=100%><div style="margin: 10px 10px 10px 50px;"><center><div style="width: 800px; text-align: left"><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Руководство по PHP</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="function.mysqli-warning-count.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="function.ncurses-addch.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="reference"
+><A
+NAME="ref.ncurses"
+></A
+><DIV
+CLASS="TITLEPAGE"
+><H1
+CLASS="title"
+>XCVII. Ncurses Terminal Screen Control Functions</H1
+><DIV
+CLASS="PARTINTRO"
+><A
+NAME="AEN108123"
+></A
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="ncurses.intro"
+>Введение</A
+></H1
+><P
+>&#13;     ncurses (new curses) is a free software emulation of curses in
+     System V Rel 4.0 (and above). It uses terminfo format, supports pads,
+     colors, multiple highlights, form characters and function key mapping.
+     Because of the interactive nature of this library, it will be of little
+     use for writing Web applications, but may be useful when writing scripts meant
+     <A
+HREF="features.commandline.html"
+>using PHP from the command line</A
+>.
+    </P
+><DIV
+CLASS="warning"
+><P
+></P
+><TABLE
+CLASS="warning"
+BORDER="1"
+WIDTH="100%"
+><TR
+><TD
+ALIGN="CENTER"
+><B
+>Внимание</B
+></TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+><P
+>Это расширение является
+<SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>ЭКСПЕРИМЕНТАЛЬНЫМ</I
+></SPAN
+>. Поведение этого расширения,
+включая имена его функций и относящуюся к нему документацию, может
+измениться в последующих версиях PHP без уведомления. Используйте
+это расширение на свой страх и риск.</P
+></TD
+></TR
+></TABLE
+></DIV
+><P
+>&#13;     Ncurses is available for the following platforms:
+     <P
+></P
+><UL
+><LI
+><P
+>AIX</P
+></LI
+><LI
+><P
+>BeOS</P
+></LI
+><LI
+><P
+>Cygwin</P
+></LI
+><LI
+><P
+>Digital Unix (aka OSF1)</P
+></LI
+><LI
+><P
+>FreeBSD</P
+></LI
+><LI
+><P
+>GNU/Linux</P
+></LI
+><LI
+><P
+>HPUX</P
+></LI
+><LI
+><P
+>IRIX</P
+></LI
+><LI
+><P
+>OS/2</P
+></LI
+><LI
+><P
+>SCO OpenServer</P
+></LI
+><LI
+><P
+>Solaris</P
+></LI
+><LI
+><P
+>SunOS</P
+></LI
+></UL
+>
+    </P
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+>Замечание: </B
+>
+      This extension has been moved to the <A
+HREF="http://pecl.php.net"
+TARGET="_top"
+>PECL</A
+> repository and is no longer bundled with 
+PHP as of PHP 6.0.0
+     </P
+></BLOCKQUOTE
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="ncurses.requirements"
+>Требования</A
+></H1
+><P
+>&#13;     You need the ncurses libraries and headerfiles. Download the
+     latest version from the <A
+HREF="ftp://ftp.gnu.org/pub/gnu/ncurses/"
+TARGET="_top"
+>ftp://ftp.gnu.org/pub/gnu/ncurses/</A
+>
+     or from an other GNU-Mirror.
+    </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="ncurses.installation"
+>Установка</A
+></H1
+><P
+>&#13;  To get these functions to work, you have to compile the CGI or CLI
+  version of PHP with <VAR
+CLASS="option"
+>--with-ncurses[=DIR]</VAR
+>.
+ </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="ncurses.configuration"
+>Настройка во время выполнения</A
+></H1
+><P
+>&#13;Поведение этих функций зависит от установок в <TT
+CLASS="filename"
+>php.ini</TT
+>.
+</P
+><P
+>&#13; <DIV
+CLASS="table"
+><A
+NAME="AEN108173"
+></A
+><P
+><B
+>Таблица 1. Ncurses configuration options</B
+></P
+><TABLE
+BORDER="1"
+CLASS="CALSTABLE"
+><COL><COL><COL><COL><THEAD
+><TR
+><TH
+>Name</TH
+><TH
+>Default</TH
+><TH
+>Changeable</TH
+><TH
+>Changelog</TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+>ncurses.value</TD
+><TD
+>"42"</TD
+><TD
+>PHP_INI_ALL</TD
+><TD
+>&nbsp;</TD
+></TR
+><TR
+><TD
+>ncurses.string</TD
+><TD
+>"foobar"</TD
+><TD
+>PHP_INI_ALL</TD
+><TD
+>&nbsp;</TD
+></TR
+></TBODY
+></TABLE
+></DIV
+>
+ Для подробного описания констант
+PHP_INI_*, обратитесь к документации функции <A
+HREF="function.ini-set.html"
+><B
+CLASS="function"
+>ini_set()</B
+></A
+>.
+ </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="ncurses.resources"
+>Типы ресурсов</A
+></H1
+><P
+>Данное расширение не определяет никакие типы ресурсов.</P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="ncurses.constants"
+>Предопределенные константы</A
+></H1
+><P
+>&#13;Перечисленные ниже константы определены данным расширением и могут быть
+доступны только в том случае, если PHP был собран с
+поддержкой этого расширения или же в том случае, если
+данное расширение подгружается во время выполнения.
+</P
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="ncurses.errconsts"
+>Error codes</A
+></H2
+><P
+>&#13;    On error ncurses functions return NCURSES_ERR.
+   </P
+></DIV
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="ncurses.colorconsts"
+>Colors</A
+></H2
+><DIV
+CLASS="table"
+><A
+NAME="AEN108205"
+></A
+><P
+><B
+>Таблица 2. ncurses color constants</B
+></P
+><TABLE
+BORDER="1"
+CLASS="CALSTABLE"
+><COL><COL><THEAD
+><TR
+><TH
+>constant</TH
+><TH
+>meaning</TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+>NCURSES_COLOR_BLACK</TD
+><TD
+>no color (black)</TD
+></TR
+><TR
+><TD
+>NCURSES_COLOR_WHITE</TD
+><TD
+>white</TD
+></TR
+><TR
+><TD
+>NCURSES_COLOR_RED</TD
+><TD
+>red - supported when terminal is in color mode</TD
+></TR
+><TR
+><TD
+>NCURSES_COLOR_GREEN</TD
+><TD
+>green - supported when terminal is in color mode</TD
+></TR
+><TR
+><TD
+>NCURSES_COLOR_YELLOW</TD
+><TD
+>yellow - supported when terminal is in color mode</TD
+></TR
+><TR
+><TD
+>NCURSES_COLOR_BLUE</TD
+><TD
+>blue - supported when terminal is in color mode</TD
+></TR
+><TR
+><TD
+>NCURSES_COLOR_CYAN</TD
+><TD
+>cyan - supported when terminal is in color mode</TD
+></TR
+><TR
+><TD
+>NCURSES_COLOR_MAGENTA</TD
+><TD
+>magenta - supported when terminal is in color mode</TD
+></TR
+></TBODY
+></TABLE
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="ncurses.keyconsts"
+>Keys</A
+></H2
+><DIV
+CLASS="table"
+><A
+NAME="AEN108239"
+></A
+><P
+><B
+>Таблица 3. ncurses key constants</B
+></P
+><TABLE
+BORDER="1"
+CLASS="CALSTABLE"
+><COL><COL><THEAD
+><TR
+><TH
+>constant</TH
+><TH
+>meaning</TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+>NCURSES_KEY_F0 - NCURSES_KEY_F64</TD
+><TD
+>function keys F1 - F64</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_DOWN</TD
+><TD
+>down arrow</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_UP</TD
+><TD
+>up arrow</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_LEFT</TD
+><TD
+>left arrow</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_RIGHT</TD
+><TD
+>right arrow</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_HOME</TD
+><TD
+>home key (upward+left arrow)</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_BACKSPACE</TD
+><TD
+>backspace</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_DL</TD
+><TD
+>delete line</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_IL</TD
+><TD
+>insert line</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_DC</TD
+><TD
+>delete character</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_IC</TD
+><TD
+>insert char or enter insert mode</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_EIC</TD
+><TD
+>exit insert char mode</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_CLEAR</TD
+><TD
+>clear screen</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_EOS</TD
+><TD
+>clear to end of screen</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_EOL</TD
+><TD
+>clear to end of line</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_SF</TD
+><TD
+>scroll one line forward</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_SR</TD
+><TD
+>scroll one line backward</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_NPAGE</TD
+><TD
+>next page</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_PPAGE</TD
+><TD
+>previous page</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_STAB</TD
+><TD
+>set tab</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_CTAB</TD
+><TD
+>clear tab</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_CATAB</TD
+><TD
+>clear all tabs</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_SRESET</TD
+><TD
+>soft (partial) reset</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_RESET</TD
+><TD
+>reset or hard reset</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_PRINT</TD
+><TD
+>print</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_LL</TD
+><TD
+>lower left</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_A1</TD
+><TD
+>upper left of keypad</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_A3</TD
+><TD
+>upper right of keypad</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_B2</TD
+><TD
+>center of keypad</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_C1</TD
+><TD
+>lower left of keypad</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_C3</TD
+><TD
+>lower right of keypad</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_BTAB</TD
+><TD
+>back tab</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_BEG</TD
+><TD
+>beginning</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_CANCEL</TD
+><TD
+>cancel</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_CLOSE</TD
+><TD
+>close</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_COMMAND</TD
+><TD
+>cmd (command)</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_COPY</TD
+><TD
+>copy</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_CREATE</TD
+><TD
+>create</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_END</TD
+><TD
+>end</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_EXIT</TD
+><TD
+>exit</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_FIND</TD
+><TD
+>find</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_HELP</TD
+><TD
+>help</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_MARK</TD
+><TD
+>mark</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_MESSAGE</TD
+><TD
+>message</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_MOVE</TD
+><TD
+>move</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_NEXT</TD
+><TD
+>next</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_OPEN</TD
+><TD
+>open</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_OPTIONS</TD
+><TD
+>options</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_PREVIOUS</TD
+><TD
+>previous</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_REDO</TD
+><TD
+>redo</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_REFERENCE</TD
+><TD
+>ref (reference)</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_REFRESH</TD
+><TD
+>refresh</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_REPLACE</TD
+><TD
+>replace</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_RESTART</TD
+><TD
+>restart</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_RESUME</TD
+><TD
+>resume</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_SAVE</TD
+><TD
+>save</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_SBEG</TD
+><TD
+>shiftet beg (beginning)</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_SCANCEL</TD
+><TD
+>shifted cancel</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_SCOMMAND</TD
+><TD
+>shifted command</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_SCOPY</TD
+><TD
+>shifted copy</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_SCREATE</TD
+><TD
+>shifted create</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_SDC</TD
+><TD
+>shifted delete char</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_SDL</TD
+><TD
+>shifted delete line</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_SELECT</TD
+><TD
+>select</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_SEND</TD
+><TD
+>shifted end</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_SEOL</TD
+><TD
+>shifted end of line</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_SEXIT</TD
+><TD
+>shifted exit</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_SFIND</TD
+><TD
+>shifted find</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_SHELP</TD
+><TD
+>shifted help</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_SHOME</TD
+><TD
+>shifted home</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_SIC</TD
+><TD
+>shifted input</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_SLEFT</TD
+><TD
+>shifted left arrow</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_SMESSAGE</TD
+><TD
+>shifted message</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_SMOVE</TD
+><TD
+>shifted move</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_SNEXT</TD
+><TD
+>shifted next</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_SOPTIONS</TD
+><TD
+>shifted options</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_SPREVIOUS</TD
+><TD
+>shifted previous</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_SPRINT</TD
+><TD
+>shifted print</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_SREDO</TD
+><TD
+>shifted redo</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_SREPLACE</TD
+><TD
+>shifted replace</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_SRIGHT</TD
+><TD
+>shifted right arrow</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_SRSUME</TD
+><TD
+>shifted resume</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_SSAVE</TD
+><TD
+>shifted save</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_SSUSPEND</TD
+><TD
+>shifted suspend</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_UNDO</TD
+><TD
+>undo</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_MOUSE</TD
+><TD
+>mouse event has occurred</TD
+></TR
+><TR
+><TD
+>NCURSES_KEY_MAX</TD
+><TD
+>maximum key value</TD
+></TR
+></TBODY
+></TABLE
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="AEN108508"
+>Mouse</A
+></H2
+><DIV
+CLASS="table"
+><A
+NAME="AEN108510"
+></A
+><P
+><B
+>Таблица 4. mouse constants</B
+></P
+><TABLE
+BORDER="1"
+CLASS="CALSTABLE"
+><COL><COL><THEAD
+><TR
+><TH
+>Constant</TH
+><TH
+>meaning</TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+>NCURSES_BUTTON1_RELEASED - NCURSES_BUTTON4_RELEASED</TD
+><TD
+>button (1-4) released</TD
+></TR
+><TR
+><TD
+>NCURSES_BUTTON1_PRESSED - NCURSES_BUTTON4_PRESSED</TD
+><TD
+>button (1-4) pressed</TD
+></TR
+><TR
+><TD
+>NCURSES_BUTTON1_CLICKED - NCURSES_BUTTON4_CLICKED</TD
+><TD
+>button (1-4) clicked</TD
+></TR
+><TR
+><TD
+>NCURSES_BUTTON1_DOUBLE_CLICKED -
+         NCURSES_BUTTON4_DOUBLE_CLICKED</TD
+><TD
+>button (1-4) double clicked</TD
+></TR
+><TR
+><TD
+>NCURSES_BUTTON1_TRIPLE_CLICKED -
+         NCURSES_BUTTON4_TRIPLE_CLICKED</TD
+><TD
+>button (1-4) triple clicked</TD
+></TR
+><TR
+><TD
+>NCURSES_BUTTON_CTRL</TD
+><TD
+>ctrl pressed during click</TD
+></TR
+><TR
+><TD
+>NCURSES_BUTTON_SHIFT</TD
+><TD
+>shift pressed during click</TD
+></TR
+><TR
+><TD
+>NCURSES_BUTTON_ALT</TD
+><TD
+>alt pressed during click</TD
+></TR
+><TR
+><TD
+>NCURSES_ALL_MOUSE_EVENTS</TD
+><TD
+>report all mouse events</TD
+></TR
+><TR
+><TD
+>NCURSES_REPORT_MOUSE_POSITION</TD
+><TD
+>report mouse position</TD
+></TR
+></TBODY
+></TABLE
+></DIV
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Содержание</B
+></DT
+><DT
+><A
+HREF="function.ncurses-addch.html"
+>ncurses_addch</A
+>&nbsp;--&nbsp;Add character at current position and advance cursor </DT
+><DT
+><A
+HREF="function.ncurses-addchnstr.html"
+>ncurses_addchnstr</A
+>&nbsp;--&nbsp;Add attributed string with specified length at current position </DT
+><DT
+><A
+HREF="function.ncurses-addchstr.html"
+>ncurses_addchstr</A
+>&nbsp;--&nbsp;Add attributed string at current position </DT
+><DT
+><A
+HREF="function.ncurses-addnstr.html"
+>ncurses_addnstr</A
+>&nbsp;--&nbsp;Add string with specified length at current position </DT
+><DT
+><A
+HREF="function.ncurses-addstr.html"
+>ncurses_addstr</A
+>&nbsp;--&nbsp;Output text at current position </DT
+><DT
+><A
+HREF="function.ncurses-assume-default-colors.html"
+>ncurses_assume_default_colors</A
+>&nbsp;--&nbsp;Define default colors for color 0 </DT
+><DT
+><A
+HREF="function.ncurses-attroff.html"
+>ncurses_attroff</A
+>&nbsp;--&nbsp;Turn off the given attributes</DT
+><DT
+><A
+HREF="function.ncurses-attron.html"
+>ncurses_attron</A
+>&nbsp;--&nbsp;Turn on the given attributes</DT
+><DT
+><A
+HREF="function.ncurses-attrset.html"
+>ncurses_attrset</A
+>&nbsp;--&nbsp;Set given attributes</DT
+><DT
+><A
+HREF="function.ncurses-baudrate.html"
+>ncurses_baudrate</A
+>&nbsp;--&nbsp;Returns baudrate of terminal </DT
+><DT
+><A
+HREF="function.ncurses-beep.html"
+>ncurses_beep</A
+>&nbsp;--&nbsp;Let the terminal beep </DT
+><DT
+><A
+HREF="function.ncurses-bkgd.html"
+>ncurses_bkgd</A
+>&nbsp;--&nbsp;Set background property for terminal screen </DT
+><DT
+><A
+HREF="function.ncurses-bkgdset.html"
+>ncurses_bkgdset</A
+>&nbsp;--&nbsp;Control screen background </DT
+><DT
+><A
+HREF="function.ncurses-border.html"
+>ncurses_border</A
+>&nbsp;--&nbsp;Draw a border around the screen using attributed characters</DT
+><DT
+><A
+HREF="function.ncurses-bottom-panel.html"
+>ncurses_bottom_panel</A
+>&nbsp;--&nbsp;
+     Moves a visible panel to the bottom of the stack
+    </DT
+><DT
+><A
+HREF="function.ncurses-can-change-color.html"
+>ncurses_can_change_color</A
+>&nbsp;--&nbsp;Check if we can change terminals colors </DT
+><DT
+><A
+HREF="function.ncurses-cbreak.html"
+>ncurses_cbreak</A
+>&nbsp;--&nbsp;Switch of input buffering </DT
+><DT
+><A
+HREF="function.ncurses-clear.html"
+>ncurses_clear</A
+>&nbsp;--&nbsp;Clear screen </DT
+><DT
+><A
+HREF="function.ncurses-clrtobot.html"
+>ncurses_clrtobot</A
+>&nbsp;--&nbsp;Clear screen from current position to bottom </DT
+><DT
+><A
+HREF="function.ncurses-clrtoeol.html"
+>ncurses_clrtoeol</A
+>&nbsp;--&nbsp;Clear screen from current position to end of line </DT
+><DT
+><A
+HREF="function.ncurses-color-content.html"
+>ncurses_color_content</A
+>&nbsp;--&nbsp;
+     Gets the RGB value for color
+    </DT
+><DT
+><A
+HREF="function.ncurses-color-set.html"
+>ncurses_color_set</A
+>&nbsp;--&nbsp;Set fore- and background color </DT
+><DT
+><A
+HREF="function.ncurses-curs-set.html"
+>ncurses_curs_set</A
+>&nbsp;--&nbsp;Set cursor state </DT
+><DT
+><A
+HREF="function.ncurses-def-prog-mode.html"
+>ncurses_def_prog_mode</A
+>&nbsp;--&nbsp;Saves terminals (program) mode</DT
+><DT
+><A
+HREF="function.ncurses-def-shell-mode.html"
+>ncurses_def_shell_mode</A
+>&nbsp;--&nbsp;Saves terminals (shell) mode</DT
+><DT
+><A
+HREF="function.ncurses-define-key.html"
+>ncurses_define_key</A
+>&nbsp;--&nbsp;Define a keycode </DT
+><DT
+><A
+HREF="function.ncurses-del-panel.html"
+>ncurses_del_panel</A
+>&nbsp;--&nbsp;
+     Remove panel from the stack and delete it (but not the associated window)
+    </DT
+><DT
+><A
+HREF="function.ncurses-delay-output.html"
+>ncurses_delay_output</A
+>&nbsp;--&nbsp;Delay output on terminal using padding characters </DT
+><DT
+><A
+HREF="function.ncurses-delch.html"
+>ncurses_delch</A
+>&nbsp;--&nbsp;Delete character at current position, move rest of line left </DT
+><DT
+><A
+HREF="function.ncurses-deleteln.html"
+>ncurses_deleteln</A
+>&nbsp;--&nbsp;Delete line at current position, move rest of screen up </DT
+><DT
+><A
+HREF="function.ncurses-delwin.html"
+>ncurses_delwin</A
+>&nbsp;--&nbsp;Delete a ncurses window </DT
+><DT
+><A
+HREF="function.ncurses-doupdate.html"
+>ncurses_doupdate</A
+>&nbsp;--&nbsp;Write all prepared refreshes to terminal </DT
+><DT
+><A
+HREF="function.ncurses-echo.html"
+>ncurses_echo</A
+>&nbsp;--&nbsp;Activate keyboard input echo </DT
+><DT
+><A
+HREF="function.ncurses-echochar.html"
+>ncurses_echochar</A
+>&nbsp;--&nbsp;Single character output including refresh </DT
+><DT
+><A
+HREF="function.ncurses-end.html"
+>ncurses_end</A
+>&nbsp;--&nbsp;Stop using ncurses, clean up the screen </DT
+><DT
+><A
+HREF="function.ncurses-erase.html"
+>ncurses_erase</A
+>&nbsp;--&nbsp;Erase terminal screen </DT
+><DT
+><A
+HREF="function.ncurses-erasechar.html"
+>ncurses_erasechar</A
+>&nbsp;--&nbsp;Returns current erase character </DT
+><DT
+><A
+HREF="function.ncurses-filter.html"
+>ncurses_filter</A
+>&nbsp;--&nbsp;Set LINES for iniscr() and newterm() to 1</DT
+><DT
+><A
+HREF="function.ncurses-flash.html"
+>ncurses_flash</A
+>&nbsp;--&nbsp;Flash terminal screen (visual bell) </DT
+><DT
+><A
+HREF="function.ncurses-flushinp.html"
+>ncurses_flushinp</A
+>&nbsp;--&nbsp;Flush keyboard input buffer </DT
+><DT
+><A
+HREF="function.ncurses-getch.html"
+>ncurses_getch</A
+>&nbsp;--&nbsp;Read a character from keyboard </DT
+><DT
+><A
+HREF="function.ncurses-getmaxyx.html"
+>ncurses_getmaxyx</A
+>&nbsp;--&nbsp;Returns the size of a window</DT
+><DT
+><A
+HREF="function.ncurses-getmouse.html"
+>ncurses_getmouse</A
+>&nbsp;--&nbsp;Reads mouse event</DT
+><DT
+><A
+HREF="function.ncurses-getyx.html"
+>ncurses_getyx</A
+>&nbsp;--&nbsp;
+     Returns the current cursor position for a window
+    </DT
+><DT
+><A
+HREF="function.ncurses-halfdelay.html"
+>ncurses_halfdelay</A
+>&nbsp;--&nbsp;Put terminal into halfdelay mode </DT
+><DT
+><A
+HREF="function.ncurses-has-colors.html"
+>ncurses_has_colors</A
+>&nbsp;--&nbsp;Check if terminal has colors </DT
+><DT
+><A
+HREF="function.ncurses-has-ic.html"
+>ncurses_has_ic</A
+>&nbsp;--&nbsp;Check for insert- and delete-capabilities </DT
+><DT
+><A
+HREF="function.ncurses-has-il.html"
+>ncurses_has_il</A
+>&nbsp;--&nbsp;Check for line insert- and delete-capabilities </DT
+><DT
+><A
+HREF="function.ncurses-has-key.html"
+>ncurses_has_key</A
+>&nbsp;--&nbsp;Check for presence of a function key on terminal keyboard </DT
+><DT
+><A
+HREF="function.ncurses-hide-panel.html"
+>ncurses_hide_panel</A
+>&nbsp;--&nbsp;
+     Remove panel from the stack, making it invisible
+    </DT
+><DT
+><A
+HREF="function.ncurses-hline.html"
+>ncurses_hline</A
+>&nbsp;--&nbsp;Draw a horizontal line at current position using an attributed character and max. n characters long </DT
+><DT
+><A
+HREF="function.ncurses-inch.html"
+>ncurses_inch</A
+>&nbsp;--&nbsp;Get character and attribute at current position </DT
+><DT
+><A
+HREF="function.ncurses-init-color.html"
+>ncurses_init_color</A
+>&nbsp;--&nbsp;Set new RGB value for color </DT
+><DT
+><A
+HREF="function.ncurses-init-pair.html"
+>ncurses_init_pair</A
+>&nbsp;--&nbsp;Allocate a color pair </DT
+><DT
+><A
+HREF="function.ncurses-init.html"
+>ncurses_init</A
+>&nbsp;--&nbsp;Initialize ncurses</DT
+><DT
+><A
+HREF="function.ncurses-insch.html"
+>ncurses_insch</A
+>&nbsp;--&nbsp;Insert character moving rest of line including character at current position </DT
+><DT
+><A
+HREF="function.ncurses-insdelln.html"
+>ncurses_insdelln</A
+>&nbsp;--&nbsp;Insert lines before current line scrolling down (negative numbers delete and scroll up) </DT
+><DT
+><A
+HREF="function.ncurses-insertln.html"
+>ncurses_insertln</A
+>&nbsp;--&nbsp;Insert a line, move rest of screen down </DT
+><DT
+><A
+HREF="function.ncurses-insstr.html"
+>ncurses_insstr</A
+>&nbsp;--&nbsp;Insert string at current position, moving rest of line right </DT
+><DT
+><A
+HREF="function.ncurses-instr.html"
+>ncurses_instr</A
+>&nbsp;--&nbsp;Reads string from terminal screen </DT
+><DT
+><A
+HREF="function.ncurses-isendwin.html"
+>ncurses_isendwin</A
+>&nbsp;--&nbsp;Ncurses is in endwin mode, normal screen output may be performed </DT
+><DT
+><A
+HREF="function.ncurses-keyok.html"
+>ncurses_keyok</A
+>&nbsp;--&nbsp;Enable or disable a keycode </DT
+><DT
+><A
+HREF="function.ncurses-keypad.html"
+>ncurses_keypad</A
+>&nbsp;--&nbsp;
+     Turns keypad on or off
+    </DT
+><DT
+><A
+HREF="function.ncurses-killchar.html"
+>ncurses_killchar</A
+>&nbsp;--&nbsp;Returns current line kill character </DT
+><DT
+><A
+HREF="function.ncurses-longname.html"
+>ncurses_longname</A
+>&nbsp;--&nbsp;Returns terminals description</DT
+><DT
+><A
+HREF="function.ncurses-meta.html"
+>ncurses_meta</A
+>&nbsp;--&nbsp;
+     Enables/Disable 8-bit meta key information
+    </DT
+><DT
+><A
+HREF="function.ncurses-mouse-trafo.html"
+>ncurses_mouse_trafo</A
+>&nbsp;--&nbsp;
+     Transforms coordinates
+    </DT
+><DT
+><A
+HREF="function.ncurses-mouseinterval.html"
+>ncurses_mouseinterval</A
+>&nbsp;--&nbsp;Set timeout for mouse button clicks </DT
+><DT
+><A
+HREF="function.ncurses-mousemask.html"
+>ncurses_mousemask</A
+>&nbsp;--&nbsp;Sets mouse options</DT
+><DT
+><A
+HREF="function.ncurses-move-panel.html"
+>ncurses_move_panel</A
+>&nbsp;--&nbsp;
+     Moves a panel so that its upper-left corner is at [startx, starty]
+    </DT
+><DT
+><A
+HREF="function.ncurses-move.html"
+>ncurses_move</A
+>&nbsp;--&nbsp;Move output position </DT
+><DT
+><A
+HREF="function.ncurses-mvaddch.html"
+>ncurses_mvaddch</A
+>&nbsp;--&nbsp;Move current position and add character </DT
+><DT
+><A
+HREF="function.ncurses-mvaddchnstr.html"
+>ncurses_mvaddchnstr</A
+>&nbsp;--&nbsp;Move position and add attributed string with specified length </DT
+><DT
+><A
+HREF="function.ncurses-mvaddchstr.html"
+>ncurses_mvaddchstr</A
+>&nbsp;--&nbsp;Move position and add attributed string </DT
+><DT
+><A
+HREF="function.ncurses-mvaddnstr.html"
+>ncurses_mvaddnstr</A
+>&nbsp;--&nbsp;Move position and add string with specified length </DT
+><DT
+><A
+HREF="function.ncurses-mvaddstr.html"
+>ncurses_mvaddstr</A
+>&nbsp;--&nbsp;Move position and add string </DT
+><DT
+><A
+HREF="function.ncurses-mvcur.html"
+>ncurses_mvcur</A
+>&nbsp;--&nbsp;Move cursor immediately </DT
+><DT
+><A
+HREF="function.ncurses-mvdelch.html"
+>ncurses_mvdelch</A
+>&nbsp;--&nbsp;Move position and delete character, shift rest of line left </DT
+><DT
+><A
+HREF="function.ncurses-mvgetch.html"
+>ncurses_mvgetch</A
+>&nbsp;--&nbsp;Move position and get character at new position </DT
+><DT
+><A
+HREF="function.ncurses-mvhline.html"
+>ncurses_mvhline</A
+>&nbsp;--&nbsp;Set new position and draw a horizontal line using an attributed character and max. n characters long </DT
+><DT
+><A
+HREF="function.ncurses-mvinch.html"
+>ncurses_mvinch</A
+>&nbsp;--&nbsp;Move position and get attributed character at new position </DT
+><DT
+><A
+HREF="function.ncurses-mvvline.html"
+>ncurses_mvvline</A
+>&nbsp;--&nbsp;Set new position and draw a vertical line using an attributed character and max. n characters long </DT
+><DT
+><A
+HREF="function.ncurses-mvwaddstr.html"
+>ncurses_mvwaddstr</A
+>&nbsp;--&nbsp;Add string at new position in window </DT
+><DT
+><A
+HREF="function.ncurses-napms.html"
+>ncurses_napms</A
+>&nbsp;--&nbsp;Sleep </DT
+><DT
+><A
+HREF="function.ncurses-new-panel.html"
+>ncurses_new_panel</A
+>&nbsp;--&nbsp;
+     Create a new panel and associate it with window
+    </DT
+><DT
+><A
+HREF="function.ncurses-newpad.html"
+>ncurses_newpad</A
+>&nbsp;--&nbsp;
+     Creates a new pad (window)
+    </DT
+><DT
+><A
+HREF="function.ncurses-newwin.html"
+>ncurses_newwin</A
+>&nbsp;--&nbsp;Create a new window</DT
+><DT
+><A
+HREF="function.ncurses-nl.html"
+>ncurses_nl</A
+>&nbsp;--&nbsp;Translate newline and carriage return / line feed </DT
+><DT
+><A
+HREF="function.ncurses-nocbreak.html"
+>ncurses_nocbreak</A
+>&nbsp;--&nbsp;Switch terminal to cooked mode </DT
+><DT
+><A
+HREF="function.ncurses-noecho.html"
+>ncurses_noecho</A
+>&nbsp;--&nbsp;Switch off keyboard input echo </DT
+><DT
+><A
+HREF="function.ncurses-nonl.html"
+>ncurses_nonl</A
+>&nbsp;--&nbsp;Do not translate newline and carriage return / line feed </DT
+><DT
+><A
+HREF="function.ncurses-noqiflush.html"
+>ncurses_noqiflush</A
+>&nbsp;--&nbsp;Do not flush on signal characters</DT
+><DT
+><A
+HREF="function.ncurses-noraw.html"
+>ncurses_noraw</A
+>&nbsp;--&nbsp;Switch terminal out of raw mode </DT
+><DT
+><A
+HREF="function.ncurses-pair-content.html"
+>ncurses_pair_content</A
+>&nbsp;--&nbsp;
+     Gets the RGB value for color
+    </DT
+><DT
+><A
+HREF="function.ncurses-panel-above.html"
+>ncurses_panel_above</A
+>&nbsp;--&nbsp;
+     Returns the panel above panel
+    </DT
+><DT
+><A
+HREF="function.ncurses-panel-below.html"
+>ncurses_panel_below</A
+>&nbsp;--&nbsp;
+     Returns the panel below panel
+    </DT
+><DT
+><A
+HREF="function.ncurses-panel-window.html"
+>ncurses_panel_window</A
+>&nbsp;--&nbsp;
+     Returns the window associated with panel
+    </DT
+><DT
+><A
+HREF="function.ncurses-pnoutrefresh.html"
+>ncurses_pnoutrefresh</A
+>&nbsp;--&nbsp;
+     Copies a region from a pad into the virtual screen
+    </DT
+><DT
+><A
+HREF="function.ncurses-prefresh.html"
+>ncurses_prefresh</A
+>&nbsp;--&nbsp;
+     Copies a region from a pad into the virtual screen
+    </DT
+><DT
+><A
+HREF="function.ncurses-putp.html"
+>ncurses_putp</A
+>&nbsp;--&nbsp;Apply padding information to the string and output it</DT
+><DT
+><A
+HREF="function.ncurses-qiflush.html"
+>ncurses_qiflush</A
+>&nbsp;--&nbsp;Flush on signal characters </DT
+><DT
+><A
+HREF="function.ncurses-raw.html"
+>ncurses_raw</A
+>&nbsp;--&nbsp;Switch terminal into raw mode </DT
+><DT
+><A
+HREF="function.ncurses-refresh.html"
+>ncurses_refresh</A
+>&nbsp;--&nbsp;Refresh screen </DT
+><DT
+><A
+HREF="function.ncurses-replace-panel.html"
+>ncurses_replace_panel</A
+>&nbsp;--&nbsp;
+     Replaces the window associated with panel
+    </DT
+><DT
+><A
+HREF="function.ncurses-reset-prog-mode.html"
+>ncurses_reset_prog_mode</A
+>&nbsp;--&nbsp;
+     Resets the prog mode saved by def_prog_mode
+    </DT
+><DT
+><A
+HREF="function.ncurses-reset-shell-mode.html"
+>ncurses_reset_shell_mode</A
+>&nbsp;--&nbsp;
+     Resets the shell mode saved by def_shell_mode
+    </DT
+><DT
+><A
+HREF="function.ncurses-resetty.html"
+>ncurses_resetty</A
+>&nbsp;--&nbsp;Restores saved terminal state </DT
+><DT
+><A
+HREF="function.ncurses-savetty.html"
+>ncurses_savetty</A
+>&nbsp;--&nbsp;Saves terminal state </DT
+><DT
+><A
+HREF="function.ncurses-scr-dump.html"
+>ncurses_scr_dump</A
+>&nbsp;--&nbsp;Dump screen content to file </DT
+><DT
+><A
+HREF="function.ncurses-scr-init.html"
+>ncurses_scr_init</A
+>&nbsp;--&nbsp;Initialize screen from file dump </DT
+><DT
+><A
+HREF="function.ncurses-scr-restore.html"
+>ncurses_scr_restore</A
+>&nbsp;--&nbsp;Restore screen from file dump </DT
+><DT
+><A
+HREF="function.ncurses-scr-set.html"
+>ncurses_scr_set</A
+>&nbsp;--&nbsp;Inherit screen from file dump </DT
+><DT
+><A
+HREF="function.ncurses-scrl.html"
+>ncurses_scrl</A
+>&nbsp;--&nbsp;Scroll window content up or down without changing current position </DT
+><DT
+><A
+HREF="function.ncurses-show-panel.html"
+>ncurses_show_panel</A
+>&nbsp;--&nbsp;
+     Places an invisible panel on top of the stack, making it visible
+    </DT
+><DT
+><A
+HREF="function.ncurses-slk-attr.html"
+>ncurses_slk_attr</A
+>&nbsp;--&nbsp;Returns current soft label key attribute</DT
+><DT
+><A
+HREF="function.ncurses-slk-attroff.html"
+>ncurses_slk_attroff</A
+>&nbsp;--&nbsp;Turn off the given attributes for soft function-key labels</DT
+><DT
+><A
+HREF="function.ncurses-slk-attron.html"
+>ncurses_slk_attron</A
+>&nbsp;--&nbsp;Turn on the given attributes for soft function-key labels</DT
+><DT
+><A
+HREF="function.ncurses-slk-attrset.html"
+>ncurses_slk_attrset</A
+>&nbsp;--&nbsp;Set given attributes for soft function-key labels</DT
+><DT
+><A
+HREF="function.ncurses-slk-clear.html"
+>ncurses_slk_clear</A
+>&nbsp;--&nbsp;Clears soft labels from screen</DT
+><DT
+><A
+HREF="function.ncurses-slk-color.html"
+>ncurses_slk_color</A
+>&nbsp;--&nbsp;Sets color for soft label keys</DT
+><DT
+><A
+HREF="function.ncurses-slk-init.html"
+>ncurses_slk_init</A
+>&nbsp;--&nbsp;Initializes soft label key functions</DT
+><DT
+><A
+HREF="function.ncurses-slk-noutrefresh.html"
+>ncurses_slk_noutrefresh</A
+>&nbsp;--&nbsp;Copies soft label keys to virtual screen</DT
+><DT
+><A
+HREF="function.ncurses-slk-refresh.html"
+>ncurses_slk_refresh</A
+>&nbsp;--&nbsp;Copies soft label keys to screen</DT
+><DT
+><A
+HREF="function.ncurses-slk-restore.html"
+>ncurses_slk_restore</A
+>&nbsp;--&nbsp;Restores soft label keys</DT
+><DT
+><A
+HREF="function.ncurses-slk-set.html"
+>ncurses_slk_set</A
+>&nbsp;--&nbsp;
+     Sets function key labels
+    </DT
+><DT
+><A
+HREF="function.ncurses-slk-touch.html"
+>ncurses_slk_touch</A
+>&nbsp;--&nbsp;Forces output when ncurses_slk_noutrefresh is performed</DT
+><DT
+><A
+HREF="function.ncurses-standend.html"
+>ncurses_standend</A
+>&nbsp;--&nbsp;Stop using 'standout' attribute </DT
+><DT
+><A
+HREF="function.ncurses-standout.html"
+>ncurses_standout</A
+>&nbsp;--&nbsp;Start using 'standout' attribute </DT
+><DT
+><A
+HREF="function.ncurses-start-color.html"
+>ncurses_start_color</A
+>&nbsp;--&nbsp;Start using colors </DT
+><DT
+><A
+HREF="function.ncurses-termattrs.html"
+>ncurses_termattrs</A
+>&nbsp;--&nbsp;Returns a logical OR of all attribute flags supported by terminal </DT
+><DT
+><A
+HREF="function.ncurses-termname.html"
+>ncurses_termname</A
+>&nbsp;--&nbsp;Returns terminals (short)-name</DT
+><DT
+><A
+HREF="function.ncurses-timeout.html"
+>ncurses_timeout</A
+>&nbsp;--&nbsp;Set timeout for special key sequences </DT
+><DT
+><A
+HREF="function.ncurses-top-panel.html"
+>ncurses_top_panel</A
+>&nbsp;--&nbsp;
+     Moves a visible panel to the top of the stack
+    </DT
+><DT
+><A
+HREF="function.ncurses-typeahead.html"
+>ncurses_typeahead</A
+>&nbsp;--&nbsp;Specify different filedescriptor for typeahead checking </DT
+><DT
+><A
+HREF="function.ncurses-ungetch.html"
+>ncurses_ungetch</A
+>&nbsp;--&nbsp;Put a character back into the input stream </DT
+><DT
+><A
+HREF="function.ncurses-ungetmouse.html"
+>ncurses_ungetmouse</A
+>&nbsp;--&nbsp;Pushes mouse event to queue</DT
+><DT
+><A
+HREF="function.ncurses-update-panels.html"
+>ncurses_update_panels</A
+>&nbsp;--&nbsp;
+     Refreshes the virtual screen to reflect the relations between panels in the stack
+    </DT
+><DT
+><A
+HREF="function.ncurses-use-default-colors.html"
+>ncurses_use_default_colors</A
+>&nbsp;--&nbsp;Assign terminal default colors to color id -1 </DT
+><DT
+><A
+HREF="function.ncurses-use-env.html"
+>ncurses_use_env</A
+>&nbsp;--&nbsp;Control use of environment information about terminal size </DT
+><DT
+><A
+HREF="function.ncurses-use-extended-names.html"
+>ncurses_use_extended_names</A
+>&nbsp;--&nbsp;Control use of extended names in terminfo descriptions </DT
+><DT
+><A
+HREF="function.ncurses-vidattr.html"
+>ncurses_vidattr</A
+>&nbsp;--&nbsp;Display the string on the terminal in the video attribute mode</DT
+><DT
+><A
+HREF="function.ncurses-vline.html"
+>ncurses_vline</A
+>&nbsp;--&nbsp;Draw a vertical line at current position using an attributed character and max. n characters long </DT
+><DT
+><A
+HREF="function.ncurses-waddch.html"
+>ncurses_waddch</A
+>&nbsp;--&nbsp;
+     Adds character at current position in a window and advance cursor
+    </DT
+><DT
+><A
+HREF="function.ncurses-waddstr.html"
+>ncurses_waddstr</A
+>&nbsp;--&nbsp;
+     Outputs text at current postion in window
+    </DT
+><DT
+><A
+HREF="function.ncurses-wattroff.html"
+>ncurses_wattroff</A
+>&nbsp;--&nbsp;
+     Turns off attributes for a window
+    </DT
+><DT
+><A
+HREF="function.ncurses-wattron.html"
+>ncurses_wattron</A
+>&nbsp;--&nbsp;
+     Turns on attributes for a window
+    </DT
+><DT
+><A
+HREF="function.ncurses-wattrset.html"
+>ncurses_wattrset</A
+>&nbsp;--&nbsp;
+     Set the attributes for a window
+    </DT
+><DT
+><A
+HREF="function.ncurses-wborder.html"
+>ncurses_wborder</A
+>&nbsp;--&nbsp;Draws a border around the window using attributed characters</DT
+><DT
+><A
+HREF="function.ncurses-wclear.html"
+>ncurses_wclear</A
+>&nbsp;--&nbsp;
+     Clears window
+    </DT
+><DT
+><A
+HREF="function.ncurses-wcolor-set.html"
+>ncurses_wcolor_set</A
+>&nbsp;--&nbsp;
+     Sets windows color pairings
+    </DT
+><DT
+><A
+HREF="function.ncurses-werase.html"
+>ncurses_werase</A
+>&nbsp;--&nbsp;
+     Erase window contents
+    </DT
+><DT
+><A
+HREF="function.ncurses-wgetch.html"
+>ncurses_wgetch</A
+>&nbsp;--&nbsp;
+     Reads a character from keyboard (window)
+    </DT
+><DT
+><A
+HREF="function.ncurses-whline.html"
+>ncurses_whline</A
+>&nbsp;--&nbsp;
+     Draws a horizontal line in a window at current position using an attributed character and max. n characters long
+    </DT
+><DT
+><A
+HREF="function.ncurses-wmouse-trafo.html"
+>ncurses_wmouse_trafo</A
+>&nbsp;--&nbsp;
+     Transforms window/stdscr coordinates
+    </DT
+><DT
+><A
+HREF="function.ncurses-wmove.html"
+>ncurses_wmove</A
+>&nbsp;--&nbsp;
+     Moves windows output position
+    </DT
+><DT
+><A
+HREF="function.ncurses-wnoutrefresh.html"
+>ncurses_wnoutrefresh</A
+>&nbsp;--&nbsp;
+     Copies window to virtual screen
+    </DT
+><DT
+><A
+HREF="function.ncurses-wrefresh.html"
+>ncurses_wrefresh</A
+>&nbsp;--&nbsp;Refresh window on terminal screen </DT
+><DT
+><A
+HREF="function.ncurses-wstandend.html"
+>ncurses_wstandend</A
+>&nbsp;--&nbsp;
+     End standout mode for a window
+    </DT
+><DT
+><A
+HREF="function.ncurses-wstandout.html"
+>ncurses_wstandout</A
+>&nbsp;--&nbsp;
+     Enter standout mode for a window
+    </DT
+><DT
+><A
+HREF="function.ncurses-wvline.html"
+>ncurses_wvline</A
+>&nbsp;--&nbsp;
+     Draws a vertical line in a window at current position using an attributed character and max. n characters long
+    </DT
+></DL
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="function.mysqli-warning-count.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Начало</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="function.ncurses-addch.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>mysqli_warning_count</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="funcref.html"
+ACCESSKEY="U"
+>Уровень выше</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>ncurses_addch</TD
+></TR
+></TABLE
+></DIV
+></div></center></div></td>
+			<td><div style="display:none; width:200px;" id="o3" name="o3"><script charset="windows-1251" type="text/javascript" src="http://www.ozon.ru/PartnerTwinerNew.aspx?revident=bea9126b-c8e1-4bf5-b6d8-9a057f8feac6" ></script></div><script>o = document.getElementById('o3'); if(o) { var s = o.innerHTML; s = s.replace(/F6F6F6/gi,"FFFFFF"); o.innerHTML = s.replace(/padding-top: 10px; padding-bottom: 10px;/,"display:none;"); o.style.display = 'block'; } </script><br><div style="margin: 10px;"><script type="text/javascript"><!--
+google_ad_client = "pub-4093271809023514";
+/* 120x600, создано 01.11.2008 */
+google_ad_slot = "0438855731";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div></td>
+    		</tr>
+  		</table>
+    </td>
+  </tr>
+  <tr valign='bottom' height='1%'>
+  <td>      <table width=100% cellspacing=0 cellpadding=5 border=0 bgcolor=#9999CC>
+        <tr valign=center>
+          <td class='phpcopyright' width='45%' align='left'>&nbsp;&nbsp;Engine <a  href="http://www.mnogosearch.org/">MnoGoSearch</a></td>
+          <td class='phpcopyright' width='10%' align='center'>2007-2010 &copy <a  href="mailto:webmaster@php.ru">PHP.RU</a></td>
+          <td class='phpcopyright' width='45%' align='right' >Powered by <a target="_blank" href="http://odware.ru">ODware</a> <a HREF="http://440hz.ru">440Hz</a> &nbsp;&nbsp;</td>
+        </tr>
+      </table>
+
+    <div style="text-align: right; padding: 5px">
+		<!--LiveInternet counter-->
+		<script type="text/javascript">document.write('<a href="http://www.liveinternet.ru/click" target=_blank><img src="http://counter.yadro.ru/hit?t53.6;r' + escape(document.referrer) + ((typeof(screen)=='undefined')?'':';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ';u' + escape(document.URL) +';i' + escape('Жж'+document.title.substring(0,80)) + ';' + Math.random() + '" border=0 width=88 height=31 alt="" title="LiveInternet: показано число просмотров и посетителей за 24 часа"><\/a>');
+		</script>
+		<!--/LiveInternet-->
+		<!-- SpyLOG -->
+		<script src="http://tools.spylog.ru/counter2.2.js" type="text/javascript" id="spylog_code" counter="830950" ></script>
+		<noscript><a href="http://u8309.50.spylog.com/cnt?cid=830950&f=3&p=0" target="_blank"><img src="http://u8309.50.spylog.com/cnt?cid=830950&p=0&f=4" alt='SpyLOG' border='0' width=88 height=31 ></a>
+		</noscript>
+		<!--/ SpyLOG -->
+	</div>
+</td>
+  </tr>
+</table>
+
+<script>
+<!--
+document.SEARCH.QS.focus();
+// --></script>
+
+<!-- 
+	как же вы все это читаете?
+	440hz 
+-->
+
+</body>
+</html>

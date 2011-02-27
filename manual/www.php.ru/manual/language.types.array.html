@@ -1,0 +1,1887 @@
+<!-- 
+
+     HTML dropped by Zend Guard Compressor 4.2
+
+     php.ru team: mz, az, yuri, vb, cyxapuk, 440hz, administrator
+     2004-2007 (c) expi-web.com 
+     2007-2008 (c) odware.com 
+     0101-1010 (с) 440hz
+
+     2b|~2b=?
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EHOT тут всё пожрал ! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="alternate" type="application/rss+xml" title="php.ru/forum - последние сообщения" href="http://www.php.ru/forum/rss.php">
+<link rel="SHORTCUT ICON" href="http://www.php.ru/favicon.ico" />
+<META name="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<meta http-equiv="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<META name="keywords" content="php, php5, apache, mysql, session">
+<meta http-equiv="keywords" content="php, php5, apache, mysql, session">
+<title>php.ru - Массивы</title>
+<LINK REL="stylesheet" TYPE="text/css" HREF="http://www.php.ru/index.css">
+<script language="JavaScript" src="http://www.php.ru/ajax/ajax.js"></script>
+</head>
+<body>
+
+<table height='100%' width='100%' cellspacing='0' cellpadding='0'>
+  <tr height='99%' valign='top'>
+    <td align='center'>
+		
+		<table style='margin-top: 4px' width=100% cellspacing=0 cellpadding=3>
+   		<tr>
+     		<td>PHP - <a href="http://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BA%D1%80%D0%BE%D0%BD%D0%B8%D0%BC" target=_blank class=lnk>рекурсивный акроним</a> словосочетания &laquo;<a href="/manual/introduction.html" class=lnk>PHP: Hypertext Preprocessor</a>&raquo;</td>
+     	</tr>
+   		</table>
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/subsys_ajax.js"></script>
+		<!--
+
+		commet by 440hz
+		20.10.2007
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/pu_search.js"></script>
+
+		-->
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/cz.js?a=b"></script>
+
+		<table style='margin-top: 5px' width=100% bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0>
+   	 	<form name=SEARCH method=GET action="http://www.php.ru/search/?SID=tpx6p2pdfbp3qmb5" onsubmit="return puSubmit();">
+	  	<input type=hidden name=PAGE value=1>
+  		<tr>
+    		<td width='1' valign='middle'> 
+    		   <a href='/'><img src="http://www.php.ru/;-)/logo.gif" width=133 height=93 alt="php" border=0 hspace=10 vspace=0></a>
+			 </td>
+		    <td width='100%' valign='middle'>
+		       <!--
+			   
+				commet by 440hz
+				20.10.2007
+
+			   <div id='pu_search' class='pu_search'></div>
+		       <div id='pu_search_description' class='pu_search_decription'></div>
+			   
+			   -->
+        	 <input type=text style='width:99%; margin: 10px' maxlength='200' name='QS' class='in' id='query' autocomplete='off' value="" />
+    		</td>
+		  </tr>
+   		<tr bgcolor='#666699' valign='middle'>
+			<td style='border-top: 1px solid #333366;'><br /></td>
+    		<td style='border-top: 1px solid #333366;'><div style="padding: 4px 4px 4px 10px; height: 24px; color: #CCCCFF;" id="stat">Хто там?<script>doLoadCZ('stat','stat');</script></div></td>
+  		</tr>
+		</form>
+		</table>
+		<table id="menu" cellspaciong=0 cellpadding=3>
+<tr>
+<td><a href="/" class=current>Главная</a></td>
+<td><a href="/download/" class=current>Скачать</a></td>
+<td><a href="/doc/" class=current>Документация</a></td>
+<td><a href="/forum/" class=current>Форум</a></td>
+<td width=100% align=right><a href="/phpinfo.html" class=current>phpinfo()</a></td>
+</tr>
+</table>
+
+		
+<!--  AdRiver code START. Type:728x90 Site: php.ru PZ: 0 BN: 1 -->
+<script language="javascript" type="text/javascript"><!--
+var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+var ar_Tail='unknown'; if (document.referrer) ar_Tail = escape(document.referrer);
+document.write(
+'<iframe src="http://ad.adriver.ru/cgi-bin/erle.cgi?'
++ 'sid=148680&bn=1&target=blank&bt=36&pz=0&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail
++ '" frameborder=0 vspace=0 hspace=0 width=728 height=90 marginwidth=0'
++ ' marginheight=0 scrolling=no></iframe>');
+//--></script>
+<noscript>
+<a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" target=_blank>
+<img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" alt="-AdRiver-" border=0 width=728 height=90></a>
+</noscript>
+<!--  AdRiver code END  -->
+
+
+  		<table width='100%' cellspacing='0' cellpadding='0'>
+    		<tr valign='top'>
+      		<td width=100%><div style="margin: 10px 10px 10px 50px;"><center><div style="width: 800px; text-align: left"><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Руководство по PHP</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="language.types.string.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Глава 11. Типы</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="language.types.object.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="sect1"
+><H1
+CLASS="sect1"
+><A
+NAME="language.types.array"
+>Массивы</A
+></H1
+><P
+>&#13;    На самом деле массив в PHP - это упорядоченное отображение, которое
+    устанавливает соответствие между <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>значением</I
+></SPAN
+> и
+    <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>ключем</I
+></SPAN
+>. Этот тип оптимизирован в нескольких
+    направлениях, поэтому вы можете использовать его как собственно
+    массив, список (вектор), хэш-таблицу (являющуюся реализацией карты),
+    словарь, коллекцию, стэк, очередь или, возможно, как что-то еще.
+    Поскольку вы можете иметь в качестве значения другой массив PHP, вы
+    можете также легко эмулировать деревья.
+   </P
+><P
+>&#13;    Объяснение этих структур данных выходит за рамки данного
+    справочного руководства, но вы найдете как минимум один пример
+    каждой из них. За дополнительной информацией вы можете обратиться к
+    соответствующей литературе по этой обширной теме.
+   </P
+><DIV
+CLASS="sect2"
+><H2
+CLASS="sect2"
+><A
+NAME="language.types.array.syntax"
+>Синтаксис</A
+></H2
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="language.types.array.syntax.array-func"
+>Определение при помощи <A
+HREF="function.array.html"
+><B
+CLASS="function"
+>array()</B
+></A
+></A
+></H3
+><P
+>&#13;      Массив может быть создан языковой конструкцией <A
+HREF="function.array.html"
+><B
+CLASS="function"
+>array()</B
+></A
+>.
+      В качестве параметров она принимает определенное количество разделенных
+      запятыми пар
+      <VAR
+CLASS="literal"
+><VAR
+CLASS="replaceable"
+>key</VAR
+> =&#62; <VAR
+CLASS="replaceable"
+>value</VAR
+></VAR
+> (ключ =&#62; значение).
+     </P
+><P
+>&#13;      <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="synopsis"
+>array( [<VAR
+CLASS="replaceable"
+>key</VAR
+> =&#62;] <VAR
+CLASS="replaceable"
+>value</VAR
+>
+     , ...
+     )
+// <VAR
+CLASS="replaceable"
+>key</VAR
+> может быть <A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+> или <A
+HREF="language.types.string.html"
+><B
+CLASS="type"
+>string</B
+></A
+>
+// <VAR
+CLASS="replaceable"
+>value</VAR
+> может быть любым значением</PRE
+></TD
+></TR
+></TABLE
+>
+     </P
+><P
+>&#13;      <DIV
+CLASS="informalexample"
+><P
+></P
+><A
+NAME="AEN3132"
+></A
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />$arr </font><font color="#007700">= array(</font><font color="#DD0000">"foo" </font><font color="#007700">=&gt; </font><font color="#DD0000">"bar"</font><font color="#007700">, </font><font color="#0000BB">12 </font><font color="#007700">=&gt; </font><font color="#0000BB">true</font><font color="#007700">);<br /><br />echo </font><font color="#0000BB">$arr</font><font color="#007700">[</font><font color="#DD0000">"foo"</font><font color="#007700">]; </font><font color="#FF8000">// bar<br /></font><font color="#007700">echo </font><font color="#0000BB">$arr</font><font color="#007700">[</font><font color="#0000BB">12</font><font color="#007700">];&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#FF8000">// 1<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+><P
+></P
+></DIV
+>
+     </P
+><P
+>&#13;      <VAR
+CLASS="varname"
+>key</VAR
+> может быть либо <A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>, либо
+      <A
+HREF="language.types.string.html"
+><B
+CLASS="type"
+>string</B
+></A
+>. Если ключ - это стандартное представление
+      <A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>, он так и будет интерпретироваться (т.е.
+      <VAR
+CLASS="literal"
+>"8"</VAR
+> будет восприниматься как <VAR
+CLASS="literal"
+>8</VAR
+>,
+      тогда как <VAR
+CLASS="literal"
+>"08"</VAR
+> будет интерпретироваться как
+      <VAR
+CLASS="literal"
+>"08"</VAR
+>). В PHP нет разницы между индексными и
+      ассоциативными массивами; существует только один тип массива,
+      который может содержать и числовые, и строковые индексы.
+     </P
+><P
+>&#13;      Значение может быть любого имеющегося в PHP типа.
+      <DIV
+CLASS="informalexample"
+><P
+></P
+><A
+NAME="AEN3144"
+></A
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />$arr </font><font color="#007700">= array(</font><font color="#DD0000">"somearray" </font><font color="#007700">=&gt; array(</font><font color="#0000BB">6 </font><font color="#007700">=&gt; </font><font color="#0000BB">5</font><font color="#007700">, </font><font color="#0000BB">13 </font><font color="#007700">=&gt; </font><font color="#0000BB">9</font><font color="#007700">, </font><font color="#DD0000">"a" </font><font color="#007700">=&gt; </font><font color="#0000BB">42</font><font color="#007700">));<br /><br />echo </font><font color="#0000BB">$arr</font><font color="#007700">[</font><font color="#DD0000">"somearray"</font><font color="#007700">][</font><font color="#0000BB">6</font><font color="#007700">];&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#FF8000">// 5<br /></font><font color="#007700">echo </font><font color="#0000BB">$arr</font><font color="#007700">[</font><font color="#DD0000">"somearray"</font><font color="#007700">][</font><font color="#0000BB">13</font><font color="#007700">];&nbsp;&nbsp;&nbsp;</font><font color="#FF8000">// 9<br /></font><font color="#007700">echo </font><font color="#0000BB">$arr</font><font color="#007700">[</font><font color="#DD0000">"somearray"</font><font color="#007700">][</font><font color="#DD0000">"a"</font><font color="#007700">];&nbsp;&nbsp;</font><font color="#FF8000">// 42<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+><P
+></P
+></DIV
+>
+     </P
+><P
+>&#13;      Если вы не указываете ключ для приведенного значения, то берется
+      максимальный числовой индекс и новый ключ будет равен этому
+      максимуму + 1. Если вы укажите ключ, которому уже присвоено
+      значение, оно будет перезаписано.
+      <DIV
+CLASS="informalexample"
+><P
+></P
+><A
+NAME="AEN3147"
+></A
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br /></font><font color="#FF8000">// Этот массив эквивалентен ...<br /></font><font color="#007700">array(</font><font color="#0000BB">5 </font><font color="#007700">=&gt; </font><font color="#0000BB">43</font><font color="#007700">, </font><font color="#0000BB">32</font><font color="#007700">, </font><font color="#0000BB">56</font><font color="#007700">, </font><font color="#DD0000">"b" </font><font color="#007700">=&gt; </font><font color="#0000BB">12</font><font color="#007700">);<br /><br /></font><font color="#FF8000">// ...этому массиву<br /></font><font color="#007700">array(</font><font color="#0000BB">5 </font><font color="#007700">=&gt; </font><font color="#0000BB">43</font><font color="#007700">, </font><font color="#0000BB">6 </font><font color="#007700">=&gt; </font><font color="#0000BB">32</font><font color="#007700">, </font><font color="#0000BB">7 </font><font color="#007700">=&gt; </font><font color="#0000BB">56</font><font color="#007700">, </font><font color="#DD0000">"b" </font><font color="#007700">=&gt; </font><font color="#0000BB">12</font><font color="#007700">);<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+><P
+></P
+></DIV
+>
+     </P
+><DIV
+CLASS="warning"
+><P
+></P
+><TABLE
+CLASS="warning"
+BORDER="1"
+WIDTH="100%"
+><TR
+><TD
+ALIGN="CENTER"
+><B
+>Внимание</B
+></TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+><P
+>&#13;         Начиная с PHP 4.3.0, вышеописанное поведение генерации индекса
+         изменено. Теперь, если вы будете использовать массив, в котором
+         максимальным в настоящий момент является отрицательный ключ, то
+         следующий созданный ключ будет нулевым (<VAR
+CLASS="literal"
+>0</VAR
+>).
+         Раньше новым индексом становился самый большой существующий
+         ключ + 1, так же как и у положительных индексов.
+      </P
+></TD
+></TR
+></TABLE
+></DIV
+><P
+>&#13;      Используя в качестве ключа <TT
+CLASS="constant"
+><B
+>TRUE</B
+></TT
+> вы получите ключ
+      <VAR
+CLASS="literal"
+>1</VAR
+> типа <A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>. Используя в
+      качестве ключа <TT
+CLASS="constant"
+><B
+>FALSE</B
+></TT
+> вы получите ключ <VAR
+CLASS="literal"
+>0</VAR
+> типа
+      <A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>. Используя в качестве ключа
+      <VAR
+CLASS="literal"
+>NULL</VAR
+>, вы получите пустую строку. Использование в
+      качестве ключа пустой строки создаст (или перезапишет) ключ с пустой
+      строкой и его значение; это не то же самое, что использование пустых
+      квадратных скобок.
+     </P
+><P
+>&#13;      Вы не можете использовать в качестве ключей массивы или объекты. Это
+      вызовет предупреждение: <VAR
+CLASS="literal"
+>Illegal offset type</VAR
+>
+      ('Недопустимый тип смещения').
+     </P
+></DIV
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="language.types.array.syntax.modifying"
+>Создание/модификация с помощью синтаксиса квадратных скобок</A
+></H3
+><P
+>&#13;      Также вы можете изменять существующий массив, явно устанавливая значения
+      в нем.
+     </P
+><P
+>&#13;      Это выполняется присвоением значений массиву при указании в скобках
+      ключа. Кроме того, вы можете опустить ключ, в этом случае добавьте к
+      имени переменной пустую пару скобок ("<VAR
+CLASS="literal"
+>[]</VAR
+>").
+      <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="synopsis"
+>$arr[<VAR
+CLASS="replaceable"
+>key</VAR
+>] = <VAR
+CLASS="replaceable"
+>value</VAR
+>;
+$arr[] = <VAR
+CLASS="replaceable"
+>value</VAR
+>;
+// <VAR
+CLASS="replaceable"
+>key</VAR
+> может быть <A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+> или <A
+HREF="language.types.string.html"
+><B
+CLASS="type"
+>string</B
+></A
+>
+// <VAR
+CLASS="replaceable"
+>value</VAR
+> может быть любым значением</PRE
+></TD
+></TR
+></TABLE
+>
+      Если массив <VAR
+CLASS="varname"
+>$arr</VAR
+> еще не существует, он будет создан.
+      Таким образом, это еще один способ определить массив. Для изменения
+      определенного значения просто присвойте элементу с его ключом новое
+      значение. Если вы хотите удалить пару ключ/значение, вам нужно
+      использовать функцию <A
+HREF="function.unset.html"
+><B
+CLASS="function"
+>unset()</B
+></A
+>.
+      <DIV
+CLASS="informalexample"
+><P
+></P
+><A
+NAME="AEN3177"
+></A
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />$arr </font><font color="#007700">= array(</font><font color="#0000BB">5 </font><font color="#007700">=&gt; </font><font color="#0000BB">1</font><font color="#007700">, </font><font color="#0000BB">12 </font><font color="#007700">=&gt; </font><font color="#0000BB">2</font><font color="#007700">);<br /><br /></font><font color="#0000BB">$arr</font><font color="#007700">[] = </font><font color="#0000BB">56</font><font color="#007700">;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#FF8000">// В этом месте скрипта это<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// эквивалентно $arr[13] = 56;<br /><br /></font><font color="#0000BB">$arr</font><font color="#007700">[</font><font color="#DD0000">"x"</font><font color="#007700">] = </font><font color="#0000BB">42</font><font color="#007700">; </font><font color="#FF8000">// Это добавляет к массиву новый<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// элемент с ключом "x"<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br /></font><font color="#007700">unset(</font><font color="#0000BB">$arr</font><font color="#007700">[</font><font color="#0000BB">5</font><font color="#007700">]); </font><font color="#FF8000">// Это удаляет элемент из массива<br /><br /></font><font color="#007700">unset(</font><font color="#0000BB">$arr</font><font color="#007700">);&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#FF8000">// Это удаляет массив полностью<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+><P
+></P
+></DIV
+>
+     </P
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+>Замечание: </B
+>
+       Как уже говорилось выше, если вы не укажите в скобках ключа,
+       то будет взят максимальный из существующих целочисленных
+       индексов, и новым ключом будет это максимальное значение + 1.
+       Если целочисленных индексов еще нет, то ключом будет
+       <VAR
+CLASS="literal"
+>0</VAR
+> (ноль). Если вы укажите ключ, которому
+       уже присвоено значение, оно будет перезаписано.
+      </P
+><P
+>&#13;       <DIV
+CLASS="warning"
+><P
+></P
+><TABLE
+CLASS="warning"
+BORDER="1"
+WIDTH="100%"
+><TR
+><TD
+ALIGN="CENTER"
+><B
+>Внимание</B
+></TD
+></TR
+><TR
+><TD
+ALIGN="LEFT"
+><P
+>&#13;         Начиная с PHP 4.3.0, вышеописанное поведение генерации индекса
+         изменено. Теперь, если вы будете использовать массив, в котором
+         максимальным в настоящий момент является отрицательный ключ, то
+         следующий созданный ключ будет нулевым (<VAR
+CLASS="literal"
+>0</VAR
+>).
+         Раньше новым индексом становился самый большой существующий
+         ключ + 1, так же как и у положительных индексов.
+        </P
+></TD
+></TR
+></TABLE
+></DIV
+>
+      </P
+><P
+>&#13;       Обратите внимание, что максимальный числовой ключ, используемый
+       для этого <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>не обязательно должен существовать в массиве
+       в настоящий момент</I
+></SPAN
+>. Он просто должен был существовать
+       с момента последнего переиндексирования массива. Это
+       иллюстрирует следующий пример:
+      </P
+><DIV
+CLASS="informalexample"
+><P
+></P
+><A
+NAME="AEN3188"
+></A
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br /></font><font color="#FF8000">// Создаем простой массив.<br /></font><font color="#0000BB">$array </font><font color="#007700">= array(</font><font color="#0000BB">1</font><font color="#007700">, </font><font color="#0000BB">2</font><font color="#007700">, </font><font color="#0000BB">3</font><font color="#007700">, </font><font color="#0000BB">4</font><font color="#007700">, </font><font color="#0000BB">5</font><font color="#007700">);<br /></font><font color="#0000BB">print_r</font><font color="#007700">(</font><font color="#0000BB">$array</font><font color="#007700">);<br /><br /></font><font color="#FF8000">// Теперь удаляем каждый элемент, но сам массив оставляем нетронутым:<br /></font><font color="#007700">foreach (</font><font color="#0000BB">$array </font><font color="#007700">as </font><font color="#0000BB">$i </font><font color="#007700">=&gt; </font><font color="#0000BB">$value</font><font color="#007700">) {<br />&nbsp;&nbsp;&nbsp;&nbsp;unset(</font><font color="#0000BB">$array</font><font color="#007700">[</font><font color="#0000BB">$i</font><font color="#007700">]);<br />}<br /></font><font color="#0000BB">print_r</font><font color="#007700">(</font><font color="#0000BB">$array</font><font color="#007700">);<br /><br /></font><font color="#FF8000">// Создаем элемент (обратите внимание, что новым ключом будет 5,<br />// а не 0, как вы возможно ожидали).<br /></font><font color="#0000BB">$array</font><font color="#007700">[] = </font><font color="#0000BB">6</font><font color="#007700">;<br /></font><font color="#0000BB">print_r</font><font color="#007700">(</font><font color="#0000BB">$array</font><font color="#007700">);<br /><br /></font><font color="#FF8000">// Переиндексация:<br /></font><font color="#0000BB">$array </font><font color="#007700">= </font><font color="#0000BB">array_values</font><font color="#007700">(</font><font color="#0000BB">$array</font><font color="#007700">);<br /></font><font color="#0000BB">$array</font><font color="#007700">[] = </font><font color="#0000BB">7</font><font color="#007700">;<br /></font><font color="#0000BB">print_r</font><font color="#007700">(</font><font color="#0000BB">$array</font><font color="#007700">);<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+><P
+>&#13;        Вышеприведенный пример выведет следующее:
+        <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="screen"
+>Array
+(
+    [0] =&#62; 1
+    [1] =&#62; 2
+    [2] =&#62; 3
+    [3] =&#62; 4
+    [4] =&#62; 5
+)
+Array
+(
+)
+Array
+(
+    [5] =&#62; 6
+)
+Array
+(
+    [0] =&#62; 6
+    [1] =&#62; 7
+)</PRE
+></TD
+></TR
+></TABLE
+>
+       </P
+><P
+></P
+></DIV
+></BLOCKQUOTE
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="sect2"
+><H2
+CLASS="sect2"
+><A
+NAME="language.types.array.useful-funcs"
+>Полезные функции</A
+></H2
+><P
+>&#13;     Для работы с массивами существует достаточное количество полезных
+     функций. Смотрите раздел <A
+HREF="ref.array.html"
+>функции для работы
+     с массивами</A
+>.
+    </P
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+>Замечание: </B
+>
+      Функция <A
+HREF="function.unset.html"
+><B
+CLASS="function"
+>unset()</B
+></A
+> позволяет удалять ключи массива.
+      Обратите внимание, что массив НЕ будет переиндексирован. Если вы
+      использовали только "обычные числовые индексы" (увеличивающиеся на
+      единицу, начиная с нуля), вы можете переиндексировать массив
+      используя <A
+HREF="function.array-values.html"
+><B
+CLASS="function"
+>array_values()</B
+></A
+>.
+      <DIV
+CLASS="informalexample"
+><P
+></P
+><A
+NAME="AEN3200"
+></A
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />$a </font><font color="#007700">= array(</font><font color="#0000BB">1 </font><font color="#007700">=&gt; </font><font color="#DD0000">'один'</font><font color="#007700">, </font><font color="#0000BB">2 </font><font color="#007700">=&gt; </font><font color="#DD0000">'два'</font><font color="#007700">, </font><font color="#0000BB">3 </font><font color="#007700">=&gt; </font><font color="#DD0000">'три'</font><font color="#007700">);<br />unset(</font><font color="#0000BB">$a</font><font color="#007700">[</font><font color="#0000BB">2</font><font color="#007700">]);<br /></font><font color="#FF8000">/* даст массив, представленный так:<br />&nbsp;&nbsp;&nbsp;$a = array(1 =&gt; 'один', 3 =&gt; 'три');<br />&nbsp;&nbsp;&nbsp;а НЕ так:<br />&nbsp;&nbsp;&nbsp;$a = array(1 =&gt; 'один', 2 =&gt;'три');<br />*/<br /><br /></font><font color="#0000BB">$b </font><font color="#007700">= </font><font color="#0000BB">array_values</font><font color="#007700">(</font><font color="#0000BB">$a</font><font color="#007700">);<br /></font><font color="#FF8000">// Теперь $b это array(0 =&gt; 'один', 1 =&gt;'три')<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+><P
+></P
+></DIV
+>
+     
+     </P
+></BLOCKQUOTE
+></DIV
+><P
+>&#13;     Управляющая конструкция
+     <A
+HREF="control-structures.foreach.html"
+>foreach</A
+> существует
+     специально для массивов. Она предоставляет возможность легко
+     пройтись по массиву.
+    </P
+></DIV
+><DIV
+CLASS="sect2"
+><H2
+CLASS="sect2"
+><A
+NAME="language.types.array.donts"
+>Массив делает и не делает</A
+></H2
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="language.types.array.foo-bar"
+>Почему <VAR
+CLASS="literal"
+>$foo[bar]</VAR
+> это неверно?</A
+></H3
+><P
+>&#13;      Вы всегда должны заключать индекс ассоциативного массива в кавычки.
+      К примеру, пишите $foo['bar'], а не $foo[bar]. Но почему $foo[bar]
+      это неверно? Возможно, вы встречали в старых скриптах следующий
+      синтаксис:
+      <DIV
+CLASS="informalexample"
+><P
+></P
+><A
+NAME="AEN3210"
+></A
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />$foo</font><font color="#007700">[</font><font color="#0000BB">bar</font><font color="#007700">] = </font><font color="#DD0000">'враг'</font><font color="#007700">;<br />echo </font><font color="#0000BB">$foo</font><font color="#007700">[</font><font color="#0000BB">bar</font><font color="#007700">];<br /></font><font color="#FF8000">// и т. д.<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+><P
+></P
+></DIV
+>
+      Это неверно, хотя и работает. Тогда почему же это неверно? Причина
+      в том, что этот код содержит неопределенную константу (bar), а не
+      строку ('bar' - обратите внимание на кавычки), и PHP в будущем
+      может определить константу, которая к несчастью для вашего кода
+      будет иметь то же самое имя. Это работает, потому что PHP
+      автоматически преобразует <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>голую строку</I
+></SPAN
+> (не
+      заключенную в кавычки строку, которая не соответствует ни одному
+      из известных символов) в строку, которая содержит голую строку.
+      Например, если константа с именем <TT
+CLASS="constant"
+><B
+>bar</B
+></TT
+> не
+      определена, то PHP заменит bar на строку <VAR
+CLASS="literal"
+>'bar'</VAR
+> и
+      использует ее.
+     </P
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+>Замечание: </B
+>
+       Это не означает, что нужно <SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>всегда</I
+></SPAN
+> заключать
+       ключ в кавычки. Нет необходимости заключать в кавычки <A
+HREF="language.constants.html"
+>константы</A
+> или <A
+HREF="language.variables.html"
+>переменные</A
+>, поскольку это
+       помешает PHP обрабатывать их.
+      </P
+><DIV
+CLASS="informalexample"
+><P
+></P
+><A
+NAME="AEN3220"
+></A
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />error_reporting</font><font color="#007700">(</font><font color="#0000BB">E_ALL</font><font color="#007700">);<br /></font><font color="#0000BB">ini_set</font><font color="#007700">(</font><font color="#DD0000">'display_errors'</font><font color="#007700">, </font><font color="#0000BB">true</font><font color="#007700">);<br /></font><font color="#0000BB">ini_set</font><font color="#007700">(</font><font color="#DD0000">'html_errors'</font><font color="#007700">, </font><font color="#0000BB">false</font><font color="#007700">);<br /></font><font color="#FF8000">// Простой массив:<br /></font><font color="#0000BB">$array </font><font color="#007700">= array(</font><font color="#0000BB">1</font><font color="#007700">, </font><font color="#0000BB">2</font><font color="#007700">);<br /></font><font color="#0000BB">$count </font><font color="#007700">= </font><font color="#0000BB">count</font><font color="#007700">(</font><font color="#0000BB">$array</font><font color="#007700">);<br />for (</font><font color="#0000BB">$i </font><font color="#007700">= </font><font color="#0000BB">0</font><font color="#007700">; </font><font color="#0000BB">$i </font><font color="#007700">&lt; </font><font color="#0000BB">$count</font><font color="#007700">; </font><font color="#0000BB">$i</font><font color="#007700">++) {<br />&nbsp;&nbsp;&nbsp;&nbsp;echo </font><font color="#DD0000">"</font><font color="#007700">\n</font><font color="#DD0000">Проверяем $i: </font><font color="#007700">\n</font><font color="#DD0000">"</font><font color="#007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;echo </font><font color="#DD0000">"Плохо: " </font><font color="#007700">. </font><font color="#0000BB">$array</font><font color="#007700">[</font><font color="#DD0000">'$i'</font><font color="#007700">] . </font><font color="#DD0000">"\n"</font><font color="#007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;echo </font><font color="#DD0000">"Хорошо: " </font><font color="#007700">. </font><font color="#0000BB">$array</font><font color="#007700">[</font><font color="#0000BB">$i</font><font color="#007700">] . </font><font color="#DD0000">"\n"</font><font color="#007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;echo </font><font color="#DD0000">"Плохо: </font><font color="#007700">{</font><font color="#DD0000">$array</font><font color="#007700">[</font><font color="#DD0000">'$i'</font><font color="#007700">]}\n</font><font color="#DD0000">"</font><font color="#007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;echo </font><font color="#DD0000">"Хорошо: </font><font color="#007700">{</font><font color="#DD0000">$array</font><font color="#007700">[</font><font color="#DD0000">$i</font><font color="#007700">]}\n</font><font color="#DD0000">"</font><font color="#007700">;<br />}<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+><P
+></P
+></DIV
+><P
+><B
+>Замечание: </B
+>
+       Вышеприведенный код выведет следующее:
+       <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="screen"
+>Проверяем 0: 
+Notice: Undefined index:  $i in /path/to/script.html on line 9
+Плохо: 
+Хорошо: 1
+Notice: Undefined index:  $i in /path/to/script.html on line 11
+Плохо: 
+Хорошо: 1
+
+Проверяем 1: 
+Notice: Undefined index:  $i in /path/to/script.html on line 9
+Плохо: 
+Хорошо: 2
+Notice: Undefined index:  $i in /path/to/script.html on line 11
+Плохо: 
+Хорошо: 2</PRE
+></TD
+></TR
+></TABLE
+>
+      </P
+></BLOCKQUOTE
+></DIV
+><P
+>&#13;      Дополнительные примеры, демонстрирующие этот факт:
+      <DIV
+CLASS="informalexample"
+><P
+></P
+><A
+NAME="AEN3225"
+></A
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br /></font><font color="#FF8000">// Давайте покажем все ошибки<br /></font><font color="#0000BB">error_reporting</font><font color="#007700">(</font><font color="#0000BB">E_ALL</font><font color="#007700">);<br /><br /></font><font color="#0000BB">$arr </font><font color="#007700">= array(</font><font color="#DD0000">'fruit' </font><font color="#007700">=&gt; </font><font color="#DD0000">'apple'</font><font color="#007700">, </font><font color="#DD0000">'veggie' </font><font color="#007700">=&gt; </font><font color="#DD0000">'carrot'</font><font color="#007700">);<br /><br /></font><font color="#FF8000">// Верно<br /></font><font color="#007700">print </font><font color="#0000BB">$arr</font><font color="#007700">[</font><font color="#DD0000">'fruit'</font><font color="#007700">];&nbsp;&nbsp;</font><font color="#FF8000">// apple<br /></font><font color="#007700">print </font><font color="#0000BB">$arr</font><font color="#007700">[</font><font color="#DD0000">'veggie'</font><font color="#007700">]; </font><font color="#FF8000">// carrot<br /><br />// Неверно. Это работает, но из-за неопределенной константы с<br />// именем fruit также вызывает ошибку PHP уровня E_NOTICE<br />// <br />// Notice: Use of undefined constant fruit - assumed 'fruit' in...<br /></font><font color="#007700">print </font><font color="#0000BB">$arr</font><font color="#007700">[</font><font color="#0000BB">fruit</font><font color="#007700">];&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#FF8000">// apple<br /><br />// Давайте определим константу, чтобы продемонстрировать, что<br />// происходит. Мы присвоим константе с именем fruit значение 'veggie'.<br /></font><font color="#0000BB">define</font><font color="#007700">(</font><font color="#DD0000">'fruit'</font><font color="#007700">, </font><font color="#DD0000">'veggie'</font><font color="#007700">);<br /><br /></font><font color="#FF8000">// Теперь обратите внимание на разницу<br /></font><font color="#007700">print </font><font color="#0000BB">$arr</font><font color="#007700">[</font><font color="#DD0000">'fruit'</font><font color="#007700">];&nbsp;&nbsp;</font><font color="#FF8000">// apple<br /></font><font color="#007700">print </font><font color="#0000BB">$arr</font><font color="#007700">[</font><font color="#0000BB">fruit</font><font color="#007700">];&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#FF8000">// carrot<br /><br />// Внутри строки это нормально. Внутри строк константы не<br />// рассматриваются, так что ошибки E_NOTICE здесь не произойдет<br /></font><font color="#007700">print </font><font color="#DD0000">"Hello $arr</font><font color="#007700">[</font><font color="#DD0000">fruit</font><font color="#007700">]</font><font color="#DD0000">"</font><font color="#007700">;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#FF8000">// Hello apple<br /><br />// С одним исключением: фигурные скобки вокруг массивов внутри<br />// строк позволяют константам находится там<br /></font><font color="#007700">print </font><font color="#DD0000">"Hello </font><font color="#007700">{</font><font color="#DD0000">$arr</font><font color="#007700">[</font><font color="#DD0000">fruit</font><font color="#007700">]}</font><font color="#DD0000">"</font><font color="#007700">;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#FF8000">// Hello carrot<br /></font><font color="#007700">print </font><font color="#DD0000">"Hello </font><font color="#007700">{</font><font color="#DD0000">$arr</font><font color="#007700">[</font><font color="#DD0000">'fruit'</font><font color="#007700">]}</font><font color="#DD0000">"</font><font color="#007700">;&nbsp;&nbsp;</font><font color="#FF8000">// Hello apple<br /><br />// Это не будет работать и вызовет ошибку обработки, такую как:<br />// Parse error: parse error, expecting T_STRING' or T_VARIABLE' or T_NUM_STRING'<br />// Это, конечно, также приложимо и к использованию в строках автоглобальных переменных<br /></font><font color="#007700">print </font><font color="#DD0000">"Hello $arr</font><font color="#007700">[</font><font color="#DD0000">'fruit'</font><font color="#007700">]</font><font color="#DD0000">"</font><font color="#007700">;<br />print </font><font color="#DD0000">"Hello $_GET</font><font color="#007700">[</font><font color="#DD0000">'foo'</font><font color="#007700">]</font><font color="#DD0000">"</font><font color="#007700">;<br /><br /></font><font color="#FF8000">// Еще одна возможность - конкатенация<br /></font><font color="#007700">print </font><font color="#DD0000">"Hello " </font><font color="#007700">. </font><font color="#0000BB">$arr</font><font color="#007700">[</font><font color="#DD0000">'fruit'</font><font color="#007700">]; </font><font color="#FF8000">// Hello apple<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+><P
+></P
+></DIV
+>
+     </P
+><P
+>&#13;      Когда вы переведете <A
+HREF="function.error-reporting.html"
+><B
+CLASS="function"
+>error_reporting()</B
+></A
+>
+      в режим отображения ошибок уровня
+      <TT
+CLASS="constant"
+><B
+>E_NOTICE</B
+></TT
+> (такой как
+      <TT
+CLASS="constant"
+><B
+>E_ALL</B
+></TT
+>), вы увидите эти ошибки. По
+      умолчанию <A
+HREF="ref.errorfunc.html#ini.error-reporting"
+>&#13;      error_reporting</A
+> установлена их не отображать.
+     </P
+><P
+>&#13;      Как указано в разделе <A
+HREF="language.types.array.html#language.types.array.syntax"
+>синтаксис</A
+>, внутри квадратных скобок ('<VAR
+CLASS="literal"
+>[</VAR
+>'
+      и '<VAR
+CLASS="literal"
+>]</VAR
+>') должно быть выражение. Это означает, что вы
+      можете писать подобно этому:
+      <DIV
+CLASS="informalexample"
+><P
+></P
+><A
+NAME="AEN3236"
+></A
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br /></font><font color="#007700">echo </font><font color="#0000BB">$arr</font><font color="#007700">[</font><font color="#0000BB">somefunc</font><font color="#007700">(</font><font color="#0000BB">$bar</font><font color="#007700">)];<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+><P
+></P
+></DIV
+>
+      Это пример использования возвращаемого функцией значения
+      в качестве индекса массива. PHP известны также и константы,
+      как вы, возможно, видели упоминание <VAR
+CLASS="literal"
+>E_*</VAR
+> раньше.
+
+      <DIV
+CLASS="informalexample"
+><P
+></P
+><A
+NAME="AEN3239"
+></A
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />$error_descriptions</font><font color="#007700">[</font><font color="#0000BB">E_ERROR</font><font color="#007700">]&nbsp;&nbsp;&nbsp;= </font><font color="#DD0000">"Произошла фатальная ошибка"</font><font color="#007700">;<br /></font><font color="#0000BB">$error_descriptions</font><font color="#007700">[</font><font color="#0000BB">E_WARNING</font><font color="#007700">] = </font><font color="#DD0000">"PHP сообщает предупреждение"</font><font color="#007700">;<br /></font><font color="#0000BB">$error_descriptions</font><font color="#007700">[</font><font color="#0000BB">E_NOTICE</font><font color="#007700">]&nbsp;&nbsp;= </font><font color="#DD0000">"Это лишь неофициальное замечание"</font><font color="#007700">;<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+><P
+></P
+></DIV
+>
+      Обратите внимание, что <VAR
+CLASS="literal"
+>E_ERROR</VAR
+> - это такой же
+      верный идентификатор, как и <VAR
+CLASS="literal"
+>bar</VAR
+> в первом примере.
+      Но последний пример по сути эквивалентен такой записи:
+      <DIV
+CLASS="informalexample"
+><P
+></P
+><A
+NAME="AEN3243"
+></A
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />$error_descriptions</font><font color="#007700">[</font><font color="#0000BB">1</font><font color="#007700">] = </font><font color="#DD0000">"Произошла фатальная ошибка"</font><font color="#007700">;<br /></font><font color="#0000BB">$error_descriptions</font><font color="#007700">[</font><font color="#0000BB">2</font><font color="#007700">] = </font><font color="#DD0000">"PHP сообщает предупреждение"</font><font color="#007700">;<br /></font><font color="#0000BB">$error_descriptions</font><font color="#007700">[</font><font color="#0000BB">8</font><font color="#007700">] = </font><font color="#DD0000">"Это лишь неофициальное замечание"</font><font color="#007700">;<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+><P
+></P
+></DIV
+>
+      поскольку <VAR
+CLASS="literal"
+>E_ERROR</VAR
+> соответствует
+      <VAR
+CLASS="literal"
+>1</VAR
+> и т. д.
+     </P
+><P
+>&#13;      Как мы уже объяснили в вышеприведенных примерах,
+      <VAR
+CLASS="literal"
+>$foo[bar]</VAR
+> по-прежнему работает, но это неверно.
+      Это работает, поскольку в соответствии со своим синтаксисом
+      <VAR
+CLASS="literal"
+>bar</VAR
+> ожидается как константа. Однако, в данном
+      случае константы с именем <VAR
+CLASS="literal"
+>bar</VAR
+> не существует.
+      В таком случае PHP предполагает, что, написав
+      <VAR
+CLASS="literal"
+>bar</VAR
+>, вы имели ввиду строку
+      <VAR
+CLASS="literal"
+>"bar"</VAR
+>, но забыли указать кавычки.
+     </P
+><DIV
+CLASS="sect4"
+><H4
+CLASS="sect4"
+><A
+NAME="AEN3253"
+>Так что же в этом плохого?</A
+></H4
+><P
+>&#13;       Когда-нибудь в будущем команда разработчиков PHP возможно пожелает
+       добавить еще одну константу или ключевое слово, либо вы можете
+       ввести в ваше приложение еще одну константу и тогда у вас могут
+       возникнуть проблемы. Например, вы уже не можете использовать таким
+       образом слова <VAR
+CLASS="literal"
+>empty</VAR
+> и
+       <VAR
+CLASS="literal"
+>default</VAR
+>, поскольку они являются
+       <A
+HREF="reserved.html"
+>зарезервированными ключевыми словами</A
+>.
+      </P
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+>Замечание: </B
+>
+        Повторим, внутри строки (<A
+HREF="language.types.string.html"
+><B
+CLASS="type"
+>string</B
+></A
+>), заключенной
+        в двойные кавычки правильным является не окружать индексы
+        массива кавычками, поэтому <VAR
+CLASS="literal"
+>"$foo[bar]"</VAR
+>
+        является верным. Более подробно почему - смотрите
+        вышеприведенные примеры, а также раздел
+        <A
+HREF="language.types.string.html#language.types.string.parsing"
+>обработка
+        переменных в строках</A
+>.
+       </P
+></BLOCKQUOTE
+></DIV
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="sect2"
+><H2
+CLASS="sect2"
+><A
+NAME="language.types.array.casting"
+>Преобразование в массив</A
+></H2
+><P
+>&#13;     Для любого из типов: <A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>, <A
+HREF="language.types.float.html"
+><B
+CLASS="type"
+>float</B
+></A
+>,
+     <A
+HREF="language.types.string.html"
+><B
+CLASS="type"
+>string</B
+></A
+>, <A
+HREF="language.types.boolean.html"
+><B
+CLASS="type"
+>boolean</B
+></A
+> и <A
+HREF="language.types.resource.html"
+><B
+CLASS="type"
+>resource</B
+></A
+>,
+     если вы преобразуете значение в массив, вы получите массив с
+     одним элементом (с индексом 0), являющимся скалярным значением, с
+     которого вы начали.
+    </P
+><P
+>&#13;     Если вы преобразуете в массив объект (<A
+HREF="language.types.object.html"
+><B
+CLASS="type"
+>object</B
+></A
+>), вы
+     получите в качестве элементов массива свойства (переменные-члены)
+     этого объекта. Ключами будут имена переменных-членов.
+    </P
+><P
+>&#13;     Если вы преобразуете в массив значение <TT
+CLASS="constant"
+><B
+>NULL</B
+></TT
+>, вы получите
+     пустой массив.
+    </P
+></DIV
+><DIV
+CLASS="sect2"
+><H2
+CLASS="sect2"
+><A
+NAME="language.types.array.comparing"
+>Сравнение</A
+></H2
+><P
+>&#13;     Массивы можно сравнивать при помощи функции
+     <A
+HREF="function.array-diff.html"
+><B
+CLASS="function"
+>array_diff()</B
+></A
+> и
+     <A
+HREF="language.operators.array.html"
+>Операторов массивов</A
+>.
+    </P
+></DIV
+><DIV
+CLASS="sect2"
+><H2
+CLASS="sect2"
+><A
+NAME="language.types.array.examples"
+>Примеры</A
+></H2
+><P
+>&#13;     Тип массив в PHP является очень гибким, поэтому мы приведем
+     здесь несколько примеров, чтобы продемонстрировать вам все
+     возможности массивов.
+    </P
+><P
+>&#13;      <DIV
+CLASS="informalexample"
+><P
+></P
+><A
+NAME="AEN3285"
+></A
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br /></font><font color="#FF8000">// это<br /></font><font color="#0000BB">$a </font><font color="#007700">= array( </font><font color="#DD0000">'color' </font><font color="#007700">=&gt; </font><font color="#DD0000">'red'</font><font color="#007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#DD0000">'taste' </font><font color="#007700">=&gt; </font><font color="#DD0000">'sweet'</font><font color="#007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#DD0000">'shape' </font><font color="#007700">=&gt; </font><font color="#DD0000">'round'</font><font color="#007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#DD0000">'name'&nbsp;&nbsp;</font><font color="#007700">=&gt; </font><font color="#DD0000">'apple'</font><font color="#007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#FF8000">// ключом будет 0<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#007700">);<br /><br /></font><font color="#FF8000">// полностью соответствует<br /></font><font color="#0000BB">$a</font><font color="#007700">[</font><font color="#DD0000">'color'</font><font color="#007700">] = </font><font color="#DD0000">'red'</font><font color="#007700">;<br /></font><font color="#0000BB">$a</font><font color="#007700">[</font><font color="#DD0000">'taste'</font><font color="#007700">] = </font><font color="#DD0000">'sweet'</font><font color="#007700">;<br /></font><font color="#0000BB">$a</font><font color="#007700">[</font><font color="#DD0000">'shape'</font><font color="#007700">] = </font><font color="#DD0000">'round'</font><font color="#007700">;<br /></font><font color="#0000BB">$a</font><font color="#007700">[</font><font color="#DD0000">'name'</font><font color="#007700">]&nbsp;&nbsp;= </font><font color="#DD0000">'apple'</font><font color="#007700">;<br /></font><font color="#0000BB">$a</font><font color="#007700">[]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= </font><font color="#0000BB">4</font><font color="#007700">;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#FF8000">// ключом будет 0<br /><br /></font><font color="#0000BB">$b</font><font color="#007700">[] = </font><font color="#DD0000">'a'</font><font color="#007700">;<br /></font><font color="#0000BB">$b</font><font color="#007700">[] = </font><font color="#DD0000">'b'</font><font color="#007700">;<br /></font><font color="#0000BB">$b</font><font color="#007700">[] = </font><font color="#DD0000">'c'</font><font color="#007700">;<br /></font><font color="#FF8000">// создаст массив array(0 =&gt; 'a' , 1 =&gt; 'b' , 2 =&gt; 'c'),<br />// или просто array('a', 'b', 'c')<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+><P
+></P
+></DIV
+>
+     </P
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN3287"
+></A
+><P
+><B
+>Пример 11-4. Использование array()</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br /></font><font color="#FF8000">// Массив как карта (свойств)<br /></font><font color="#0000BB">$map </font><font color="#007700">= array( </font><font color="#DD0000">'version'&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#007700">=&gt; </font><font color="#0000BB">4</font><font color="#007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#DD0000">'OS'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#007700">=&gt; </font><font color="#DD0000">'Linux'</font><font color="#007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#DD0000">'lang'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#007700">=&gt; </font><font color="#DD0000">'english'</font><font color="#007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#DD0000">'short_tags' </font><font color="#007700">=&gt; </font><font color="#0000BB">true<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br /></font><font color="#FF8000">// исключительно числовые ключи<br /></font><font color="#0000BB">$array </font><font color="#007700">= array( </font><font color="#0000BB">7</font><font color="#007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">8</font><font color="#007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">0</font><font color="#007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">156</font><font color="#007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-</font><font color="#0000BB">10<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#007700">);<br /></font><font color="#FF8000">// это то же самое, что и array(0 =&gt; 7, 1 =&gt; 8, ...)<br /><br /></font><font color="#0000BB">$switching </font><font color="#007700">= array(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">10</font><font color="#007700">, </font><font color="#FF8000">// ключ = 0<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">5&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#007700">=&gt;&nbsp;&nbsp;</font><font color="#0000BB">6</font><font color="#007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">3&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#007700">=&gt;&nbsp;&nbsp;</font><font color="#0000BB">7</font><font color="#007700">, <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#DD0000">'a'&nbsp;&nbsp;</font><font color="#007700">=&gt;&nbsp;&nbsp;</font><font color="#0000BB">4</font><font color="#007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">11</font><font color="#007700">, </font><font color="#FF8000">// ключ = 6 (максимальным числовым индексом был 5)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#DD0000">'8'&nbsp;&nbsp;</font><font color="#007700">=&gt;&nbsp;&nbsp;</font><font color="#0000BB">2</font><font color="#007700">, </font><font color="#FF8000">// ключ = 8 (число!)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#DD0000">'02' </font><font color="#007700">=&gt; </font><font color="#0000BB">77</font><font color="#007700">, </font><font color="#FF8000">// ключ = '02'<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">0&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#007700">=&gt; </font><font color="#0000BB">12&nbsp;&nbsp;</font><font color="#FF8000">// значение 10 будет перезаписано на 12<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br /></font><font color="#FF8000">// пустой массив<br /></font><font color="#0000BB">$empty </font><font color="#007700">= array();<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="language.types.array.examples.loop"
+></A
+><P
+><B
+>Пример 11-5. Коллекция</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />$colors </font><font color="#007700">= array(</font><font color="#DD0000">'красный'</font><font color="#007700">, </font><font color="#DD0000">'синий'</font><font color="#007700">, </font><font color="#DD0000">'зеленый'</font><font color="#007700">, </font><font color="#DD0000">'желтый'</font><font color="#007700">);<br /><br />foreach (</font><font color="#0000BB">$colors </font><font color="#007700">as </font><font color="#0000BB">$color</font><font color="#007700">) {<br />&nbsp;&nbsp;&nbsp;&nbsp;echo </font><font color="#DD0000">"Вам нравится $color?</font><font color="#007700">\n</font><font color="#DD0000">"</font><font color="#007700">;<br />}<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+><P
+>  
+        Результат работы приведенного скрипта будет следующий:  
+       </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="screen"
+>Вам нравится красный?
+Вам нравится синий?
+Вам нравится зеленый?
+Вам нравится желтый?</PRE
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+><P
+>&#13;     Обратите внимание, что в настоящее время невозможно изменять
+     значения массива в таком цикле напрямую.
+      
+     Однако можно сделать так:
+     <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="language.types.array.examples.changeloop"
+></A
+><P
+><B
+>Пример 11-6. Коллекция</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br /></font><font color="#007700">foreach (</font><font color="#0000BB">$colors </font><font color="#007700">as </font><font color="#0000BB">$key </font><font color="#007700">=&gt; </font><font color="#0000BB">$color</font><font color="#007700">) {<br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#FF8000">// не будет работать:<br />&nbsp;&nbsp;&nbsp;&nbsp;//$color = strtoupper($color);<br />&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;// работает:<br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$colors</font><font color="#007700">[</font><font color="#0000BB">$key</font><font color="#007700">] = </font><font color="#0000BB">strtoupper</font><font color="#007700">(</font><font color="#0000BB">$color</font><font color="#007700">);<br />}<br /></font><font color="#0000BB">print_r</font><font color="#007700">(</font><font color="#0000BB">$colors</font><font color="#007700">);<br /><br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+><P
+>  
+        Результат работы приведенного скрипта будет следующий:  
+        </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="screen"
+>Array
+(
+    [0] =&#62; КРАСНЫЙ
+    [1] =&#62; СИНИЙ
+    [2] =&#62; ЗЕЛЕНЫЙ
+    [3] =&#62; ЖЕЛТЫЙ
+)</PRE
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+    </P
+><P
+>&#13;     Следующий пример создает начинающийся с единицы массив.
+     <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN3302"
+></A
+><P
+><B
+>Пример 11-7. Индекс, начинающийся с единицы</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />$firstquarter&nbsp;&nbsp;</font><font color="#007700">= array(</font><font color="#0000BB">1 </font><font color="#007700">=&gt; </font><font color="#DD0000">'Январь'</font><font color="#007700">, </font><font color="#DD0000">'Февраль'</font><font color="#007700">, </font><font color="#DD0000">'Март'</font><font color="#007700">);<br /></font><font color="#0000BB">print_r</font><font color="#007700">(</font><font color="#0000BB">$firstquarter</font><font color="#007700">);<br /><br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+><P
+>  
+        Результат работы приведенного скрипта будет следующий:  
+        </P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="screen"
+>Array 
+(
+    [1] =&#62; 'Январь'
+    [2] =&#62; 'Февраль'
+    [3] =&#62; 'Март'
+)</PRE
+></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+    </P
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN3307"
+></A
+><P
+><B
+>Пример 11-8. Заполнение массива</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br /></font><font color="#FF8000">// заполняет массив всеми элементами директории<br /></font><font color="#0000BB">$handle </font><font color="#007700">= </font><font color="#0000BB">opendir</font><font color="#007700">(</font><font color="#DD0000">'.'</font><font color="#007700">);<br />while (</font><font color="#0000BB">false </font><font color="#007700">!== (</font><font color="#0000BB">$file </font><font color="#007700">= </font><font color="#0000BB">readdir</font><font color="#007700">(</font><font color="#0000BB">$handle</font><font color="#007700">))) {<br />&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">$files</font><font color="#007700">[] = </font><font color="#0000BB">$file</font><font color="#007700">;<br />}<br /></font><font color="#0000BB">closedir</font><font color="#007700">(</font><font color="#0000BB">$handle</font><font color="#007700">);<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+><P
+>&#13;     Массивы упорядочены. Вы можете изменять порядок элементов,
+     используя различные функции сортировки. Для дополнительной
+     информации смотрите раздел <A
+HREF="ref.array.html"
+>функции
+     для работы с массивами</A
+>. Вы можете подсчитать количество
+     элементов в массиве, используя функцию
+     <A
+HREF="function.count.html"
+><B
+CLASS="function"
+>count()</B
+></A
+>.
+    </P
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN3313"
+></A
+><P
+><B
+>Пример 11-9. Сортировка массива</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />sort</font><font color="#007700">(</font><font color="#0000BB">$files</font><font color="#007700">);<br /></font><font color="#0000BB">print_r</font><font color="#007700">(</font><font color="#0000BB">$files</font><font color="#007700">);<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+><P
+>&#13;     Поскольку значение массива может быть чем угодно, им также
+     может быть другой массив. Таким образом вы можете создавать
+     рекурсивные и многомерные массивы.
+    </P
+><TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN3317"
+></A
+><P
+><B
+>Пример 11-10. Рекурсивные и многомерные массивы</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />$fruits </font><font color="#007700">= array ( </font><font color="#DD0000">"фрукты" </font><font color="#007700">=&gt; array ( </font><font color="#DD0000">"a" </font><font color="#007700">=&gt; </font><font color="#DD0000">"апельсин"</font><font color="#007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#DD0000">"b" </font><font color="#007700">=&gt; </font><font color="#DD0000">"банан"</font><font color="#007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#DD0000">"c" </font><font color="#007700">=&gt; </font><font color="#DD0000">"яблоко"<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#007700">),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#DD0000">"числа"&nbsp;&nbsp;</font><font color="#007700">=&gt; array ( </font><font color="#0000BB">1</font><font color="#007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">2</font><font color="#007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">3</font><font color="#007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">4</font><font color="#007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">5</font><font color="#007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">6<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#007700">),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#DD0000">"дырки"&nbsp;&nbsp;</font><font color="#007700">=&gt; array (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#DD0000">"первая"</font><font color="#007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">5 </font><font color="#007700">=&gt; </font><font color="#DD0000">"вторая"</font><font color="#007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#DD0000">"третья"<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);<br /><br /></font><font color="#FF8000">// Несколько примеров доступа к значениям предыдущего массива<br /></font><font color="#007700">echo </font><font color="#0000BB">$fruits</font><font color="#007700">[</font><font color="#DD0000">"дырки"</font><font color="#007700">][</font><font color="#0000BB">5</font><font color="#007700">];&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#FF8000">// напечатает "вторая"<br /></font><font color="#007700">echo </font><font color="#0000BB">$fruits</font><font color="#007700">[</font><font color="#DD0000">"фрукты"</font><font color="#007700">][</font><font color="#DD0000">"a"</font><font color="#007700">]; </font><font color="#FF8000">// напечатает "апельсин"<br /></font><font color="#007700">unset(</font><font color="#0000BB">$fruits</font><font color="#007700">[</font><font color="#DD0000">"дырки"</font><font color="#007700">][</font><font color="#0000BB">0</font><font color="#007700">]);&nbsp;&nbsp;</font><font color="#FF8000">// удалит "первая"<br /><br />// Создаст новый многомерный массив<br /></font><font color="#0000BB">$juices</font><font color="#007700">[</font><font color="#DD0000">"яблоко"</font><font color="#007700">][</font><font color="#DD0000">"зеленое"</font><font color="#007700">] = </font><font color="#DD0000">"хорошее"</font><font color="#007700">;<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+><P
+>&#13;     Обратите внимание, что при присваивании массива всегда
+     происходит копирование значения. Чтобы копировать массив по
+     ссылке, вам нужно использовать оператор ссылки.
+     <DIV
+CLASS="informalexample"
+><P
+></P
+><A
+NAME="AEN3321"
+></A
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />$arr1 </font><font color="#007700">= array(</font><font color="#0000BB">2</font><font color="#007700">, </font><font color="#0000BB">3</font><font color="#007700">);<br /></font><font color="#0000BB">$arr2 </font><font color="#007700">= </font><font color="#0000BB">$arr1</font><font color="#007700">;<br /></font><font color="#0000BB">$arr2</font><font color="#007700">[] = </font><font color="#0000BB">4</font><font color="#007700">; </font><font color="#FF8000">// $arr2 изменился,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// $arr1 по прежнему array(2,3)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br /></font><font color="#0000BB">$arr3 </font><font color="#007700">= &amp;</font><font color="#0000BB">$arr1</font><font color="#007700">;<br /></font><font color="#0000BB">$arr3</font><font color="#007700">[] = </font><font color="#0000BB">4</font><font color="#007700">; </font><font color="#FF8000">// теперь $arr1 и $arr3 эквивалентны<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+><P
+></P
+></DIV
+>
+    </P
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="language.types.string.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Начало</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="language.types.object.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Строки</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="language.types.html"
+ACCESSKEY="U"
+>Уровень выше</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Объекты</TD
+></TR
+></TABLE
+></DIV
+></div></center></div></td>
+			<td><div style="display:none; width:200px;" id="o3" name="o3"><script charset="windows-1251" type="text/javascript" src="http://www.ozon.ru/PartnerTwinerNew.aspx?revident=bea9126b-c8e1-4bf5-b6d8-9a057f8feac6" ></script></div><script>o = document.getElementById('o3'); if(o) { var s = o.innerHTML; s = s.replace(/F6F6F6/gi,"FFFFFF"); o.innerHTML = s.replace(/padding-top: 10px; padding-bottom: 10px;/,"display:none;"); o.style.display = 'block'; } </script><br><div style="margin: 10px;"><script type="text/javascript"><!--
+google_ad_client = "pub-4093271809023514";
+/* 120x600, создано 01.11.2008 */
+google_ad_slot = "0438855731";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div></td>
+    		</tr>
+  		</table>
+    </td>
+  </tr>
+  <tr valign='bottom' height='1%'>
+  <td>      <table width=100% cellspacing=0 cellpadding=5 border=0 bgcolor=#9999CC>
+        <tr valign=center>
+          <td class='phpcopyright' width='45%' align='left'>&nbsp;&nbsp;Engine <a  href="http://www.mnogosearch.org/">MnoGoSearch</a></td>
+          <td class='phpcopyright' width='10%' align='center'>2007-2010 &copy <a  href="mailto:webmaster@php.ru">PHP.RU</a></td>
+          <td class='phpcopyright' width='45%' align='right' >Powered by <a target="_blank" href="http://odware.ru">ODware</a> <a HREF="http://440hz.ru">440Hz</a> &nbsp;&nbsp;</td>
+        </tr>
+      </table>
+
+    <div style="text-align: right; padding: 5px">
+		<!--LiveInternet counter-->
+		<script type="text/javascript">document.write('<a href="http://www.liveinternet.ru/click" target=_blank><img src="http://counter.yadro.ru/hit?t53.6;r' + escape(document.referrer) + ((typeof(screen)=='undefined')?'':';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ';u' + escape(document.URL) +';i' + escape('Жж'+document.title.substring(0,80)) + ';' + Math.random() + '" border=0 width=88 height=31 alt="" title="LiveInternet: показано число просмотров и посетителей за 24 часа"><\/a>');
+		</script>
+		<!--/LiveInternet-->
+		<!-- SpyLOG -->
+		<script src="http://tools.spylog.ru/counter2.2.js" type="text/javascript" id="spylog_code" counter="830950" ></script>
+		<noscript><a href="http://u8309.50.spylog.com/cnt?cid=830950&f=3&p=0" target="_blank"><img src="http://u8309.50.spylog.com/cnt?cid=830950&p=0&f=4" alt='SpyLOG' border='0' width=88 height=31 ></a>
+		</noscript>
+		<!--/ SpyLOG -->
+	</div>
+</td>
+  </tr>
+</table>
+
+<script>
+<!--
+document.SEARCH.QS.focus();
+// --></script>
+
+<!-- 
+	как же вы все это читаете?
+	440hz 
+-->
+
+</body>
+</html>

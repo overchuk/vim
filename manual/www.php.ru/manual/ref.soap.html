@@ -1,0 +1,2459 @@
+<!-- 
+
+     HTML dropped by Zend Guard Compressor 4.2
+
+     php.ru team: mz, az, yuri, vb, cyxapuk, 440hz, administrator
+     2004-2007 (c) expi-web.com 
+     2007-2008 (c) odware.com 
+     0101-1010 (с) 440hz
+
+     2b|~2b=?
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EHOT тут всё пожрал ! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="alternate" type="application/rss+xml" title="php.ru/forum - последние сообщения" href="http://www.php.ru/forum/rss.php">
+<link rel="SHORTCUT ICON" href="http://www.php.ru/favicon.ico" />
+<META name="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<meta http-equiv="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<META name="keywords" content="php, php5, apache, mysql, session">
+<meta http-equiv="keywords" content="php, php5, apache, mysql, session">
+<title>php.ru - SOAP Functions</title>
+<LINK REL="stylesheet" TYPE="text/css" HREF="http://www.php.ru/index.css">
+<script language="JavaScript" src="http://www.php.ru/ajax/ajax.js"></script>
+</head>
+<body>
+
+<table height='100%' width='100%' cellspacing='0' cellpadding='0'>
+  <tr height='99%' valign='top'>
+    <td align='center'>
+		
+		<table style='margin-top: 4px' width=100% cellspacing=0 cellpadding=3>
+   		<tr>
+     		<td>PHP - <a href="http://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BA%D1%80%D0%BE%D0%BD%D0%B8%D0%BC" target=_blank class=lnk>рекурсивный акроним</a> словосочетания &laquo;<a href="/manual/introduction.html" class=lnk>PHP: Hypertext Preprocessor</a>&raquo;</td>
+     	</tr>
+   		</table>
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/subsys_ajax.js"></script>
+		<!--
+
+		commet by 440hz
+		20.10.2007
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/pu_search.js"></script>
+
+		-->
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/cz.js?a=b"></script>
+
+		<table style='margin-top: 5px' width=100% bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0>
+   	 	<form name=SEARCH method=GET action="http://www.php.ru/search/?SID=s32sia4uftr8tkkj" onsubmit="return puSubmit();">
+	  	<input type=hidden name=PAGE value=1>
+  		<tr>
+    		<td width='1' valign='middle'> 
+    		   <a href='/'><img src="http://www.php.ru/;-)/logo.gif" width=133 height=93 alt="php" border=0 hspace=10 vspace=0></a>
+			 </td>
+		    <td width='100%' valign='middle'>
+		       <!--
+			   
+				commet by 440hz
+				20.10.2007
+
+			   <div id='pu_search' class='pu_search'></div>
+		       <div id='pu_search_description' class='pu_search_decription'></div>
+			   
+			   -->
+        	 <input type=text style='width:99%; margin: 10px' maxlength='200' name='QS' class='in' id='query' autocomplete='off' value="" />
+    		</td>
+		  </tr>
+   		<tr bgcolor='#666699' valign='middle'>
+			<td style='border-top: 1px solid #333366;'><br /></td>
+    		<td style='border-top: 1px solid #333366;'><div style="padding: 4px 4px 4px 10px; height: 24px; color: #CCCCFF;" id="stat">Хто там?<script>doLoadCZ('stat','stat');</script></div></td>
+  		</tr>
+		</form>
+		</table>
+		<table id="menu" cellspaciong=0 cellpadding=3>
+<tr>
+<td><a href="/" class=current>Главная</a></td>
+<td><a href="/download/" class=current>Скачать</a></td>
+<td><a href="/doc/" class=current>Документация</a></td>
+<td><a href="/forum/" class=current>Форум</a></td>
+<td width=100% align=right><a href="/phpinfo.html" class=current>phpinfo()</a></td>
+</tr>
+</table>
+
+		
+<!--  AdRiver code START. Type:728x90 Site: php.ru PZ: 0 BN: 1 -->
+<script language="javascript" type="text/javascript"><!--
+var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+var ar_Tail='unknown'; if (document.referrer) ar_Tail = escape(document.referrer);
+document.write(
+'<iframe src="http://ad.adriver.ru/cgi-bin/erle.cgi?'
++ 'sid=148680&bn=1&target=blank&bt=36&pz=0&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail
++ '" frameborder=0 vspace=0 hspace=0 width=728 height=90 marginwidth=0'
++ ' marginheight=0 scrolling=no></iframe>');
+//--></script>
+<noscript>
+<a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" target=_blank>
+<img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" alt="-AdRiver-" border=0 width=728 height=90></a>
+</noscript>
+<!--  AdRiver code END  -->
+
+
+  		<table width='100%' cellspacing='0' cellpadding='0'>
+    		<tr valign='top'>
+      		<td width=100%><div style="margin: 10px 10px 10px 50px;"><center><div style="width: 800px; text-align: left"><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Руководство по PHP</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="function.snmpwalkoid.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="function.is-soap-fault.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="reference"
+><A
+NAME="ref.soap"
+></A
+><DIV
+CLASS="TITLEPAGE"
+><H1
+CLASS="title"
+>CXLVI. SOAP Functions</H1
+><DIV
+CLASS="PARTINTRO"
+><A
+NAME="AEN168065"
+></A
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="soap.intro"
+>Введение</A
+></H1
+><P
+>&#13;    The SOAP extension can be used to write SOAP Servers and Clients. It supports
+    subsets of <A
+HREF="http://www.w3.org/TR/soap11/"
+TARGET="_top"
+>SOAP 1.1</A
+>, <A
+HREF="http://www.w3.org/TR/soap12/"
+TARGET="_top"
+>SOAP 1.2</A
+> and <A
+HREF="http://www.w3.org/TR/wsdl"
+TARGET="_top"
+>WSDL 1.1</A
+> specifications.
+   </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="soap.requirements"
+>Требования</A
+></H1
+><P
+>&#13;    This extension makes use of the <A
+HREF="http://www.xmlsoft.org/"
+TARGET="_top"
+>GNOME xml
+    library</A
+>. Download and install this library. You will need at
+    least libxml-2.5.4.
+   </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="soap.installation"
+>Установка</A
+></H1
+><P
+>&#13;    This extension is only available if PHP was configured with
+    <VAR
+CLASS="option"
+>--enable-soap</VAR
+>.
+   </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="soap.configuration"
+>Настройка во время выполнения</A
+></H1
+><P
+>&#13;Поведение этих функций зависит от установок в <TT
+CLASS="filename"
+>php.ini</TT
+>.
+</P
+><P
+>&#13;  <DIV
+CLASS="table"
+><A
+NAME="AEN168085"
+></A
+><P
+><B
+>Таблица 1. SOAP Configuration Options</B
+></P
+><TABLE
+BORDER="1"
+CLASS="CALSTABLE"
+><COL><COL><COL><COL><THEAD
+><TR
+><TH
+>Name</TH
+><TH
+>Default</TH
+><TH
+>Changeable</TH
+><TH
+>Changelog</TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+>soap.wsdl_cache_enabled</TD
+><TD
+>"1"</TD
+><TD
+>PHP_INI_ALL</TD
+><TD
+>Available since PHP 5.0.0.</TD
+></TR
+><TR
+><TD
+>soap.wsdl_cache_dir</TD
+><TD
+>"/tmp"</TD
+><TD
+>PHP_INI_ALL</TD
+><TD
+>Available since PHP 5.0.0.</TD
+></TR
+><TR
+><TD
+>soap.wsdl_cache_ttl</TD
+><TD
+>"86400"</TD
+><TD
+>PHP_INI_ALL</TD
+><TD
+>Available since PHP 5.0.0.</TD
+></TR
+></TBODY
+></TABLE
+></DIV
+>
+  Для подробного описания констант
+PHP_INI_*, обратитесь к документации функции <A
+HREF="function.ini-set.html"
+><B
+CLASS="function"
+>ini_set()</B
+></A
+>.
+</P
+><P
+>Краткое разъяснение конфигурационных
+директив.</P
+><P
+>&#13; <P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+><A
+NAME="ini.soap.wsdl-cache-enabled"
+></A
+><VAR
+CLASS="parameter"
+>soap.wsdl_cache_enabled</VAR
+>
+    <A
+HREF="language.types.boolean.html"
+><B
+CLASS="type"
+>boolean</B
+></A
+></DT
+><DD
+><P
+>&#13;     Enables or disables the WSDL caching feature.
+    </P
+></DD
+><DT
+><A
+NAME="ini.soap.wsdl-cache-dir"
+></A
+><VAR
+CLASS="parameter"
+>soap.wsdl_cache_dir</VAR
+>
+    <A
+HREF="language.types.string.html"
+><B
+CLASS="type"
+>string</B
+></A
+></DT
+><DD
+><P
+>&#13;     Sets the directory name where the SOAP extension will put cache files.
+    </P
+></DD
+><DT
+><A
+NAME="ini.soap.wsdl-cache-ttl"
+></A
+><VAR
+CLASS="parameter"
+>soap.wsdl_cache_ttl</VAR
+>
+    <A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>int</B
+></A
+></DT
+><DD
+><P
+>&#13;     Sets the number of seconds (time to live) that cached files will be used
+     instead the originals.
+    </P
+></DD
+></DL
+></DIV
+>
+ </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="soap.classes"
+>Предопределенные классы</A
+></H1
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="soap.class.soapclient"
+><B
+CLASS="classname"
+>SoapClient</B
+></A
+></H2
+><P
+></P
+><DIV
+CLASS="section"
+><H3
+CLASS="section"
+><A
+NAME="soap.class.soapclient.constructor"
+>Конструктор</A
+></H3
+><P
+></P
+><UL
+><LI
+><P
+><A
+HREF="function.soap-soapclient-construct.html"
+>SoapClient-&#62;__construct()</A
+> -
+       constructs a new SoapClient object</P
+></LI
+></UL
+></DIV
+><DIV
+CLASS="section"
+><H3
+CLASS="section"
+><A
+NAME="soap.class.soapclient.methods"
+>Методы</A
+></H3
+><P
+></P
+><UL
+><LI
+><P
+><A
+HREF="function.soap-soapclient-call.html"
+>SoapClient-&#62;__call()</A
+> - Calls a SOAP function (deprecated)</P
+></LI
+><LI
+><P
+><A
+HREF="function.soap-soapclient-dorequest.html"
+>SoapClient-&#62;__doRequest()</A
+> - Performs a SOAP request</P
+></LI
+><LI
+><P
+><A
+HREF="function.soap-soapclient-getfunctions.html"
+>SoapClient-&#62;__getFunctions()</A
+> - Returns list of SOAP functions</P
+></LI
+><LI
+><P
+><A
+HREF="function.soap-soapclient-getlastrequest.html"
+>SoapClient-&#62;__getLastRequest()</A
+> - Returns last SOAP request</P
+></LI
+><LI
+><P
+><A
+HREF="function.soap-soapclient-getlastrequestheaders.html"
+>SoapClient-&#62;__getLastRequestHeaders()</A
+> - Returns last SOAP request headers</P
+></LI
+><LI
+><P
+><A
+HREF="function.soap-soapclient-getlastresponse.html"
+>SoapClient-&#62;__getLastResponse()</A
+> - Returns last SOAP response</P
+></LI
+><LI
+><P
+><A
+HREF="function.soap-soapclient-getlastresponseheaders.html"
+>SoapClient-&#62;__getLastResponseHeaders()</A
+> - Returns last SOAP response headers</P
+></LI
+><LI
+><P
+><A
+HREF="function.soap-soapclient-gettypes.html"
+>SoapClient-&#62;__getTypes()</A
+> - Returns list of SOAP types</P
+></LI
+><LI
+><P
+><A
+HREF="function.soap-soapclient-setcookie.html"
+>SoapClient-&#62;__setCookie()</A
+> - Sets the
+       cookie that will be sent with the SOAP request</P
+></LI
+><LI
+><P
+><A
+HREF="function.soap-soapclient-soapcall.html"
+>SoapClient-&#62;__soapCall()</A
+> - Calls a SOAP function</P
+></LI
+></UL
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="soap.class.soapfault"
+><B
+CLASS="classname"
+>SoapFault</B
+></A
+></H2
+><P
+></P
+><DIV
+CLASS="section"
+><H3
+CLASS="section"
+><A
+NAME="soap.class.soapfault.constructor"
+>Конструктор</A
+></H3
+><P
+></P
+><UL
+><LI
+><P
+><A
+HREF="function.soap-soapfault-construct.html"
+>SoapFault-&#62;__construct()</A
+> - construct a new SoapFault object</P
+></LI
+></UL
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="soap.class.soapheader"
+><B
+CLASS="classname"
+>SoapHeader</B
+></A
+></H2
+><P
+>&#13;     <B
+CLASS="classname"
+>SoapHeader</B
+> is a special low-level class for passing 
+     or returning SOAP headers. It's just a data holder and it does not have any 
+     special methods except its constructor. It can be used in the <A
+HREF="function.soap-soapclient-soapcall.html"
+>SoapClient-&#62;__soapCall()</A
+> method to pass a SOAP header or 
+     in a SOAP header handler to return the header in a SOAP response.
+    </P
+><DIV
+CLASS="section"
+><H3
+CLASS="section"
+><A
+NAME="soap.class.soapheader.constructor"
+>Конструктор</A
+></H3
+><P
+></P
+><UL
+><LI
+><P
+><A
+HREF="function.soap-soapheader-construct.html"
+>SoapHeader-&#62;__construct()</A
+> - construct a new SoapHeader object</P
+></LI
+></UL
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="soap.class.soapparam"
+><B
+CLASS="classname"
+>SoapParam</B
+></A
+></H2
+><P
+>&#13;     <B
+CLASS="classname"
+>SoapParam</B
+> is a special low-level class for naming 
+     parameters and returning values in <VAR
+CLASS="literal"
+>non-WSDL</VAR
+> mode. 
+     It's just a data holder and it does not have any special methods except 
+     its constructor.
+    </P
+><DIV
+CLASS="section"
+><H3
+CLASS="section"
+><A
+NAME="soap.class.soapparam.constructor"
+>Конструктор</A
+></H3
+><P
+></P
+><UL
+><LI
+><P
+><A
+HREF="function.soap-soapparam-construct.html"
+>SoapParam-&#62;__construct()</A
+> - construct a new SoapParam object</P
+></LI
+></UL
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="soap.class.soapserver"
+><B
+CLASS="classname"
+>SoapServer</B
+></A
+></H2
+><P
+></P
+><DIV
+CLASS="section"
+><H3
+CLASS="section"
+><A
+NAME="soap.class.soapserver.constructor"
+>Конструктор</A
+></H3
+><P
+></P
+><UL
+><LI
+><P
+><A
+HREF="function.soap-soapserver-construct.html"
+>SoapServer-&#62;__construct()</A
+> - construct a new SoapServer object</P
+></LI
+></UL
+></DIV
+><DIV
+CLASS="section"
+><H3
+CLASS="section"
+><A
+NAME="soap.class.soapserver.methods"
+>Методы</A
+></H3
+><P
+></P
+><UL
+><LI
+><P
+><A
+HREF="function.soap-soapserver-addfunction.html"
+>SoapServer-&#62;addFunction()</A
+> - Adds one or several functions those will handle SOAP requests</P
+></LI
+><LI
+><P
+><A
+HREF="function.soap-soapserver-fault.html"
+>SoapServer-&#62;fault()</A
+> - </P
+></LI
+><LI
+><P
+><A
+HREF="function.soap-soapserver-getfunctions.html"
+>SoapServer-&#62;getFunctions()</A
+> - Returns list of defined functions</P
+></LI
+><LI
+><P
+><A
+HREF="function.soap-soapserver-handle.html"
+>SoapServer-&#62;handle()</A
+> - Handles a SOAP request</P
+></LI
+><LI
+><P
+><A
+HREF="function.soap-soapserver-setclass.html"
+>SoapServer-&#62;setClass()</A
+> - Sets class which will handle SOAP requests</P
+></LI
+><LI
+><P
+><A
+HREF="function.soap-soapserver-setpersistence.html"
+>SoapServer-&#62;setPersistence()</A
+> - Sets persistence mode of SoapServer</P
+></LI
+></UL
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="soap.class.soapvar"
+><B
+CLASS="classname"
+>SoapVar</B
+></A
+></H2
+><P
+>&#13;     <B
+CLASS="classname"
+>SoapVar</B
+> is a special low-level class for encoding
+     parameters and returning values in <VAR
+CLASS="literal"
+>non-WSDL</VAR
+> mode. It's
+     just a data holder and does not have any special methods except the constructor. 
+     It's useful when you want to set the type property in SOAP request or response. 
+    </P
+><DIV
+CLASS="section"
+><H3
+CLASS="section"
+><A
+NAME="soap.class.soapvar.constructor"
+>Конструктор</A
+></H3
+><P
+></P
+><UL
+><LI
+><P
+><A
+HREF="function.soap-soapvar-construct.html"
+>SoapVar-&#62;__construct()</A
+> - construct a new SoapVar object</P
+></LI
+></UL
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="soap.constants"
+>Предопределенные константы</A
+></H1
+><P
+>&#13;Перечисленные ниже константы определены данным расширением и могут быть
+доступны только в том случае, если PHP был собран с
+поддержкой этого расширения или же в том случае, если
+данное расширение подгружается во время выполнения.
+</P
+><P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+><TT
+CLASS="constant"
+><B
+>SOAP_1_1</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SOAP_1_2</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SOAP_PERSISTENCE_SESSION</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SOAP_PERSISTENCE_REQUEST</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SOAP_FUNCTIONS_ALL</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SOAP_ENCODED</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SOAP_LITERAL</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SOAP_RPC</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SOAP_DOCUMENT</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SOAP_ACTOR_NEXT</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SOAP_ACTOR_NONE</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SOAP_ACTOR_UNLIMATERECEIVER</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SOAP_COMPRESSION_ACCEPT</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SOAP_COMPRESSION_GZIP</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SOAP_COMPRESSION_DEFLATE</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>UNKNOWN_TYPE</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_STRING</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_BOOLEAN</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_DECIMAL</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_FLOAT</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_DOUBLE</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_DURATION</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_DATETIME</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_TIME</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_DATE</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_GYEARMONTH</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_GYEAR</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_GMONTHDAY</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_GDAY</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_GMONTH</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_HEXBINARY</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_BASE64BINARY</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_ANYURI</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_ANYXML</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;     Added in PHP 5.1.0.
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_QNAME</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_NOTATION</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_NORMALIZEDSTRING</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_TOKEN</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_LANGUAGE</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_NMTOKEN</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_NAME</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_NCNAME</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_ID</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_IDREF</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_IDREFS</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_ENTITY</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_ENTITIES</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_INTEGER</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_NONPOSITIVEINTEGER</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_NEGATIVEINTEGER</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_LONG</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_INT</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_SHORT</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_BYTE</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_NONNEGATIVEINTEGER</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_UNSIGNEDLONG</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_UNSIGNEDINT</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_UNSIGNEDSHORT</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_UNSIGNEDBYTE</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_POSITIVEINTEGER</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_NMTOKENS</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_ANYTYPE</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SOAP_ENC_OBJECT</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>SOAP_ENC_ARRAY</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_1999_TIMEINSTANT</B
+></TT
+>
+     (<A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_NAMESPACE</B
+></TT
+>
+     (<A
+HREF="language.types.string.html"
+><B
+CLASS="type"
+>string</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+><DT
+><TT
+CLASS="constant"
+><B
+>XSD_1999_NAMESPACE</B
+></TT
+>
+     (<A
+HREF="language.types.string.html"
+><B
+CLASS="type"
+>string</B
+></A
+>)</DT
+><DD
+><P
+>&#13;
+    </P
+></DD
+></DL
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Содержание</B
+></DT
+><DT
+><A
+HREF="function.is-soap-fault.html"
+>is_soap_fault</A
+>&nbsp;--&nbsp;
+   Checks if SOAP call was failed
+  </DT
+><DT
+><A
+HREF="function.soap-soapclient-call.html"
+>SoapClient-&#62;__call()</A
+>&nbsp;--&nbsp;
+   Calls a SOAP function (deprecated)
+  </DT
+><DT
+><A
+HREF="function.soap-soapclient-construct.html"
+>SoapClient-&#62;__construct()</A
+>&nbsp;--&nbsp;
+   SoapClient constructor
+  </DT
+><DT
+><A
+HREF="function.soap-soapclient-dorequest.html"
+>SoapClient-&#62;__doRequest()</A
+>&nbsp;--&nbsp;
+   Performs a SOAP request
+  </DT
+><DT
+><A
+HREF="function.soap-soapclient-getfunctions.html"
+>SoapClient-&#62;__getFunctions()</A
+>&nbsp;--&nbsp;
+   Returns list of SOAP functions
+  </DT
+><DT
+><A
+HREF="function.soap-soapclient-getlastrequest.html"
+>SoapClient-&#62;__getLastRequest()</A
+>&nbsp;--&nbsp;
+   Returns last SOAP request
+  </DT
+><DT
+><A
+HREF="function.soap-soapclient-getlastrequestheaders.html"
+>SoapClient-&#62;__getLastRequestHeaders()</A
+>&nbsp;--&nbsp;
+   Returns last SOAP request headers
+  </DT
+><DT
+><A
+HREF="function.soap-soapclient-getlastresponse.html"
+>SoapClient-&#62;__getLastResponse()</A
+>&nbsp;--&nbsp;
+   Returns last SOAP response.
+  </DT
+><DT
+><A
+HREF="function.soap-soapclient-getlastresponseheaders.html"
+>SoapClient-&#62;__getLastResponseHeaders()</A
+>&nbsp;--&nbsp;
+   Returns last SOAP response headers.
+  </DT
+><DT
+><A
+HREF="function.soap-soapclient-gettypes.html"
+>SoapClient-&#62;__getTypes()</A
+>&nbsp;--&nbsp;
+   Returns list of SOAP types
+  </DT
+><DT
+><A
+HREF="function.soap-soapclient-setcookie.html"
+>SoapClient-&#62;__setCookie()</A
+>&nbsp;--&nbsp;
+   Sets the cookie that will be sent with the SOAP request
+  </DT
+><DT
+><A
+HREF="function.soap-soapclient-soapcall.html"
+>SoapClient-&#62;__soapCall()</A
+>&nbsp;--&nbsp;
+   Calls a SOAP function
+  </DT
+><DT
+><A
+HREF="function.soap-soapfault-construct.html"
+>SoapFault-&#62;__construct()</A
+>&nbsp;--&nbsp;
+   SoapFault constructor
+  </DT
+><DT
+><A
+HREF="function.soap-soapheader-construct.html"
+>SoapHeader-&#62;__construct()</A
+>&nbsp;--&nbsp;
+   SoapHeader constructor
+  </DT
+><DT
+><A
+HREF="function.soap-soapparam-construct.html"
+>SoapParam-&#62;__construct()</A
+>&nbsp;--&nbsp;
+   SoapParam constructor
+  </DT
+><DT
+><A
+HREF="function.soap-soapserver-addfunction.html"
+>SoapServer-&#62;addFunction()</A
+>&nbsp;--&nbsp;
+   Adds one or several functions those will handle SOAP requests
+  </DT
+><DT
+><A
+HREF="function.soap-soapserver-construct.html"
+>SoapServer-&#62;__construct()</A
+>&nbsp;--&nbsp;
+   SoapServer constructor
+  </DT
+><DT
+><A
+HREF="function.soap-soapserver-fault.html"
+>SoapServer-&#62;fault()</A
+>&nbsp;--&nbsp;Issue SoapServer fault indicating an error</DT
+><DT
+><A
+HREF="function.soap-soapserver-getfunctions.html"
+>SoapServer-&#62;getFunctions()</A
+>&nbsp;--&nbsp;
+   Returns list of defined functions
+  </DT
+><DT
+><A
+HREF="function.soap-soapserver-handle.html"
+>SoapServer-&#62;handle()</A
+>&nbsp;--&nbsp;
+   Handles a SOAP request
+  </DT
+><DT
+><A
+HREF="function.soap-soapserver-setclass.html"
+>SoapServer-&#62;setClass()</A
+>&nbsp;--&nbsp;
+   Sets class which will handle SOAP requests
+  </DT
+><DT
+><A
+HREF="function.soap-soapserver-setpersistence.html"
+>SoapServer-&#62;setPersistence()</A
+>&nbsp;--&nbsp;
+   Sets persistence mode of SoapServer
+  </DT
+><DT
+><A
+HREF="function.soap-soapvar-construct.html"
+>SoapVar-&#62;__construct()</A
+>&nbsp;--&nbsp;
+   SoapVar constructor
+  </DT
+><DT
+><A
+HREF="function.use-soap-error-handler.html"
+>use_soap_error_handler</A
+>&nbsp;--&nbsp;Set whether to use the SOAP error handler and return the former value</DT
+></DL
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="function.snmpwalkoid.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Начало</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="function.is-soap-fault.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>snmpwalkoid</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="funcref.html"
+ACCESSKEY="U"
+>Уровень выше</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>is_soap_fault</TD
+></TR
+></TABLE
+></DIV
+></div></center></div></td>
+			<td><div style="display:none; width:200px;" id="o3" name="o3"><script charset="windows-1251" type="text/javascript" src="http://www.ozon.ru/PartnerTwinerNew.aspx?revident=bea9126b-c8e1-4bf5-b6d8-9a057f8feac6" ></script></div><script>o = document.getElementById('o3'); if(o) { var s = o.innerHTML; s = s.replace(/F6F6F6/gi,"FFFFFF"); o.innerHTML = s.replace(/padding-top: 10px; padding-bottom: 10px;/,"display:none;"); o.style.display = 'block'; } </script><br><div style="margin: 10px;"><script type="text/javascript"><!--
+google_ad_client = "pub-4093271809023514";
+/* 120x600, создано 01.11.2008 */
+google_ad_slot = "0438855731";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div></td>
+    		</tr>
+  		</table>
+    </td>
+  </tr>
+  <tr valign='bottom' height='1%'>
+  <td>      <table width=100% cellspacing=0 cellpadding=5 border=0 bgcolor=#9999CC>
+        <tr valign=center>
+          <td class='phpcopyright' width='45%' align='left'>&nbsp;&nbsp;Engine <a  href="http://www.mnogosearch.org/">MnoGoSearch</a></td>
+          <td class='phpcopyright' width='10%' align='center'>2007-2010 &copy <a  href="mailto:webmaster@php.ru">PHP.RU</a></td>
+          <td class='phpcopyright' width='45%' align='right' >Powered by <a target="_blank" href="http://odware.ru">ODware</a> <a HREF="http://440hz.ru">440Hz</a> &nbsp;&nbsp;</td>
+        </tr>
+      </table>
+
+    <div style="text-align: right; padding: 5px">
+		<!--LiveInternet counter-->
+		<script type="text/javascript">document.write('<a href="http://www.liveinternet.ru/click" target=_blank><img src="http://counter.yadro.ru/hit?t53.6;r' + escape(document.referrer) + ((typeof(screen)=='undefined')?'':';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ';u' + escape(document.URL) +';i' + escape('Жж'+document.title.substring(0,80)) + ';' + Math.random() + '" border=0 width=88 height=31 alt="" title="LiveInternet: показано число просмотров и посетителей за 24 часа"><\/a>');
+		</script>
+		<!--/LiveInternet-->
+		<!-- SpyLOG -->
+		<script src="http://tools.spylog.ru/counter2.2.js" type="text/javascript" id="spylog_code" counter="830950" ></script>
+		<noscript><a href="http://u8309.50.spylog.com/cnt?cid=830950&f=3&p=0" target="_blank"><img src="http://u8309.50.spylog.com/cnt?cid=830950&p=0&f=4" alt='SpyLOG' border='0' width=88 height=31 ></a>
+		</noscript>
+		<!--/ SpyLOG -->
+	</div>
+</td>
+  </tr>
+</table>
+
+<script>
+<!--
+document.SEARCH.QS.focus();
+// --></script>
+
+<!-- 
+	как же вы все это читаете?
+	440hz 
+-->
+
+</body>
+</html>

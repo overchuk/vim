@@ -1,0 +1,2511 @@
+<!-- 
+
+     HTML dropped by Zend Guard Compressor 4.2
+
+     php.ru team: mz, az, yuri, vb, cyxapuk, 440hz, administrator
+     2004-2007 (c) expi-web.com 
+     2007-2008 (c) odware.com 
+     0101-1010 (с) 440hz
+
+     2b|~2b=?
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EHOT тут всё пожрал ! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="alternate" type="application/rss+xml" title="php.ru/forum - последние сообщения" href="http://www.php.ru/forum/rss.php">
+<link rel="SHORTCUT ICON" href="http://www.php.ru/favicon.ico" />
+<META name="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<meta http-equiv="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<META name="keywords" content="php, php5, apache, mysql, session">
+<meta http-equiv="keywords" content="php, php5, apache, mysql, session">
+<title>php.ru - MaxDB PHP Extension</title>
+<LINK REL="stylesheet" TYPE="text/css" HREF="http://www.php.ru/index.css">
+<script language="JavaScript" src="http://www.php.ru/ajax/ajax.js"></script>
+</head>
+<body>
+
+<table height='100%' width='100%' cellspacing='0' cellpadding='0'>
+  <tr height='99%' valign='top'>
+    <td align='center'>
+		
+		<table style='margin-top: 4px' width=100% cellspacing=0 cellpadding=3>
+   		<tr>
+     		<td>PHP - <a href="http://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BA%D1%80%D0%BE%D0%BD%D0%B8%D0%BC" target=_blank class=lnk>рекурсивный акроним</a> словосочетания &laquo;<a href="/manual/introduction.html" class=lnk>PHP: Hypertext Preprocessor</a>&raquo;</td>
+     	</tr>
+   		</table>
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/subsys_ajax.js"></script>
+		<!--
+
+		commet by 440hz
+		20.10.2007
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/pu_search.js"></script>
+
+		-->
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/cz.js?a=b"></script>
+
+		<table style='margin-top: 5px' width=100% bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0>
+   	 	<form name=SEARCH method=GET action="http://www.php.ru/search/?SID=gta98fcwg7ftwt4g" onsubmit="return puSubmit();">
+	  	<input type=hidden name=PAGE value=1>
+  		<tr>
+    		<td width='1' valign='middle'> 
+    		   <a href='/'><img src="http://www.php.ru/;-)/logo.gif" width=133 height=93 alt="php" border=0 hspace=10 vspace=0></a>
+			 </td>
+		    <td width='100%' valign='middle'>
+		       <!--
+			   
+				commet by 440hz
+				20.10.2007
+
+			   <div id='pu_search' class='pu_search'></div>
+		       <div id='pu_search_description' class='pu_search_decription'></div>
+			   
+			   -->
+        	 <input type=text style='width:99%; margin: 10px' maxlength='200' name='QS' class='in' id='query' autocomplete='off' value="" />
+    		</td>
+		  </tr>
+   		<tr bgcolor='#666699' valign='middle'>
+			<td style='border-top: 1px solid #333366;'><br /></td>
+    		<td style='border-top: 1px solid #333366;'><div style="padding: 4px 4px 4px 10px; height: 24px; color: #CCCCFF;" id="stat">Хто там?<script>doLoadCZ('stat','stat');</script></div></td>
+  		</tr>
+		</form>
+		</table>
+		<table id="menu" cellspaciong=0 cellpadding=3>
+<tr>
+<td><a href="/" class=current>Главная</a></td>
+<td><a href="/download/" class=current>Скачать</a></td>
+<td><a href="/doc/" class=current>Документация</a></td>
+<td><a href="/forum/" class=current>Форум</a></td>
+<td width=100% align=right><a href="/phpinfo.html" class=current>phpinfo()</a></td>
+</tr>
+</table>
+
+		
+<!--  AdRiver code START. Type:728x90 Site: php.ru PZ: 0 BN: 1 -->
+<script language="javascript" type="text/javascript"><!--
+var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+var ar_Tail='unknown'; if (document.referrer) ar_Tail = escape(document.referrer);
+document.write(
+'<iframe src="http://ad.adriver.ru/cgi-bin/erle.cgi?'
++ 'sid=148680&bn=1&target=blank&bt=36&pz=0&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail
++ '" frameborder=0 vspace=0 hspace=0 width=728 height=90 marginwidth=0'
++ ' marginheight=0 scrolling=no></iframe>');
+//--></script>
+<noscript>
+<a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" target=_blank>
+<img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" alt="-AdRiver-" border=0 width=728 height=90></a>
+</noscript>
+<!--  AdRiver code END  -->
+
+
+  		<table width='100%' cellspacing='0' cellpadding='0'>
+    		<tr valign='top'>
+      		<td width=100%><div style="margin: 10px 10px 10px 50px;"><center><div style="width: 800px; text-align: left"><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Руководство по PHP</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="function.tanh.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="function.maxdb-affected-rows.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="reference"
+><A
+NAME="ref.maxdb"
+></A
+><DIV
+CLASS="TITLEPAGE"
+><H1
+CLASS="title"
+>LXXVIII. MaxDB PHP Extension</H1
+><DIV
+CLASS="PARTINTRO"
+><A
+NAME="AEN79871"
+></A
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="maxdb.intro"
+>Введение</A
+></H1
+><P
+>&#13;     The MaxDB PHP extension allows you to access the functionality provided by
+     MaxDB 7.5.0 and above. More information about the MaxDB Database server
+     can be found at <A
+HREF="http://www.mysql.com/products/maxdb/"
+TARGET="_top"
+>http://www.mysql.com/products/maxdb/</A
+>.
+    </P
+><P
+>&#13;     The MaxDB PHP extension is compatible to the MySQL mysqli extension. There are only
+     minor differences in the behaviour of some functions due to the differences of the
+     underlying database servers, MaxDB and MySQL.
+    </P
+><P
+>&#13;     The main differences to mysqli are in the following functions:
+    </P
+><P
+></P
+><TABLE
+BORDER="0"
+><TBODY
+><TR
+><TD
+><A
+HREF="function.maxdb-character-set-name.html"
+><B
+CLASS="function"
+>maxdb_character_set_name()</B
+></A
+> - Returns only ascii or unicode.</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.maxdb-get-client-info.html"
+><B
+CLASS="function"
+>maxdb_get_client_info()</B
+></A
+> - Returns a different version string.</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.maxdb-get-client-version.html"
+><B
+CLASS="function"
+>maxdb_get_client_version()</B
+></A
+> - Returns a different version string.</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.maxdb-get-host-info.html"
+><B
+CLASS="function"
+>maxdb_get_host_info()</B
+></A
+> - Returns localhost or hostname.</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.maxdb-get-server-info.html"
+><B
+CLASS="function"
+>maxdb_get_server_info()</B
+></A
+> - Returns a different version string.</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.maxdb-get-server-version.html"
+><B
+CLASS="function"
+>maxdb_get_server_version()</B
+></A
+> - Returns a different version string.</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.maxdb-kill.html"
+><B
+CLASS="function"
+>maxdb_kill()</B
+></A
+> - Only disconnects the session.</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.maxdb-multi-query.html"
+><B
+CLASS="function"
+>maxdb_multi_query()</B
+></A
+> - Can not handle multiple SQL statements.</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.maxdb-next-result.html"
+><B
+CLASS="function"
+>maxdb_next_result()</B
+></A
+> - Function returns always false.</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.maxdb-options.html"
+><B
+CLASS="function"
+>maxdb_options()</B
+></A
+> - Supports a different set of options.</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.maxdb-report.html"
+><B
+CLASS="function"
+>maxdb_report()</B
+></A
+> - Supports a different report mode.</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.maxdb-stat.html"
+><B
+CLASS="function"
+>maxdb_stat()</B
+></A
+> - Returns a different system status string.</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.maxdb-stmt-store-result.html"
+><B
+CLASS="function"
+>maxdb_stmt_store_result()</B
+></A
+> - Is not necessary for MaxDB.</TD
+></TR
+><TR
+><TD
+><A
+HREF="function.maxdb-store-result.html"
+><B
+CLASS="function"
+>maxdb_store_result()</B
+></A
+> - Is not necessary for MaxDB.</TD
+></TR
+></TBODY
+></TABLE
+><P
+></P
+><P
+>&#13;     Documentation for MaxDB can be found at
+     <A
+HREF="http://dev.mysql.com/doc/maxdb/"
+TARGET="_top"
+>http://dev.mysql.com/doc/maxdb/</A
+>.
+    </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="maxdb.requirements"
+>Требования</A
+></H1
+><P
+>&#13;     In order to have these functions available, you must compile PHP with
+     MaxDB support. Additionally, you must have the MaxDB SQLDBC runtime library
+     available to access the MaxDB server. 
+    </P
+><P
+>&#13;     Documentation for MaxDB SQLDBC can be found at
+     <A
+HREF="http://dev.mysql.com/doc/maxdb/"
+TARGET="_top"
+>http://dev.mysql.com/doc/maxdb/</A
+>.
+    </P
+><P
+>&#13;     Download the MaxDB SQLDBC package from 
+     <A
+HREF="http://dev.mysql.com/downloads/maxdb/clients.html"
+TARGET="_top"
+>http://dev.mysql.com/downloads/maxdb/clients.html</A
+>.
+     
+    </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="maxdb.installation"
+>Установка</A
+></H1
+><P
+>&#13;  By using the <VAR
+CLASS="option"
+>--with-maxdb[=DIR]</VAR
+>
+  configuration option you enable PHP to access MaxDB
+  databases. <VAR
+CLASS="literal"
+>[DIR]</VAR
+> points to the directory
+  that contains the installed MaxDB SQLDBC package.
+ </P
+><P
+>&#13;  Windows users will need
+  to enable <TT
+CLASS="filename"
+>php_maxdb.dll</TT
+> inside of <TT
+CLASS="filename"
+>php.ini</TT
+>.
+ </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="maxdb.configuration"
+>Настройка во время выполнения</A
+></H1
+><P
+>&#13;Поведение этих функций зависит от установок в <TT
+CLASS="filename"
+>php.ini</TT
+>.
+</P
+><P
+>&#13;  <DIV
+CLASS="table"
+><A
+NAME="AEN79929"
+></A
+><P
+><B
+>Таблица 1. MaxDB Configuration Options</B
+></P
+><TABLE
+BORDER="1"
+CLASS="CALSTABLE"
+><COL><COL><COL><COL><THEAD
+><TR
+><TH
+>Name</TH
+><TH
+>Default</TH
+><TH
+>Changeable</TH
+><TH
+>Changelog</TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+>maxdb.default_host</TD
+><TD
+>NULL</TD
+><TD
+>PHP_INI_ALL</TD
+><TD
+>&nbsp;</TD
+></TR
+><TR
+><TD
+>maxdb.default_db</TD
+><TD
+>NULL</TD
+><TD
+>PHP_INI_ALL</TD
+><TD
+>&nbsp;</TD
+></TR
+><TR
+><TD
+>maxdb.default_user</TD
+><TD
+>NULL</TD
+><TD
+>PHP_INI_ALL</TD
+><TD
+>&nbsp;</TD
+></TR
+><TR
+><TD
+>maxdb.default_pw</TD
+><TD
+>NULL</TD
+><TD
+>PHP_INI_ALL</TD
+><TD
+>&nbsp;</TD
+></TR
+><TR
+><TD
+>maxdb.long_readlen</TD
+><TD
+>"200"</TD
+><TD
+>PHP_INI_ALL</TD
+><TD
+>&nbsp;</TD
+></TR
+></TBODY
+></TABLE
+></DIV
+>
+  Для подробного описания констант
+PHP_INI_*, обратитесь к документации функции <A
+HREF="function.ini-set.html"
+><B
+CLASS="function"
+>ini_set()</B
+></A
+>.
+</P
+><P
+>Краткое разъяснение конфигурационных
+директив.</P
+><P
+>&#13; <P
+></P
+><DIV
+CLASS="variablelist"
+><DL
+><DT
+><A
+NAME="ini.maxdb.default-host"
+></A
+><VAR
+CLASS="parameter"
+>maxdb.default_host</VAR
+>
+    <A
+HREF="language.types.string.html"
+><B
+CLASS="type"
+>string</B
+></A
+></DT
+><DD
+><P
+>&#13;     The default server host to use when connecting to the database
+     server if no other host is specified.
+    </P
+></DD
+><DT
+><A
+NAME="ini.maxdb.default-db"
+></A
+><VAR
+CLASS="parameter"
+>maxdb.default_db</VAR
+>
+    <A
+HREF="language.types.string.html"
+><B
+CLASS="type"
+>string</B
+></A
+></DT
+><DD
+><P
+>&#13;     The default server database to use when connecting
+     if no other database is specified.
+    </P
+></DD
+><DT
+><A
+NAME="ini.maxdb.default-user"
+></A
+><VAR
+CLASS="parameter"
+>maxdb.default_user</VAR
+>
+    <A
+HREF="language.types.string.html"
+><B
+CLASS="type"
+>string</B
+></A
+></DT
+><DD
+><P
+>&#13;     The default user name to use when connecting to the database
+     server if no other name is specified.
+    </P
+></DD
+><DT
+><A
+NAME="ini.maxdb.default-pw"
+></A
+><VAR
+CLASS="parameter"
+>maxdb.default_pw</VAR
+>
+    <A
+HREF="language.types.string.html"
+><B
+CLASS="type"
+>string</B
+></A
+></DT
+><DD
+><P
+>&#13;     The default password to use when connecting to the database
+     server if no other password is specified.
+    </P
+></DD
+><DT
+><A
+NAME="ini.maxdb.long-readlen"
+></A
+><VAR
+CLASS="parameter"
+>maxdb.long_readlen</VAR
+>
+    <A
+HREF="language.types.integer.html"
+><B
+CLASS="type"
+>integer</B
+></A
+></DT
+><DD
+><P
+>&#13;     The default maximum length of bytes that is transferred to the client
+     if long data is retrieved from the MaxDB database server.
+    </P
+></DD
+></DL
+></DIV
+>
+ </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="maxdb.classes"
+>Предопределенные классы</A
+></H1
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="maxdb.class.maxdb"
+><B
+CLASS="classname"
+>maxdb</B
+></A
+></H2
+><P
+>&#13;      Represents a connection between PHP and a MaxDB database.
+     </P
+><DIV
+CLASS="section"
+><H3
+CLASS="section"
+><A
+NAME="maxdb.class.maxdb.constructor"
+>Конструктор</A
+></H3
+><P
+></P
+><UL
+><LI
+><P
+><A
+HREF="function.maxdb-connect.html"
+>maxdb</A
+> - construct a new maxdb object</P
+></LI
+></UL
+></DIV
+><DIV
+CLASS="section"
+><H3
+CLASS="section"
+><A
+NAME="maxdb.class.maxdb.methods"
+>Методы</A
+></H3
+><P
+></P
+><UL
+><LI
+><P
+><A
+HREF="function.maxdb-autocommit.html"
+>autocommit</A
+> - turns on or off auto-commiting database modifications</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-change-user.html"
+>change_user</A
+> - changes the user of the specified database connection</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-character-set-name.html"
+>character_set_name</A
+> - returns the default character set for the database connection</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-close.html"
+>close</A
+> - closes a previously opened connection</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-commit.html"
+>commit</A
+> - commits the current transaction</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-connect.html"
+>connect</A
+> - opens a new connection to MaxDB database server</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-debug.html"
+>debug</A
+> - performs debugging operations</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-dump-debug-info.html"
+>dump_debug_info</A
+> - dumps debug information</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-get-client-info.html"
+>get_client_info</A
+> - returns client version</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-get-host-info.html"
+>get_host_info</A
+> - returns type of connection used</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-get-server-info.html"
+>get_server_info</A
+> - returns version of the MaxDB server</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-get-server-version.html"
+>get_server_version</A
+> - returns version of the MaxDB server</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-init.html"
+>init</A
+> - initializes maxdb object</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-info.html"
+>info</A
+> - retrieves information about the most recently executed query</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-kill.html"
+>kill</A
+> - asks the server to kill a MaxDB thread</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-multi-query.html"
+>multi_query</A
+> - performs multiple queries</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-more-results.html"
+>more_results</A
+> - check if more results exist from currently executed multi-query</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-next-result.html"
+>next_result</A
+> - reads next result from currently executed multi-query</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-options.html"
+>options</A
+> - set options</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-ping.html"
+>ping</A
+> - pings a server connection or reconnects if there is no connection</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-prepare.html"
+>prepare</A
+> - prepares a SQL query</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-query.html"
+>query</A
+> - performs a query</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-real-connect.html"
+>real_connect</A
+> - attempts to open a connection to MaxDB database server</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-real-escape-string.html"
+>escape_string</A
+> - escapes special characters in a string for use in a SQL statement, taking into account the current charset of the connection</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-rollback.html"
+>rollback</A
+> - rolls back the current transaction</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-select-db.html"
+>select_db</A
+> - selects the default database</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-ssl-set.html"
+>ssl_set</A
+> - sets ssl parameters</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-stat.html"
+>stat</A
+> - gets the current system status</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-stmt-init.html"
+>stmt_init</A
+>- initializes a statement for use with <A
+HREF="function.maxdb-stmt-prepare.html"
+>maxdb_stmt_prepare</A
+></P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-store-result.html"
+>store_result</A
+> - transfers a resultset from last query</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-use-result.html"
+>use_result</A
+> - transfers an unbuffered resultset from last query</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-thread-safe.html"
+>thread-safe</A
+> - returns whether thread safety is given or not</P
+></LI
+></UL
+></DIV
+><DIV
+CLASS="section"
+><H3
+CLASS="section"
+><A
+NAME="maxdb.class.maxdb.properties"
+>Свойства</A
+></H3
+><P
+></P
+><UL
+><LI
+><P
+><A
+HREF="function.maxdb-affected-rows.html"
+>affected_rows</A
+> - gets the number of affected rows in a previous MaxDB operation</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-get-client-info.html"
+>client_info</A
+> - returns the MaxDB client version as a string</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-get-client-version.html"
+>client_version</A
+> - returns the MaxDB client version as an integer</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-errno.html"
+>errno</A
+> - returns the error code for the most recent function call</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-error.html"
+>error</A
+> - returns the error string for the most recent function call</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-field-count.html"
+>field_count</A
+> - returns the number of columns for the most recent query</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-get-host-info.html"
+>host_info</A
+> - returns a string representing the type of connection used</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-info.html"
+>info</A
+> - retrieves information about the most recently executed query</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-insert-id.html"
+>insert_id</A
+> - returns the auto generated id used in the last query</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-get-proto-info.html"
+>protocol_version</A
+> - returns the version of the MaxDB protocol used</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-sqlstate.html"
+>sqlstate</A
+> - returns a string containing the SQLSTATE error code for the last error</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-thread-id.html"
+>thread_id</A
+> - returns the thread ID for the current connection</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-warning-count.html"
+>warning_count</A
+> - returns the number of warnings generated during execution of the previous SQL statement</P
+></LI
+></UL
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="maxdb.classes.stmt"
+><B
+CLASS="classname"
+>maxdb_stmt</B
+></A
+></H2
+><P
+>&#13;      Represents a prepared statement.
+     </P
+><DIV
+CLASS="section"
+><H3
+CLASS="section"
+><A
+NAME="maxdb.class.stmt.methods"
+>Методы</A
+></H3
+><P
+></P
+><UL
+><LI
+><P
+><A
+HREF="function.maxdb-bind-param.html"
+>bind_param</A
+> - binds variables to a prepared statement</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-bind-result.html"
+>bind_result</A
+> - binds variables to a prepared statement for result storage</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-stmt-close.html"
+>close</A
+> - closes a prepared statement</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-stmt-data-seek.html"
+>data-seek</A
+> - seeks to an arbitrary row in a statement result set</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-execute.html"
+>execute</A
+> - executes a prepared statement</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-fetch.html"
+>fetch</A
+> - fetches result from a prepared statement into bound variables</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-stmt-free-result.html"
+>free_result</A
+> - frees stored result memory for the given statement handle</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-stmt-result-metadata.html"
+>result_metadata</A
+> - retrieves a resultset from a prepared statement for metadata information</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-stmt-prepare.html"
+>prepare</A
+> - prepares a SQL query</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-send-long-data.html"
+>send_long_data</A
+> - sends data in chunks</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-stmt-close-long-data.html"
+>close_long_data</A
+> - end sending long data</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-stmt-reset.html"
+>reset</A
+> - resets a prepared statement</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-stmt-store-result.html"
+>store_result</A
+> - buffers complete resultset from a prepared statement</P
+></LI
+></UL
+></DIV
+><DIV
+CLASS="section"
+><H3
+CLASS="section"
+><A
+NAME="maxdb.class.stmt.properties"
+>Свойства</A
+></H3
+><P
+></P
+><UL
+><LI
+><P
+><A
+HREF="function.maxdb-stmt-affected-rows.html"
+>affected_rows</A
+> - returns affected rows from last statement execution</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-stmt-errno.html"
+>errno</A
+> - returns errorcode for last statement function</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-stmt-error.html"
+>errno</A
+> - returns errormessage for last statement function</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-stmt-param-count.html"
+>param_count</A
+> - returns number of parameter for a given prepare statement</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-stmt-sqlstate.html"
+>sqlstate</A
+> - returns a string containing the SQLSTATE error code for the last statement function</P
+></LI
+></UL
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="maxdb.classes.result"
+><B
+CLASS="classname"
+>maxdb_result</B
+></A
+></H2
+><P
+>&#13;      Represents the result set obtained from a query against the database.
+     </P
+><DIV
+CLASS="section"
+><H3
+CLASS="section"
+><A
+NAME="maxdb.class.result.methods"
+>Методы</A
+></H3
+><P
+></P
+><UL
+><LI
+><P
+><A
+HREF="function.maxdb-free-result.html"
+>close</A
+> - closes resultset</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-data-seek.html"
+>data_seek</A
+> - moves internal result pointer</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-fetch-field.html"
+>fetch_field</A
+> - gets column information from a resultset</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-fetch-fields.html"
+>fetch_fields</A
+> - gets information for all columns from a resulset</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-fetch-field-direct.html"
+>fetch_field_direct</A
+> - gets column information for specified column</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-fetch-array.html"
+>fetch_array</A
+> - fetches a result row as an associative array, a numeric array, or both.</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-fetch-assoc.html"
+>fetch_assoc</A
+> - fetches a result row as an associative array</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-fetch-object.html"
+>fetch_object</A
+> - fetches a result row as an object</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-fetch-row.html"
+>fetch_row</A
+> - gets a result row as an enumerated array</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-free-result.html"
+>close</A
+> - frees result memory</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-field-seek.html"
+>field_seek</A
+> - set result pointer to a specified field offset</P
+></LI
+></UL
+></DIV
+><DIV
+CLASS="section"
+><H3
+CLASS="section"
+><A
+NAME="maxdb.class.result.properties"
+>Свойства</A
+></H3
+><P
+></P
+><UL
+><LI
+><P
+><A
+HREF="function.maxdb-field-tell.html"
+>current_field</A
+> - returns offset of current fieldpointer</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-field-count.html"
+>field_count</A
+> - returns number of fields in resultset</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-fetch-lengths.html"
+>lengths</A
+> - returns an array of columnlengths</P
+></LI
+><LI
+><P
+><A
+HREF="function.maxdb-num-rows.html"
+>num_rows</A
+> - returns number of rows in resultset</P
+></LI
+></UL
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="maxdb.constants"
+>Предопределенные константы</A
+></H1
+><P
+>&#13;Перечисленные ниже константы определены данным расширением и могут быть
+доступны только в том случае, если PHP был собран с
+поддержкой этого расширения или же в том случае, если
+данное расширение подгружается во время выполнения.
+</P
+><P
+>&#13;  The following constants to use with <A
+HREF="function.maxdb-options.html"
+><B
+CLASS="function"
+>maxdb_options()</B
+></A
+> are defined.
+  For further description of these constants see 
+  <A
+HREF="http://dev.mysql.com/doc/maxdb/"
+TARGET="_top"
+>http://dev.mysql.com/doc/maxdb/</A
+>.
+  <DIV
+CLASS="table"
+><A
+NAME="AEN80277"
+></A
+><P
+><B
+>Таблица 2. MaxDB PHP client constants</B
+></P
+><TABLE
+BORDER="1"
+CLASS="CALSTABLE"
+><COL><COL><THEAD
+><TR
+><TH
+>Constant</TH
+><TH
+>Description</TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+>MAXDB_COMPNAME</TD
+><TD
+>The component name used to initialise the SQLDBC runtime environment.</TD
+></TR
+><TR
+><TD
+>MAXDB_APPLICATION</TD
+><TD
+>The application to be connected to the database.</TD
+></TR
+><TR
+><TD
+>MAXDB_APPVERSION</TD
+><TD
+>The version of the application.</TD
+></TR
+><TR
+><TD
+>MAXDB_SQLMODE</TD
+><TD
+>The SQL mode.</TD
+></TR
+><TR
+><TD
+>MAXDB_UNICODE</TD
+><TD
+>TRUE, if the connection is an unicode (UCS2) client or FALSE, if not.</TD
+></TR
+><TR
+><TD
+>MAXDB_TIMEOUT</TD
+><TD
+>&#13;         The maximum allowed time of inactivity after which the connection to the 
+         database is closed by the system.
+       </TD
+></TR
+><TR
+><TD
+>MAXDB_ISOLATIONLEVEL</TD
+><TD
+>&#13;         Specifies whether and how shared locks and exclusive locks are implicitly 
+         requested or released.
+       </TD
+></TR
+><TR
+><TD
+>MAXDB_PACKETCOUNT</TD
+><TD
+>&#13;         The number of different request packets used for the connection.
+        </TD
+></TR
+><TR
+><TD
+>MAXDB_STATEMENTCACHESIZE</TD
+><TD
+>&#13;         The number of prepared statements to be cached for the connection for re-use.
+       </TD
+></TR
+><TR
+><TD
+>MAXDB_CURSORPREFIX</TD
+><TD
+>&#13;         The prefix to use for result tables that are automatically named.
+       </TD
+></TR
+></TBODY
+></TABLE
+></DIV
+>
+ </P
+><P
+>&#13;  The function <A
+HREF="function.maxdb-fetch-array.html"
+><B
+CLASS="function"
+>maxdb_fetch_array()</B
+></A
+> uses a constant for
+  the different types of result arrays. The following constants are
+  defined:
+  <DIV
+CLASS="table"
+><A
+NAME="AEN80317"
+></A
+><P
+><B
+>Таблица 3. MaxDB fetch constants</B
+></P
+><TABLE
+BORDER="1"
+CLASS="CALSTABLE"
+><COL><COL><THEAD
+><TR
+><TH
+>Constant</TH
+><TH
+>Description</TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+>MAXDB_ASSOC</TD
+><TD
+>&#13;       Columns are returned into the array having the fieldname as the array
+       index.
+      </TD
+></TR
+><TR
+><TD
+>MAXDB_ASSOC_UPPER</TD
+><TD
+>&#13;       Columns are returned into the array having the upper case fieldname as the array
+       index.
+      </TD
+></TR
+><TR
+><TD
+>MAXDB_ASSOC_LOWER</TD
+><TD
+>&#13;       Columns are returned into the array having the lower case fieldname as the array
+       index.
+      </TD
+></TR
+><TR
+><TD
+>MAXDB_BOTH</TD
+><TD
+>&#13;       Columns are returned into the array having both a numerical index
+       and the fieldname as the array index.
+      </TD
+></TR
+><TR
+><TD
+>MAXDB_NUM</TD
+><TD
+>&#13;       Columns are returned into the array having a numerical index to the
+       fields. This index starts with 0, the first field in the result.
+      </TD
+></TR
+></TBODY
+></TABLE
+></DIV
+>
+ </P
+></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="maxdb.examples"
+>Примеры</A
+></H1
+><P
+>&#13;     All examples in the MaxDB PHP documentation use the HOTELDB demo database from MaxDB. More about this
+     database can be found at <A
+HREF="http://dev.mysql.com/doc/maxdb/en/98/11b83fa6b33c17e10000000a114084/frameset.htm"
+TARGET="_top"
+>http://dev.mysql.com/doc/maxdb/en/98/11b83fa6b33c17e10000000a114084/frameset.htm</A
+>.
+    </P
+><P
+>&#13;     To use the examples in the MaxDB PHP documentation, you have to load the tutorial data into your database.
+     Then you have to set maxdb.default_db in <TT
+CLASS="filename"
+>php.ini</TT
+> to the database that contains the tutorial data.
+    </P
+><P
+>&#13;     This simple example shows how to connect, execute a query, print
+     resulting rows and disconnect from a MaxDB database.
+     <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN80347"
+></A
+><P
+><B
+>Пример 1. MaxDB extension overview example</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />$link </font><font color="#007700">= </font><font color="#0000BB">maxdb_connect</font><font color="#007700">(</font><font color="#DD0000">"localhost"</font><font color="#007700">, </font><font color="#DD0000">"MONA"</font><font color="#007700">, </font><font color="#DD0000">"RED"</font><font color="#007700">, </font><font color="#DD0000">"DEMODB"</font><font color="#007700">);<br />&nbsp;&nbsp;&nbsp;<br /></font><font color="#FF8000">/* check connection */<br /></font><font color="#007700">if (</font><font color="#0000BB">maxdb_connect_errno</font><font color="#007700">()) {<br />&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">printf</font><font color="#007700">(</font><font color="#DD0000">"Connect failed: %s\n"</font><font color="#007700">, </font><font color="#0000BB">maxdb_connect_error</font><font color="#007700">());<br />&nbsp;&nbsp;&nbsp;exit();<br />}<br /><br /></font><font color="#FF8000">/* Performing SQL query */<br /></font><font color="#0000BB">$query </font><font color="#007700">= </font><font color="#DD0000">"SELECT * FROM hotel.city"</font><font color="#007700">;<br /></font><font color="#0000BB">$result </font><font color="#007700">= </font><font color="#0000BB">maxdb_query</font><font color="#007700">(</font><font color="#0000BB">$link</font><font color="#007700">, </font><font color="#0000BB">$query</font><font color="#007700">) or die(</font><font color="#DD0000">"Query failed : " </font><font color="#007700">. </font><font color="#0000BB">maxdb_error</font><font color="#007700">());<br /><br /></font><font color="#FF8000">/* Printing results in HTML */<br /></font><font color="#007700">echo </font><font color="#DD0000">"&lt;table&gt;\n"</font><font color="#007700">;<br />while (</font><font color="#0000BB">$line </font><font color="#007700">= </font><font color="#0000BB">maxdb_fetch_array</font><font color="#007700">(</font><font color="#0000BB">$result</font><font color="#007700">, </font><font color="#0000BB">MAXDB_ASSOC</font><font color="#007700">)) {<br />&nbsp;&nbsp;&nbsp;&nbsp;echo </font><font color="#DD0000">"&nbsp;&nbsp;&lt;tr&gt;\n"</font><font color="#007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;foreach (</font><font color="#0000BB">$line </font><font color="#007700">as </font><font color="#0000BB">$col_value</font><font color="#007700">) {<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo </font><font color="#DD0000">"&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;$col_value&lt;/td&gt;</font><font color="#007700">\n</font><font color="#DD0000">"</font><font color="#007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;echo </font><font color="#DD0000">"&nbsp;&nbsp;&lt;/tr&gt;\n"</font><font color="#007700">;<br />}<br />echo </font><font color="#DD0000">"&lt;/table&gt;\n"</font><font color="#007700">;<br /><br /></font><font color="#FF8000">/* Free resultset */<br /></font><font color="#0000BB">maxdb_free_result</font><font color="#007700">(</font><font color="#0000BB">$result</font><font color="#007700">);<br /><br /></font><font color="#FF8000">/* Closing connection */<br /></font><font color="#0000BB">maxdb_close</font><font color="#007700">(</font><font color="#0000BB">$link</font><font color="#007700">);<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+    </P
+><P
+>&#13;     The following example shows how to bind variables to a SELECT INTO statement.
+     <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN80351"
+></A
+><P
+><B
+>Пример 2. Example for use of SELECT INTO statements</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />$link </font><font color="#007700">= </font><font color="#0000BB">maxdb_connect</font><font color="#007700">(</font><font color="#DD0000">"localhost"</font><font color="#007700">, </font><font color="#DD0000">"MONA"</font><font color="#007700">, </font><font color="#DD0000">"RED"</font><font color="#007700">, </font><font color="#DD0000">"DEMODB"</font><font color="#007700">);<br /><br /></font><font color="#FF8000">/* check connection */<br /></font><font color="#007700">if (!</font><font color="#0000BB">$link</font><font color="#007700">) {<br />&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">printf</font><font color="#007700">(</font><font color="#DD0000">"Connect failed: %s\n"</font><font color="#007700">, </font><font color="#0000BB">maxdb_connect_error</font><font color="#007700">());<br />&nbsp;&nbsp;&nbsp;exit();<br />}<br />&nbsp;&nbsp;&nbsp;<br /></font><font color="#FF8000">/* Performing SQL query */<br /></font><font color="#0000BB">$stmt </font><font color="#007700">= </font><font color="#0000BB">maxdb_prepare </font><font color="#007700">(</font><font color="#0000BB">$link</font><font color="#007700">, </font><font color="#DD0000">"SELECT percentage INTO ? FROM hotel.countrylanguage where language = ?"</font><font color="#007700">);<br />if (!</font><font color="#0000BB">$stmt</font><font color="#007700">) {<br />&nbsp;&nbsp;</font><font color="#0000BB">printf </font><font color="#007700">(</font><font color="#DD0000">"Prepare failed: %s\n"</font><font color="#007700">, </font><font color="#0000BB">maxdb_error</font><font color="#007700">(</font><font color="#0000BB">$link</font><font color="#007700">));<br />}<br /><br /></font><font color="#0000BB">$name </font><font color="#007700">= </font><font color="#DD0000">"Mbundu"</font><font color="#007700">;<br /><br /></font><font color="#0000BB">maxdb_stmt_bind_param</font><font color="#007700">(</font><font color="#0000BB">$stmt</font><font color="#007700">, </font><font color="#DD0000">'ds'</font><font color="#007700">, </font><font color="#0000BB">$percentage</font><font color="#007700">, </font><font color="#0000BB">$name</font><font color="#007700">);<br /></font><font color="#0000BB">maxdb_stmt_execute</font><font color="#007700">(</font><font color="#0000BB">$stmt</font><font color="#007700">);<br /><br /></font><font color="#0000BB">printf </font><font color="#007700">(</font><font color="#DD0000">"%f\n"</font><font color="#007700">, </font><font color="#0000BB">$percentage</font><font color="#007700">);<br /><br /></font><font color="#0000BB">maxdb_stmt_close </font><font color="#007700">(</font><font color="#0000BB">$stmt</font><font color="#007700">);<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+    </P
+><P
+>&#13;     The following example shows how to use MaxDB database procedures.
+     <TABLE
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+CLASS="EXAMPLE"
+><TR
+><TD
+><DIV
+CLASS="example"
+><A
+NAME="AEN80355"
+></A
+><P
+><B
+>Пример 3. Example fore using database procedures</B
+></P
+><TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><code><font color="#000000">
+<font color="#0000BB">&lt;?php<br />$link </font><font color="#007700">= </font><font color="#0000BB">maxdb_connect</font><font color="#007700">(</font><font color="#DD0000">"localhost"</font><font color="#007700">, </font><font color="#DD0000">"MONA"</font><font color="#007700">, </font><font color="#DD0000">"RED"</font><font color="#007700">, </font><font color="#DD0000">"DEMODB"</font><font color="#007700">);<br /><br /></font><font color="#FF8000">/* check connection */<br /></font><font color="#007700">if (!</font><font color="#0000BB">$link</font><font color="#007700">) {<br />&nbsp;&nbsp;&nbsp;</font><font color="#0000BB">printf</font><font color="#007700">(</font><font color="#DD0000">"Connect failed: %s\n"</font><font color="#007700">, </font><font color="#0000BB">maxdb_connect_error</font><font color="#007700">());<br />&nbsp;&nbsp;&nbsp;exit();<br />}<br /><br /></font><font color="#0000BB">maxdb_report </font><font color="#007700">(</font><font color="#0000BB">MAXDB_REPORT_OFF</font><font color="#007700">);<br /></font><font color="#0000BB">maxdb_query</font><font color="#007700">(</font><font color="#0000BB">$link</font><font color="#007700">,</font><font color="#DD0000">"DROP DBPROC test_proc"</font><font color="#007700">);<br /></font><font color="#0000BB">maxdb_report </font><font color="#007700">(</font><font color="#0000BB">MAXDB_REPORT_ERROR</font><font color="#007700">);<br /><br /></font><font color="#0000BB">$query </font><font color="#007700">= </font><font color="#DD0000">"create dbproc test_proc (INOUT e_text char(72)) AS select * from SYSDBA.DUAL; fetch into :e_text;"</font><font color="#007700">;<br /><br /></font><font color="#0000BB">maxdb_query</font><font color="#007700">(</font><font color="#0000BB">$link</font><font color="#007700">, </font><font color="#0000BB">$query</font><font color="#007700">);<br /><br /></font><font color="#FF8000">/* Performing SQL query */<br /></font><font color="#0000BB">$stmt </font><font color="#007700">= </font><font color="#0000BB">maxdb_prepare </font><font color="#007700">(</font><font color="#0000BB">$link</font><font color="#007700">, </font><font color="#DD0000">"CALL test_proc (?)"</font><font color="#007700">);<br />if (!</font><font color="#0000BB">$stmt</font><font color="#007700">) {<br />&nbsp;&nbsp;</font><font color="#0000BB">printf </font><font color="#007700">(</font><font color="#DD0000">"Prepare failed: %s\n"</font><font color="#007700">, </font><font color="#0000BB">maxdb_error</font><font color="#007700">(</font><font color="#0000BB">$link</font><font color="#007700">));<br />}<br /><br /></font><font color="#0000BB">maxdb_stmt_bind_param</font><font color="#007700">(</font><font color="#0000BB">$stmt</font><font color="#007700">, </font><font color="#DD0000">'s'</font><font color="#007700">, </font><font color="#0000BB">$result</font><font color="#007700">);<br /></font><font color="#0000BB">maxdb_stmt_execute</font><font color="#007700">(</font><font color="#0000BB">$stmt</font><font color="#007700">);<br /><br /></font><font color="#0000BB">printf </font><font color="#007700">(</font><font color="#DD0000">"%s\n"</font><font color="#007700">, </font><font color="#0000BB">$result</font><font color="#007700">);<br /><br /></font><font color="#0000BB">maxdb_stmt_close </font><font color="#007700">(</font><font color="#0000BB">$stmt</font><font color="#007700">);<br /></font><font color="#0000BB">?&gt;</font>
+</font>
+</code></TD
+></TR
+></TABLE
+></DIV
+></TD
+></TR
+></TABLE
+>
+    </P
+></DIV
+></DIV
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Содержание</B
+></DT
+><DT
+><A
+HREF="function.maxdb-affected-rows.html"
+>maxdb_affected_rows</A
+>&nbsp;--&nbsp;Gets the number of affected rows in a previous MaxDB operation</DT
+><DT
+><A
+HREF="function.maxdb-autocommit.html"
+>maxdb_autocommit</A
+>&nbsp;--&nbsp;Turns on or off auto-commiting database modifications</DT
+><DT
+><A
+HREF="function.maxdb-bind-param.html"
+>maxdb_bind_param</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.maxdb-stmt-bind-param.html"
+><B
+CLASS="function"
+>maxdb_stmt_bind_param()</B
+></A
+></DT
+><DT
+><A
+HREF="function.maxdb-bind-result.html"
+>maxdb_bind_result</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.maxdb-stmt-bind-result.html"
+><B
+CLASS="function"
+>maxdb_stmt_bind_result()</B
+></A
+></DT
+><DT
+><A
+HREF="function.maxdb-change-user.html"
+>maxdb_change_user</A
+>&nbsp;--&nbsp;Changes the user of the specified database connection</DT
+><DT
+><A
+HREF="function.maxdb-character-set-name.html"
+>maxdb_character_set_name</A
+>&nbsp;--&nbsp;Returns the default character set for the database connection</DT
+><DT
+><A
+HREF="function.maxdb-client-encoding.html"
+>maxdb_client_encoding</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.maxdb-character-set-name.html"
+><B
+CLASS="function"
+>maxdb_character_set_name()</B
+></A
+></DT
+><DT
+><A
+HREF="function.maxdb-close-long-data.html"
+>maxdb_close_long_data</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.maxdb-stmt-close-long-data.html"
+><B
+CLASS="function"
+>maxdb_stmt_close_long_data()</B
+></A
+></DT
+><DT
+><A
+HREF="function.maxdb-close.html"
+>maxdb_close</A
+>&nbsp;--&nbsp;Closes a previously opened database connection</DT
+><DT
+><A
+HREF="function.maxdb-commit.html"
+>maxdb_commit</A
+>&nbsp;--&nbsp;Commits the current transaction</DT
+><DT
+><A
+HREF="function.maxdb-connect-errno.html"
+>maxdb_connect_errno</A
+>&nbsp;--&nbsp;Returns the error code from last connect call</DT
+><DT
+><A
+HREF="function.maxdb-connect-error.html"
+>maxdb_connect_error</A
+>&nbsp;--&nbsp;Returns a string description of the last connect error</DT
+><DT
+><A
+HREF="function.maxdb-connect.html"
+>maxdb_connect</A
+>&nbsp;--&nbsp;Open a new connection to the MaxDB server</DT
+><DT
+><A
+HREF="function.maxdb-data-seek.html"
+>maxdb_data_seek</A
+>&nbsp;--&nbsp;Adjusts the result pointer to an arbitary row in the result</DT
+><DT
+><A
+HREF="function.maxdb-debug.html"
+>maxdb_debug</A
+>&nbsp;--&nbsp;Performs debugging operations</DT
+><DT
+><A
+HREF="function.maxdb-disable-reads-from-master.html"
+>maxdb_disable_reads_from_master</A
+>&nbsp;--&nbsp;Disable reads from master</DT
+><DT
+><A
+HREF="function.maxdb-disable-rpl-parse.html"
+>maxdb_disable_rpl_parse</A
+>&nbsp;--&nbsp;Disable RPL parse</DT
+><DT
+><A
+HREF="function.maxdb-dump-debug-info.html"
+>maxdb_dump_debug_info</A
+>&nbsp;--&nbsp;Dump debugging information into the log</DT
+><DT
+><A
+HREF="function.maxdb-embedded-connect.html"
+>maxdb_embedded_connect</A
+>&nbsp;--&nbsp;Open a connection to an embedded MaxDB server</DT
+><DT
+><A
+HREF="function.maxdb-enable-reads-from-master.html"
+>maxdb_enable_reads_from_master</A
+>&nbsp;--&nbsp;Enable reads from master</DT
+><DT
+><A
+HREF="function.maxdb-enable-rpl-parse.html"
+>maxdb_enable_rpl_parse</A
+>&nbsp;--&nbsp;Enable RPL parse</DT
+><DT
+><A
+HREF="function.maxdb-errno.html"
+>maxdb_errno</A
+>&nbsp;--&nbsp;Returns the error code for the most recent function call</DT
+><DT
+><A
+HREF="function.maxdb-error.html"
+>maxdb_error</A
+>&nbsp;--&nbsp;Returns a string description of the last error</DT
+><DT
+><A
+HREF="function.maxdb-escape-string.html"
+>maxdb_escape_string</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.maxdb-real-escape-string.html"
+><B
+CLASS="function"
+>maxdb_real_escape_string()</B
+></A
+></DT
+><DT
+><A
+HREF="function.maxdb-execute.html"
+>maxdb_execute</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.maxdb-stmt-execute.html"
+><B
+CLASS="function"
+>maxdb_stmt_execute()</B
+></A
+></DT
+><DT
+><A
+HREF="function.maxdb-fetch-array.html"
+>maxdb_fetch_array</A
+>&nbsp;--&nbsp;Fetch a result row as an associative, a numeric array, or both</DT
+><DT
+><A
+HREF="function.maxdb-fetch-assoc.html"
+>maxdb_fetch_assoc</A
+>&nbsp;--&nbsp;Fetch a result row as an associative array</DT
+><DT
+><A
+HREF="function.maxdb-fetch-field-direct.html"
+>maxdb_fetch_field_direct</A
+>&nbsp;--&nbsp;
+     Fetch meta-data for a single field
+    </DT
+><DT
+><A
+HREF="function.maxdb-fetch-field.html"
+>maxdb_fetch_field</A
+>&nbsp;--&nbsp;Returns the next field in the result set</DT
+><DT
+><A
+HREF="function.maxdb-fetch-fields.html"
+>maxdb_fetch_fields</A
+>&nbsp;--&nbsp;Returns an array of resources representing the fields in a result set</DT
+><DT
+><A
+HREF="function.maxdb-fetch-lengths.html"
+>maxdb_fetch_lengths</A
+>&nbsp;--&nbsp;Returns the lengths of the columns of the current row in the result set</DT
+><DT
+><A
+HREF="function.maxdb-fetch-object.html"
+>maxdb_fetch_object</A
+>&nbsp;--&nbsp;Returns the current row of a result set as an object</DT
+><DT
+><A
+HREF="function.maxdb-fetch-row.html"
+>maxdb_fetch_row</A
+>&nbsp;--&nbsp;Get a result row as an enumerated array</DT
+><DT
+><A
+HREF="function.maxdb-fetch.html"
+>maxdb_fetch</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.maxdb-stmt-fetch.html"
+><B
+CLASS="function"
+>maxdb_stmt_fetch()</B
+></A
+></DT
+><DT
+><A
+HREF="function.maxdb-field-count.html"
+>maxdb_field_count</A
+>&nbsp;--&nbsp;Returns the number of columns for the most recent query</DT
+><DT
+><A
+HREF="function.maxdb-field-seek.html"
+>maxdb_field_seek</A
+>&nbsp;--&nbsp;
+     Set result pointer to a specified field offset
+    </DT
+><DT
+><A
+HREF="function.maxdb-field-tell.html"
+>maxdb_field_tell</A
+>&nbsp;--&nbsp;
+     Get current field offset of a result pointer
+    </DT
+><DT
+><A
+HREF="function.maxdb-free-result.html"
+>maxdb_free_result</A
+>&nbsp;--&nbsp;Frees the memory associated with a result</DT
+><DT
+><A
+HREF="function.maxdb-get-client-info.html"
+>maxdb_get_client_info</A
+>&nbsp;--&nbsp;Returns the MaxDB client version as a string</DT
+><DT
+><A
+HREF="function.maxdb-get-client-version.html"
+>maxdb_get_client_version</A
+>&nbsp;--&nbsp;Get MaxDB client info</DT
+><DT
+><A
+HREF="function.maxdb-get-host-info.html"
+>maxdb_get_host_info</A
+>&nbsp;--&nbsp;Returns a string representing the type of connection used</DT
+><DT
+><A
+HREF="function.maxdb-get-metadata.html"
+>maxdb_get_metadata</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.maxdb-stmt-result-metadata.html"
+><B
+CLASS="function"
+>maxdb_stmt_result_metadata()</B
+></A
+></DT
+><DT
+><A
+HREF="function.maxdb-get-proto-info.html"
+>maxdb_get_proto_info</A
+>&nbsp;--&nbsp;Returns the version of the MaxDB protocol used</DT
+><DT
+><A
+HREF="function.maxdb-get-server-info.html"
+>maxdb_get_server_info</A
+>&nbsp;--&nbsp;Returns the version of the MaxDB server</DT
+><DT
+><A
+HREF="function.maxdb-get-server-version.html"
+>maxdb_get_server_version</A
+>&nbsp;--&nbsp;Returns the version of the MaxDB server as an integer</DT
+><DT
+><A
+HREF="function.maxdb-info.html"
+>maxdb_info</A
+>&nbsp;--&nbsp;Retrieves information about the most recently executed query</DT
+><DT
+><A
+HREF="function.maxdb-init.html"
+>maxdb_init</A
+>&nbsp;--&nbsp;
+     Initializes MaxDB and returns an resource for use with maxdb_real_connect
+    </DT
+><DT
+><A
+HREF="function.maxdb-insert-id.html"
+>maxdb_insert_id</A
+>&nbsp;--&nbsp;Returns the auto generated id used in the last query</DT
+><DT
+><A
+HREF="function.maxdb-kill.html"
+>maxdb_kill</A
+>&nbsp;--&nbsp;Disconnects from a MaxDB server</DT
+><DT
+><A
+HREF="function.maxdb-master-query.html"
+>maxdb_master_query</A
+>&nbsp;--&nbsp;Enforce execution of a query on the master in a master/slave setup</DT
+><DT
+><A
+HREF="function.maxdb-more-results.html"
+>maxdb_more_results</A
+>&nbsp;--&nbsp;Check if there any more query results from a multi query</DT
+><DT
+><A
+HREF="function.maxdb-multi-query.html"
+>maxdb_multi_query</A
+>&nbsp;--&nbsp;Performs a query on the database</DT
+><DT
+><A
+HREF="function.maxdb-next-result.html"
+>maxdb_next_result</A
+>&nbsp;--&nbsp;Prepare next result from multi_query</DT
+><DT
+><A
+HREF="function.maxdb-num-fields.html"
+>maxdb_num_fields</A
+>&nbsp;--&nbsp;
+     Get the number of fields in a result
+    </DT
+><DT
+><A
+HREF="function.maxdb-num-rows.html"
+>maxdb_num_rows</A
+>&nbsp;--&nbsp;
+     Gets the number of rows in a result
+    </DT
+><DT
+><A
+HREF="function.maxdb-options.html"
+>maxdb_options</A
+>&nbsp;--&nbsp;Set options</DT
+><DT
+><A
+HREF="function.maxdb-param-count.html"
+>maxdb_param_count</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.maxdb-stmt-param-count.html"
+><B
+CLASS="function"
+>maxdb_stmt_param_count()</B
+></A
+></DT
+><DT
+><A
+HREF="function.maxdb-ping.html"
+>maxdb_ping</A
+>&nbsp;--&nbsp;
+     Pings a server connection, or tries to reconnect if the connection has gone down
+    </DT
+><DT
+><A
+HREF="function.maxdb-prepare.html"
+>maxdb_prepare</A
+>&nbsp;--&nbsp;
+     Prepare a SQL statement for execution
+    </DT
+><DT
+><A
+HREF="function.maxdb-query.html"
+>maxdb_query</A
+>&nbsp;--&nbsp;Performs a query on the database</DT
+><DT
+><A
+HREF="function.maxdb-real-connect.html"
+>maxdb_real_connect</A
+>&nbsp;--&nbsp;Opens a connection to a MaxDB server</DT
+><DT
+><A
+HREF="function.maxdb-real-escape-string.html"
+>maxdb_real_escape_string</A
+>&nbsp;--&nbsp;
+     Escapes special characters in a string for use in a SQL statement,
+     taking into account the current charset of the connection
+    </DT
+><DT
+><A
+HREF="function.maxdb-real-query.html"
+>maxdb_real_query</A
+>&nbsp;--&nbsp;Execute an SQL query</DT
+><DT
+><A
+HREF="function.maxdb-report.html"
+>maxdb_report</A
+>&nbsp;--&nbsp;Enables or disables internal report functions</DT
+><DT
+><A
+HREF="function.maxdb-rollback.html"
+>maxdb_rollback</A
+>&nbsp;--&nbsp;Rolls back current transaction</DT
+><DT
+><A
+HREF="function.maxdb-rpl-parse-enabled.html"
+>maxdb_rpl_parse_enabled</A
+>&nbsp;--&nbsp;Check if RPL parse is enabled</DT
+><DT
+><A
+HREF="function.maxdb-rpl-probe.html"
+>maxdb_rpl_probe</A
+>&nbsp;--&nbsp;RPL probe</DT
+><DT
+><A
+HREF="function.maxdb-rpl-query-type.html"
+>maxdb_rpl_query_type</A
+>&nbsp;--&nbsp;Returns RPL query type</DT
+><DT
+><A
+HREF="function.maxdb-select-db.html"
+>maxdb_select_db</A
+>&nbsp;--&nbsp;Selects the default database for database queries</DT
+><DT
+><A
+HREF="function.maxdb-send-long-data.html"
+>maxdb_send_long_data</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.maxdb-stmt-send-long-data.html"
+><B
+CLASS="function"
+>maxdb_stmt_send_long_data()</B
+></A
+></DT
+><DT
+><A
+HREF="function.maxdb-send-query.html"
+>maxdb_send_query</A
+>&nbsp;--&nbsp;Send the query and return</DT
+><DT
+><A
+HREF="function.maxdb-server-end.html"
+>maxdb_server_end</A
+>&nbsp;--&nbsp;Shut down the embedded server</DT
+><DT
+><A
+HREF="function.maxdb-server-init.html"
+>maxdb_server_init</A
+>&nbsp;--&nbsp;Initialize embedded server</DT
+><DT
+><A
+HREF="function.maxdb-set-opt.html"
+>maxdb_set_opt</A
+>&nbsp;--&nbsp;Alias of <A
+HREF="function.maxdb-options.html"
+><B
+CLASS="function"
+>maxdb_options()</B
+></A
+></DT
+><DT
+><A
+HREF="function.maxdb-sqlstate.html"
+>maxdb_sqlstate</A
+>&nbsp;--&nbsp;Returns the SQLSTATE error from previous MaxDB operation</DT
+><DT
+><A
+HREF="function.maxdb-ssl-set.html"
+>maxdb_ssl_set</A
+>&nbsp;--&nbsp;Used for establishing secure connections using SSL</DT
+><DT
+><A
+HREF="function.maxdb-stat.html"
+>maxdb_stat</A
+>&nbsp;--&nbsp;Gets the current system status</DT
+><DT
+><A
+HREF="function.maxdb-stmt-affected-rows.html"
+>maxdb_stmt_affected_rows</A
+>&nbsp;--&nbsp;Returns the total number of rows changed, deleted, or
+    inserted by the last executed statement
+    </DT
+><DT
+><A
+HREF="function.maxdb-stmt-bind-param.html"
+>maxdb_stmt_bind_param</A
+>&nbsp;--&nbsp;Binds variables to a prepared statement as parameters</DT
+><DT
+><A
+HREF="function.maxdb-stmt-bind-result.html"
+>maxdb_stmt_bind_result</A
+>&nbsp;--&nbsp;Binds variables to a prepared statement for result storage</DT
+><DT
+><A
+HREF="function.maxdb-stmt-close-long-data.html"
+>maxdb_stmt_close_long_data</A
+>&nbsp;--&nbsp;Ends a sequence of <A
+HREF="function.maxdb-stmt-send-long-data.html"
+><B
+CLASS="function"
+>maxdb_stmt_send_long_data()</B
+></A
+></DT
+><DT
+><A
+HREF="function.maxdb-stmt-close.html"
+>maxdb_stmt_close</A
+>&nbsp;--&nbsp;Closes a prepared statement</DT
+><DT
+><A
+HREF="function.maxdb-stmt-data-seek.html"
+>maxdb_stmt_data_seek</A
+>&nbsp;--&nbsp;Seeks to an arbitray row in statement result set</DT
+><DT
+><A
+HREF="function.maxdb-stmt-errno.html"
+>maxdb_stmt_errno</A
+>&nbsp;--&nbsp;Returns the error code for the most recent statement call</DT
+><DT
+><A
+HREF="function.maxdb-stmt-error.html"
+>maxdb_stmt_error</A
+>&nbsp;--&nbsp;Returns a string description for last statement error</DT
+><DT
+><A
+HREF="function.maxdb-stmt-execute.html"
+>maxdb_stmt_execute</A
+>&nbsp;--&nbsp;Executes a prepared Query</DT
+><DT
+><A
+HREF="function.maxdb-stmt-fetch.html"
+>maxdb_stmt_fetch</A
+>&nbsp;--&nbsp;
+     Fetch results from a prepared statement into the bound variables
+    </DT
+><DT
+><A
+HREF="function.maxdb-stmt-free-result.html"
+>maxdb_stmt_free_result</A
+>&nbsp;--&nbsp;Frees stored result memory for the given statement handle</DT
+><DT
+><A
+HREF="function.maxdb-stmt-init.html"
+>maxdb_stmt_init</A
+>&nbsp;--&nbsp;
+     Initializes a statement and returns an resource for use with maxdb_stmt_prepare
+    </DT
+><DT
+><A
+HREF="function.maxdb-stmt-num-rows.html"
+>maxdb_stmt_num_rows</A
+>&nbsp;--&nbsp;Return the number of rows in statements result set</DT
+><DT
+><A
+HREF="function.maxdb-stmt-param-count.html"
+>maxdb_stmt_param_count</A
+>&nbsp;--&nbsp;Returns the number of parameter for the given statement</DT
+><DT
+><A
+HREF="function.maxdb-stmt-prepare.html"
+>maxdb_stmt_prepare</A
+>&nbsp;--&nbsp;
+     Prepare a SQL statement for execution
+    </DT
+><DT
+><A
+HREF="function.maxdb-stmt-reset.html"
+>maxdb_stmt_reset</A
+>&nbsp;--&nbsp;Resets a prepared statement</DT
+><DT
+><A
+HREF="function.maxdb-stmt-result-metadata.html"
+>maxdb_stmt_result_metadata</A
+>&nbsp;--&nbsp;Returns result set metadata from a prepared statement</DT
+><DT
+><A
+HREF="function.maxdb-stmt-send-long-data.html"
+>maxdb_stmt_send_long_data</A
+>&nbsp;--&nbsp;Send data in blocks</DT
+><DT
+><A
+HREF="function.maxdb-stmt-sqlstate.html"
+>maxdb_stmt_sqlstate</A
+>&nbsp;--&nbsp;Returns SQLSTATE error from previous statement operation</DT
+><DT
+><A
+HREF="function.maxdb-stmt-store-result.html"
+>maxdb_stmt_store_result</A
+>&nbsp;--&nbsp;Transfers a result set from a prepared statement</DT
+><DT
+><A
+HREF="function.maxdb-store-result.html"
+>maxdb_store_result</A
+>&nbsp;--&nbsp;Transfers a result set from the last query</DT
+><DT
+><A
+HREF="function.maxdb-thread-id.html"
+>maxdb_thread_id</A
+>&nbsp;--&nbsp;Returns the thread ID for the current connection</DT
+><DT
+><A
+HREF="function.maxdb-thread-safe.html"
+>maxdb_thread_safe</A
+>&nbsp;--&nbsp;Returns whether thread safety is given or not</DT
+><DT
+><A
+HREF="function.maxdb-use-result.html"
+>maxdb_use_result</A
+>&nbsp;--&nbsp;Initiate a result set retrieval</DT
+><DT
+><A
+HREF="function.maxdb-warning-count.html"
+>maxdb_warning_count</A
+>&nbsp;--&nbsp;Returns the number of warnings from the last query for the given link</DT
+></DL
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="function.tanh.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Начало</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="function.maxdb-affected-rows.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>tanh</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="funcref.html"
+ACCESSKEY="U"
+>Уровень выше</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>maxdb_affected_rows</TD
+></TR
+></TABLE
+></DIV
+></div></center></div></td>
+			<td><div style="display:none; width:200px;" id="o3" name="o3"><script charset="windows-1251" type="text/javascript" src="http://www.ozon.ru/PartnerTwinerNew.aspx?revident=bea9126b-c8e1-4bf5-b6d8-9a057f8feac6" ></script></div><script>o = document.getElementById('o3'); if(o) { var s = o.innerHTML; s = s.replace(/F6F6F6/gi,"FFFFFF"); o.innerHTML = s.replace(/padding-top: 10px; padding-bottom: 10px;/,"display:none;"); o.style.display = 'block'; } </script><br><div style="margin: 10px;"><script type="text/javascript"><!--
+google_ad_client = "pub-4093271809023514";
+/* 120x600, создано 01.11.2008 */
+google_ad_slot = "0438855731";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div></td>
+    		</tr>
+  		</table>
+    </td>
+  </tr>
+  <tr valign='bottom' height='1%'>
+  <td>      <table width=100% cellspacing=0 cellpadding=5 border=0 bgcolor=#9999CC>
+        <tr valign=center>
+          <td class='phpcopyright' width='45%' align='left'>&nbsp;&nbsp;Engine <a  href="http://www.mnogosearch.org/">MnoGoSearch</a></td>
+          <td class='phpcopyright' width='10%' align='center'>2007-2010 &copy <a  href="mailto:webmaster@php.ru">PHP.RU</a></td>
+          <td class='phpcopyright' width='45%' align='right' >Powered by <a target="_blank" href="http://odware.ru">ODware</a> <a HREF="http://440hz.ru">440Hz</a> &nbsp;&nbsp;</td>
+        </tr>
+      </table>
+
+    <div style="text-align: right; padding: 5px">
+		<!--LiveInternet counter-->
+		<script type="text/javascript">document.write('<a href="http://www.liveinternet.ru/click" target=_blank><img src="http://counter.yadro.ru/hit?t53.6;r' + escape(document.referrer) + ((typeof(screen)=='undefined')?'':';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ';u' + escape(document.URL) +';i' + escape('Жж'+document.title.substring(0,80)) + ';' + Math.random() + '" border=0 width=88 height=31 alt="" title="LiveInternet: показано число просмотров и посетителей за 24 часа"><\/a>');
+		</script>
+		<!--/LiveInternet-->
+		<!-- SpyLOG -->
+		<script src="http://tools.spylog.ru/counter2.2.js" type="text/javascript" id="spylog_code" counter="830950" ></script>
+		<noscript><a href="http://u8309.50.spylog.com/cnt?cid=830950&f=3&p=0" target="_blank"><img src="http://u8309.50.spylog.com/cnt?cid=830950&p=0&f=4" alt='SpyLOG' border='0' width=88 height=31 ></a>
+		</noscript>
+		<!--/ SpyLOG -->
+	</div>
+</td>
+  </tr>
+</table>
+
+<script>
+<!--
+document.SEARCH.QS.focus();
+// --></script>
+
+<!-- 
+	как же вы все это читаете?
+	440hz 
+-->
+
+</body>
+</html>

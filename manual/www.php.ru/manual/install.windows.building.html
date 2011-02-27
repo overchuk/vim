@@ -1,0 +1,1079 @@
+<!-- 
+
+     HTML dropped by Zend Guard Compressor 4.2
+
+     php.ru team: mz, az, yuri, vb, cyxapuk, 440hz, administrator
+     2004-2007 (c) expi-web.com 
+     2007-2008 (c) odware.com 
+     0101-1010 (с) 440hz
+
+     2b|~2b=?
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- EHOT тут всё пожрал ! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="alternate" type="application/rss+xml" title="php.ru/forum - последние сообщения" href="http://www.php.ru/forum/rss.php">
+<link rel="SHORTCUT ICON" href="http://www.php.ru/favicon.ico" />
+<META name="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<meta http-equiv="description" content="php.ru - форум PHP программистов, поиск по всем ресурсам сети, посвященным php">
+<META name="keywords" content="php, php5, apache, mysql, session">
+<meta http-equiv="keywords" content="php, php5, apache, mysql, session">
+<title>php.ru - Building from source</title>
+<LINK REL="stylesheet" TYPE="text/css" HREF="http://www.php.ru/index.css">
+<script language="JavaScript" src="http://www.php.ru/ajax/ajax.js"></script>
+</head>
+<body>
+
+<table height='100%' width='100%' cellspacing='0' cellpadding='0'>
+  <tr height='99%' valign='top'>
+    <td align='center'>
+		
+		<table style='margin-top: 4px' width=100% cellspacing=0 cellpadding=3>
+   		<tr>
+     		<td>PHP - <a href="http://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BA%D1%80%D0%BE%D0%BD%D0%B8%D0%BC" target=_blank class=lnk>рекурсивный акроним</a> словосочетания &laquo;<a href="/manual/introduction.html" class=lnk>PHP: Hypertext Preprocessor</a>&raquo;</td>
+     	</tr>
+   		</table>
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/subsys_ajax.js"></script>
+		<!--
+
+		commet by 440hz
+		20.10.2007
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/pu_search.js"></script>
+
+		-->
+
+		<script language="JavaScript" src="http://www.php.ru/ajax/cz.js?a=b"></script>
+
+		<table style='margin-top: 5px' width=100% bgcolor=#9999cc cellspacing=0 cellpadding=0 border=0>
+   	 	<form name=SEARCH method=GET action="http://www.php.ru/search/?SID=6oryb24ono3d369f" onsubmit="return puSubmit();">
+	  	<input type=hidden name=PAGE value=1>
+  		<tr>
+    		<td width='1' valign='middle'> 
+    		   <a href='/'><img src="http://www.php.ru/;-)/logo.gif" width=133 height=93 alt="php" border=0 hspace=10 vspace=0></a>
+			 </td>
+		    <td width='100%' valign='middle'>
+		       <!--
+			   
+				commet by 440hz
+				20.10.2007
+
+			   <div id='pu_search' class='pu_search'></div>
+		       <div id='pu_search_description' class='pu_search_decription'></div>
+			   
+			   -->
+        	 <input type=text style='width:99%; margin: 10px' maxlength='200' name='QS' class='in' id='query' autocomplete='off' value="" />
+    		</td>
+		  </tr>
+   		<tr bgcolor='#666699' valign='middle'>
+			<td style='border-top: 1px solid #333366;'><br /></td>
+    		<td style='border-top: 1px solid #333366;'><div style="padding: 4px 4px 4px 10px; height: 24px; color: #CCCCFF;" id="stat">Хто там?<script>doLoadCZ('stat','stat');</script></div></td>
+  		</tr>
+		</form>
+		</table>
+		<table id="menu" cellspaciong=0 cellpadding=3>
+<tr>
+<td><a href="/" class=current>Главная</a></td>
+<td><a href="/download/" class=current>Скачать</a></td>
+<td><a href="/doc/" class=current>Документация</a></td>
+<td><a href="/forum/" class=current>Форум</a></td>
+<td width=100% align=right><a href="/phpinfo.html" class=current>phpinfo()</a></td>
+</tr>
+</table>
+
+		
+<!--  AdRiver code START. Type:728x90 Site: php.ru PZ: 0 BN: 1 -->
+<script language="javascript" type="text/javascript"><!--
+var RndNum4NoCash = Math.round(Math.random() * 1000000000);
+var ar_Tail='unknown'; if (document.referrer) ar_Tail = escape(document.referrer);
+document.write(
+'<iframe src="http://ad.adriver.ru/cgi-bin/erle.cgi?'
++ 'sid=148680&bn=1&target=blank&bt=36&pz=0&rnd=' + RndNum4NoCash + '&tail256=' + ar_Tail
++ '" frameborder=0 vspace=0 hspace=0 width=728 height=90 marginwidth=0'
++ ' marginheight=0 scrolling=no></iframe>');
+//--></script>
+<noscript>
+<a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" target=_blank>
+<img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=148680&bn=1&bt=36&pz=0&rnd=1525626915" alt="-AdRiver-" border=0 width=728 height=90></a>
+</noscript>
+<!--  AdRiver code END  -->
+
+
+  		<table width='100%' cellspacing='0' cellpadding='0'>
+    		<tr valign='top'>
+      		<td width=100%><div style="margin: 10px 10px 10px 50px;"><center><div style="width: 800px; text-align: left"><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+>Руководство по PHP</TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="install.windows.xitami.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+>Глава 6. Installation on Windows systems</TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="install.windows.extensions.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="sect1"
+><H1
+CLASS="sect1"
+><A
+NAME="install.windows.building"
+>Building from source</A
+></H1
+><P
+>&#13;  This chapter teaches how to compile PHP from sources on windows, using
+  Microsoft's tools. To compile PHP with cygwin, please refer to <A
+HREF="install.unix.html"
+>Гл. 4</A
+>.
+ </P
+><DIV
+CLASS="sect2"
+><H2
+CLASS="sect2"
+><A
+NAME="install.windows.building.requirement"
+>Требования</A
+></H2
+><P
+>&#13;   To compile and build PHP you need a Microsoft Development Environment.
+   Microsoft Visual C++ 6.0 is recommended, though Visual C++ .NET versions
+   will also work. Since PHP 5 the free Microsoft .NET toolchain is also
+   supported (you need to install Windows Platform SDK, Visual C++ Toolkit and
+   .NET Framework SDK).
+   </P
+><P
+>&#13;   To extract the downloaded files you will also need a ZIP extraction
+   utility. Windows XP and newer already include this functionality built-in.
+  </P
+><P
+>&#13;   Before you get started, you have to download:
+  </P
+><P
+></P
+><UL
+><LI
+><P
+>&#13;     the win32 buildtools from the PHP site at <A
+HREF="http://www.php.net/extra/win32build.zip"
+TARGET="_top"
+>http://www.php.net/extra/win32build.zip</A
+>.
+    </P
+></LI
+><LI
+><P
+>&#13;     the source code for the DNS name resolver used by PHP from <A
+HREF="http://www.php.net/extra/bindlib_w32.zip"
+TARGET="_top"
+>http://www.php.net/extra/bindlib_w32.zip</A
+>. This is a
+     replacement for the <TT
+CLASS="filename"
+>resolv.lib</TT
+> library included in
+     <TT
+CLASS="filename"
+>win32build.zip</TT
+>.
+    </P
+></LI
+><LI
+><P
+>&#13;     If you plan to compile PHP as a Apache module you will also need the
+     <A
+HREF="http://www.apache.org/dist/httpd/"
+TARGET="_top"
+>Apache sources</A
+>.
+    </P
+></LI
+></UL
+><P
+>&#13;   Finally, you are going to need the source to PHP itself. You can get the
+   latest development version using <A
+HREF="http://www.php.net/anoncvs.php"
+TARGET="_top"
+>anonymous
+   CVS</A
+>, a <A
+HREF="http://snaps.php.net/"
+TARGET="_top"
+>snapshot</A
+> or the
+   most recent released <A
+HREF="http://www.php.net/downloads.php"
+TARGET="_top"
+>source</A
+>
+   tarball.
+  </P
+></DIV
+><DIV
+CLASS="sect2"
+><H2
+CLASS="sect2"
+><A
+NAME="install.windows.building.install"
+>Putting it all together</A
+></H2
+><P
+>&#13;   After downloading the required packages you have to extract them in a
+   proper place:
+   <P
+></P
+><UL
+><LI
+><P
+>&#13;      Create a working directory where all files end up after extracting, e.g:
+      <TT
+CLASS="filename"
+>C:\work</TT
+>.
+     </P
+></LI
+><LI
+><P
+>&#13;      Create the directory <TT
+CLASS="filename"
+>win32build</TT
+> under your  working
+      directory (<TT
+CLASS="filename"
+>C:\work</TT
+>) and unzip
+      <TT
+CLASS="filename"
+>win32build.zip</TT
+> into it.
+     </P
+></LI
+><LI
+><P
+>&#13;      Create the directory <TT
+CLASS="filename"
+>bindlib_w32</TT
+> under your working
+      directory (<TT
+CLASS="filename"
+>C:\work</TT
+>) and unzip
+      <TT
+CLASS="filename"
+>bindlib_w32.zip</TT
+> into it.
+     </P
+></LI
+><LI
+><P
+>&#13;      Extract the downloaded PHP source code into your working directory
+      (<TT
+CLASS="filename"
+>C:\work</TT
+>).
+     </P
+></LI
+><LI
+><P
+>&#13;      Build the libraries you are going to need (or download the binaries if
+      available) and place the headers and libs in the <TT
+CLASS="filename"
+>C:\work\win32build\include</TT
+> and <TT
+CLASS="filename"
+>C:\work\win32build\lib</TT
+> directories,
+      respectively.
+     </P
+></LI
+><LI
+><P
+>&#13;      If you don't have cygwin installed with bison and flex, you also need to
+      make the <TT
+CLASS="filename"
+>C:\work\win32build\bin</TT
+>
+      directory available in the PATH, so that thoses tools can be found by
+      the configure script.
+     </P
+></LI
+></UL
+>
+   Following this steps your directory structure looks like this:
+   <TABLE
+BORDER="0"
+BGCOLOR="#E0E0E0"
+CELLPADDING="5"
+><TR
+><TD
+><PRE
+CLASS="screen"
+>+--C:\work
+|  |
+|  +--bindlib_w32
+|  |  |
+|  |  +--arpa
+|  |  |
+|  |  +--conf
+|  |  |
+|  |  +--...
+|  |
+|  +--php-5.x.x
+|  |  |
+|  |  +--build
+|  |  |
+|  |  +--...
+|  |  |
+|  |  +--win32
+|  |  |
+|  |  +--...
+|  |
+|  +--win32build
+|  |  |
+|  |  +--bin
+|  |  |
+|  |  +--include
+|  |  |
+|  |  +--lib</PRE
+></TD
+></TR
+></TABLE
+>
+  </P
+><P
+>&#13;   If you aren't using <A
+HREF="http://www.cygwin.com/"
+TARGET="_top"
+>Cygwin</A
+>, you must also
+   create the directories <TT
+CLASS="filename"
+>C:\usr\local\lib</TT
+> and then copy
+   <TT
+CLASS="filename"
+>bison.simple</TT
+> from <TT
+CLASS="filename"
+>C:\work\win32build\bin </TT
+> to <TT
+CLASS="filename"
+>C:\usr\local\lib</TT
+>.
+  </P
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+>Замечание: </B
+>
+    If you want to use PEAR and the comfortable command line installer, the
+    CLI-SAPI is mandatory. For more information about PEAR and the installer
+    read the documentation at the <A
+HREF="http://pear.php.net/manual/"
+TARGET="_top"
+>PEAR</A
+> website.
+   </P
+></BLOCKQUOTE
+></DIV
+></DIV
+><DIV
+CLASS="sect2"
+><H2
+CLASS="sect2"
+><A
+NAME="install.windows.building.resolvlib"
+>Build resolv.lib</A
+></H2
+><P
+>&#13;   You must build the <TT
+CLASS="filename"
+>resolv.lib</TT
+> library. Decide whether
+   you want to have debug symbols available (bindlib - Win32 Debug) or not
+   (bindlib - Win32 Release), but please remember the choice you made, because
+   the debug build will only link with PHP when it is also built in debug mode.
+   Build the appropriate configuration:
+   <P
+></P
+><UL
+><LI
+><P
+>&#13;      For GUI users, launch VC++, by double-clicking in
+      <TT
+CLASS="filename"
+>C:\work\bindlib_w32\bindlib.dsw</TT
+>. Then select
+      Build=&#62;Rebuild All.
+     </P
+></LI
+><LI
+><P
+>&#13;      For command line users, make sure that you either have the C++
+      environment variables registered, or have run
+      <B
+CLASS="command"
+>vcvars.bat</B
+>, and then execute one of the following
+      commands:
+     </P
+><P
+></P
+><UL
+><LI
+><P
+>&#13;        <B
+CLASS="command"
+>msdev bindlib.dsp /MAKE "bindlib - Win32 Debug"</B
+>
+       </P
+></LI
+><LI
+><P
+>&#13;        <B
+CLASS="command"
+>msdev bindlib.dsp /MAKE "bindlib - Win32 Release"</B
+>
+       </P
+></LI
+></UL
+></LI
+></UL
+>
+   At this point, you should have a usable <TT
+CLASS="filename"
+>resolv.lib</TT
+> in
+   either your <TT
+CLASS="filename"
+>C:\work\bindlib_w32\Debug</TT
+> or
+   <TT
+CLASS="filename"
+>Release</TT
+> subdirectories. Copy this file into your
+   <TT
+CLASS="filename"
+>C:\work\win32build\lib</TT
+> directory
+   over the file by the same name found in there.
+  </P
+></DIV
+><DIV
+CLASS="sect2"
+><H2
+CLASS="sect2"
+><A
+NAME="install.windows.building.new"
+>Building PHP using the new build system [PHP &#62;=5 only]</A
+></H2
+><P
+>&#13;   This chapter explains how to compile PHP &#62;=5 using the new build system,
+   which is CLI-based and very similar with the main PHP's Unix build system.
+  </P
+><DIV
+CLASS="note"
+><BLOCKQUOTE
+CLASS="note"
+><P
+><B
+>Замечание: </B
+>
+    This build system isn't available in PHP 4. Please refer to <A
+HREF="install.windows.building.html#install.windows.building.dsw"
+>Разд. <I
+>Building PHP using DSW files [PHP 4]</I
+></A
+> instead.
+   </P
+></BLOCKQUOTE
+></DIV
+><P
+>&#13;   Before starting, be sure you have read <A
+HREF="install.windows.building.html#install.windows.building.install"
+>Разд. <I
+>Putting it all together</I
+></A
+> and you have built all needed
+   libraries, like <A
+HREF="http://www.xmlsoft.org/"
+TARGET="_top"
+>Libxml</A
+> or <A
+HREF="http://icu.sourceforge.net/"
+TARGET="_top"
+>ICU</A
+> (needed for PHP &#62;= 6).
+  </P
+><P
+>&#13;   First you should open a Visual Studio Command Prompt, which should be
+   available under the Start menu. A regular Command Prompt window shouldn't
+   work, as probably it doesn't have the necessary environment variables set.
+   Then type something like <B
+CLASS="command"
+>cd C:\work\php-5.x.x</B
+> to enter
+   in the PHP source dir. Now you are ready to start configuring PHP.
+  </P
+><P
+>&#13;   The second step is running the <B
+CLASS="command"
+>buildconf</B
+> batch file to
+   make the configure script, by scanning the folder for
+   <TT
+CLASS="filename"
+>config.w32</TT
+> files. By default this command will also
+   search in the following directories: <TT
+CLASS="filename"
+>pecl;
+   ..\pecl; pecl\rpc; ..\pecl\rpc</TT
+>. Since PHP 5.1.0, you can change
+   this behaviour by using the <VAR
+CLASS="literal"
+>--add-modules-dir</VAR
+> argument
+   (e.g. <B
+CLASS="command"
+>cscript /nologo win32/build/buildconf.js
+    --add-modules-dir=../php-gtk2 --add-modules-dir=../pecl</B
+>).
+  </P
+><P
+>&#13;   The third step is configuring. To view the list of the available
+   configuration options type <B
+CLASS="command"
+>cscript /nologo configure.js
+   --help</B
+>. After choosing the options that you will enable/disable,
+   type something like: <B
+CLASS="command"
+>cscript /nologo configure.js --disable-foo
+   --enable-fun-ext</B
+>. Using <VAR
+CLASS="literal"
+>--enable-foo=shared</VAR
+>
+   will attempt to build the 'foo' extension as a shared, dynamically loadable
+   module.
+  </P
+><P
+>&#13;   The last step is compiling. To achieve this just issue the command
+   <B
+CLASS="command"
+>nmake</B
+>. The generated files (e.g. .exe and .dll) will be
+   placed in either <TT
+CLASS="filename"
+>Release_TS</TT
+> or
+   <TT
+CLASS="filename"
+>Debug_TS</TT
+> directories (if built with
+   Thread safety), or in the <TT
+CLASS="filename"
+>Release</TT
+> or
+   <TT
+CLASS="filename"
+>Debug</TT
+> directories otherwise.
+  </P
+><P
+>&#13;   Optionally you may also run PHP's test suite, by typing <B
+CLASS="command"
+>nmake
+   test</B
+>. If you want to run just a specific test, you may use the
+   'TESTS' variable (e.g. <B
+CLASS="command"
+>nmake /D TESTS=ext/sqlite/tests
+   test</B
+> - will only run sqlite's tests). To delete the files that
+   were created during the compilation, you can use the <B
+CLASS="command"
+>nmake
+   clean</B
+> command.
+  </P
+><P
+>&#13;   A very useful configure option to build snapshots is
+   <VAR
+CLASS="literal"
+>--enable-snapshot-build</VAR
+>, which add a new compiling mode
+   (<B
+CLASS="command"
+>nmake build-snap</B
+>). This tries to build every extension
+   available (as shared, by default), but it will ignore build errors in
+   individual extensions or SAPI.
+  </P
+></DIV
+><DIV
+CLASS="sect2"
+><H2
+CLASS="sect2"
+><A
+NAME="install.windows.building.dsw"
+>Building PHP using DSW files [PHP 4]</A
+></H2
+><P
+>&#13;   Compiling PHP using the DSW files isn't supported as of PHP 5, as a much
+   <A
+HREF="install.windows.building.html#install.windows.building.new"
+>more flexible system was made
+    available</A
+>. Anyway, you can still use them, but keep in mind that
+   they are not maintained very often, so you can have compiling problems. To
+   compile PHP 4 for windows, this is the only available way though.
+  </P
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="install.windows.building.dsw.configure"
+>Configure MVC ++</A
+></H3
+><P
+>&#13;    The first step is to configure MVC++ to prepare for compiling. Launch
+    Microsoft Visual C++, and from the menu select Tools =&#62; Options. In the
+    dialog, select the directories tab. Sequentially change the dropdown to
+    Executables, Includes, and Library files. Your entries should look like
+    this:
+    <P
+></P
+><UL
+><LI
+><P
+>&#13;       Executable files: <TT
+CLASS="filename"
+>C:\work\win32build\bin</TT
+>, Cygwin users:
+       <TT
+CLASS="filename"
+>C:\cygwin\bin</TT
+>
+      </P
+></LI
+><LI
+><P
+>&#13;       Include files: <TT
+CLASS="filename"
+>C:\work\win32build\include</TT
+>
+      </P
+></LI
+><LI
+><P
+>&#13;       Library files: <TT
+CLASS="filename"
+>C:\work\win32build\lib</TT
+>
+      </P
+></LI
+></UL
+>
+   </P
+></DIV
+><DIV
+CLASS="sect3"
+><H3
+CLASS="sect3"
+><A
+NAME="install.windows.building.dsw.compile"
+>Compiling</A
+></H3
+><P
+>&#13;    The best way to get started is to build the CGI version:
+   </P
+><P
+></P
+><UL
+><LI
+><P
+>&#13;      For GUI users, launch VC++, and then select File =&#62; Open Workspace
+      and select <TT
+CLASS="filename"
+>C:\work\php-4.x.x\win32\php4ts.dsw</TT
+>. Then
+      select Build=&#62;Set Active Configuration and select the desired
+      configuration, either <VAR
+CLASS="literal"
+>php4ts - Win32 Debug_TS</VAR
+> or
+      <VAR
+CLASS="literal"
+>php4ts - Win32 Release_TS</VAR
+>. Finally select
+      Build=&#62;Rebuild All.
+     </P
+></LI
+><LI
+><P
+>&#13;      For command line users, make sure that you either have the C++
+      environment variables registered, or have run
+      <B
+CLASS="command"
+>vcvars.bat</B
+>, and then execute one of the following
+      commands from the <TT
+CLASS="filename"
+>C:\work\php-4.x.x\win32</TT
+> directory:
+     </P
+><P
+></P
+><UL
+><LI
+><P
+>&#13;        <B
+CLASS="command"
+>msdev php4ts.dsp /MAKE "php4ts - Win32 Debug_TS"</B
+>
+       </P
+></LI
+><LI
+><P
+>&#13;        <B
+CLASS="command"
+>msdev php4ts.dsp /MAKE "php4ts - Win32 Release_TS"</B
+>
+       </P
+></LI
+><LI
+><P
+>&#13;        At this point, you should have a usable <TT
+CLASS="filename"
+>php.exe</TT
+>
+        in either your <TT
+CLASS="filename"
+>C:\work\php-4.x.x\Debug_TS</TT
+> or
+        <TT
+CLASS="filename"
+>Release_TS</TT
+> subdirectories.
+       </P
+></LI
+></UL
+></LI
+></UL
+><P
+>&#13;    It is possible to do minor customization to the build process by editing
+    the <TT
+CLASS="filename"
+>main/config.win32.h</TT
+> file. For example you can
+    change the default location of <TT
+CLASS="filename"
+>php.ini</TT
+>, the built-in extensions, and the
+    default location for your extensions.
+   </P
+><P
+>&#13;    Next you may want to build the CLI version which is designed to use <A
+HREF="features.commandline.html"
+>PHP from the command line</A
+>. The steps
+    are the same as for building the CGI version, except you have to select
+    the <VAR
+CLASS="literal"
+>php4ts_cli - Win32 Debug_TS</VAR
+> or <VAR
+CLASS="literal"
+>php4ts_cli
+    - Win32 Release_TS</VAR
+> project file. After a successful compiling
+    run you will find the <TT
+CLASS="filename"
+>php.exe</TT
+> in either the directory
+    <TT
+CLASS="filename"
+>Release_TS\cli\</TT
+> or <TT
+CLASS="filename"
+>Debug_TS\cli\</TT
+>.
+   </P
+><P
+>&#13;    In order to build the SAPI module (<TT
+CLASS="filename"
+>php4isapi.dll</TT
+>) for
+    integrating PHP with Microsoft IIS, set your active configuration to
+    <TT
+CLASS="filename"
+>php4isapi-whatever-config</TT
+> and build the desired dll.
+   </P
+></DIV
+></DIV
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="install.windows.xitami.html"
+ACCESSKEY="P"
+>Пред.</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Начало</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="install.windows.extensions.html"
+ACCESSKEY="N"
+>След.</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Xitami on Microsoft Windows</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="install.windows.html"
+ACCESSKEY="U"
+>Уровень выше</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Installation of extensions on Windows</TD
+></TR
+></TABLE
+></DIV
+></div></center></div></td>
+			<td><div style="display:none; width:200px;" id="o3" name="o3"><script charset="windows-1251" type="text/javascript" src="http://www.ozon.ru/PartnerTwinerNew.aspx?revident=bea9126b-c8e1-4bf5-b6d8-9a057f8feac6" ></script></div><script>o = document.getElementById('o3'); if(o) { var s = o.innerHTML; s = s.replace(/F6F6F6/gi,"FFFFFF"); o.innerHTML = s.replace(/padding-top: 10px; padding-bottom: 10px;/,"display:none;"); o.style.display = 'block'; } </script><br><div style="margin: 10px;"><script type="text/javascript"><!--
+google_ad_client = "pub-4093271809023514";
+/* 120x600, создано 01.11.2008 */
+google_ad_slot = "0438855731";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div></td>
+    		</tr>
+  		</table>
+    </td>
+  </tr>
+  <tr valign='bottom' height='1%'>
+  <td>      <table width=100% cellspacing=0 cellpadding=5 border=0 bgcolor=#9999CC>
+        <tr valign=center>
+          <td class='phpcopyright' width='45%' align='left'>&nbsp;&nbsp;Engine <a  href="http://www.mnogosearch.org/">MnoGoSearch</a></td>
+          <td class='phpcopyright' width='10%' align='center'>2007-2010 &copy <a  href="mailto:webmaster@php.ru">PHP.RU</a></td>
+          <td class='phpcopyright' width='45%' align='right' >Powered by <a target="_blank" href="http://odware.ru">ODware</a> <a HREF="http://440hz.ru">440Hz</a> &nbsp;&nbsp;</td>
+        </tr>
+      </table>
+
+    <div style="text-align: right; padding: 5px">
+		<!--LiveInternet counter-->
+		<script type="text/javascript">document.write('<a href="http://www.liveinternet.ru/click" target=_blank><img src="http://counter.yadro.ru/hit?t53.6;r' + escape(document.referrer) + ((typeof(screen)=='undefined')?'':';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ';u' + escape(document.URL) +';i' + escape('Жж'+document.title.substring(0,80)) + ';' + Math.random() + '" border=0 width=88 height=31 alt="" title="LiveInternet: показано число просмотров и посетителей за 24 часа"><\/a>');
+		</script>
+		<!--/LiveInternet-->
+		<!-- SpyLOG -->
+		<script src="http://tools.spylog.ru/counter2.2.js" type="text/javascript" id="spylog_code" counter="830950" ></script>
+		<noscript><a href="http://u8309.50.spylog.com/cnt?cid=830950&f=3&p=0" target="_blank"><img src="http://u8309.50.spylog.com/cnt?cid=830950&p=0&f=4" alt='SpyLOG' border='0' width=88 height=31 ></a>
+		</noscript>
+		<!--/ SpyLOG -->
+	</div>
+</td>
+  </tr>
+</table>
+
+<script>
+<!--
+document.SEARCH.QS.focus();
+// --></script>
+
+<!-- 
+	как же вы все это читаете?
+	440hz 
+-->
+
+</body>
+</html>
