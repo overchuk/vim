@@ -121,10 +121,6 @@
 " User configurable settings
 "------------------------------------------------------------------------------
 
-"if &filetype != "html" && &filetype != "php"
-"    finish
-"endif
-
 " if html, don't close certain tags.  Works best if ignorecase is set.
 " otherwise, capitalize these elements according to your html editing style
 if !exists("b:unaryTagsStack") || exists("b:closetag_html_style")
@@ -142,8 +138,8 @@ endif
 let loaded_closetag=1
 
 " set up mappings for tag closing
-inoremap <C-_> <C-R>=GetCloseTag()<CR>
-map <C-_> a<C-_><ESC>
+inoremap <F9> <C-R>=GetCloseTag()<CR>
+map <F9> a<F9><ESC>
 
 "------------------------------------------------------------------------------
 " Tag closer - uses the stringstack implementation below

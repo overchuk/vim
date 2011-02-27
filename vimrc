@@ -107,3 +107,5 @@ vmap <F2> <esc>:NERDTreeClose<cr>i
 imap <F2> <esc>:NERDTreeClose<cr>i
 
 
+nmap <F5> :make<CR>
+
