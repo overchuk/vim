@@ -27,7 +27,7 @@ set ffs=unix,dos,mac
 set fencs=utf-8,cp1251,koi8-r,ucs-2,cp866
 
 
-set mouse=a
+"set mouse=a
 "function! MyBalloonExpr()
 "           "return system("mueller ". v:beval_text)
 "           return v:beval_text
@@ -51,12 +51,20 @@ menu Encoding.koi8-r :e ++enc=8bit-koi8-r<CR>
 menu Encoding.cp866 :e ++enc=8bit-cp866<CR>
 map <F8> :emenu Encoding.<TAB>
 
-set  wildmenu
-set  wcm=<Tab>
+"set  wildmenu
+"set  wcm=<Tab>
 menu EOL.unix :set fileformat=unix<CR>
 menu EOL.dos  :set fileformat=dos<CR>
 menu EOL.mac  :set fileformat=mac<CR>
 map  <F7> :emenu EOL.<Tab>
+
+menu COLOR.red    :r~/.vim/esc/red.txt<CR>
+menu COLOR.white  :r~/.vim/esc/white.txt<CR>
+menu COLOR.green  :r~/.vim/esc/green.txt<CR>
+menu COLOR.blue   :r~/.vim/esc/blue.txt<CR>
+menu COLOR.yellow :r~/.vim/esc/yellow.txt<CR>
+nmap <F6> :emenu COLOR.<TAB>
+imap <F6> <ESC>:emenu COLOR.<TAB>
 
 inoremap <Up> <C-o>gk
 inoremap <Down> <C-o>gj
@@ -69,8 +77,11 @@ nmap <F4> :set<Space>nu!<CR>
 
 nmap <Space> <PageDown>
 
+nmap <F1> :!cat ~/.vim/readme.txt<CR>
+
 "vmap <C-c> "+yi
 "imap <C-v> <esc>"+gPi
+
 
 
 set popt+=syntax:y
