@@ -41,7 +41,8 @@ set fencs=utf-8,cp1251,koi8-r,ucs-2,cp866
 "set foldcolumn=3
 "
 
-set langmap=ёйцукенгшщзхъфывапролджэячсмитьбю;`qwertyuiop[]asdfghjkl\;'zxcvbnm\,.,ЙЦУКЕHГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;QWERTYUIOP{}ASDFGHJKL:\"ZXCVBNM<>
+"set langmap=ёйцукенгшщзхъфывапролджэячсмитьбю;`qwertyuiop[]asdfghjkl\;'zxcvbnm\,.
+set langmap=ёйцукенгшщзхъфывапролджэячсмитью;`qwertyuiop[]asdfghjkl\;'zxcvbnm.,ЁЙЦУКЕHГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;~QWERTYUIOP{}ASDFGHJKL:\"ZXCVBNM<>
 set wildmenu
 set wcm=<Tab>
 menu Encoding.utf-8 :e ++enc=2byte-utf-8 <CR>
@@ -77,11 +78,10 @@ nmap <F4> :set<Space>nu!<CR>
 
 nmap <Space> <PageDown>
 
-nmap <F1> :!cat ~/.vim/readme.txt<CR>
+nmap <F1> :!more ~/.vim/readme.txt<CR>
 
 "vmap <C-c> "+yi
 "imap <C-v> <esc>"+gPi
-
 
 
 set popt+=syntax:y
@@ -108,4 +108,8 @@ imap <F2> <esc>:NERDTreeClose<cr>i
 
 
 nmap <F5> :make<CR>
+
+:autocmd BufReadPre *.doc set ro
+:autocmd BufReadPre *.doc set hlsearch!
+:autocmd BufReadPost *.doc %!antiword "%"
 
